@@ -23,7 +23,7 @@
         <a class="header-link" href="../index.html">
           Gtk 4.0.0 Docs
         </a>
-         (86% documented)
+         (87% documented)
       </p>
     
       <p class="header-col--secondary">
@@ -132,7 +132,7 @@
                 <a class="nav-group-task-link" href="../Classes/Border.html">Border</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Classes.html#/s:3Gtk10BoundsIterC">BoundsIter</a>
+                <a class="nav-group-task-link" href="../Classes/BoundsIter.html">BoundsIter</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Box.html">Box</a>
@@ -6652,7 +6652,7 @@ signals used for key bindings, and several signals that an application can
 connect to modify the behavior of a widget.</p>
 
 <p>As an example of the latter usage, by connecting
-the following handler to <code>GtkEditable::insert</code>-text, an application
+the following handler to <code>GtkEditable::insert-text</code>, an application
 can convert all entry into a widget into uppercase.</p>
 <h2 id='forcing-entry-to-uppercase' class='heading'>Forcing entry to uppercase.</h2>
 
@@ -6752,15 +6752,15 @@ function (and similar for <code>get_property</code>), to set the editable proper
 </code></pre>
 
 <p>It is important to note that if you create a GtkEditable that uses a delegate,
-the low level <code>GtkEditable::insert</code>-text and <code>GtkEditable::delete</code>-text signals
+the low level <code>GtkEditable::insert-text</code> and <code>GtkEditable::delete-text</code> signals
 will be propagated from the &ldquo;wrapper&rdquo; editable to the delegate, but they will
 not be propagated from the delegate to the &ldquo;wrapper&rdquo; editable, as they would
-cause an infinite recursion. If you wish to connect to the <code>GtkEditable::insert</code>-text
-and <code>GtkEditable::delete</code>-text signals, you will need to connect to them on
+cause an infinite recursion. If you wish to connect to the <code>GtkEditable::insert-text</code>
+and <code>GtkEditable::delete-text</code> signals, you will need to connect to them on
 the delegate obtained via <code>gtk_editable_get_delegate()</code>.</p>
 
               <div class="slightly-smaller">
-                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L1817-L1821">Show on GitHub</a>
+                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L1825-L1829">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -6797,7 +6797,7 @@ the delegate obtained via <code>gtk_editable_get_delegate()</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L1820">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L1828">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6841,7 +6841,7 @@ the delegate obtained via <code>gtk_editable_get_delegate()</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L1825-L1827">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L1833-L1835">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6872,7 +6872,7 @@ the delegate obtained via <code>gtk_editable_get_delegate()</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L1830-L1832">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L1838-L1840">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6903,7 +6903,7 @@ the delegate obtained via <code>gtk_editable_get_delegate()</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L1835-L1838">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L1843-L1846">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6934,7 +6934,7 @@ the delegate obtained via <code>gtk_editable_get_delegate()</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L1841-L1844">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L1849-L1852">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6965,7 +6965,7 @@ the delegate obtained via <code>gtk_editable_get_delegate()</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L1847-L1850">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L1855-L1858">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6996,7 +6996,7 @@ the delegate obtained via <code>gtk_editable_get_delegate()</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L1853-L1856">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L1861-L1864">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7027,7 +7027,7 @@ the delegate obtained via <code>gtk_editable_get_delegate()</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L1859-L1861">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L1867-L1869">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7058,7 +7058,7 @@ the delegate obtained via <code>gtk_editable_get_delegate()</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L1864">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L1872">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7090,7 +7090,7 @@ the delegate obtained via <code>gtk_editable_get_delegate()</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L1868-L1870">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L1876-L1878">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7122,7 +7122,7 @@ the delegate obtained via <code>gtk_editable_get_delegate()</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L1874-L1876">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L1882-L1884">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7154,7 +7154,7 @@ the delegate obtained via <code>gtk_editable_get_delegate()</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L1880-L1882">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L1888-L1890">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7186,7 +7186,7 @@ the delegate obtained via <code>gtk_editable_get_delegate()</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L1886-L1888">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L1894-L1896">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7218,7 +7218,7 @@ the delegate obtained via <code>gtk_editable_get_delegate()</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L1892-L1894">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L1900-L1902">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7231,7 +7231,7 @@ the delegate obtained via <code>gtk_editable_get_delegate()</code>.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-17)</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-19)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>

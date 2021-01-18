@@ -23,7 +23,7 @@
         <a class="header-link" href="../index.html">
           Gtk 4.0.0 Docs
         </a>
-         (86% documented)
+         (87% documented)
       </p>
     
       <p class="header-col--secondary">
@@ -132,7 +132,7 @@
                 <a class="nav-group-task-link" href="../Classes/Border.html">Border</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Classes.html#/s:3Gtk10BoundsIterC">BoundsIter</a>
+                <a class="nav-group-task-link" href="../Classes/BoundsIter.html">BoundsIter</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Box.html">Box</a>
@@ -6673,20 +6673,20 @@ these two models are sufficient.</p>
 <p>Models are accessed on a node/column level of granularity. One can
 query for the value of a model at a certain node and a certain
 column on that node. There are two structures used to reference a
-particular node in a model. They are the <code>GtkTreePath</code>-struct and
-the <code>GtkTreeIter</code>-struct (“iter” is short for iterator). Most of the
-interface consists of operations on a <code>GtkTreeIter</code>-struct.</p>
+particular node in a model. They are the <code>GtkTreePath-struct</code> and
+the <code>GtkTreeIter-struct</code> (“iter” is short for iterator). Most of the
+interface consists of operations on a <code>GtkTreeIter-struct</code>.</p>
 
 <p>A path is essentially a potential node. It is a location on a model
 that may or may not actually correspond to a node on a specific
-model. The <code>GtkTreePath</code>-struct can be converted into either an
+model. The <code>GtkTreePath-struct</code> can be converted into either an
 array of unsigned integers or a string. The string form is a list
 of numbers separated by a colon. Each number refers to the offset
 at that level. Thus, the path <code>0</code> refers to the root
 node and the path <code>2:4</code> refers to the fifth child of
 the third node.</p>
 
-<p>By contrast, a <code>GtkTreeIter</code>-struct is a reference to a specific node on
+<p>By contrast, a <code>GtkTreeIter-struct</code> is a reference to a specific node on
 a specific model. It is a generic struct with an integer and three
 generic pointers. These are filled in by the model in a model-specific
 way. One can convert a path to an iterator by calling
@@ -6722,7 +6722,7 @@ provided. The first example shows three ways of getting the iter at
 the location <code>3:2:5</code>. While the first method shown is
 easier, the second is much more common, as you often get paths from
 callbacks.</p>
-<h2 id='acquiring-a-code-gtktreeiter-code-struct' class='heading'>Acquiring a <code>GtkTreeIter</code>-struct</h2>
+<h2 id='acquiring-a-code-gtktreeiter-struct-code' class='heading'>Acquiring a <code>GtkTreeIter-struct</code></h2>
 
 <p>(C Language Example):</p>
 <pre class="highlight plaintext"><code>// Three ways of getting the iter pointing to the location
@@ -6839,7 +6839,7 @@ is always referenced when any view is attached).</p></li>
 </ul>
 
               <div class="slightly-smaller">
-                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TreeDragSource-TreeSortable.swift#L996-L1138">Show on GitHub</a>
+                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TreeDragSource-TreeSortable.swift#L1000-L1142">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -6876,7 +6876,7 @@ is always referenced when any view is attached).</p></li>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TreeDragSource-TreeSortable.swift#L999">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TreeDragSource-TreeSortable.swift#L1003">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6928,7 +6928,7 @@ i.e., ownership is transferred to the <code>TreeModel</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TreeDragSource-TreeSortable.swift#L1005-L1007">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TreeDragSource-TreeSortable.swift#L1009-L1011">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6980,7 +6980,7 @@ i.e., ownership is transferred to the <code>TreeModel</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TreeDragSource-TreeSortable.swift#L1013-L1015">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TreeDragSource-TreeSortable.swift#L1017-L1019">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7033,7 +7033,7 @@ i.e., ownership is transferred to the <code>TreeModel</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TreeDragSource-TreeSortable.swift#L1022-L1025">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TreeDragSource-TreeSortable.swift#L1026-L1029">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7086,7 +7086,7 @@ i.e., ownership is transferred to the <code>TreeModel</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TreeDragSource-TreeSortable.swift#L1032-L1035">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TreeDragSource-TreeSortable.swift#L1036-L1039">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7138,7 +7138,7 @@ i.e., ownership is transferred to the <code>TreeModel</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TreeDragSource-TreeSortable.swift#L1041-L1044">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TreeDragSource-TreeSortable.swift#L1045-L1048">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7190,7 +7190,7 @@ i.e., ownership is transferred to the <code>TreeModel</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TreeDragSource-TreeSortable.swift#L1050-L1053">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TreeDragSource-TreeSortable.swift#L1054-L1057">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7242,7 +7242,7 @@ i.e., ownership is transferred to the <code>TreeModel</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TreeDragSource-TreeSortable.swift#L1059-L1062">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TreeDragSource-TreeSortable.swift#L1063-L1066">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7293,7 +7293,7 @@ i.e., ownership is transferred to the <code>TreeModel</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TreeDragSource-TreeSortable.swift#L1067-L1070">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TreeDragSource-TreeSortable.swift#L1071-L1074">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7344,7 +7344,7 @@ i.e., ownership is transferred to the <code>TreeModel</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TreeDragSource-TreeSortable.swift#L1080-L1082">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TreeDragSource-TreeSortable.swift#L1084-L1086">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7395,7 +7395,7 @@ i.e., ownership is transferred to the <code>TreeModel</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TreeDragSource-TreeSortable.swift#L1087-L1090">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TreeDragSource-TreeSortable.swift#L1091-L1094">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7446,7 +7446,7 @@ i.e., ownership is transferred to the <code>TreeModel</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TreeDragSource-TreeSortable.swift#L1095-L1097">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TreeDragSource-TreeSortable.swift#L1099-L1101">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7478,7 +7478,7 @@ i.e., ownership is transferred to the <code>TreeModel</code> instance.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TreeDragSource-TreeSortable.swift#L1101-L1104">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TreeDragSource-TreeSortable.swift#L1105-L1108">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7505,7 +7505,7 @@ i.e., ownership is transferred to the <code>TreeModel</code> instance.</p>
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@inlinable</span>
-<span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">raw</span> <span class="nv">p</span><span class="p">:</span> <span class="kt">UnsafeMutableRawPointer</span><span class="p">)</span></code></pre>
+<span class="kd">public</span> <span class="kd">required</span> <span class="nf">init</span><span class="p">(</span><span class="n">raw</span> <span class="nv">p</span><span class="p">:</span> <span class="kt">UnsafeMutableRawPointer</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -7529,7 +7529,7 @@ i.e., ownership is transferred to the <code>TreeModel</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TreeDragSource-TreeSortable.swift#L1109-L1111">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TreeDragSource-TreeSortable.swift#L1113-L1115">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7580,7 +7580,7 @@ i.e., ownership is transferred to the <code>TreeModel</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TreeDragSource-TreeSortable.swift#L1116-L1119">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TreeDragSource-TreeSortable.swift#L1120-L1123">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7631,7 +7631,7 @@ i.e., ownership is transferred to the <code>TreeModel</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TreeDragSource-TreeSortable.swift#L1124-L1126">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TreeDragSource-TreeSortable.swift#L1128-L1130">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7682,7 +7682,7 @@ i.e., ownership is transferred to the <code>TreeModel</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TreeDragSource-TreeSortable.swift#L1131-L1134">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TreeDragSource-TreeSortable.swift#L1135-L1138">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7695,7 +7695,7 @@ i.e., ownership is transferred to the <code>TreeModel</code> instance.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-17)</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-19)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>

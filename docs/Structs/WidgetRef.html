@@ -23,7 +23,7 @@
         <a class="header-link" href="../index.html">
           Gtk 4.0.0 Docs
         </a>
-         (86% documented)
+         (87% documented)
       </p>
     
       <p class="header-col--secondary">
@@ -132,7 +132,7 @@
                 <a class="nav-group-task-link" href="../Classes/Border.html">Border</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Classes.html#/s:3Gtk10BoundsIterC">BoundsIter</a>
+                <a class="nav-group-task-link" href="../Classes/BoundsIter.html">BoundsIter</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Box.html">Box</a>
@@ -6772,7 +6772,7 @@ be careful to call its virtual methods directly, like in the code
 example above.</p>
 
 <p>It will not work to use the wrapper function <code>gtk_widget_measure()</code>
-inside your own <code>GtkWidgetClass.size</code><code>-allocate()</code> implementation.
+inside your own <code>GtkWidgetClass.size-allocate</code><code>()</code> implementation.
 These return a request adjusted by <code>GtkSizeGroup</code>, the widget&rsquo;s align and expand flags
 as well as its CSS style.
 If a widget used the wrappers inside its virtual method implementations,
@@ -6806,7 +6806,7 @@ custom elements to specify various aspects of widgets that are not
 directly expressed as properties.</p>
 
 <p>If the parent widget uses a <code>GtkLayoutManager</code>, <code>GtkWidget</code> supports a
-custom <code>&lt;layout&gt;</code> element, used to define layout properties:</p>
+custom <code>&amp;lt;layout&amp;gt;</code> element, used to define layout properties:</p>
 <pre class="highlight swift"><code><span class="o">&lt;</span><span class="n">object</span> <span class="kd">class</span><span class="o">=</span><span class="s">"MyGrid"</span> <span class="n">id</span><span class="o">=</span><span class="s">"grid1"</span><span class="o">&gt;</span>
   <span class="o">&lt;</span><span class="n">child</span><span class="o">&gt;</span>
     <span class="o">&lt;</span><span class="n">object</span> <span class="kd">class</span><span class="o">=</span><span class="s">"GtkLabel"</span> <span class="n">id</span><span class="o">=</span><span class="s">"label1"</span><span class="o">&gt;</span>
@@ -6833,7 +6833,7 @@ custom <code>&lt;layout&gt;</code> element, used to define layout properties:</p
 </code></pre>
 
 <p>GtkWidget allows style information such as style classes to
-be associated with widgets, using the custom <code>&lt;style&gt;</code> element:</p>
+be associated with widgets, using the custom <code>&amp;lt;style&amp;gt;</code> element:</p>
 <pre class="highlight swift"><code><span class="o">&lt;</span><span class="n">object</span> <span class="kd">class</span><span class="o">=</span><span class="s">"GtkButton"</span> <span class="n">id</span><span class="o">=</span><span class="s">"button1"</span><span class="o">&gt;</span>
   <span class="o">&lt;</span><span class="n">style</span><span class="o">&gt;</span>
     <span class="o">&lt;</span><span class="kd">class</span> <span class="n">name</span><span class="o">=</span><span class="s">"my-special-button-class"</span><span class="o">/&gt;</span>
@@ -6843,7 +6843,7 @@ be associated with widgets, using the custom <code>&lt;style&gt;</code> element:
 </code></pre>
 
 <p>GtkWidget allows defining accessibility information, such as properties,
-relations, and states, using the custom <code>&lt;accessibility&gt;</code> element:</p>
+relations, and states, using the custom <code>&amp;lt;accessibility&amp;gt;</code> element:</p>
 <pre class="highlight swift"><code><span class="o">&lt;</span><span class="n">object</span> <span class="kd">class</span><span class="o">=</span><span class="s">"GtkButton"</span> <span class="n">id</span><span class="o">=</span><span class="s">"button1"</span><span class="o">&gt;</span>
   <span class="o">&lt;</span><span class="n">accessibility</span><span class="o">&gt;</span>
     <span class="o">&lt;</span><span class="n">property</span> <span class="n">name</span><span class="o">=</span><span class="s">"label"</span><span class="o">&gt;</span><span class="kt">Download</span><span class="o">&lt;/</span><span class="n">property</span><span class="o">&gt;</span>
@@ -6865,24 +6865,24 @@ time using <code>gtk_widget_class_set_template()</code>.</p>
 is slightly different from regular <code>GtkBuilder</code> XML.</p>
 
 <p>Unlike regular interface descriptions, <code>gtk_widget_class_set_template()</code> will
-expect a <template> tag as a direct child of the toplevel <interface>
-tag. The <template> tag must specify the “class” attribute which must be
+expect a &lt;template&gt; tag as a direct child of the toplevel &lt;interface&gt;
+tag. The &lt;template&gt; tag must specify the “class” attribute which must be
 the type name of the widget. Optionally, the “parent” attribute may be
 specified to specify the direct parent type of the widget type, this is
 ignored by the GtkBuilder but required for Glade to introspect what kind
 of properties and internal children exist for a given type when the actual
 type does not exist.</p>
 
-<p>The XML which is contained inside the <template> tag behaves as if it were
-added to the <object> tag defining <code>widget</code> itself. You may set properties
-on <code>widget</code> by inserting <property> tags into the <template> tag, and also
-add <child> tags to add children and extend <code>widget</code> in the normal way you
-would with <object> tags.</p>
+<p>The XML which is contained inside the &lt;template&gt; tag behaves as if it were
+added to the &lt;object&gt; tag defining <code>widget</code> itself. You may set properties
+on <code>widget</code> by inserting &lt;property&gt; tags into the &lt;template&gt; tag, and also
+add &lt;child&gt; tags to add children and extend <code>widget</code> in the normal way you
+would with &lt;object&gt; tags.</p>
 
-<p>Additionally, <object> tags can also be added before and after the initial
-<template> tag in the normal way, allowing one to define auxiliary objects
+<p>Additionally, &lt;object&gt; tags can also be added before and after the initial
+&lt;template&gt; tag in the normal way, allowing one to define auxiliary objects
 which might be referenced by other widgets declared as children of the
-<template> tag.</p>
+&lt;template&gt; tag.</p>
 
 <p>An example of a GtkBuilder Template Definition:</p>
 <pre class="highlight swift"><code><span class="o">&lt;</span><span class="n">interface</span><span class="o">&gt;</span>
@@ -6990,7 +6990,7 @@ foo_widget_class_init (FooWidgetClass *klass)
 </code></pre>
 
               <div class="slightly-smaller">
-                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Viewport-Widget.swift#L2216-L2220">Show on GitHub</a>
+                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Viewport-Widget.swift#L2222-L2226">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -7027,7 +7027,7 @@ foo_widget_class_init (FooWidgetClass *klass)
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Viewport-Widget.swift#L2219">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Viewport-Widget.swift#L2225">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7071,7 +7071,7 @@ foo_widget_class_init (FooWidgetClass *klass)
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Viewport-Widget.swift#L2224-L2226">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Viewport-Widget.swift#L2230-L2232">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7102,7 +7102,7 @@ foo_widget_class_init (FooWidgetClass *klass)
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Viewport-Widget.swift#L2229-L2231">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Viewport-Widget.swift#L2235-L2237">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7133,7 +7133,7 @@ foo_widget_class_init (FooWidgetClass *klass)
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Viewport-Widget.swift#L2234-L2237">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Viewport-Widget.swift#L2240-L2243">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7164,7 +7164,7 @@ foo_widget_class_init (FooWidgetClass *klass)
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Viewport-Widget.swift#L2240-L2243">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Viewport-Widget.swift#L2246-L2249">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7195,7 +7195,7 @@ foo_widget_class_init (FooWidgetClass *klass)
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Viewport-Widget.swift#L2246-L2249">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Viewport-Widget.swift#L2252-L2255">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7226,7 +7226,7 @@ foo_widget_class_init (FooWidgetClass *klass)
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Viewport-Widget.swift#L2252-L2255">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Viewport-Widget.swift#L2258-L2261">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7257,7 +7257,7 @@ foo_widget_class_init (FooWidgetClass *klass)
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Viewport-Widget.swift#L2258-L2260">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Viewport-Widget.swift#L2264-L2266">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7288,7 +7288,7 @@ foo_widget_class_init (FooWidgetClass *klass)
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Viewport-Widget.swift#L2263">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Viewport-Widget.swift#L2269">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7320,7 +7320,7 @@ foo_widget_class_init (FooWidgetClass *klass)
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Viewport-Widget.swift#L2267-L2269">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Viewport-Widget.swift#L2273-L2275">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7352,7 +7352,7 @@ foo_widget_class_init (FooWidgetClass *klass)
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Viewport-Widget.swift#L2273-L2275">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Viewport-Widget.swift#L2279-L2281">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7384,7 +7384,7 @@ foo_widget_class_init (FooWidgetClass *klass)
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Viewport-Widget.swift#L2279-L2281">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Viewport-Widget.swift#L2285-L2287">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7416,7 +7416,7 @@ foo_widget_class_init (FooWidgetClass *klass)
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Viewport-Widget.swift#L2285-L2287">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Viewport-Widget.swift#L2291-L2293">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7448,7 +7448,7 @@ foo_widget_class_init (FooWidgetClass *klass)
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Viewport-Widget.swift#L2291-L2293">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Viewport-Widget.swift#L2297-L2299">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7516,7 +7516,7 @@ foo_widget_class_init (FooWidgetClass *klass)
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-17)</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-19)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>

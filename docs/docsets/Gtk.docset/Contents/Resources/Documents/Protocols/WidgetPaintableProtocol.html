@@ -23,7 +23,7 @@
         <a class="header-link" href="../index.html">
           Gtk 4.0.0 Docs
         </a>
-         (86% documented)
+         (87% documented)
       </p>
     
       <p class="header-col--secondary">
@@ -132,7 +132,7 @@
                 <a class="nav-group-task-link" href="../Classes/Border.html">Border</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Classes.html#/s:3Gtk10BoundsIterC">BoundsIter</a>
+                <a class="nav-group-task-link" href="../Classes/BoundsIter.html">BoundsIter</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Box.html">Box</a>
@@ -6655,20 +6655,20 @@ nothing or where it does not have a size (like when it is hidden) and
 report no size in that case.</p>
 
 <p>Of course, GtkWidgetPaintable allows you to monitor widgets for size
-changes by emitting the <code>GdkPaintable::invalidate</code>-size signal whenever
+changes by emitting the <code>GdkPaintable::invalidate-size</code> signal whenever
 the size of the widget changes as well as for visual changes by
-emitting the <code>GdkPaintable::invalidate</code>-contents signal whenever the
+emitting the <code>GdkPaintable::invalidate-contents</code> signal whenever the
 widget changes.</p>
 
 <p>You can of course use a GtkWidgetPaintable everywhere a
 <code>GdkPaintable</code> is allowed, including using it on a <code>GtkPicture</code> (or one
 of its parents) that it was set on itself via <code>gtk_picture_set_paintable()</code>.
 The paintable will take care of recursion when this happens. If you do
-this however, ensure the <code>GtkPicture:can</code>-shrink property is set to
+this however, ensure the <code>GtkPicture:can-shrink</code> property is set to
 <code>true</code> or you might end up with an infinitely growing widget.</p>
 
               <div class="slightly-smaller">
-                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-WidgetPaintable-WindowHandle.swift#L43-L50">Show on GitHub</a>
+                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-WidgetPaintable-WindowHandle.swift#L43-L52">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -6741,6 +6741,36 @@ this however, ensure the <code>GtkPicture:can</code>-shrink property is set to
                       </div>
                       <div class="slightly-smaller">
                         <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-WidgetPaintable-WindowHandle.swift#L48">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3Gtk23WidgetPaintableProtocolP3rawxSv_tcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(raw:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3Gtk23WidgetPaintableProtocolP3rawxSv_tcfc">init(raw:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Required Initialiser for types conforming to <code>WidgetPaintableProtocol</code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="nf">init</span><span class="p">(</span><span class="nv">raw</span><span class="p">:</span> <span class="kt">UnsafeMutableRawPointer</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-WidgetPaintable-WindowHandle.swift#L51">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6871,7 +6901,7 @@ this however, ensure the <code>GtkPicture:can</code>-shrink property is set to
                         <p>binding reference or <code>nil</code> in case of an error</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-WidgetPaintable-WindowHandle.swift#L324-L348">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-WidgetPaintable-WindowHandle.swift#L326-L350">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6928,7 +6958,7 @@ this however, ensure the <code>GtkPicture:can</code>-shrink property is set to
                         <p>the value of the named property</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-WidgetPaintable-WindowHandle.swift#L353-L357">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-WidgetPaintable-WindowHandle.swift#L355-L359">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6986,7 +7016,7 @@ this however, ensure the <code>GtkPicture:can</code>-shrink property is set to
                         <p>the value of the named property</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-WidgetPaintable-WindowHandle.swift#L363-L365">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-WidgetPaintable-WindowHandle.swift#L365-L367">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7034,7 +7064,7 @@ if none.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-WidgetPaintable-WindowHandle.swift#L406-L409">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-WidgetPaintable-WindowHandle.swift#L408-L411">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7068,7 +7098,7 @@ if none.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-WidgetPaintable-WindowHandle.swift#L412-L415">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-WidgetPaintable-WindowHandle.swift#L414-L417">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7102,7 +7132,7 @@ if none.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-WidgetPaintable-WindowHandle.swift#L417-L420">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-WidgetPaintable-WindowHandle.swift#L419-L422">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7136,7 +7166,7 @@ if none.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-WidgetPaintable-WindowHandle.swift#L422-L433">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-WidgetPaintable-WindowHandle.swift#L424-L435">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7149,7 +7179,7 @@ if none.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-17)</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-19)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>

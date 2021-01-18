@@ -23,7 +23,7 @@
         <a class="header-link" href="../index.html">
           Gtk 4.0.0 Docs
         </a>
-         (86% documented)
+         (87% documented)
       </p>
     
       <p class="header-col--secondary">
@@ -132,7 +132,7 @@
                 <a class="nav-group-task-link" href="../Classes/Border.html">Border</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Classes.html#/s:3Gtk10BoundsIterC">BoundsIter</a>
+                <a class="nav-group-task-link" href="../Classes/BoundsIter.html">BoundsIter</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Box.html">Box</a>
@@ -6651,7 +6651,7 @@ To use it, you’ll probably want to investigate the methods on
 its base class, <code>GtkRange</code>, in addition to the methods for GtkScale itself.
 To set the value of a scale, you would normally use <code>gtk_range_set_value()</code>.
 To detect changes to the value, you would normally use the
-<code>GtkRange::value</code>-changed signal.</p>
+<code>GtkRange::value-changed</code> signal.</p>
 
 <p>Note that using the same upper and lower bounds for the <code>GtkScale</code> (through
 the <code>GtkRange</code> methods) will hide the slider itself. This is useful for
@@ -6659,8 +6659,8 @@ applications that want to show an undeterminate value on the scale, without
 changing the layout of the application (such as movie or music players).</p>
 <h1 id='gtkscale-as-gtkbuildable' class='heading'>GtkScale as GtkBuildable</h1>
 
-<p>GtkScale supports a custom <marks> element, which can contain multiple
-<mark> elements. The “value” and “position” attributes have the same
+<p>GtkScale supports a custom &lt;marks&gt; element, which can contain multiple
+&lt;mark&gt; elements. The “value” and “position” attributes have the same
 meaning as <code>gtk_scale_add_mark()</code> parameters of the same name. If the
 element is not empty, its content is taken as the markup to show at
 the mark. It can be translated with the usual ”translatable” and
@@ -6714,7 +6714,7 @@ subnode is the first.</p>
 <p>The main CSS node gets the &lsquo;marks-before&rsquo; and/or &lsquo;marks-after&rsquo; style classes
 added depending on what marks are present.</p>
 
-<p>If the scale is displaying the value (see <code>GtkScale:draw</code>-value), there is
+<p>If the scale is displaying the value (see <code>GtkScale:draw-value</code>), there is
 subnode with name value. This node will get the .top or .bottom style classes
 similar to the marks node.</p>
 <h1 id='accessibility' class='heading'>Accessibility</h1>
@@ -6722,7 +6722,7 @@ similar to the marks node.</p>
 <p>GtkScale uses the <code>GTK_ACCESSIBLE_ROLE_SLIDER</code> role.</p>
 
               <div class="slightly-smaller">
-                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L1785-L1792">Show on GitHub</a>
+                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L1789-L1798">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -6756,7 +6756,7 @@ similar to the marks node.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L1787">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L1791">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6794,7 +6794,37 @@ similar to the marks node.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L1790">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L1794">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3Gtk13ScaleProtocolP3rawxSv_tcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(raw:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3Gtk13ScaleProtocolP3rawxSv_tcfc">init(raw:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Required Initialiser for types conforming to <code>ScaleProtocol</code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="nf">init</span><span class="p">(</span><span class="nv">raw</span><span class="p">:</span> <span class="kt">UnsafeMutableRawPointer</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L1797">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6925,7 +6955,7 @@ similar to the marks node.</p>
                         <p>binding reference or <code>nil</code> in case of an error</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L2385-L2409">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L2391-L2415">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6982,7 +7012,7 @@ similar to the marks node.</p>
                         <p>the value of the named property</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L2414-L2418">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L2420-L2424">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7040,7 +7070,7 @@ similar to the marks node.</p>
                         <p>the value of the named property</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L2424-L2426">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L2430-L2432">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7095,7 +7125,7 @@ marks value.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L2694-L2697">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L2700-L2703">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7129,7 +7159,7 @@ marks value.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L2700-L2703">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L2706-L2709">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7163,7 +7193,7 @@ marks value.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L2706-L2709">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L2712-L2715">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7198,7 +7228,7 @@ next to the slider.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L2713-L2716">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L2719-L2722">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7232,7 +7262,7 @@ next to the slider.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L2719-L2722">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L2725-L2728">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7268,7 +7298,7 @@ the caller.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L2727-L2730">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L2733-L2736">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7294,7 +7324,7 @@ the caller.</p>
 when using the <code>PangoLayout</code> function you need to convert to
 and from pixels using <code>PANGO_PIXELS()</code> or <code>PANGO_SCALE</code>.</p>
 
-<p>If the <code>GtkScale:draw</code>-value property is <code>false</code>, the return
+<p>If the <code>GtkScale:draw-value</code> property is <code>false</code>, the return
 values are undefined.</p>
 
                       </div>
@@ -7308,7 +7338,7 @@ values are undefined.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L2739-L2742">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L2745-L2748">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7342,7 +7372,7 @@ values are undefined.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L2745-L2748">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L2751-L2754">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7365,9 +7395,9 @@ values are undefined.</p>
                       <div class="abstract">
                         <p>Sets the number of decimal places that are displayed in the value. Also
 causes the value of the adjustment to be rounded to this number of digits,
-so the retrieved value matches the displayed one, if <code>GtkScale:draw</code>-value is
+so the retrieved value matches the displayed one, if <code>GtkScale:draw-value</code> is
 <code>true</code> when the value changes. If you want to enforce rounding the value when
-<code>GtkScale:draw</code>-value is <code>false</code>, you can set <code>GtkRange:round</code>-digits instead.</p>
+<code>GtkScale:draw-value</code> is <code>false</code>, you can set <code>GtkRange:round-digits</code> instead.</p>
 
 <p>Note that rounding to a small number of digits can interfere with
 the smooth autoscrolling that is built into <code>GtkScale</code>. As an alternative,
@@ -7385,7 +7415,7 @@ value yourself.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L2760-L2763">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L2766-L2769">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7420,7 +7450,7 @@ to the slider.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L2767-L2770">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L2773-L2776">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7459,7 +7489,7 @@ its own, rounded according to the value of the <code>GtkScale:digits</code> prop
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L2778-L2781">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L2784-L2787">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7480,7 +7510,7 @@ its own, rounded according to the value of the <code>GtkScale:digits</code> prop
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>If <code>GtkScale:has</code>-origin is set to <code>true</code> (the default), the scale will
+                        <p>If <code>GtkScale:has-origin</code> is set to <code>true</code> (the default), the scale will
 highlight the part of the trough between the origin (bottom or left side)
 and the current value.</p>
 
@@ -7495,7 +7525,7 @@ and the current value.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L2786-L2789">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L2792-L2795">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7529,7 +7559,7 @@ and the current value.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L2792-L2795">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L2798-L2801">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7563,7 +7593,7 @@ and the current value.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L2796-L2815">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L2802-L2821">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7598,7 +7628,7 @@ next to the slider.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L2819-L2831">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L2825-L2837">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7632,7 +7662,7 @@ next to the slider.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L2834-L2846">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L2840-L2852">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7668,7 +7698,7 @@ the caller.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L2851-L2859">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L2857-L2865">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7702,7 +7732,7 @@ the caller.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L2862-L2872">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L2868-L2878">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7736,7 +7766,7 @@ the caller.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L2874-L2879">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L2880-L2885">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7749,7 +7779,7 @@ the caller.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-17)</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-19)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>

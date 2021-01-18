@@ -23,7 +23,7 @@
         <a class="header-link" href="../index.html">
           Gtk 4.0.0 Docs
         </a>
-         (86% documented)
+         (87% documented)
       </p>
     
       <p class="header-col--secondary">
@@ -132,7 +132,7 @@
                 <a class="nav-group-task-link" href="../Classes/Border.html">Border</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Classes.html#/s:3Gtk10BoundsIterC">BoundsIter</a>
+                <a class="nav-group-task-link" href="../Classes/BoundsIter.html">BoundsIter</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Box.html">Box</a>
@@ -6678,7 +6678,7 @@ gtk_box_remove (GTK_BOX (scrolled_window),
                       gtk_bin_get_child (GTK_BIN (scrolled_window)));
 </code></pre>
 
-<p>Unless <code>GtkScrolledWindow:hscrollbar</code>-policy and <code>GtkScrolledWindow:vscrollbar</code>-policy
+<p>Unless <code>GtkScrolledWindow:hscrollbar-policy</code> and <code>GtkScrolledWindow:vscrollbar-policy</code>
 are GTK_POLICY_NEVER or GTK_POLICY_EXTERNAL,
 GtkScrolledWindow adds internal <code>GtkScrollbar</code> widgets around its child. The
 scroll position of the child, and if applicable the scrollbars, is controlled
@@ -6695,21 +6695,21 @@ your own scrolling with <code>GtkScrollbar</code> and for example a <code>GtkGri
 <p>GtkScrolledWindow has built-in support for touch devices. When a
 touchscreen is used, swiping will move the scrolled window, and will
 expose &lsquo;kinetic&rsquo; behavior. This can be turned off with the
-<code>GtkScrolledWindow:kinetic</code>-scrolling property if it is undesired.</p>
+<code>GtkScrolledWindow:kinetic-scrolling</code> property if it is undesired.</p>
 
 <p>GtkScrolledWindow also displays visual &lsquo;overshoot&rsquo; indication when
 the content is pulled beyond the end, and this situation can be
-captured with the <code>GtkScrolledWindow::edge</code>-overshot signal.</p>
+captured with the <code>GtkScrolledWindow::edge-overshot</code> signal.</p>
 
 <p>If no mouse device is present, the scrollbars will overlaid as
 narrow, auto-hiding indicators over the content. If traditional
 scrollbars are desired although no mouse is present, this behaviour
-can be turned off with the <code>GtkScrolledWindow:overlay</code>-scrolling
+can be turned off with the <code>GtkScrolledWindow:overlay-scrolling</code>
 property.</p>
 <h1 id='css-nodes' class='heading'>CSS nodes</h1>
 
 <p>GtkScrolledWindow has a main CSS node with name scrolledwindow.
-It gets a .frame style class added when <code>GtkScrolledWindow:has</code>-frame
+It gets a .frame style class added when <code>GtkScrolledWindow:has-frame</code>
 is <code>true</code>.</p>
 
 <p>It uses subnodes with names overshoot and undershoot to
@@ -6728,7 +6728,7 @@ with a subnode named junction.</p>
 <p>GtkScrolledWindow uses the <code>GTK_ACCESSIBLE_ROLE_GROUP</code> role.</p>
 
               <div class="slightly-smaller">
-                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L2260-L2393">Show on GitHub</a>
+                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L2266-L2399">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -6786,7 +6786,7 @@ i.e., ownership is transferred to the <code>ScrolledWindow</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L2265-L2267">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L2271-L2273">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6838,7 +6838,7 @@ i.e., ownership is transferred to the <code>ScrolledWindow</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L2273-L2275">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L2279-L2281">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6891,7 +6891,7 @@ i.e., ownership is transferred to the <code>ScrolledWindow</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L2282-L2285">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L2288-L2291">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6944,7 +6944,7 @@ i.e., ownership is transferred to the <code>ScrolledWindow</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L2292-L2295">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L2298-L2301">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6996,7 +6996,7 @@ i.e., ownership is transferred to the <code>ScrolledWindow</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L2301-L2304">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L2307-L2310">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7048,7 +7048,7 @@ i.e., ownership is transferred to the <code>ScrolledWindow</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L2310-L2313">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L2316-L2319">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7100,7 +7100,7 @@ i.e., ownership is transferred to the <code>ScrolledWindow</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L2319-L2321">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L2325-L2327">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7151,7 +7151,7 @@ Will retain <code>GtkScrolledWindow</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L2326-L2328">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L2332-L2334">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7202,7 +7202,7 @@ Will retain <code>GtkScrolledWindow</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L2333-L2335">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L2339-L2341">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7253,7 +7253,7 @@ Will retain <code>GtkScrolledWindow</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L2340-L2342">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L2346-L2348">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7304,7 +7304,7 @@ Will retain <code>GtkScrolledWindow</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L2347-L2349">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L2353-L2355">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7336,7 +7336,7 @@ Will retain <code>GtkScrolledWindow</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L2353-L2355">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L2359-L2361">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7363,7 +7363,7 @@ Will retain <code>GtkScrolledWindow</code>.</p>
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@inlinable</span>
-<span class="k">override</span> <span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">raw</span> <span class="nv">p</span><span class="p">:</span> <span class="kt">UnsafeMutableRawPointer</span><span class="p">)</span></code></pre>
+<span class="kd">public</span> <span class="kd">required</span> <span class="nf">init</span><span class="p">(</span><span class="n">raw</span> <span class="nv">p</span><span class="p">:</span> <span class="kt">UnsafeMutableRawPointer</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -7387,7 +7387,7 @@ Will retain <code>GtkScrolledWindow</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L2360-L2362">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L2366-L2368">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7414,7 +7414,7 @@ Will retain <code>GtkScrolledWindow</code>.</p>
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@inlinable</span>
-<span class="k">override</span> <span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">retainingRaw</span> <span class="nv">raw</span><span class="p">:</span> <span class="kt">UnsafeMutableRawPointer</span><span class="p">)</span></code></pre>
+<span class="kd">required</span> <span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">retainingRaw</span> <span class="nv">raw</span><span class="p">:</span> <span class="kt">UnsafeMutableRawPointer</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -7438,7 +7438,7 @@ Will retain <code>GtkScrolledWindow</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L2367-L2369">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L2373-L2375">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7489,7 +7489,7 @@ Will retain <code>GtkScrolledWindow</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L2374-L2376">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L2380-L2382">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7540,7 +7540,7 @@ Will retain <code>GtkScrolledWindow</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L2381-L2383">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L2387-L2389">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7571,7 +7571,7 @@ Will retain <code>GtkScrolledWindow</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L2386-L2390">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L2392-L2396">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7684,7 +7684,7 @@ Will retain <code>GtkScrolledWindow</code>.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-17)</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-19)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>

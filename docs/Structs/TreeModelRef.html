@@ -23,7 +23,7 @@
         <a class="header-link" href="../index.html">
           Gtk 4.0.0 Docs
         </a>
-         (86% documented)
+         (87% documented)
       </p>
     
       <p class="header-col--secondary">
@@ -132,7 +132,7 @@
                 <a class="nav-group-task-link" href="../Classes/Border.html">Border</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Classes.html#/s:3Gtk10BoundsIterC">BoundsIter</a>
+                <a class="nav-group-task-link" href="../Classes/BoundsIter.html">BoundsIter</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Box.html">Box</a>
@@ -6673,20 +6673,20 @@ these two models are sufficient.</p>
 <p>Models are accessed on a node/column level of granularity. One can
 query for the value of a model at a certain node and a certain
 column on that node. There are two structures used to reference a
-particular node in a model. They are the <code>GtkTreePath</code>-struct and
-the <code>GtkTreeIter</code>-struct (“iter” is short for iterator). Most of the
-interface consists of operations on a <code>GtkTreeIter</code>-struct.</p>
+particular node in a model. They are the <code>GtkTreePath-struct</code> and
+the <code>GtkTreeIter-struct</code> (“iter” is short for iterator). Most of the
+interface consists of operations on a <code>GtkTreeIter-struct</code>.</p>
 
 <p>A path is essentially a potential node. It is a location on a model
 that may or may not actually correspond to a node on a specific
-model. The <code>GtkTreePath</code>-struct can be converted into either an
+model. The <code>GtkTreePath-struct</code> can be converted into either an
 array of unsigned integers or a string. The string form is a list
 of numbers separated by a colon. Each number refers to the offset
 at that level. Thus, the path <code>0</code> refers to the root
 node and the path <code>2:4</code> refers to the fifth child of
 the third node.</p>
 
-<p>By contrast, a <code>GtkTreeIter</code>-struct is a reference to a specific node on
+<p>By contrast, a <code>GtkTreeIter-struct</code> is a reference to a specific node on
 a specific model. It is a generic struct with an integer and three
 generic pointers. These are filled in by the model in a model-specific
 way. One can convert a path to an iterator by calling
@@ -6722,7 +6722,7 @@ provided. The first example shows three ways of getting the iter at
 the location <code>3:2:5</code>. While the first method shown is
 easier, the second is much more common, as you often get paths from
 callbacks.</p>
-<h2 id='acquiring-a-code-gtktreeiter-code-struct' class='heading'>Acquiring a <code>GtkTreeIter</code>-struct</h2>
+<h2 id='acquiring-a-code-gtktreeiter-struct-code' class='heading'>Acquiring a <code>GtkTreeIter-struct</code></h2>
 
 <p>(C Language Example):</p>
 <pre class="highlight plaintext"><code>// Three ways of getting the iter pointing to the location
@@ -6839,7 +6839,7 @@ is always referenced when any view is attached).</p></li>
 </ul>
 
               <div class="slightly-smaller">
-                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TreeDragSource-TreeSortable.swift#L718-L722">Show on GitHub</a>
+                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TreeDragSource-TreeSortable.swift#L722-L726">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -6876,7 +6876,7 @@ is always referenced when any view is attached).</p></li>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TreeDragSource-TreeSortable.swift#L721">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TreeDragSource-TreeSortable.swift#L725">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6920,7 +6920,7 @@ is always referenced when any view is attached).</p></li>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TreeDragSource-TreeSortable.swift#L726-L728">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TreeDragSource-TreeSortable.swift#L730-L732">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6951,7 +6951,7 @@ is always referenced when any view is attached).</p></li>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TreeDragSource-TreeSortable.swift#L731-L733">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TreeDragSource-TreeSortable.swift#L735-L737">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6982,7 +6982,7 @@ is always referenced when any view is attached).</p></li>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TreeDragSource-TreeSortable.swift#L736-L739">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TreeDragSource-TreeSortable.swift#L740-L743">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7013,7 +7013,7 @@ is always referenced when any view is attached).</p></li>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TreeDragSource-TreeSortable.swift#L742-L745">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TreeDragSource-TreeSortable.swift#L746-L749">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7044,7 +7044,7 @@ is always referenced when any view is attached).</p></li>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TreeDragSource-TreeSortable.swift#L748-L751">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TreeDragSource-TreeSortable.swift#L752-L755">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7075,7 +7075,7 @@ is always referenced when any view is attached).</p></li>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TreeDragSource-TreeSortable.swift#L754-L757">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TreeDragSource-TreeSortable.swift#L758-L761">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7106,7 +7106,7 @@ is always referenced when any view is attached).</p></li>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TreeDragSource-TreeSortable.swift#L760-L762">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TreeDragSource-TreeSortable.swift#L764-L766">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7138,7 +7138,7 @@ is always referenced when any view is attached).</p></li>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TreeDragSource-TreeSortable.swift#L766-L768">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TreeDragSource-TreeSortable.swift#L770-L772">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7170,7 +7170,7 @@ is always referenced when any view is attached).</p></li>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TreeDragSource-TreeSortable.swift#L772-L774">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TreeDragSource-TreeSortable.swift#L776-L778">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7202,7 +7202,7 @@ is always referenced when any view is attached).</p></li>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TreeDragSource-TreeSortable.swift#L778-L780">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TreeDragSource-TreeSortable.swift#L782-L784">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7234,7 +7234,7 @@ is always referenced when any view is attached).</p></li>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TreeDragSource-TreeSortable.swift#L784-L786">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TreeDragSource-TreeSortable.swift#L788-L790">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7266,7 +7266,7 @@ is always referenced when any view is attached).</p></li>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TreeDragSource-TreeSortable.swift#L790-L792">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TreeDragSource-TreeSortable.swift#L794-L796">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7279,7 +7279,7 @@ is always referenced when any view is attached).</p></li>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-17)</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-19)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>

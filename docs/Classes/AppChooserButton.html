@@ -23,7 +23,7 @@
         <a class="header-link" href="../index.html">
           Gtk 4.0.0 Docs
         </a>
-         (86% documented)
+         (87% documented)
       </p>
     
       <p class="header-col--secondary">
@@ -132,7 +132,7 @@
                 <a class="nav-group-task-link" href="../Classes/Border.html">Border</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Classes.html#/s:3Gtk10BoundsIterC">BoundsIter</a>
+                <a class="nav-group-task-link" href="../Classes/BoundsIter.html">BoundsIter</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Box.html">Box</a>
@@ -6650,19 +6650,19 @@ an application. It implements the <code>GtkAppChooser</code> interface.</p>
 
 <p>Initially, a <code>GtkAppChooserButton</code> selects the first application
 in its list, which will either be the most-recently used application
-or, if <code>GtkAppChooserButton:show</code>-default-item is <code>true</code>, the
+or, if <code>GtkAppChooserButton:show-default-item</code> is <code>true</code>, the
 default application.</p>
 
 <p>The list of applications shown in a <code>GtkAppChooserButton</code> includes
 the recommended applications for the given content type. When
-<code>GtkAppChooserButton:show</code>-default-item is set, the default application
+<code>GtkAppChooserButton:show-default-item</code> is set, the default application
 is also included. To let the user chooser other applications,
-you can set the <code>GtkAppChooserButton:show</code>-dialog-item property,
+you can set the <code>GtkAppChooserButton:show-dialog-item</code> property,
 which allows to open a full <code>GtkAppChooserDialog</code>.</p>
 
 <p>It is possible to add custom items to the list, using
 <code>gtk_app_chooser_button_append_custom_item()</code>. These items cause
-the <code>GtkAppChooserButton::custom</code>-item-activated signal to be
+the <code>GtkAppChooserButton::custom-item-activated</code> signal to be
 emitted when they are selected.</p>
 
 <p>To track changes in the selected application, use the
@@ -6672,7 +6672,7 @@ emitted when they are selected.</p>
 <p>GtkAppChooserButton has a single CSS node with the name “appchooserbutton”.</p>
 
               <div class="slightly-smaller">
-                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L6048-L6182">Show on GitHub</a>
+                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L6064-L6198">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -6730,7 +6730,7 @@ i.e., ownership is transferred to the <code>AppChooserButton</code> instance.</p
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L6053-L6055">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L6069-L6071">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6782,7 +6782,7 @@ i.e., ownership is transferred to the <code>AppChooserButton</code> instance.</p
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L6061-L6063">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L6077-L6079">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6835,7 +6835,7 @@ i.e., ownership is transferred to the <code>AppChooserButton</code> instance.</p
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L6070-L6073">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L6086-L6089">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6888,7 +6888,7 @@ i.e., ownership is transferred to the <code>AppChooserButton</code> instance.</p
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L6080-L6083">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L6096-L6099">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6940,7 +6940,7 @@ i.e., ownership is transferred to the <code>AppChooserButton</code> instance.</p
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L6089-L6092">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L6105-L6108">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6992,7 +6992,7 @@ i.e., ownership is transferred to the <code>AppChooserButton</code> instance.</p
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L6098-L6101">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L6114-L6117">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7044,7 +7044,7 @@ i.e., ownership is transferred to the <code>AppChooserButton</code> instance.</p
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L6107-L6109">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L6123-L6125">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7095,7 +7095,7 @@ Will retain <code>GtkAppChooserButton</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L6114-L6116">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L6130-L6132">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7146,7 +7146,7 @@ Will retain <code>GtkAppChooserButton</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L6121-L6123">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L6137-L6139">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7197,7 +7197,7 @@ Will retain <code>GtkAppChooserButton</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L6128-L6130">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L6144-L6146">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7248,7 +7248,7 @@ Will retain <code>GtkAppChooserButton</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L6135-L6137">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L6151-L6153">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7280,7 +7280,7 @@ Will retain <code>GtkAppChooserButton</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L6141-L6143">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L6157-L6159">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7307,7 +7307,7 @@ Will retain <code>GtkAppChooserButton</code>.</p>
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@inlinable</span>
-<span class="k">override</span> <span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">raw</span> <span class="nv">p</span><span class="p">:</span> <span class="kt">UnsafeMutableRawPointer</span><span class="p">)</span></code></pre>
+<span class="kd">public</span> <span class="kd">required</span> <span class="nf">init</span><span class="p">(</span><span class="n">raw</span> <span class="nv">p</span><span class="p">:</span> <span class="kt">UnsafeMutableRawPointer</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -7331,7 +7331,7 @@ Will retain <code>GtkAppChooserButton</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L6148-L6150">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L6164-L6166">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7358,7 +7358,7 @@ Will retain <code>GtkAppChooserButton</code>.</p>
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@inlinable</span>
-<span class="k">override</span> <span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">retainingRaw</span> <span class="nv">raw</span><span class="p">:</span> <span class="kt">UnsafeMutableRawPointer</span><span class="p">)</span></code></pre>
+<span class="kd">required</span> <span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">retainingRaw</span> <span class="nv">raw</span><span class="p">:</span> <span class="kt">UnsafeMutableRawPointer</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -7382,7 +7382,7 @@ Will retain <code>GtkAppChooserButton</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L6155-L6157">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L6171-L6173">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7433,7 +7433,7 @@ Will retain <code>GtkAppChooserButton</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L6162-L6164">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L6178-L6180">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7484,7 +7484,7 @@ Will retain <code>GtkAppChooserButton</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L6169-L6171">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L6185-L6187">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7516,7 +7516,7 @@ that can handle content of the given type.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L6175-L6179">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L6191-L6195">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7529,7 +7529,7 @@ that can handle content of the given type.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-17)</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-19)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>

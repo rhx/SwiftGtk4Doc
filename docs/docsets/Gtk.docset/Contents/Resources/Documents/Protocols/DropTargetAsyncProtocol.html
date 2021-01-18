@@ -23,7 +23,7 @@
         <a class="header-link" href="../index.html">
           Gtk 4.0.0 Docs
         </a>
-         (86% documented)
+         (87% documented)
       </p>
     
       <p class="header-col--secondary">
@@ -132,7 +132,7 @@
                 <a class="nav-group-task-link" href="../Classes/Border.html">Border</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Classes.html#/s:3Gtk10BoundsIterC">BoundsIter</a>
+                <a class="nav-group-task-link" href="../Classes/BoundsIter.html">BoundsIter</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Box.html">Box</a>
@@ -6665,24 +6665,24 @@ if it finds a compatible data format and an action that is supported
 on both sides.</p>
 
 <p>If it is, and the widget becomes a target, you will receive a
-<code>GtkDropTargetAsync::drag</code>-enter signal, followed by
-<code>GtkDropTargetAsync::drag</code>-motion signals as the pointer moves,
+<code>GtkDropTargetAsync::drag-enter</code> signal, followed by
+<code>GtkDropTargetAsync::drag-motion</code> signals as the pointer moves,
 optionally a <code>GtkDropTargetAsync::drop</code> signal when a drop happens,
-and finally a <code>GtkDropTargetAsync::drag</code>-leave signal when the pointer
+and finally a <code>GtkDropTargetAsync::drag-leave</code> signal when the pointer
 moves off the widget.</p>
 
-<p>The <code>drag</code>-enter and <code>drag</code>-motion handler return a <code>GdkDragAction</code>
+<p>The <code>drag-enter</code> and <code>drag-motion</code> handler return a <code>GdkDragAction</code>
 to update the status of the ongoing operation. The <code>drop</code> handler
 should decide if it ultimately accepts the drop and if it does, it
 should initiate the data transfer and finish the operation by calling
 <code>gdk_drop_finish()</code>.</p>
 
-<p>Between the <code>drag</code>-enter and <code>drag</code>-leave signals the widget is a
+<p>Between the <code>drag-enter</code> and <code>drag-leave</code> signals the widget is a
 current drop target, and will receive the <code>GTK_STATE_FLAG_DROP_ACTIVE</code>
 state, which can be used by themes to style the widget as a drop target.</p>
 
               <div class="slightly-smaller">
-                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L6592-L6599">Show on GitHub</a>
+                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L6606-L6615">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -6716,7 +6716,7 @@ state, which can be used by themes to style the widget as a drop target.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L6594">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L6608">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6754,7 +6754,37 @@ state, which can be used by themes to style the widget as a drop target.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L6597">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L6611">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3Gtk23DropTargetAsyncProtocolP3rawxSv_tcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(raw:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3Gtk23DropTargetAsyncProtocolP3rawxSv_tcfc">init(raw:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Required Initialiser for types conforming to <code>DropTargetAsyncProtocol</code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="nf">init</span><span class="p">(</span><span class="nv">raw</span><span class="p">:</span> <span class="kt">UnsafeMutableRawPointer</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L6614">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6885,7 +6915,7 @@ state, which can be used by themes to style the widget as a drop target.</p>
                         <p>binding reference or <code>nil</code> in case of an error</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L6922-L6946">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L6938-L6962">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6942,7 +6972,7 @@ state, which can be used by themes to style the widget as a drop target.</p>
                         <p>the value of the named property</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L6951-L6955">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L6967-L6971">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7000,7 +7030,7 @@ state, which can be used by themes to style the widget as a drop target.</p>
                         <p>the value of the named property</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L6961-L6963">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L6977-L6979">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7119,7 +7149,7 @@ state, which can be used by themes to style the widget as a drop target.</p>
                         <p>The signal handler ID (always greater than 0 for successful connections)</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L7055-L7057">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L7071-L7073">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7225,7 +7255,7 @@ state, which can be used by themes to style the widget as a drop target.</p>
                         <p>The signal handler ID (always greater than 0 for successful connections)</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L7068-L7070">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L7084-L7086">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7335,7 +7365,7 @@ Run the given callback whenever the <code>accept</code> signal is emitted</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L7094-L7108">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L7110-L7124">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7368,7 +7398,7 @@ Run the given callback whenever the <code>accept</code> signal is emitted</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L7111">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L7127">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7389,7 +7419,7 @@ Run the given callback whenever the <code>accept</code> signal is emitted</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The <code>drag</code>-enter signal is emitted on the drop site when the pointer
+                        <p>The <code>drag-enter</code> signal is emitted on the drop site when the pointer
 enters the widget. It can be used to set up custom highlighting.</p>
 <div class="aside aside-note">
     <p class="aside-title">Note</p>
@@ -7489,7 +7519,7 @@ Run the given callback whenever the <code>dragEnter</code> signal is emitted</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L7123-L7137">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L7139-L7153">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7522,7 +7552,7 @@ Run the given callback whenever the <code>dragEnter</code> signal is emitted</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L7140">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L7156">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7543,9 +7573,9 @@ Run the given callback whenever the <code>dragEnter</code> signal is emitted</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The <code>drag</code>-leave signal is emitted on the drop site when the pointer
+                        <p>The <code>drag-leave</code> signal is emitted on the drop site when the pointer
 leaves the widget. Its main purpose it to undo things done in
-<code>GtkDropTargetAsync::drag</code>-enter.</p>
+<code>GtkDropTargetAsync::drag-enter</code>.</p>
 <div class="aside aside-note">
     <p class="aside-title">Note</p>
     This represents the underlying <code>drag-leave</code> signal
@@ -7620,7 +7650,7 @@ Run the given callback whenever the <code>dragLeave</code> signal is emitted</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L7151-L7165">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L7167-L7181">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7653,7 +7683,7 @@ Run the given callback whenever the <code>dragLeave</code> signal is emitted</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L7168">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L7184">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7674,7 +7704,7 @@ Run the given callback whenever the <code>dragLeave</code> signal is emitted</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The <code>drag</code>-motion signal is emitted while the pointer is moving
+                        <p>The <code>drag-motion</code> signal is emitted while the pointer is moving
 over the drop target.</p>
 <div class="aside aside-note">
     <p class="aside-title">Note</p>
@@ -7774,7 +7804,7 @@ Run the given callback whenever the <code>dragMotion</code> signal is emitted</p
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L7180-L7194">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L7196-L7210">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7807,7 +7837,7 @@ Run the given callback whenever the <code>dragMotion</code> signal is emitted</p
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L7197">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L7213">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7938,7 +7968,7 @@ Run the given callback whenever the <code>drop</code> signal is emitted</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L7219-L7233">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L7235-L7249">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7971,7 +8001,7 @@ Run the given callback whenever the <code>drop</code> signal is emitted</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L7236">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L7252">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8090,7 +8120,7 @@ Run the given callback whenever the <code>notifyActions</code> signal is emitted
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L7268-L7282">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L7284-L7298">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8123,7 +8153,7 @@ Run the given callback whenever the <code>notifyActions</code> signal is emitted
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L7285">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L7301">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8242,7 +8272,7 @@ Run the given callback whenever the <code>notifyFormats</code> signal is emitted
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L7317-L7331">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L7333-L7347">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8275,7 +8305,7 @@ Run the given callback whenever the <code>notifyFormats</code> signal is emitted
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L7334">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L7350">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8322,7 +8352,7 @@ Run the given callback whenever the <code>notifyFormats</code> signal is emitted
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L7344-L7347">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L7360-L7363">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8358,7 +8388,7 @@ Run the given callback whenever the <code>notifyFormats</code> signal is emitted
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L7352-L7355">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L7368-L7371">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8396,7 +8426,7 @@ the data.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L7362-L7365">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L7378-L7381">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8430,7 +8460,7 @@ the data.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L7368-L7371">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L7384-L7387">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8464,7 +8494,7 @@ the data.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L7374-L7377">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L7390-L7393">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8498,7 +8528,7 @@ the data.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L7379-L7382">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L7395-L7398">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8532,7 +8562,7 @@ the data.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L7384-L7394">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L7400-L7410">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8566,7 +8596,7 @@ the data.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L7397-L7409">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L7413-L7425">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8579,7 +8609,7 @@ the data.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-17)</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-19)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>

@@ -23,7 +23,7 @@
         <a class="header-link" href="../index.html">
           Gtk 4.0.0 Docs
         </a>
-         (86% documented)
+         (87% documented)
       </p>
     
       <p class="header-col--secondary">
@@ -132,7 +132,7 @@
                 <a class="nav-group-task-link" href="../Classes/Border.html">Border</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Classes.html#/s:3Gtk10BoundsIterC">BoundsIter</a>
+                <a class="nav-group-task-link" href="../Classes/BoundsIter.html">BoundsIter</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Box.html">Box</a>
@@ -6656,14 +6656,14 @@ you want detailed control about how selections should be handled.</p>
 <p>A <code>GtkSelectionModel</code> supports a single boolean per item indicating if an item
 is selected or not. This can be queried via <code>gtk_selection_model_is_selected()</code>.
 When the selected state of one or more items changes, the model will emit the
-<code>GtkSelectionModel::selection</code>-changed signal by calling the
+<code>GtkSelectionModel::selection-changed</code> signal by calling the
 <code>gtk_selection_model_selection_changed()</code> function. The positions given in that
 signal may have their selection state changed, though that is not a requirement.
-If new items added to the model via the <code>GListModel::items</code>-changed signal are
+If new items added to the model via the <code>GListModel::items-changed</code> signal are
 selected or not is up to the implementation.</p>
 
-<p>Note that items added via <code>GListModel::items</code>-changed may already be selected
-and no <code>GtkSelectionModel::selection</code>-changed will be emitted for them. So to
+<p>Note that items added via <code>GListModel::items-changed</code> may already be selected
+and no <code>GtkSelectionModel::selection-changed</code> will be emitted for them. So to
 track which items are selected, it is necessary to listen to both signals.</p>
 
 <p>Additionally, the interface can expose functionality to select and unselect
@@ -6681,7 +6681,7 @@ selecting is not supported by the model.</p>
 when an item was selected is to listen to the signals that indicate selection.</p>
 
               <div class="slightly-smaller">
-                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-SelectionModel-TreeDragDest.swift#L220-L347">Show on GitHub</a>
+                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-SelectionModel-TreeDragDest.swift#L222-L349">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -6739,7 +6739,7 @@ i.e., ownership is transferred to the <code>SelectionModel</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-SelectionModel-TreeDragDest.swift#L225-L227">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-SelectionModel-TreeDragDest.swift#L227-L229">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6791,7 +6791,7 @@ i.e., ownership is transferred to the <code>SelectionModel</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-SelectionModel-TreeDragDest.swift#L233-L235">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-SelectionModel-TreeDragDest.swift#L235-L237">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6844,7 +6844,7 @@ i.e., ownership is transferred to the <code>SelectionModel</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-SelectionModel-TreeDragDest.swift#L242-L245">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-SelectionModel-TreeDragDest.swift#L244-L247">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6897,7 +6897,7 @@ i.e., ownership is transferred to the <code>SelectionModel</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-SelectionModel-TreeDragDest.swift#L252-L255">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-SelectionModel-TreeDragDest.swift#L254-L257">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6949,7 +6949,7 @@ i.e., ownership is transferred to the <code>SelectionModel</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-SelectionModel-TreeDragDest.swift#L261-L264">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-SelectionModel-TreeDragDest.swift#L263-L266">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7001,7 +7001,7 @@ i.e., ownership is transferred to the <code>SelectionModel</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-SelectionModel-TreeDragDest.swift#L270-L273">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-SelectionModel-TreeDragDest.swift#L272-L275">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7053,7 +7053,7 @@ i.e., ownership is transferred to the <code>SelectionModel</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-SelectionModel-TreeDragDest.swift#L279-L281">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-SelectionModel-TreeDragDest.swift#L281-L283">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7104,7 +7104,7 @@ i.e., ownership is transferred to the <code>SelectionModel</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-SelectionModel-TreeDragDest.swift#L286-L288">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-SelectionModel-TreeDragDest.swift#L288-L290">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7155,7 +7155,7 @@ i.e., ownership is transferred to the <code>SelectionModel</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-SelectionModel-TreeDragDest.swift#L293-L295">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-SelectionModel-TreeDragDest.swift#L295-L297">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7206,7 +7206,7 @@ i.e., ownership is transferred to the <code>SelectionModel</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-SelectionModel-TreeDragDest.swift#L300-L302">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-SelectionModel-TreeDragDest.swift#L302-L304">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7257,7 +7257,7 @@ i.e., ownership is transferred to the <code>SelectionModel</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-SelectionModel-TreeDragDest.swift#L307-L309">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-SelectionModel-TreeDragDest.swift#L309-L311">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7289,7 +7289,7 @@ i.e., ownership is transferred to the <code>SelectionModel</code> instance.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-SelectionModel-TreeDragDest.swift#L313-L315">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-SelectionModel-TreeDragDest.swift#L315-L317">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7316,7 +7316,7 @@ i.e., ownership is transferred to the <code>SelectionModel</code> instance.</p>
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@inlinable</span>
-<span class="k">override</span> <span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">raw</span> <span class="nv">p</span><span class="p">:</span> <span class="kt">UnsafeMutableRawPointer</span><span class="p">)</span></code></pre>
+<span class="kd">public</span> <span class="kd">required</span> <span class="nf">init</span><span class="p">(</span><span class="n">raw</span> <span class="nv">p</span><span class="p">:</span> <span class="kt">UnsafeMutableRawPointer</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -7340,7 +7340,7 @@ i.e., ownership is transferred to the <code>SelectionModel</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-SelectionModel-TreeDragDest.swift#L320-L322">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-SelectionModel-TreeDragDest.swift#L322-L324">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7391,7 +7391,7 @@ i.e., ownership is transferred to the <code>SelectionModel</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-SelectionModel-TreeDragDest.swift#L327-L329">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-SelectionModel-TreeDragDest.swift#L329-L331">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7442,7 +7442,7 @@ i.e., ownership is transferred to the <code>SelectionModel</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-SelectionModel-TreeDragDest.swift#L334-L336">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-SelectionModel-TreeDragDest.swift#L336-L338">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7493,7 +7493,7 @@ i.e., ownership is transferred to the <code>SelectionModel</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-SelectionModel-TreeDragDest.swift#L341-L343">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-SelectionModel-TreeDragDest.swift#L343-L345">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7506,7 +7506,7 @@ i.e., ownership is transferred to the <code>SelectionModel</code> instance.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-17)</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-19)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>

@@ -23,7 +23,7 @@
         <a class="header-link" href="../index.html">
           Gtk 4.0.0 Docs
         </a>
-         (86% documented)
+         (87% documented)
       </p>
     
       <p class="header-col--secondary">
@@ -132,7 +132,7 @@
                 <a class="nav-group-task-link" href="../Classes/Border.html">Border</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Classes.html#/s:3Gtk10BoundsIterC">BoundsIter</a>
+                <a class="nav-group-task-link" href="../Classes/BoundsIter.html">BoundsIter</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Box.html">Box</a>
@@ -6652,7 +6652,7 @@ signals used for key bindings, and several signals that an application can
 connect to modify the behavior of a widget.</p>
 
 <p>As an example of the latter usage, by connecting
-the following handler to <code>GtkEditable::insert</code>-text, an application
+the following handler to <code>GtkEditable::insert-text</code>, an application
 can convert all entry into a widget into uppercase.</p>
 <h2 id='forcing-entry-to-uppercase' class='heading'>Forcing entry to uppercase.</h2>
 
@@ -6752,15 +6752,15 @@ function (and similar for <code>get_property</code>), to set the editable proper
 </code></pre>
 
 <p>It is important to note that if you create a GtkEditable that uses a delegate,
-the low level <code>GtkEditable::insert</code>-text and <code>GtkEditable::delete</code>-text signals
+the low level <code>GtkEditable::insert-text</code> and <code>GtkEditable::delete-text</code> signals
 will be propagated from the &ldquo;wrapper&rdquo; editable to the delegate, but they will
 not be propagated from the delegate to the &ldquo;wrapper&rdquo; editable, as they would
-cause an infinite recursion. If you wish to connect to the <code>GtkEditable::insert</code>-text
-and <code>GtkEditable::delete</code>-text signals, you will need to connect to them on
+cause an infinite recursion. If you wish to connect to the <code>GtkEditable::insert-text</code>
+and <code>GtkEditable::delete-text</code> signals, you will need to connect to them on
 the delegate obtained via <code>gtk_editable_get_delegate()</code>.</p>
 
               <div class="slightly-smaller">
-                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L2028-L2155">Show on GitHub</a>
+                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L2036-L2163">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -6818,7 +6818,7 @@ i.e., ownership is transferred to the <code>Editable</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L2033-L2035">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L2041-L2043">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6870,7 +6870,7 @@ i.e., ownership is transferred to the <code>Editable</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L2041-L2043">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L2049-L2051">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6923,7 +6923,7 @@ i.e., ownership is transferred to the <code>Editable</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L2050-L2053">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L2058-L2061">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6976,7 +6976,7 @@ i.e., ownership is transferred to the <code>Editable</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L2060-L2063">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L2068-L2071">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7028,7 +7028,7 @@ i.e., ownership is transferred to the <code>Editable</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L2069-L2072">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L2077-L2080">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7080,7 +7080,7 @@ i.e., ownership is transferred to the <code>Editable</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L2078-L2081">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L2086-L2089">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7132,7 +7132,7 @@ i.e., ownership is transferred to the <code>Editable</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L2087-L2089">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L2095-L2097">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7183,7 +7183,7 @@ Will retain <code>GtkEditable</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L2094-L2096">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L2102-L2104">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7234,7 +7234,7 @@ Will retain <code>GtkEditable</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L2101-L2103">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L2109-L2111">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7285,7 +7285,7 @@ Will retain <code>GtkEditable</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L2108-L2110">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L2116-L2118">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7336,7 +7336,7 @@ Will retain <code>GtkEditable</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L2115-L2117">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L2123-L2125">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7368,7 +7368,7 @@ Will retain <code>GtkEditable</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L2121-L2123">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L2129-L2131">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7395,7 +7395,7 @@ Will retain <code>GtkEditable</code>.</p>
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@inlinable</span>
-<span class="k">override</span> <span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">raw</span> <span class="nv">p</span><span class="p">:</span> <span class="kt">UnsafeMutableRawPointer</span><span class="p">)</span></code></pre>
+<span class="kd">public</span> <span class="kd">required</span> <span class="nf">init</span><span class="p">(</span><span class="n">raw</span> <span class="nv">p</span><span class="p">:</span> <span class="kt">UnsafeMutableRawPointer</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -7419,7 +7419,7 @@ Will retain <code>GtkEditable</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L2128-L2130">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L2136-L2138">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7446,7 +7446,7 @@ Will retain <code>GtkEditable</code>.</p>
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@inlinable</span>
-<span class="k">override</span> <span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">retainingRaw</span> <span class="nv">raw</span><span class="p">:</span> <span class="kt">UnsafeMutableRawPointer</span><span class="p">)</span></code></pre>
+<span class="kd">required</span> <span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">retainingRaw</span> <span class="nv">raw</span><span class="p">:</span> <span class="kt">UnsafeMutableRawPointer</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -7470,7 +7470,7 @@ Will retain <code>GtkEditable</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L2135-L2137">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L2143-L2145">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7521,7 +7521,7 @@ Will retain <code>GtkEditable</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L2142-L2144">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L2150-L2152">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7572,7 +7572,7 @@ Will retain <code>GtkEditable</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L2149-L2151">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L2157-L2159">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7585,7 +7585,7 @@ Will retain <code>GtkEditable</code>.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-17)</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-19)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>

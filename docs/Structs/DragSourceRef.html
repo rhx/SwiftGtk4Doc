@@ -23,7 +23,7 @@
         <a class="header-link" href="../index.html">
           Gtk 4.0.0 Docs
         </a>
-         (86% documented)
+         (87% documented)
       </p>
     
       <p class="header-col--secondary">
@@ -132,7 +132,7 @@
                 <a class="nav-group-task-link" href="../Classes/Border.html">Border</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Classes.html#/s:3Gtk10BoundsIterC">BoundsIter</a>
+                <a class="nav-group-task-link" href="../Classes/BoundsIter.html">BoundsIter</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Box.html">Box</a>
@@ -6670,7 +6670,7 @@ my_widget_init (MyWidget *self)
 <p>Setting up the content provider and icon ahead of time only
 makes sense when the data does not change. More commonly, you
 will want to set them up just in time. To do so, <code>GtkDragSource</code>
-has <code>GtkDragSource::prepare</code> and <code>GtkDragSource::drag</code>-begin signals.</p>
+has <code>GtkDragSource::prepare</code> and <code>GtkDragSource::drag-begin</code> signals.</p>
 
 <p>The <code>prepare</code> signal is emitted before a drag is started, and
 can be used to set the content provider and actions that the
@@ -6696,7 +6696,7 @@ on_drag_prepare (GtkDragSource *source,
 }
 </code></pre>
 
-<p>The <code>drag</code>-begin signal is emitted after the <code>GdkDrag</code> object has
+<p>The <code>drag-begin</code> signal is emitted after the <code>GdkDrag</code> object has
 been created, and can be used to set up the drag icon.</p>
 
 <p>(C Language Example):</p>
@@ -6717,11 +6717,11 @@ can be used to obtain updates about the status of the operation,
 but it is not normally necessary to connect to any signals,
 except for one case: when the supported actions include
 <code>GDK_ACTION_MOVE</code>, you need to listen for the
-<code>GtkDragSource::drag</code>-end signal and delete the
+<code>GtkDragSource::drag-end</code> signal and delete the
 data after it has been transferred.</p>
 
               <div class="slightly-smaller">
-                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L1557-L1561">Show on GitHub</a>
+                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L1563-L1567">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -6758,7 +6758,7 @@ data after it has been transferred.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L1560">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L1566">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6802,7 +6802,7 @@ data after it has been transferred.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L1565-L1567">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L1571-L1573">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6833,7 +6833,7 @@ data after it has been transferred.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L1570-L1572">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L1576-L1578">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6864,7 +6864,7 @@ data after it has been transferred.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L1575-L1578">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L1581-L1584">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6895,7 +6895,7 @@ data after it has been transferred.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L1581-L1584">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L1587-L1590">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6926,7 +6926,7 @@ data after it has been transferred.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L1587-L1590">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L1593-L1596">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6957,7 +6957,7 @@ data after it has been transferred.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L1593-L1596">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L1599-L1602">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6988,7 +6988,7 @@ data after it has been transferred.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L1599-L1601">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L1605-L1607">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7019,7 +7019,7 @@ data after it has been transferred.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L1604">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L1610">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7051,7 +7051,7 @@ data after it has been transferred.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L1608-L1610">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L1614-L1616">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7083,7 +7083,7 @@ data after it has been transferred.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L1614-L1616">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L1620-L1622">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7115,7 +7115,7 @@ data after it has been transferred.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L1620-L1622">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L1626-L1628">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7147,7 +7147,7 @@ data after it has been transferred.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L1626-L1628">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L1632-L1634">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7179,7 +7179,7 @@ data after it has been transferred.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L1632-L1634">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L1638-L1640">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7210,7 +7210,7 @@ data after it has been transferred.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L1637-L1640">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L1643-L1646">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7223,7 +7223,7 @@ data after it has been transferred.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-17)</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-19)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>

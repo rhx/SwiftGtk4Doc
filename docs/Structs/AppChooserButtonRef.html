@@ -23,7 +23,7 @@
         <a class="header-link" href="../index.html">
           Gtk 4.0.0 Docs
         </a>
-         (86% documented)
+         (87% documented)
       </p>
     
       <p class="header-col--secondary">
@@ -132,7 +132,7 @@
                 <a class="nav-group-task-link" href="../Classes/Border.html">Border</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Classes.html#/s:3Gtk10BoundsIterC">BoundsIter</a>
+                <a class="nav-group-task-link" href="../Classes/BoundsIter.html">BoundsIter</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Box.html">Box</a>
@@ -6650,19 +6650,19 @@ an application. It implements the <code>GtkAppChooser</code> interface.</p>
 
 <p>Initially, a <code>GtkAppChooserButton</code> selects the first application
 in its list, which will either be the most-recently used application
-or, if <code>GtkAppChooserButton:show</code>-default-item is <code>true</code>, the
+or, if <code>GtkAppChooserButton:show-default-item</code> is <code>true</code>, the
 default application.</p>
 
 <p>The list of applications shown in a <code>GtkAppChooserButton</code> includes
 the recommended applications for the given content type. When
-<code>GtkAppChooserButton:show</code>-default-item is set, the default application
+<code>GtkAppChooserButton:show-default-item</code> is set, the default application
 is also included. To let the user chooser other applications,
-you can set the <code>GtkAppChooserButton:show</code>-dialog-item property,
+you can set the <code>GtkAppChooserButton:show-dialog-item</code> property,
 which allows to open a full <code>GtkAppChooserDialog</code>.</p>
 
 <p>It is possible to add custom items to the list, using
 <code>gtk_app_chooser_button_append_custom_item()</code>. These items cause
-the <code>GtkAppChooserButton::custom</code>-item-activated signal to be
+the <code>GtkAppChooserButton::custom-item-activated</code> signal to be
 emitted when they are selected.</p>
 
 <p>To track changes in the selected application, use the
@@ -6672,7 +6672,7 @@ emitted when they are selected.</p>
 <p>GtkAppChooserButton has a single CSS node with the name “appchooserbutton”.</p>
 
               <div class="slightly-smaller">
-                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L5931-L5935">Show on GitHub</a>
+                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L5947-L5951">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -6709,7 +6709,7 @@ emitted when they are selected.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L5934">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L5950">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6753,7 +6753,7 @@ emitted when they are selected.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L5939-L5941">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L5955-L5957">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6784,7 +6784,7 @@ emitted when they are selected.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L5944-L5946">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L5960-L5962">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6815,7 +6815,7 @@ emitted when they are selected.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L5949-L5952">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L5965-L5968">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6846,7 +6846,7 @@ emitted when they are selected.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L5955-L5958">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L5971-L5974">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6877,7 +6877,7 @@ emitted when they are selected.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L5961-L5964">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L5977-L5980">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6908,7 +6908,7 @@ emitted when they are selected.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L5967-L5970">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L5983-L5986">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6939,7 +6939,7 @@ emitted when they are selected.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L5973-L5975">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L5989-L5991">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6970,7 +6970,7 @@ emitted when they are selected.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L5978">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L5994">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7002,7 +7002,7 @@ emitted when they are selected.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L5982-L5984">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L5998-L6000">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7034,7 +7034,7 @@ emitted when they are selected.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L5988-L5990">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L6004-L6006">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7066,7 +7066,7 @@ emitted when they are selected.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L5994-L5996">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L6010-L6012">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7098,7 +7098,7 @@ emitted when they are selected.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L6000-L6002">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L6016-L6018">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7130,7 +7130,7 @@ emitted when they are selected.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L6006-L6008">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L6022-L6024">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7164,7 +7164,7 @@ emitted when they are selected.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L6012-L6015">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L6028-L6031">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7177,7 +7177,7 @@ emitted when they are selected.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-17)</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-19)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>

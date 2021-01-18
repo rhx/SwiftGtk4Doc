@@ -23,7 +23,7 @@
         <a class="header-link" href="../index.html">
           Gtk 4.0.0 Docs
         </a>
-         (86% documented)
+         (87% documented)
       </p>
     
       <p class="header-col--secondary">
@@ -132,7 +132,7 @@
                 <a class="nav-group-task-link" href="../Classes/Border.html">Border</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Classes.html#/s:3Gtk10BoundsIterC">BoundsIter</a>
+                <a class="nav-group-task-link" href="../Classes/BoundsIter.html">BoundsIter</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Box.html">Box</a>
@@ -6722,18 +6722,18 @@ quick_message (GtkWindow *parent, char *message)
 <code>content_area</code> and <code>action_area</code> as internal children with the names
 “content_area” and “action_area”.</p>
 
-<p>GtkDialog supports a custom <action-widgets> element, which can contain
-multiple <action-widget> elements. The “response” attribute specifies a
+<p>GtkDialog supports a custom &lt;action-widgets&gt; element, which can contain
+multiple &lt;action-widget&gt; elements. The “response” attribute specifies a
 numeric response, and the content of the element is the id of widget
 (which should be a child of the dialogs <code>action_area</code>). To mark a response
-as default, set the “default“ attribute of the <action-widget> element
+as default, set the “default“ attribute of the &lt;action-widget&gt; element
 to true.</p>
 
 <p>GtkDialog supports adding action widgets by specifying “action“ as
-the “type“ attribute of a <child> element. The widget will be added
+the “type“ attribute of a &lt;child&gt; element. The widget will be added
 either to the action area or the headerbar of the dialog, depending
 on the “use-header-bar“ property. The response id has to be associated
-with the action widget using the <action-widgets> element.</p>
+with the action widget using the &lt;action-widgets&gt; element.</p>
 
 <p>An example of a <code>GtkDialog</code> UI definition fragment:</p>
 <pre class="highlight swift"><code><span class="o">&lt;</span><span class="n">object</span> <span class="kd">class</span><span class="o">=</span><span class="s">"GtkDialog"</span> <span class="n">id</span><span class="o">=</span><span class="s">"dialog1"</span><span class="o">&gt;</span>
@@ -6755,7 +6755,7 @@ with the action widget using the <action-widgets> element.</p>
 <p>GtkDialog uses the <code>GTK_ACCESSIBLE_ROLE_DIALOG</code> role.</p>
 
               <div class="slightly-smaller">
-                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L30144-L30151">Show on GitHub</a>
+                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L30214-L30223">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -6789,7 +6789,7 @@ with the action widget using the <action-widgets> element.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L30146">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L30216">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6827,7 +6827,37 @@ with the action widget using the <action-widgets> element.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L30149">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L30219">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3Gtk14DialogProtocolP3rawxSv_tcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(raw:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3Gtk14DialogProtocolP3rawxSv_tcfc">init(raw:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Required Initialiser for types conforming to <code>DialogProtocol</code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="nf">init</span><span class="p">(</span><span class="nv">raw</span><span class="p">:</span> <span class="kt">UnsafeMutableRawPointer</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L30222">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6958,7 +6988,7 @@ with the action widget using the <action-widgets> element.</p>
                         <p>binding reference or <code>nil</code> in case of an error</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L30820-L30844">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L30892-L30916">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7015,7 +7045,7 @@ with the action widget using the <action-widgets> element.</p>
                         <p>the value of the named property</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L30849-L30853">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L30921-L30925">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7073,7 +7103,7 @@ with the action widget using the <action-widgets> element.</p>
                         <p>the value of the named property</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L30859-L30861">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L30931-L30933">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7192,7 +7222,7 @@ with the action widget using the <action-widgets> element.</p>
                         <p>The signal handler ID (always greater than 0 for successful connections)</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L31187-L31189">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L31259-L31261">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7298,7 +7328,7 @@ with the action widget using the <action-widgets> element.</p>
                         <p>The signal handler ID (always greater than 0 for successful connections)</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L31200-L31202">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L31272-L31274">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7387,7 +7417,7 @@ Run the given callback whenever the <code>close</code> signal is emitted</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L31216-L31230">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L31288-L31302">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7420,7 +7450,7 @@ Run the given callback whenever the <code>close</code> signal is emitted</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L31233">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L31305">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7519,7 +7549,7 @@ Run the given callback whenever the <code>response</code> signal is emitted</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L31245-L31259">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L31317-L31331">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7552,7 +7582,7 @@ Run the given callback whenever the <code>response</code> signal is emitted</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L31262">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L31334">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7671,7 +7701,7 @@ Run the given callback whenever the <code>notifyUseHeaderBar</code> signal is em
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L31294-L31308">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L31366-L31380">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7704,7 +7734,7 @@ Run the given callback whenever the <code>notifyUseHeaderBar</code> signal is em
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L31311">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L31383">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7756,7 +7786,7 @@ of the <code>GtkDialog</code> struct.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L31326-L31329">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L31398-L31401">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7794,7 +7824,7 @@ you don’t need it.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L31336-L31339">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L31408-L31411">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7828,7 +7858,7 @@ you don’t need it.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L31346-L31349">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L31418-L31421">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7851,7 +7881,7 @@ you don’t need it.</p>
                       <div class="abstract">
                         <p>Returns the header bar of <code>dialog</code>. Note that the
 headerbar is only used by the dialog if the
-<code>GtkDialog:use</code>-header-bar property is <code>true</code>.</p>
+<code>GtkDialog:use-header-bar</code> property is <code>true</code>.</p>
 
                       </div>
                       <div class="declaration">
@@ -7864,7 +7894,7 @@ headerbar is only used by the dialog if the
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L31354-L31357">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L31426-L31429">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7899,7 +7929,7 @@ of a dialog.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L31361-L31364">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L31433-L31436">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7934,7 +7964,7 @@ of a dialog.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L31368-L31371">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L31440-L31443">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7970,7 +8000,7 @@ of a dialog.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L31376-L31379">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L31448-L31451">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8006,7 +8036,7 @@ the default widget.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L31384-L31387">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L31456-L31459">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8042,7 +8072,7 @@ A convenient way to sensitize/desensitize dialog buttons.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L31392-L31395">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L31464-L31467">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8076,7 +8106,7 @@ A convenient way to sensitize/desensitize dialog buttons.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L31397-L31403">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L31469-L31475">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8099,7 +8129,7 @@ A convenient way to sensitize/desensitize dialog buttons.</p>
                       <div class="abstract">
                         <p>Returns the header bar of <code>dialog</code>. Note that the
 headerbar is only used by the dialog if the
-<code>GtkDialog:use</code>-header-bar property is <code>true</code>.</p>
+<code>GtkDialog:use-header-bar</code> property is <code>true</code>.</p>
 
                       </div>
                       <div class="declaration">
@@ -8112,7 +8142,7 @@ headerbar is only used by the dialog if the
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L31408-L31416">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L31480-L31488">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8146,7 +8176,7 @@ headerbar is only used by the dialog if the
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L31418-L31423">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L31490-L31495">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8159,7 +8189,7 @@ headerbar is only used by the dialog if the
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-17)</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-19)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>

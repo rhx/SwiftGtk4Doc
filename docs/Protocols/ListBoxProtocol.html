@@ -23,7 +23,7 @@
         <a class="header-link" href="../index.html">
           Gtk 4.0.0 Docs
         </a>
-         (86% documented)
+         (87% documented)
       </p>
     
       <p class="header-col--secondary">
@@ -132,7 +132,7 @@
                 <a class="nav-group-task-link" href="../Classes/Border.html">Border</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Classes.html#/s:3Gtk10BoundsIterC">BoundsIter</a>
+                <a class="nav-group-task-link" href="../Classes/BoundsIter.html">BoundsIter</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Box.html">Box</a>
@@ -6663,14 +6663,14 @@ add any kind of widget to it via <code>gtk_list_box_prepend()</code>,
 widget will automatically be inserted between the list and the widget.</p>
 
 <p><code>GtkListBoxRows</code> can be marked as activatable or selectable. If a row
-is activatable, <code>GtkListBox::row</code>-activated will be emitted for it when
+is activatable, <code>GtkListBox::row-activated</code> will be emitted for it when
 the user tries to activate it. If it is selectable, the row will be marked
 as selected when the user tries to select it.</p>
 <h1 id='gtklistbox-as-gtkbuildable' class='heading'>GtkListBox as GtkBuildable</h1>
 
 <p>The GtkListBox implementation of the <code>GtkBuildable</code> interface supports
 setting a child as the placeholder by specifying “placeholder” as the “type”
-attribute of a <child> element. See <code>gtk_list_box_set_placeholder()</code> for info.</p>
+attribute of a &lt;child&gt; element. See <code>gtk_list_box_set_placeholder()</code> for info.</p>
 <h1 id='css-nodes' class='heading'>CSS nodes</h1>
 
 <p>(plain Language Example):</p>
@@ -6679,12 +6679,12 @@ attribute of a <child> element. See <code>gtk_list_box_set_placeholder()</code> 
 </code></pre>
 
 <p>GtkListBox uses a single CSS node named list. It may carry the .separators
-style class, when the <code>GtkListBox:show</code>-separators property is set. Each
+style class, when the <code>GtkListBox:show-separators</code> property is set. Each
 GtkListBoxRow uses a single CSS node named row. The row nodes get the
 .activatable style class added when appropriate.</p>
 
 <p>The main list node may also carry style classes to select
-the style of <a href="ListContainers.html%60list%60-styles">list presentation</a>:
+the style of <a href="ListContainers.html%60list-styles%60">list presentation</a>:
 .rich-list, .navigation-sidebar or .data-table.</p>
 <h1 id='accessibility' class='heading'>Accessibility</h1>
 
@@ -6692,7 +6692,7 @@ the style of <a href="ListContainers.html%60list%60-styles">list presentation</a
 the <code>GTK_ACCESSIBLE_ROLE_LIST_ITEM</code> role.</p>
 
               <div class="slightly-smaller">
-                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L7419-L7426">Show on GitHub</a>
+                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L7431-L7440">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -6726,7 +6726,7 @@ the <code>GTK_ACCESSIBLE_ROLE_LIST_ITEM</code> role.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L7421">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L7433">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6764,7 +6764,37 @@ the <code>GTK_ACCESSIBLE_ROLE_LIST_ITEM</code> role.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L7424">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L7436">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3Gtk15ListBoxProtocolP3rawxSv_tcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(raw:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3Gtk15ListBoxProtocolP3rawxSv_tcfc">init(raw:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Required Initialiser for types conforming to <code>ListBoxProtocol</code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="nf">init</span><span class="p">(</span><span class="nv">raw</span><span class="p">:</span> <span class="kt">UnsafeMutableRawPointer</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L7439">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6895,7 +6925,7 @@ the <code>GTK_ACCESSIBLE_ROLE_LIST_ITEM</code> role.</p>
                         <p>binding reference or <code>nil</code> in case of an error</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L7887-L7911">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L7901-L7925">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6952,7 +6982,7 @@ the <code>GTK_ACCESSIBLE_ROLE_LIST_ITEM</code> role.</p>
                         <p>the value of the named property</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L7916-L7920">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L7930-L7934">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7010,7 +7040,7 @@ the <code>GTK_ACCESSIBLE_ROLE_LIST_ITEM</code> role.</p>
                         <p>the value of the named property</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L7926-L7928">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L7940-L7942">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7129,7 +7159,7 @@ the <code>GTK_ACCESSIBLE_ROLE_LIST_ITEM</code> role.</p>
                         <p>The signal handler ID (always greater than 0 for successful connections)</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8182-L8184">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8196-L8198">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7235,7 +7265,7 @@ the <code>GTK_ACCESSIBLE_ROLE_LIST_ITEM</code> role.</p>
                         <p>The signal handler ID (always greater than 0 for successful connections)</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8195-L8197">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8209-L8211">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7318,7 +7348,7 @@ Run the given callback whenever the <code>activateCursorRow</code> signal is emi
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8205-L8219">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8219-L8233">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7351,7 +7381,7 @@ Run the given callback whenever the <code>activateCursorRow</code> signal is emi
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8222">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8236">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7482,7 +7512,7 @@ Run the given callback whenever the <code>moveCursor</code> signal is emitted</p
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8233-L8247">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8247-L8261">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7515,7 +7545,7 @@ Run the given callback whenever the <code>moveCursor</code> signal is emitted</p
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8250">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8264">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7536,7 +7566,7 @@ Run the given callback whenever the <code>moveCursor</code> signal is emitted</p
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The <code>row</code>-activated signal is emitted when a row has been activated by the user.</p>
+                        <p>The <code>row-activated</code> signal is emitted when a row has been activated by the user.</p>
 <div class="aside aside-note">
     <p class="aside-title">Note</p>
     This represents the underlying <code>row-activated</code> signal
@@ -7611,7 +7641,7 @@ Run the given callback whenever the <code>rowActivated</code> signal is emitted<
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8259-L8273">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8273-L8287">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7644,7 +7674,7 @@ Run the given callback whenever the <code>rowActivated</code> signal is emitted<
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8276">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8290">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7665,12 +7695,12 @@ Run the given callback whenever the <code>rowActivated</code> signal is emitted<
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The <code>row</code>-selected signal is emitted when a new row is selected, or
+                        <p>The <code>row-selected</code> signal is emitted when a new row is selected, or
 (with a <code>nil</code> <code>row</code>) when the selection is cleared.</p>
 
 <p>When the <code>box</code> is using <code>GTK_SELECTION_MULTIPLE</code>, this signal will not
 give you the full picture of selection changes, and you should use
-the <code>GtkListBox::selected</code>-rows-changed signal instead.</p>
+the <code>GtkListBox::selected-rows-changed</code> signal instead.</p>
 <div class="aside aside-note">
     <p class="aside-title">Note</p>
     This represents the underlying <code>row-selected</code> signal
@@ -7745,7 +7775,7 @@ Run the given callback whenever the <code>rowSelected</code> signal is emitted</
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8290-L8304">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8304-L8318">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7778,7 +7808,7 @@ Run the given callback whenever the <code>rowSelected</code> signal is emitted</
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8307">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8321">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7799,7 +7829,7 @@ Run the given callback whenever the <code>rowSelected</code> signal is emitted</
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The <code>select</code>-all signal is a <a href="#GtkSignalAction">keybinding signal</a>
+                        <p>The <code>select-all</code> signal is a <a href="#GtkSignalAction">keybinding signal</a>
 which gets emitted to select all children of the box, if the selection
 mode permits it.</p>
 
@@ -7866,7 +7896,7 @@ Run the given callback whenever the <code>selectAll</code> signal is emitted</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8319-L8333">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8333-L8347">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7899,7 +7929,7 @@ Run the given callback whenever the <code>selectAll</code> signal is emitted</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8336">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8350">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7920,7 +7950,7 @@ Run the given callback whenever the <code>selectAll</code> signal is emitted</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The <code>selected</code>-rows-changed signal is emitted when the
+                        <p>The <code>selected-rows-changed</code> signal is emitted when the
 set of selected rows changes.</p>
 <div class="aside aside-note">
     <p class="aside-title">Note</p>
@@ -7984,7 +8014,7 @@ Run the given callback whenever the <code>selectedRowsChanged</code> signal is e
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8345-L8359">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8359-L8373">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8017,7 +8047,7 @@ Run the given callback whenever the <code>selectedRowsChanged</code> signal is e
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8362">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8376">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8100,7 +8130,7 @@ Run the given callback whenever the <code>toggleCursorRow</code> signal is emitt
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8369-L8383">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8383-L8397">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8133,7 +8163,7 @@ Run the given callback whenever the <code>toggleCursorRow</code> signal is emitt
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8386">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8400">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8154,7 +8184,7 @@ Run the given callback whenever the <code>toggleCursorRow</code> signal is emitt
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The <code>unselect</code>-all signal is a <a href="#GtkSignalAction">keybinding signal</a>
+                        <p>The <code>unselect-all</code> signal is a <a href="#GtkSignalAction">keybinding signal</a>
 which gets emitted to unselect all children of the box, if the selection
 mode permits it.</p>
 
@@ -8221,7 +8251,7 @@ Run the given callback whenever the <code>unselectAll</code> signal is emitted</
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8398-L8412">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8412-L8426">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8254,7 +8284,7 @@ Run the given callback whenever the <code>unselectAll</code> signal is emitted</
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8415">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8429">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8373,7 +8403,7 @@ Run the given callback whenever the <code>notifyAcceptUnpairedRelease</code> sig
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8447-L8461">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8461-L8475">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8406,7 +8436,7 @@ Run the given callback whenever the <code>notifyAcceptUnpairedRelease</code> sig
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8464">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8478">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8525,7 +8555,7 @@ Run the given callback whenever the <code>notifyActivateOnSingleClick</code> sig
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8496-L8510">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8510-L8524">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8558,7 +8588,7 @@ Run the given callback whenever the <code>notifyActivateOnSingleClick</code> sig
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8513">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8527">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8677,7 +8707,7 @@ Run the given callback whenever the <code>notifySelectionMode</code> signal is e
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8545-L8559">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8559-L8573">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8710,7 +8740,7 @@ Run the given callback whenever the <code>notifySelectionMode</code> signal is e
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8562">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8576">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8829,7 +8859,7 @@ Run the given callback whenever the <code>notifyShowSeparators</code> signal is 
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8594-L8608">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8608-L8622">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8862,7 +8892,7 @@ Run the given callback whenever the <code>notifyShowSeparators</code> signal is 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8611">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8625">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8910,7 +8940,7 @@ actually be inserted at the calculated position.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8622-L8625">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8636-L8639">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8959,7 +8989,7 @@ should be implemented by the model.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8643-L8646">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8657-L8660">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9008,7 +9038,7 @@ should be implemented by the model.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8663-L8666">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8677-L8680">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9048,7 +9078,7 @@ a drag leave event.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8675-L8678">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8689-L8692">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9083,7 +9113,7 @@ it will have the highlight removed.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8682-L8685">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8696-L8699">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9117,7 +9147,7 @@ it will have the highlight removed.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8688-L8691">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8702-L8705">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9152,7 +9182,7 @@ for vertical scrolling.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8695-L8698">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8709-L8712">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9188,7 +9218,7 @@ list, <code>nil</code> is returned.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8703-L8706">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8717-L8720">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9222,7 +9252,7 @@ list, <code>nil</code> is returned.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8709-L8712">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8723-L8726">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9260,7 +9290,7 @@ find all selected rows.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8719-L8722">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8733-L8736">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9294,7 +9324,7 @@ find all selected rows.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8725-L8728">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8739-L8742">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9328,7 +9358,7 @@ find all selected rows.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8731-L8734">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8745-L8748">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9363,7 +9393,7 @@ between rows.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8738-L8741">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8752-L8755">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9401,7 +9431,7 @@ set, the widget will actually be inserted at the calculated position.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8748-L8751">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8762-L8765">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9439,7 +9469,7 @@ string and the entry with the search string has changed.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8758-L8761">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8772-L8775">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9475,7 +9505,7 @@ to an external factor.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8766-L8769">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8780-L8783">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9511,7 +9541,7 @@ to an external factor.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8774-L8777">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8788-L8791">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9546,7 +9576,7 @@ actually be inserted at the calculated position.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8781-L8784">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8795-L8798">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9580,7 +9610,7 @@ actually be inserted at the calculated position.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8787-L8790">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8801-L8804">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9614,7 +9644,7 @@ actually be inserted at the calculated position.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8793-L8796">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8807-L8810">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9648,7 +9678,7 @@ actually be inserted at the calculated position.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8799-L8802">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8813-L8816">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9682,7 +9712,7 @@ actually be inserted at the calculated position.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8804-L8807">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8818-L8821">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9718,7 +9748,7 @@ actually be inserted at the calculated position.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8812-L8815">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8826-L8829">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9753,7 +9783,7 @@ otherwise you need to double-click.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8819-L8822">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8833-L8836">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9794,7 +9824,7 @@ to manually do that.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8832-L8835">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8846-L8849">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9835,7 +9865,7 @@ to manually do that.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8844-L8847">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8858-L8861">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9878,7 +9908,7 @@ when <code>gtk_list_box_invalidate_filter()</code> is called.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8859-L8862">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8873-L8876">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9929,7 +9959,7 @@ the previous row becomes a different row). It is also called for all rows when
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8882-L8885">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8896-L8899">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9964,7 +9994,7 @@ it doesn&rsquo;t display any visible children.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8889-L8892">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8903-L8906">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9999,7 +10029,7 @@ it doesn&rsquo;t display any visible children.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8895-L8898">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8909-L8912">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10034,7 +10064,7 @@ See <code>GtkSelectionMode</code> for details.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8902-L8905">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8916-L8919">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10069,7 +10099,7 @@ between rows.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8909-L8912">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8923-L8926">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10111,7 +10141,7 @@ be called each time a row changes (via <code>gtk_list_box_row_changed()</code>) 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8923-L8926">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8937-L8940">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10145,7 +10175,7 @@ be called each time a row changes (via <code>gtk_list_box_row_changed()</code>) 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8929-L8932">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8943-L8946">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10179,7 +10209,7 @@ be called each time a row changes (via <code>gtk_list_box_row_changed()</code>) 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8935-L8938">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8949-L8952">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10213,7 +10243,7 @@ be called each time a row changes (via <code>gtk_list_box_row_changed()</code>) 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8940-L8951">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8954-L8965">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10248,7 +10278,7 @@ for vertical scrolling.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8955-L8973">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8969-L8987">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10286,7 +10316,7 @@ find all selected rows.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8980-L8990">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8994-L9004">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10320,7 +10350,7 @@ find all selected rows.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L8993-L8999">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L9007-L9013">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10354,7 +10384,7 @@ find all selected rows.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L9002-L9013">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L9016-L9027">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10389,7 +10419,7 @@ between rows.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L9017-L9029">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L9031-L9043">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10402,7 +10432,7 @@ between rows.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-17)</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-19)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>

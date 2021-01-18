@@ -23,7 +23,7 @@
         <a class="header-link" href="../index.html">
           Gtk 4.0.0 Docs
         </a>
-         (86% documented)
+         (87% documented)
       </p>
     
       <p class="header-col--secondary">
@@ -132,7 +132,7 @@
                 <a class="nav-group-task-link" href="../Classes/Border.html">Border</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Classes.html#/s:3Gtk10BoundsIterC">BoundsIter</a>
+                <a class="nav-group-task-link" href="../Classes/BoundsIter.html">BoundsIter</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Box.html">Box</a>
@@ -6657,14 +6657,14 @@ you want detailed control about how selections should be handled.</p>
 <p>A <code>GtkSelectionModel</code> supports a single boolean per item indicating if an item
 is selected or not. This can be queried via <code>gtk_selection_model_is_selected()</code>.
 When the selected state of one or more items changes, the model will emit the
-<code>GtkSelectionModel::selection</code>-changed signal by calling the
+<code>GtkSelectionModel::selection-changed</code> signal by calling the
 <code>gtk_selection_model_selection_changed()</code> function. The positions given in that
 signal may have their selection state changed, though that is not a requirement.
-If new items added to the model via the <code>GListModel::items</code>-changed signal are
+If new items added to the model via the <code>GListModel::items-changed</code> signal are
 selected or not is up to the implementation.</p>
 
-<p>Note that items added via <code>GListModel::items</code>-changed may already be selected
-and no <code>GtkSelectionModel::selection</code>-changed will be emitted for them. So to
+<p>Note that items added via <code>GListModel::items-changed</code> may already be selected
+and no <code>GtkSelectionModel::selection-changed</code> will be emitted for them. So to
 track which items are selected, it is necessary to listen to both signals.</p>
 
 <p>Additionally, the interface can expose functionality to select and unselect
@@ -6682,7 +6682,7 @@ selecting is not supported by the model.</p>
 when an item was selected is to listen to the signals that indicate selection.</p>
 
               <div class="slightly-smaller">
-                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-SelectionModel-TreeDragDest.swift#L57-L64">Show on GitHub</a>
+                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-SelectionModel-TreeDragDest.swift#L57-L66">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -6755,6 +6755,36 @@ when an item was selected is to listen to the signals that indicate selection.</
                       </div>
                       <div class="slightly-smaller">
                         <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-SelectionModel-TreeDragDest.swift#L62">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3Gtk22SelectionModelProtocolP3rawxSv_tcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(raw:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3Gtk22SelectionModelProtocolP3rawxSv_tcfc">init(raw:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Required Initialiser for types conforming to <code>SelectionModelProtocol</code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="nf">init</span><span class="p">(</span><span class="nv">raw</span><span class="p">:</span> <span class="kt">UnsafeMutableRawPointer</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-SelectionModel-TreeDragDest.swift#L65">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6873,7 +6903,7 @@ when an item was selected is to listen to the signals that indicate selection.</
                         <p>The signal handler ID (always greater than 0 for successful connections)</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-SelectionModel-TreeDragDest.swift#L380-L382">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-SelectionModel-TreeDragDest.swift#L382-L384">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6979,7 +7009,7 @@ when an item was selected is to listen to the signals that indicate selection.</
                         <p>The signal handler ID (always greater than 0 for successful connections)</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-SelectionModel-TreeDragDest.swift#L393-L395">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-SelectionModel-TreeDragDest.swift#L395-L397">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7093,7 +7123,7 @@ Run the given callback whenever the <code>selectionChanged</code> signal is emit
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-SelectionModel-TreeDragDest.swift#L412-L426">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-SelectionModel-TreeDragDest.swift#L414-L428">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7126,7 +7156,7 @@ Run the given callback whenever the <code>selectionChanged</code> signal is emit
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-SelectionModel-TreeDragDest.swift#L429">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-SelectionModel-TreeDragDest.swift#L431">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7177,7 +7207,7 @@ interested in a few consider <code>gtk_selection_model_get_selection_in_range()<
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-SelectionModel-TreeDragDest.swift#L444-L447">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-SelectionModel-TreeDragDest.swift#L446-L449">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7204,7 +7234,7 @@ All values outside that range are undefined.</p>
 
 <p>This function is an optimization for <code>gtk_selection_model_get_selection()</code> when
 you are only interested in part of the model&rsquo;s selected state. A common use
-case is in response to the <code>GtkSelectionModel::selection</code>-changed signal.</p>
+case is in response to the <code>GtkSelectionModel::selection-changed</code> signal.</p>
 
                       </div>
                       <div class="declaration">
@@ -7217,7 +7247,7 @@ case is in response to the <code>GtkSelectionModel::selection</code>-changed sig
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-SelectionModel-TreeDragDest.swift#L456-L459">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-SelectionModel-TreeDragDest.swift#L458-L461">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7251,7 +7281,7 @@ case is in response to the <code>GtkSelectionModel::selection</code>-changed sig
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-SelectionModel-TreeDragDest.swift#L462-L465">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-SelectionModel-TreeDragDest.swift#L464-L467">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7285,7 +7315,7 @@ case is in response to the <code>GtkSelectionModel::selection</code>-changed sig
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-SelectionModel-TreeDragDest.swift#L468-L471">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-SelectionModel-TreeDragDest.swift#L470-L473">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7319,7 +7349,7 @@ case is in response to the <code>GtkSelectionModel::selection</code>-changed sig
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-SelectionModel-TreeDragDest.swift#L474-L477">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-SelectionModel-TreeDragDest.swift#L476-L479">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7353,7 +7383,7 @@ case is in response to the <code>GtkSelectionModel::selection</code>-changed sig
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-SelectionModel-TreeDragDest.swift#L480-L483">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-SelectionModel-TreeDragDest.swift#L482-L485">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7376,7 +7406,7 @@ case is in response to the <code>GtkSelectionModel::selection</code>-changed sig
                       <div class="abstract">
                         <p>Helper function for implementations of <code>GtkSelectionModel</code>.
 Call this when a the selection changes to emit the
-<code>GtkSelectionModel::selection</code>-changed signal.</p>
+<code>GtkSelectionModel::selection-changed</code> signal.</p>
 
                       </div>
                       <div class="declaration">
@@ -7389,7 +7419,7 @@ Call this when a the selection changes to emit the
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-SelectionModel-TreeDragDest.swift#L488-L491">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-SelectionModel-TreeDragDest.swift#L490-L493">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7450,7 +7480,7 @@ which would mean that every item in the set should be selected.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-SelectionModel-TreeDragDest.swift#L522-L525">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-SelectionModel-TreeDragDest.swift#L524-L527">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7484,7 +7514,7 @@ which would mean that every item in the set should be selected.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-SelectionModel-TreeDragDest.swift#L528-L531">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-SelectionModel-TreeDragDest.swift#L530-L533">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7518,7 +7548,7 @@ which would mean that every item in the set should be selected.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-SelectionModel-TreeDragDest.swift#L534-L537">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-SelectionModel-TreeDragDest.swift#L536-L539">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7552,7 +7582,7 @@ which would mean that every item in the set should be selected.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-SelectionModel-TreeDragDest.swift#L540-L543">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-SelectionModel-TreeDragDest.swift#L542-L545">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7590,7 +7620,7 @@ interested in a few consider <code>gtk_selection_model_get_selection_in_range()<
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-SelectionModel-TreeDragDest.swift#L549-L559">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-SelectionModel-TreeDragDest.swift#L551-L561">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7603,7 +7633,7 @@ interested in a few consider <code>gtk_selection_model_get_selection_in_range()<
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-17)</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-19)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>

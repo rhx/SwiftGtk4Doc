@@ -23,7 +23,7 @@
         <a class="header-link" href="../index.html">
           Gtk 4.0.0 Docs
         </a>
-         (86% documented)
+         (87% documented)
       </p>
     
       <p class="header-col--secondary">
@@ -132,7 +132,7 @@
                 <a class="nav-group-task-link" href="../Classes/Border.html">Border</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Classes.html#/s:3Gtk10BoundsIterC">BoundsIter</a>
+                <a class="nav-group-task-link" href="../Classes/BoundsIter.html">BoundsIter</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Box.html">Box</a>
@@ -6664,7 +6664,7 @@ operations, the number of pages, the current page, etc.</p>
 It will then show a dialog, let the user select a printer and
 options. When the user finished the dialog various signals will
 be emitted on the <code>GtkPrintOperation</code>, the main one being
-<code>GtkPrintOperation::draw</code>-page, which you are supposed to catch
+<code>GtkPrintOperation::draw-page</code>, which you are supposed to catch
 and render the page on the provided <code>GtkPrintContext</code> using Cairo.</p>
 <h1 id='the-high-level-printing-api' class='heading'>The high-level printing API</h1>
 
@@ -6708,7 +6708,7 @@ must connect to the preview signal. The functions
 are useful when implementing a print preview.</p>
 
               <div class="slightly-smaller">
-                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L9428-L9435">Show on GitHub</a>
+                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L9446-L9455">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -6742,7 +6742,7 @@ are useful when implementing a print preview.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L9430">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L9448">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6780,7 +6780,37 @@ are useful when implementing a print preview.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L9433">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L9451">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3Gtk22PrintOperationProtocolP3rawxSv_tcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(raw:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3Gtk22PrintOperationProtocolP3rawxSv_tcfc">init(raw:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Required Initialiser for types conforming to <code>PrintOperationProtocol</code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="nf">init</span><span class="p">(</span><span class="nv">raw</span><span class="p">:</span> <span class="kt">UnsafeMutableRawPointer</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L9454">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6911,7 +6941,7 @@ are useful when implementing a print preview.</p>
                         <p>binding reference or <code>nil</code> in case of an error</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L9914-L9938">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L9934-L9958">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6968,7 +6998,7 @@ are useful when implementing a print preview.</p>
                         <p>the value of the named property</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L9943-L9947">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L9963-L9967">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7026,7 +7056,7 @@ are useful when implementing a print preview.</p>
                         <p>the value of the named property</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L9953-L9955">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L9973-L9975">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7145,7 +7175,7 @@ are useful when implementing a print preview.</p>
                         <p>The signal handler ID (always greater than 0 for successful connections)</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L10241-L10243">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L10261-L10263">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7251,7 +7281,7 @@ are useful when implementing a print preview.</p>
                         <p>The signal handler ID (always greater than 0 for successful connections)</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L10254-L10256">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L10274-L10276">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7279,7 +7309,7 @@ with multiple widgets in it.</p>
 
 <p>The print dialog owns the returned widget, and its lifetime is not
 controlled by the application. However, the widget is guaranteed
-to stay around until the <code>GtkPrintOperation::custom</code>-widget-apply
+to stay around until the <code>GtkPrintOperation::custom-widget-apply</code>
 signal is emitted on the operation. Then you can read out any
 information you need from the widgets.</p>
 <div class="aside aside-note">
@@ -7349,7 +7379,7 @@ information you need from the widgets.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L10275">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L10295">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7373,7 +7403,7 @@ information you need from the widgets.</p>
                         <p>Emitted after the user has finished changing print settings
 in the dialog, before the actual rendering starts.</p>
 
-<p>A typical use for <code>begin</code>-print is to use the parameters from the
+<p>A typical use for <code>begin-print</code> is to use the parameters from the
 <code>GtkPrintContext</code> and paginate the document accordingly, and then
 set the number of pages with <code>gtk_print_operation_set_n_pages()</code>.</p>
 <div class="aside aside-note">
@@ -7450,7 +7480,7 @@ Run the given callback whenever the <code>beginPrint</code> signal is emitted</p
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L10288-L10302">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L10308-L10322">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7483,7 +7513,7 @@ Run the given callback whenever the <code>beginPrint</code> signal is emitted</p
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L10305">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L10325">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7504,8 +7534,8 @@ Run the given callback whenever the <code>beginPrint</code> signal is emitted</p
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Emitted right before <code>GtkPrintOperation::begin</code>-print if you added
-a custom widget in the <code>GtkPrintOperation::create</code>-custom-widget handler.
+                        <p>Emitted right before <code>GtkPrintOperation::begin-print</code> if you added
+a custom widget in the <code>GtkPrintOperation::create-custom-widget</code> handler.
 When you get this signal you should read the information from the
 custom widgets, as the widgets are not guaraneed to be around at a
 later time.</p>
@@ -7583,7 +7613,7 @@ Run the given callback whenever the <code>customWidgetApply</code> signal is emi
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L10318-L10332">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L10338-L10352">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7616,7 +7646,7 @@ Run the given callback whenever the <code>customWidgetApply</code> signal is emi
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L10335">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L10355">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7721,7 +7751,7 @@ Run the given callback whenever the <code>done</code> signal is emitted</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L10353-L10367">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L10373-L10387">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7754,7 +7784,7 @@ Run the given callback whenever the <code>done</code> signal is emitted</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L10370">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L10390">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7909,7 +7939,7 @@ Run the given callback whenever the <code>drawPage</code> signal is emitted</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L10428-L10442">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L10448-L10462">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7942,7 +7972,7 @@ Run the given callback whenever the <code>drawPage</code> signal is emitted</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L10445">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L10465">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7965,7 +7995,7 @@ Run the given callback whenever the <code>drawPage</code> signal is emitted</p>
                       <div class="abstract">
                         <p>Emitted after all pages have been rendered.
 A handler for this signal can clean up any resources that have
-been allocated in the <code>GtkPrintOperation::begin</code>-print handler.</p>
+been allocated in the <code>GtkPrintOperation::begin-print</code> handler.</p>
 <div class="aside aside-note">
     <p class="aside-title">Note</p>
     This represents the underlying <code>end-print</code> signal
@@ -8040,7 +8070,7 @@ Run the given callback whenever the <code>endPrint</code> signal is emitted</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L10456-L10470">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L10476-L10490">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8073,7 +8103,7 @@ Run the given callback whenever the <code>endPrint</code> signal is emitted</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L10473">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L10493">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8094,7 +8124,7 @@ Run the given callback whenever the <code>endPrint</code> signal is emitted</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Emitted after the <code>GtkPrintOperation::begin</code>-print signal, but before
+                        <p>Emitted after the <code>GtkPrintOperation::begin-print</code> signal, but before
 the actual rendering starts. It keeps getting emitted until a connected
 signal handler returns <code>true</code>.</p>
 
@@ -8105,7 +8135,7 @@ time. The signal handler should update the number of pages using
 has been completely paginated.</p>
 
 <p>If you don&rsquo;t need to do pagination in chunks, you can simply do
-it all in the <code>begin</code>-print handler, and set the number of pages
+it all in the <code>begin-print</code> handler, and set the number of pages
 from there.</p>
 <div class="aside aside-note">
     <p class="aside-title">Note</p>
@@ -8181,7 +8211,7 @@ Run the given callback whenever the <code>paginate</code> signal is emitted</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L10494-L10508">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L10514-L10528">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8214,7 +8244,7 @@ Run the given callback whenever the <code>paginate</code> signal is emitted</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L10511">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L10531">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8349,7 +8379,7 @@ Run the given callback whenever the <code>preview</code> signal is emitted</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L10537-L10551">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L10557-L10571">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8382,7 +8412,7 @@ Run the given callback whenever the <code>preview</code> signal is emitted</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L10554">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L10574">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8504,7 +8534,7 @@ Run the given callback whenever the <code>requestPageSetup</code> signal is emit
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L10567-L10581">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L10587-L10601">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8537,7 +8567,7 @@ Run the given callback whenever the <code>requestPageSetup</code> signal is emit
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L10584">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L10604">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8624,7 +8654,7 @@ Run the given callback whenever the <code>statusChanged</code> signal is emitted
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L10595-L10609">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L10615-L10629">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8657,7 +8687,7 @@ Run the given callback whenever the <code>statusChanged</code> signal is emitted
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L10612">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L10632">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8779,7 +8809,7 @@ Run the given callback whenever the <code>updateCustomWidget</code> signal is em
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L10625-L10639">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L10645-L10659">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8812,7 +8842,7 @@ Run the given callback whenever the <code>updateCustomWidget</code> signal is em
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L10642">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L10662">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8931,7 +8961,7 @@ Run the given callback whenever the <code>notifyAllowAsync</code> signal is emit
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L10674-L10688">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L10694-L10708">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8964,7 +8994,7 @@ Run the given callback whenever the <code>notifyAllowAsync</code> signal is emit
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L10691">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L10711">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9083,7 +9113,7 @@ Run the given callback whenever the <code>notifyCurrentPage</code> signal is emi
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L10723-L10737">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L10743-L10757">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9116,7 +9146,7 @@ Run the given callback whenever the <code>notifyCurrentPage</code> signal is emi
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L10740">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L10760">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9235,7 +9265,7 @@ Run the given callback whenever the <code>notifyCustomTabLabel</code> signal is 
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L10772-L10786">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L10792-L10806">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9268,7 +9298,7 @@ Run the given callback whenever the <code>notifyCustomTabLabel</code> signal is 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L10789">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L10809">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9387,7 +9417,7 @@ Run the given callback whenever the <code>notifyDefaultPageSetup</code> signal i
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L10821-L10835">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L10841-L10855">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9420,7 +9450,7 @@ Run the given callback whenever the <code>notifyDefaultPageSetup</code> signal i
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L10838">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L10858">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9539,7 +9569,7 @@ Run the given callback whenever the <code>notifyEmbedPageSetup</code> signal is 
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L10870-L10884">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L10890-L10904">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9572,7 +9602,7 @@ Run the given callback whenever the <code>notifyEmbedPageSetup</code> signal is 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L10887">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L10907">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9691,7 +9721,7 @@ Run the given callback whenever the <code>notifyExportFilename</code> signal is 
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L10919-L10933">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L10939-L10953">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9724,7 +9754,7 @@ Run the given callback whenever the <code>notifyExportFilename</code> signal is 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L10936">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L10956">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9843,7 +9873,7 @@ Run the given callback whenever the <code>notifyHasSelection</code> signal is em
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L10968-L10982">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L10988-L11002">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9876,7 +9906,7 @@ Run the given callback whenever the <code>notifyHasSelection</code> signal is em
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L10985">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L11005">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9995,7 +10025,7 @@ Run the given callback whenever the <code>notifyJobName</code> signal is emitted
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L11017-L11031">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L11037-L11051">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10028,7 +10058,7 @@ Run the given callback whenever the <code>notifyJobName</code> signal is emitted
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L11034">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L11054">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10147,7 +10177,7 @@ Run the given callback whenever the <code>notifyNPages</code> signal is emitted<
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L11066-L11080">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L11086-L11100">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10180,7 +10210,7 @@ Run the given callback whenever the <code>notifyNPages</code> signal is emitted<
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L11083">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L11103">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10299,7 +10329,7 @@ Run the given callback whenever the <code>notifyNPagesToPrint</code> signal is e
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L11115-L11129">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L11135-L11149">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10332,7 +10362,7 @@ Run the given callback whenever the <code>notifyNPagesToPrint</code> signal is e
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L11132">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L11152">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10451,7 +10481,7 @@ Run the given callback whenever the <code>notifyPrintSettings</code> signal is e
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L11164-L11178">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L11184-L11198">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10484,7 +10514,7 @@ Run the given callback whenever the <code>notifyPrintSettings</code> signal is e
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L11181">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L11201">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10603,7 +10633,7 @@ Run the given callback whenever the <code>notifyShowProgress</code> signal is em
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L11213-L11227">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L11233-L11247">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10636,7 +10666,7 @@ Run the given callback whenever the <code>notifyShowProgress</code> signal is em
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L11230">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L11250">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10755,7 +10785,7 @@ Run the given callback whenever the <code>notifyStatus</code> signal is emitted<
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L11262-L11276">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L11282-L11296">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10788,7 +10818,7 @@ Run the given callback whenever the <code>notifyStatus</code> signal is emitted<
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L11279">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L11299">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10907,7 +10937,7 @@ Run the given callback whenever the <code>notifyStatusString</code> signal is em
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L11311-L11325">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L11331-L11345">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10940,7 +10970,7 @@ Run the given callback whenever the <code>notifyStatusString</code> signal is em
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L11328">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L11348">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11059,7 +11089,7 @@ Run the given callback whenever the <code>notifySupportSelection</code> signal i
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L11360-L11374">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L11380-L11394">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11092,7 +11122,7 @@ Run the given callback whenever the <code>notifySupportSelection</code> signal i
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L11377">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L11397">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11211,7 +11241,7 @@ Run the given callback whenever the <code>notifyTrackPrintStatus</code> signal i
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L11409-L11423">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L11429-L11443">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11244,7 +11274,7 @@ Run the given callback whenever the <code>notifyTrackPrintStatus</code> signal i
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L11426">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L11446">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11363,7 +11393,7 @@ Run the given callback whenever the <code>notifyUnit</code> signal is emitted</p
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L11458-L11472">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L11478-L11492">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11396,7 +11426,7 @@ Run the given callback whenever the <code>notifyUnit</code> signal is emitted</p
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L11475">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L11495">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11515,7 +11545,7 @@ Run the given callback whenever the <code>notifyUseFullPage</code> signal is emi
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L11507-L11521">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L11527-L11541">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11548,7 +11578,7 @@ Run the given callback whenever the <code>notifyUseFullPage</code> signal is emi
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L11524">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L11544">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11583,8 +11613,8 @@ Run the given callback whenever the <code>notifyUseFullPage</code> signal is emi
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Cancels a running print operation. This function may
-be called from a <code>GtkPrintOperation::begin</code>-print,
-<code>GtkPrintOperation::paginate</code> or <code>GtkPrintOperation::draw</code>-page
+be called from a <code>GtkPrintOperation::begin-print</code>,
+<code>GtkPrintOperation::paginate</code> or <code>GtkPrintOperation::draw-page</code>
 signal handler to stop the currently running print
 operation.</p>
 
@@ -11599,7 +11629,7 @@ operation.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L11538-L11541">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L11558-L11561">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11639,7 +11669,7 @@ itself.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L11550-L11553">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L11570-L11573">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11674,7 +11704,7 @@ itself.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L11557-L11560">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L11577-L11580">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11695,7 +11725,7 @@ itself.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Gets the value of <code>GtkPrintOperation:embed</code>-page-setup property.</p>
+                        <p>Gets the value of <code>GtkPrintOperation:embed-page-setup</code> property.</p>
 
                       </div>
                       <div class="declaration">
@@ -11708,7 +11738,7 @@ itself.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L11563-L11566">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L11583-L11586">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11745,7 +11775,7 @@ handler. The returned <code>GError</code> will contain more details on what went
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L11572-L11577">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L11592-L11597">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11766,7 +11796,7 @@ handler. The returned <code>GError</code> will contain more details on what went
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Gets the value of <code>GtkPrintOperation:has</code>-selection property.</p>
+                        <p>Gets the value of <code>GtkPrintOperation:has-selection</code> property.</p>
 
                       </div>
                       <div class="declaration">
@@ -11779,7 +11809,7 @@ handler. The returned <code>GError</code> will contain more details on what went
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L11580-L11583">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L11600-L11603">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11805,7 +11835,7 @@ handler. The returned <code>GError</code> will contain more details on what went
 <p>Note that this value is set during print preparation phase
 (<code>GTK_PRINT_STATUS_PREPARING</code>), so this function should never be
 called before the data generation phase (<code>GTK_PRINT_STATUS_GENERATING_DATA</code>).
-You can connect to the <code>GtkPrintOperation::status</code>-changed signal
+You can connect to the <code>GtkPrintOperation::status-changed</code> signal
 and call <code>gtk_print_operation_get_n_pages_to_print()</code> when
 print status is <code>GTK_PRINT_STATUS_GENERATING_DATA</code>.
 This is typically used to track the progress of print operation.</p>
@@ -11821,7 +11851,7 @@ This is typically used to track the progress of print operation.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L11594-L11597">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L11614-L11617">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11859,7 +11889,7 @@ This is typically used to track the progress of print operation.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L11604-L11607">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L11624-L11627">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11894,7 +11924,7 @@ Also see <code>gtk_print_operation_get_status_string()</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L11611-L11614">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L11631-L11634">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11933,7 +11963,7 @@ value that is suitable for programmatic use.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L11622-L11625">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L11642-L11645">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11954,7 +11984,7 @@ value that is suitable for programmatic use.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Gets the value of <code>GtkPrintOperation:support</code>-selection property.</p>
+                        <p>Gets the value of <code>GtkPrintOperation:support-selection</code> property.</p>
 
                       </div>
                       <div class="declaration">
@@ -11967,7 +11997,7 @@ value that is suitable for programmatic use.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L11628-L11631">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L11648-L11651">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11993,12 +12023,12 @@ print settings in the print dialog, and then print the document.</p>
 
 <p>Normally that this function does not return until the rendering of all
 pages is complete. You can connect to the
-<code>GtkPrintOperation::status</code>-changed signal on <code>op</code> to obtain some
+<code>GtkPrintOperation::status-changed</code> signal on <code>op</code> to obtain some
 information about the progress of the print operation.
 Furthermore, it may use a recursive mainloop to show the print dialog.</p>
 
 <p>If you call <code>gtk_print_operation_set_allow_async()</code> or set the
-<code>GtkPrintOperation:allow</code>-async property the operation will run
+<code>GtkPrintOperation:allow-async</code> property the operation will run
 asynchronously if this is supported on the platform. The
 <code>GtkPrintOperation::done</code> signal will be emitted with the result of the
 operation when the it is done (i.e. when the dialog is canceled, or when
@@ -12055,7 +12085,7 @@ given <code>GtkPrintOperation</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L11689-L11694">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L11709-L11714">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12081,12 +12111,12 @@ print settings in the print dialog, and then print the document.</p>
 
 <p>Normally that this function does not return until the rendering of all
 pages is complete. You can connect to the
-<code>GtkPrintOperation::status</code>-changed signal on <code>op</code> to obtain some
+<code>GtkPrintOperation::status-changed</code> signal on <code>op</code> to obtain some
 information about the progress of the print operation.
 Furthermore, it may use a recursive mainloop to show the print dialog.</p>
 
 <p>If you call <code>gtk_print_operation_set_allow_async()</code> or set the
-<code>GtkPrintOperation:allow</code>-async property the operation will run
+<code>GtkPrintOperation:allow-async</code> property the operation will run
 asynchronously if this is supported on the platform. The
 <code>GtkPrintOperation::done</code> signal will be emitted with the result of the
 operation when the it is done (i.e. when the dialog is canceled, or when
@@ -12143,7 +12173,7 @@ given <code>GtkPrintOperation</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L11751-L11756">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L11771-L11776">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12179,7 +12209,7 @@ some platforms may not allow asynchronous operation.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L11761-L11764">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L11781-L11784">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12218,7 +12248,7 @@ the user will be able to select to print only the current page.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L11772-L11775">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L11792-L11795">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12252,7 +12282,7 @@ the user will be able to select to print only the current page.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L11778-L11781">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L11798-L11801">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12277,7 +12307,7 @@ the user will be able to select to print only the current page.</p>
 
 <p>This page setup will be used by <code>gtk_print_operation_run()</code>,
 but it can be overridden on a per-page basis by connecting
-to the <code>GtkPrintOperation::request</code>-page-setup signal.</p>
+to the <code>GtkPrintOperation::request-page-setup</code> signal.</p>
 
                       </div>
                       <div class="declaration">
@@ -12290,7 +12320,7 @@ to the <code>GtkPrintOperation::request</code>-page-setup signal.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L11788-L11791">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L11808-L11811">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12315,7 +12345,7 @@ to the <code>GtkPrintOperation::request</code>-page-setup signal.</p>
 
 <p>This page setup will be used by <code>gtk_print_operation_run()</code>,
 but it can be overridden on a per-page basis by connecting
-to the <code>GtkPrintOperation::request</code>-page-setup signal.</p>
+to the <code>GtkPrintOperation::request-page-setup</code> signal.</p>
 
                       </div>
                       <div class="declaration">
@@ -12328,7 +12358,7 @@ to the <code>GtkPrintOperation::request</code>-page-setup signal.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L11797-L11800">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L11817-L11820">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12366,7 +12396,7 @@ be used for drawing page in another thread.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L11807-L11810">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L11827-L11830">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12401,7 +12431,7 @@ Selected page setup is stored as default page setup in <code>GtkPrintOperation</
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L11814-L11817">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L11834-L11837">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12442,7 +12472,7 @@ of printers in the print dialog.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L11827-L11830">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L11847-L11850">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12467,7 +12497,7 @@ of printers in the print dialog.</p>
 
 <p>Application has to set number of pages to which the selection
 will draw by <code>gtk_print_operation_set_n_pages()</code> in a callback of
-<code>GtkPrintOperation::begin</code>-print.</p>
+<code>GtkPrintOperation::begin-print</code>.</p>
 
                       </div>
                       <div class="declaration">
@@ -12480,7 +12510,7 @@ will draw by <code>gtk_print_operation_set_n_pages()</code> in a callback of
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L11837-L11840">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L11857-L11860">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12518,7 +12548,7 @@ numbering successive print jobs.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L11847-L11850">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L11867-L11870">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12543,12 +12573,12 @@ numbering successive print jobs.</p>
 
 <p>This must be set to a positive number
 before the rendering starts. It may be set in a
-<code>GtkPrintOperation::begin</code>-print signal handler.</p>
+<code>GtkPrintOperation::begin-print</code> signal handler.</p>
 
 <p>Note that the page numbers passed to the
-<code>GtkPrintOperation::request</code>-page-setup
-and <code>GtkPrintOperation::draw</code>-page signals are 0-based, i.e. if
-the user chooses to print all pages, the last <code>draw</code>-page signal
+<code>GtkPrintOperation::request-page-setup</code>
+and <code>GtkPrintOperation::draw-page</code> signals are 0-based, i.e. if
+the user chooses to print all pages, the last <code>draw-page</code> signal
 will be for page <code>n_pages</code> - 1.</p>
 
                       </div>
@@ -12562,7 +12592,7 @@ will be for page <code>n_pages</code> - 1.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L11863-L11866">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L11883-L11886">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12598,7 +12628,7 @@ see <code>gtk_print_operation_run()</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L11871-L11874">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L11891-L11894">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12634,7 +12664,7 @@ see <code>gtk_print_operation_run()</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L11878-L11881">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L11898-L11901">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12669,7 +12699,7 @@ progress dialog during the print operation.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L11885-L11888">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L11905-L11908">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12703,7 +12733,7 @@ progress dialog during the print operation.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L11891-L11894">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L11911-L11914">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12743,7 +12773,7 @@ not be enabled unless needed.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L11903-L11906">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L11923-L11926">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12779,7 +12809,7 @@ units of <code>unit</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L11911-L11914">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L11931-L11934">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12818,7 +12848,7 @@ imageable area (i.e. inside the margins).</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L11922-L11925">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L11942-L11945">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12853,7 +12883,7 @@ imageable area (i.e. inside the margins).</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L11928-L11943">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L11948-L11963">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12874,7 +12904,7 @@ imageable area (i.e. inside the margins).</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Gets the value of <code>GtkPrintOperation:embed</code>-page-setup property.</p>
+                        <p>Gets the value of <code>GtkPrintOperation:embed-page-setup</code> property.</p>
 
                       </div>
                       <div class="declaration">
@@ -12887,7 +12917,7 @@ imageable area (i.e. inside the margins).</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L11946-L11957">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L11966-L11977">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12908,7 +12938,7 @@ imageable area (i.e. inside the margins).</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Gets the value of <code>GtkPrintOperation:has</code>-selection property.</p>
+                        <p>Gets the value of <code>GtkPrintOperation:has-selection</code> property.</p>
 
                       </div>
                       <div class="declaration">
@@ -12921,7 +12951,7 @@ imageable area (i.e. inside the margins).</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L11962-L11976">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L11982-L11996">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12961,7 +12991,7 @@ the operation status then tracks the print job status on the printer.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L11985-L11997">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L12005-L12017">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12987,7 +13017,7 @@ the operation status then tracks the print job status on the printer.</p>
 <p>Note that this value is set during print preparation phase
 (<code>GTK_PRINT_STATUS_PREPARING</code>), so this function should never be
 called before the data generation phase (<code>GTK_PRINT_STATUS_GENERATING_DATA</code>).
-You can connect to the <code>GtkPrintOperation::status</code>-changed signal
+You can connect to the <code>GtkPrintOperation::status-changed</code> signal
 and call <code>gtk_print_operation_get_n_pages_to_print()</code> when
 print status is <code>GTK_PRINT_STATUS_GENERATING_DATA</code>.
 This is typically used to track the progress of print operation.</p>
@@ -13003,7 +13033,7 @@ This is typically used to track the progress of print operation.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L12008-L12022">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L12028-L12042">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -13041,7 +13071,7 @@ This is typically used to track the progress of print operation.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L12029-L12045">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L12049-L12065">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -13075,7 +13105,7 @@ This is typically used to track the progress of print operation.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L12048-L12055">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L12068-L12075">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -13114,7 +13144,7 @@ value that is suitable for programmatic use.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L12063-L12074">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L12083-L12094">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -13135,7 +13165,7 @@ value that is suitable for programmatic use.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Gets the value of <code>GtkPrintOperation:support</code>-selection property.</p>
+                        <p>Gets the value of <code>GtkPrintOperation:support-selection</code> property.</p>
 
                       </div>
                       <div class="declaration">
@@ -13148,7 +13178,7 @@ value that is suitable for programmatic use.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L12077-L12087">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L12097-L12107">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -13182,7 +13212,7 @@ value that is suitable for programmatic use.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L12089-L12094">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L12109-L12114">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -13195,7 +13225,7 @@ value that is suitable for programmatic use.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-17)</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-19)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>

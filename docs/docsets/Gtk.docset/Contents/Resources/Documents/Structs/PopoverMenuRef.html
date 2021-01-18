@@ -23,7 +23,7 @@
         <a class="header-link" href="../index.html">
           Gtk 4.0.0 Docs
         </a>
-         (86% documented)
+         (87% documented)
       </p>
     
       <p class="header-col--secondary">
@@ -132,7 +132,7 @@
                 <a class="nav-group-task-link" href="../Classes/Border.html">Border</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Classes.html#/s:3Gtk10BoundsIterC">BoundsIter</a>
+                <a class="nav-group-task-link" href="../Classes/BoundsIter.html">BoundsIter</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Box.html">Box</a>
@@ -6657,11 +6657,11 @@ use a plain <code>GtkPopover</code>.</p>
 <h2 id='menu-models' class='heading'>Menu models</h2>
 
 <p>The XML format understood by <code>GtkBuilder</code> for <code>GMenuModel</code> consists
-of a toplevel <code>&lt;menu&gt;</code> element, which contains one or more <code>&lt;item&gt;</code>
-elements. Each <code>&lt;item&gt;</code> element contains <code>&lt;attribute&gt;</code> and <code>&lt;link&gt;</code>
-elements with a mandatory name attribute. <code>&lt;link&gt;</code> elements have the
-same content model as <code>&lt;menu&gt;</code>. Instead of <code>&lt;link name=&quot;submenu&gt;</code> or
-<code>&lt;link name=&quot;section&quot;&gt;</code>, you can use <code>&lt;submenu&gt;</code> or <code>&lt;section&gt;</code>
+of a toplevel <code>&amp;lt;menu&amp;gt;</code> element, which contains one or more <code>&amp;lt;item&amp;gt;</code>
+elements. Each <code>&amp;lt;item&amp;gt;</code> element contains <code>&amp;lt;attribute&amp;gt;</code> and <code>&amp;lt;link&amp;gt;</code>
+elements with a mandatory name attribute. <code>&amp;lt;link&amp;gt;</code> elements have the
+same content model as <code>&amp;lt;menu&amp;gt;</code>. Instead of <code>&amp;lt;link name=&quot;submenu&amp;gt;</code> or
+<code>&amp;lt;link name=&quot;section&quot;&amp;gt;</code>, you can use <code>&amp;lt;submenu&amp;gt;</code> or <code>&amp;lt;section&amp;gt;</code>
 elements.</p>
 <pre class="highlight swift"><code><span class="o">&lt;</span><span class="n">menu</span> <span class="n">id</span><span class="o">=</span><span class="err">'</span><span class="n">app</span><span class="o">-</span><span class="n">menu</span><span class="err">'</span><span class="o">&gt;</span>
   <span class="o">&lt;</span><span class="n">section</span><span class="o">&gt;</span>
@@ -6682,7 +6682,7 @@ elements.</p>
 </code></pre>
 
 <p>Attribute values can be translated using gettext, like other <code>GtkBuilder</code>
-content. <code>&lt;attribute&gt;</code> elements can be marked for translation with a
+content. <code>&amp;lt;attribute&amp;gt;</code> elements can be marked for translation with a
 <code>translatable=&quot;yes&quot;</code> attribute. It is also possible to specify message
 context and translator comments, using the context and comments attributes.
 To make use of this, the <code>GtkBuilder</code> must have been given the gettext
@@ -6702,7 +6702,7 @@ domain to use.</p>
  This is mainly useful for exported menus, see <code>gtk_application_set_menubar()</code>.</li>
 <li>&ldquo;custom&rdquo;: a string used to match against the ID of a custom child added
  with <code>gtk_popover_menu_add_child()</code>, <code>gtk_popover_menu_bar_add_child()</code>, or
- in the ui file with <code>&lt;child type=&quot;ID&quot;&gt;</code>.</li>
+ in the ui file with <code>&amp;lt;child type=&quot;ID&quot;&amp;gt;</code>.</li>
 </ul>
 
 <p>The following attributes are used when constructing sections:</p>
@@ -6740,7 +6740,7 @@ items use the <code>GTK_ACCESSIBLE_ROLE_MENU_ITEM</code>, <code>GTK_ACCESSIBLE_R
 action they are connected to.</p>
 
               <div class="slightly-smaller">
-                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L7015-L7019">Show on GitHub</a>
+                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L7029-L7033">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -6777,7 +6777,7 @@ action they are connected to.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L7018">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L7032">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6821,7 +6821,7 @@ action they are connected to.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L7023-L7025">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L7037-L7039">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6852,7 +6852,7 @@ action they are connected to.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L7028-L7030">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L7042-L7044">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6883,7 +6883,7 @@ action they are connected to.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L7033-L7036">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L7047-L7050">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6914,7 +6914,7 @@ action they are connected to.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L7039-L7042">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L7053-L7056">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6945,7 +6945,7 @@ action they are connected to.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L7045-L7048">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L7059-L7062">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6976,7 +6976,7 @@ action they are connected to.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L7051-L7054">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L7065-L7068">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7007,7 +7007,7 @@ action they are connected to.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L7057-L7059">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L7071-L7073">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7038,7 +7038,7 @@ action they are connected to.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L7062">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L7076">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7070,7 +7070,7 @@ action they are connected to.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L7066-L7068">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L7080-L7082">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7102,7 +7102,7 @@ action they are connected to.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L7072-L7074">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L7086-L7088">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7134,7 +7134,7 @@ action they are connected to.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L7078-L7080">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L7092-L7094">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7166,7 +7166,7 @@ action they are connected to.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L7084-L7086">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L7098-L7100">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7198,7 +7198,7 @@ action they are connected to.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L7090-L7092">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L7104-L7106">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7244,7 +7244,7 @@ to control this.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L7108-L7111">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L7122-L7125">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7286,7 +7286,7 @@ nested submenus instead of the default sliding submenus.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L7125-L7128">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L7139-L7142">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7330,7 +7330,7 @@ to control this.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L7143-L7146">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L7157-L7160">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7372,7 +7372,7 @@ nested submenus instead of the default sliding submenus.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L7160-L7163">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L7174-L7177">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7385,7 +7385,7 @@ nested submenus instead of the default sliding submenus.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-17)</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-19)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>

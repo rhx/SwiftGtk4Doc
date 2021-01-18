@@ -23,7 +23,7 @@
         <a class="header-link" href="../index.html">
           Gtk 4.0.0 Docs
         </a>
-         (86% documented)
+         (87% documented)
       </p>
     
       <p class="header-col--secondary">
@@ -132,7 +132,7 @@
                 <a class="nav-group-task-link" href="../Classes/Border.html">Border</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Classes.html#/s:3Gtk10BoundsIterC">BoundsIter</a>
+                <a class="nav-group-task-link" href="../Classes/BoundsIter.html">BoundsIter</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Box.html">Box</a>
@@ -6651,14 +6651,14 @@ using multiple columns with headers.</p>
 
 <p>GtkColumnView uses the factories of its columns to generate a cell widget for
 each column, for each visible item and displays them together as the row for
-this item. The <code>GtkColumnView:show</code>-row-separators and
-<code>GtkColumnView:show</code>-column-separators properties offer a simple way to display
+this item. The <code>GtkColumnView:show-row-separators</code> and
+<code>GtkColumnView:show-column-separators</code> properties offer a simple way to display
 separators between the rows or columns.</p>
 
 <p>GtkColumnView allows the user to select items according to the selection
 characteristics of the model. For models that allow multiple selected items,
 it is possible to turn on <em>rubberband selection</em>, using
-<code>GtkColumnView:enable</code>-rubberband.</p>
+<code>GtkColumnView:enable-rubberband</code>.</p>
 
 <p>The column view supports sorting that can be customized by the user by
 clicking on column headers. To set this up, the <code>GtkSorter</code> returned by
@@ -6690,16 +6690,16 @@ properties.</p>
 </code></pre>
 
 <p>GtkColumnView uses a single CSS node named columnview. It may carry the
-.column-separators style class, when <code>GtkColumnView:show</code>-column-separators
+.column-separators style class, when <code>GtkColumnView:show-column-separators</code>
 property is set. Header widets appear below a node with name header.
 The rows are contained in a GtkListView widget, so there is a listview
 node with the same structure as for a standalone GtkListView widget. If
-<code>GtkColumnView:show</code>-row-separators is set, it will be passed on to the
+<code>GtkColumnView:show-row-separators</code> is set, it will be passed on to the
 list view, causing its CSS node to carry the .separators style class.
 For rubberband selection, a node with name rubberband is used.</p>
 
 <p>The main columnview node may also carry style classes to select
-the style of <a href="ListContainers.html%60list%60-styles">list presentation</a>:
+the style of <a href="ListContainers.html%60list-styles%60">list presentation</a>:
 .rich-list, .navigation-sidebar or .data-table.</p>
 <h1 id='accessibility' class='heading'>Accessibility</h1>
 
@@ -6709,7 +6709,7 @@ are using the <code>GTK_ACCESSIBLE_ROLE_ROW</code> role, and individual cells ar
 the <code>GTK_ACCESSIBLE_ROLE_GRID_CELL</code> role</p>
 
               <div class="slightly-smaller">
-                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L20414-L20421">Show on GitHub</a>
+                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L20458-L20467">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -6743,7 +6743,7 @@ the <code>GTK_ACCESSIBLE_ROLE_GRID_CELL</code> role</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L20416">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L20460">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6781,7 +6781,37 @@ the <code>GTK_ACCESSIBLE_ROLE_GRID_CELL</code> role</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L20419">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L20463">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3Gtk18ColumnViewProtocolP3rawxSv_tcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(raw:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3Gtk18ColumnViewProtocolP3rawxSv_tcfc">init(raw:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Required Initialiser for types conforming to <code>ColumnViewProtocol</code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="nf">init</span><span class="p">(</span><span class="nv">raw</span><span class="p">:</span> <span class="kt">UnsafeMutableRawPointer</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L20466">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6912,7 +6942,7 @@ the <code>GTK_ACCESSIBLE_ROLE_GRID_CELL</code> role</p>
                         <p>binding reference or <code>nil</code> in case of an error</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L20932-L20956">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L20978-L21002">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6969,7 +6999,7 @@ the <code>GTK_ACCESSIBLE_ROLE_GRID_CELL</code> role</p>
                         <p>the value of the named property</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L20961-L20965">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L21007-L21011">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7027,7 +7057,7 @@ the <code>GTK_ACCESSIBLE_ROLE_GRID_CELL</code> role</p>
                         <p>the value of the named property</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L20971-L20973">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L21017-L21019">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7146,7 +7176,7 @@ the <code>GTK_ACCESSIBLE_ROLE_GRID_CELL</code> role</p>
                         <p>The signal handler ID (always greater than 0 for successful connections)</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L21218-L21220">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L21264-L21266">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7252,7 +7282,7 @@ the <code>GTK_ACCESSIBLE_ROLE_GRID_CELL</code> role</p>
                         <p>The signal handler ID (always greater than 0 for successful connections)</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L21231-L21233">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L21277-L21279">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7352,7 +7382,7 @@ Run the given callback whenever the <code>activate</code> signal is emitted</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L21247-L21261">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L21293-L21307">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7385,7 +7415,7 @@ Run the given callback whenever the <code>activate</code> signal is emitted</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L21264">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L21310">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7504,7 +7534,7 @@ Run the given callback whenever the <code>notifyColumns</code> signal is emitted
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L21296-L21310">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L21342-L21356">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7537,7 +7567,7 @@ Run the given callback whenever the <code>notifyColumns</code> signal is emitted
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L21313">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L21359">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7656,7 +7686,7 @@ Run the given callback whenever the <code>notifyEnableRubberband</code> signal i
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L21345-L21359">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L21391-L21405">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7689,7 +7719,7 @@ Run the given callback whenever the <code>notifyEnableRubberband</code> signal i
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L21362">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L21408">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7808,7 +7838,7 @@ Run the given callback whenever the <code>notifyModel</code> signal is emitted</
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L21394-L21408">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L21440-L21454">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7841,7 +7871,7 @@ Run the given callback whenever the <code>notifyModel</code> signal is emitted</
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L21411">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L21457">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7960,7 +7990,7 @@ Run the given callback whenever the <code>notifyReorderable</code> signal is emi
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L21443-L21457">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L21489-L21503">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7993,7 +8023,7 @@ Run the given callback whenever the <code>notifyReorderable</code> signal is emi
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L21460">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L21506">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8112,7 +8142,7 @@ Run the given callback whenever the <code>notifyShowColumnSeparators</code> sign
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L21492-L21506">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L21538-L21552">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8145,7 +8175,7 @@ Run the given callback whenever the <code>notifyShowColumnSeparators</code> sign
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L21509">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L21555">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8264,7 +8294,7 @@ Run the given callback whenever the <code>notifyShowRowSeparators</code> signal 
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L21541-L21555">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L21587-L21601">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8297,7 +8327,7 @@ Run the given callback whenever the <code>notifyShowRowSeparators</code> signal 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L21558">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L21604">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8416,7 +8446,7 @@ Run the given callback whenever the <code>notifySingleClickActivate</code> signa
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L21590-L21604">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L21636-L21650">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8449,7 +8479,7 @@ Run the given callback whenever the <code>notifySingleClickActivate</code> signa
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L21607">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L21653">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8568,7 +8598,7 @@ Run the given callback whenever the <code>notifySorter</code> signal is emitted<
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L21639-L21653">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L21685-L21699">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8601,7 +8631,7 @@ Run the given callback whenever the <code>notifySorter</code> signal is emitted<
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L21656">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L21702">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8648,7 +8678,7 @@ Run the given callback whenever the <code>notifySorter</code> signal is emitted<
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L21666-L21669">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L21712-L21715">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8671,7 +8701,7 @@ Run the given callback whenever the <code>notifySorter</code> signal is emitted<
                       <div class="abstract">
                         <p>Gets the list of columns in this column view. This list is constant over
 the lifetime of <code>self</code> and can be used to monitor changes to the columns
-of <code>self</code> by connecting to the <code>GListModel:items</code>-changed signal.</p>
+of <code>self</code> by connecting to the <code>GListModel:items-changed</code> signal.</p>
 
                       </div>
                       <div class="declaration">
@@ -8684,7 +8714,7 @@ of <code>self</code> by connecting to the <code>GListModel:items</code>-changed 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L21674-L21677">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L21720-L21723">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8718,7 +8748,7 @@ of <code>self</code> by connecting to the <code>GListModel:items</code>-changed 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L21680-L21683">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L21726-L21729">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8752,7 +8782,7 @@ of <code>self</code> by connecting to the <code>GListModel:items</code>-changed 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L21686-L21689">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L21732-L21735">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8786,7 +8816,7 @@ of <code>self</code> by connecting to the <code>GListModel:items</code>-changed 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L21692-L21695">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L21738-L21741">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8821,7 +8851,7 @@ between columns.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L21699-L21702">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L21745-L21748">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8856,7 +8886,7 @@ between rows.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L21706-L21709">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L21752-L21755">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8891,7 +8921,7 @@ selected on hover.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L21713-L21716">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L21759-L21762">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8942,7 +8972,7 @@ per-column sorting.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L21738-L21741">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L21784-L21787">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8978,7 +9008,7 @@ per-column sorting.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L21746-L21749">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L21792-L21795">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9012,7 +9042,7 @@ per-column sorting.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L21752-L21755">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L21798-L21801">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9046,7 +9076,7 @@ per-column sorting.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L21758-L21761">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L21804-L21807">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9080,7 +9110,7 @@ per-column sorting.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L21764-L21767">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L21810-L21813">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9114,7 +9144,7 @@ per-column sorting.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L21769-L21772">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L21815-L21818">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9148,7 +9178,7 @@ per-column sorting.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L21775-L21778">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L21821-L21824">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9183,7 +9213,7 @@ between columns.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L21782-L21785">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L21828-L21831">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9218,7 +9248,7 @@ between rows.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L21789-L21792">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L21835-L21838">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9253,7 +9283,7 @@ selected on hover.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L21796-L21799">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L21842-L21845">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9296,7 +9326,7 @@ on <code>column</code> to associate a sorter with the column.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L21811-L21814">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L21857-L21860">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9339,7 +9369,7 @@ on <code>column</code> to associate a sorter with the column.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L21825-L21828">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L21871-L21874">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9373,7 +9403,7 @@ on <code>column</code> to associate a sorter with the column.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L21830-L21838">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L21876-L21884">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9407,7 +9437,7 @@ on <code>column</code> to associate a sorter with the column.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L21841-L21851">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L21887-L21897">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9441,7 +9471,7 @@ on <code>column</code> to associate a sorter with the column.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L21854-L21864">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L21900-L21910">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9475,7 +9505,7 @@ on <code>column</code> to associate a sorter with the column.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L21867-L21877">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L21913-L21923">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9510,7 +9540,7 @@ between columns.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L21881-L21893">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L21927-L21939">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9545,7 +9575,7 @@ between rows.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L21897-L21909">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L21943-L21955">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9580,7 +9610,7 @@ selected on hover.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L21913-L21925">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L21959-L21971">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9614,7 +9644,7 @@ selected on hover.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L21928-L21953">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L21974-L21999">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9627,7 +9657,7 @@ selected on hover.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-17)</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-19)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
