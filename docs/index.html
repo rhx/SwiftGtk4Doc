@@ -20,9 +20,9 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="index.html">
-          Gtk 4.0.0 Docs
+          Gtk 4.2.1 Docs
         </a>
-         (87% documented)
+         (95% documented)
       </p>
     
       <p class="header-col--secondary">
@@ -647,6 +647,9 @@
                 <a class="nav-group-task-link" href="Classes/PageSetup.html">PageSetup</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/PageSetupUnixDialog.html">PageSetupUnixDialog</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Classes/Paned.html">Paned</a>
               </li>
               <li class="nav-group-task">
@@ -671,7 +674,13 @@
                 <a class="nav-group-task-link" href="Classes/PopoverMenuBar.html">PopoverMenuBar</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/PrintBackend.html">PrintBackend</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Classes/PrintContext.html">PrintContext</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/PrintJob.html">PrintJob</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Classes/PrintOperation.html">PrintOperation</a>
@@ -681,6 +690,12 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Classes/PrintSettings.html">PrintSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/PrintUnixDialog.html">PrintUnixDialog</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/Printer.html">Printer</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Classes/ProgressBar.html">ProgressBar</a>
@@ -744,9 +759,6 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Classes/Settings.html">Settings</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Classes/SettingsValue.html">SettingsValue</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Classes/Shortcut.html">Shortcut</a>
@@ -846,9 +858,6 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Classes/Text.html">Text</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Classes/TextBTree.html">TextBTree</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Classes/TextBuffer.html">TextBuffer</a>
@@ -2091,6 +2100,12 @@
                 <a class="nav-group-task-link" href="Enums/PageSetupSignalName.html">PageSetupSignalName</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/PageSetupUnixDialogPropertyName.html">PageSetupUnixDialogPropertyName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/PageSetupUnixDialogSignalName.html">PageSetupUnixDialogSignalName</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Enums/PanedPropertyName.html">PanedPropertyName</a>
               </li>
               <li class="nav-group-task">
@@ -2130,6 +2145,12 @@
                 <a class="nav-group-task-link" href="Enums/PrintContextSignalName.html">PrintContextSignalName</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/PrintJobPropertyName.html">PrintJobPropertyName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/PrintJobSignalName.html">PrintJobSignalName</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Enums/PrintOperationPreviewSignalName.html">PrintOperationPreviewSignalName</a>
               </li>
               <li class="nav-group-task">
@@ -2140,6 +2161,18 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Enums/PrintSettingsSignalName.html">PrintSettingsSignalName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/PrintUnixDialogPropertyName.html">PrintUnixDialogPropertyName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/PrintUnixDialogSignalName.html">PrintUnixDialogSignalName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/PrinterPropertyName.html">PrinterPropertyName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/PrinterSignalName.html">PrinterSignalName</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Enums/ProgressBarPropertyName.html">ProgressBarPropertyName</a>
@@ -2923,7 +2956,7 @@
                 <a class="nav-group-task-link" href="Functions.html#/s:3Gtk16disableSetlocaleyyF">disableSetlocale()</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Functions.html#/s:3Gtk27distributeNaturalAllocation10extraSpace15nRequestedSizes5sizesS2i_SixtAA0G12SizeProtocolRzlF">distributeNaturalAllocation(extraSpace:nRequestedSizes:sizes:)</a>
+                <a class="nav-group-task-link" href="Functions.html#/s:3Gtk27distributeNaturalAllocation10extraSpace15nRequestedSizes5sizesS2i_SiSpySo01_aG4SizeVGSgtF">distributeNaturalAllocation(extraSpace:nRequestedSizes:sizes:)</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Functions.html#/s:3Gtk27editableDelegateGetProperty6object6propId5value5pspecSbx_Siq0_q_t10GLibObject0L8ProtocolRzAG09ParamSpecM0R_AG05ValueM0R0_r1_lF">editableDelegateGetProperty(object:propId:value:pspec:)</a>
@@ -2933,6 +2966,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Functions.html#/s:3Gtk25editableInstallProperties11objectClass9firstPropSix_Sit10GLibObject0jF8ProtocolRzlF">editableInstallProperties(objectClass:firstProp:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Functions.html#/s:3Gtk17enumeratePrinters4func4data7destroy4waitys5Int32VSpySo01_A7PrinterVGSg_SvSgtXCSg_AMyAMXCSgSbtF">enumeratePrinters(func:data:destroy:wait:)</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Functions.html#/s:3Gtk21fileChooserErrorQuarks6UInt32VyF">fileChooserErrorQuark()</a>
@@ -2968,9 +3004,6 @@
                 <a class="nav-group-task-link" href="Functions.html#/s:3Gtk19iconThemeErrorQuarks6UInt32VyF">iconThemeErrorQuark()</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Functions.html#/s:3Gtk13imModulesInityyF">imModulesInit()</a>
-              </li>
-              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Functions.html#/s:3Gtk9initCheckSbyF">initCheck()</a>
               </li>
               <li class="nav-group-task">
@@ -2981,6 +3014,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Functions.html#/s:3Gtk12nativeGetFor7surfaceAA9NativeRefVSgx_t3Gdk15SurfaceProtocolRzlF">nativeGetFor(surface:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Functions.html#/s:3Gtk19orderingFromCmpfunc13cmpfuncResultSo0A8OrderingaSi_tF">orderingFromCmpfunc(cmpfuncResult:)</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Functions.html#/s:3Gtk19paperSizeGetDefaultSSSgyF">paperSizeGetDefault()</a>
@@ -4062,6 +4098,9 @@
                 <a class="nav-group-task-link" href="Protocols/PageSetupProtocol.html">PageSetupProtocol</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/PageSetupUnixDialogProtocol.html">PageSetupUnixDialogProtocol</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Protocols/PanedProtocol.html">PanedProtocol</a>
               </li>
               <li class="nav-group-task">
@@ -4095,7 +4134,13 @@
                 <a class="nav-group-task-link" href="Protocols/PopoverProtocol.html">PopoverProtocol</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/PrintBackendProtocol.html">PrintBackendProtocol</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Protocols/PrintContextProtocol.html">PrintContextProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/PrintJobProtocol.html">PrintJobProtocol</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Protocols/PrintOperationClassProtocol.html">PrintOperationClassProtocol</a>
@@ -4111,6 +4156,12 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Protocols/PrintSettingsProtocol.html">PrintSettingsProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/PrintUnixDialogProtocol.html">PrintUnixDialogProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/PrinterProtocol.html">PrinterProtocol</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Protocols/ProgressBarProtocol.html">ProgressBarProtocol</a>
@@ -4198,9 +4249,6 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Protocols/SettingsProtocol.html">SettingsProtocol</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Protocols/SettingsValueProtocol.html">SettingsValueProtocol</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Protocols/ShortcutActionClassProtocol.html">ShortcutActionClassProtocol</a>
@@ -4360,9 +4408,6 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Protocols/SwitchProtocol.html">SwitchProtocol</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Protocols/TextBTreeProtocol.html">TextBTreeProtocol</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Protocols/TextBufferClassProtocol.html">TextBufferClassProtocol</a>
@@ -5519,6 +5564,9 @@
                 <a class="nav-group-task-link" href="Structs/PageSetupRef.html">PageSetupRef</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/PageSetupUnixDialogRef.html">PageSetupUnixDialogRef</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Structs/PanedRef.html">PanedRef</a>
               </li>
               <li class="nav-group-task">
@@ -5558,7 +5606,16 @@
                 <a class="nav-group-task-link" href="Structs/PopoverRef.html">PopoverRef</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/PrintBackendRef.html">PrintBackendRef</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/PrintCapabilities.html">PrintCapabilities</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Structs/PrintContextRef.html">PrintContextRef</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/PrintJobRef.html">PrintJobRef</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Structs/PrintOperationClassRef.html">PrintOperationClassRef</a>
@@ -5574,6 +5631,12 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Structs/PrintSettingsRef.html">PrintSettingsRef</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/PrintUnixDialogRef.html">PrintUnixDialogRef</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/PrinterRef.html">PrinterRef</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Structs/ProgressBarRef.html">ProgressBarRef</a>
@@ -5661,9 +5724,6 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Structs/SettingsRef.html">SettingsRef</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Structs/SettingsValueRef.html">SettingsValueRef</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Structs/ShortcutActionClassRef.html">ShortcutActionClassRef</a>
@@ -5832,9 +5892,6 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Structs/SwitchRef.html">SwitchRef</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Structs/TextBTreeRef.html">TextBTreeRef</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Structs/TextBufferClassRef.html">TextBufferClassRef</a>
@@ -6451,6 +6508,9 @@
                 <a class="nav-group-task-link" href="Typealiases.html#/s:3Gtk10PrintErrora">PrintError</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Typealiases.html#/s:3Gtk20PrintJobCompleteFunca">PrintJobCompleteFunc</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Typealiases.html#/s:3Gtk20PrintOperationActiona">PrintOperationAction</a>
               </li>
               <li class="nav-group-task">
@@ -6467,6 +6527,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Typealiases.html#/s:3Gtk11PrintStatusa">PrintStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Typealiases.html#/s:3Gtk11PrinterFunca">PrinterFunc</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Typealiases.html#/s:3Gtk16PropagationLimita">PropagationLimit</a>
@@ -6646,7 +6709,7 @@ For up to date (auto-generated) reference documentation, see <a href="https://rh
 <img src="https://github.com/rhx/SwiftGtk/workflows/Ubuntu%2018.04/badge.svg" alt="Ubuntu 18.04 build"></p>
 <h2 id='what-is-new' class='heading'>What is new?</h2>
 
-<p>Experimental support for gtk 4 was added via the <code>gtk4</code> branch.</p>
+<p>Support for gtk 4 was added via the <code>gtk4</code> branch.</p>
 
 <p>Version 12 of gir2swift pulls in <a href="https://github.com/rhx/gir2swift/pull/10">PR#10</a>, addressing several issues:</p>
 
@@ -6750,24 +6813,24 @@ open MyPackage.xcodeproj
 
 <p>To build, you need at least Swift 5.2 (Swift 5.3 is required for <code>gtk4</code>), download from <a href="https://swift.org/download/">https://swift.org/download/</a> &ndash; if you are using macOS, make sure you have the command line tools installed as well).  Test that your compiler works using <code>swift --version</code>, which should give you something like</p>
 <pre class="highlight plaintext"><code>$ swift --version
-Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)
-Target: x86_64-apple-darwin20.3.0
+Apple Swift version 5.4 (swiftlang-1205.0.26.9 clang-1205.0.19.55)
+Target: x86_64-apple-darwin20.5.0
 </code></pre>
 
 <p>on macOS, or on Linux you should get something like:</p>
 <pre class="highlight plaintext"><code>$ swift --version
-Swift version 5.3.2 (swift-5.3.2-RELEASE)
+Swift version 5.4 (swift-5.4-RELEASE)
 Target: x86_64-unknown-linux-gnu
 </code></pre>
 <h3 id='gtk-3-22-or-higher' class='heading'>Gtk 3.22 or higher</h3>
 
-<p>The Swift wrappers have been tested with glib-2.56, 2.58, 2.60, 2.62, and 2.64, and gdk/gtk 3.22, 3.24, and 4.0 on the <code>gtk4</code> branch.  They should work with higher versions, but YMMV.  Also make sure you have <code>gobject-introspection</code> and its <code>.gir</code> files installed.</p>
+<p>The Swift wrappers have been tested with glib-2.56, 2.58, 2.60, 2.62, 2.64, 2.66 and 2.68, and gdk/gtk 3.22, 3.24 as well as 4.0 and 4.2 on the <code>gtk4</code> branch.  They should work with higher versions, but YMMV.  Also make sure you have <code>gobject-introspection</code> and its <code>.gir</code> files installed.</p>
 <h4 id='linux' class='heading'>Linux</h4>
 <h5 id='ubuntu' class='heading'>Ubuntu</h5>
 
 <p>On Ubuntu 20.04 and 18.04, you can use the gtk that comes with the distribution.  Just install with the <code>apt</code> package manager:</p>
 <pre class="highlight plaintext"><code>sudo apt update
-sudo apt install libgtk-3-dev gir1.2-gtksource-3.0 gobject-introspection libgirepository1.0-dev libxml2-dev
+sudo apt install libgtk-3-dev gir1.2-gtksource-3.0 gobject-introspection libgirepository1.0-dev libxml2-dev jq
 </code></pre>
 <h5 id='fedora' class='heading'>Fedora</h5>
 
@@ -6790,8 +6853,9 @@ swift build
 swift test
 </code></pre>
 
-<p>Please note that on macOS, due to a bug currently in the Swift Package Manager,
-you need to pass in the build flags manually, i.e. instead of <code>swift build</code> and <code>swift test</code> you can run</p>
+<p>Please note that on macOS, due to a bug in the Swift Package Manager prior to Swift 5.4,
+if you have Xcode-12.4 or older, you need to pass in the build flags manually,
+i.e. instead of <code>swift build</code> and <code>swift test</code> you can run</p>
 <pre class="highlight plaintext"><code>swift build `./run-gir2swift.sh flags -noUpdate`
 swift test  `./run-gir2swift.sh flags -noUpdate`
 </code></pre>
@@ -6805,10 +6869,16 @@ open Gtk.xcodeproj
 <p>After that, use the (usual) Build and Test buttons to build/test this package.</p>
 <h2 id='documentation' class='heading'>Documentation</h2>
 
-<p>You can find reference documentation inside the <a href="https://rhx.github.io/SwiftGtk/">docs</a> folder.
+<p>You can find reference documentation inside the <a href="https://rhx.github.io/SwiftGLib/">docs</a> folder.
 This was generated using the <a href="https://github.com/realm/jazzy">jazzy</a> tool.
 If you want to generate your own documentation, matching your local installation,
-you can use the <code>generate-documentation.sh</code> script in the repository.</p>
+you can use the <code>generate-documentation.sh</code> script in the repository.
+Make sure you have <a href="https://github.com/jpsim/SourceKitten">sourcekitten</a> and <a href="https://github.com/realm/jazzy">jazzy</a> installed, e.g. on macOS:</p>
+<pre class="highlight plaintext"><code>brew install sourcekitten
+sudo gem install jazzy
+./run-gir2swift.sh
+./generate-documentation.sh
+</code></pre>
 <h2 id='troubleshooting' class='heading'>Troubleshooting</h2>
 
 <p>Here are some common errors you might encounter and how to fix them.</p>
@@ -6845,8 +6915,8 @@ xcode-select --install
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-19)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-05-16)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.7</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

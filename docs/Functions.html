@@ -21,9 +21,9 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="index.html">
-          Gtk 4.0.0 Docs
+          Gtk 4.2.1 Docs
         </a>
-         (87% documented)
+         (95% documented)
       </p>
     
       <p class="header-col--secondary">
@@ -648,6 +648,9 @@
                 <a class="nav-group-task-link" href="Classes/PageSetup.html">PageSetup</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/PageSetupUnixDialog.html">PageSetupUnixDialog</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Classes/Paned.html">Paned</a>
               </li>
               <li class="nav-group-task">
@@ -672,7 +675,13 @@
                 <a class="nav-group-task-link" href="Classes/PopoverMenuBar.html">PopoverMenuBar</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/PrintBackend.html">PrintBackend</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Classes/PrintContext.html">PrintContext</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/PrintJob.html">PrintJob</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Classes/PrintOperation.html">PrintOperation</a>
@@ -682,6 +691,12 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Classes/PrintSettings.html">PrintSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/PrintUnixDialog.html">PrintUnixDialog</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/Printer.html">Printer</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Classes/ProgressBar.html">ProgressBar</a>
@@ -745,9 +760,6 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Classes/Settings.html">Settings</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Classes/SettingsValue.html">SettingsValue</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Classes/Shortcut.html">Shortcut</a>
@@ -847,9 +859,6 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Classes/Text.html">Text</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Classes/TextBTree.html">TextBTree</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Classes/TextBuffer.html">TextBuffer</a>
@@ -2092,6 +2101,12 @@
                 <a class="nav-group-task-link" href="Enums/PageSetupSignalName.html">PageSetupSignalName</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/PageSetupUnixDialogPropertyName.html">PageSetupUnixDialogPropertyName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/PageSetupUnixDialogSignalName.html">PageSetupUnixDialogSignalName</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Enums/PanedPropertyName.html">PanedPropertyName</a>
               </li>
               <li class="nav-group-task">
@@ -2131,6 +2146,12 @@
                 <a class="nav-group-task-link" href="Enums/PrintContextSignalName.html">PrintContextSignalName</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/PrintJobPropertyName.html">PrintJobPropertyName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/PrintJobSignalName.html">PrintJobSignalName</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Enums/PrintOperationPreviewSignalName.html">PrintOperationPreviewSignalName</a>
               </li>
               <li class="nav-group-task">
@@ -2141,6 +2162,18 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Enums/PrintSettingsSignalName.html">PrintSettingsSignalName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/PrintUnixDialogPropertyName.html">PrintUnixDialogPropertyName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/PrintUnixDialogSignalName.html">PrintUnixDialogSignalName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/PrinterPropertyName.html">PrinterPropertyName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/PrinterSignalName.html">PrinterSignalName</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Enums/ProgressBarPropertyName.html">ProgressBarPropertyName</a>
@@ -2924,7 +2957,7 @@
                 <a class="nav-group-task-link" href="Functions.html#/s:3Gtk16disableSetlocaleyyF">disableSetlocale()</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Functions.html#/s:3Gtk27distributeNaturalAllocation10extraSpace15nRequestedSizes5sizesS2i_SixtAA0G12SizeProtocolRzlF">distributeNaturalAllocation(extraSpace:nRequestedSizes:sizes:)</a>
+                <a class="nav-group-task-link" href="Functions.html#/s:3Gtk27distributeNaturalAllocation10extraSpace15nRequestedSizes5sizesS2i_SiSpySo01_aG4SizeVGSgtF">distributeNaturalAllocation(extraSpace:nRequestedSizes:sizes:)</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Functions.html#/s:3Gtk27editableDelegateGetProperty6object6propId5value5pspecSbx_Siq0_q_t10GLibObject0L8ProtocolRzAG09ParamSpecM0R_AG05ValueM0R0_r1_lF">editableDelegateGetProperty(object:propId:value:pspec:)</a>
@@ -2934,6 +2967,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Functions.html#/s:3Gtk25editableInstallProperties11objectClass9firstPropSix_Sit10GLibObject0jF8ProtocolRzlF">editableInstallProperties(objectClass:firstProp:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Functions.html#/s:3Gtk17enumeratePrinters4func4data7destroy4waitys5Int32VSpySo01_A7PrinterVGSg_SvSgtXCSg_AMyAMXCSgSbtF">enumeratePrinters(func:data:destroy:wait:)</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Functions.html#/s:3Gtk21fileChooserErrorQuarks6UInt32VyF">fileChooserErrorQuark()</a>
@@ -2969,9 +3005,6 @@
                 <a class="nav-group-task-link" href="Functions.html#/s:3Gtk19iconThemeErrorQuarks6UInt32VyF">iconThemeErrorQuark()</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Functions.html#/s:3Gtk13imModulesInityyF">imModulesInit()</a>
-              </li>
-              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Functions.html#/s:3Gtk9initCheckSbyF">initCheck()</a>
               </li>
               <li class="nav-group-task">
@@ -2982,6 +3015,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Functions.html#/s:3Gtk12nativeGetFor7surfaceAA9NativeRefVSgx_t3Gdk15SurfaceProtocolRzlF">nativeGetFor(surface:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Functions.html#/s:3Gtk19orderingFromCmpfunc13cmpfuncResultSo0A8OrderingaSi_tF">orderingFromCmpfunc(cmpfuncResult:)</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Functions.html#/s:3Gtk19paperSizeGetDefaultSSSgyF">paperSizeGetDefault()</a>
@@ -4063,6 +4099,9 @@
                 <a class="nav-group-task-link" href="Protocols/PageSetupProtocol.html">PageSetupProtocol</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/PageSetupUnixDialogProtocol.html">PageSetupUnixDialogProtocol</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Protocols/PanedProtocol.html">PanedProtocol</a>
               </li>
               <li class="nav-group-task">
@@ -4096,7 +4135,13 @@
                 <a class="nav-group-task-link" href="Protocols/PopoverProtocol.html">PopoverProtocol</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/PrintBackendProtocol.html">PrintBackendProtocol</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Protocols/PrintContextProtocol.html">PrintContextProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/PrintJobProtocol.html">PrintJobProtocol</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Protocols/PrintOperationClassProtocol.html">PrintOperationClassProtocol</a>
@@ -4112,6 +4157,12 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Protocols/PrintSettingsProtocol.html">PrintSettingsProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/PrintUnixDialogProtocol.html">PrintUnixDialogProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/PrinterProtocol.html">PrinterProtocol</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Protocols/ProgressBarProtocol.html">ProgressBarProtocol</a>
@@ -4199,9 +4250,6 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Protocols/SettingsProtocol.html">SettingsProtocol</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Protocols/SettingsValueProtocol.html">SettingsValueProtocol</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Protocols/ShortcutActionClassProtocol.html">ShortcutActionClassProtocol</a>
@@ -4361,9 +4409,6 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Protocols/SwitchProtocol.html">SwitchProtocol</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Protocols/TextBTreeProtocol.html">TextBTreeProtocol</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Protocols/TextBufferClassProtocol.html">TextBufferClassProtocol</a>
@@ -5520,6 +5565,9 @@
                 <a class="nav-group-task-link" href="Structs/PageSetupRef.html">PageSetupRef</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/PageSetupUnixDialogRef.html">PageSetupUnixDialogRef</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Structs/PanedRef.html">PanedRef</a>
               </li>
               <li class="nav-group-task">
@@ -5559,7 +5607,16 @@
                 <a class="nav-group-task-link" href="Structs/PopoverRef.html">PopoverRef</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/PrintBackendRef.html">PrintBackendRef</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/PrintCapabilities.html">PrintCapabilities</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Structs/PrintContextRef.html">PrintContextRef</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/PrintJobRef.html">PrintJobRef</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Structs/PrintOperationClassRef.html">PrintOperationClassRef</a>
@@ -5575,6 +5632,12 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Structs/PrintSettingsRef.html">PrintSettingsRef</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/PrintUnixDialogRef.html">PrintUnixDialogRef</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/PrinterRef.html">PrinterRef</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Structs/ProgressBarRef.html">ProgressBarRef</a>
@@ -5662,9 +5725,6 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Structs/SettingsRef.html">SettingsRef</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Structs/SettingsValueRef.html">SettingsValueRef</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Structs/ShortcutActionClassRef.html">ShortcutActionClassRef</a>
@@ -5833,9 +5893,6 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Structs/SwitchRef.html">SwitchRef</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Structs/TextBTreeRef.html">TextBTreeRef</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Structs/TextBufferClassRef.html">TextBufferClassRef</a>
@@ -6452,6 +6509,9 @@
                 <a class="nav-group-task-link" href="Typealiases.html#/s:3Gtk10PrintErrora">PrintError</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Typealiases.html#/s:3Gtk20PrintJobCompleteFunca">PrintJobCompleteFunc</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Typealiases.html#/s:3Gtk20PrintOperationActiona">PrintOperationAction</a>
               </li>
               <li class="nav-group-task">
@@ -6468,6 +6528,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Typealiases.html#/s:3Gtk11PrintStatusa">PrintStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Typealiases.html#/s:3Gtk11PrinterFunca">PrinterFunc</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Typealiases.html#/s:3Gtk16PropagationLimita">PropagationLimit</a>
@@ -6778,9 +6841,12 @@ which can be used to represent the accelerator to the user.</p>
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Converts an accelerator keyval and modifier mask
-into a (possibly translated) string that can be displayed to
-a user, similarly to <code>gtk_accelerator_get_label()</code>, but handling
-keycodes.</p>
+into a string that can be displayed to the user.</p>
+
+<p>The string may be translated.</p>
+
+<p>This function is similar to [func<code>Gtk.accelerator_get_label</code>],
+but handling keycodes.</p>
 
 <p>This is only useful for system-level components, applications
 should use <code>gtk_accelerator_parse()</code> instead.</p>
@@ -6796,7 +6862,7 @@ should use <code>gtk_accelerator_parse()</code> instead.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L46-L49">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L49-L52">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6815,9 +6881,12 @@ should use <code>gtk_accelerator_parse()</code> instead.</p>
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Converts an accelerator keyval and modifier mask
-into a (possibly translated) string that can be displayed to
-a user, similarly to <code>gtk_accelerator_get_label()</code>, but handling
-keycodes.</p>
+into a string that can be displayed to the user.</p>
+
+<p>The string may be translated.</p>
+
+<p>This function is similar to [func<code>Gtk.accelerator_get_label</code>],
+but handling keycodes.</p>
 
 <p>This is only useful for system-level components, applications
 should use <code>gtk_accelerator_parse()</code> instead.</p>
@@ -6833,7 +6902,7 @@ should use <code>gtk_accelerator_parse()</code> instead.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L57-L60">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L63-L66">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6852,11 +6921,13 @@ should use <code>gtk_accelerator_parse()</code> instead.</p>
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Converts an accelerator keyval and modifier mask into a string
-parseable by <code>gtk_accelerator_parse()</code>. For example, if you pass in
-<code>GDK_KEY_q</code> and <code>GDK_CONTROL_MASK</code>, this function returns “&lt;Control&gt;q”.</p>
+parseable by <code>gtk_accelerator_parse()</code>.</p>
+
+<p>For example, if you pass in <code>GDK_KEY_q</code> and <code>GDK_CONTROL_MASK</code>,
+this function returns <code>&amp;lt;Control&amp;gt;q</code>.</p>
 
 <p>If you need to display accelerators in the user interface,
-see <code>gtk_accelerator_get_label()</code>.</p>
+see [func<code>Gtk.accelerator_get_label</code>].</p>
 
                       </div>
                       <div class="declaration">
@@ -6869,7 +6940,7 @@ see <code>gtk_accelerator_get_label()</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L71-L74">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L79-L82">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6888,8 +6959,9 @@ see <code>gtk_accelerator_get_label()</code>.</p>
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Converts an accelerator keyval and modifier mask
-into a string parseable by <code>gtk_accelerator_parse_with_keycode()</code>,
-similarly to <code>gtk_accelerator_name()</code> but handling keycodes.
+into a string parseable by <code>gtk_accelerator_parse_with_keycode()</code>.</p>
+
+<p>This is similar to [func<code>Gtk.accelerator_name</code>] but handling keycodes.
 This is only useful for system-level components, applications
 should use <code>gtk_accelerator_parse()</code> instead.</p>
 
@@ -6904,7 +6976,7 @@ should use <code>gtk_accelerator_parse()</code> instead.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L84-L87">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L93-L96">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6923,8 +6995,9 @@ should use <code>gtk_accelerator_parse()</code> instead.</p>
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Converts an accelerator keyval and modifier mask
-into a string parseable by <code>gtk_accelerator_parse_with_keycode()</code>,
-similarly to <code>gtk_accelerator_name()</code> but handling keycodes.
+into a string parseable by <code>gtk_accelerator_parse_with_keycode()</code>.</p>
+
+<p>This is similar to [func<code>Gtk.accelerator_name</code>] but handling keycodes.
 This is only useful for system-level components, applications
 should use <code>gtk_accelerator_parse()</code> instead.</p>
 
@@ -6939,7 +7012,7 @@ should use <code>gtk_accelerator_parse()</code> instead.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L93-L96">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L103-L106">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6957,12 +7030,13 @@ should use <code>gtk_accelerator_parse()</code> instead.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Parses a string representing an accelerator. The format looks like
-“&lt;Control&gt;a” or “&lt;Shift&gt;&lt;Alt&gt;F1”.</p>
+                        <p>Parses a string representing an accelerator.</p>
+
+<p>The format looks like “&lt;Control&gt;a” or “&lt;Shift&gt;&lt;Alt&gt;F1”.</p>
 
 <p>The parser is fairly liberal and allows lower or upper case, and also
 abbreviations such as “&lt;Ctl&gt;” and “&lt;Ctrl&gt;”. Key names are parsed using
-<code>gdk_keyval_from_name()</code>. For character keys the name is not the symbol,
+[func<code>Gdk.keyval_from_name</code>]. For character keys the name is not the symbol,
 but the lowercase name, e.g. one would use “&lt;Ctrl&gt;minus” instead of
 “&lt;Ctrl&gt;-”.</p>
 
@@ -6980,7 +7054,7 @@ be set to 0 (zero).</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L112-L115">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L123-L126">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6998,10 +7072,11 @@ be set to 0 (zero).</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Parses a string representing an accelerator, similarly to
-<code>gtk_accelerator_parse()</code> but handles keycodes as well. This is only
-useful for system-level components, applications should use
-<code>gtk_accelerator_parse()</code> instead.</p>
+                        <p>Parses a string representing an accelerator.</p>
+
+<p>This is similar to [func<code>Gtk.accelerator_parse</code>] but handles keycodes as
+well. This is only useful for system-level components, applications should
+use <code>gtk_accelerator_parse()</code> instead.</p>
 
 <p>If <code>accelerator_codes</code> is given and the result stored in it is non-<code>nil</code>,
 the result must be freed with <code>g_free()</code>.</p>
@@ -7023,7 +7098,7 @@ is given, the parse will fail.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L133-L136">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L145-L148">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7041,10 +7116,11 @@ is given, the parse will fail.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Parses a string representing an accelerator, similarly to
-<code>gtk_accelerator_parse()</code> but handles keycodes as well. This is only
-useful for system-level components, applications should use
-<code>gtk_accelerator_parse()</code> instead.</p>
+                        <p>Parses a string representing an accelerator.</p>
+
+<p>This is similar to [func<code>Gtk.accelerator_parse</code>] but handles keycodes as
+well. This is only useful for system-level components, applications should
+use <code>gtk_accelerator_parse()</code> instead.</p>
 
 <p>If <code>accelerator_codes</code> is given and the result stored in it is non-<code>nil</code>,
 the result must be freed with <code>g_free()</code>.</p>
@@ -7066,7 +7142,7 @@ is given, the parse will fail.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L150-L153">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L163-L166">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7085,10 +7161,11 @@ is given, the parse will fail.</p>
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Determines whether a given keyval and modifier mask constitute
-a valid keyboard accelerator. For example, the <code>GDK_KEY_a</code> keyval
-plus <code>GDK_CONTROL_MASK</code> is valid - this is a “Ctrl+a” accelerator.
-But, you can&rsquo;t, for instance, use the <code>GDK_KEY_Control_L</code> keyval
-as an accelerator.</p>
+a valid keyboard accelerator.</p>
+
+<p>For example, the <code>GDK_KEY_a</code> keyval plus <code>GDK_CONTROL_MASK</code> mark is valid,
+and matches the “Ctrl+a” accelerator. But, you can&rsquo;t, for instance, use
+the <code>GDK_KEY_Control_L</code> keyval as an accelerator.</p>
 
                       </div>
                       <div class="declaration">
@@ -7101,7 +7178,7 @@ as an accelerator.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L163-L166">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L177-L180">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7132,7 +7209,7 @@ as an accelerator.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L171-L174">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L185-L188">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7163,7 +7240,7 @@ as an accelerator.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L179-L182">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L193-L196">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7194,7 +7271,7 @@ as an accelerator.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L187-L190">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L201-L204">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7212,9 +7289,10 @@ as an accelerator.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Initializes <code>iter</code> to point to <code>target</code>. If <code>target</code> is not found, finds
-the next value after it. If no value &gt;= <code>target</code> exists in <code>set</code>, this
-function returns <code>false</code>.</p>
+                        <p>Initializes <code>iter</code> to point to <code>target</code>.</p>
+
+<p>If <code>target</code> is not found, finds the next value after it.
+If no value &gt;= <code>target</code> exists in <code>set</code>, this function returns <code>false</code>.</p>
 
                       </div>
                       <div class="declaration">
@@ -7227,7 +7305,7 @@ function returns <code>false</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L198-L201">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L213-L216">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7246,8 +7324,9 @@ function returns <code>false</code>.</p>
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Initializes an iterator for <code>set</code> and points it to the first
-value in <code>set</code>. If <code>set</code> is empty, <code>false</code> is returned and <code>value</code>
-is set to <code>G_MAXUINT</code>.</p>
+value in <code>set</code>.</p>
+
+<p>If <code>set</code> is empty, <code>false</code> is returned and <code>value</code> is set to <code>G_MAXUINT</code>.</p>
 
                       </div>
                       <div class="declaration">
@@ -7260,7 +7339,7 @@ is set to <code>G_MAXUINT</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L209-L212">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L225-L228">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7279,7 +7358,9 @@ is set to <code>G_MAXUINT</code>.</p>
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Initializes an iterator for <code>set</code> and points it to the last
-value in <code>set</code>. If <code>set</code> is empty, <code>false</code> is returned.</p>
+value in <code>set</code>.</p>
+
+<p>If <code>set</code> is empty, <code>false</code> is returned.</p>
 
                       </div>
                       <div class="declaration">
@@ -7292,7 +7373,7 @@ value in <code>set</code>. If <code>set</code> is empty, <code>false</code> is r
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L219-L222">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L237-L240">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7323,7 +7404,7 @@ value in <code>set</code>. If <code>set</code> is empty, <code>false</code> is r
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L227-L230">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L245-L248">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7354,7 +7435,7 @@ value in <code>set</code>. If <code>set</code> is empty, <code>false</code> is r
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L235-L238">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L253-L256">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7385,7 +7466,7 @@ value in <code>set</code>. If <code>set</code> is empty, <code>false</code> is r
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L243-L246">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L261-L264">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7416,7 +7497,7 @@ value in <code>set</code>. If <code>set</code> is empty, <code>false</code> is r
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L251-L254">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L269-L272">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7434,10 +7515,10 @@ value in <code>set</code>. If <code>set</code> is empty, <code>false</code> is r
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Prevents <code>gtk_init()</code>, <code>gtk_init_check()</code> and
-<code>gtk_parse_args()</code> from automatically
-calling <code>setlocale (LC_ALL, &quot;&quot;)</code>. You would
-want to use this function if you wanted to set the locale for
+                        <p>Prevents [id<code>gtk_init</code>] and [id<code>gtk_init_check</code>] from automatically calling
+<code>setlocale (LC_ALL, &quot;&quot;)</code>.</p>
+
+<p>You would want to use this function if you wanted to set the locale for
 your program to something other than the user’s locale, or if
 you wanted to set different values for different locale categories.</p>
 
@@ -7454,7 +7535,7 @@ you wanted to set different values for different locale categories.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L267-L270">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L285-L288">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7462,9 +7543,9 @@ you wanted to set different values for different locale categories.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:3Gtk27distributeNaturalAllocation10extraSpace15nRequestedSizes5sizesS2i_SixtAA0G12SizeProtocolRzlF"></a>
+                    <a name="/s:3Gtk27distributeNaturalAllocation10extraSpace15nRequestedSizes5sizesS2i_SiSpySo01_aG4SizeVGSgtF"></a>
                     <a name="//apple_ref/swift/Function/distributeNaturalAllocation(extraSpace:nRequestedSizes:sizes:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3Gtk27distributeNaturalAllocation10extraSpace15nRequestedSizes5sizesS2i_SixtAA0G12SizeProtocolRzlF">distributeNaturalAllocation(extraSpace:<wbr>nRequestedSizes:<wbr>sizes:<wbr>)</a>
+                    <a class="token" href="#/s:3Gtk27distributeNaturalAllocation10extraSpace15nRequestedSizes5sizesS2i_SiSpySo01_aG4SizeVGSgtF">distributeNaturalAllocation(extraSpace:<wbr>nRequestedSizes:<wbr>sizes:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -7476,7 +7557,7 @@ you wanted to set different values for different locale categories.</p>
 children up to natural size first.</p>
 
 <p>The remaining space will be added to the <code>minimum_size</code> member of the
-GtkRequestedSize struct. If all sizes reach their natural size then
+<code>GtkRequestedSize</code> struct. If all sizes reach their natural size then
 the remaining space is returned.</p>
 
                       </div>
@@ -7485,12 +7566,12 @@ the remaining space is returned.</p>
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@inlinable</span>
-<span class="kd">public</span> <span class="kd">func</span> <span class="n">distributeNaturalAllocation</span><span class="o">&lt;</span><span class="kt">RequestedSizeT</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">extraSpace</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">nRequestedSizes</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">sizes</span><span class="p">:</span> <span class="kt">RequestedSizeT</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int</span> <span class="k">where</span> <span class="kt">RequestedSizeT</span> <span class="p">:</span> <span class="kt"><a href="Protocols/RequestedSizeProtocol.html">RequestedSizeProtocol</a></span></code></pre>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">distributeNaturalAllocation</span><span class="p">(</span><span class="nv">extraSpace</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">nRequestedSizes</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">sizes</span><span class="p">:</span> <span class="kt">UnsafeMutablePointer</span><span class="o">&lt;</span><span class="kt">GtkRequestedSize</span><span class="o">&gt;!</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L281-L284">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L299-L302">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7510,8 +7591,9 @@ the remaining space is returned.</p>
                       <div class="abstract">
                         <p>Gets a property of the <code>GtkEditable</code> delegate for <code>object</code>.</p>
 
-<p>This is helper function that should be called in get_property,
-before handling your own properties.</p>
+<p>This is helper function that should be called in the <code>get_property</code>
+function of your <code>GtkEditable</code> implementation, before handling your
+own properties.</p>
 
                       </div>
                       <div class="declaration">
@@ -7524,7 +7606,7 @@ before handling your own properties.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L293-L296">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L312-L315">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7544,8 +7626,9 @@ before handling your own properties.</p>
                       <div class="abstract">
                         <p>Sets a property on the <code>GtkEditable</code> delegate for <code>object</code>.</p>
 
-<p>This is a helper function that should be called in set_property,
-before handling your own properties.</p>
+<p>This is a helper function that should be called in the <code>set_property</code>
+function of your <code>GtkEditable</code> implementation, before handling your
+own properties.</p>
 
                       </div>
                       <div class="declaration">
@@ -7558,7 +7641,7 @@ before handling your own properties.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L305-L308">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L325-L328">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7576,17 +7659,16 @@ before handling your own properties.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Installs the GtkEditable properties for <code>class</code>.</p>
+                        <p>Installs the <code>GtkEditable</code> properties for <code>class</code>.</p>
 
 <p>This is a helper function that should be called in class_init,
 after installing your own properties.</p>
 
 <p>To handle the properties in your set_property and get_property
-functions, you can either use <code>gtk_editable_delegate_set_property()</code>
-and <code>gtk_editable_delegate_get_property()</code> (if you are using a delegate),
-or remember the <code>first_prop</code> offset and add it to the values in the
-<code>GtkEditableProperties</code> enumeration to get the property IDs for these
-properties.</p>
+functions, you can either use [func<code>Gtk.Editable.delegate_set_property</code>]
+and <a href="if%20you%20are%20using%0Aa%20delegate">func<code>Gtk.Editable.delegate_get_property</code></a>, or remember the <code>first_prop</code> offset and add it to the
+values in the [enum<code>Gtk.EditableProperties</code>] enumeration to get the
+property IDs for these properties.</p>
 
                       </div>
                       <div class="declaration">
@@ -7599,7 +7681,40 @@ properties.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L324-L327">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L344-L347">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3Gtk17enumeratePrinters4func4data7destroy4waitys5Int32VSpySo01_A7PrinterVGSg_SvSgtXCSg_AMyAMXCSgSbtF"></a>
+                    <a name="//apple_ref/swift/Function/enumeratePrinters(func:data:destroy:wait:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3Gtk17enumeratePrinters4func4data7destroy4waitys5Int32VSpySo01_A7PrinterVGSg_SvSgtXCSg_AMyAMXCSgSbtF">enumeratePrinters(func:<wbr>data:<wbr>destroy:<wbr>wait:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Calls a function for all <code>GtkPrinter</code>s.</p>
+
+<p>If <code>func</code> returns <code>true</code>, the enumeration is stopped.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@inlinable</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">enumeratePrinters</span><span class="p">(</span><span class="nv">func</span><span class="p">:</span> <span class="kt">GtkPrinterFunc</span><span class="p">?,</span> <span class="nv">data</span><span class="p">:</span> <span class="n">gpointer</span><span class="o">!</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">destroy</span><span class="p">:</span> <span class="kt">GDestroyNotify</span><span class="p">?,</span> <span class="nv">wait</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L355-L358">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7617,7 +7732,7 @@ properties.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Registers an error quark for <code>GtkFileChooser</code> if necessary.</p>
+                        <p>Registers an error quark for <code>GtkFileChooser</code> errors.</p>
 
                       </div>
                       <div class="declaration">
@@ -7630,7 +7745,7 @@ properties.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L333-L336">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L364-L367">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7648,10 +7763,9 @@ properties.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Returns the binary age as passed to <code>libtool</code>
-when building the GTK library the process is running against.
-If <code>libtool</code> means nothing to you, don&rsquo;t
-worry about it.</p>
+                        <p>Returns the binary age as passed to <code>libtool</code>.</p>
+
+<p>If <code>libtool</code> means nothing to you, don&rsquo;t worry about it.</p>
 
                       </div>
                       <div class="declaration">
@@ -7664,7 +7778,7 @@ worry about it.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L345-L348">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L375-L378">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7698,7 +7812,7 @@ to adjust their debug output based on GTK debug flags.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L357-L360">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L387-L390">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7736,7 +7850,7 @@ See that function for details.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L373-L376">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L403-L406">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7754,10 +7868,9 @@ See that function for details.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Returns the interface age as passed to <code>libtool</code>
-when building the GTK library the process is running against.
-If <code>libtool</code> means nothing to you, don&rsquo;t
-worry about it.</p>
+                        <p>Returns the interface age as passed to <code>libtool</code>.</p>
+
+<p>If <code>libtool</code> means nothing to you, don&rsquo;t worry about it.</p>
 
                       </div>
                       <div class="declaration">
@@ -7770,7 +7883,7 @@ worry about it.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L385-L388">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L414-L417">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7821,7 +7934,7 @@ gtk_widget_set_default_direction (direction);
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L416-L419">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L445-L448">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7839,8 +7952,9 @@ gtk_widget_set_default_direction (direction);
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Returns the major version number of the GTK library.
-(e.g. in GTK version 3.1.5 this is 3.)</p>
+                        <p>Returns the major version number of the GTK library.</p>
+
+<p>For example, in GTK version 3.1.5 this is 3.</p>
 
 <p>This function is in the library, so it represents the GTK library
 your code is running against. Contrast with the <code>GTK_MAJOR_VERSION</code>
@@ -7858,7 +7972,7 @@ have included when compiling your code.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L431-L434">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L461-L464">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7876,8 +7990,9 @@ have included when compiling your code.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Returns the micro version number of the GTK library.
-(e.g. in GTK version 3.1.5 this is 5.)</p>
+                        <p>Returns the micro version number of the GTK library.</p>
+
+<p>For example, in GTK version 3.1.5 this is 5.</p>
 
 <p>This function is in the library, so it represents the GTK library
 your code is are running against. Contrast with the
@@ -7895,7 +8010,7 @@ GTK headers you have included when compiling your code.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L446-L449">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L477-L480">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7913,8 +8028,9 @@ GTK headers you have included when compiling your code.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Returns the minor version number of the GTK library.
-(e.g. in GTK version 3.1.5 this is 1.)</p>
+                        <p>Returns the minor version number of the GTK library.</p>
+
+<p>For example, in GTK version 3.1.5 this is 1.</p>
 
 <p>This function is in the library, so it represents the GTK library
 your code is are running against. Contrast with the
@@ -7932,7 +8048,7 @@ GTK headers you have included when compiling your code.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L461-L464">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L493-L496">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7966,7 +8082,7 @@ output values will be in the same range.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L473-L476">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L505-L508">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7997,38 +8113,7 @@ output values will be in the same range.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L481-L484">Show on GitHub</a>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:3Gtk13imModulesInityyF"></a>
-                    <a name="//apple_ref/swift/Function/imModulesInit()" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3Gtk13imModulesInityyF">imModulesInit()</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Undocumented</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@inlinable</span>
-<span class="kd">public</span> <span class="kd">func</span> <span class="nf">imModulesInit</span><span class="p">()</span></code></pre>
-
-                        </div>
-                      </div>
-                      <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L489-L492">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L513-L516">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8077,7 +8162,7 @@ similar things.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L516-L519">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L540-L543">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8114,7 +8199,7 @@ interface.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L531-L534">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L555-L558">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8146,7 +8231,7 @@ or <code>gtk_init_check()</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L541-L544">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L565-L568">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8164,7 +8249,7 @@ or <code>gtk_init_check()</code>.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Finds the GtkNative associated with the surface.</p>
+                        <p>Finds the <code>GtkNative</code> associated with the surface.</p>
 
                       </div>
                       <div class="declaration">
@@ -8177,7 +8262,39 @@ or <code>gtk_init_check()</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L550-L553">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L574-L577">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3Gtk19orderingFromCmpfunc13cmpfuncResultSo0A8OrderingaSi_tF"></a>
+                    <a name="//apple_ref/swift/Function/orderingFromCmpfunc(cmpfuncResult:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3Gtk19orderingFromCmpfunc13cmpfuncResultSo0A8OrderingaSi_tF">orderingFromCmpfunc(cmpfuncResult:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Converts the result of a <code>GCompareFunc</code> like <code>strcmp()</code> to a
+<code>GtkOrdering</code> value.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@inlinable</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">orderingFromCmpfunc</span><span class="p">(</span><span class="nv">cmpfuncResult</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">GtkOrdering</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L584-L587">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8209,7 +8326,7 @@ depends on the current locale.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L560-L563">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L594-L597">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8240,7 +8357,7 @@ depends on the current locale.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L569-L572">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L603-L606">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8273,7 +8390,7 @@ depends on the current locale.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L580-L583">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L614-L617">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8304,7 +8421,7 @@ depends on the current locale.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L589-L592">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L623-L626">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8342,7 +8459,7 @@ a problem.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L605-L608">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L639-L642">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8380,7 +8497,7 @@ a problem.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L617-L620">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L651-L654">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8415,7 +8532,7 @@ from a signal handler for the <code>response</code> signal of the dialog.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L630-L633">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L664-L667">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8450,7 +8567,7 @@ from a signal handler for the <code>response</code> signal of the dialog.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L639-L642">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L673-L676">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8481,7 +8598,7 @@ from a signal handler for the <code>response</code> signal of the dialog.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L647-L650">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L681-L684">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8514,7 +8631,7 @@ activity going on.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L658-L661">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L692-L695">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8549,7 +8666,7 @@ activity going on.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L671-L674">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L705-L708">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8585,7 +8702,7 @@ activity going on.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L685-L688">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L719-L722">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8624,7 +8741,7 @@ should be marked as undefined.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L702-L705">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L736-L739">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8661,7 +8778,7 @@ determines whether the expander is collapsed or expanded.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L717-L720">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L751-L754">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8696,7 +8813,7 @@ determines whether the expander is collapsed or expanded.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L730-L733">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L764-L767">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8732,7 +8849,7 @@ determines whether the expander is collapsed or expanded.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L744-L747">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L778-L781">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8769,7 +8886,7 @@ determined by <code>x</code>, <code>y</code>, <code>width</code>, <code>height</
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L759-L762">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L793-L796">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8804,7 +8921,7 @@ drawing on displays with high pixel densities.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L772-L775">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L806-L809">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8835,7 +8952,7 @@ drawing on displays with high pixel densities.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L781-L784">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L815-L818">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8866,7 +8983,7 @@ drawing on displays with high pixel densities.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L790-L793">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L824-L827">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8903,7 +9020,7 @@ state will determine whether the option is on or off, and
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L805-L808">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L839-L842">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8937,7 +9054,7 @@ output values will be in the same range.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L817-L820">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L851-L854">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8968,7 +9085,7 @@ output values will be in the same range.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L826-L829">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L860-L863">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9000,7 +9117,7 @@ a given uri, or shows an error dialog if that fails.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L843-L846">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L877-L880">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9032,7 +9149,7 @@ a given uri, or shows an error dialog if that fails.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L849-L852">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L883-L886">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9070,7 +9187,7 @@ necessary for sandbox helpers to parent their dialogs properly.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L865-L868">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L899-L902">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9108,7 +9225,7 @@ necessary for sandbox helpers to parent their dialogs properly.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L877-L880">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L911-L914">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9126,7 +9243,7 @@ necessary for sandbox helpers to parent their dialogs properly.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Finished the <code>gtk_show_uri()</code> call and returns the result
+                        <p>Finishes the <code>gtk_show_uri()</code> call and returns the result
 of the operation.</p>
 
                       </div>
@@ -9140,7 +9257,7 @@ of the operation.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L887-L892">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L921-L926">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9171,7 +9288,7 @@ of the operation.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L897-L900">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L931-L934">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9202,7 +9319,7 @@ of the operation.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L927-L930">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L961-L964">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9233,7 +9350,7 @@ of the operation.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L936-L939">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L970-L973">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9265,7 +9382,7 @@ is <code>role</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L946-L949">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L980-L983">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9296,7 +9413,7 @@ is <code>role</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L955-L958">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L989-L992">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9328,7 +9445,7 @@ calling <code>gtk_test_register_all_types()</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L965-L968">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L999-L1002">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9362,7 +9479,7 @@ calling <code>gtk_test_register_all_types()</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L977-L980">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L1011-L1014">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9380,9 +9497,10 @@ calling <code>gtk_test_register_all_types()</code>.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Enters the main loop and waits for <code>widget</code> to be “drawn”. In this
-context that means it waits for the frame clock of <code>widget</code> to have
-run a full styling, layout and drawing cycle.</p>
+                        <p>Enters the main loop and waits for <code>widget</code> to be “drawn”.</p>
+
+<p>In this context that means it waits for the frame clock of
+<code>widget</code> to have run a full styling, layout and drawing cycle.</p>
 
 <p>This function is intended to be used for syncing with actions that
 depend on <code>widget</code> relayouting or on interaction with the display
@@ -9399,7 +9517,7 @@ server.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L992-L995">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L1027-L1030">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9430,7 +9548,7 @@ server.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L1001-L1004">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L1036-L1039">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9464,7 +9582,7 @@ server.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L1013-L1016">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L1048-L1051">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9497,7 +9615,7 @@ model emitted the <code>GtkTreeModel::row-deleted</code> signal.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L1024-L1027">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L1059-L1062">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9530,7 +9648,7 @@ model emitted the <code>GtkTreeModel::row-inserted</code> signal.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L1035-L1038">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L1070-L1073">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9563,7 +9681,7 @@ model emitted the <code>GtkTreeModel::rows-reordered</code> signal.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L1046-L1049">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L1081-L1084">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9595,7 +9713,7 @@ a reference to it.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L1056-L1059">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L1091-L1094">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9626,7 +9744,7 @@ a reference to it.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L1065-L1068">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L1100-L1103">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9659,7 +9777,7 @@ a reference to it.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L1076-L1079">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L1111-L1114">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9692,7 +9810,7 @@ a reference to it.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L1087-L1090">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L1122-L1125">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9725,7 +9843,7 @@ a reference to it.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L1094-L1097">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-functions.swift#L1129-L1132">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9738,8 +9856,8 @@ a reference to it.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-19)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-05-16)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.7</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>
