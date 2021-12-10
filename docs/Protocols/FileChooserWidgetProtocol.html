@@ -21,7 +21,7 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          Gtk 4.2.1 Docs
+          Gtk 4.4.1 Docs
         </a>
          (95% documented)
       </p>
@@ -663,6 +663,9 @@
                 <a class="nav-group-task-link" href="../Classes/PasswordEntry.html">PasswordEntry</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PasswordEntryBuffer.html">PasswordEntryBuffer</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Picture.html">Picture</a>
               </li>
               <li class="nav-group-task">
@@ -990,6 +993,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk13INTERFACE_AGEs5Int32Vvp">INTERFACE_AGE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21INVALID_LIST_POSITIONs6UInt32Vvp">INVALID_LIST_POSITION</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21LEVEL_BAR_OFFSET_FULLSSvp">LEVEL_BAR_OFFSET_FULL</a>
@@ -2111,6 +2117,12 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PanedSignalName.html">PanedSignalName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferPropertyName.html">PasswordEntryBufferPropertyName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferSignalName.html">PasswordEntryBufferSignalName</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PasswordEntryPropertyName.html">PasswordEntryPropertyName</a>
@@ -4111,6 +4123,12 @@
                 <a class="nav-group-task-link" href="../Protocols/ParamSpecExpressionProtocol.html">ParamSpecExpressionProtocol</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferClassProtocol.html">PasswordEntryBufferClassProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferProtocol.html">PasswordEntryBufferProtocol</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/PasswordEntryClassProtocol.html">PasswordEntryClassProtocol</a>
               </li>
               <li class="nav-group-task">
@@ -5577,6 +5595,12 @@
                 <a class="nav-group-task-link" href="../Structs/ParamSpecExpressionRef.html">ParamSpecExpressionRef</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferClassRef.html">PasswordEntryBufferClassRef</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferRef.html">PasswordEntryBufferRef</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/PasswordEntryClassRef.html">PasswordEntryClassRef</a>
               </li>
               <li class="nav-group-task">
@@ -6704,12 +6728,7 @@
 
                 </div>
               </div>
-            <p>The <code>FileChooserWidgetProtocol</code> protocol exposes the methods and properties of an underlying <code>GtkFileChooserWidget</code> instance.
-The default implementation of these can be found in the protocol extension below.
-For a concrete class that implements these methods and properties, see <code><a href="../Classes/FileChooserWidget.html">FileChooserWidget</a></code>.
-Alternatively, use <code><a href="../Structs/FileChooserWidgetRef.html">FileChooserWidgetRef</a></code> as a lighweight, <code>unowned</code> reference if you already have an instance you just want to use.</p>
-
-<p><code>GtkFileChooserWidget</code> is a widget for choosing files.</p>
+            <p><code>GtkFileChooserWidget</code> is a widget for choosing files.</p>
 
 <p>It exposes the [iface<code>Gtk.FileChooser</code>] interface, and you should
 use the methods of this interface to interact with the
@@ -6718,8 +6737,13 @@ widget.</p>
 
 <p><code>GtkFileChooserWidget</code> has a single CSS node with name filechooser.</p>
 
+<p>The <code>FileChooserWidgetProtocol</code> protocol exposes the methods and properties of an underlying <code>GtkFileChooserWidget</code> instance.
+The default implementation of these can be found in the protocol extension below.
+For a concrete class that implements these methods and properties, see <code><a href="../Classes/FileChooserWidget.html">FileChooserWidget</a></code>.
+Alternatively, use <code><a href="../Structs/FileChooserWidgetRef.html">FileChooserWidgetRef</a></code> as a lighweight, <code>unowned</code> reference if you already have an instance you just want to use.</p>
+
               <div class="slightly-smaller">
-                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooserNative-GLArea.swift#L924-L933">Show on GitHub</a>
+                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooserNative-GLArea.swift#L930-L939">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -6753,7 +6777,7 @@ widget.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooserNative-GLArea.swift#L926">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooserNative-GLArea.swift#L932">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6791,7 +6815,7 @@ widget.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooserNative-GLArea.swift#L929">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooserNative-GLArea.swift#L935">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6821,7 +6845,7 @@ widget.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooserNative-GLArea.swift#L932">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooserNative-GLArea.swift#L938">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6952,7 +6976,7 @@ widget.</p>
                         <p>binding reference or <code>nil</code> in case of an error</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooserNative-GLArea.swift#L1343-L1367">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooserNative-GLArea.swift#L1351-L1375">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7009,7 +7033,7 @@ widget.</p>
                         <p>the value of the named property</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooserNative-GLArea.swift#L1372-L1376">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooserNative-GLArea.swift#L1380-L1384">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7067,7 +7091,7 @@ widget.</p>
                         <p>the value of the named property</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooserNative-GLArea.swift#L1382-L1384">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooserNative-GLArea.swift#L1390-L1392">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7186,7 +7210,7 @@ widget.</p>
                         <p>The signal handler ID (always greater than 0 for successful connections)</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooserNative-GLArea.swift#L1757-L1759">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooserNative-GLArea.swift#L1767-L1769">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7292,7 +7316,7 @@ widget.</p>
                         <p>The signal handler ID (always greater than 0 for successful connections)</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooserNative-GLArea.swift#L1770-L1772">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooserNative-GLArea.swift#L1780-L1782">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7383,7 +7407,7 @@ Run the given callback whenever the <code>desktopFolder</code> signal is emitted
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooserNative-GLArea.swift#L1788-L1802">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooserNative-GLArea.swift#L1798-L1812">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7416,7 +7440,7 @@ Run the given callback whenever the <code>desktopFolder</code> signal is emitted
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooserNative-GLArea.swift#L1805">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooserNative-GLArea.swift#L1815">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7511,7 +7535,7 @@ Run the given callback whenever the <code>downFolder</code> signal is emitted</p
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooserNative-GLArea.swift#L1824-L1838">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooserNative-GLArea.swift#L1834-L1848">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7544,7 +7568,7 @@ Run the given callback whenever the <code>downFolder</code> signal is emitted</p
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooserNative-GLArea.swift#L1841">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooserNative-GLArea.swift#L1851">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7635,7 +7659,7 @@ Run the given callback whenever the <code>homeFolder</code> signal is emitted</p
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooserNative-GLArea.swift#L1856-L1870">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooserNative-GLArea.swift#L1866-L1880">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7668,7 +7692,7 @@ Run the given callback whenever the <code>homeFolder</code> signal is emitted</p
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooserNative-GLArea.swift#L1873">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooserNative-GLArea.swift#L1883">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7776,7 +7800,7 @@ Run the given callback whenever the <code>locationPopup</code> signal is emitted
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooserNative-GLArea.swift#L1894-L1908">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooserNative-GLArea.swift#L1904-L1918">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7809,7 +7833,7 @@ Run the given callback whenever the <code>locationPopup</code> signal is emitted
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooserNative-GLArea.swift#L1911">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooserNative-GLArea.swift#L1921">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7900,7 +7924,7 @@ Run the given callback whenever the <code>locationPopupOnPaste</code> signal is 
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooserNative-GLArea.swift#L1926-L1940">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooserNative-GLArea.swift#L1936-L1950">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7933,7 +7957,7 @@ Run the given callback whenever the <code>locationPopupOnPaste</code> signal is 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooserNative-GLArea.swift#L1943">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooserNative-GLArea.swift#L1953">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8025,7 +8049,7 @@ Run the given callback whenever the <code>locationTogglePopup</code> signal is e
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooserNative-GLArea.swift#L1959-L1973">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooserNative-GLArea.swift#L1969-L1983">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8058,7 +8082,7 @@ Run the given callback whenever the <code>locationTogglePopup</code> signal is e
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooserNative-GLArea.swift#L1976">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooserNative-GLArea.swift#L1986">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8148,7 +8172,7 @@ Run the given callback whenever the <code>placesShortcut</code> signal is emitte
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooserNative-GLArea.swift#L1990-L2004">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooserNative-GLArea.swift#L2000-L2014">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8181,7 +8205,7 @@ Run the given callback whenever the <code>placesShortcut</code> signal is emitte
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooserNative-GLArea.swift#L2007">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooserNative-GLArea.swift#L2017">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8290,7 +8314,7 @@ Run the given callback whenever the <code>quickBookmark</code> signal is emitted
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooserNative-GLArea.swift#L2029-L2043">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooserNative-GLArea.swift#L2039-L2053">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8323,7 +8347,7 @@ Run the given callback whenever the <code>quickBookmark</code> signal is emitted
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooserNative-GLArea.swift#L2046">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooserNative-GLArea.swift#L2056">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8413,7 +8437,7 @@ Run the given callback whenever the <code>recentShortcut</code> signal is emitte
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooserNative-GLArea.swift#L2060-L2074">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooserNative-GLArea.swift#L2070-L2084">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8446,7 +8470,7 @@ Run the given callback whenever the <code>recentShortcut</code> signal is emitte
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooserNative-GLArea.swift#L2077">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooserNative-GLArea.swift#L2087">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8536,7 +8560,7 @@ Run the given callback whenever the <code>searchShortcut</code> signal is emitte
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooserNative-GLArea.swift#L2091-L2105">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooserNative-GLArea.swift#L2101-L2115">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8569,7 +8593,7 @@ Run the given callback whenever the <code>searchShortcut</code> signal is emitte
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooserNative-GLArea.swift#L2108">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooserNative-GLArea.swift#L2118">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8659,7 +8683,7 @@ Run the given callback whenever the <code>showHidden</code> signal is emitted</p
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooserNative-GLArea.swift#L2122-L2136">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooserNative-GLArea.swift#L2132-L2146">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8692,7 +8716,7 @@ Run the given callback whenever the <code>showHidden</code> signal is emitted</p
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooserNative-GLArea.swift#L2139">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooserNative-GLArea.swift#L2149">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8783,7 +8807,7 @@ Run the given callback whenever the <code>upFolder</code> signal is emitted</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooserNative-GLArea.swift#L2154-L2168">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooserNative-GLArea.swift#L2164-L2178">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8816,7 +8840,7 @@ Run the given callback whenever the <code>upFolder</code> signal is emitted</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooserNative-GLArea.swift#L2171">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooserNative-GLArea.swift#L2181">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8851,8 +8875,9 @@ and common practice is to do that only when the value has actually changed.</p>
 
 <p>This signal is typically used to obtain change notification for a
 single property, by specifying the property name as a detail in the
-<code>g_signal_connect()</code> call, like this:
-(C Language Example):</p>
+<code>g_signal_connect()</code> call, like this:</p>
+
+<p>(C Language Example):</p>
 <pre class="highlight plaintext"><code>g_signal_connect (text_view-&gt;buffer, "notify::paste-target-list",
                   G_CALLBACK (gtk_text_view_target_list_notify),
                   text_view)
@@ -8935,7 +8960,7 @@ Run the given callback whenever the <code>notifySearchMode</code> signal is emit
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooserNative-GLArea.swift#L2203-L2217">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooserNative-GLArea.swift#L2215-L2229">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8968,7 +8993,7 @@ Run the given callback whenever the <code>notifySearchMode</code> signal is emit
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooserNative-GLArea.swift#L2220">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooserNative-GLArea.swift#L2232">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9003,8 +9028,9 @@ and common practice is to do that only when the value has actually changed.</p>
 
 <p>This signal is typically used to obtain change notification for a
 single property, by specifying the property name as a detail in the
-<code>g_signal_connect()</code> call, like this:
-(C Language Example):</p>
+<code>g_signal_connect()</code> call, like this:</p>
+
+<p>(C Language Example):</p>
 <pre class="highlight plaintext"><code>g_signal_connect (text_view-&gt;buffer, "notify::paste-target-list",
                   G_CALLBACK (gtk_text_view_target_list_notify),
                   text_view)
@@ -9087,7 +9113,7 @@ Run the given callback whenever the <code>notifySubtitle</code> signal is emitte
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooserNative-GLArea.swift#L2252-L2266">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooserNative-GLArea.swift#L2266-L2280">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9120,7 +9146,7 @@ Run the given callback whenever the <code>notifySubtitle</code> signal is emitte
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooserNative-GLArea.swift#L2269">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooserNative-GLArea.swift#L2283">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9133,8 +9159,8 @@ Run the given callback whenever the <code>notifySubtitle</code> signal is emitte
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-05-16)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.7</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-12-10)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

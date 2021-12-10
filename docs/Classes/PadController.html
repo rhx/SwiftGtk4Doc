@@ -21,7 +21,7 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          Gtk 4.2.1 Docs
+          Gtk 4.4.1 Docs
         </a>
          (95% documented)
       </p>
@@ -663,6 +663,9 @@
                 <a class="nav-group-task-link" href="../Classes/PasswordEntry.html">PasswordEntry</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PasswordEntryBuffer.html">PasswordEntryBuffer</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Picture.html">Picture</a>
               </li>
               <li class="nav-group-task">
@@ -990,6 +993,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk13INTERFACE_AGEs5Int32Vvp">INTERFACE_AGE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21INVALID_LIST_POSITIONs6UInt32Vvp">INVALID_LIST_POSITION</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21LEVEL_BAR_OFFSET_FULLSSvp">LEVEL_BAR_OFFSET_FULL</a>
@@ -2111,6 +2117,12 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PanedSignalName.html">PanedSignalName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferPropertyName.html">PasswordEntryBufferPropertyName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferSignalName.html">PasswordEntryBufferSignalName</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PasswordEntryPropertyName.html">PasswordEntryPropertyName</a>
@@ -4111,6 +4123,12 @@
                 <a class="nav-group-task-link" href="../Protocols/ParamSpecExpressionProtocol.html">ParamSpecExpressionProtocol</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferClassProtocol.html">PasswordEntryBufferClassProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferProtocol.html">PasswordEntryBufferProtocol</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/PasswordEntryClassProtocol.html">PasswordEntryClassProtocol</a>
               </li>
               <li class="nav-group-task">
@@ -5577,6 +5595,12 @@
                 <a class="nav-group-task-link" href="../Structs/ParamSpecExpressionRef.html">ParamSpecExpressionRef</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferClassRef.html">PasswordEntryBufferClassRef</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferRef.html">PasswordEntryBufferRef</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/PasswordEntryClassRef.html">PasswordEntryClassRef</a>
               </li>
               <li class="nav-group-task">
@@ -6704,11 +6728,7 @@
 
                 </div>
               </div>
-            <p>The <code>PadController</code> type acts as a reference-counted owner of an underlying <code>GtkPadController</code> instance.
-It provides the methods that can operate on this data type through <code><a href="../Protocols/PadControllerProtocol.html">PadControllerProtocol</a></code> conformance.
-Use <code>PadController</code> as a strong reference or owner of a <code>GtkPadController</code> instance.</p>
-
-<p><code>GtkPadController</code> is an event controller for the pads found in drawing
+            <p><code>GtkPadController</code> is an event controller for the pads found in drawing
 tablets.</p>
 
 <p>Pads are the collection of buttons and tactile sensors often found around
@@ -6754,8 +6774,12 @@ modes and pad devices to an &ldquo;invert-selection&rdquo; action:</p>
 of type <code>G_VARIANT_TYPE_DOUBLE</code> bearing the value of the given axis, it
 is required that those are made stateful and accepting this <code>GVariantType</code>.</p>
 
+<p>The <code>PadController</code> type acts as a reference-counted owner of an underlying <code>GtkPadController</code> instance.
+It provides the methods that can operate on this data type through <code><a href="../Protocols/PadControllerProtocol.html">PadControllerProtocol</a></code> conformance.
+Use <code>PadController</code> as a strong reference or owner of a <code>GtkPadController</code> instance.</p>
+
               <div class="slightly-smaller">
-                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Overlay-PadController.swift#L1976-L2122">Show on GitHub</a>
+                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Overlay-PadController.swift#L1996-L2142">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -6813,7 +6837,7 @@ i.e., ownership is transferred to the <code>PadController</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Overlay-PadController.swift#L1981-L1983">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Overlay-PadController.swift#L2001-L2003">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6865,7 +6889,7 @@ i.e., ownership is transferred to the <code>PadController</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Overlay-PadController.swift#L1989-L1991">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Overlay-PadController.swift#L2009-L2011">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6918,7 +6942,7 @@ i.e., ownership is transferred to the <code>PadController</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Overlay-PadController.swift#L1998-L2001">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Overlay-PadController.swift#L2018-L2021">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6971,7 +6995,7 @@ i.e., ownership is transferred to the <code>PadController</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Overlay-PadController.swift#L2008-L2011">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Overlay-PadController.swift#L2028-L2031">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7023,7 +7047,7 @@ i.e., ownership is transferred to the <code>PadController</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Overlay-PadController.swift#L2017-L2020">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Overlay-PadController.swift#L2037-L2040">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7075,7 +7099,7 @@ i.e., ownership is transferred to the <code>PadController</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Overlay-PadController.swift#L2026-L2029">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Overlay-PadController.swift#L2046-L2049">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7127,7 +7151,7 @@ i.e., ownership is transferred to the <code>PadController</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Overlay-PadController.swift#L2035-L2037">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Overlay-PadController.swift#L2055-L2057">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7178,7 +7202,7 @@ Will retain <code>GtkPadController</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Overlay-PadController.swift#L2042-L2044">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Overlay-PadController.swift#L2062-L2064">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7229,7 +7253,7 @@ Will retain <code>GtkPadController</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Overlay-PadController.swift#L2049-L2051">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Overlay-PadController.swift#L2069-L2071">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7280,7 +7304,7 @@ Will retain <code>GtkPadController</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Overlay-PadController.swift#L2056-L2058">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Overlay-PadController.swift#L2076-L2078">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7331,7 +7355,7 @@ Will retain <code>GtkPadController</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Overlay-PadController.swift#L2063-L2065">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Overlay-PadController.swift#L2083-L2085">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7363,7 +7387,7 @@ Will retain <code>GtkPadController</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Overlay-PadController.swift#L2069-L2071">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Overlay-PadController.swift#L2089-L2091">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7414,7 +7438,7 @@ Will retain <code>GtkPadController</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Overlay-PadController.swift#L2076-L2078">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Overlay-PadController.swift#L2096-L2098">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7465,7 +7489,7 @@ Will retain <code>GtkPadController</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Overlay-PadController.swift#L2083-L2085">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Overlay-PadController.swift#L2103-L2105">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7516,7 +7540,7 @@ Will retain <code>GtkPadController</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Overlay-PadController.swift#L2090-L2092">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Overlay-PadController.swift#L2110-L2112">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7567,7 +7591,7 @@ Will retain <code>GtkPadController</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Overlay-PadController.swift#L2097-L2099">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Overlay-PadController.swift#L2117-L2119">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7611,7 +7635,7 @@ a pad controller to any other type of widget will not have an effect.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Overlay-PadController.swift#L2115-L2119">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Overlay-PadController.swift#L2135-L2139">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7624,8 +7648,8 @@ a pad controller to any other type of widget will not have an effect.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-05-16)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.7</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-12-10)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

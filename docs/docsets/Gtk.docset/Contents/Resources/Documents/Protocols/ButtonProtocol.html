@@ -21,7 +21,7 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          Gtk 4.2.1 Docs
+          Gtk 4.4.1 Docs
         </a>
          (95% documented)
       </p>
@@ -663,6 +663,9 @@
                 <a class="nav-group-task-link" href="../Classes/PasswordEntry.html">PasswordEntry</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PasswordEntryBuffer.html">PasswordEntryBuffer</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Picture.html">Picture</a>
               </li>
               <li class="nav-group-task">
@@ -990,6 +993,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk13INTERFACE_AGEs5Int32Vvp">INTERFACE_AGE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21INVALID_LIST_POSITIONs6UInt32Vvp">INVALID_LIST_POSITION</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21LEVEL_BAR_OFFSET_FULLSSvp">LEVEL_BAR_OFFSET_FULL</a>
@@ -2111,6 +2117,12 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PanedSignalName.html">PanedSignalName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferPropertyName.html">PasswordEntryBufferPropertyName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferSignalName.html">PasswordEntryBufferSignalName</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PasswordEntryPropertyName.html">PasswordEntryPropertyName</a>
@@ -4111,6 +4123,12 @@
                 <a class="nav-group-task-link" href="../Protocols/ParamSpecExpressionProtocol.html">ParamSpecExpressionProtocol</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferClassProtocol.html">PasswordEntryBufferClassProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferProtocol.html">PasswordEntryBufferProtocol</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/PasswordEntryClassProtocol.html">PasswordEntryClassProtocol</a>
               </li>
               <li class="nav-group-task">
@@ -5577,6 +5595,12 @@
                 <a class="nav-group-task-link" href="../Structs/ParamSpecExpressionRef.html">ParamSpecExpressionRef</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferClassRef.html">PasswordEntryBufferClassRef</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferRef.html">PasswordEntryBufferRef</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/PasswordEntryClassRef.html">PasswordEntryClassRef</a>
               </li>
               <li class="nav-group-task">
@@ -6704,12 +6728,7 @@
 
                 </div>
               </div>
-            <p>The <code>ButtonProtocol</code> protocol exposes the methods and properties of an underlying <code>GtkButton</code> instance.
-The default implementation of these can be found in the protocol extension below.
-For a concrete class that implements these methods and properties, see <code><a href="../Classes/Button.html">Button</a></code>.
-Alternatively, use <code><a href="../Structs/ButtonRef.html">ButtonRef</a></code> as a lighweight, <code>unowned</code> reference if you already have an instance you just want to use.</p>
-
-<p>The <code>GtkButton</code> widget is generally used to trigger a callback function that is
+            <p>The <code>GtkButton</code> widget is generally used to trigger a callback function that is
 called when the button is pressed.</p>
 
 <p><img src="button.png" alt="An example GtkButton"></p>
@@ -6738,8 +6757,13 @@ or [class<code>Gtk.FontButton</code>] use style classes such as .toggle, .popup,
 
 <p><code>GtkButton</code> uses the <code>GTK_ACCESSIBLE_ROLE_BUTTON</code> role.</p>
 
+<p>The <code>ButtonProtocol</code> protocol exposes the methods and properties of an underlying <code>GtkButton</code> instance.
+The default implementation of these can be found in the protocol extension below.
+For a concrete class that implements these methods and properties, see <code><a href="../Classes/Button.html">Button</a></code>.
+Alternatively, use <code><a href="../Structs/ButtonRef.html">ButtonRef</a></code> as a lighweight, <code>unowned</code> reference if you already have an instance you just want to use.</p>
+
               <div class="slightly-smaller">
-                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L4661-L4670">Show on GitHub</a>
+                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L4700-L4709">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -6773,7 +6797,7 @@ or [class<code>Gtk.FontButton</code>] use style classes such as .toggle, .popup,
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L4663">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L4702">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6811,7 +6835,7 @@ or [class<code>Gtk.FontButton</code>] use style classes such as .toggle, .popup,
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L4666">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L4705">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6841,7 +6865,7 @@ or [class<code>Gtk.FontButton</code>] use style classes such as .toggle, .popup,
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L4669">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L4708">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6972,7 +6996,7 @@ or [class<code>Gtk.FontButton</code>] use style classes such as .toggle, .popup,
                         <p>binding reference or <code>nil</code> in case of an error</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L5239-L5263">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L5280-L5304">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7029,7 +7053,7 @@ or [class<code>Gtk.FontButton</code>] use style classes such as .toggle, .popup,
                         <p>the value of the named property</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L5268-L5272">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L5309-L5313">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7087,7 +7111,7 @@ or [class<code>Gtk.FontButton</code>] use style classes such as .toggle, .popup,
                         <p>the value of the named property</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L5278-L5280">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L5319-L5321">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7206,7 +7230,7 @@ or [class<code>Gtk.FontButton</code>] use style classes such as .toggle, .popup,
                         <p>The signal handler ID (always greater than 0 for successful connections)</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L5549-L5551">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L5592-L5594">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7312,7 +7336,7 @@ or [class<code>Gtk.FontButton</code>] use style classes such as .toggle, .popup,
                         <p>The signal handler ID (always greater than 0 for successful connections)</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L5562-L5564">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L5605-L5607">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7399,7 +7423,7 @@ Run the given callback whenever the <code>activate</code> signal is emitted</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L5576-L5590">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L5619-L5633">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7432,7 +7456,7 @@ Run the given callback whenever the <code>activate</code> signal is emitted</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L5593">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L5636">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7516,7 +7540,7 @@ Run the given callback whenever the <code>clicked</code> signal is emitted</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L5601-L5615">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L5644-L5658">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7549,7 +7573,7 @@ Run the given callback whenever the <code>clicked</code> signal is emitted</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L5618">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L5661">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7584,8 +7608,9 @@ and common practice is to do that only when the value has actually changed.</p>
 
 <p>This signal is typically used to obtain change notification for a
 single property, by specifying the property name as a detail in the
-<code>g_signal_connect()</code> call, like this:
-(C Language Example):</p>
+<code>g_signal_connect()</code> call, like this:</p>
+
+<p>(C Language Example):</p>
 <pre class="highlight plaintext"><code>g_signal_connect (text_view-&gt;buffer, "notify::paste-target-list",
                   G_CALLBACK (gtk_text_view_target_list_notify),
                   text_view)
@@ -7668,7 +7693,7 @@ Run the given callback whenever the <code>notifyChild</code> signal is emitted</
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L5650-L5664">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L5695-L5709">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7701,7 +7726,7 @@ Run the given callback whenever the <code>notifyChild</code> signal is emitted</
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L5667">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L5712">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7736,8 +7761,9 @@ and common practice is to do that only when the value has actually changed.</p>
 
 <p>This signal is typically used to obtain change notification for a
 single property, by specifying the property name as a detail in the
-<code>g_signal_connect()</code> call, like this:
-(C Language Example):</p>
+<code>g_signal_connect()</code> call, like this:</p>
+
+<p>(C Language Example):</p>
 <pre class="highlight plaintext"><code>g_signal_connect (text_view-&gt;buffer, "notify::paste-target-list",
                   G_CALLBACK (gtk_text_view_target_list_notify),
                   text_view)
@@ -7820,7 +7846,7 @@ Run the given callback whenever the <code>notifyHasFrame</code> signal is emitte
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L5699-L5713">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L5746-L5760">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7853,7 +7879,7 @@ Run the given callback whenever the <code>notifyHasFrame</code> signal is emitte
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L5716">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L5763">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7888,8 +7914,9 @@ and common practice is to do that only when the value has actually changed.</p>
 
 <p>This signal is typically used to obtain change notification for a
 single property, by specifying the property name as a detail in the
-<code>g_signal_connect()</code> call, like this:
-(C Language Example):</p>
+<code>g_signal_connect()</code> call, like this:</p>
+
+<p>(C Language Example):</p>
 <pre class="highlight plaintext"><code>g_signal_connect (text_view-&gt;buffer, "notify::paste-target-list",
                   G_CALLBACK (gtk_text_view_target_list_notify),
                   text_view)
@@ -7972,7 +7999,7 @@ Run the given callback whenever the <code>notifyIconName</code> signal is emitte
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L5748-L5762">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L5797-L5811">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8005,7 +8032,7 @@ Run the given callback whenever the <code>notifyIconName</code> signal is emitte
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L5765">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L5814">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8040,8 +8067,9 @@ and common practice is to do that only when the value has actually changed.</p>
 
 <p>This signal is typically used to obtain change notification for a
 single property, by specifying the property name as a detail in the
-<code>g_signal_connect()</code> call, like this:
-(C Language Example):</p>
+<code>g_signal_connect()</code> call, like this:</p>
+
+<p>(C Language Example):</p>
 <pre class="highlight plaintext"><code>g_signal_connect (text_view-&gt;buffer, "notify::paste-target-list",
                   G_CALLBACK (gtk_text_view_target_list_notify),
                   text_view)
@@ -8124,7 +8152,7 @@ Run the given callback whenever the <code>notifyLabel</code> signal is emitted</
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L5797-L5811">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L5848-L5862">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8157,7 +8185,7 @@ Run the given callback whenever the <code>notifyLabel</code> signal is emitted</
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L5814">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L5865">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8192,8 +8220,9 @@ and common practice is to do that only when the value has actually changed.</p>
 
 <p>This signal is typically used to obtain change notification for a
 single property, by specifying the property name as a detail in the
-<code>g_signal_connect()</code> call, like this:
-(C Language Example):</p>
+<code>g_signal_connect()</code> call, like this:</p>
+
+<p>(C Language Example):</p>
 <pre class="highlight plaintext"><code>g_signal_connect (text_view-&gt;buffer, "notify::paste-target-list",
                   G_CALLBACK (gtk_text_view_target_list_notify),
                   text_view)
@@ -8276,7 +8305,7 @@ Run the given callback whenever the <code>notifyUseUnderline</code> signal is em
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L5846-L5860">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L5899-L5913">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8309,7 +8338,7 @@ Run the given callback whenever the <code>notifyUseUnderline</code> signal is em
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L5863">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L5916">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8356,7 +8385,7 @@ Run the given callback whenever the <code>notifyUseUnderline</code> signal is em
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L5873-L5876">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L5926-L5929">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8390,7 +8419,7 @@ Run the given callback whenever the <code>notifyUseUnderline</code> signal is em
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L5879-L5882">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L5932-L5935">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8428,7 +8457,7 @@ an empty button with [ctor<code>Gtk.Button.new</code>] to use as a container.</p
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L5889-L5892">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L5942-L5945">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8466,7 +8495,7 @@ an empty button with [ctor<code>Gtk.Button.new</code>] to use as a container.</p
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L5899-L5902">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L5952-L5955">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8502,7 +8531,7 @@ an empty button with [ctor<code>Gtk.Button.new</code>] to use as a container.</p
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L5907-L5910">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L5960-L5963">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8525,6 +8554,12 @@ an empty button with [ctor<code>Gtk.Button.new</code>] to use as a container.</p
                       <div class="abstract">
                         <p>Sets the child widget of <code>button</code>.</p>
 
+<p>Note that by using this API, you take full responsibility for setting
+up the proper accessibility label and description information for <code>button</code>.
+Most likely, you&rsquo;ll either set the accessibility label or description
+for <code>button</code> explicitly, or you&rsquo;ll set a labelled-by or described-by
+relations from <code><a href="../Protocols/ButtonProtocol.html#/s:3Gtk14ButtonProtocolPAAE5childAA9WidgetRefVSgvp">child</a></code> to <code>button</code>.</p>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
@@ -8536,7 +8571,7 @@ an empty button with [ctor<code>Gtk.Button.new</code>] to use as a container.</p
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L5913-L5916">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L5972-L5975">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8559,6 +8594,12 @@ an empty button with [ctor<code>Gtk.Button.new</code>] to use as a container.</p
                       <div class="abstract">
                         <p>Sets the child widget of <code>button</code>.</p>
 
+<p>Note that by using this API, you take full responsibility for setting
+up the proper accessibility label and description information for <code>button</code>.
+Most likely, you&rsquo;ll either set the accessibility label or description
+for <code>button</code> explicitly, or you&rsquo;ll set a labelled-by or described-by
+relations from <code><a href="../Protocols/ButtonProtocol.html#/s:3Gtk14ButtonProtocolPAAE5childAA9WidgetRefVSgvp">child</a></code> to <code>button</code>.</p>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
@@ -8570,7 +8611,7 @@ an empty button with [ctor<code>Gtk.Button.new</code>] to use as a container.</p
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L5918-L5921">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L5983-L5986">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8606,7 +8647,7 @@ an empty button with [ctor<code>Gtk.Button.new</code>] to use as a container.</p
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L5926-L5929">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L5991-L5994">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8643,7 +8684,7 @@ be removed and replaced with the image.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L5935-L5938">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L6000-L6003">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8679,7 +8720,7 @@ be removed and replaced with the image.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L5943-L5946">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L6008-L6011">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8716,7 +8757,7 @@ the next character should be used for the mnemonic accelerator key.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L5952-L5955">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L6017-L6020">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8750,7 +8791,7 @@ the next character should be used for the mnemonic accelerator key.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L5957-L5967">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L6022-L6038">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8784,7 +8825,7 @@ the next character should be used for the mnemonic accelerator key.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L5970-L5982">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L6041-L6053">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8822,7 +8863,7 @@ an empty button with [ctor<code>Gtk.Button.new</code>] to use as a container.</p
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L5989-L6006">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L6060-L6077">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8856,7 +8897,7 @@ an empty button with [ctor<code>Gtk.Button.new</code>] to use as a container.</p
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L6009-L6025">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L6080-L6096">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8892,7 +8933,7 @@ an empty button with [ctor<code>Gtk.Button.new</code>] to use as a container.</p
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L6030-L6045">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L6101-L6116">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8905,8 +8946,8 @@ an empty button with [ctor<code>Gtk.Button.new</code>] to use as a container.</p
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-05-16)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.7</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-12-10)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

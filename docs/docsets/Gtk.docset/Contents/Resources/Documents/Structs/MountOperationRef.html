@@ -21,7 +21,7 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          Gtk 4.2.1 Docs
+          Gtk 4.4.1 Docs
         </a>
          (95% documented)
       </p>
@@ -663,6 +663,9 @@
                 <a class="nav-group-task-link" href="../Classes/PasswordEntry.html">PasswordEntry</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PasswordEntryBuffer.html">PasswordEntryBuffer</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Picture.html">Picture</a>
               </li>
               <li class="nav-group-task">
@@ -990,6 +993,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk13INTERFACE_AGEs5Int32Vvp">INTERFACE_AGE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21INVALID_LIST_POSITIONs6UInt32Vvp">INVALID_LIST_POSITION</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21LEVEL_BAR_OFFSET_FULLSSvp">LEVEL_BAR_OFFSET_FULL</a>
@@ -2111,6 +2117,12 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PanedSignalName.html">PanedSignalName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferPropertyName.html">PasswordEntryBufferPropertyName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferSignalName.html">PasswordEntryBufferSignalName</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PasswordEntryPropertyName.html">PasswordEntryPropertyName</a>
@@ -4111,6 +4123,12 @@
                 <a class="nav-group-task-link" href="../Protocols/ParamSpecExpressionProtocol.html">ParamSpecExpressionProtocol</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferClassProtocol.html">PasswordEntryBufferClassProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferProtocol.html">PasswordEntryBufferProtocol</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/PasswordEntryClassProtocol.html">PasswordEntryClassProtocol</a>
               </li>
               <li class="nav-group-task">
@@ -5577,6 +5595,12 @@
                 <a class="nav-group-task-link" href="../Structs/ParamSpecExpressionRef.html">ParamSpecExpressionRef</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferClassRef.html">PasswordEntryBufferClassRef</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferRef.html">PasswordEntryBufferRef</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/PasswordEntryClassRef.html">PasswordEntryClassRef</a>
               </li>
               <li class="nav-group-task">
@@ -6704,11 +6728,7 @@
 
                 </div>
               </div>
-            <p>The <code>MountOperationRef</code> type acts as a lightweight Swift reference to an underlying <code>GtkMountOperation</code> instance.
-It exposes methods that can operate on this data type through <code><a href="../Protocols/MountOperationProtocol.html">MountOperationProtocol</a></code> conformance.
-Use <code>MountOperationRef</code> only as an <code>unowned</code> reference to an existing <code>GtkMountOperation</code> instance.</p>
-
-<p><code>GtkMountOperation</code> is an implementation of <code>GMountOperation</code>.</p>
+            <p><code>GtkMountOperation</code> is an implementation of <code>GMountOperation</code>.</p>
 
 <p>The functions and objects described here make working with GTK and
 GIO more convenient.</p>
@@ -6722,8 +6742,12 @@ GIO functions for mounting volumes such as
 <p>When necessary, <code>GtkMountOperation</code> shows dialogs to let the user
 enter passwords, ask questions or show processes blocking unmount.</p>
 
+<p>The <code>MountOperationRef</code> type acts as a lightweight Swift reference to an underlying <code>GtkMountOperation</code> instance.
+It exposes methods that can operate on this data type through <code><a href="../Protocols/MountOperationProtocol.html">MountOperationProtocol</a></code> conformance.
+Use <code>MountOperationRef</code> only as an <code>unowned</code> reference to an existing <code>GtkMountOperation</code> instance.</p>
+
               <div class="slightly-smaller">
-                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L5288-L5292">Show on GitHub</a>
+                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L5958-L5962">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -6760,7 +6784,7 @@ enter passwords, ask questions or show processes blocking unmount.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L5291">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L5961">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6804,7 +6828,7 @@ enter passwords, ask questions or show processes blocking unmount.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L5296-L5298">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L5966-L5968">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6835,7 +6859,7 @@ enter passwords, ask questions or show processes blocking unmount.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L5301-L5303">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L5971-L5973">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6866,7 +6890,7 @@ enter passwords, ask questions or show processes blocking unmount.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L5306-L5309">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L5976-L5979">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6897,7 +6921,7 @@ enter passwords, ask questions or show processes blocking unmount.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L5312-L5315">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L5982-L5985">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6928,7 +6952,7 @@ enter passwords, ask questions or show processes blocking unmount.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L5318-L5321">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L5988-L5991">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6959,7 +6983,7 @@ enter passwords, ask questions or show processes blocking unmount.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L5324-L5327">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L5994-L5997">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6990,7 +7014,7 @@ enter passwords, ask questions or show processes blocking unmount.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L5330-L5332">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L6000-L6002">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7021,7 +7045,7 @@ enter passwords, ask questions or show processes blocking unmount.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L5335">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L6005">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7053,7 +7077,7 @@ enter passwords, ask questions or show processes blocking unmount.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L5339-L5341">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L6009-L6011">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7085,7 +7109,7 @@ enter passwords, ask questions or show processes blocking unmount.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L5345-L5347">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L6015-L6017">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7117,7 +7141,7 @@ enter passwords, ask questions or show processes blocking unmount.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L5351-L5353">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L6021-L6023">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7149,7 +7173,7 @@ enter passwords, ask questions or show processes blocking unmount.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L5357-L5359">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L6027-L6029">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7181,7 +7205,7 @@ enter passwords, ask questions or show processes blocking unmount.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L5363-L5365">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L6033-L6035">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7194,8 +7218,8 @@ enter passwords, ask questions or show processes blocking unmount.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-05-16)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.7</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-12-10)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

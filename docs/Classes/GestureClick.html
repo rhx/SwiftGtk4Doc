@@ -21,7 +21,7 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          Gtk 4.2.1 Docs
+          Gtk 4.4.1 Docs
         </a>
          (95% documented)
       </p>
@@ -663,6 +663,9 @@
                 <a class="nav-group-task-link" href="../Classes/PasswordEntry.html">PasswordEntry</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PasswordEntryBuffer.html">PasswordEntryBuffer</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Picture.html">Picture</a>
               </li>
               <li class="nav-group-task">
@@ -990,6 +993,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk13INTERFACE_AGEs5Int32Vvp">INTERFACE_AGE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21INVALID_LIST_POSITIONs6UInt32Vvp">INVALID_LIST_POSITION</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21LEVEL_BAR_OFFSET_FULLSSvp">LEVEL_BAR_OFFSET_FULL</a>
@@ -2111,6 +2117,12 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PanedSignalName.html">PanedSignalName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferPropertyName.html">PasswordEntryBufferPropertyName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferSignalName.html">PasswordEntryBufferSignalName</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PasswordEntryPropertyName.html">PasswordEntryPropertyName</a>
@@ -4111,6 +4123,12 @@
                 <a class="nav-group-task-link" href="../Protocols/ParamSpecExpressionProtocol.html">ParamSpecExpressionProtocol</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferClassProtocol.html">PasswordEntryBufferClassProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferProtocol.html">PasswordEntryBufferProtocol</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/PasswordEntryClassProtocol.html">PasswordEntryClassProtocol</a>
               </li>
               <li class="nav-group-task">
@@ -5577,6 +5595,12 @@
                 <a class="nav-group-task-link" href="../Structs/ParamSpecExpressionRef.html">ParamSpecExpressionRef</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferClassRef.html">PasswordEntryBufferClassRef</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferRef.html">PasswordEntryBufferRef</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/PasswordEntryClassRef.html">PasswordEntryClassRef</a>
               </li>
               <li class="nav-group-task">
@@ -6704,11 +6728,7 @@
 
                 </div>
               </div>
-            <p>The <code>GestureClick</code> type acts as a reference-counted owner of an underlying <code>GtkGestureClick</code> instance.
-It provides the methods that can operate on this data type through <code><a href="../Protocols/GestureClickProtocol.html">GestureClickProtocol</a></code> conformance.
-Use <code>GestureClick</code> as a strong reference or owner of a <code>GtkGestureClick</code> instance.</p>
-
-<p><code>GtkGestureClick</code> is a <code>GtkGesture</code> implementation for clicks.</p>
+            <p><code>GtkGestureClick</code> is a <code>GtkGesture</code> implementation for clicks.</p>
 
 <p>It is able to recognize multiple clicks on a nearby zone, which
 can be listened for through the [signal<code>Gtk.GestureClick::pressed</code>]
@@ -6716,8 +6736,12 @@ signal. Whenever time or distance between clicks exceed the GTK
 defaults, [signal<code>Gtk.GestureClick::stopped</code>] is emitted, and the
 click counter is reset.</p>
 
+<p>The <code>GestureClick</code> type acts as a reference-counted owner of an underlying <code>GtkGestureClick</code> instance.
+It provides the methods that can operate on this data type through <code><a href="../Protocols/GestureClickProtocol.html">GestureClickProtocol</a></code> conformance.
+Use <code>GestureClick</code> as a strong reference or owner of a <code>GtkGestureClick</code> instance.</p>
+
               <div class="slightly-smaller">
-                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L1324-L1458">Show on GitHub</a>
+                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L1334-L1468">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -6775,7 +6799,7 @@ i.e., ownership is transferred to the <code>GestureClick</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L1329-L1331">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L1339-L1341">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6827,7 +6851,7 @@ i.e., ownership is transferred to the <code>GestureClick</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L1337-L1339">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L1347-L1349">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6880,7 +6904,7 @@ i.e., ownership is transferred to the <code>GestureClick</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L1346-L1349">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L1356-L1359">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6933,7 +6957,7 @@ i.e., ownership is transferred to the <code>GestureClick</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L1356-L1359">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L1366-L1369">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6985,7 +7009,7 @@ i.e., ownership is transferred to the <code>GestureClick</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L1365-L1368">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L1375-L1378">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7037,7 +7061,7 @@ i.e., ownership is transferred to the <code>GestureClick</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L1374-L1377">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L1384-L1387">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7089,7 +7113,7 @@ i.e., ownership is transferred to the <code>GestureClick</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L1383-L1385">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L1393-L1395">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7140,7 +7164,7 @@ Will retain <code>GtkGestureClick</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L1390-L1392">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L1400-L1402">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7191,7 +7215,7 @@ Will retain <code>GtkGestureClick</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L1397-L1399">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L1407-L1409">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7242,7 +7266,7 @@ Will retain <code>GtkGestureClick</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L1404-L1406">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L1414-L1416">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7293,7 +7317,7 @@ Will retain <code>GtkGestureClick</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L1411-L1413">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L1421-L1423">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7325,7 +7349,7 @@ Will retain <code>GtkGestureClick</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L1417-L1419">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L1427-L1429">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7376,7 +7400,7 @@ Will retain <code>GtkGestureClick</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L1424-L1426">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L1434-L1436">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7427,7 +7451,7 @@ Will retain <code>GtkGestureClick</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L1431-L1433">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L1441-L1443">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7478,7 +7502,7 @@ Will retain <code>GtkGestureClick</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L1438-L1440">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L1448-L1450">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7529,7 +7553,7 @@ Will retain <code>GtkGestureClick</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L1445-L1447">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L1455-L1457">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7561,7 +7585,7 @@ single and multiple presses.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L1451-L1455">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L1461-L1465">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7574,8 +7598,8 @@ single and multiple presses.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-05-16)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.7</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-12-10)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

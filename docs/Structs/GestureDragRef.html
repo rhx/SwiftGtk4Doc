@@ -21,7 +21,7 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          Gtk 4.2.1 Docs
+          Gtk 4.4.1 Docs
         </a>
          (95% documented)
       </p>
@@ -663,6 +663,9 @@
                 <a class="nav-group-task-link" href="../Classes/PasswordEntry.html">PasswordEntry</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PasswordEntryBuffer.html">PasswordEntryBuffer</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Picture.html">Picture</a>
               </li>
               <li class="nav-group-task">
@@ -990,6 +993,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk13INTERFACE_AGEs5Int32Vvp">INTERFACE_AGE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21INVALID_LIST_POSITIONs6UInt32Vvp">INVALID_LIST_POSITION</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21LEVEL_BAR_OFFSET_FULLSSvp">LEVEL_BAR_OFFSET_FULL</a>
@@ -2111,6 +2117,12 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PanedSignalName.html">PanedSignalName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferPropertyName.html">PasswordEntryBufferPropertyName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferSignalName.html">PasswordEntryBufferSignalName</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PasswordEntryPropertyName.html">PasswordEntryPropertyName</a>
@@ -4111,6 +4123,12 @@
                 <a class="nav-group-task-link" href="../Protocols/ParamSpecExpressionProtocol.html">ParamSpecExpressionProtocol</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferClassProtocol.html">PasswordEntryBufferClassProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferProtocol.html">PasswordEntryBufferProtocol</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/PasswordEntryClassProtocol.html">PasswordEntryClassProtocol</a>
               </li>
               <li class="nav-group-task">
@@ -5577,6 +5595,12 @@
                 <a class="nav-group-task-link" href="../Structs/ParamSpecExpressionRef.html">ParamSpecExpressionRef</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferClassRef.html">PasswordEntryBufferClassRef</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferRef.html">PasswordEntryBufferRef</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/PasswordEntryClassRef.html">PasswordEntryClassRef</a>
               </li>
               <li class="nav-group-task">
@@ -6704,11 +6728,7 @@
 
                 </div>
               </div>
-            <p>The <code>GestureDragRef</code> type acts as a lightweight Swift reference to an underlying <code>GtkGestureDrag</code> instance.
-It exposes methods that can operate on this data type through <code><a href="../Protocols/GestureDragProtocol.html">GestureDragProtocol</a></code> conformance.
-Use <code>GestureDragRef</code> only as an <code>unowned</code> reference to an existing <code>GtkGestureDrag</code> instance.</p>
-
-<p><code>GtkGestureDrag</code> is a <code>GtkGesture</code> implementation for drags.</p>
+            <p><code>GtkGestureDrag</code> is a <code>GtkGesture</code> implementation for drags.</p>
 
 <p>The drag operation itself can be tracked throughout the
 [signal<code>Gtk.GestureDrag::drag-begin</code>],
@@ -6718,8 +6738,12 @@ coordinates can be extracted through
 [method<code>Gtk.GestureDrag.get_offset</code>] and
 [method<code>Gtk.GestureDrag.get_start_point</code>].</p>
 
+<p>The <code>GestureDragRef</code> type acts as a lightweight Swift reference to an underlying <code>GtkGestureDrag</code> instance.
+It exposes methods that can operate on this data type through <code><a href="../Protocols/GestureDragProtocol.html">GestureDragProtocol</a></code> conformance.
+Use <code>GestureDragRef</code> only as an <code>unowned</code> reference to an existing <code>GtkGestureDrag</code> instance.</p>
+
               <div class="slightly-smaller">
-                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L1842-L1846">Show on GitHub</a>
+                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L1856-L1860">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -6756,7 +6780,7 @@ coordinates can be extracted through
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L1845">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L1859">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6800,7 +6824,7 @@ coordinates can be extracted through
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L1850-L1852">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L1864-L1866">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6831,7 +6855,7 @@ coordinates can be extracted through
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L1855-L1857">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L1869-L1871">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6862,7 +6886,7 @@ coordinates can be extracted through
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L1860-L1863">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L1874-L1877">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6893,7 +6917,7 @@ coordinates can be extracted through
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L1866-L1869">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L1880-L1883">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6924,7 +6948,7 @@ coordinates can be extracted through
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L1872-L1875">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L1886-L1889">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6955,7 +6979,7 @@ coordinates can be extracted through
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L1878-L1881">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L1892-L1895">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6986,7 +7010,7 @@ coordinates can be extracted through
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L1884-L1886">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L1898-L1900">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7017,7 +7041,7 @@ coordinates can be extracted through
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L1889">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L1903">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7049,7 +7073,7 @@ coordinates can be extracted through
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L1893-L1895">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L1907-L1909">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7081,7 +7105,7 @@ coordinates can be extracted through
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L1899-L1901">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L1913-L1915">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7113,7 +7137,7 @@ coordinates can be extracted through
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L1905-L1907">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L1919-L1921">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7145,7 +7169,7 @@ coordinates can be extracted through
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L1911-L1913">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L1925-L1927">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7177,7 +7201,7 @@ coordinates can be extracted through
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L1917-L1919">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L1931-L1933">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7208,7 +7232,7 @@ coordinates can be extracted through
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L1922-L1925">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L1936-L1939">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7221,8 +7245,8 @@ coordinates can be extracted through
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-05-16)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.7</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-12-10)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

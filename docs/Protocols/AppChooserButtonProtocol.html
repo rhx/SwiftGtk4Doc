@@ -21,7 +21,7 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          Gtk 4.2.1 Docs
+          Gtk 4.4.1 Docs
         </a>
          (95% documented)
       </p>
@@ -663,6 +663,9 @@
                 <a class="nav-group-task-link" href="../Classes/PasswordEntry.html">PasswordEntry</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PasswordEntryBuffer.html">PasswordEntryBuffer</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Picture.html">Picture</a>
               </li>
               <li class="nav-group-task">
@@ -990,6 +993,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk13INTERFACE_AGEs5Int32Vvp">INTERFACE_AGE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21INVALID_LIST_POSITIONs6UInt32Vvp">INVALID_LIST_POSITION</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21LEVEL_BAR_OFFSET_FULLSSvp">LEVEL_BAR_OFFSET_FULL</a>
@@ -2111,6 +2117,12 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PanedSignalName.html">PanedSignalName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferPropertyName.html">PasswordEntryBufferPropertyName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferSignalName.html">PasswordEntryBufferSignalName</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PasswordEntryPropertyName.html">PasswordEntryPropertyName</a>
@@ -4111,6 +4123,12 @@
                 <a class="nav-group-task-link" href="../Protocols/ParamSpecExpressionProtocol.html">ParamSpecExpressionProtocol</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferClassProtocol.html">PasswordEntryBufferClassProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferProtocol.html">PasswordEntryBufferProtocol</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/PasswordEntryClassProtocol.html">PasswordEntryClassProtocol</a>
               </li>
               <li class="nav-group-task">
@@ -5577,6 +5595,12 @@
                 <a class="nav-group-task-link" href="../Structs/ParamSpecExpressionRef.html">ParamSpecExpressionRef</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferClassRef.html">PasswordEntryBufferClassRef</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferRef.html">PasswordEntryBufferRef</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/PasswordEntryClassRef.html">PasswordEntryClassRef</a>
               </li>
               <li class="nav-group-task">
@@ -6704,12 +6728,7 @@
 
                 </div>
               </div>
-            <p>The <code>AppChooserButtonProtocol</code> protocol exposes the methods and properties of an underlying <code>GtkAppChooserButton</code> instance.
-The default implementation of these can be found in the protocol extension below.
-For a concrete class that implements these methods and properties, see <code><a href="../Classes/AppChooserButton.html">AppChooserButton</a></code>.
-Alternatively, use <code><a href="../Structs/AppChooserButtonRef.html">AppChooserButtonRef</a></code> as a lighweight, <code>unowned</code> reference if you already have an instance you just want to use.</p>
-
-<p>The <code>GtkAppChooserButton</code> lets the user select an application.</p>
+            <p>The <code>GtkAppChooserButton</code> lets the user select an application.</p>
 
 <p><img src="appchooserbutton.png" alt="An example GtkAppChooserButton"></p>
 
@@ -6736,8 +6755,13 @@ emitted when they are selected.</p>
 
 <p><code>GtkAppChooserButton</code> has a single CSS node with the name “appchooserbutton”.</p>
 
+<p>The <code>AppChooserButtonProtocol</code> protocol exposes the methods and properties of an underlying <code>GtkAppChooserButton</code> instance.
+The default implementation of these can be found in the protocol extension below.
+For a concrete class that implements these methods and properties, see <code><a href="../Classes/AppChooserButton.html">AppChooserButton</a></code>.
+Alternatively, use <code><a href="../Structs/AppChooserButtonRef.html">AppChooserButtonRef</a></code> as a lighweight, <code>unowned</code> reference if you already have an instance you just want to use.</p>
+
               <div class="slightly-smaller">
-                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L6187-L6196">Show on GitHub</a>
+                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L6325-L6334">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -6771,7 +6795,7 @@ emitted when they are selected.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L6189">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L6327">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6809,7 +6833,7 @@ emitted when they are selected.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L6192">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L6330">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6839,7 +6863,7 @@ emitted when they are selected.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L6195">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L6333">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6970,7 +6994,7 @@ emitted when they are selected.</p>
                         <p>binding reference or <code>nil</code> in case of an error</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L6647-L6671">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L6787-L6811">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7027,7 +7051,7 @@ emitted when they are selected.</p>
                         <p>the value of the named property</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L6676-L6680">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L6816-L6820">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7085,7 +7109,7 @@ emitted when they are selected.</p>
                         <p>the value of the named property</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L6686-L6688">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L6826-L6828">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7204,7 +7228,7 @@ emitted when they are selected.</p>
                         <p>The signal handler ID (always greater than 0 for successful connections)</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L6959-L6961">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L7106-L7108">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7310,7 +7334,127 @@ emitted when they are selected.</p>
                         <p>The signal handler ID (always greater than 0 for successful connections)</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L6972-L6974">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L7119-L7121">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3Gtk24AppChooserButtonProtocolPAAE10onActivate5flags7handlerSi10GLibObject12ConnectFlagsV_yAA0bcD3RefVctF"></a>
+                    <a name="//apple_ref/swift/Method/onActivate(flags:handler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3Gtk24AppChooserButtonProtocolPAAE10onActivate5flags7handlerSi10GLibObject12ConnectFlagsV_yAA0bcD3RefVctF">onActivate(flags:<wbr>handler:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Emitted to when the button is activated.</p>
+
+<p>The <code>activate</code> signal on <code>GtkAppChooserButton</code> is an action signal and
+emitting it causes the button to pop up its dialog.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    This represents the underlying <code>activate</code> signal
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">@inlinable</span>
+<span class="kd">func</span> <span class="nf">onActivate</span><span class="p">(</span><span class="nv">flags</span><span class="p">:</span> <span class="kt">ConnectFlags</span> <span class="o">=</span> <span class="kt">ConnectFlags</span><span class="p">(</span><span class="mi">0</span><span class="p">),</span> <span class="nv">handler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">unownedSelf</span><span class="p">:</span> <span class="kt"><a href="../Structs/AppChooserButtonRef.html">AppChooserButtonRef</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>flags</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Flags</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>unownedSelf</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Reference to instance of self</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>handler</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The signal handler to call
+Run the given callback whenever the <code>activate</code> signal is emitted</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L7133-L7147">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3Gtk24AppChooserButtonProtocolPAAE14activateSignalAA0bcdG4NameOvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/activateSignal" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3Gtk24AppChooserButtonProtocolPAAE14activateSignalAA0bcdG4NameOvpZ">activateSignal</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Typed <code>activate</code> signal for using the <code>connect(signal:)</code> methods</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="k">var</span> <span class="nv">activateSignal</span><span class="p">:</span> <span class="kt"><a href="../Enums/AppChooserButtonSignalName.html">AppChooserButtonSignalName</a></span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L7150">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7394,7 +7538,7 @@ Run the given callback whenever the <code>changed</code> signal is emitted</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L6983-L6997">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L7158-L7172">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7427,7 +7571,7 @@ Run the given callback whenever the <code>changed</code> signal is emitted</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L7000">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L7175">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7526,7 +7670,7 @@ Run the given callback whenever the <code>customItemActivated</code> signal is e
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L7012-L7026">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L7187-L7201">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7559,7 +7703,7 @@ Run the given callback whenever the <code>customItemActivated</code> signal is e
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L7029">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L7204">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7594,8 +7738,9 @@ and common practice is to do that only when the value has actually changed.</p>
 
 <p>This signal is typically used to obtain change notification for a
 single property, by specifying the property name as a detail in the
-<code>g_signal_connect()</code> call, like this:
-(C Language Example):</p>
+<code>g_signal_connect()</code> call, like this:</p>
+
+<p>(C Language Example):</p>
 <pre class="highlight plaintext"><code>g_signal_connect (text_view-&gt;buffer, "notify::paste-target-list",
                   G_CALLBACK (gtk_text_view_target_list_notify),
                   text_view)
@@ -7678,7 +7823,7 @@ Run the given callback whenever the <code>notifyHeading</code> signal is emitted
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L7061-L7075">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L7238-L7252">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7711,7 +7856,7 @@ Run the given callback whenever the <code>notifyHeading</code> signal is emitted
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L7078">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L7255">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7746,8 +7891,9 @@ and common practice is to do that only when the value has actually changed.</p>
 
 <p>This signal is typically used to obtain change notification for a
 single property, by specifying the property name as a detail in the
-<code>g_signal_connect()</code> call, like this:
-(C Language Example):</p>
+<code>g_signal_connect()</code> call, like this:</p>
+
+<p>(C Language Example):</p>
 <pre class="highlight plaintext"><code>g_signal_connect (text_view-&gt;buffer, "notify::paste-target-list",
                   G_CALLBACK (gtk_text_view_target_list_notify),
                   text_view)
@@ -7830,7 +7976,7 @@ Run the given callback whenever the <code>notifyModal</code> signal is emitted</
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L7110-L7124">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L7289-L7303">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7863,7 +8009,7 @@ Run the given callback whenever the <code>notifyModal</code> signal is emitted</
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L7127">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L7306">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7898,8 +8044,9 @@ and common practice is to do that only when the value has actually changed.</p>
 
 <p>This signal is typically used to obtain change notification for a
 single property, by specifying the property name as a detail in the
-<code>g_signal_connect()</code> call, like this:
-(C Language Example):</p>
+<code>g_signal_connect()</code> call, like this:</p>
+
+<p>(C Language Example):</p>
 <pre class="highlight plaintext"><code>g_signal_connect (text_view-&gt;buffer, "notify::paste-target-list",
                   G_CALLBACK (gtk_text_view_target_list_notify),
                   text_view)
@@ -7982,7 +8129,7 @@ Run the given callback whenever the <code>notifyShowDefaultItem</code> signal is
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L7159-L7173">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L7340-L7354">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8015,7 +8162,7 @@ Run the given callback whenever the <code>notifyShowDefaultItem</code> signal is
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L7176">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L7357">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8050,8 +8197,9 @@ and common practice is to do that only when the value has actually changed.</p>
 
 <p>This signal is typically used to obtain change notification for a
 single property, by specifying the property name as a detail in the
-<code>g_signal_connect()</code> call, like this:
-(C Language Example):</p>
+<code>g_signal_connect()</code> call, like this:</p>
+
+<p>(C Language Example):</p>
 <pre class="highlight plaintext"><code>g_signal_connect (text_view-&gt;buffer, "notify::paste-target-list",
                   G_CALLBACK (gtk_text_view_target_list_notify),
                   text_view)
@@ -8134,7 +8282,7 @@ Run the given callback whenever the <code>notifyShowDialogItem</code> signal is 
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L7208-L7222">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L7391-L7405">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8167,7 +8315,7 @@ Run the given callback whenever the <code>notifyShowDialogItem</code> signal is 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L7225">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L7408">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8222,7 +8370,7 @@ callback for the activation of a particular custom item in the list.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L7243-L7246">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L7426-L7429">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8257,7 +8405,7 @@ in the popup.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L7250-L7253">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L7433-L7436">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8291,7 +8439,7 @@ in the popup.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L7256-L7259">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L7439-L7442">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8325,7 +8473,7 @@ in the popup.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L7262-L7265">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L7445-L7448">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8360,7 +8508,7 @@ application at the top.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L7269-L7272">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L7452-L7455">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8395,7 +8543,7 @@ for a <code>GtkAppChooserDialog</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L7276-L7279">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L7459-L7462">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8434,7 +8582,7 @@ to its initial state.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L7287-L7290">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L7470-L7473">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8470,7 +8618,7 @@ to its initial state.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L7295-L7298">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L7478-L7481">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8504,7 +8652,7 @@ to its initial state.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L7301-L7304">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L7484-L7487">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8539,7 +8687,7 @@ default application for the given content type at top.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L7308-L7311">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L7491-L7494">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8574,7 +8722,7 @@ entry to trigger a <code>GtkAppChooserDialog</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L7315-L7318">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L7498-L7501">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8611,7 +8759,7 @@ opened from the button.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L7323-L7335">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L7506-L7518">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8645,7 +8793,7 @@ opened from the button.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L7338-L7348">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L7521-L7531">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8680,7 +8828,7 @@ application at the top.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L7352-L7364">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L7535-L7547">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8715,7 +8863,7 @@ for a <code>GtkAppChooserDialog</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L7368-L7380">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L7551-L7563">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8728,8 +8876,8 @@ for a <code>GtkAppChooserDialog</code>.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-05-16)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.7</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-12-10)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

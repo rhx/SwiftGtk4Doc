@@ -21,7 +21,7 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          Gtk 4.2.1 Docs
+          Gtk 4.4.1 Docs
         </a>
          (95% documented)
       </p>
@@ -663,6 +663,9 @@
                 <a class="nav-group-task-link" href="../Classes/PasswordEntry.html">PasswordEntry</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PasswordEntryBuffer.html">PasswordEntryBuffer</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Picture.html">Picture</a>
               </li>
               <li class="nav-group-task">
@@ -990,6 +993,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk13INTERFACE_AGEs5Int32Vvp">INTERFACE_AGE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21INVALID_LIST_POSITIONs6UInt32Vvp">INVALID_LIST_POSITION</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21LEVEL_BAR_OFFSET_FULLSSvp">LEVEL_BAR_OFFSET_FULL</a>
@@ -2111,6 +2117,12 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PanedSignalName.html">PanedSignalName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferPropertyName.html">PasswordEntryBufferPropertyName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferSignalName.html">PasswordEntryBufferSignalName</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PasswordEntryPropertyName.html">PasswordEntryPropertyName</a>
@@ -4111,6 +4123,12 @@
                 <a class="nav-group-task-link" href="../Protocols/ParamSpecExpressionProtocol.html">ParamSpecExpressionProtocol</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferClassProtocol.html">PasswordEntryBufferClassProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferProtocol.html">PasswordEntryBufferProtocol</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/PasswordEntryClassProtocol.html">PasswordEntryClassProtocol</a>
               </li>
               <li class="nav-group-task">
@@ -5577,6 +5595,12 @@
                 <a class="nav-group-task-link" href="../Structs/ParamSpecExpressionRef.html">ParamSpecExpressionRef</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferClassRef.html">PasswordEntryBufferClassRef</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferRef.html">PasswordEntryBufferRef</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/PasswordEntryClassRef.html">PasswordEntryClassRef</a>
               </li>
               <li class="nav-group-task">
@@ -6704,11 +6728,7 @@
 
                 </div>
               </div>
-            <p>The <code>AdjustmentRef</code> type acts as a lightweight Swift reference to an underlying <code>GtkAdjustment</code> instance.
-It exposes methods that can operate on this data type through <code><a href="../Protocols/AdjustmentProtocol.html">AdjustmentProtocol</a></code> conformance.
-Use <code>AdjustmentRef</code> only as an <code>unowned</code> reference to an existing <code>GtkAdjustment</code> instance.</p>
-
-<p><code>GtkAdjustment</code> is a model for a numeric value.</p>
+            <p><code>GtkAdjustment</code> is a model for a numeric value.</p>
 
 <p>The `GtkAdjustment has an associated lower and upper bound.
 It also contains step and page increments, and a page size.</p>
@@ -6720,8 +6740,12 @@ and [class<code>Gtk.Scale</code>].</p>
 <p>The <code>GtkAdjustment</code> object does not update the value itself. Instead
 it is left up to the owner of the <code>GtkAdjustment</code> to control the value.</p>
 
+<p>The <code>AdjustmentRef</code> type acts as a lightweight Swift reference to an underlying <code>GtkAdjustment</code> instance.
+It exposes methods that can operate on this data type through <code><a href="../Protocols/AdjustmentProtocol.html">AdjustmentProtocol</a></code> conformance.
+Use <code>AdjustmentRef</code> only as an <code>unowned</code> reference to an existing <code>GtkAdjustment</code> instance.</p>
+
               <div class="slightly-smaller">
-                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L4382-L4386">Show on GitHub</a>
+                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L4494-L4498">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -6758,7 +6782,7 @@ it is left up to the owner of the <code>GtkAdjustment</code> to control the valu
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L4385">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L4497">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6802,7 +6826,7 @@ it is left up to the owner of the <code>GtkAdjustment</code> to control the valu
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L4390-L4392">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L4502-L4504">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6833,7 +6857,7 @@ it is left up to the owner of the <code>GtkAdjustment</code> to control the valu
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L4395-L4397">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L4507-L4509">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6864,7 +6888,7 @@ it is left up to the owner of the <code>GtkAdjustment</code> to control the valu
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L4400-L4403">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L4512-L4515">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6895,7 +6919,7 @@ it is left up to the owner of the <code>GtkAdjustment</code> to control the valu
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L4406-L4409">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L4518-L4521">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6926,7 +6950,7 @@ it is left up to the owner of the <code>GtkAdjustment</code> to control the valu
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L4412-L4415">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L4524-L4527">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6957,7 +6981,7 @@ it is left up to the owner of the <code>GtkAdjustment</code> to control the valu
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L4418-L4421">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L4530-L4533">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6988,7 +7012,7 @@ it is left up to the owner of the <code>GtkAdjustment</code> to control the valu
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L4424-L4426">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L4536-L4538">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7019,7 +7043,7 @@ it is left up to the owner of the <code>GtkAdjustment</code> to control the valu
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L4429">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L4541">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7051,7 +7075,7 @@ it is left up to the owner of the <code>GtkAdjustment</code> to control the valu
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L4433-L4435">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L4545-L4547">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7083,7 +7107,7 @@ it is left up to the owner of the <code>GtkAdjustment</code> to control the valu
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L4439-L4441">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L4551-L4553">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7115,7 +7139,7 @@ it is left up to the owner of the <code>GtkAdjustment</code> to control the valu
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L4445-L4447">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L4557-L4559">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7147,7 +7171,7 @@ it is left up to the owner of the <code>GtkAdjustment</code> to control the valu
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L4451-L4453">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L4563-L4565">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7179,7 +7203,7 @@ it is left up to the owner of the <code>GtkAdjustment</code> to control the valu
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L4457-L4459">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L4569-L4571">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7210,7 +7234,7 @@ it is left up to the owner of the <code>GtkAdjustment</code> to control the valu
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L4462-L4465">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L4574-L4577">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7223,8 +7247,8 @@ it is left up to the owner of the <code>GtkAdjustment</code> to control the valu
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-05-16)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.7</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-12-10)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

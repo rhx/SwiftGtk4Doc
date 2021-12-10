@@ -21,7 +21,7 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          Gtk 4.2.1 Docs
+          Gtk 4.4.1 Docs
         </a>
          (95% documented)
       </p>
@@ -663,6 +663,9 @@
                 <a class="nav-group-task-link" href="../Classes/PasswordEntry.html">PasswordEntry</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PasswordEntryBuffer.html">PasswordEntryBuffer</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Picture.html">Picture</a>
               </li>
               <li class="nav-group-task">
@@ -990,6 +993,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk13INTERFACE_AGEs5Int32Vvp">INTERFACE_AGE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21INVALID_LIST_POSITIONs6UInt32Vvp">INVALID_LIST_POSITION</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21LEVEL_BAR_OFFSET_FULLSSvp">LEVEL_BAR_OFFSET_FULL</a>
@@ -2111,6 +2117,12 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PanedSignalName.html">PanedSignalName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferPropertyName.html">PasswordEntryBufferPropertyName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferSignalName.html">PasswordEntryBufferSignalName</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PasswordEntryPropertyName.html">PasswordEntryPropertyName</a>
@@ -4111,6 +4123,12 @@
                 <a class="nav-group-task-link" href="../Protocols/ParamSpecExpressionProtocol.html">ParamSpecExpressionProtocol</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferClassProtocol.html">PasswordEntryBufferClassProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferProtocol.html">PasswordEntryBufferProtocol</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/PasswordEntryClassProtocol.html">PasswordEntryClassProtocol</a>
               </li>
               <li class="nav-group-task">
@@ -5577,6 +5595,12 @@
                 <a class="nav-group-task-link" href="../Structs/ParamSpecExpressionRef.html">ParamSpecExpressionRef</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferClassRef.html">PasswordEntryBufferClassRef</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferRef.html">PasswordEntryBufferRef</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/PasswordEntryClassRef.html">PasswordEntryClassRef</a>
               </li>
               <li class="nav-group-task">
@@ -6707,7 +6731,7 @@
             <p>Undocumented</p>
 
               <div class="slightly-smaller">
-                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L624-L889">Show on GitHub</a>
+                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L624-L888">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -7061,8 +7085,9 @@ and common practice is to do that only when the value has actually changed.</p>
 
 <p>This signal is typically used to obtain change notification for a
 single property, by specifying the property name as a detail in the
-<code>g_signal_connect()</code> call, like this:
-(C Language Example):</p>
+<code>g_signal_connect()</code> call, like this:</p>
+
+<p>(C Language Example):</p>
 <pre class="highlight plaintext"><code>g_signal_connect (text_view-&gt;buffer, "notify::paste-target-list",
                   G_CALLBACK (gtk_text_view_target_list_notify),
                   text_view)
@@ -7082,7 +7107,7 @@ detail strings for the notify signal.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L687">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L689">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7112,7 +7137,7 @@ detail strings for the notify signal.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L689">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L691">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7142,7 +7167,7 @@ detail strings for the notify signal.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L691">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L693">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7185,7 +7210,7 @@ destined function calls.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L706">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L708">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7218,7 +7243,7 @@ or the widget has been mapped (that is, it is going to be drawn).</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L711">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L713">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7248,7 +7273,7 @@ or the widget has been mapped (that is, it is going to be drawn).</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L713">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L715">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7280,7 +7305,7 @@ or the widget has been mapped (that is, it is going to be drawn).</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L717">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L719">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7316,7 +7341,7 @@ it can be used to, for example, stop an animation on the widget.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L725">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L727">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7349,7 +7374,7 @@ or the widget has been unmapped (that is, it is going to be hidden).</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L730">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L732">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7383,7 +7408,7 @@ typically in their instance init function.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L736">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L738">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7413,7 +7438,7 @@ typically in their instance init function.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L738">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L740">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7443,7 +7468,7 @@ typically in their instance init function.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L740">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L742">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7476,7 +7501,7 @@ typically in their instance init function.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L745">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L747">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7506,7 +7531,7 @@ typically in their instance init function.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L747">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L749">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7526,9 +7551,6 @@ typically in their instance init function.</p>
                       <div class="abstract">
                         <p>The selected day (as a number between 1 and 31).</p>
 
-<p>This can be set to 0 to unselect the currently selected day.
-This property gets initially set to the current day.</p>
-
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
@@ -7539,7 +7561,7 @@ This property gets initially set to the current day.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L752">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L751">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7571,7 +7593,7 @@ This property gets initially set to the current day.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L756">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L755">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7601,7 +7623,7 @@ This property gets initially set to the current day.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L758">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L757">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7631,7 +7653,7 @@ This property gets initially set to the current day.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L760">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L759">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7661,7 +7683,7 @@ This property gets initially set to the current day.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L762">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L761">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7691,7 +7713,7 @@ This property gets initially set to the current day.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L764">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L763">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7725,7 +7747,7 @@ determine whether it will provide a tooltip or not.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L770">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L769">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7757,7 +7779,7 @@ determine whether it will provide a tooltip or not.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L774">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L773">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7787,7 +7809,7 @@ determine whether it will provide a tooltip or not.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L776">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L775">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7817,7 +7839,7 @@ determine whether it will provide a tooltip or not.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L778">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L777">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7851,7 +7873,7 @@ typically in their instance init function.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L784">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L783">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7885,7 +7907,7 @@ request, the margin will be added in addition to the size from
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L790">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L789">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7922,7 +7944,7 @@ request, the margin will be added in addition to the size from
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L799">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L798">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7959,7 +7981,7 @@ request, the margin will be added in addition to the size from
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L808">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L807">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7993,7 +8015,7 @@ request, the margin will be added in addition to the size from
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L814">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L813">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8025,7 +8047,7 @@ request, the margin will be added in addition to the size from
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L818">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L817">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8055,7 +8077,7 @@ request, the margin will be added in addition to the size from
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L820">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L819">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8085,7 +8107,7 @@ request, the margin will be added in addition to the size from
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L822">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L821">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8118,7 +8140,7 @@ typically in their instance init function.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L827">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L826">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8148,7 +8170,7 @@ typically in their instance init function.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L829">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L828">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8178,7 +8200,7 @@ typically in their instance init function.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L831">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L830">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8210,7 +8232,7 @@ typically in their instance init function.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L835">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L834">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8240,7 +8262,7 @@ typically in their instance init function.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L837">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L836">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8270,7 +8292,7 @@ typically in their instance init function.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L839">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L838">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8300,7 +8322,7 @@ typically in their instance init function.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L841">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L840">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8330,7 +8352,7 @@ typically in their instance init function.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L843">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L842">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8360,7 +8382,7 @@ typically in their instance init function.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L845">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L844">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8402,7 +8424,7 @@ the default signal handler.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L859">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L858">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8443,7 +8465,7 @@ the default signal handler.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L872">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L871">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8473,7 +8495,7 @@ the default signal handler.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L874">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L873">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8503,7 +8525,7 @@ the default signal handler.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L876">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L875">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8533,7 +8555,7 @@ the default signal handler.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L878">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L877">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8563,7 +8585,7 @@ the default signal handler.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L880">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L879">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8595,7 +8617,7 @@ the default signal handler.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L884">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L883">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8627,7 +8649,7 @@ the default signal handler.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L888">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L887">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8640,8 +8662,8 @@ the default signal handler.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-05-16)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.7</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-12-10)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

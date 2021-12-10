@@ -21,7 +21,7 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          Gtk 4.2.1 Docs
+          Gtk 4.4.1 Docs
         </a>
          (95% documented)
       </p>
@@ -663,6 +663,9 @@
                 <a class="nav-group-task-link" href="../Classes/PasswordEntry.html">PasswordEntry</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PasswordEntryBuffer.html">PasswordEntryBuffer</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Picture.html">Picture</a>
               </li>
               <li class="nav-group-task">
@@ -990,6 +993,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk13INTERFACE_AGEs5Int32Vvp">INTERFACE_AGE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21INVALID_LIST_POSITIONs6UInt32Vvp">INVALID_LIST_POSITION</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21LEVEL_BAR_OFFSET_FULLSSvp">LEVEL_BAR_OFFSET_FULL</a>
@@ -2111,6 +2117,12 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PanedSignalName.html">PanedSignalName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferPropertyName.html">PasswordEntryBufferPropertyName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferSignalName.html">PasswordEntryBufferSignalName</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PasswordEntryPropertyName.html">PasswordEntryPropertyName</a>
@@ -4111,6 +4123,12 @@
                 <a class="nav-group-task-link" href="../Protocols/ParamSpecExpressionProtocol.html">ParamSpecExpressionProtocol</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferClassProtocol.html">PasswordEntryBufferClassProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferProtocol.html">PasswordEntryBufferProtocol</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/PasswordEntryClassProtocol.html">PasswordEntryClassProtocol</a>
               </li>
               <li class="nav-group-task">
@@ -5577,6 +5595,12 @@
                 <a class="nav-group-task-link" href="../Structs/ParamSpecExpressionRef.html">ParamSpecExpressionRef</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferClassRef.html">PasswordEntryBufferClassRef</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferRef.html">PasswordEntryBufferRef</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/PasswordEntryClassRef.html">PasswordEntryClassRef</a>
               </li>
               <li class="nav-group-task">
@@ -6704,11 +6728,7 @@
 
                 </div>
               </div>
-            <p>The <code>PageSetup</code> type acts as a reference-counted owner of an underlying <code>GtkPageSetup</code> instance.
-It provides the methods that can operate on this data type through <code><a href="../Protocols/PageSetupProtocol.html">PageSetupProtocol</a></code> conformance.
-Use <code>PageSetup</code> as a strong reference or owner of a <code>GtkPageSetup</code> instance.</p>
-
-<p>A <code>GtkPageSetup</code> object stores the page size, orientation and margins.</p>
+            <p>A <code>GtkPageSetup</code> object stores the page size, orientation and margins.</p>
 
 <p>The idea is that you can get one of these from the page setup dialog
 and then pass it to the <code>GtkPrintOperation</code> when printing.
@@ -6747,8 +6767,12 @@ and receive the resulting page setup.</p>
 <span class="p">}</span>
 </code></pre>
 
+<p>The <code>PageSetup</code> type acts as a reference-counted owner of an underlying <code>GtkPageSetup</code> instance.
+It provides the methods that can operate on this data type through <code><a href="../Protocols/PageSetupProtocol.html">PageSetupProtocol</a></code> conformance.
+Use <code>PageSetup</code> as a strong reference or owner of a <code>GtkPageSetup</code> instance.</p>
+
               <div class="slightly-smaller">
-                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L321-L527">Show on GitHub</a>
+                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L324-L530">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -6806,7 +6830,7 @@ i.e., ownership is transferred to the <code>PageSetup</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L326-L328">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L329-L331">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6858,7 +6882,7 @@ i.e., ownership is transferred to the <code>PageSetup</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L334-L336">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L337-L339">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6911,7 +6935,7 @@ i.e., ownership is transferred to the <code>PageSetup</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L343-L346">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L346-L349">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6964,7 +6988,7 @@ i.e., ownership is transferred to the <code>PageSetup</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L353-L356">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L356-L359">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7016,7 +7040,7 @@ i.e., ownership is transferred to the <code>PageSetup</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L362-L365">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L365-L368">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7068,7 +7092,7 @@ i.e., ownership is transferred to the <code>PageSetup</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L371-L374">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L374-L377">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7120,7 +7144,7 @@ i.e., ownership is transferred to the <code>PageSetup</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L380-L382">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L383-L385">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7171,7 +7195,7 @@ Will retain <code>GtkPageSetup</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L387-L389">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L390-L392">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7222,7 +7246,7 @@ Will retain <code>GtkPageSetup</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L394-L396">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L397-L399">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7273,7 +7297,7 @@ Will retain <code>GtkPageSetup</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L401-L403">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L404-L406">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7324,7 +7348,7 @@ Will retain <code>GtkPageSetup</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L408-L410">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L411-L413">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7356,7 +7380,7 @@ Will retain <code>GtkPageSetup</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L414-L416">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L417-L419">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7407,7 +7431,7 @@ Will retain <code>GtkPageSetup</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L421-L423">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L424-L426">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7458,7 +7482,7 @@ Will retain <code>GtkPageSetup</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L428-L430">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L431-L433">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7509,7 +7533,7 @@ Will retain <code>GtkPageSetup</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L435-L437">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L438-L440">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7560,7 +7584,7 @@ Will retain <code>GtkPageSetup</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L442-L444">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L445-L447">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7591,7 +7615,7 @@ Will retain <code>GtkPageSetup</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L447-L451">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L450-L454">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7626,7 +7650,7 @@ See [method<code>Gtk.PageSetup.to_file</code>].</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L458-L464">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L461-L467">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7660,7 +7684,7 @@ See [method<code>Gtk.PageSetup.to_file</code>].</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L470-L474">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L473-L477">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7695,7 +7719,7 @@ page setup, or <code>nil</code> if an error occurred.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L481-L487">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L484-L490">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7730,7 +7754,7 @@ See [method<code>Gtk.PageSetup.to_file</code>].</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L494-L501">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L497-L504">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7764,7 +7788,7 @@ See [method<code>Gtk.PageSetup.to_file</code>].</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L507-L511">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L510-L514">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7799,7 +7823,7 @@ page setup, or <code>nil</code> if an error occurred.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L518-L525">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L521-L528">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7812,8 +7836,8 @@ page setup, or <code>nil</code> if an error occurred.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-05-16)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.7</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-12-10)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

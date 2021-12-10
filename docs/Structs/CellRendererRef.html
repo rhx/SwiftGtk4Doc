@@ -21,7 +21,7 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          Gtk 4.2.1 Docs
+          Gtk 4.4.1 Docs
         </a>
          (95% documented)
       </p>
@@ -663,6 +663,9 @@
                 <a class="nav-group-task-link" href="../Classes/PasswordEntry.html">PasswordEntry</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PasswordEntryBuffer.html">PasswordEntryBuffer</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Picture.html">Picture</a>
               </li>
               <li class="nav-group-task">
@@ -990,6 +993,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk13INTERFACE_AGEs5Int32Vvp">INTERFACE_AGE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21INVALID_LIST_POSITIONs6UInt32Vvp">INVALID_LIST_POSITION</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21LEVEL_BAR_OFFSET_FULLSSvp">LEVEL_BAR_OFFSET_FULL</a>
@@ -2111,6 +2117,12 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PanedSignalName.html">PanedSignalName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferPropertyName.html">PasswordEntryBufferPropertyName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferSignalName.html">PasswordEntryBufferSignalName</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PasswordEntryPropertyName.html">PasswordEntryPropertyName</a>
@@ -4111,6 +4123,12 @@
                 <a class="nav-group-task-link" href="../Protocols/ParamSpecExpressionProtocol.html">ParamSpecExpressionProtocol</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferClassProtocol.html">PasswordEntryBufferClassProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferProtocol.html">PasswordEntryBufferProtocol</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/PasswordEntryClassProtocol.html">PasswordEntryClassProtocol</a>
               </li>
               <li class="nav-group-task">
@@ -5577,6 +5595,12 @@
                 <a class="nav-group-task-link" href="../Structs/ParamSpecExpressionRef.html">ParamSpecExpressionRef</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferClassRef.html">PasswordEntryBufferClassRef</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferRef.html">PasswordEntryBufferRef</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/PasswordEntryClassRef.html">PasswordEntryClassRef</a>
               </li>
               <li class="nav-group-task">
@@ -6704,11 +6728,7 @@
 
                 </div>
               </div>
-            <p>The <code>CellRendererRef</code> type acts as a lightweight Swift reference to an underlying <code>GtkCellRenderer</code> instance.
-It exposes methods that can operate on this data type through <code><a href="../Protocols/CellRendererProtocol.html">CellRendererProtocol</a></code> conformance.
-Use <code>CellRendererRef</code> only as an <code>unowned</code> reference to an existing <code>GtkCellRenderer</code> instance.</p>
-
-<p>An object for rendering a single cell</p>
+            <p>An object for rendering a single cell</p>
 
 <p>The <code>GtkCellRenderer</code> is a base class of a set of objects used for
 rendering a cell to a <code>cairo_t</code>.  These objects are used primarily by
@@ -6720,7 +6740,7 @@ specific way.  It is worth noting that <code>GtkCellRenderer</code> is not a
 elements on a <code>cairo_t</code>. Typically, one cell renderer is used to
 draw many cells on the screen.  To this extent, it isn’t expected that a
 CellRenderer keep any permanent state around.  Instead, any state is set
-just prior to use using <code>GObjects</code> property system.  Then, the
+just prior to use using <code>GObject</code>s property system.  Then, the
 cell is measured using <code>gtk_cell_renderer_get_preferred_size()</code>. Finally, the cell
 is rendered in the correct location using <code>gtk_cell_renderer_snapshot()</code>.</p>
 
@@ -6732,22 +6752,26 @@ generic properties that are expected to be honored by all children.</p>
 
 <p>Beyond merely rendering a cell, cell renderers can optionally
 provide active user interface elements. A cell renderer can be
-“activatable” like <code>GtkCellRendererToggle</code>,
+“activatable” like <code>GtkCellRenderer</code>Toggle,
 which toggles when it gets activated by a mouse click, or it can be
-“editable” like <code>GtkCellRendererText</code>, which
+“editable” like <code>GtkCellRenderer</code>Text, which
 allows the user to edit the text using a widget implementing the
 <code>GtkCellEditable</code> interface, e.g. <code>GtkEntry</code>.
 To make a cell renderer activatable or editable, you have to
-implement the <code>GtkCellRendererClass.activate</code> or
-<code>GtkCellRendererClass.start_editing</code> virtual functions, respectively.</p>
+implement the <code>GtkCellRenderer</code>Class.activate or
+<code>GtkCellRenderer</code>Class.start_editing virtual functions, respectively.</p>
 
 <p>Many properties of <code>GtkCellRenderer</code> and its subclasses have a
 corresponding “set” property, e.g. “cell-background-set” corresponds
 to “cell-background”. These “set” properties reflect whether a property
 has been set or not. You should not set them independently.</p>
 
+<p>The <code>CellRendererRef</code> type acts as a lightweight Swift reference to an underlying <code>GtkCellRenderer</code> instance.
+It exposes methods that can operate on this data type through <code><a href="../Protocols/CellRendererProtocol.html">CellRendererProtocol</a></code> conformance.
+Use <code>CellRendererRef</code> only as an <code>unowned</code> reference to an existing <code>GtkCellRenderer</code> instance.</p>
+
               <div class="slightly-smaller">
-                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L4998-L5002">Show on GitHub</a>
+                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L5037-L5041">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -6784,7 +6808,7 @@ has been set or not. You should not set them independently.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L5001">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L5040">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6828,7 +6852,7 @@ has been set or not. You should not set them independently.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L5006-L5008">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L5045-L5047">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6859,7 +6883,7 @@ has been set or not. You should not set them independently.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L5011-L5013">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L5050-L5052">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6890,7 +6914,7 @@ has been set or not. You should not set them independently.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L5016-L5019">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L5055-L5058">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6921,7 +6945,7 @@ has been set or not. You should not set them independently.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L5022-L5025">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L5061-L5064">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6952,7 +6976,7 @@ has been set or not. You should not set them independently.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L5028-L5031">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L5067-L5070">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6983,7 +7007,7 @@ has been set or not. You should not set them independently.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L5034-L5037">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L5073-L5076">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7014,7 +7038,7 @@ has been set or not. You should not set them independently.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L5040-L5042">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L5079-L5081">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7045,7 +7069,7 @@ has been set or not. You should not set them independently.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L5045">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L5084">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7077,7 +7101,7 @@ has been set or not. You should not set them independently.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L5049-L5051">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L5088-L5090">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7109,7 +7133,7 @@ has been set or not. You should not set them independently.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L5055-L5057">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L5094-L5096">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7141,7 +7165,7 @@ has been set or not. You should not set them independently.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L5061-L5063">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L5100-L5102">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7173,7 +7197,7 @@ has been set or not. You should not set them independently.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L5067-L5069">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L5106-L5108">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7205,7 +7229,7 @@ has been set or not. You should not set them independently.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L5073-L5075">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L5112-L5114">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7218,8 +7242,8 @@ has been set or not. You should not set them independently.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-05-16)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.7</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-12-10)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

@@ -21,7 +21,7 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          Gtk 4.2.1 Docs
+          Gtk 4.4.1 Docs
         </a>
          (95% documented)
       </p>
@@ -663,6 +663,9 @@
                 <a class="nav-group-task-link" href="../Classes/PasswordEntry.html">PasswordEntry</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PasswordEntryBuffer.html">PasswordEntryBuffer</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Picture.html">Picture</a>
               </li>
               <li class="nav-group-task">
@@ -990,6 +993,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk13INTERFACE_AGEs5Int32Vvp">INTERFACE_AGE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21INVALID_LIST_POSITIONs6UInt32Vvp">INVALID_LIST_POSITION</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21LEVEL_BAR_OFFSET_FULLSSvp">LEVEL_BAR_OFFSET_FULL</a>
@@ -2111,6 +2117,12 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PanedSignalName.html">PanedSignalName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferPropertyName.html">PasswordEntryBufferPropertyName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferSignalName.html">PasswordEntryBufferSignalName</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PasswordEntryPropertyName.html">PasswordEntryPropertyName</a>
@@ -4111,6 +4123,12 @@
                 <a class="nav-group-task-link" href="../Protocols/ParamSpecExpressionProtocol.html">ParamSpecExpressionProtocol</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferClassProtocol.html">PasswordEntryBufferClassProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferProtocol.html">PasswordEntryBufferProtocol</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/PasswordEntryClassProtocol.html">PasswordEntryClassProtocol</a>
               </li>
               <li class="nav-group-task">
@@ -5577,6 +5595,12 @@
                 <a class="nav-group-task-link" href="../Structs/ParamSpecExpressionRef.html">ParamSpecExpressionRef</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferClassRef.html">PasswordEntryBufferClassRef</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferRef.html">PasswordEntryBufferRef</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/PasswordEntryClassRef.html">PasswordEntryClassRef</a>
               </li>
               <li class="nav-group-task">
@@ -6704,18 +6728,18 @@
 
                 </div>
               </div>
-            <p>The <code>TreeIterRef</code> type acts as a lightweight Swift reference to an underlying <code>GtkTreeIter</code> instance.
-It exposes methods that can operate on this data type through <code><a href="../Protocols/TreeIterProtocol.html">TreeIterProtocol</a></code> conformance.
-Use <code>TreeIterRef</code> only as an <code>unowned</code> reference to an existing <code>GtkTreeIter</code> instance.</p>
-
-<p>The <code>GtkTreeIter</code> is the primary structure
+            <p>The <code>GtkTreeIter</code> is the primary structure
 for accessing a <code>GtkTreeModel</code>. Models are expected to put a unique
 integer in the <code>stamp</code> member, and put
 model-specific data in the three <code>user_data</code>
 members.</p>
 
+<p>The <code>TreeIterRef</code> type acts as a lightweight Swift reference to an underlying <code>GtkTreeIter</code> instance.
+It exposes methods that can operate on this data type through <code><a href="../Protocols/TreeIterProtocol.html">TreeIterProtocol</a></code> conformance.
+Use <code>TreeIterRef</code> only as an <code>unowned</code> reference to an existing <code>GtkTreeIter</code> instance.</p>
+
               <div class="slightly-smaller">
-                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L2843-L2847">Show on GitHub</a>
+                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L2864-L2868">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -6752,7 +6776,7 @@ members.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L2846">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L2867">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6796,7 +6820,7 @@ members.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L2851-L2853">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L2872-L2874">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6827,7 +6851,7 @@ members.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L2856-L2858">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L2877-L2879">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6858,7 +6882,7 @@ members.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L2861-L2864">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L2882-L2885">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6889,7 +6913,7 @@ members.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L2867-L2870">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L2888-L2891">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6920,7 +6944,7 @@ members.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L2873-L2876">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L2894-L2897">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6951,7 +6975,7 @@ members.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L2879-L2882">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L2900-L2903">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6982,7 +7006,7 @@ members.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L2885-L2887">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L2906-L2908">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7014,7 +7038,7 @@ members.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L2891-L2893">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L2912-L2914">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7046,7 +7070,7 @@ members.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L2897-L2899">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L2918-L2920">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7078,7 +7102,7 @@ members.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L2903-L2905">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L2924-L2926">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7110,7 +7134,7 @@ members.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L2909-L2911">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L2930-L2932">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7142,7 +7166,7 @@ members.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L2915-L2917">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L2936-L2938">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7155,8 +7179,8 @@ members.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-05-16)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.7</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-12-10)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

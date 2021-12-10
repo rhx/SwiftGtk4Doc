@@ -21,7 +21,7 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          Gtk 4.2.1 Docs
+          Gtk 4.4.1 Docs
         </a>
          (95% documented)
       </p>
@@ -663,6 +663,9 @@
                 <a class="nav-group-task-link" href="../Classes/PasswordEntry.html">PasswordEntry</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PasswordEntryBuffer.html">PasswordEntryBuffer</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Picture.html">Picture</a>
               </li>
               <li class="nav-group-task">
@@ -990,6 +993,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk13INTERFACE_AGEs5Int32Vvp">INTERFACE_AGE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21INVALID_LIST_POSITIONs6UInt32Vvp">INVALID_LIST_POSITION</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21LEVEL_BAR_OFFSET_FULLSSvp">LEVEL_BAR_OFFSET_FULL</a>
@@ -2111,6 +2117,12 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PanedSignalName.html">PanedSignalName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferPropertyName.html">PasswordEntryBufferPropertyName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferSignalName.html">PasswordEntryBufferSignalName</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PasswordEntryPropertyName.html">PasswordEntryPropertyName</a>
@@ -4111,6 +4123,12 @@
                 <a class="nav-group-task-link" href="../Protocols/ParamSpecExpressionProtocol.html">ParamSpecExpressionProtocol</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferClassProtocol.html">PasswordEntryBufferClassProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferProtocol.html">PasswordEntryBufferProtocol</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/PasswordEntryClassProtocol.html">PasswordEntryClassProtocol</a>
               </li>
               <li class="nav-group-task">
@@ -5577,6 +5595,12 @@
                 <a class="nav-group-task-link" href="../Structs/ParamSpecExpressionRef.html">ParamSpecExpressionRef</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferClassRef.html">PasswordEntryBufferClassRef</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferRef.html">PasswordEntryBufferRef</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/PasswordEntryClassRef.html">PasswordEntryClassRef</a>
               </li>
               <li class="nav-group-task">
@@ -6704,11 +6728,7 @@
 
                 </div>
               </div>
-            <p>The <code>Root</code> type acts as a reference-counted owner of an underlying <code>GtkRoot</code> instance.
-It provides the methods that can operate on this data type through <code><a href="../Protocols/RootProtocol.html">RootProtocol</a></code> conformance.
-Use <code>Root</code> as a strong reference or owner of a <code>GtkRoot</code> instance.</p>
-
-<p><code>GtkRoot</code> is the interface implemented by all widgets that can act as a toplevel
+            <p><code>GtkRoot</code> is the interface implemented by all widgets that can act as a toplevel
 widget.</p>
 
 <p>The root widget takes care of providing the connection to the windowing system
@@ -6722,8 +6742,12 @@ and manages layout, drawing and event delivery for its widget hierarchy.</p>
 <p><code>GtkRoot</code> also maintains the location of keyboard focus inside its widget
 hierarchy, with [method<code>Gtk.Root.set_focus</code>] and [method<code>Gtk.Root.get_focus</code>].</p>
 
+<p>The <code>Root</code> type acts as a reference-counted owner of an underlying <code>GtkRoot</code> instance.
+It provides the methods that can operate on this data type through <code><a href="../Protocols/RootProtocol.html">RootProtocol</a></code> conformance.
+Use <code>Root</code> as a strong reference or owner of a <code>GtkRoot</code> instance.</p>
+
               <div class="slightly-smaller">
-                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Root-Scrollable.swift#L162-L289">Show on GitHub</a>
+                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Root-Scrollable.swift#L165-L292">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -6781,7 +6805,7 @@ i.e., ownership is transferred to the <code>Root</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Root-Scrollable.swift#L167-L169">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Root-Scrollable.swift#L170-L172">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6833,7 +6857,7 @@ i.e., ownership is transferred to the <code>Root</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Root-Scrollable.swift#L175-L177">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Root-Scrollable.swift#L178-L180">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6886,7 +6910,7 @@ i.e., ownership is transferred to the <code>Root</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Root-Scrollable.swift#L184-L187">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Root-Scrollable.swift#L187-L190">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6939,7 +6963,7 @@ i.e., ownership is transferred to the <code>Root</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Root-Scrollable.swift#L194-L197">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Root-Scrollable.swift#L197-L200">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6991,7 +7015,7 @@ i.e., ownership is transferred to the <code>Root</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Root-Scrollable.swift#L203-L206">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Root-Scrollable.swift#L206-L209">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7043,7 +7067,7 @@ i.e., ownership is transferred to the <code>Root</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Root-Scrollable.swift#L212-L215">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Root-Scrollable.swift#L215-L218">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7095,7 +7119,7 @@ i.e., ownership is transferred to the <code>Root</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Root-Scrollable.swift#L221-L223">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Root-Scrollable.swift#L224-L226">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7146,7 +7170,7 @@ Will retain <code>GtkRoot</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Root-Scrollable.swift#L228-L230">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Root-Scrollable.swift#L231-L233">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7197,7 +7221,7 @@ Will retain <code>GtkRoot</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Root-Scrollable.swift#L235-L237">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Root-Scrollable.swift#L238-L240">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7248,7 +7272,7 @@ Will retain <code>GtkRoot</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Root-Scrollable.swift#L242-L244">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Root-Scrollable.swift#L245-L247">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7299,7 +7323,7 @@ Will retain <code>GtkRoot</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Root-Scrollable.swift#L249-L251">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Root-Scrollable.swift#L252-L254">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7331,7 +7355,7 @@ Will retain <code>GtkRoot</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Root-Scrollable.swift#L255-L257">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Root-Scrollable.swift#L258-L260">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7382,7 +7406,7 @@ Will retain <code>GtkRoot</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Root-Scrollable.swift#L262-L264">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Root-Scrollable.swift#L265-L267">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7433,7 +7457,7 @@ Will retain <code>GtkRoot</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Root-Scrollable.swift#L269-L271">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Root-Scrollable.swift#L272-L274">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7484,7 +7508,7 @@ Will retain <code>GtkRoot</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Root-Scrollable.swift#L276-L278">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Root-Scrollable.swift#L279-L281">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7535,7 +7559,7 @@ Will retain <code>GtkRoot</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Root-Scrollable.swift#L283-L285">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Root-Scrollable.swift#L286-L288">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7548,8 +7572,8 @@ Will retain <code>GtkRoot</code>.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-05-16)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.7</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-12-10)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

@@ -21,7 +21,7 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          Gtk 4.2.1 Docs
+          Gtk 4.4.1 Docs
         </a>
          (95% documented)
       </p>
@@ -663,6 +663,9 @@
                 <a class="nav-group-task-link" href="../Classes/PasswordEntry.html">PasswordEntry</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PasswordEntryBuffer.html">PasswordEntryBuffer</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Picture.html">Picture</a>
               </li>
               <li class="nav-group-task">
@@ -990,6 +993,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk13INTERFACE_AGEs5Int32Vvp">INTERFACE_AGE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21INVALID_LIST_POSITIONs6UInt32Vvp">INVALID_LIST_POSITION</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21LEVEL_BAR_OFFSET_FULLSSvp">LEVEL_BAR_OFFSET_FULL</a>
@@ -2111,6 +2117,12 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PanedSignalName.html">PanedSignalName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferPropertyName.html">PasswordEntryBufferPropertyName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferSignalName.html">PasswordEntryBufferSignalName</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PasswordEntryPropertyName.html">PasswordEntryPropertyName</a>
@@ -4111,6 +4123,12 @@
                 <a class="nav-group-task-link" href="../Protocols/ParamSpecExpressionProtocol.html">ParamSpecExpressionProtocol</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferClassProtocol.html">PasswordEntryBufferClassProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferProtocol.html">PasswordEntryBufferProtocol</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/PasswordEntryClassProtocol.html">PasswordEntryClassProtocol</a>
               </li>
               <li class="nav-group-task">
@@ -5577,6 +5595,12 @@
                 <a class="nav-group-task-link" href="../Structs/ParamSpecExpressionRef.html">ParamSpecExpressionRef</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferClassRef.html">PasswordEntryBufferClassRef</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferRef.html">PasswordEntryBufferRef</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/PasswordEntryClassRef.html">PasswordEntryClassRef</a>
               </li>
               <li class="nav-group-task">
@@ -6704,12 +6728,7 @@
 
                 </div>
               </div>
-            <p>The <code>StringFilterProtocol</code> protocol exposes the methods and properties of an underlying <code>GtkStringFilter</code> instance.
-The default implementation of these can be found in the protocol extension below.
-For a concrete class that implements these methods and properties, see <code><a href="../Classes/StringFilter.html">StringFilter</a></code>.
-Alternatively, use <code><a href="../Structs/StringFilterRef.html">StringFilterRef</a></code> as a lighweight, <code>unowned</code> reference if you already have an instance you just want to use.</p>
-
-<p><code>GtkStringFilter</code> determines whether to include items by comparing
+            <p><code>GtkStringFilter</code> determines whether to include items by comparing
 strings to a fixed search term.</p>
 
 <p>The strings are obtained from the items by evaluating a <code>GtkExpression</code>
@@ -6723,8 +6742,13 @@ can match the whole string, just a prefix, or any substring. Use
 <p>It is also possible to make case-insensitive comparisons, with
 [method<code>Gtk.StringFilter.set_ignore_case</code>].</p>
 
+<p>The <code>StringFilterProtocol</code> protocol exposes the methods and properties of an underlying <code>GtkStringFilter</code> instance.
+The default implementation of these can be found in the protocol extension below.
+For a concrete class that implements these methods and properties, see <code><a href="../Classes/StringFilter.html">StringFilter</a></code>.
+Alternatively, use <code><a href="../Structs/StringFilterRef.html">StringFilterRef</a></code> as a lighweight, <code>unowned</code> reference if you already have an instance you just want to use.</p>
+
               <div class="slightly-smaller">
-                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L27084-L27093">Show on GitHub</a>
+                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L27333-L27342">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -6758,7 +6782,7 @@ can match the whole string, just a prefix, or any substring. Use
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L27086">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L27335">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6796,7 +6820,7 @@ can match the whole string, just a prefix, or any substring. Use
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L27089">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L27338">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6826,7 +6850,7 @@ can match the whole string, just a prefix, or any substring. Use
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L27092">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L27341">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6957,7 +6981,7 @@ can match the whole string, just a prefix, or any substring. Use
                         <p>binding reference or <code>nil</code> in case of an error</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L27376-L27400">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L27627-L27651">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7014,7 +7038,7 @@ can match the whole string, just a prefix, or any substring. Use
                         <p>the value of the named property</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L27405-L27409">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L27656-L27660">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7072,7 +7096,7 @@ can match the whole string, just a prefix, or any substring. Use
                         <p>the value of the named property</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L27415-L27417">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L27666-L27668">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7120,7 +7144,7 @@ obtain strings from items.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L27475-L27478">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L27728-L27731">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7154,7 +7178,7 @@ obtain strings from items.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L27481-L27484">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L27734-L27737">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7188,7 +7212,7 @@ obtain strings from items.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L27487-L27490">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L27740-L27743">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7222,7 +7246,7 @@ obtain strings from items.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L27493-L27496">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L27746-L27749">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7259,7 +7283,7 @@ obtain strings from items.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L27502-L27505">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L27755-L27758">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7296,7 +7320,7 @@ obtain strings from items.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L27510-L27513">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L27763-L27766">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7330,7 +7354,7 @@ obtain strings from items.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L27516-L27519">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L27769-L27772">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7364,7 +7388,7 @@ obtain strings from items.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L27522-L27525">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L27775-L27778">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7398,7 +7422,7 @@ obtain strings from items.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L27528-L27531">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L27781-L27784">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7432,7 +7456,7 @@ obtain strings from items.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L27533-L27547">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L27786-L27800">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7466,7 +7490,7 @@ obtain strings from items.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L27550-L27560">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L27803-L27813">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7500,7 +7524,7 @@ obtain strings from items.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L27563-L27573">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L27816-L27826">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7534,7 +7558,7 @@ obtain strings from items.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L27576-L27586">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L27829-L27839">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7547,8 +7571,8 @@ obtain strings from items.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-05-16)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.7</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-12-10)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

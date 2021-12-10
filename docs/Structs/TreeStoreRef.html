@@ -21,7 +21,7 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          Gtk 4.2.1 Docs
+          Gtk 4.4.1 Docs
         </a>
          (95% documented)
       </p>
@@ -663,6 +663,9 @@
                 <a class="nav-group-task-link" href="../Classes/PasswordEntry.html">PasswordEntry</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PasswordEntryBuffer.html">PasswordEntryBuffer</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Picture.html">Picture</a>
               </li>
               <li class="nav-group-task">
@@ -990,6 +993,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk13INTERFACE_AGEs5Int32Vvp">INTERFACE_AGE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21INVALID_LIST_POSITIONs6UInt32Vvp">INVALID_LIST_POSITION</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21LEVEL_BAR_OFFSET_FULLSSvp">LEVEL_BAR_OFFSET_FULL</a>
@@ -2111,6 +2117,12 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PanedSignalName.html">PanedSignalName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferPropertyName.html">PasswordEntryBufferPropertyName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferSignalName.html">PasswordEntryBufferSignalName</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PasswordEntryPropertyName.html">PasswordEntryPropertyName</a>
@@ -4111,6 +4123,12 @@
                 <a class="nav-group-task-link" href="../Protocols/ParamSpecExpressionProtocol.html">ParamSpecExpressionProtocol</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferClassProtocol.html">PasswordEntryBufferClassProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferProtocol.html">PasswordEntryBufferProtocol</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/PasswordEntryClassProtocol.html">PasswordEntryClassProtocol</a>
               </li>
               <li class="nav-group-task">
@@ -5577,6 +5595,12 @@
                 <a class="nav-group-task-link" href="../Structs/ParamSpecExpressionRef.html">ParamSpecExpressionRef</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferClassRef.html">PasswordEntryBufferClassRef</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferRef.html">PasswordEntryBufferRef</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/PasswordEntryClassRef.html">PasswordEntryClassRef</a>
               </li>
               <li class="nav-group-task">
@@ -6704,11 +6728,7 @@
 
                 </div>
               </div>
-            <p>The <code>TreeStoreRef</code> type acts as a lightweight Swift reference to an underlying <code>GtkTreeStore</code> instance.
-It exposes methods that can operate on this data type through <code><a href="../Protocols/TreeStoreProtocol.html">TreeStoreProtocol</a></code> conformance.
-Use <code>TreeStoreRef</code> only as an <code>unowned</code> reference to an existing <code>GtkTreeStore</code> instance.</p>
-
-<p>A tree-like data structure that can be used with the GtkTreeView</p>
+            <p>A tree-like data structure that can be used with the GtkTreeView</p>
 
 <p>The <code>GtkTreeStore</code> object is a list model for use with a <code>GtkTreeView</code>
 widget.  It implements the <code>GtkTreeModel</code> interface, and consequently,
@@ -6734,8 +6754,12 @@ attribute specifies the data type for the column.</p>
 <span class="o">&lt;/</span><span class="n">object</span><span class="o">&gt;</span>
 </code></pre>
 
+<p>The <code>TreeStoreRef</code> type acts as a lightweight Swift reference to an underlying <code>GtkTreeStore</code> instance.
+It exposes methods that can operate on this data type through <code><a href="../Protocols/TreeStoreProtocol.html">TreeStoreProtocol</a></code> conformance.
+Use <code>TreeStoreRef</code> only as an <code>unowned</code> reference to an existing <code>GtkTreeStore</code> instance.</p>
+
               <div class="slightly-smaller">
-                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L14745-L14749">Show on GitHub</a>
+                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L14949-L14953">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -6772,7 +6796,7 @@ attribute specifies the data type for the column.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L14748">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L14952">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6816,7 +6840,7 @@ attribute specifies the data type for the column.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L14753-L14755">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L14957-L14959">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6847,7 +6871,7 @@ attribute specifies the data type for the column.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L14758-L14760">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L14962-L14964">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6878,7 +6902,7 @@ attribute specifies the data type for the column.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L14763-L14766">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L14967-L14970">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6909,7 +6933,7 @@ attribute specifies the data type for the column.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L14769-L14772">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L14973-L14976">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6940,7 +6964,7 @@ attribute specifies the data type for the column.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L14775-L14778">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L14979-L14982">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6971,7 +6995,7 @@ attribute specifies the data type for the column.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L14781-L14784">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L14985-L14988">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7002,7 +7026,7 @@ attribute specifies the data type for the column.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L14787-L14789">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L14991-L14993">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7033,7 +7057,7 @@ attribute specifies the data type for the column.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L14792">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L14996">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7065,7 +7089,7 @@ attribute specifies the data type for the column.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L14796-L14798">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L15000-L15002">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7097,7 +7121,7 @@ attribute specifies the data type for the column.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L14802-L14804">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L15006-L15008">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7129,7 +7153,7 @@ attribute specifies the data type for the column.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L14808-L14810">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L15012-L15014">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7161,7 +7185,7 @@ attribute specifies the data type for the column.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L14814-L14816">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L15018-L15020">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7193,7 +7217,7 @@ attribute specifies the data type for the column.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L14820-L14822">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L15024-L15026">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7224,7 +7248,7 @@ attribute specifies the data type for the column.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L14829-L14832">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L15033-L15036">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7255,7 +7279,7 @@ attribute specifies the data type for the column.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L14834-L14837">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L15038-L15041">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7268,8 +7292,8 @@ attribute specifies the data type for the column.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-05-16)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.7</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-12-10)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

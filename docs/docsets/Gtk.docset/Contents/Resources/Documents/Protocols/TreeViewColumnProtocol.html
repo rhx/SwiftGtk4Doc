@@ -21,7 +21,7 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          Gtk 4.2.1 Docs
+          Gtk 4.4.1 Docs
         </a>
          (95% documented)
       </p>
@@ -663,6 +663,9 @@
                 <a class="nav-group-task-link" href="../Classes/PasswordEntry.html">PasswordEntry</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PasswordEntryBuffer.html">PasswordEntryBuffer</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Picture.html">Picture</a>
               </li>
               <li class="nav-group-task">
@@ -990,6 +993,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk13INTERFACE_AGEs5Int32Vvp">INTERFACE_AGE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21INVALID_LIST_POSITIONs6UInt32Vvp">INVALID_LIST_POSITION</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21LEVEL_BAR_OFFSET_FULLSSvp">LEVEL_BAR_OFFSET_FULL</a>
@@ -2111,6 +2117,12 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PanedSignalName.html">PanedSignalName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferPropertyName.html">PasswordEntryBufferPropertyName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferSignalName.html">PasswordEntryBufferSignalName</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PasswordEntryPropertyName.html">PasswordEntryPropertyName</a>
@@ -4111,6 +4123,12 @@
                 <a class="nav-group-task-link" href="../Protocols/ParamSpecExpressionProtocol.html">ParamSpecExpressionProtocol</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferClassProtocol.html">PasswordEntryBufferClassProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferProtocol.html">PasswordEntryBufferProtocol</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/PasswordEntryClassProtocol.html">PasswordEntryClassProtocol</a>
               </li>
               <li class="nav-group-task">
@@ -5577,6 +5595,12 @@
                 <a class="nav-group-task-link" href="../Structs/ParamSpecExpressionRef.html">ParamSpecExpressionRef</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferClassRef.html">PasswordEntryBufferClassRef</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferRef.html">PasswordEntryBufferRef</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/PasswordEntryClassRef.html">PasswordEntryClassRef</a>
               </li>
               <li class="nav-group-task">
@@ -6704,12 +6728,7 @@
 
                 </div>
               </div>
-            <p>The <code>TreeViewColumnProtocol</code> protocol exposes the methods and properties of an underlying <code>GtkTreeViewColumn</code> instance.
-The default implementation of these can be found in the protocol extension below.
-For a concrete class that implements these methods and properties, see <code><a href="../Classes/TreeViewColumn.html">TreeViewColumn</a></code>.
-Alternatively, use <code><a href="../Structs/TreeViewColumnRef.html">TreeViewColumnRef</a></code> as a lighweight, <code>unowned</code> reference if you already have an instance you just want to use.</p>
-
-<p>A visible column in a GtkTreeView widget</p>
+            <p>A visible column in a GtkTreeView widget</p>
 
 <p>The GtkTreeViewColumn object represents a visible column in a <code>GtkTreeView</code> widget.
 It allows to set properties of the column header, and functions as a holding pen
@@ -6720,8 +6739,13 @@ for an overview of all the objects and data types related to the tree widget and
 how they work together, and to the <code>GtkTreeView</code> documentation for specifics about
 the CSS node structure for treeviews and their headers.</p>
 
+<p>The <code>TreeViewColumnProtocol</code> protocol exposes the methods and properties of an underlying <code>GtkTreeViewColumn</code> instance.
+The default implementation of these can be found in the protocol extension below.
+For a concrete class that implements these methods and properties, see <code><a href="../Classes/TreeViewColumn.html">TreeViewColumn</a></code>.
+Alternatively, use <code><a href="../Structs/TreeViewColumnRef.html">TreeViewColumnRef</a></code> as a lighweight, <code>unowned</code> reference if you already have an instance you just want to use.</p>
+
               <div class="slightly-smaller">
-                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L18934-L18943">Show on GitHub</a>
+                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L19190-L19199">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -6755,7 +6779,7 @@ the CSS node structure for treeviews and their headers.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L18936">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L19192">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6793,7 +6817,7 @@ the CSS node structure for treeviews and their headers.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L18939">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L19195">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6823,7 +6847,7 @@ the CSS node structure for treeviews and their headers.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L18942">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L19198">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6954,7 +6978,7 @@ the CSS node structure for treeviews and their headers.</p>
                         <p>binding reference or <code>nil</code> in case of an error</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L19271-L19295">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L19529-L19553">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7011,7 +7035,7 @@ the CSS node structure for treeviews and their headers.</p>
                         <p>the value of the named property</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L19300-L19304">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L19558-L19562">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7069,7 +7093,7 @@ the CSS node structure for treeviews and their headers.</p>
                         <p>the value of the named property</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L19310-L19312">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L19568-L19570">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7188,7 +7212,7 @@ the CSS node structure for treeviews and their headers.</p>
                         <p>The signal handler ID (always greater than 0 for successful connections)</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L19380-L19382">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L19640-L19642">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7294,7 +7318,7 @@ the CSS node structure for treeviews and their headers.</p>
                         <p>The signal handler ID (always greater than 0 for successful connections)</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L19393-L19395">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L19653-L19655">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7378,7 +7402,7 @@ Run the given callback whenever the <code>clicked</code> signal is emitted</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L19404-L19418">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L19664-L19678">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7411,7 +7435,7 @@ Run the given callback whenever the <code>clicked</code> signal is emitted</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L19421">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L19681">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7446,8 +7470,9 @@ and common practice is to do that only when the value has actually changed.</p>
 
 <p>This signal is typically used to obtain change notification for a
 single property, by specifying the property name as a detail in the
-<code>g_signal_connect()</code> call, like this:
-(C Language Example):</p>
+<code>g_signal_connect()</code> call, like this:</p>
+
+<p>(C Language Example):</p>
 <pre class="highlight plaintext"><code>g_signal_connect (text_view-&gt;buffer, "notify::paste-target-list",
                   G_CALLBACK (gtk_text_view_target_list_notify),
                   text_view)
@@ -7530,7 +7555,7 @@ Run the given callback whenever the <code>notifyAlignment</code> signal is emitt
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L19453-L19467">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L19715-L19729">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7563,7 +7588,7 @@ Run the given callback whenever the <code>notifyAlignment</code> signal is emitt
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L19470">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L19732">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7598,8 +7623,9 @@ and common practice is to do that only when the value has actually changed.</p>
 
 <p>This signal is typically used to obtain change notification for a
 single property, by specifying the property name as a detail in the
-<code>g_signal_connect()</code> call, like this:
-(C Language Example):</p>
+<code>g_signal_connect()</code> call, like this:</p>
+
+<p>(C Language Example):</p>
 <pre class="highlight plaintext"><code>g_signal_connect (text_view-&gt;buffer, "notify::paste-target-list",
                   G_CALLBACK (gtk_text_view_target_list_notify),
                   text_view)
@@ -7682,7 +7708,7 @@ Run the given callback whenever the <code>notifyCellArea</code> signal is emitte
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L19502-L19516">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L19766-L19780">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7715,7 +7741,7 @@ Run the given callback whenever the <code>notifyCellArea</code> signal is emitte
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L19519">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L19783">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7750,8 +7776,9 @@ and common practice is to do that only when the value has actually changed.</p>
 
 <p>This signal is typically used to obtain change notification for a
 single property, by specifying the property name as a detail in the
-<code>g_signal_connect()</code> call, like this:
-(C Language Example):</p>
+<code>g_signal_connect()</code> call, like this:</p>
+
+<p>(C Language Example):</p>
 <pre class="highlight plaintext"><code>g_signal_connect (text_view-&gt;buffer, "notify::paste-target-list",
                   G_CALLBACK (gtk_text_view_target_list_notify),
                   text_view)
@@ -7834,7 +7861,7 @@ Run the given callback whenever the <code>notifyClickable</code> signal is emitt
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L19551-L19565">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L19817-L19831">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7867,7 +7894,7 @@ Run the given callback whenever the <code>notifyClickable</code> signal is emitt
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L19568">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L19834">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7902,8 +7929,9 @@ and common practice is to do that only when the value has actually changed.</p>
 
 <p>This signal is typically used to obtain change notification for a
 single property, by specifying the property name as a detail in the
-<code>g_signal_connect()</code> call, like this:
-(C Language Example):</p>
+<code>g_signal_connect()</code> call, like this:</p>
+
+<p>(C Language Example):</p>
 <pre class="highlight plaintext"><code>g_signal_connect (text_view-&gt;buffer, "notify::paste-target-list",
                   G_CALLBACK (gtk_text_view_target_list_notify),
                   text_view)
@@ -7986,7 +8014,7 @@ Run the given callback whenever the <code>notifyExpand</code> signal is emitted<
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L19600-L19614">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L19868-L19882">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8019,7 +8047,7 @@ Run the given callback whenever the <code>notifyExpand</code> signal is emitted<
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L19617">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L19885">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8054,8 +8082,9 @@ and common practice is to do that only when the value has actually changed.</p>
 
 <p>This signal is typically used to obtain change notification for a
 single property, by specifying the property name as a detail in the
-<code>g_signal_connect()</code> call, like this:
-(C Language Example):</p>
+<code>g_signal_connect()</code> call, like this:</p>
+
+<p>(C Language Example):</p>
 <pre class="highlight plaintext"><code>g_signal_connect (text_view-&gt;buffer, "notify::paste-target-list",
                   G_CALLBACK (gtk_text_view_target_list_notify),
                   text_view)
@@ -8138,7 +8167,7 @@ Run the given callback whenever the <code>notifyFixedWidth</code> signal is emit
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L19649-L19663">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L19919-L19933">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8171,7 +8200,7 @@ Run the given callback whenever the <code>notifyFixedWidth</code> signal is emit
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L19666">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L19936">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8206,8 +8235,9 @@ and common practice is to do that only when the value has actually changed.</p>
 
 <p>This signal is typically used to obtain change notification for a
 single property, by specifying the property name as a detail in the
-<code>g_signal_connect()</code> call, like this:
-(C Language Example):</p>
+<code>g_signal_connect()</code> call, like this:</p>
+
+<p>(C Language Example):</p>
 <pre class="highlight plaintext"><code>g_signal_connect (text_view-&gt;buffer, "notify::paste-target-list",
                   G_CALLBACK (gtk_text_view_target_list_notify),
                   text_view)
@@ -8290,7 +8320,7 @@ Run the given callback whenever the <code>notifyMaxWidth</code> signal is emitte
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L19698-L19712">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L19970-L19984">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8323,7 +8353,7 @@ Run the given callback whenever the <code>notifyMaxWidth</code> signal is emitte
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L19715">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L19987">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8358,8 +8388,9 @@ and common practice is to do that only when the value has actually changed.</p>
 
 <p>This signal is typically used to obtain change notification for a
 single property, by specifying the property name as a detail in the
-<code>g_signal_connect()</code> call, like this:
-(C Language Example):</p>
+<code>g_signal_connect()</code> call, like this:</p>
+
+<p>(C Language Example):</p>
 <pre class="highlight plaintext"><code>g_signal_connect (text_view-&gt;buffer, "notify::paste-target-list",
                   G_CALLBACK (gtk_text_view_target_list_notify),
                   text_view)
@@ -8442,7 +8473,7 @@ Run the given callback whenever the <code>notifyMinWidth</code> signal is emitte
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L19747-L19761">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20021-L20035">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8475,7 +8506,7 @@ Run the given callback whenever the <code>notifyMinWidth</code> signal is emitte
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L19764">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20038">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8510,8 +8541,9 @@ and common practice is to do that only when the value has actually changed.</p>
 
 <p>This signal is typically used to obtain change notification for a
 single property, by specifying the property name as a detail in the
-<code>g_signal_connect()</code> call, like this:
-(C Language Example):</p>
+<code>g_signal_connect()</code> call, like this:</p>
+
+<p>(C Language Example):</p>
 <pre class="highlight plaintext"><code>g_signal_connect (text_view-&gt;buffer, "notify::paste-target-list",
                   G_CALLBACK (gtk_text_view_target_list_notify),
                   text_view)
@@ -8594,7 +8626,7 @@ Run the given callback whenever the <code>notifyReorderable</code> signal is emi
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L19796-L19810">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20072-L20086">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8627,7 +8659,7 @@ Run the given callback whenever the <code>notifyReorderable</code> signal is emi
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L19813">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20089">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8662,8 +8694,9 @@ and common practice is to do that only when the value has actually changed.</p>
 
 <p>This signal is typically used to obtain change notification for a
 single property, by specifying the property name as a detail in the
-<code>g_signal_connect()</code> call, like this:
-(C Language Example):</p>
+<code>g_signal_connect()</code> call, like this:</p>
+
+<p>(C Language Example):</p>
 <pre class="highlight plaintext"><code>g_signal_connect (text_view-&gt;buffer, "notify::paste-target-list",
                   G_CALLBACK (gtk_text_view_target_list_notify),
                   text_view)
@@ -8746,7 +8779,7 @@ Run the given callback whenever the <code>notifyResizable</code> signal is emitt
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L19845-L19859">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20123-L20137">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8779,7 +8812,7 @@ Run the given callback whenever the <code>notifyResizable</code> signal is emitt
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L19862">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20140">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8814,8 +8847,9 @@ and common practice is to do that only when the value has actually changed.</p>
 
 <p>This signal is typically used to obtain change notification for a
 single property, by specifying the property name as a detail in the
-<code>g_signal_connect()</code> call, like this:
-(C Language Example):</p>
+<code>g_signal_connect()</code> call, like this:</p>
+
+<p>(C Language Example):</p>
 <pre class="highlight plaintext"><code>g_signal_connect (text_view-&gt;buffer, "notify::paste-target-list",
                   G_CALLBACK (gtk_text_view_target_list_notify),
                   text_view)
@@ -8898,7 +8932,7 @@ Run the given callback whenever the <code>notifySizing</code> signal is emitted<
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L19894-L19908">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20174-L20188">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8931,7 +8965,7 @@ Run the given callback whenever the <code>notifySizing</code> signal is emitted<
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L19911">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20191">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8966,8 +9000,9 @@ and common practice is to do that only when the value has actually changed.</p>
 
 <p>This signal is typically used to obtain change notification for a
 single property, by specifying the property name as a detail in the
-<code>g_signal_connect()</code> call, like this:
-(C Language Example):</p>
+<code>g_signal_connect()</code> call, like this:</p>
+
+<p>(C Language Example):</p>
 <pre class="highlight plaintext"><code>g_signal_connect (text_view-&gt;buffer, "notify::paste-target-list",
                   G_CALLBACK (gtk_text_view_target_list_notify),
                   text_view)
@@ -9050,7 +9085,7 @@ Run the given callback whenever the <code>notifySortColumnId</code> signal is em
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L19943-L19957">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20225-L20239">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9083,7 +9118,7 @@ Run the given callback whenever the <code>notifySortColumnId</code> signal is em
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L19960">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20242">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9118,8 +9153,9 @@ and common practice is to do that only when the value has actually changed.</p>
 
 <p>This signal is typically used to obtain change notification for a
 single property, by specifying the property name as a detail in the
-<code>g_signal_connect()</code> call, like this:
-(C Language Example):</p>
+<code>g_signal_connect()</code> call, like this:</p>
+
+<p>(C Language Example):</p>
 <pre class="highlight plaintext"><code>g_signal_connect (text_view-&gt;buffer, "notify::paste-target-list",
                   G_CALLBACK (gtk_text_view_target_list_notify),
                   text_view)
@@ -9202,7 +9238,7 @@ Run the given callback whenever the <code>notifySortIndicator</code> signal is e
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L19992-L20006">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20276-L20290">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9235,7 +9271,7 @@ Run the given callback whenever the <code>notifySortIndicator</code> signal is e
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20009">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20293">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9270,8 +9306,9 @@ and common practice is to do that only when the value has actually changed.</p>
 
 <p>This signal is typically used to obtain change notification for a
 single property, by specifying the property name as a detail in the
-<code>g_signal_connect()</code> call, like this:
-(C Language Example):</p>
+<code>g_signal_connect()</code> call, like this:</p>
+
+<p>(C Language Example):</p>
 <pre class="highlight plaintext"><code>g_signal_connect (text_view-&gt;buffer, "notify::paste-target-list",
                   G_CALLBACK (gtk_text_view_target_list_notify),
                   text_view)
@@ -9354,7 +9391,7 @@ Run the given callback whenever the <code>notifySortOrder</code> signal is emitt
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20041-L20055">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20327-L20341">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9387,7 +9424,7 @@ Run the given callback whenever the <code>notifySortOrder</code> signal is emitt
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20058">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20344">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9422,8 +9459,9 @@ and common practice is to do that only when the value has actually changed.</p>
 
 <p>This signal is typically used to obtain change notification for a
 single property, by specifying the property name as a detail in the
-<code>g_signal_connect()</code> call, like this:
-(C Language Example):</p>
+<code>g_signal_connect()</code> call, like this:</p>
+
+<p>(C Language Example):</p>
 <pre class="highlight plaintext"><code>g_signal_connect (text_view-&gt;buffer, "notify::paste-target-list",
                   G_CALLBACK (gtk_text_view_target_list_notify),
                   text_view)
@@ -9506,7 +9544,7 @@ Run the given callback whenever the <code>notifySpacing</code> signal is emitted
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20090-L20104">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20378-L20392">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9539,7 +9577,7 @@ Run the given callback whenever the <code>notifySpacing</code> signal is emitted
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20107">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20395">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9574,8 +9612,9 @@ and common practice is to do that only when the value has actually changed.</p>
 
 <p>This signal is typically used to obtain change notification for a
 single property, by specifying the property name as a detail in the
-<code>g_signal_connect()</code> call, like this:
-(C Language Example):</p>
+<code>g_signal_connect()</code> call, like this:</p>
+
+<p>(C Language Example):</p>
 <pre class="highlight plaintext"><code>g_signal_connect (text_view-&gt;buffer, "notify::paste-target-list",
                   G_CALLBACK (gtk_text_view_target_list_notify),
                   text_view)
@@ -9658,7 +9697,7 @@ Run the given callback whenever the <code>notifyTitle</code> signal is emitted</
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20139-L20153">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20429-L20443">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9691,7 +9730,7 @@ Run the given callback whenever the <code>notifyTitle</code> signal is emitted</
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20156">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20446">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9726,8 +9765,9 @@ and common practice is to do that only when the value has actually changed.</p>
 
 <p>This signal is typically used to obtain change notification for a
 single property, by specifying the property name as a detail in the
-<code>g_signal_connect()</code> call, like this:
-(C Language Example):</p>
+<code>g_signal_connect()</code> call, like this:</p>
+
+<p>(C Language Example):</p>
 <pre class="highlight plaintext"><code>g_signal_connect (text_view-&gt;buffer, "notify::paste-target-list",
                   G_CALLBACK (gtk_text_view_target_list_notify),
                   text_view)
@@ -9810,7 +9850,7 @@ Run the given callback whenever the <code>notifyVisible</code> signal is emitted
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20188-L20202">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20480-L20494">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9843,7 +9883,7 @@ Run the given callback whenever the <code>notifyVisible</code> signal is emitted
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20205">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20497">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9878,8 +9918,9 @@ and common practice is to do that only when the value has actually changed.</p>
 
 <p>This signal is typically used to obtain change notification for a
 single property, by specifying the property name as a detail in the
-<code>g_signal_connect()</code> call, like this:
-(C Language Example):</p>
+<code>g_signal_connect()</code> call, like this:</p>
+
+<p>(C Language Example):</p>
 <pre class="highlight plaintext"><code>g_signal_connect (text_view-&gt;buffer, "notify::paste-target-list",
                   G_CALLBACK (gtk_text_view_target_list_notify),
                   text_view)
@@ -9962,7 +10003,7 @@ Run the given callback whenever the <code>notifyWidget</code> signal is emitted<
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20237-L20251">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20531-L20545">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9995,7 +10036,7 @@ Run the given callback whenever the <code>notifyWidget</code> signal is emitted<
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20254">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20548">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10030,8 +10071,9 @@ and common practice is to do that only when the value has actually changed.</p>
 
 <p>This signal is typically used to obtain change notification for a
 single property, by specifying the property name as a detail in the
-<code>g_signal_connect()</code> call, like this:
-(C Language Example):</p>
+<code>g_signal_connect()</code> call, like this:</p>
+
+<p>(C Language Example):</p>
 <pre class="highlight plaintext"><code>g_signal_connect (text_view-&gt;buffer, "notify::paste-target-list",
                   G_CALLBACK (gtk_text_view_target_list_notify),
                   text_view)
@@ -10114,7 +10156,7 @@ Run the given callback whenever the <code>notifyWidth</code> signal is emitted</
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20286-L20300">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20582-L20596">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10147,7 +10189,7 @@ Run the given callback whenever the <code>notifyWidth</code> signal is emitted</
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20303">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20599">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10182,8 +10224,9 @@ and common practice is to do that only when the value has actually changed.</p>
 
 <p>This signal is typically used to obtain change notification for a
 single property, by specifying the property name as a detail in the
-<code>g_signal_connect()</code> call, like this:
-(C Language Example):</p>
+<code>g_signal_connect()</code> call, like this:</p>
+
+<p>(C Language Example):</p>
 <pre class="highlight plaintext"><code>g_signal_connect (text_view-&gt;buffer, "notify::paste-target-list",
                   G_CALLBACK (gtk_text_view_target_list_notify),
                   text_view)
@@ -10266,7 +10309,7 @@ Run the given callback whenever the <code>notifyXOffset</code> signal is emitted
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20335-L20349">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20633-L20647">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10299,7 +10342,7 @@ Run the given callback whenever the <code>notifyXOffset</code> signal is emitted
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20352">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20650">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10333,7 +10376,9 @@ Run the given callback whenever the <code>notifyXOffset</code> signal is emitted
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Adds an attribute mapping to the list in <code>tree_column</code>.  The <code>column</code> is the
+                        <p>Adds an attribute mapping to the list in <code>tree_column</code>.</p>
+
+<p>The <code>column</code> is the
 column of the model to get a value from, and the <code>attribute</code> is the
 parameter on <code>cell_renderer</code> to be set from the value. So for example
 if column 2 of the model contains strings, you could have the
@@ -10351,7 +10396,7 @@ column 2.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20367-L20370">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20667-L20670">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10372,9 +10417,10 @@ column 2.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Obtains the horizontal position and size of a cell in a column. If the
-cell is not found in the column, <code>start_pos</code> and <code><a href="../Protocols/TreeViewColumnProtocol.html#/s:3Gtk22TreeViewColumnProtocolPAAE5widthSivp">width</a></code> are not changed and
-<code>false</code> is returned.</p>
+                        <p>Obtains the horizontal position and size of a cell in a column.</p>
+
+<p>If the  cell is not found in the column, <code>start_pos</code> and <code><a href="../Protocols/TreeViewColumnProtocol.html#/s:3Gtk22TreeViewColumnProtocolPAAE5widthSivp">width</a></code>
+are not changed and <code>false</code> is returned.</p>
 
                       </div>
                       <div class="declaration">
@@ -10387,7 +10433,7 @@ cell is not found in the column, <code>start_pos</code> and <code><a href="../Pr
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20375-L20378">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20676-L20679">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10422,7 +10468,7 @@ primarily by the <code>GtkTreeView</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20382-L20385">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20683-L20686">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10458,7 +10504,7 @@ For this to be meaningful, you must first initialize the cells with
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20390-L20393">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20691-L20694">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10495,7 +10541,7 @@ renderer.  This is used primarily by the <code>GtkTreeView</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20399-L20402">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20700-L20703">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10529,7 +10575,7 @@ renderer.  This is used primarily by the <code>GtkTreeView</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20405-L20408">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20706-L20709">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10564,7 +10610,7 @@ renderer.  This is used primarily by the <code>GtkTreeView</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20412-L20415">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20713-L20716">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10599,7 +10645,7 @@ renderer.  This is used primarily by the <code>GtkTreeView</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20419-L20422">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20720-L20723">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10634,7 +10680,7 @@ renderer.  This is used primarily by the <code>GtkTreeView</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20426-L20429">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20727-L20730">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10669,7 +10715,7 @@ between 0.0 and 1.0.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20433-L20436">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20734-L20737">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10703,7 +10749,7 @@ between 0.0 and 1.0.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20439-L20442">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20740-L20743">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10737,7 +10783,7 @@ between 0.0 and 1.0.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20445-L20448">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20746-L20749">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10771,7 +10817,7 @@ between 0.0 and 1.0.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20451-L20454">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20752-L20755">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10806,7 +10852,7 @@ width of the column; for that, use <code>gtk_tree_view_column_get_width()</code>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20458-L20461">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20759-L20762">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10841,7 +10887,7 @@ width is set.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20465-L20468">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20766-L20769">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10876,7 +10922,7 @@ width is set.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20472-L20475">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20773-L20776">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10910,7 +10956,7 @@ width is set.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20478-L20481">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20779-L20782">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10944,7 +10990,7 @@ width is set.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20484-L20487">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20785-L20788">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10978,7 +11024,7 @@ width is set.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20490-L20493">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20791-L20794">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10999,9 +11045,10 @@ width is set.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Gets the logical <code>sort_column_id</code> that the model sorts on when this
-column is selected for sorting.
-See <code>gtk_tree_view_column_set_sort_column_id()</code>.</p>
+                        <p>Gets the logical <code>sort_column_id</code> that the model sorts on
+when this column is selected for sorting.</p>
+
+<p>See [method<code>Gtk.TreeViewColumn.set_sort_column_id</code>].</p>
 
                       </div>
                       <div class="declaration">
@@ -11014,7 +11061,7 @@ See <code>gtk_tree_view_column_set_sort_column_id()</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20498-L20501">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20800-L20803">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11048,7 +11095,7 @@ See <code>gtk_tree_view_column_set_sort_column_id()</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20504-L20507">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20806-L20809">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11082,7 +11129,7 @@ See <code>gtk_tree_view_column_set_sort_column_id()</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20510-L20513">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20812-L20815">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11116,7 +11163,7 @@ See <code>gtk_tree_view_column_set_sort_column_id()</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20516-L20519">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20818-L20821">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11150,7 +11197,7 @@ See <code>gtk_tree_view_column_set_sort_column_id()</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20522-L20525">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20824-L20827">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11186,7 +11233,7 @@ returned.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20530-L20533">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20832-L20835">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11220,7 +11267,7 @@ returned.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20536-L20539">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20838-L20841">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11241,8 +11288,9 @@ returned.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Returns the <code>GtkWidget</code> in the button on the column header.
-If a custom widget has not been set then <code>nil</code> is returned.</p>
+                        <p>Returns the <code>GtkWidget</code> in the button on the column header.</p>
+
+<p>If a custom widget has not been set then <code>nil</code> is returned.</p>
 
                       </div>
                       <div class="declaration">
@@ -11255,7 +11303,7 @@ If a custom widget has not been set then <code>nil</code> is returned.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20543-L20546">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20846-L20849">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11289,7 +11337,7 @@ If a custom widget has not been set then <code>nil</code> is returned.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20549-L20552">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20852-L20855">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11323,7 +11371,7 @@ If a custom widget has not been set then <code>nil</code> is returned.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20555-L20558">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20858-L20861">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11359,7 +11407,7 @@ evenly between cells for which <code><a href="../Protocols/TreeViewColumnProtoco
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20563-L20566">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20866-L20869">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11395,7 +11443,7 @@ evenly between cells for which <code><a href="../Protocols/TreeViewColumnProtoco
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20571-L20574">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20874-L20877">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11430,7 +11478,7 @@ their sizes renegotiated.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20578-L20581">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20881-L20884">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11466,7 +11514,7 @@ for center, 1.0 for right.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20586-L20589">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20889-L20892">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11487,7 +11535,9 @@ for center, 1.0 for right.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Sets the <code>GtkTreeCellDataFunc</code> to use for the column.  This
+                        <p>Sets the <code>GtkTreeCellDataFunc</code> to use for the column.</p>
+
+<p>This
 function is used instead of the standard attributes mapping for
 setting the column value, and should set the value of <code>tree_column</code>&lsquo;s
 cell renderer as appropriate.  <code>func</code> may be <code>nil</code> to remove an
@@ -11504,7 +11554,7 @@ older one.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20600-L20603">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20905-L20908">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11539,7 +11589,7 @@ active, then it can take keyboard focus, and can be clicked.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20607-L20610">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20912-L20915">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11579,7 +11629,7 @@ resized by the user.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20619-L20622">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20924-L20927">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11623,7 +11673,7 @@ resized by the user.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20635-L20638">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20940-L20943">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11660,7 +11710,7 @@ fill any extra space.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20644-L20647">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20949-L20952">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11695,7 +11745,7 @@ minimum width is unset.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20651-L20654">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20956-L20959">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11730,7 +11780,7 @@ dragging the header.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20658-L20661">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20963-L20966">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11752,7 +11802,9 @@ dragging the header.</p>
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>If <code><a href="../Protocols/TreeViewColumnProtocol.html#/s:3Gtk22TreeViewColumnProtocolPAAE9resizableSbvp">resizable</a></code> is <code>true</code>, then the user can explicitly resize the column by
-grabbing the outer edge of the column button.  If resizable is <code>true</code> and
+grabbing the outer edge of the column button.</p>
+
+<p>If resizable is <code>true</code> and
 sizing mode of the column is <code>GTK_TREE_VIEW_COLUMN_AUTOSIZE</code>, then the sizing
 mode is changed to <code>GTK_TREE_VIEW_COLUMN_GROW_ONLY</code>.</p>
 
@@ -11767,7 +11819,7 @@ mode is changed to <code>GTK_TREE_VIEW_COLUMN_GROW_ONLY</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20667-L20670">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20974-L20977">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11801,7 +11853,7 @@ mode is changed to <code>GTK_TREE_VIEW_COLUMN_GROW_ONLY</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20673-L20676">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20980-L20983">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11836,7 +11888,7 @@ is selected for sorting.  Doing so makes the column header clickable.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20680-L20683">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20987-L20990">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11873,7 +11925,7 @@ the arrow.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20689-L20692">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20996-L20999">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11917,7 +11969,7 @@ calling this function; see <code>gtk_tree_view_column_set_sort_indicator()</code
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20705-L20708">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L21012-L21015">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11952,7 +12004,7 @@ place between cell renderers packed into it.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20712-L20715">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L21019-L21022">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11987,7 +12039,7 @@ this value is ignored.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20719-L20722">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L21026-L21029">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12021,7 +12073,7 @@ this value is ignored.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20725-L20728">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L21032-L21035">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12056,7 +12108,7 @@ header button is set with a <code>GtkLabel</code> set to the title of <code>tree
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20732-L20735">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L21039-L21042">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12091,7 +12143,7 @@ header button is set with a <code>GtkLabel</code> set to the title of <code>tree
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20738-L20741">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L21045-L21048">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12125,7 +12177,7 @@ header button is set with a <code>GtkLabel</code> set to the title of <code>tree
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20742-L20755">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L21049-L21062">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12159,7 +12211,7 @@ header button is set with a <code>GtkLabel</code> set to the title of <code>tree
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20758-L20764">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L21065-L21071">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12193,7 +12245,7 @@ header button is set with a <code>GtkLabel</code> set to the title of <code>tree
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20766-L20777">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L21073-L21084">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12227,7 +12279,7 @@ header button is set with a <code>GtkLabel</code> set to the title of <code>tree
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20779-L20795">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L21086-L21102">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12262,7 +12314,7 @@ width of the column; for that, use <code>gtk_tree_view_column_get_width()</code>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20799-L20820">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L21106-L21127">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12297,7 +12349,7 @@ width is set.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20824-L20838">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L21131-L21145">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12332,7 +12384,7 @@ width is set.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20842-L20854">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L21149-L21161">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12366,7 +12418,7 @@ width is set.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20856-L20867">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L21163-L21174">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12400,7 +12452,7 @@ width is set.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20869-L20882">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L21176-L21191">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12434,7 +12486,7 @@ width is set.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20884-L20894">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L21193-L21203">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12455,9 +12507,10 @@ width is set.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Gets the logical <code>sort_column_id</code> that the model sorts on when this
-column is selected for sorting.
-See <code>gtk_tree_view_column_set_sort_column_id()</code>.</p>
+                        <p>Gets the logical <code>sort_column_id</code> that the model sorts on
+when this column is selected for sorting.</p>
+
+<p>See [method<code>Gtk.TreeViewColumn.set_sort_column_id</code>].</p>
 
                       </div>
                       <div class="declaration">
@@ -12470,7 +12523,7 @@ See <code>gtk_tree_view_column_set_sort_column_id()</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20899-L20912">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L21209-L21223">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12504,7 +12557,7 @@ See <code>gtk_tree_view_column_set_sort_column_id()</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20915-L20928">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L21226-L21239">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12538,7 +12591,7 @@ See <code>gtk_tree_view_column_set_sort_column_id()</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20931-L20951">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L21242-L21262">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12572,7 +12625,7 @@ See <code>gtk_tree_view_column_set_sort_column_id()</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20953-L20964">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L21264-L21275">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12606,7 +12659,7 @@ See <code>gtk_tree_view_column_set_sort_column_id()</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20966-L20977">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L21277-L21288">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12642,7 +12695,7 @@ returned.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20982-L20990">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L21293-L21301">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12676,7 +12729,7 @@ returned.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L20992-L21002">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L21303-L21313">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12710,7 +12763,7 @@ returned.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L21004-L21016">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L21315-L21328">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12744,7 +12797,7 @@ returned.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L21018-L21024">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L21330-L21336">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12778,7 +12831,7 @@ returned.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L21027-L21033">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L21339-L21345">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12791,8 +12844,8 @@ returned.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-05-16)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.7</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-12-10)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

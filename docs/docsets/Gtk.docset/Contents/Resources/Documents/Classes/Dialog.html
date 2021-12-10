@@ -21,7 +21,7 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          Gtk 4.2.1 Docs
+          Gtk 4.4.1 Docs
         </a>
          (95% documented)
       </p>
@@ -663,6 +663,9 @@
                 <a class="nav-group-task-link" href="../Classes/PasswordEntry.html">PasswordEntry</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PasswordEntryBuffer.html">PasswordEntryBuffer</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Picture.html">Picture</a>
               </li>
               <li class="nav-group-task">
@@ -990,6 +993,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk13INTERFACE_AGEs5Int32Vvp">INTERFACE_AGE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21INVALID_LIST_POSITIONs6UInt32Vvp">INVALID_LIST_POSITION</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21LEVEL_BAR_OFFSET_FULLSSvp">LEVEL_BAR_OFFSET_FULL</a>
@@ -2111,6 +2117,12 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PanedSignalName.html">PanedSignalName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferPropertyName.html">PasswordEntryBufferPropertyName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferSignalName.html">PasswordEntryBufferSignalName</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PasswordEntryPropertyName.html">PasswordEntryPropertyName</a>
@@ -4111,6 +4123,12 @@
                 <a class="nav-group-task-link" href="../Protocols/ParamSpecExpressionProtocol.html">ParamSpecExpressionProtocol</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferClassProtocol.html">PasswordEntryBufferClassProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferProtocol.html">PasswordEntryBufferProtocol</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/PasswordEntryClassProtocol.html">PasswordEntryClassProtocol</a>
               </li>
               <li class="nav-group-task">
@@ -5577,6 +5595,12 @@
                 <a class="nav-group-task-link" href="../Structs/ParamSpecExpressionRef.html">ParamSpecExpressionRef</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferClassRef.html">PasswordEntryBufferClassRef</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferRef.html">PasswordEntryBufferRef</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/PasswordEntryClassRef.html">PasswordEntryClassRef</a>
               </li>
               <li class="nav-group-task">
@@ -6704,11 +6728,7 @@
 
                 </div>
               </div>
-            <p>The <code>Dialog</code> type acts as a reference-counted owner of an underlying <code>GtkDialog</code> instance.
-It provides the methods that can operate on this data type through <code><a href="../Protocols/DialogProtocol.html">DialogProtocol</a></code> conformance.
-Use <code>Dialog</code> as a strong reference or owner of a <code>GtkDialog</code> instance.</p>
-
-<p>Dialogs are a convenient way to prompt the user for a small amount
+            <p>Dialogs are a convenient way to prompt the user for a small amount
 of input.</p>
 
 <p><img src="dialog.png" alt="An example GtkDialog"></p>
@@ -6792,18 +6812,18 @@ if you had more than a simple message in the dialog.</p>
 <p>The <code>GtkDialog</code> implementation of the <code>GtkBuildable</code> interface exposes the
 <code>content_area</code> as an internal child with the name “content_area”.</p>
 
-<p><code>GtkDialog</code> supports a custom &lt;action-widgets&gt; element, which can contain
-multiple &lt;action-widget&gt; elements. The “response” attribute specifies a
+<p><code>GtkDialog</code> supports a custom <code>&amp;lt;action-widgets&amp;gt;</code> element, which can contain
+multiple <code>&amp;lt;action-widget&amp;gt;</code> elements. The “response” attribute specifies a
 numeric response, and the content of the element is the id of widget
 (which should be a child of the dialogs <code>action_area</code>). To mark a response
-as default, set the “default“ attribute of the &lt;action-widget&gt; element
+as default, set the “default” attribute of the <code>&amp;lt;action-widget&amp;gt;</code> element
 to true.</p>
 
-<p><code>GtkDialog</code> supports adding action widgets by specifying “action“ as
-the “type“ attribute of a &lt;child&gt; element. The widget will be added
+<p><code>GtkDialog</code> supports adding action widgets by specifying “action” as
+the “type” attribute of a <code>&amp;lt;child&amp;gt;</code> element. The widget will be added
 either to the action area or the headerbar of the dialog, depending
-on the “use-header-bar“ property. The response id has to be associated
-with the action widget using the &lt;action-widgets&gt; element.</p>
+on the “use-header-bar” property. The response id has to be associated
+with the action widget using the <code>&amp;lt;action-widgets&amp;gt;</code> element.</p>
 
 <p>An example of a <code>GtkDialog</code> UI definition fragment:</p>
 <pre class="highlight xml"><code><span class="ni">&amp;lt;</span>object class="GtkDialog" id="dialog1"<span class="ni">&amp;gt;</span>
@@ -6824,8 +6844,12 @@ with the action widget using the &lt;action-widgets&gt; element.</p>
 
 <p><code>GtkDialog</code> uses the <code>GTK_ACCESSIBLE_ROLE_DIALOG</code> role.</p>
 
+<p>The <code>Dialog</code> type acts as a reference-counted owner of an underlying <code>GtkDialog</code> instance.
+It provides the methods that can operate on this data type through <code><a href="../Protocols/DialogProtocol.html">DialogProtocol</a></code> conformance.
+Use <code>Dialog</code> as a strong reference or owner of a <code>GtkDialog</code> instance.</p>
+
               <div class="slightly-smaller">
-                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L31579-L31723">Show on GitHub</a>
+                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L32024-L32168">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -6883,7 +6907,7 @@ i.e., ownership is transferred to the <code>Dialog</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L31584-L31586">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L32029-L32031">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6935,7 +6959,7 @@ i.e., ownership is transferred to the <code>Dialog</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L31592-L31594">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L32037-L32039">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6988,7 +7012,7 @@ i.e., ownership is transferred to the <code>Dialog</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L31601-L31604">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L32046-L32049">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7041,7 +7065,7 @@ i.e., ownership is transferred to the <code>Dialog</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L31611-L31614">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L32056-L32059">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7093,7 +7117,7 @@ i.e., ownership is transferred to the <code>Dialog</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L31620-L31623">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L32065-L32068">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7145,7 +7169,7 @@ i.e., ownership is transferred to the <code>Dialog</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L31629-L31632">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L32074-L32077">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7197,7 +7221,7 @@ i.e., ownership is transferred to the <code>Dialog</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L31638-L31640">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L32083-L32085">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7248,7 +7272,7 @@ Will retain <code>GtkDialog</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L31645-L31647">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L32090-L32092">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7299,7 +7323,7 @@ Will retain <code>GtkDialog</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L31652-L31654">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L32097-L32099">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7350,7 +7374,7 @@ Will retain <code>GtkDialog</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L31659-L31661">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L32104-L32106">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7401,7 +7425,7 @@ Will retain <code>GtkDialog</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L31666-L31668">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L32111-L32113">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7433,7 +7457,7 @@ Will retain <code>GtkDialog</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L31672-L31674">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L32117-L32119">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7484,7 +7508,7 @@ Will retain <code>GtkDialog</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L31679-L31681">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L32124-L32126">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7535,7 +7559,7 @@ Will retain <code>GtkDialog</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L31686-L31688">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L32131-L32133">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7586,7 +7610,7 @@ Will retain <code>GtkDialog</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L31693-L31695">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L32138-L32140">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7637,7 +7661,7 @@ Will retain <code>GtkDialog</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L31700-L31702">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L32145-L32147">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7672,7 +7696,7 @@ as described above.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L31709-L31713">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L32154-L32158">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8468,8 +8492,8 @@ Buttons are from left to right, so the first button in the list will be the left
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-05-16)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.7</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-12-10)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

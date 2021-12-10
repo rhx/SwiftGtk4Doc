@@ -21,7 +21,7 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          Gtk 4.2.1 Docs
+          Gtk 4.4.1 Docs
         </a>
          (95% documented)
       </p>
@@ -663,6 +663,9 @@
                 <a class="nav-group-task-link" href="../Classes/PasswordEntry.html">PasswordEntry</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PasswordEntryBuffer.html">PasswordEntryBuffer</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Picture.html">Picture</a>
               </li>
               <li class="nav-group-task">
@@ -990,6 +993,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk13INTERFACE_AGEs5Int32Vvp">INTERFACE_AGE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21INVALID_LIST_POSITIONs6UInt32Vvp">INVALID_LIST_POSITION</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21LEVEL_BAR_OFFSET_FULLSSvp">LEVEL_BAR_OFFSET_FULL</a>
@@ -2111,6 +2117,12 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PanedSignalName.html">PanedSignalName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferPropertyName.html">PasswordEntryBufferPropertyName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferSignalName.html">PasswordEntryBufferSignalName</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PasswordEntryPropertyName.html">PasswordEntryPropertyName</a>
@@ -4111,6 +4123,12 @@
                 <a class="nav-group-task-link" href="../Protocols/ParamSpecExpressionProtocol.html">ParamSpecExpressionProtocol</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferClassProtocol.html">PasswordEntryBufferClassProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferProtocol.html">PasswordEntryBufferProtocol</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/PasswordEntryClassProtocol.html">PasswordEntryClassProtocol</a>
               </li>
               <li class="nav-group-task">
@@ -5577,6 +5595,12 @@
                 <a class="nav-group-task-link" href="../Structs/ParamSpecExpressionRef.html">ParamSpecExpressionRef</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferClassRef.html">PasswordEntryBufferClassRef</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferRef.html">PasswordEntryBufferRef</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/PasswordEntryClassRef.html">PasswordEntryClassRef</a>
               </li>
               <li class="nav-group-task">
@@ -6704,26 +6728,26 @@
 
                 </div>
               </div>
-            <p>The <code>CellRendererComboProtocol</code> protocol exposes the methods and properties of an underlying <code>GtkCellRendererCombo</code> instance.
-The default implementation of these can be found in the protocol extension below.
-For a concrete class that implements these methods and properties, see <code><a href="../Classes/CellRendererCombo.html">CellRendererCombo</a></code>.
-Alternatively, use <code><a href="../Structs/CellRendererComboRef.html">CellRendererComboRef</a></code> as a lighweight, <code>unowned</code> reference if you already have an instance you just want to use.</p>
-
-<p>Renders a combobox in a cell</p>
+            <p>Renders a combobox in a cell</p>
 
 <p><code>GtkCellRendererCombo</code> renders text in a cell like <code>GtkCellRendererText</code> from
 which it is derived. But while <code>GtkCellRendererText</code> offers a simple entry to
 edit the text, <code>GtkCellRendererCombo</code> offers a <code>GtkComboBox</code>
 widget to edit the text. The values to display in the combo box are taken from
-the tree model specified in the <code>GtkCellRendererCombo:model</code> property.</p>
+the tree model specified in the <code>GtkCellRendererCombo</code>:model property.</p>
 
 <p>The combo cell renderer takes care of adding a text cell renderer to the combo
 box and sets it to display the column specified by its
-<code>GtkCellRendererCombo:text-column</code> property. Further properties of the combo box
-can be set in a handler for the <code>GtkCellRenderer::editing-started</code> signal.</p>
+<code>GtkCellRendererCombo</code>:text-column property. Further properties of the combo box
+can be set in a handler for the <code>GtkCellRenderer</code>editing-started`` signal.</p>
+
+<p>The <code>CellRendererComboProtocol</code> protocol exposes the methods and properties of an underlying <code>GtkCellRendererCombo</code> instance.
+The default implementation of these can be found in the protocol extension below.
+For a concrete class that implements these methods and properties, see <code><a href="../Classes/CellRendererCombo.html">CellRendererCombo</a></code>.
+Alternatively, use <code><a href="../Structs/CellRendererComboRef.html">CellRendererComboRef</a></code> as a lighweight, <code>unowned</code> reference if you already have an instance you just want to use.</p>
 
               <div class="slightly-smaller">
-                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L7452-L7461">Show on GitHub</a>
+                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L7538-L7547">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -6757,7 +6781,7 @@ can be set in a handler for the <code>GtkCellRenderer::editing-started</code> si
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L7454">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L7540">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6795,7 +6819,7 @@ can be set in a handler for the <code>GtkCellRenderer::editing-started</code> si
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L7457">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L7543">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6825,7 +6849,7 @@ can be set in a handler for the <code>GtkCellRenderer::editing-started</code> si
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L7460">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L7546">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6956,7 +6980,7 @@ can be set in a handler for the <code>GtkCellRenderer::editing-started</code> si
                         <p>binding reference or <code>nil</code> in case of an error</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L7848-L7872">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L7936-L7960">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7013,7 +7037,7 @@ can be set in a handler for the <code>GtkCellRenderer::editing-started</code> si
                         <p>the value of the named property</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L7877-L7881">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L7965-L7969">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7071,7 +7095,7 @@ can be set in a handler for the <code>GtkCellRenderer::editing-started</code> si
                         <p>the value of the named property</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L7887-L7889">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L7975-L7977">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7190,7 +7214,7 @@ can be set in a handler for the <code>GtkCellRenderer::editing-started</code> si
                         <p>The signal handler ID (always greater than 0 for successful connections)</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L8093-L8095">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L8183-L8185">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7296,7 +7320,7 @@ can be set in a handler for the <code>GtkCellRenderer::editing-started</code> si
                         <p>The signal handler ID (always greater than 0 for successful connections)</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L8106-L8108">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L8196-L8198">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7414,7 +7438,7 @@ Run the given callback whenever the <code>changed</code> signal is emitted</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L8129-L8143">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L8219-L8233">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7447,7 +7471,7 @@ Run the given callback whenever the <code>changed</code> signal is emitted</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L8146">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L8236">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7482,8 +7506,9 @@ and common practice is to do that only when the value has actually changed.</p>
 
 <p>This signal is typically used to obtain change notification for a
 single property, by specifying the property name as a detail in the
-<code>g_signal_connect()</code> call, like this:
-(C Language Example):</p>
+<code>g_signal_connect()</code> call, like this:</p>
+
+<p>(C Language Example):</p>
 <pre class="highlight plaintext"><code>g_signal_connect (text_view-&gt;buffer, "notify::paste-target-list",
                   G_CALLBACK (gtk_text_view_target_list_notify),
                   text_view)
@@ -7566,7 +7591,7 @@ Run the given callback whenever the <code>notifyHasEntry</code> signal is emitte
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L8178-L8192">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L8270-L8284">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7599,7 +7624,7 @@ Run the given callback whenever the <code>notifyHasEntry</code> signal is emitte
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L8195">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L8287">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7634,8 +7659,9 @@ and common practice is to do that only when the value has actually changed.</p>
 
 <p>This signal is typically used to obtain change notification for a
 single property, by specifying the property name as a detail in the
-<code>g_signal_connect()</code> call, like this:
-(C Language Example):</p>
+<code>g_signal_connect()</code> call, like this:</p>
+
+<p>(C Language Example):</p>
 <pre class="highlight plaintext"><code>g_signal_connect (text_view-&gt;buffer, "notify::paste-target-list",
                   G_CALLBACK (gtk_text_view_target_list_notify),
                   text_view)
@@ -7718,7 +7744,7 @@ Run the given callback whenever the <code>notifyModel</code> signal is emitted</
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L8227-L8241">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L8321-L8335">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7751,7 +7777,7 @@ Run the given callback whenever the <code>notifyModel</code> signal is emitted</
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L8244">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L8338">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7786,8 +7812,9 @@ and common practice is to do that only when the value has actually changed.</p>
 
 <p>This signal is typically used to obtain change notification for a
 single property, by specifying the property name as a detail in the
-<code>g_signal_connect()</code> call, like this:
-(C Language Example):</p>
+<code>g_signal_connect()</code> call, like this:</p>
+
+<p>(C Language Example):</p>
 <pre class="highlight plaintext"><code>g_signal_connect (text_view-&gt;buffer, "notify::paste-target-list",
                   G_CALLBACK (gtk_text_view_target_list_notify),
                   text_view)
@@ -7870,7 +7897,7 @@ Run the given callback whenever the <code>notifyTextColumn</code> signal is emit
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L8276-L8290">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L8372-L8386">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7903,7 +7930,7 @@ Run the given callback whenever the <code>notifyTextColumn</code> signal is emit
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L8293">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L8389">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7916,8 +7943,8 @@ Run the given callback whenever the <code>notifyTextColumn</code> signal is emit
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-05-16)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.7</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-12-10)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

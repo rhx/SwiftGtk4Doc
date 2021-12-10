@@ -21,7 +21,7 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          Gtk 4.2.1 Docs
+          Gtk 4.4.1 Docs
         </a>
          (95% documented)
       </p>
@@ -663,6 +663,9 @@
                 <a class="nav-group-task-link" href="../Classes/PasswordEntry.html">PasswordEntry</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PasswordEntryBuffer.html">PasswordEntryBuffer</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Picture.html">Picture</a>
               </li>
               <li class="nav-group-task">
@@ -990,6 +993,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk13INTERFACE_AGEs5Int32Vvp">INTERFACE_AGE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21INVALID_LIST_POSITIONs6UInt32Vvp">INVALID_LIST_POSITION</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21LEVEL_BAR_OFFSET_FULLSSvp">LEVEL_BAR_OFFSET_FULL</a>
@@ -2111,6 +2117,12 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PanedSignalName.html">PanedSignalName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferPropertyName.html">PasswordEntryBufferPropertyName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferSignalName.html">PasswordEntryBufferSignalName</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PasswordEntryPropertyName.html">PasswordEntryPropertyName</a>
@@ -4111,6 +4123,12 @@
                 <a class="nav-group-task-link" href="../Protocols/ParamSpecExpressionProtocol.html">ParamSpecExpressionProtocol</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferClassProtocol.html">PasswordEntryBufferClassProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferProtocol.html">PasswordEntryBufferProtocol</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/PasswordEntryClassProtocol.html">PasswordEntryClassProtocol</a>
               </li>
               <li class="nav-group-task">
@@ -5577,6 +5595,12 @@
                 <a class="nav-group-task-link" href="../Structs/ParamSpecExpressionRef.html">ParamSpecExpressionRef</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferClassRef.html">PasswordEntryBufferClassRef</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferRef.html">PasswordEntryBufferRef</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/PasswordEntryClassRef.html">PasswordEntryClassRef</a>
               </li>
               <li class="nav-group-task">
@@ -6704,11 +6728,7 @@
 
                 </div>
               </div>
-            <p>The <code>WindowHandle</code> type acts as a reference-counted owner of an underlying <code>GtkWindowHandle</code> instance.
-It provides the methods that can operate on this data type through <code><a href="../Protocols/WindowHandleProtocol.html">WindowHandleProtocol</a></code> conformance.
-Use <code>WindowHandle</code> as a strong reference or owner of a <code>GtkWindowHandle</code> instance.</p>
-
-<p><code>GtkWindowHandle</code> is a titlebar area widget.</p>
+            <p><code>GtkWindowHandle</code> is a titlebar area widget.</p>
 
 <p>When added into a window, it can be dragged to move the window, and handles
 right click, double click and middle click as expected of a titlebar.</p>
@@ -6719,8 +6739,12 @@ right click, double click and middle click as expected of a titlebar.</p>
 
 <p><code>GtkWindowHandle</code> uses the <code>GTK_ACCESSIBLE_ROLE_GROUP</code> role.</p>
 
+<p>The <code>WindowHandle</code> type acts as a reference-counted owner of an underlying <code>GtkWindowHandle</code> instance.
+It provides the methods that can operate on this data type through <code><a href="../Protocols/WindowHandleProtocol.html">WindowHandleProtocol</a></code> conformance.
+Use <code>WindowHandle</code> as a strong reference or owner of a <code>GtkWindowHandle</code> instance.</p>
+
               <div class="slightly-smaller">
-                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-WidgetPaintable-WindowHandle.swift#L5390-L5523">Show on GitHub</a>
+                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-WidgetPaintable-WindowHandle.swift#L5459-L5592">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -6778,7 +6802,7 @@ i.e., ownership is transferred to the <code>WindowHandle</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-WidgetPaintable-WindowHandle.swift#L5395-L5397">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-WidgetPaintable-WindowHandle.swift#L5464-L5466">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6830,7 +6854,7 @@ i.e., ownership is transferred to the <code>WindowHandle</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-WidgetPaintable-WindowHandle.swift#L5403-L5405">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-WidgetPaintable-WindowHandle.swift#L5472-L5474">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6883,7 +6907,7 @@ i.e., ownership is transferred to the <code>WindowHandle</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-WidgetPaintable-WindowHandle.swift#L5412-L5415">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-WidgetPaintable-WindowHandle.swift#L5481-L5484">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6936,7 +6960,7 @@ i.e., ownership is transferred to the <code>WindowHandle</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-WidgetPaintable-WindowHandle.swift#L5422-L5425">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-WidgetPaintable-WindowHandle.swift#L5491-L5494">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6988,7 +7012,7 @@ i.e., ownership is transferred to the <code>WindowHandle</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-WidgetPaintable-WindowHandle.swift#L5431-L5434">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-WidgetPaintable-WindowHandle.swift#L5500-L5503">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7040,7 +7064,7 @@ i.e., ownership is transferred to the <code>WindowHandle</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-WidgetPaintable-WindowHandle.swift#L5440-L5443">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-WidgetPaintable-WindowHandle.swift#L5509-L5512">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7092,7 +7116,7 @@ i.e., ownership is transferred to the <code>WindowHandle</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-WidgetPaintable-WindowHandle.swift#L5449-L5451">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-WidgetPaintable-WindowHandle.swift#L5518-L5520">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7143,7 +7167,7 @@ Will retain <code>GtkWindowHandle</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-WidgetPaintable-WindowHandle.swift#L5456-L5458">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-WidgetPaintable-WindowHandle.swift#L5525-L5527">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7194,7 +7218,7 @@ Will retain <code>GtkWindowHandle</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-WidgetPaintable-WindowHandle.swift#L5463-L5465">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-WidgetPaintable-WindowHandle.swift#L5532-L5534">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7245,7 +7269,7 @@ Will retain <code>GtkWindowHandle</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-WidgetPaintable-WindowHandle.swift#L5470-L5472">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-WidgetPaintable-WindowHandle.swift#L5539-L5541">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7296,7 +7320,7 @@ Will retain <code>GtkWindowHandle</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-WidgetPaintable-WindowHandle.swift#L5477-L5479">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-WidgetPaintable-WindowHandle.swift#L5546-L5548">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7328,7 +7352,7 @@ Will retain <code>GtkWindowHandle</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-WidgetPaintable-WindowHandle.swift#L5483-L5485">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-WidgetPaintable-WindowHandle.swift#L5552-L5554">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7379,7 +7403,7 @@ Will retain <code>GtkWindowHandle</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-WidgetPaintable-WindowHandle.swift#L5490-L5492">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-WidgetPaintable-WindowHandle.swift#L5559-L5561">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7430,7 +7454,7 @@ Will retain <code>GtkWindowHandle</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-WidgetPaintable-WindowHandle.swift#L5497-L5499">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-WidgetPaintable-WindowHandle.swift#L5566-L5568">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7481,7 +7505,7 @@ Will retain <code>GtkWindowHandle</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-WidgetPaintable-WindowHandle.swift#L5504-L5506">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-WidgetPaintable-WindowHandle.swift#L5573-L5575">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7532,7 +7556,7 @@ Will retain <code>GtkWindowHandle</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-WidgetPaintable-WindowHandle.swift#L5511-L5513">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-WidgetPaintable-WindowHandle.swift#L5580-L5582">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7563,7 +7587,7 @@ Will retain <code>GtkWindowHandle</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-WidgetPaintable-WindowHandle.swift#L5516-L5520">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-WidgetPaintable-WindowHandle.swift#L5585-L5589">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7576,8 +7600,8 @@ Will retain <code>GtkWindowHandle</code>.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-05-16)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.7</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-12-10)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

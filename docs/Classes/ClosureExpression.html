@@ -21,7 +21,7 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          Gtk 4.2.1 Docs
+          Gtk 4.4.1 Docs
         </a>
          (95% documented)
       </p>
@@ -663,6 +663,9 @@
                 <a class="nav-group-task-link" href="../Classes/PasswordEntry.html">PasswordEntry</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PasswordEntryBuffer.html">PasswordEntryBuffer</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Picture.html">Picture</a>
               </li>
               <li class="nav-group-task">
@@ -990,6 +993,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk13INTERFACE_AGEs5Int32Vvp">INTERFACE_AGE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21INVALID_LIST_POSITIONs6UInt32Vvp">INVALID_LIST_POSITION</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21LEVEL_BAR_OFFSET_FULLSSvp">LEVEL_BAR_OFFSET_FULL</a>
@@ -2111,6 +2117,12 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PanedSignalName.html">PanedSignalName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferPropertyName.html">PasswordEntryBufferPropertyName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferSignalName.html">PasswordEntryBufferSignalName</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PasswordEntryPropertyName.html">PasswordEntryPropertyName</a>
@@ -4111,6 +4123,12 @@
                 <a class="nav-group-task-link" href="../Protocols/ParamSpecExpressionProtocol.html">ParamSpecExpressionProtocol</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferClassProtocol.html">PasswordEntryBufferClassProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferProtocol.html">PasswordEntryBufferProtocol</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/PasswordEntryClassProtocol.html">PasswordEntryClassProtocol</a>
               </li>
               <li class="nav-group-task">
@@ -5577,6 +5595,12 @@
                 <a class="nav-group-task-link" href="../Structs/ParamSpecExpressionRef.html">ParamSpecExpressionRef</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferClassRef.html">PasswordEntryBufferClassRef</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferRef.html">PasswordEntryBufferRef</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/PasswordEntryClassRef.html">PasswordEntryClassRef</a>
               </li>
               <li class="nav-group-task">
@@ -6704,15 +6728,15 @@
 
                 </div>
               </div>
-            <p>The <code>ClosureExpression</code> type acts as a reference-counted owner of an underlying <code>GtkClosureExpression</code> instance.
+            <p>An expression using a custom <code>GClosure</code> to compute the value from
+its parameters.</p>
+
+<p>The <code>ClosureExpression</code> type acts as a reference-counted owner of an underlying <code>GtkClosureExpression</code> instance.
 It provides the methods that can operate on this data type through <code><a href="../Protocols/ClosureExpressionProtocol.html">ClosureExpressionProtocol</a></code> conformance.
 Use <code>ClosureExpression</code> as a strong reference or owner of a <code>GtkClosureExpression</code> instance.</p>
 
-<p>An expression using a custom <code>GClosure</code> to compute the value from
-its parameters.</p>
-
               <div class="slightly-smaller">
-                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L18192-L18319">Show on GitHub</a>
+                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L18451-L18578">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -6770,7 +6794,7 @@ i.e., ownership is transferred to the <code>ClosureExpression</code> instance.</
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L18197-L18199">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L18456-L18458">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6822,7 +6846,7 @@ i.e., ownership is transferred to the <code>ClosureExpression</code> instance.</
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L18205-L18207">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L18464-L18466">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6875,7 +6899,7 @@ i.e., ownership is transferred to the <code>ClosureExpression</code> instance.</
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L18214-L18217">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L18473-L18476">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6928,7 +6952,7 @@ i.e., ownership is transferred to the <code>ClosureExpression</code> instance.</
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L18224-L18227">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L18483-L18486">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6980,7 +7004,7 @@ i.e., ownership is transferred to the <code>ClosureExpression</code> instance.</
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L18233-L18236">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L18492-L18495">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7032,7 +7056,7 @@ i.e., ownership is transferred to the <code>ClosureExpression</code> instance.</
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L18242-L18245">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L18501-L18504">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7084,7 +7108,7 @@ i.e., ownership is transferred to the <code>ClosureExpression</code> instance.</
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L18251-L18253">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L18510-L18512">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7135,7 +7159,7 @@ Will retain <code>GtkClosureExpression</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L18258-L18260">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L18517-L18519">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7186,7 +7210,7 @@ Will retain <code>GtkClosureExpression</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L18265-L18267">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L18524-L18526">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7237,7 +7261,7 @@ Will retain <code>GtkClosureExpression</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L18272-L18274">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L18531-L18533">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7288,7 +7312,7 @@ Will retain <code>GtkClosureExpression</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L18279-L18281">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L18538-L18540">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7320,7 +7344,7 @@ Will retain <code>GtkClosureExpression</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L18285-L18287">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L18544-L18546">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7371,7 +7395,7 @@ Will retain <code>GtkClosureExpression</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L18292-L18294">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L18551-L18553">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7422,7 +7446,7 @@ Will retain <code>GtkClosureExpression</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L18299-L18301">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L18558-L18560">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7473,7 +7497,7 @@ Will retain <code>GtkClosureExpression</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L18306-L18308">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L18565-L18567">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7524,7 +7548,7 @@ Will retain <code>GtkClosureExpression</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L18313-L18315">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L18572-L18574">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7537,8 +7561,8 @@ Will retain <code>GtkClosureExpression</code>.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-05-16)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.7</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-12-10)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

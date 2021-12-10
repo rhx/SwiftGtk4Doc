@@ -21,7 +21,7 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          Gtk 4.2.1 Docs
+          Gtk 4.4.1 Docs
         </a>
          (95% documented)
       </p>
@@ -663,6 +663,9 @@
                 <a class="nav-group-task-link" href="../Classes/PasswordEntry.html">PasswordEntry</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PasswordEntryBuffer.html">PasswordEntryBuffer</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Picture.html">Picture</a>
               </li>
               <li class="nav-group-task">
@@ -990,6 +993,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk13INTERFACE_AGEs5Int32Vvp">INTERFACE_AGE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21INVALID_LIST_POSITIONs6UInt32Vvp">INVALID_LIST_POSITION</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21LEVEL_BAR_OFFSET_FULLSSvp">LEVEL_BAR_OFFSET_FULL</a>
@@ -2111,6 +2117,12 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PanedSignalName.html">PanedSignalName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferPropertyName.html">PasswordEntryBufferPropertyName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferSignalName.html">PasswordEntryBufferSignalName</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PasswordEntryPropertyName.html">PasswordEntryPropertyName</a>
@@ -4111,6 +4123,12 @@
                 <a class="nav-group-task-link" href="../Protocols/ParamSpecExpressionProtocol.html">ParamSpecExpressionProtocol</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferClassProtocol.html">PasswordEntryBufferClassProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferProtocol.html">PasswordEntryBufferProtocol</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/PasswordEntryClassProtocol.html">PasswordEntryClassProtocol</a>
               </li>
               <li class="nav-group-task">
@@ -5577,6 +5595,12 @@
                 <a class="nav-group-task-link" href="../Structs/ParamSpecExpressionRef.html">ParamSpecExpressionRef</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferClassRef.html">PasswordEntryBufferClassRef</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferRef.html">PasswordEntryBufferRef</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/PasswordEntryClassRef.html">PasswordEntryClassRef</a>
               </li>
               <li class="nav-group-task">
@@ -6704,11 +6728,7 @@
 
                 </div>
               </div>
-            <p>The <code>EventControllerFocus</code> type acts as a reference-counted owner of an underlying <code>GtkEventControllerFocus</code> instance.
-It provides the methods that can operate on this data type through <code><a href="../Protocols/EventControllerFocusProtocol.html">EventControllerFocusProtocol</a></code> conformance.
-Use <code>EventControllerFocus</code> as a strong reference or owner of a <code>GtkEventControllerFocus</code> instance.</p>
-
-<p><code>GtkEventControllerFocus</code> is an event controller to keep track of
+            <p><code>GtkEventControllerFocus</code> is an event controller to keep track of
 keyboard focus.</p>
 
 <p>The event controller offers [signal<code>Gtk.EventControllerFocus::enter</code>]
@@ -6718,8 +6738,12 @@ and [signal<code>Gtk.EventControllerFocus::leave</code>] signals, as well as
 which are updated to reflect focus changes inside the widget hierarchy
 that is rooted at the controllers widget.</p>
 
+<p>The <code>EventControllerFocus</code> type acts as a reference-counted owner of an underlying <code>GtkEventControllerFocus</code> instance.
+It provides the methods that can operate on this data type through <code><a href="../Protocols/EventControllerFocusProtocol.html">EventControllerFocusProtocol</a></code> conformance.
+Use <code>EventControllerFocus</code> as a strong reference or owner of a <code>GtkEventControllerFocus</code> instance.</p>
+
               <div class="slightly-smaller">
-                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L8090-L8223">Show on GitHub</a>
+                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L8241-L8374">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -6777,7 +6801,7 @@ i.e., ownership is transferred to the <code>EventControllerFocus</code> instance
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L8095-L8097">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L8246-L8248">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6829,7 +6853,7 @@ i.e., ownership is transferred to the <code>EventControllerFocus</code> instance
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L8103-L8105">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L8254-L8256">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6882,7 +6906,7 @@ i.e., ownership is transferred to the <code>EventControllerFocus</code> instance
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L8112-L8115">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L8263-L8266">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6935,7 +6959,7 @@ i.e., ownership is transferred to the <code>EventControllerFocus</code> instance
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L8122-L8125">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L8273-L8276">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6987,7 +7011,7 @@ i.e., ownership is transferred to the <code>EventControllerFocus</code> instance
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L8131-L8134">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L8282-L8285">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7039,7 +7063,7 @@ i.e., ownership is transferred to the <code>EventControllerFocus</code> instance
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L8140-L8143">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L8291-L8294">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7091,7 +7115,7 @@ i.e., ownership is transferred to the <code>EventControllerFocus</code> instance
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L8149-L8151">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L8300-L8302">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7142,7 +7166,7 @@ Will retain <code>GtkEventControllerFocus</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L8156-L8158">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L8307-L8309">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7193,7 +7217,7 @@ Will retain <code>GtkEventControllerFocus</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L8163-L8165">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L8314-L8316">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7244,7 +7268,7 @@ Will retain <code>GtkEventControllerFocus</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L8170-L8172">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L8321-L8323">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7295,7 +7319,7 @@ Will retain <code>GtkEventControllerFocus</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L8177-L8179">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L8328-L8330">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7327,7 +7351,7 @@ Will retain <code>GtkEventControllerFocus</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L8183-L8185">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L8334-L8336">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7378,7 +7402,7 @@ Will retain <code>GtkEventControllerFocus</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L8190-L8192">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L8341-L8343">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7429,7 +7453,7 @@ Will retain <code>GtkEventControllerFocus</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L8197-L8199">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L8348-L8350">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7480,7 +7504,7 @@ Will retain <code>GtkEventControllerFocus</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L8204-L8206">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L8355-L8357">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7531,7 +7555,7 @@ Will retain <code>GtkEventControllerFocus</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L8211-L8213">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L8362-L8364">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7562,7 +7586,7 @@ Will retain <code>GtkEventControllerFocus</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L8216-L8220">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L8367-L8371">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7575,8 +7599,8 @@ Will retain <code>GtkEventControllerFocus</code>.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-05-16)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.7</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-12-10)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

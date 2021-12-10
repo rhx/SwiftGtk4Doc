@@ -21,7 +21,7 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          Gtk 4.2.1 Docs
+          Gtk 4.4.1 Docs
         </a>
          (95% documented)
       </p>
@@ -663,6 +663,9 @@
                 <a class="nav-group-task-link" href="../Classes/PasswordEntry.html">PasswordEntry</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PasswordEntryBuffer.html">PasswordEntryBuffer</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Picture.html">Picture</a>
               </li>
               <li class="nav-group-task">
@@ -990,6 +993,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk13INTERFACE_AGEs5Int32Vvp">INTERFACE_AGE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21INVALID_LIST_POSITIONs6UInt32Vvp">INVALID_LIST_POSITION</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21LEVEL_BAR_OFFSET_FULLSSvp">LEVEL_BAR_OFFSET_FULL</a>
@@ -2111,6 +2117,12 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PanedSignalName.html">PanedSignalName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferPropertyName.html">PasswordEntryBufferPropertyName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferSignalName.html">PasswordEntryBufferSignalName</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PasswordEntryPropertyName.html">PasswordEntryPropertyName</a>
@@ -4111,6 +4123,12 @@
                 <a class="nav-group-task-link" href="../Protocols/ParamSpecExpressionProtocol.html">ParamSpecExpressionProtocol</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferClassProtocol.html">PasswordEntryBufferClassProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferProtocol.html">PasswordEntryBufferProtocol</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/PasswordEntryClassProtocol.html">PasswordEntryClassProtocol</a>
               </li>
               <li class="nav-group-task">
@@ -5577,6 +5595,12 @@
                 <a class="nav-group-task-link" href="../Structs/ParamSpecExpressionRef.html">ParamSpecExpressionRef</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferClassRef.html">PasswordEntryBufferClassRef</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferRef.html">PasswordEntryBufferRef</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/PasswordEntryClassRef.html">PasswordEntryClassRef</a>
               </li>
               <li class="nav-group-task">
@@ -6704,11 +6728,7 @@
 
                 </div>
               </div>
-            <p>The <code>Spinner</code> type acts as a reference-counted owner of an underlying <code>GtkSpinner</code> instance.
-It provides the methods that can operate on this data type through <code><a href="../Protocols/SpinnerProtocol.html">SpinnerProtocol</a></code> conformance.
-Use <code>Spinner</code> as a strong reference or owner of a <code>GtkSpinner</code> instance.</p>
-
-<p>A <code>GtkSpinner</code> widget displays an icon-size spinning animation.</p>
+            <p>A <code>GtkSpinner</code> widget displays an icon-size spinning animation.</p>
 
 <p>It is often used as an alternative to a [class<code>Gtk.ProgressBar</code>]
 for displaying indefinite activity, instead of actual progress.</p>
@@ -6723,8 +6743,12 @@ use [method<code>Gtk.Spinner.stop</code>].</p>
 When the animation is active, the :checked pseudoclass is
 added to this node.</p>
 
+<p>The <code>Spinner</code> type acts as a reference-counted owner of an underlying <code>GtkSpinner</code> instance.
+It provides the methods that can operate on this data type through <code><a href="../Protocols/SpinnerProtocol.html">SpinnerProtocol</a></code> conformance.
+Use <code>Spinner</code> as a strong reference or owner of a <code>GtkSpinner</code> instance.</p>
+
               <div class="slightly-smaller">
-                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L22169-L22302">Show on GitHub</a>
+                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L22372-L22505">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -6782,7 +6806,7 @@ i.e., ownership is transferred to the <code>Spinner</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L22174-L22176">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L22377-L22379">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6834,7 +6858,7 @@ i.e., ownership is transferred to the <code>Spinner</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L22182-L22184">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L22385-L22387">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6887,7 +6911,7 @@ i.e., ownership is transferred to the <code>Spinner</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L22191-L22194">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L22394-L22397">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6940,7 +6964,7 @@ i.e., ownership is transferred to the <code>Spinner</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L22201-L22204">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L22404-L22407">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6992,7 +7016,7 @@ i.e., ownership is transferred to the <code>Spinner</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L22210-L22213">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L22413-L22416">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7044,7 +7068,7 @@ i.e., ownership is transferred to the <code>Spinner</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L22219-L22222">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L22422-L22425">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7096,7 +7120,7 @@ i.e., ownership is transferred to the <code>Spinner</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L22228-L22230">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L22431-L22433">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7147,7 +7171,7 @@ Will retain <code>GtkSpinner</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L22235-L22237">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L22438-L22440">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7198,7 +7222,7 @@ Will retain <code>GtkSpinner</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L22242-L22244">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L22445-L22447">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7249,7 +7273,7 @@ Will retain <code>GtkSpinner</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L22249-L22251">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L22452-L22454">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7300,7 +7324,7 @@ Will retain <code>GtkSpinner</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L22256-L22258">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L22459-L22461">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7332,7 +7356,7 @@ Will retain <code>GtkSpinner</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L22262-L22264">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L22465-L22467">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7383,7 +7407,7 @@ Will retain <code>GtkSpinner</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L22269-L22271">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L22472-L22474">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7434,7 +7458,7 @@ Will retain <code>GtkSpinner</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L22276-L22278">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L22479-L22481">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7485,7 +7509,7 @@ Will retain <code>GtkSpinner</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L22283-L22285">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L22486-L22488">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7536,7 +7560,7 @@ Will retain <code>GtkSpinner</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L22290-L22292">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L22493-L22495">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7567,7 +7591,7 @@ Will retain <code>GtkSpinner</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L22295-L22299">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L22498-L22502">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7580,8 +7604,8 @@ Will retain <code>GtkSpinner</code>.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-05-16)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.7</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-12-10)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

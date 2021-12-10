@@ -21,7 +21,7 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          Gtk 4.2.1 Docs
+          Gtk 4.4.1 Docs
         </a>
          (95% documented)
       </p>
@@ -663,6 +663,9 @@
                 <a class="nav-group-task-link" href="../Classes/PasswordEntry.html">PasswordEntry</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PasswordEntryBuffer.html">PasswordEntryBuffer</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Picture.html">Picture</a>
               </li>
               <li class="nav-group-task">
@@ -990,6 +993,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk13INTERFACE_AGEs5Int32Vvp">INTERFACE_AGE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21INVALID_LIST_POSITIONs6UInt32Vvp">INVALID_LIST_POSITION</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21LEVEL_BAR_OFFSET_FULLSSvp">LEVEL_BAR_OFFSET_FULL</a>
@@ -2111,6 +2117,12 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PanedSignalName.html">PanedSignalName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferPropertyName.html">PasswordEntryBufferPropertyName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferSignalName.html">PasswordEntryBufferSignalName</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PasswordEntryPropertyName.html">PasswordEntryPropertyName</a>
@@ -4111,6 +4123,12 @@
                 <a class="nav-group-task-link" href="../Protocols/ParamSpecExpressionProtocol.html">ParamSpecExpressionProtocol</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferClassProtocol.html">PasswordEntryBufferClassProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferProtocol.html">PasswordEntryBufferProtocol</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/PasswordEntryClassProtocol.html">PasswordEntryClassProtocol</a>
               </li>
               <li class="nav-group-task">
@@ -5577,6 +5595,12 @@
                 <a class="nav-group-task-link" href="../Structs/ParamSpecExpressionRef.html">ParamSpecExpressionRef</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferClassRef.html">PasswordEntryBufferClassRef</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferRef.html">PasswordEntryBufferRef</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/PasswordEntryClassRef.html">PasswordEntryClassRef</a>
               </li>
               <li class="nav-group-task">
@@ -6704,11 +6728,7 @@
 
                 </div>
               </div>
-            <p>The <code>GLArea</code> type acts as a reference-counted owner of an underlying <code>GtkGLArea</code> instance.
-It provides the methods that can operate on this data type through <code><a href="../Protocols/GLAreaProtocol.html">GLAreaProtocol</a></code> conformance.
-Use <code>GLArea</code> as a strong reference or owner of a <code>GtkGLArea</code> instance.</p>
-
-<p><code>GtkGLArea</code> is a widget that allows drawing with OpenGL.</p>
+            <p><code>GtkGLArea</code> is a widget that allows drawing with OpenGL.</p>
 
 <p><img src="glarea.png" alt="An example GtkGLArea"></p>
 
@@ -6734,7 +6754,7 @@ for you to draw its content:</p>
 <span class="nf">render</span> <span class="p">(</span><span class="n">GtkGLArea</span> <span class="o">*</span><span class="n">area</span><span class="p">,</span> <span class="n">GdkGLContext</span> <span class="o">*</span><span class="n">context</span><span class="p">)</span>
 <span class="p">{</span>
   <span class="c1">// inside this function it's safe to use GL; the given</span>
-  <span class="c1">// `GdkGLContext` has been made current to the drawable</span>
+  <span class="c1">// GdkGLContext has been made current to the drawable</span>
   <span class="c1">// surface used by the `GtkGLArea` and the viewport has</span>
   <span class="c1">// already been set to be the size of the allocation</span>
 
@@ -6777,7 +6797,7 @@ will need to check for errors, using [method<code>Gtk.GLArea.get_error</code>].<
 
   <span class="c1">// If there were errors during the initialization or</span>
   <span class="c1">// when trying to make the context current, this</span>
-  <span class="c1">// function will return a `GError` for you to catch</span>
+  <span class="c1">// function will return a GError for you to catch</span>
   <span class="k">if</span> <span class="p">(</span><span class="n">gtk_gl_area_get_error</span> <span class="p">(</span><span class="n">area</span><span class="p">)</span> <span class="o">!=</span> <span class="nb">NULL</span><span class="p">)</span>
     <span class="k">return</span><span class="p">;</span>
 
@@ -6806,8 +6826,12 @@ will need to check for errors, using [method<code>Gtk.GLArea.get_error</code>].<
 <p>If you need to change the options for creating the <code>GdkGLContext</code>
 you should use the [signal<code>Gtk.GLArea::create-context</code>] signal.</p>
 
+<p>The <code>GLArea</code> type acts as a reference-counted owner of an underlying <code>GtkGLArea</code> instance.
+It provides the methods that can operate on this data type through <code><a href="../Protocols/GLAreaProtocol.html">GLAreaProtocol</a></code> conformance.
+Use <code>GLArea</code> as a strong reference or owner of a <code>GtkGLArea</code> instance.</p>
+
               <div class="slightly-smaller">
-                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooserNative-GLArea.swift#L13082-L13215">Show on GitHub</a>
+                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooserNative-GLArea.swift#L13262-L13395">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -6865,7 +6889,7 @@ i.e., ownership is transferred to the <code>GLArea</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooserNative-GLArea.swift#L13087-L13089">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooserNative-GLArea.swift#L13267-L13269">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6917,7 +6941,7 @@ i.e., ownership is transferred to the <code>GLArea</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooserNative-GLArea.swift#L13095-L13097">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooserNative-GLArea.swift#L13275-L13277">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6970,7 +6994,7 @@ i.e., ownership is transferred to the <code>GLArea</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooserNative-GLArea.swift#L13104-L13107">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooserNative-GLArea.swift#L13284-L13287">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7023,7 +7047,7 @@ i.e., ownership is transferred to the <code>GLArea</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooserNative-GLArea.swift#L13114-L13117">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooserNative-GLArea.swift#L13294-L13297">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7075,7 +7099,7 @@ i.e., ownership is transferred to the <code>GLArea</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooserNative-GLArea.swift#L13123-L13126">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooserNative-GLArea.swift#L13303-L13306">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7127,7 +7151,7 @@ i.e., ownership is transferred to the <code>GLArea</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooserNative-GLArea.swift#L13132-L13135">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooserNative-GLArea.swift#L13312-L13315">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7179,7 +7203,7 @@ i.e., ownership is transferred to the <code>GLArea</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooserNative-GLArea.swift#L13141-L13143">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooserNative-GLArea.swift#L13321-L13323">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7230,7 +7254,7 @@ Will retain <code>GtkGLArea</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooserNative-GLArea.swift#L13148-L13150">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooserNative-GLArea.swift#L13328-L13330">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7281,7 +7305,7 @@ Will retain <code>GtkGLArea</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooserNative-GLArea.swift#L13155-L13157">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooserNative-GLArea.swift#L13335-L13337">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7332,7 +7356,7 @@ Will retain <code>GtkGLArea</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooserNative-GLArea.swift#L13162-L13164">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooserNative-GLArea.swift#L13342-L13344">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7383,7 +7407,7 @@ Will retain <code>GtkGLArea</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooserNative-GLArea.swift#L13169-L13171">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooserNative-GLArea.swift#L13349-L13351">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7415,7 +7439,7 @@ Will retain <code>GtkGLArea</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooserNative-GLArea.swift#L13175-L13177">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooserNative-GLArea.swift#L13355-L13357">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7466,7 +7490,7 @@ Will retain <code>GtkGLArea</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooserNative-GLArea.swift#L13182-L13184">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooserNative-GLArea.swift#L13362-L13364">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7517,7 +7541,7 @@ Will retain <code>GtkGLArea</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooserNative-GLArea.swift#L13189-L13191">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooserNative-GLArea.swift#L13369-L13371">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7568,7 +7592,7 @@ Will retain <code>GtkGLArea</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooserNative-GLArea.swift#L13196-L13198">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooserNative-GLArea.swift#L13376-L13378">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7619,7 +7643,7 @@ Will retain <code>GtkGLArea</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooserNative-GLArea.swift#L13203-L13205">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooserNative-GLArea.swift#L13383-L13385">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7650,7 +7674,7 @@ Will retain <code>GtkGLArea</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooserNative-GLArea.swift#L13208-L13212">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooserNative-GLArea.swift#L13388-L13392">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7663,8 +7687,8 @@ Will retain <code>GtkGLArea</code>.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-05-16)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.7</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-12-10)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

@@ -21,7 +21,7 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          Gtk 4.2.1 Docs
+          Gtk 4.4.1 Docs
         </a>
          (95% documented)
       </p>
@@ -663,6 +663,9 @@
                 <a class="nav-group-task-link" href="../Classes/PasswordEntry.html">PasswordEntry</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PasswordEntryBuffer.html">PasswordEntryBuffer</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Picture.html">Picture</a>
               </li>
               <li class="nav-group-task">
@@ -990,6 +993,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk13INTERFACE_AGEs5Int32Vvp">INTERFACE_AGE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21INVALID_LIST_POSITIONs6UInt32Vvp">INVALID_LIST_POSITION</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21LEVEL_BAR_OFFSET_FULLSSvp">LEVEL_BAR_OFFSET_FULL</a>
@@ -2111,6 +2117,12 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PanedSignalName.html">PanedSignalName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferPropertyName.html">PasswordEntryBufferPropertyName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferSignalName.html">PasswordEntryBufferSignalName</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PasswordEntryPropertyName.html">PasswordEntryPropertyName</a>
@@ -4111,6 +4123,12 @@
                 <a class="nav-group-task-link" href="../Protocols/ParamSpecExpressionProtocol.html">ParamSpecExpressionProtocol</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferClassProtocol.html">PasswordEntryBufferClassProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferProtocol.html">PasswordEntryBufferProtocol</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/PasswordEntryClassProtocol.html">PasswordEntryClassProtocol</a>
               </li>
               <li class="nav-group-task">
@@ -5577,6 +5595,12 @@
                 <a class="nav-group-task-link" href="../Structs/ParamSpecExpressionRef.html">ParamSpecExpressionRef</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferClassRef.html">PasswordEntryBufferClassRef</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferRef.html">PasswordEntryBufferRef</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/PasswordEntryClassRef.html">PasswordEntryClassRef</a>
               </li>
               <li class="nav-group-task">
@@ -6704,14 +6728,14 @@
 
                 </div>
               </div>
-            <p>The <code>TreePath</code> type acts as an owner of an underlying <code>GtkTreePath</code> instance.
+            <p>An opaque structure representing a path to a row in a model.</p>
+
+<p>The <code>TreePath</code> type acts as an owner of an underlying <code>GtkTreePath</code> instance.
 It provides the methods that can operate on this data type through <code><a href="../Protocols/TreePathProtocol.html">TreePathProtocol</a></code> conformance.
 Use <code>TreePath</code> as a strong reference or owner of a <code>GtkTreePath</code> instance.</p>
 
-<p>An opaque structure representing a path to a row in a model.</p>
-
               <div class="slightly-smaller">
-                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L4178-L4377">Show on GitHub</a>
+                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L4215-L4414">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -6748,7 +6772,7 @@ Use <code>TreePath</code> as a strong reference or owner of a <code>GtkTreePath<
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L4181">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L4218">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6800,7 +6824,7 @@ i.e., ownership is transferred to the <code>TreePath</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L4187-L4189">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L4224-L4226">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6852,7 +6876,7 @@ i.e., ownership is transferred to the <code>TreePath</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L4195-L4197">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L4232-L4234">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6905,7 +6929,7 @@ i.e., ownership is transferred to the <code>TreePath</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L4204-L4207">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L4241-L4244">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6958,7 +6982,7 @@ i.e., ownership is transferred to the <code>TreePath</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L4214-L4217">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L4251-L4254">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7010,7 +7034,7 @@ i.e., ownership is transferred to the <code>TreePath</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L4223-L4226">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L4260-L4263">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7062,7 +7086,7 @@ i.e., ownership is transferred to the <code>TreePath</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L4232-L4235">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L4269-L4272">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7114,7 +7138,7 @@ i.e., ownership is transferred to the <code>TreePath</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L4241-L4244">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L4278-L4281">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7165,7 +7189,7 @@ i.e., ownership is transferred to the <code>TreePath</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L4249-L4252">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L4286-L4289">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7216,7 +7240,7 @@ i.e., ownership is transferred to the <code>TreePath</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L4262-L4264">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L4299-L4301">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7267,7 +7291,7 @@ i.e., ownership is transferred to the <code>TreePath</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L4269-L4272">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L4306-L4309">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7318,7 +7342,7 @@ i.e., ownership is transferred to the <code>TreePath</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L4277-L4279">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L4314-L4316">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7350,7 +7374,7 @@ i.e., ownership is transferred to the <code>TreePath</code> instance.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L4283-L4286">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L4320-L4323">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7401,7 +7425,7 @@ i.e., ownership is transferred to the <code>TreePath</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L4291-L4293">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L4328-L4330">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7452,7 +7476,7 @@ i.e., ownership is transferred to the <code>TreePath</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L4298-L4301">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L4335-L4338">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7503,7 +7527,7 @@ i.e., ownership is transferred to the <code>TreePath</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L4306-L4308">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L4343-L4345">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7554,7 +7578,7 @@ i.e., ownership is transferred to the <code>TreePath</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L4313-L4316">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L4350-L4353">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7572,7 +7596,7 @@ i.e., ownership is transferred to the <code>TreePath</code> instance.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Creates a new <code>GtkTreePath-struct</code>.
+                        <p>Creates a new <code>GtkTreePath</code>
 This refers to a row.</p>
 
                       </div>
@@ -7586,7 +7610,7 @@ This refers to a row.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L4320-L4323">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L4357-L4360">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7617,7 +7641,7 @@ This refers to a row.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L4330-L4333">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L4367-L4370">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7635,7 +7659,7 @@ This refers to a row.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Creates a new <code>GtkTreePath-struct</code> initialized to <code>path</code>.</p>
+                        <p>Creates a new <code>GtkTreePath</code> initialized to <code>path</code>.</p>
 
 <p><code>path</code> is expected to be a colon separated list of numbers.
 For example, the string “10:4:0” would create a path of depth
@@ -7654,7 +7678,7 @@ If an invalid path string is passed in, <code>nil</code> is returned.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L4342-L4345">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L4379-L4382">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7672,7 +7696,7 @@ If an invalid path string is passed in, <code>nil</code> is returned.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Creates a new <code>GtkTreePath-struct</code>.</p>
+                        <p>Creates a new <code>GtkTreePath</code>.</p>
 
 <p>The string representation of this path is “0”.</p>
 
@@ -7687,7 +7711,7 @@ If an invalid path string is passed in, <code>nil</code> is returned.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L4350-L4353">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L4387-L4390">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7718,7 +7742,7 @@ If an invalid path string is passed in, <code>nil</code> is returned.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L4360-L4363">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L4397-L4400">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7736,7 +7760,7 @@ If an invalid path string is passed in, <code>nil</code> is returned.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Creates a new <code>GtkTreePath-struct</code> initialized to <code>path</code>.</p>
+                        <p>Creates a new <code>GtkTreePath</code> initialized to <code>path</code>.</p>
 
 <p><code>path</code> is expected to be a colon separated list of numbers.
 For example, the string “10:4:0” would create a path of depth
@@ -7755,7 +7779,7 @@ If an invalid path string is passed in, <code>nil</code> is returned.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L4372-L4375">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L4409-L4412">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7768,8 +7792,8 @@ If an invalid path string is passed in, <code>nil</code> is returned.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-05-16)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.7</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-12-10)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

@@ -21,7 +21,7 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          Gtk 4.2.1 Docs
+          Gtk 4.4.1 Docs
         </a>
          (95% documented)
       </p>
@@ -663,6 +663,9 @@
                 <a class="nav-group-task-link" href="../Classes/PasswordEntry.html">PasswordEntry</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PasswordEntryBuffer.html">PasswordEntryBuffer</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Picture.html">Picture</a>
               </li>
               <li class="nav-group-task">
@@ -990,6 +993,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk13INTERFACE_AGEs5Int32Vvp">INTERFACE_AGE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21INVALID_LIST_POSITIONs6UInt32Vvp">INVALID_LIST_POSITION</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21LEVEL_BAR_OFFSET_FULLSSvp">LEVEL_BAR_OFFSET_FULL</a>
@@ -2111,6 +2117,12 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PanedSignalName.html">PanedSignalName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferPropertyName.html">PasswordEntryBufferPropertyName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferSignalName.html">PasswordEntryBufferSignalName</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PasswordEntryPropertyName.html">PasswordEntryPropertyName</a>
@@ -4111,6 +4123,12 @@
                 <a class="nav-group-task-link" href="../Protocols/ParamSpecExpressionProtocol.html">ParamSpecExpressionProtocol</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferClassProtocol.html">PasswordEntryBufferClassProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferProtocol.html">PasswordEntryBufferProtocol</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/PasswordEntryClassProtocol.html">PasswordEntryClassProtocol</a>
               </li>
               <li class="nav-group-task">
@@ -5577,6 +5595,12 @@
                 <a class="nav-group-task-link" href="../Structs/ParamSpecExpressionRef.html">ParamSpecExpressionRef</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferClassRef.html">PasswordEntryBufferClassRef</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferRef.html">PasswordEntryBufferRef</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/PasswordEntryClassRef.html">PasswordEntryClassRef</a>
               </li>
               <li class="nav-group-task">
@@ -6704,11 +6728,7 @@
 
                 </div>
               </div>
-            <p>The <code>TreeListRow</code> type acts as a reference-counted owner of an underlying <code>GtkTreeListRow</code> instance.
-It provides the methods that can operate on this data type through <code><a href="../Protocols/TreeListRowProtocol.html">TreeListRowProtocol</a></code> conformance.
-Use <code>TreeListRow</code> as a strong reference or owner of a <code>GtkTreeListRow</code> instance.</p>
-
-<p><code>GtkTreeListRow</code> is used by <code>GtkTreeListModel</code> to represent items.</p>
+            <p><code>GtkTreeListRow</code> is used by <code>GtkTreeListModel</code> to represent items.</p>
 
 <p>It allows navigating the model as a tree and modify the state of rows.</p>
 
@@ -6720,8 +6740,12 @@ objects, such as the [class<code>Gtk.TreeExpander</code>] widget that allows dis
 an icon to expand or collapse a row or [class<code>Gtk.TreeListRowSorter</code>] that
 makes it possible to sort trees properly.</p>
 
+<p>The <code>TreeListRow</code> type acts as a reference-counted owner of an underlying <code>GtkTreeListRow</code> instance.
+It provides the methods that can operate on this data type through <code><a href="../Protocols/TreeListRowProtocol.html">TreeListRowProtocol</a></code> conformance.
+Use <code>TreeListRow</code> as a strong reference or owner of a <code>GtkTreeListRow</code> instance.</p>
+
               <div class="slightly-smaller">
-                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L11670-L11797">Show on GitHub</a>
+                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L11848-L11975">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -6779,7 +6803,7 @@ i.e., ownership is transferred to the <code>TreeListRow</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L11675-L11677">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L11853-L11855">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6831,7 +6855,7 @@ i.e., ownership is transferred to the <code>TreeListRow</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L11683-L11685">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L11861-L11863">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6884,7 +6908,7 @@ i.e., ownership is transferred to the <code>TreeListRow</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L11692-L11695">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L11870-L11873">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6937,7 +6961,7 @@ i.e., ownership is transferred to the <code>TreeListRow</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L11702-L11705">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L11880-L11883">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6989,7 +7013,7 @@ i.e., ownership is transferred to the <code>TreeListRow</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L11711-L11714">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L11889-L11892">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7041,7 +7065,7 @@ i.e., ownership is transferred to the <code>TreeListRow</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L11720-L11723">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L11898-L11901">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7093,7 +7117,7 @@ i.e., ownership is transferred to the <code>TreeListRow</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L11729-L11731">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L11907-L11909">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7144,7 +7168,7 @@ Will retain <code>GtkTreeListRow</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L11736-L11738">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L11914-L11916">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7195,7 +7219,7 @@ Will retain <code>GtkTreeListRow</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L11743-L11745">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L11921-L11923">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7246,7 +7270,7 @@ Will retain <code>GtkTreeListRow</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L11750-L11752">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L11928-L11930">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7297,7 +7321,7 @@ Will retain <code>GtkTreeListRow</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L11757-L11759">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L11935-L11937">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7329,7 +7353,7 @@ Will retain <code>GtkTreeListRow</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L11763-L11765">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L11941-L11943">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7380,7 +7404,7 @@ Will retain <code>GtkTreeListRow</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L11770-L11772">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L11948-L11950">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7431,7 +7455,7 @@ Will retain <code>GtkTreeListRow</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L11777-L11779">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L11955-L11957">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7482,7 +7506,7 @@ Will retain <code>GtkTreeListRow</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L11784-L11786">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L11962-L11964">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7533,7 +7557,7 @@ Will retain <code>GtkTreeListRow</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L11791-L11793">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L11969-L11971">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7546,8 +7570,8 @@ Will retain <code>GtkTreeListRow</code>.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-05-16)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.7</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-12-10)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

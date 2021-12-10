@@ -21,7 +21,7 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          Gtk 4.2.1 Docs
+          Gtk 4.4.1 Docs
         </a>
          (95% documented)
       </p>
@@ -663,6 +663,9 @@
                 <a class="nav-group-task-link" href="../Classes/PasswordEntry.html">PasswordEntry</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PasswordEntryBuffer.html">PasswordEntryBuffer</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Picture.html">Picture</a>
               </li>
               <li class="nav-group-task">
@@ -990,6 +993,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk13INTERFACE_AGEs5Int32Vvp">INTERFACE_AGE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21INVALID_LIST_POSITIONs6UInt32Vvp">INVALID_LIST_POSITION</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21LEVEL_BAR_OFFSET_FULLSSvp">LEVEL_BAR_OFFSET_FULL</a>
@@ -2111,6 +2117,12 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PanedSignalName.html">PanedSignalName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferPropertyName.html">PasswordEntryBufferPropertyName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferSignalName.html">PasswordEntryBufferSignalName</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PasswordEntryPropertyName.html">PasswordEntryPropertyName</a>
@@ -4111,6 +4123,12 @@
                 <a class="nav-group-task-link" href="../Protocols/ParamSpecExpressionProtocol.html">ParamSpecExpressionProtocol</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferClassProtocol.html">PasswordEntryBufferClassProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferProtocol.html">PasswordEntryBufferProtocol</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/PasswordEntryClassProtocol.html">PasswordEntryClassProtocol</a>
               </li>
               <li class="nav-group-task">
@@ -5577,6 +5595,12 @@
                 <a class="nav-group-task-link" href="../Structs/ParamSpecExpressionRef.html">ParamSpecExpressionRef</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferClassRef.html">PasswordEntryBufferClassRef</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferRef.html">PasswordEntryBufferRef</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/PasswordEntryClassRef.html">PasswordEntryClassRef</a>
               </li>
               <li class="nav-group-task">
@@ -6704,11 +6728,7 @@
 
                 </div>
               </div>
-            <p>The <code>EntryRef</code> type acts as a lightweight Swift reference to an underlying <code>GtkEntry</code> instance.
-It exposes methods that can operate on this data type through <code><a href="../Protocols/EntryProtocol.html">EntryProtocol</a></code> conformance.
-Use <code>EntryRef</code> only as an <code>unowned</code> reference to an existing <code>GtkEntry</code> instance.</p>
-
-<p><code>GtkEntry</code> is a single line text entry widget.</p>
+            <p><code>GtkEntry</code> is a single line text entry widget.</p>
 
 <p><img src="entry.png" alt="An example GtkEntry"></p>
 
@@ -6773,7 +6793,7 @@ elements. The &lt;attribute&gt; element has attributes named “name“, “valu
 this label.</p>
 
 <p>An example of a UI definition fragment specifying Pango attributes:</p>
-<pre class="highlight xml"><code><span class="ni">&amp;lt;</span>object class="GtkEnry"<span class="ni">&amp;gt;</span>
+<pre class="highlight xml"><code><span class="ni">&amp;lt;</span>object class="GtkEntry"<span class="ni">&amp;gt;</span>
   <span class="ni">&amp;lt;</span>attributes<span class="ni">&amp;gt;</span>
     <span class="ni">&amp;lt;</span>attribute name="weight" value="PANGO_WEIGHT_BOLD"/<span class="ni">&amp;gt;</span>
     <span class="ni">&amp;lt;</span>attribute name="background" value="red" start="5" end="10"/<span class="ni">&amp;gt;</span>
@@ -6790,8 +6810,12 @@ content instead.</p>
 
 <p><code>GtkEntry</code> uses the <code>GTK_ACCESSIBLE_ROLE_TEXT_BOX</code> role.</p>
 
+<p>The <code>EntryRef</code> type acts as a lightweight Swift reference to an underlying <code>GtkEntry</code> instance.
+It exposes methods that can operate on this data type through <code><a href="../Protocols/EntryProtocol.html">EntryProtocol</a></code> conformance.
+Use <code>EntryRef</code> only as an <code>unowned</code> reference to an existing <code>GtkEntry</code> instance.</p>
+
               <div class="slightly-smaller">
-                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L1088-L1092">Show on GitHub</a>
+                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L1095-L1099">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -6828,7 +6852,7 @@ content instead.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L1091">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L1098">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6872,7 +6896,7 @@ content instead.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L1096-L1098">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L1103-L1105">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6903,7 +6927,7 @@ content instead.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L1101-L1103">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L1108-L1110">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6934,7 +6958,7 @@ content instead.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L1106-L1109">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L1113-L1116">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6965,7 +6989,7 @@ content instead.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L1112-L1115">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L1119-L1122">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6996,7 +7020,7 @@ content instead.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L1118-L1121">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L1125-L1128">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7027,7 +7051,7 @@ content instead.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L1124-L1127">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L1131-L1134">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7058,7 +7082,7 @@ content instead.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L1130-L1132">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L1137-L1139">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7089,7 +7113,7 @@ content instead.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L1135">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L1142">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7121,7 +7145,7 @@ content instead.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L1139-L1141">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L1146-L1148">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7153,7 +7177,7 @@ content instead.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L1145-L1147">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L1152-L1154">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7185,7 +7209,7 @@ content instead.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L1151-L1153">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L1158-L1160">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7217,7 +7241,7 @@ content instead.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L1157-L1159">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L1164-L1166">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7249,7 +7273,7 @@ content instead.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L1163-L1165">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L1170-L1172">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7280,7 +7304,7 @@ content instead.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L1168-L1171">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L1175-L1178">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7311,7 +7335,7 @@ content instead.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L1174-L1177">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L1181-L1184">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7342,7 +7366,7 @@ content instead.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L1179-L1182">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L1186-L1189">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7355,8 +7379,8 @@ content instead.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-05-16)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.7</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-12-10)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

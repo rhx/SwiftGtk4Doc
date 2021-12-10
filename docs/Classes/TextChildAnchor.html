@@ -21,7 +21,7 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          Gtk 4.2.1 Docs
+          Gtk 4.4.1 Docs
         </a>
          (95% documented)
       </p>
@@ -663,6 +663,9 @@
                 <a class="nav-group-task-link" href="../Classes/PasswordEntry.html">PasswordEntry</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PasswordEntryBuffer.html">PasswordEntryBuffer</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Picture.html">Picture</a>
               </li>
               <li class="nav-group-task">
@@ -990,6 +993,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk13INTERFACE_AGEs5Int32Vvp">INTERFACE_AGE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21INVALID_LIST_POSITIONs6UInt32Vvp">INVALID_LIST_POSITION</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21LEVEL_BAR_OFFSET_FULLSSvp">LEVEL_BAR_OFFSET_FULL</a>
@@ -2111,6 +2117,12 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PanedSignalName.html">PanedSignalName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferPropertyName.html">PasswordEntryBufferPropertyName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferSignalName.html">PasswordEntryBufferSignalName</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PasswordEntryPropertyName.html">PasswordEntryPropertyName</a>
@@ -4111,6 +4123,12 @@
                 <a class="nav-group-task-link" href="../Protocols/ParamSpecExpressionProtocol.html">ParamSpecExpressionProtocol</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferClassProtocol.html">PasswordEntryBufferClassProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferProtocol.html">PasswordEntryBufferProtocol</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/PasswordEntryClassProtocol.html">PasswordEntryClassProtocol</a>
               </li>
               <li class="nav-group-task">
@@ -5577,6 +5595,12 @@
                 <a class="nav-group-task-link" href="../Structs/ParamSpecExpressionRef.html">ParamSpecExpressionRef</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferClassRef.html">PasswordEntryBufferClassRef</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferRef.html">PasswordEntryBufferRef</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/PasswordEntryClassRef.html">PasswordEntryClassRef</a>
               </li>
               <li class="nav-group-task">
@@ -6704,17 +6728,17 @@
 
                 </div>
               </div>
-            <p>The <code>TextChildAnchor</code> type acts as a reference-counted owner of an underlying <code>GtkTextChildAnchor</code> instance.
-It provides the methods that can operate on this data type through <code><a href="../Protocols/TextChildAnchorProtocol.html">TextChildAnchorProtocol</a></code> conformance.
-Use <code>TextChildAnchor</code> as a strong reference or owner of a <code>GtkTextChildAnchor</code> instance.</p>
-
-<p>A <code>GtkTextChildAnchor</code> is a spot in a <code>GtkTextBuffer</code> where child widgets can
+            <p>A <code>GtkTextChildAnchor</code> is a spot in a <code>GtkTextBuffer</code> where child widgets can
 be “anchored”.</p>
 
 <p>The anchor can have multiple widgets anchored, to allow for multiple views.</p>
 
+<p>The <code>TextChildAnchor</code> type acts as a reference-counted owner of an underlying <code>GtkTextChildAnchor</code> instance.
+It provides the methods that can operate on this data type through <code><a href="../Protocols/TextChildAnchorProtocol.html">TextChildAnchorProtocol</a></code> conformance.
+Use <code>TextChildAnchor</code> as a strong reference or owner of a <code>GtkTextChildAnchor</code> instance.</p>
+
               <div class="slightly-smaller">
-                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L2529-L2667">Show on GitHub</a>
+                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L2568-L2706">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -6772,7 +6796,7 @@ i.e., ownership is transferred to the <code>TextChildAnchor</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L2534-L2536">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L2573-L2575">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6824,7 +6848,7 @@ i.e., ownership is transferred to the <code>TextChildAnchor</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L2542-L2544">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L2581-L2583">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6877,7 +6901,7 @@ i.e., ownership is transferred to the <code>TextChildAnchor</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L2551-L2554">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L2590-L2593">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6930,7 +6954,7 @@ i.e., ownership is transferred to the <code>TextChildAnchor</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L2561-L2564">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L2600-L2603">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6982,7 +7006,7 @@ i.e., ownership is transferred to the <code>TextChildAnchor</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L2570-L2573">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L2609-L2612">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7034,7 +7058,7 @@ i.e., ownership is transferred to the <code>TextChildAnchor</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L2579-L2582">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L2618-L2621">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7086,7 +7110,7 @@ i.e., ownership is transferred to the <code>TextChildAnchor</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L2588-L2590">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L2627-L2629">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7137,7 +7161,7 @@ Will retain <code>GtkTextChildAnchor</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L2595-L2597">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L2634-L2636">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7188,7 +7212,7 @@ Will retain <code>GtkTextChildAnchor</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L2602-L2604">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L2641-L2643">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7239,7 +7263,7 @@ Will retain <code>GtkTextChildAnchor</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L2609-L2611">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L2648-L2650">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7290,7 +7314,7 @@ Will retain <code>GtkTextChildAnchor</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L2616-L2618">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L2655-L2657">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7322,7 +7346,7 @@ Will retain <code>GtkTextChildAnchor</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L2622-L2624">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L2661-L2663">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7373,7 +7397,7 @@ Will retain <code>GtkTextChildAnchor</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L2629-L2631">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L2668-L2670">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7424,7 +7448,7 @@ Will retain <code>GtkTextChildAnchor</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L2636-L2638">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L2675-L2677">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7475,7 +7499,7 @@ Will retain <code>GtkTextChildAnchor</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L2643-L2645">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L2682-L2684">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7526,7 +7550,7 @@ Will retain <code>GtkTextChildAnchor</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L2650-L2652">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L2689-L2691">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7562,7 +7586,7 @@ function [method<code>Gtk.TextBuffer.create_child_anchor</code>].</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L2660-L2664">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L2699-L2703">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7575,8 +7599,8 @@ function [method<code>Gtk.TextBuffer.create_child_anchor</code>].</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-05-16)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.7</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-12-10)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

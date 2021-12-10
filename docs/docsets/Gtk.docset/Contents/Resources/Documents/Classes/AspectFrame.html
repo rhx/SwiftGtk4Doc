@@ -21,7 +21,7 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          Gtk 4.2.1 Docs
+          Gtk 4.4.1 Docs
         </a>
          (95% documented)
       </p>
@@ -663,6 +663,9 @@
                 <a class="nav-group-task-link" href="../Classes/PasswordEntry.html">PasswordEntry</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PasswordEntryBuffer.html">PasswordEntryBuffer</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Picture.html">Picture</a>
               </li>
               <li class="nav-group-task">
@@ -990,6 +993,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk13INTERFACE_AGEs5Int32Vvp">INTERFACE_AGE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21INVALID_LIST_POSITIONs6UInt32Vvp">INVALID_LIST_POSITION</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21LEVEL_BAR_OFFSET_FULLSSvp">LEVEL_BAR_OFFSET_FULL</a>
@@ -2111,6 +2117,12 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PanedSignalName.html">PanedSignalName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferPropertyName.html">PasswordEntryBufferPropertyName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferSignalName.html">PasswordEntryBufferSignalName</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PasswordEntryPropertyName.html">PasswordEntryPropertyName</a>
@@ -4111,6 +4123,12 @@
                 <a class="nav-group-task-link" href="../Protocols/ParamSpecExpressionProtocol.html">ParamSpecExpressionProtocol</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferClassProtocol.html">PasswordEntryBufferClassProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferProtocol.html">PasswordEntryBufferProtocol</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/PasswordEntryClassProtocol.html">PasswordEntryClassProtocol</a>
               </li>
               <li class="nav-group-task">
@@ -5577,6 +5595,12 @@
                 <a class="nav-group-task-link" href="../Structs/ParamSpecExpressionRef.html">ParamSpecExpressionRef</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferClassRef.html">PasswordEntryBufferClassRef</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferRef.html">PasswordEntryBufferRef</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/PasswordEntryClassRef.html">PasswordEntryClassRef</a>
               </li>
               <li class="nav-group-task">
@@ -6704,11 +6728,7 @@
 
                 </div>
               </div>
-            <p>The <code>AspectFrame</code> type acts as a reference-counted owner of an underlying <code>GtkAspectFrame</code> instance.
-It provides the methods that can operate on this data type through <code><a href="../Protocols/AspectFrameProtocol.html">AspectFrameProtocol</a></code> conformance.
-Use <code>AspectFrame</code> as a strong reference or owner of a <code>GtkAspectFrame</code> instance.</p>
-
-<p><code>GtkAspectFrame</code> preserves the aspect ratio of its child.</p>
+            <p><code>GtkAspectFrame</code> preserves the aspect ratio of its child.</p>
 
 <p>The frame can respect the aspect ratio of the child widget,
 or use its own aspect ratio.</p>
@@ -6716,8 +6736,12 @@ or use its own aspect ratio.</p>
 
 <p><code>GtkAspectFrame</code> uses a CSS node with name <code>frame</code>.</p>
 
+<p>The <code>AspectFrame</code> type acts as a reference-counted owner of an underlying <code>GtkAspectFrame</code> instance.
+It provides the methods that can operate on this data type through <code><a href="../Protocols/AspectFrameProtocol.html">AspectFrameProtocol</a></code> conformance.
+Use <code>AspectFrame</code> as a strong reference or owner of a <code>GtkAspectFrame</code> instance.</p>
+
               <div class="slightly-smaller">
-                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L12500-L12633">Show on GitHub</a>
+                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L12726-L12859">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -6775,7 +6799,7 @@ i.e., ownership is transferred to the <code>AspectFrame</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L12505-L12507">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L12731-L12733">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6827,7 +6851,7 @@ i.e., ownership is transferred to the <code>AspectFrame</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L12513-L12515">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L12739-L12741">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6880,7 +6904,7 @@ i.e., ownership is transferred to the <code>AspectFrame</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L12522-L12525">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L12748-L12751">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6933,7 +6957,7 @@ i.e., ownership is transferred to the <code>AspectFrame</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L12532-L12535">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L12758-L12761">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6985,7 +7009,7 @@ i.e., ownership is transferred to the <code>AspectFrame</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L12541-L12544">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L12767-L12770">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7037,7 +7061,7 @@ i.e., ownership is transferred to the <code>AspectFrame</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L12550-L12553">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L12776-L12779">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7089,7 +7113,7 @@ i.e., ownership is transferred to the <code>AspectFrame</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L12559-L12561">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L12785-L12787">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7140,7 +7164,7 @@ Will retain <code>GtkAspectFrame</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L12566-L12568">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L12792-L12794">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7191,7 +7215,7 @@ Will retain <code>GtkAspectFrame</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L12573-L12575">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L12799-L12801">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7242,7 +7266,7 @@ Will retain <code>GtkAspectFrame</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L12580-L12582">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L12806-L12808">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7293,7 +7317,7 @@ Will retain <code>GtkAspectFrame</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L12587-L12589">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L12813-L12815">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7325,7 +7349,7 @@ Will retain <code>GtkAspectFrame</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L12593-L12595">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L12819-L12821">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7376,7 +7400,7 @@ Will retain <code>GtkAspectFrame</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L12600-L12602">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L12826-L12828">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7427,7 +7451,7 @@ Will retain <code>GtkAspectFrame</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L12607-L12609">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L12833-L12835">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7478,7 +7502,7 @@ Will retain <code>GtkAspectFrame</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L12614-L12616">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L12840-L12842">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7529,7 +7553,7 @@ Will retain <code>GtkAspectFrame</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L12621-L12623">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L12847-L12849">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7560,7 +7584,7 @@ Will retain <code>GtkAspectFrame</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L12626-L12630">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L12852-L12856">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7573,8 +7597,8 @@ Will retain <code>GtkAspectFrame</code>.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-05-16)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.7</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-12-10)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

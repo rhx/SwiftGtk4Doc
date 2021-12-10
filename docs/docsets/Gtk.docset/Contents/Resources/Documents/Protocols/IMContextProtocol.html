@@ -21,7 +21,7 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          Gtk 4.2.1 Docs
+          Gtk 4.4.1 Docs
         </a>
          (95% documented)
       </p>
@@ -663,6 +663,9 @@
                 <a class="nav-group-task-link" href="../Classes/PasswordEntry.html">PasswordEntry</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PasswordEntryBuffer.html">PasswordEntryBuffer</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Picture.html">Picture</a>
               </li>
               <li class="nav-group-task">
@@ -990,6 +993,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk13INTERFACE_AGEs5Int32Vvp">INTERFACE_AGE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21INVALID_LIST_POSITIONs6UInt32Vvp">INVALID_LIST_POSITION</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21LEVEL_BAR_OFFSET_FULLSSvp">LEVEL_BAR_OFFSET_FULL</a>
@@ -2111,6 +2117,12 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PanedSignalName.html">PanedSignalName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferPropertyName.html">PasswordEntryBufferPropertyName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferSignalName.html">PasswordEntryBufferSignalName</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PasswordEntryPropertyName.html">PasswordEntryPropertyName</a>
@@ -4111,6 +4123,12 @@
                 <a class="nav-group-task-link" href="../Protocols/ParamSpecExpressionProtocol.html">ParamSpecExpressionProtocol</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferClassProtocol.html">PasswordEntryBufferClassProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferProtocol.html">PasswordEntryBufferProtocol</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/PasswordEntryClassProtocol.html">PasswordEntryClassProtocol</a>
               </li>
               <li class="nav-group-task">
@@ -5577,6 +5595,12 @@
                 <a class="nav-group-task-link" href="../Structs/ParamSpecExpressionRef.html">ParamSpecExpressionRef</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferClassRef.html">PasswordEntryBufferClassRef</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferRef.html">PasswordEntryBufferRef</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/PasswordEntryClassRef.html">PasswordEntryClassRef</a>
               </li>
               <li class="nav-group-task">
@@ -6704,37 +6728,21 @@
 
                 </div>
               </div>
-            <p>The <code>IMContextProtocol</code> protocol exposes the methods and properties of an underlying <code>GtkIMContext</code> instance.
-The default implementation of these can be found in the protocol extension below.
-For a concrete class that implements these methods and properties, see <code><a href="../Classes/IMContext.html">IMContext</a></code>.
-Alternatively, use <code><a href="../Structs/IMContextRef.html">IMContextRef</a></code> as a lighweight, <code>unowned</code> reference if you already have an instance you just want to use.</p>
-
-<p><code>GtkIMContext</code> defines the interface for GTK input methods.</p>
+            <p><code>GtkIMContext</code> defines the interface for GTK input methods.</p>
 
 <p><code>GtkIMContext</code> is used by GTK text input widgets like <code>GtkText</code>
 to map from key events to Unicode character strings.</p>
 
-<p>By default, GTK uses a platform-dependent default input method.
-On Windows, the default implementation is IME-based and on Wayland,
-it is using the Wayland text protocol. The choice can be overridden
-programmatically via the [property<code>Gtk.Settings:gtk-im-module</code>] setting.
-Users may set the <code>GTK_IM_MODULE</code> environment variable to override the
-default.</p>
-
-<p>Text widgets have a :im-module property (e.g. [property<code>Gtk.TextView:im-module</code>])
-that may also be used to set input methods for specific widget instances.
-For instance, a certain entry widget might be expected to contain
-certain characters which would be easier to input with a specific
-input method.</p>
-
 <p>An input method may consume multiple key events in sequence before finally
 outputting the composed result. This is called <em>preediting</em>, and an input
 method may provide feedback about this process by displaying the intermediate
-composition states as preedit text.</p>
+composition states as preedit text. To do so, the <code>GtkIMContext</code> will emit
+[signal<code>Gtk.IMContext::preedit-start</code>], [signal<code>Gtk.IMContext::preedit-changed</code>]
+and [signal<code>Gtk.IMContext::preedit-end</code>] signals.</p>
 
-<p>For instance, the built-in GTK input method <code>GtkIMContextSimple</code> implements
-the input of arbitrary Unicode code points by holding down the
-&lt;kbd&gt;Control&lt;/kbd&gt; and &lt;kbd&gt;Shift&lt;/kbd&gt; keys and then typing &lt;kbd&gt;U&lt;/kbd&gt;
+<p>For instance, the built-in GTK input method [class<code>Gtk.IMContextSimple</code>]
+implements the input of arbitrary Unicode code points by holding down the
+&lt;kbd&gt;Control&lt;/kbd&gt; and &lt;kbd&gt;Shift&lt;/kbd&gt; keys and then typing &lt;kbd&gt;u&lt;/kbd&gt;
 followed by the hexadecimal digits of the code point. When releasing the
 &lt;kbd&gt;Control&lt;/kbd&gt; and &lt;kbd&gt;Shift&lt;/kbd&gt; keys, preediting ends and the
 character is inserted as text. For example,</p>
@@ -6747,8 +6755,16 @@ character is inserted as text. For example,</p>
 loadable modules. An input method module is a small shared library which
 provides a <code>GIOExtension</code> for the extension point named &ldquo;gtk-im-module&rdquo;.</p>
 
+<p>To connect a widget to the users preferred input method, you should use
+[class<code>Gtk.IMMulticontext</code>].</p>
+
+<p>The <code>IMContextProtocol</code> protocol exposes the methods and properties of an underlying <code>GtkIMContext</code> instance.
+The default implementation of these can be found in the protocol extension below.
+For a concrete class that implements these methods and properties, see <code><a href="../Classes/IMContext.html">IMContext</a></code>.
+Alternatively, use <code><a href="../Structs/IMContextRef.html">IMContextRef</a></code> as a lighweight, <code>unowned</code> reference if you already have an instance you just want to use.</p>
+
               <div class="slightly-smaller">
-                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L60-L69">Show on GitHub</a>
+                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L53-L62">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -6782,7 +6798,7 @@ provides a <code>GIOExtension</code> for the extension point named &ldquo;gtk-im
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L62">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L55">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6820,7 +6836,7 @@ provides a <code>GIOExtension</code> for the extension point named &ldquo;gtk-im
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L65">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L58">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6850,7 +6866,7 @@ provides a <code>GIOExtension</code> for the extension point named &ldquo;gtk-im
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L68">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L61">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6981,7 +6997,7 @@ provides a <code>GIOExtension</code> for the extension point named &ldquo;gtk-im
                         <p>binding reference or <code>nil</code> in case of an error</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L377-L401">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L362-L386">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7038,7 +7054,7 @@ provides a <code>GIOExtension</code> for the extension point named &ldquo;gtk-im
                         <p>the value of the named property</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L406-L410">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L391-L395">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7096,7 +7112,7 @@ provides a <code>GIOExtension</code> for the extension point named &ldquo;gtk-im
                         <p>the value of the named property</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L416-L418">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L401-L403">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7343,8 +7359,13 @@ provides a <code>GIOExtension</code> for the extension point named &ldquo;gtk-im
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>The <code>commit</code> signal is emitted when a complete input sequence
-has been entered by the user. This can be a single character
-immediately after a key press or the final result of preediting.</p>
+has been entered by the user.</p>
+
+<p>If the commit comes after a preediting sequence, the
+<code>commit</code> signal is emitted after <code>preedit-end</code>.</p>
+
+<p>This can be a single character immediately after a key press or
+the final result of preediting.</p>
 <div class="aside aside-note">
     <p class="aside-title">Note</p>
     This represents the underlying <code>commit</code> signal
@@ -7419,7 +7440,7 @@ Run the given callback whenever the <code>commit</code> signal is emitted</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L511-L525">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L516-L530">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7452,7 +7473,7 @@ Run the given callback whenever the <code>commit</code> signal is emitted</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L528">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L533">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7528,7 +7549,7 @@ needs to delete all or part of the context surrounding the cursor.</p>
                               </td>
                               <td>
                                 <div>
-                                  <p>the character offset from the cursor position of the text           to be deleted. A negative value indicates a position before           the cursor.</p>
+                                  <p>the character offset from the cursor position of the text   to be deleted. A negative value indicates a position before   the cursor.</p>
                                 </div>
                               </td>
                             </tr>
@@ -7561,7 +7582,7 @@ Run the given callback whenever the <code>deleteSurrounding</code> signal is emi
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L539-L553">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L544-L558">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7594,7 +7615,7 @@ Run the given callback whenever the <code>deleteSurrounding</code> signal is emi
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L556">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L561">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7616,9 +7637,10 @@ Run the given callback whenever the <code>deleteSurrounding</code> signal is emi
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>The <code>preedit-changed</code> signal is emitted whenever the preedit sequence
-currently being entered has changed.  It is also emitted at the end of
-a preedit sequence, in which case
-<code>gtk_im_context_get_preedit_string()</code> returns the empty string.</p>
+currently being entered has changed.</p>
+
+<p>It is also emitted at the end of a preedit sequence, in which case
+[method<code>Gtk.IMContext.get_preedit_string</code>] returns the empty string.</p>
 <div class="aside aside-note">
     <p class="aside-title">Note</p>
     This represents the underlying <code>preedit-changed</code> signal
@@ -7681,7 +7703,7 @@ Run the given callback whenever the <code>preeditChanged</code> signal is emitte
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L567-L581">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L573-L587">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7714,7 +7736,7 @@ Run the given callback whenever the <code>preeditChanged</code> signal is emitte
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L584">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L590">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7799,7 +7821,7 @@ Run the given callback whenever the <code>preeditEnd</code> signal is emitted</p
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L593-L607">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L599-L613">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7832,7 +7854,7 @@ Run the given callback whenever the <code>preeditEnd</code> signal is emitted</p
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L610">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L616">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7917,7 +7939,7 @@ Run the given callback whenever the <code>preeditStart</code> signal is emitted<
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L619-L633">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L625-L639">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7950,7 +7972,7 @@ Run the given callback whenever the <code>preeditStart</code> signal is emitted<
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L636">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L642">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7972,9 +7994,10 @@ Run the given callback whenever the <code>preeditStart</code> signal is emitted<
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>The <code>retrieve-surrounding</code> signal is emitted when the input method
-requires the context surrounding the cursor.  The callback should set
-the input method surrounding context by calling the
-<code>gtk_im_context_set_surrounding()</code> method.</p>
+requires the context surrounding the cursor.</p>
+
+<p>The callback should set the input method surrounding context by
+calling the [method<code>Gtk.IMContext.set_surrounding</code>] method.</p>
 <div class="aside aside-note">
     <p class="aside-title">Note</p>
     This represents the underlying <code>retrieve-surrounding</code> signal
@@ -8037,7 +8060,7 @@ Run the given callback whenever the <code>retrieveSurrounding</code> signal is e
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L647-L661">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L654-L668">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8070,7 +8093,7 @@ Run the given callback whenever the <code>retrieveSurrounding</code> signal is e
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L664">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L671">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8105,8 +8128,9 @@ and common practice is to do that only when the value has actually changed.</p>
 
 <p>This signal is typically used to obtain change notification for a
 single property, by specifying the property name as a detail in the
-<code>g_signal_connect()</code> call, like this:
-(C Language Example):</p>
+<code>g_signal_connect()</code> call, like this:</p>
+
+<p>(C Language Example):</p>
 <pre class="highlight plaintext"><code>g_signal_connect (text_view-&gt;buffer, "notify::paste-target-list",
                   G_CALLBACK (gtk_text_view_target_list_notify),
                   text_view)
@@ -8189,7 +8213,7 @@ Run the given callback whenever the <code>notifyInputHints</code> signal is emit
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L696-L710">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L705-L719">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8222,7 +8246,7 @@ Run the given callback whenever the <code>notifyInputHints</code> signal is emit
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L713">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L722">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8257,8 +8281,9 @@ and common practice is to do that only when the value has actually changed.</p>
 
 <p>This signal is typically used to obtain change notification for a
 single property, by specifying the property name as a detail in the
-<code>g_signal_connect()</code> call, like this:
-(C Language Example):</p>
+<code>g_signal_connect()</code> call, like this:</p>
+
+<p>(C Language Example):</p>
 <pre class="highlight plaintext"><code>g_signal_connect (text_view-&gt;buffer, "notify::paste-target-list",
                   G_CALLBACK (gtk_text_view_target_list_notify),
                   text_view)
@@ -8341,7 +8366,7 @@ Run the given callback whenever the <code>notifyInputPurpose</code> signal is em
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L745-L759">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L756-L770">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8374,7 +8399,7 @@ Run the given callback whenever the <code>notifyInputPurpose</code> signal is em
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L762">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L773">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8410,21 +8435,21 @@ Run the given callback whenever the <code>notifyInputPurpose</code> signal is em
                       <div class="abstract">
                         <p>Asks the widget that the input context is attached to delete
 characters around the cursor position by emitting the
-GtkIMContext<code>delete_surrounding</code> signal.</p>
+<code>delete_surrounding</code> signal.</p>
 
 <p>Note that <code>offset</code> and <code>n_chars</code> are in characters not in bytes
 which differs from the usage other places in <code>GtkIMContext</code>.</p>
 
 <p>In order to use this function, you should first call
-<code>gtk_im_context_get_surrounding()</code> to get the current context, and
-call this function immediately afterwards to make sure that you
+[method<code>Gtk.IMContext.get_surrounding</code>] to get the current context,
+and call this function immediately afterwards to make sure that you
 know what you are deleting. You should also account for the fact
 that even if the signal was handled, the input context might not
 have deleted all the characters that were requested to be deleted.</p>
 
 <p>This function is used by an input method that wants to make
-subsitutions in the existing text in response to new input. It is
-not useful for applications.</p>
+subsitutions in the existing text in response to new input.
+It is not useful for applications.</p>
 
                       </div>
                       <div class="declaration">
@@ -8437,7 +8462,7 @@ not useful for applications.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L788-L791">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L799-L802">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8459,7 +8484,7 @@ not useful for applications.</p>
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Allow an input method to forward key press and release events
-to another input methodm without necessarily having a <code>GdkEvent</code>
+to another input method without necessarily having a <code>GdkEvent</code>
 available.</p>
 
                       </div>
@@ -8473,7 +8498,7 @@ available.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L796-L799">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L807-L810">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8511,7 +8536,7 @@ should be done for this key event.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L806-L809">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L817-L820">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8549,7 +8574,7 @@ feedback to reflect this change.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L816-L819">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L827-L830">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8587,7 +8612,7 @@ feedback or reset the contexts state to reflect this change.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L826-L829">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L837-L840">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8624,7 +8649,7 @@ and a list of attributes to apply to the string.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L835-L838">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L846-L849">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8676,7 +8701,7 @@ Use [<a href="mailto:method@Gtk.IMContext.get_surrounding_with_selection">method
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L858-L861">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L869-L872">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8724,7 +8749,7 @@ function without context.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L878-L881">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L889-L892">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8761,7 +8786,7 @@ position has been made.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L887-L890">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L898-L901">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8799,7 +8824,7 @@ also be used for purposes internal to the input method.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L897-L900">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L908-L911">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8837,7 +8862,7 @@ also be used for purposes internal to the input method.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L906-L909">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L917-L920">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8861,7 +8886,7 @@ also be used for purposes internal to the input method.</p>
                         <p>Notify the input method that a change in cursor
 position has been made.</p>
 
-<p>The location is relative to the client window.</p>
+<p>The location is relative to the client widget.</p>
 
                       </div>
                       <div class="declaration">
@@ -8874,7 +8899,7 @@ position has been made.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L915-L918">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L926-L929">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8917,7 +8942,7 @@ Use [<a href="mailto:method@Gtk.IMContext.set_surrounding_with_selection">method
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L929-L932">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L940-L943">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8940,8 +8965,8 @@ Use [<a href="mailto:method@Gtk.IMContext.set_surrounding_with_selection">method
                       <div class="abstract">
                         <p>Sets surrounding context around the insertion point and preedit
 string. This function is expected to be called in response to the
-GtkIMContext<code>retrieve_surrounding</code> signal, and will likely have no
-effect if called at other times.</p>
+[signal<code>Gtk.IMContext::retrieve_surrounding</code>] signal, and will likely
+have no effect if called at other times.</p>
 
                       </div>
                       <div class="declaration">
@@ -8954,7 +8979,7 @@ effect if called at other times.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L938-L941">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L949-L952">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8993,7 +9018,7 @@ it in a child of the root window.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L949-L952">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L960-L963">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9027,7 +9052,7 @@ it in a child of the root window.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L954-L959">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L965-L970">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9040,8 +9065,8 @@ it in a child of the root window.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-05-16)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.7</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-12-10)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

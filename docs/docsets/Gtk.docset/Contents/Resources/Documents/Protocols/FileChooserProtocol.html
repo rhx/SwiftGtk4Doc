@@ -21,7 +21,7 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          Gtk 4.2.1 Docs
+          Gtk 4.4.1 Docs
         </a>
          (95% documented)
       </p>
@@ -663,6 +663,9 @@
                 <a class="nav-group-task-link" href="../Classes/PasswordEntry.html">PasswordEntry</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PasswordEntryBuffer.html">PasswordEntryBuffer</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Picture.html">Picture</a>
               </li>
               <li class="nav-group-task">
@@ -990,6 +993,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk13INTERFACE_AGEs5Int32Vvp">INTERFACE_AGE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21INVALID_LIST_POSITIONs6UInt32Vvp">INVALID_LIST_POSITION</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21LEVEL_BAR_OFFSET_FULLSSvp">LEVEL_BAR_OFFSET_FULL</a>
@@ -2111,6 +2117,12 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PanedSignalName.html">PanedSignalName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferPropertyName.html">PasswordEntryBufferPropertyName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferSignalName.html">PasswordEntryBufferSignalName</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PasswordEntryPropertyName.html">PasswordEntryPropertyName</a>
@@ -4111,6 +4123,12 @@
                 <a class="nav-group-task-link" href="../Protocols/ParamSpecExpressionProtocol.html">ParamSpecExpressionProtocol</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferClassProtocol.html">PasswordEntryBufferClassProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferProtocol.html">PasswordEntryBufferProtocol</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/PasswordEntryClassProtocol.html">PasswordEntryClassProtocol</a>
               </li>
               <li class="nav-group-task">
@@ -5577,6 +5595,12 @@
                 <a class="nav-group-task-link" href="../Structs/ParamSpecExpressionRef.html">ParamSpecExpressionRef</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferClassRef.html">PasswordEntryBufferClassRef</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferRef.html">PasswordEntryBufferRef</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/PasswordEntryClassRef.html">PasswordEntryClassRef</a>
               </li>
               <li class="nav-group-task">
@@ -6704,12 +6728,7 @@
 
                 </div>
               </div>
-            <p>The <code>FileChooserProtocol</code> protocol exposes the methods and properties of an underlying <code>GtkFileChooser</code> instance.
-The default implementation of these can be found in the protocol extension below.
-For a concrete class that implements these methods and properties, see <code><a href="../Classes/FileChooser.html">FileChooser</a></code>.
-Alternatively, use <code><a href="../Structs/FileChooserRef.html">FileChooserRef</a></code> as a lighweight, <code>unowned</code> reference if you already have an instance you just want to use.</p>
-
-<p><code>GtkFileChooser</code> is an interface that can be implemented by file
+            <p><code>GtkFileChooser</code> is an interface that can be implemented by file
 selection widgets.</p>
 
 <p>In GTK, the main objects that implement this interface are
@@ -6748,8 +6767,13 @@ options. If a choice has no option, it will be rendered as a
 check button with the given label; if a choice has options, it will
 be rendered as a combo box.</p>
 
+<p>The <code>FileChooserProtocol</code> protocol exposes the methods and properties of an underlying <code>GtkFileChooser</code> instance.
+The default implementation of these can be found in the protocol extension below.
+For a concrete class that implements these methods and properties, see <code><a href="../Classes/FileChooser.html">FileChooser</a></code>.
+Alternatively, use <code><a href="../Structs/FileChooserRef.html">FileChooserRef</a></code> as a lighweight, <code>unowned</code> reference if you already have an instance you just want to use.</p>
+
               <div class="slightly-smaller">
-                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooser-Native.swift#L63-L72">Show on GitHub</a>
+                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooser-Native.swift#L64-L73">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -6783,7 +6807,7 @@ be rendered as a combo box.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooser-Native.swift#L65">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooser-Native.swift#L66">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6821,7 +6845,7 @@ be rendered as a combo box.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooser-Native.swift#L68">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooser-Native.swift#L69">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6851,7 +6875,7 @@ be rendered as a combo box.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooser-Native.swift#L71">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooser-Native.swift#L72">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6982,7 +7006,7 @@ be rendered as a combo box.</p>
                         <p>binding reference or <code>nil</code> in case of an error</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooser-Native.swift#L417-L441">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooser-Native.swift#L420-L444">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7039,7 +7063,7 @@ be rendered as a combo box.</p>
                         <p>the value of the named property</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooser-Native.swift#L446-L450">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooser-Native.swift#L449-L453">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7097,7 +7121,7 @@ be rendered as a combo box.</p>
                         <p>the value of the named property</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooser-Native.swift#L456-L458">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooser-Native.swift#L459-L461">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7151,7 +7175,7 @@ and you can obtain the user-selected value in the
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooser-Native.swift#L500-L503">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooser-Native.swift#L503-L506">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7191,7 +7215,7 @@ so you have to ref and sink it if you want to keep a reference.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooser-Native.swift#L512-L515">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooser-Native.swift#L515-L518">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7226,7 +7250,7 @@ in a file chooser.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooser-Native.swift#L519-L524">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooser-Native.swift#L522-L527">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7260,7 +7284,7 @@ in a file chooser.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooser-Native.swift#L527-L530">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooser-Native.swift#L530-L533">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7294,7 +7318,7 @@ in a file chooser.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooser-Native.swift#L533-L536">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooser-Native.swift#L536-L539">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7328,7 +7352,7 @@ in a file chooser.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooser-Native.swift#L539-L542">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooser-Native.swift#L542-L545">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7362,7 +7386,7 @@ in a file chooser.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooser-Native.swift#L545-L548">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooser-Native.swift#L548-L551">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7399,7 +7423,7 @@ filename when the file itself does not exist yet.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooser-Native.swift#L554-L557">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooser-Native.swift#L557-L560">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7440,7 +7464,7 @@ the selected folder.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooser-Native.swift#L567-L570">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooser-Native.swift#L570-L573">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7475,7 +7499,7 @@ of <code>chooser</code> as <code>GFile</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooser-Native.swift#L574-L577">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooser-Native.swift#L577-L580">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7509,7 +7533,7 @@ of <code>chooser</code> as <code>GFile</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooser-Native.swift#L580-L583">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooser-Native.swift#L583-L586">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7549,7 +7573,7 @@ of <code>chooser</code> as <code>GFile</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooser-Native.swift#L592-L595">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooser-Native.swift#L595-L598">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7584,7 +7608,7 @@ chooser.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooser-Native.swift#L599-L602">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooser-Native.swift#L602-L605">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7621,7 +7645,7 @@ chooser.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooser-Native.swift#L608-L611">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooser-Native.swift#L611-L614">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7655,7 +7679,7 @@ chooser.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooser-Native.swift#L614-L617">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooser-Native.swift#L617-L620">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7689,7 +7713,7 @@ chooser.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooser-Native.swift#L620-L623">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooser-Native.swift#L623-L626">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7723,7 +7747,7 @@ chooser.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooser-Native.swift#L626-L631">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooser-Native.swift#L629-L634">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7763,7 +7787,7 @@ action is <code>GTK_FILE_CHOOSER_ACTION_OPEN</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooser-Native.swift#L640-L643">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooser-Native.swift#L643-L646">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7800,7 +7824,7 @@ action is <code>GTK_FILE_CHOOSER_ACTION_OPEN</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooser-Native.swift#L649-L652">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooser-Native.swift#L652-L655">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7837,7 +7861,7 @@ action is <code>GTK_FILE_CHOOSER_ACTION_OPEN</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooser-Native.swift#L658-L661">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooser-Native.swift#L661-L664">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7871,7 +7895,7 @@ action is <code>GTK_FILE_CHOOSER_ACTION_OPEN</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooser-Native.swift#L664-L669">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooser-Native.swift#L667-L672">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7917,7 +7941,7 @@ of using [method<code>Gtk.FileChooser.set_current_name</code>] as well.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooser-Native.swift#L684-L687">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooser-Native.swift#L687-L690">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7945,7 +7969,7 @@ the file in list. If the <code>chooser</code> is in <code>GTK_FILE_CHOOSER_ACTIO
 the file’s base name will also appear in the dialog’s file name entry.</p>
 
 <p>If the file name isn’t in the current folder of <code>chooser</code>, then the current
-folder of <code>chooser</code> will be changed to the folder containing <code>filename</code>.</p>
+folder of <code>chooser</code> will be changed to the folder containing <code><a href="../Protocols/FileChooserProtocol.html#/s:3Gtk19FileChooserProtocolPAAE4file3GIO0B3RefVSgvp">file</a></code>.</p>
 
 <p>Note that the file must exist, or nothing will be done except
 for the directory change.</p>
@@ -7990,7 +8014,7 @@ a new file and is saving it for the first time, do not call this function.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooser-Native.swift#L731-L736">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooser-Native.swift#L734-L739">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8032,7 +8056,7 @@ set of files without letting the user change it.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooser-Native.swift#L747-L750">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooser-Native.swift#L750-L753">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8070,7 +8094,7 @@ set of files without letting the user change it.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooser-Native.swift#L757-L760">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooser-Native.swift#L760-L763">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8104,7 +8128,7 @@ set of files without letting the user change it.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooser-Native.swift#L762-L778">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooser-Native.swift#L765-L781">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8138,7 +8162,7 @@ set of files without letting the user change it.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooser-Native.swift#L781-L794">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooser-Native.swift#L784-L797">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8172,7 +8196,7 @@ set of files without letting the user change it.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooser-Native.swift#L797-L809">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooser-Native.swift#L800-L812">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8209,7 +8233,7 @@ filename when the file itself does not exist yet.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooser-Native.swift#L815-L840">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooser-Native.swift#L818-L843">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8250,7 +8274,7 @@ the selected folder.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooser-Native.swift#L850-L910">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooser-Native.swift#L853-L913">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8285,7 +8309,7 @@ of <code>chooser</code> as <code>GFile</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooser-Native.swift#L914-L921">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooser-Native.swift#L917-L924">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8319,7 +8343,7 @@ of <code>chooser</code> as <code>GFile</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooser-Native.swift#L924-L942">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooser-Native.swift#L927-L945">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8357,7 +8381,7 @@ or may not be updated for later changes.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooser-Native.swift#L949-L961">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooser-Native.swift#L952-L964">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8392,7 +8416,7 @@ chooser.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooser-Native.swift#L965-L980">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooser-Native.swift#L968-L983">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8429,7 +8453,7 @@ chooser.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooser-Native.swift#L986-L995">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-FileChooser-Native.swift#L989-L998">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8442,8 +8466,8 @@ chooser.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-05-16)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.7</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-12-10)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

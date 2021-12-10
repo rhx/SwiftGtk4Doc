@@ -21,7 +21,7 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          Gtk 4.2.1 Docs
+          Gtk 4.4.1 Docs
         </a>
          (95% documented)
       </p>
@@ -663,6 +663,9 @@
                 <a class="nav-group-task-link" href="../Classes/PasswordEntry.html">PasswordEntry</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PasswordEntryBuffer.html">PasswordEntryBuffer</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Picture.html">Picture</a>
               </li>
               <li class="nav-group-task">
@@ -990,6 +993,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk13INTERFACE_AGEs5Int32Vvp">INTERFACE_AGE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21INVALID_LIST_POSITIONs6UInt32Vvp">INVALID_LIST_POSITION</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21LEVEL_BAR_OFFSET_FULLSSvp">LEVEL_BAR_OFFSET_FULL</a>
@@ -2111,6 +2117,12 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PanedSignalName.html">PanedSignalName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferPropertyName.html">PasswordEntryBufferPropertyName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferSignalName.html">PasswordEntryBufferSignalName</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PasswordEntryPropertyName.html">PasswordEntryPropertyName</a>
@@ -4111,6 +4123,12 @@
                 <a class="nav-group-task-link" href="../Protocols/ParamSpecExpressionProtocol.html">ParamSpecExpressionProtocol</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferClassProtocol.html">PasswordEntryBufferClassProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferProtocol.html">PasswordEntryBufferProtocol</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/PasswordEntryClassProtocol.html">PasswordEntryClassProtocol</a>
               </li>
               <li class="nav-group-task">
@@ -5577,6 +5595,12 @@
                 <a class="nav-group-task-link" href="../Structs/ParamSpecExpressionRef.html">ParamSpecExpressionRef</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferClassRef.html">PasswordEntryBufferClassRef</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferRef.html">PasswordEntryBufferRef</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/PasswordEntryClassRef.html">PasswordEntryClassRef</a>
               </li>
               <li class="nav-group-task">
@@ -6704,12 +6728,7 @@
 
                 </div>
               </div>
-            <p>The <code>BuilderProtocol</code> protocol exposes the methods and properties of an underlying <code>GtkBuilder</code> instance.
-The default implementation of these can be found in the protocol extension below.
-For a concrete class that implements these methods and properties, see <code><a href="../Classes/Builder.html">Builder</a></code>.
-Alternatively, use <code><a href="../Structs/BuilderRef.html">BuilderRef</a></code> as a lighweight, <code>unowned</code> reference if you already have an instance you just want to use.</p>
-
-<p>A <code>GtkBuilder</code> reads XML descriptions of a user interface and
+            <p>A <code>GtkBuilder</code> reads XML descriptions of a user interface and
 instantiates the described objects.</p>
 
 <p>To create a <code>GtkBuilder</code> from a user interface description, call
@@ -6854,13 +6873,14 @@ be compiled with the -Wl,&ndash;export-dynamic <code>CFLAGS</code>, and linked a
 <h1 id='a-gtkbuilder-ui-definition' class='heading'>A GtkBuilder UI Definition</h1>
 <pre class="highlight xml"><code><span class="ni">&amp;lt;</span>interface<span class="ni">&amp;gt;</span>
   <span class="ni">&amp;lt;</span>object class="GtkDialog" id="dialog1"<span class="ni">&amp;gt;</span>
-    <span class="ni">&amp;lt;</span>child internal-child="vbox"<span class="ni">&amp;gt;</span>
+    <span class="ni">&amp;lt;</span>child internal-child="content_area"<span class="ni">&amp;gt;</span>
       <span class="ni">&amp;lt;</span>object class="GtkBox" id="vbox1"<span class="ni">&amp;gt;</span>
         <span class="ni">&amp;lt;</span>child internal-child="action_area"<span class="ni">&amp;gt;</span>
           <span class="ni">&amp;lt;</span>object class="GtkBox" id="hbuttonbox1"<span class="ni">&amp;gt;</span>
             <span class="ni">&amp;lt;</span>child<span class="ni">&amp;gt;</span>
               <span class="ni">&amp;lt;</span>object class="GtkButton" id="ok_button"<span class="ni">&amp;gt;</span>
-                <span class="ni">&amp;lt;</span>property name="label"<span class="ni">&amp;gt;</span>gtk-ok<span class="ni">&amp;lt;</span>/property<span class="ni">&amp;gt;</span>
+                <span class="ni">&amp;lt;</span>property name="label" translatable="yes"<span class="ni">&amp;gt;</span>_Ok<span class="ni">&amp;lt;</span>/property<span class="ni">&amp;gt;</span>
+                <span class="ni">&amp;lt;</span>property name="use-underline"<span class="ni">&amp;gt;</span>True<span class="ni">&amp;lt;</span>/property<span class="ni">&amp;gt;</span>
                 <span class="ni">&amp;lt;</span>signal name="clicked" handler="ok_button_clicked"/<span class="ni">&amp;gt;</span>
               <span class="ni">&amp;lt;</span>/object<span class="ni">&amp;gt;</span>
             <span class="ni">&amp;lt;</span>/child<span class="ni">&amp;gt;</span>
@@ -6884,8 +6904,13 @@ respective objects.</p>
 <p>A <code>&amp;lt;template&amp;gt;</code> tag can be used to define a widget class’s components.
 See the <a href="class.Widget.html%60building-composite-widgets-from-template-xml%60">GtkWidget documentation</a> for details.</p>
 
+<p>The <code>BuilderProtocol</code> protocol exposes the methods and properties of an underlying <code>GtkBuilder</code> instance.
+The default implementation of these can be found in the protocol extension below.
+For a concrete class that implements these methods and properties, see <code><a href="../Classes/Builder.html">Builder</a></code>.
+Alternatively, use <code><a href="../Structs/BuilderRef.html">BuilderRef</a></code> as a lighweight, <code>unowned</code> reference if you already have an instance you just want to use.</p>
+
               <div class="slightly-smaller">
-                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L2539-L2548">Show on GitHub</a>
+                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L2561-L2570">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -6919,7 +6944,7 @@ See the <a href="class.Widget.html%60building-composite-widgets-from-template-xm
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L2541">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L2563">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6957,7 +6982,7 @@ See the <a href="class.Widget.html%60building-composite-widgets-from-template-xm
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L2544">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L2566">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6987,7 +7012,7 @@ See the <a href="class.Widget.html%60building-composite-widgets-from-template-xm
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L2547">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L2569">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7118,7 +7143,7 @@ See the <a href="class.Widget.html%60building-composite-widgets-from-template-xm
                         <p>binding reference or <code>nil</code> in case of an error</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L3301-L3325">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L3327-L3351">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7175,7 +7200,7 @@ See the <a href="class.Widget.html%60building-composite-widgets-from-template-xm
                         <p>the value of the named property</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L3330-L3334">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L3356-L3360">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7233,7 +7258,7 @@ See the <a href="class.Widget.html%60building-composite-widgets-from-template-xm
                         <p>the value of the named property</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L3340-L3342">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L3366-L3368">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7297,7 +7322,7 @@ thing to do when an error is detected is to call <code>g_error()</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L3407-L3412">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L3435-L3440">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7345,7 +7370,7 @@ to call <code>g_error()</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L3429-L3434">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L3457-L3462">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7393,7 +7418,7 @@ to call <code>g_error()</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L3451-L3456">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L3479-L3484">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7437,7 +7462,7 @@ its child (for instance a <code>GtkTreeView</code> that depends on its
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L3469-L3474">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L3497-L3502">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7481,7 +7506,7 @@ its child (for instance a <code>GtkTreeView</code> that depends on its
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L3487-L3492">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L3515-L3520">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7524,7 +7549,7 @@ its child (for instance a <code>GtkTreeView</code> that depends on its
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L3504-L3509">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L3532-L3537">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7564,7 +7589,7 @@ will be set.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L3518-L3523">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L3546-L3551">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7604,7 +7629,7 @@ will be set.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L3531-L3536">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L3559-L3564">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7639,7 +7664,7 @@ referenced just like any other object built by builder.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L3540-L3543">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L3568-L3571">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7677,7 +7702,7 @@ templates, applications have no need to call this function.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L3550-L3555">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L3578-L3583">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7711,7 +7736,7 @@ templates, applications have no need to call this function.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L3558-L3561">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L3586-L3589">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7748,7 +7773,7 @@ of the returned object.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L3567-L3570">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L3595-L3598">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7785,7 +7810,7 @@ counts of the returned objects.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L3576-L3579">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L3604-L3607">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7819,7 +7844,7 @@ counts of the returned objects.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L3582-L3585">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L3610-L3613">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7853,7 +7878,7 @@ counts of the returned objects.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L3588-L3591">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L3616-L3619">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7891,7 +7916,7 @@ the <code>GtkBuildable</code> interface on a type.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L3598-L3601">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L3626-L3629">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7933,7 +7958,7 @@ object to the widget the template is inited for. For functions like
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L3612-L3615">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L3640-L3643">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7975,7 +8000,7 @@ object to the widget the template is inited for. For functions like
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L3625-L3628">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L3653-L3656">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7998,7 +8023,7 @@ object to the widget the template is inited for. For functions like
                       <div class="abstract">
                         <p>Sets the scope the builder should operate in.</p>
 
-<p>If <code><a href="../Protocols/BuilderProtocol.html#/s:3Gtk15BuilderProtocolPAAE5scopeAA0B8ScopeRefVSgvp">scope</a></code> is <code>nil</code> a new [class<code>Gtk.BuilderCScope</code>] will be created.</p>
+<p>If <code><a href="../Protocols/BuilderProtocol.html#/s:3Gtk15BuilderProtocolPAAE5scopeAA0B8ScopeRefVSgvp">scope</a></code> is <code>nil</code>, a new [class<code>Gtk.BuilderCScope</code>] will be created.</p>
 
                       </div>
                       <div class="declaration">
@@ -8011,7 +8036,7 @@ object to the widget the template is inited for. For functions like
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L3633-L3636">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L3661-L3664">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8034,7 +8059,7 @@ object to the widget the template is inited for. For functions like
                       <div class="abstract">
                         <p>Sets the scope the builder should operate in.</p>
 
-<p>If <code><a href="../Protocols/BuilderProtocol.html#/s:3Gtk15BuilderProtocolPAAE5scopeAA0B8ScopeRefVSgvp">scope</a></code> is <code>nil</code> a new [class<code>Gtk.BuilderCScope</code>] will be created.</p>
+<p>If <code><a href="../Protocols/BuilderProtocol.html#/s:3Gtk15BuilderProtocolPAAE5scopeAA0B8ScopeRefVSgvp">scope</a></code> is <code>nil</code>, a new [class<code>Gtk.BuilderCScope</code>] will be created.</p>
 
                       </div>
                       <div class="declaration">
@@ -8047,7 +8072,7 @@ object to the widget the template is inited for. For functions like
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L3640-L3643">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L3668-L3671">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8081,7 +8106,7 @@ object to the widget the template is inited for. For functions like
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L3646-L3649">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L3674-L3677">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8125,7 +8150,7 @@ assigned a <code>GError</code> from the <code>GTK_BUILDER_ERROR</code> domain.</
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L3662-L3667">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L3690-L3695">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8168,7 +8193,7 @@ assigned a <code>GError</code> from the <code>GTK_BUILDER_ERROR</code> domain.</
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L3679-L3684">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L3707-L3712">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8202,7 +8227,7 @@ assigned a <code>GError</code> from the <code>GTK_BUILDER_ERROR</code> domain.</
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L3686-L3704">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L3714-L3732">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8239,7 +8264,7 @@ counts of the returned objects.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L3710-L3719">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L3738-L3747">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8273,7 +8298,7 @@ counts of the returned objects.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L3722-L3734">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L3750-L3762">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8307,7 +8332,7 @@ counts of the returned objects.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L3737-L3747">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L3765-L3775">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8320,8 +8345,8 @@ counts of the returned objects.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-05-16)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.7</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-12-10)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

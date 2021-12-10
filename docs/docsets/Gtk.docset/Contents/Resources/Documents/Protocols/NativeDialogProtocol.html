@@ -21,7 +21,7 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          Gtk 4.2.1 Docs
+          Gtk 4.4.1 Docs
         </a>
          (95% documented)
       </p>
@@ -663,6 +663,9 @@
                 <a class="nav-group-task-link" href="../Classes/PasswordEntry.html">PasswordEntry</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PasswordEntryBuffer.html">PasswordEntryBuffer</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Picture.html">Picture</a>
               </li>
               <li class="nav-group-task">
@@ -990,6 +993,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk13INTERFACE_AGEs5Int32Vvp">INTERFACE_AGE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21INVALID_LIST_POSITIONs6UInt32Vvp">INVALID_LIST_POSITION</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21LEVEL_BAR_OFFSET_FULLSSvp">LEVEL_BAR_OFFSET_FULL</a>
@@ -2111,6 +2117,12 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PanedSignalName.html">PanedSignalName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferPropertyName.html">PasswordEntryBufferPropertyName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferSignalName.html">PasswordEntryBufferSignalName</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PasswordEntryPropertyName.html">PasswordEntryPropertyName</a>
@@ -4111,6 +4123,12 @@
                 <a class="nav-group-task-link" href="../Protocols/ParamSpecExpressionProtocol.html">ParamSpecExpressionProtocol</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferClassProtocol.html">PasswordEntryBufferClassProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferProtocol.html">PasswordEntryBufferProtocol</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/PasswordEntryClassProtocol.html">PasswordEntryClassProtocol</a>
               </li>
               <li class="nav-group-task">
@@ -5577,6 +5595,12 @@
                 <a class="nav-group-task-link" href="../Structs/ParamSpecExpressionRef.html">ParamSpecExpressionRef</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferClassRef.html">PasswordEntryBufferClassRef</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferRef.html">PasswordEntryBufferRef</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/PasswordEntryClassRef.html">PasswordEntryClassRef</a>
               </li>
               <li class="nav-group-task">
@@ -6704,12 +6728,7 @@
 
                 </div>
               </div>
-            <p>The <code>NativeDialogProtocol</code> protocol exposes the methods and properties of an underlying <code>GtkNativeDialog</code> instance.
-The default implementation of these can be found in the protocol extension below.
-For a concrete class that implements these methods and properties, see <code><a href="../Classes/NativeDialog.html">NativeDialog</a></code>.
-Alternatively, use <code><a href="../Structs/NativeDialogRef.html">NativeDialogRef</a></code> as a lighweight, <code>unowned</code> reference if you already have an instance you just want to use.</p>
-
-<p>Native dialogs are platform dialogs that don&rsquo;t use <code>GtkDialog</code>.</p>
+            <p>Native dialogs are platform dialogs that don&rsquo;t use <code>GtkDialog</code>.</p>
 
 <p>They are used in order to integrate better with a platform, by
 looking the same as other native applications and supporting
@@ -6727,8 +6746,13 @@ toplevel widgets, and GTK does not keep them alive. It is your
 responsibility to keep a reference until you are done with the
 object.</p>
 
+<p>The <code>NativeDialogProtocol</code> protocol exposes the methods and properties of an underlying <code>GtkNativeDialog</code> instance.
+The default implementation of these can be found in the protocol extension below.
+For a concrete class that implements these methods and properties, see <code><a href="../Classes/NativeDialog.html">NativeDialog</a></code>.
+Alternatively, use <code><a href="../Structs/NativeDialogRef.html">NativeDialogRef</a></code> as a lighweight, <code>unowned</code> reference if you already have an instance you just want to use.</p>
+
               <div class="slightly-smaller">
-                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-NativeDialog-ObjectExpression.swift#L40-L49">Show on GitHub</a>
+                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-NativeDialog-ObjectExpression.swift#L41-L50">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -6762,7 +6786,7 @@ object.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-NativeDialog-ObjectExpression.swift#L42">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-NativeDialog-ObjectExpression.swift#L43">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6800,7 +6824,7 @@ object.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-NativeDialog-ObjectExpression.swift#L45">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-NativeDialog-ObjectExpression.swift#L46">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6830,7 +6854,7 @@ object.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-NativeDialog-ObjectExpression.swift#L48">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-NativeDialog-ObjectExpression.swift#L49">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6961,7 +6985,7 @@ object.</p>
                         <p>binding reference or <code>nil</code> in case of an error</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-NativeDialog-ObjectExpression.swift#L323-L347">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-NativeDialog-ObjectExpression.swift#L326-L350">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7018,7 +7042,7 @@ object.</p>
                         <p>the value of the named property</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-NativeDialog-ObjectExpression.swift#L352-L356">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-NativeDialog-ObjectExpression.swift#L355-L359">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7076,7 +7100,7 @@ object.</p>
                         <p>the value of the named property</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-NativeDialog-ObjectExpression.swift#L362-L364">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-NativeDialog-ObjectExpression.swift#L365-L367">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7195,7 +7219,7 @@ object.</p>
                         <p>The signal handler ID (always greater than 0 for successful connections)</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-NativeDialog-ObjectExpression.swift#L420-L422">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-NativeDialog-ObjectExpression.swift#L425-L427">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7301,7 +7325,7 @@ object.</p>
                         <p>The signal handler ID (always greater than 0 for successful connections)</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-NativeDialog-ObjectExpression.swift#L433-L435">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-NativeDialog-ObjectExpression.swift#L438-L440">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7402,7 +7426,7 @@ Run the given callback whenever the <code>response</code> signal is emitted</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-NativeDialog-ObjectExpression.swift#L450-L464">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-NativeDialog-ObjectExpression.swift#L455-L469">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7435,7 +7459,7 @@ Run the given callback whenever the <code>response</code> signal is emitted</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-NativeDialog-ObjectExpression.swift#L467">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-NativeDialog-ObjectExpression.swift#L472">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7470,8 +7494,9 @@ and common practice is to do that only when the value has actually changed.</p>
 
 <p>This signal is typically used to obtain change notification for a
 single property, by specifying the property name as a detail in the
-<code>g_signal_connect()</code> call, like this:
-(C Language Example):</p>
+<code>g_signal_connect()</code> call, like this:</p>
+
+<p>(C Language Example):</p>
 <pre class="highlight plaintext"><code>g_signal_connect (text_view-&gt;buffer, "notify::paste-target-list",
                   G_CALLBACK (gtk_text_view_target_list_notify),
                   text_view)
@@ -7554,7 +7579,7 @@ Run the given callback whenever the <code>notifyModal</code> signal is emitted</
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-NativeDialog-ObjectExpression.swift#L499-L513">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-NativeDialog-ObjectExpression.swift#L506-L520">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7587,7 +7612,7 @@ Run the given callback whenever the <code>notifyModal</code> signal is emitted</
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-NativeDialog-ObjectExpression.swift#L516">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-NativeDialog-ObjectExpression.swift#L523">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7622,8 +7647,9 @@ and common practice is to do that only when the value has actually changed.</p>
 
 <p>This signal is typically used to obtain change notification for a
 single property, by specifying the property name as a detail in the
-<code>g_signal_connect()</code> call, like this:
-(C Language Example):</p>
+<code>g_signal_connect()</code> call, like this:</p>
+
+<p>(C Language Example):</p>
 <pre class="highlight plaintext"><code>g_signal_connect (text_view-&gt;buffer, "notify::paste-target-list",
                   G_CALLBACK (gtk_text_view_target_list_notify),
                   text_view)
@@ -7706,7 +7732,7 @@ Run the given callback whenever the <code>notifyTitle</code> signal is emitted</
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-NativeDialog-ObjectExpression.swift#L548-L562">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-NativeDialog-ObjectExpression.swift#L557-L571">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7739,7 +7765,7 @@ Run the given callback whenever the <code>notifyTitle</code> signal is emitted</
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-NativeDialog-ObjectExpression.swift#L565">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-NativeDialog-ObjectExpression.swift#L574">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7774,8 +7800,9 @@ and common practice is to do that only when the value has actually changed.</p>
 
 <p>This signal is typically used to obtain change notification for a
 single property, by specifying the property name as a detail in the
-<code>g_signal_connect()</code> call, like this:
-(C Language Example):</p>
+<code>g_signal_connect()</code> call, like this:</p>
+
+<p>(C Language Example):</p>
 <pre class="highlight plaintext"><code>g_signal_connect (text_view-&gt;buffer, "notify::paste-target-list",
                   G_CALLBACK (gtk_text_view_target_list_notify),
                   text_view)
@@ -7858,7 +7885,7 @@ Run the given callback whenever the <code>notifyTransientFor</code> signal is em
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-NativeDialog-ObjectExpression.swift#L597-L611">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-NativeDialog-ObjectExpression.swift#L608-L622">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7891,7 +7918,7 @@ Run the given callback whenever the <code>notifyTransientFor</code> signal is em
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-NativeDialog-ObjectExpression.swift#L614">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-NativeDialog-ObjectExpression.swift#L625">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7926,8 +7953,9 @@ and common practice is to do that only when the value has actually changed.</p>
 
 <p>This signal is typically used to obtain change notification for a
 single property, by specifying the property name as a detail in the
-<code>g_signal_connect()</code> call, like this:
-(C Language Example):</p>
+<code>g_signal_connect()</code> call, like this:</p>
+
+<p>(C Language Example):</p>
 <pre class="highlight plaintext"><code>g_signal_connect (text_view-&gt;buffer, "notify::paste-target-list",
                   G_CALLBACK (gtk_text_view_target_list_notify),
                   text_view)
@@ -8010,7 +8038,7 @@ Run the given callback whenever the <code>notifyVisible</code> signal is emitted
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-NativeDialog-ObjectExpression.swift#L646-L660">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-NativeDialog-ObjectExpression.swift#L659-L673">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8043,7 +8071,7 @@ Run the given callback whenever the <code>notifyVisible</code> signal is emitted
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-NativeDialog-ObjectExpression.swift#L663">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-NativeDialog-ObjectExpression.swift#L676">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8100,7 +8128,7 @@ windowing system to the <code>GtkNativeDialog</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-NativeDialog-ObjectExpression.swift#L683-L686">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-NativeDialog-ObjectExpression.swift#L696-L699">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8134,7 +8162,7 @@ windowing system to the <code>GtkNativeDialog</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-NativeDialog-ObjectExpression.swift#L689-L692">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-NativeDialog-ObjectExpression.swift#L702-L705">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8168,7 +8196,7 @@ windowing system to the <code>GtkNativeDialog</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-NativeDialog-ObjectExpression.swift#L695-L698">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-NativeDialog-ObjectExpression.swift#L708-L711">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8202,7 +8230,7 @@ windowing system to the <code>GtkNativeDialog</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-NativeDialog-ObjectExpression.swift#L701-L704">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-NativeDialog-ObjectExpression.swift#L714-L717">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8236,7 +8264,7 @@ windowing system to the <code>GtkNativeDialog</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-NativeDialog-ObjectExpression.swift#L707-L710">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-NativeDialog-ObjectExpression.swift#L720-L723">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8276,7 +8304,7 @@ will <em>not</em> be emitted until after the next call to
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-NativeDialog-ObjectExpression.swift#L719-L722">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-NativeDialog-ObjectExpression.swift#L732-L735">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8316,7 +8344,7 @@ then disallow lowering the dialog below the parent.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-NativeDialog-ObjectExpression.swift#L731-L734">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-NativeDialog-ObjectExpression.swift#L744-L747">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8350,7 +8378,7 @@ then disallow lowering the dialog below the parent.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-NativeDialog-ObjectExpression.swift#L737-L740">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-NativeDialog-ObjectExpression.swift#L750-L753">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8390,7 +8418,7 @@ main window, or center the dialog over the main window.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-NativeDialog-ObjectExpression.swift#L749-L752">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-NativeDialog-ObjectExpression.swift#L762-L765">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8430,7 +8458,7 @@ main window, or center the dialog over the main window.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-NativeDialog-ObjectExpression.swift#L760-L763">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-NativeDialog-ObjectExpression.swift#L773-L776">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8470,7 +8498,7 @@ signal will be emitted.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-NativeDialog-ObjectExpression.swift#L772-L775">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-NativeDialog-ObjectExpression.swift#L785-L788">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8504,7 +8532,7 @@ signal will be emitted.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-NativeDialog-ObjectExpression.swift#L777-L793">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-NativeDialog-ObjectExpression.swift#L790-L806">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8538,7 +8566,7 @@ signal will be emitted.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-NativeDialog-ObjectExpression.swift#L796-L806">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-NativeDialog-ObjectExpression.swift#L809-L819">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8572,7 +8600,7 @@ signal will be emitted.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-NativeDialog-ObjectExpression.swift#L809-L825">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-NativeDialog-ObjectExpression.swift#L822-L838">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8606,7 +8634,7 @@ signal will be emitted.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-NativeDialog-ObjectExpression.swift#L828-L834">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-NativeDialog-ObjectExpression.swift#L841-L847">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8640,7 +8668,7 @@ signal will be emitted.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-NativeDialog-ObjectExpression.swift#L836-L841">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-NativeDialog-ObjectExpression.swift#L849-L854">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8653,8 +8681,8 @@ signal will be emitted.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-05-16)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.7</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-12-10)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

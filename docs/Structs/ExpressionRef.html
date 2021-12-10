@@ -21,7 +21,7 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          Gtk 4.2.1 Docs
+          Gtk 4.4.1 Docs
         </a>
          (95% documented)
       </p>
@@ -663,6 +663,9 @@
                 <a class="nav-group-task-link" href="../Classes/PasswordEntry.html">PasswordEntry</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PasswordEntryBuffer.html">PasswordEntryBuffer</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Picture.html">Picture</a>
               </li>
               <li class="nav-group-task">
@@ -990,6 +993,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk13INTERFACE_AGEs5Int32Vvp">INTERFACE_AGE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21INVALID_LIST_POSITIONs6UInt32Vvp">INVALID_LIST_POSITION</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21LEVEL_BAR_OFFSET_FULLSSvp">LEVEL_BAR_OFFSET_FULL</a>
@@ -2111,6 +2117,12 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PanedSignalName.html">PanedSignalName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferPropertyName.html">PasswordEntryBufferPropertyName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferSignalName.html">PasswordEntryBufferSignalName</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PasswordEntryPropertyName.html">PasswordEntryPropertyName</a>
@@ -4111,6 +4123,12 @@
                 <a class="nav-group-task-link" href="../Protocols/ParamSpecExpressionProtocol.html">ParamSpecExpressionProtocol</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferClassProtocol.html">PasswordEntryBufferClassProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferProtocol.html">PasswordEntryBufferProtocol</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/PasswordEntryClassProtocol.html">PasswordEntryClassProtocol</a>
               </li>
               <li class="nav-group-task">
@@ -5577,6 +5595,12 @@
                 <a class="nav-group-task-link" href="../Structs/ParamSpecExpressionRef.html">ParamSpecExpressionRef</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferClassRef.html">PasswordEntryBufferClassRef</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferRef.html">PasswordEntryBufferRef</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/PasswordEntryClassRef.html">PasswordEntryClassRef</a>
               </li>
               <li class="nav-group-task">
@@ -6704,11 +6728,7 @@
 
                 </div>
               </div>
-            <p>The <code>ExpressionRef</code> type acts as a lightweight Swift reference to an underlying <code>GtkExpression</code> instance.
-It exposes methods that can operate on this data type through <code><a href="../Protocols/ExpressionProtocol.html">ExpressionProtocol</a></code> conformance.
-Use <code>ExpressionRef</code> only as an <code>unowned</code> reference to an existing <code>GtkExpression</code> instance.</p>
-
-<p><code>GtkExpression</code> provides a way to describe references to values.</p>
+            <p><code>GtkExpression</code> provides a way to describe references to values.</p>
 
 <p>An important aspect of expressions is that the value can be obtained
 from a source that is several steps away. For example, an expression
@@ -6820,8 +6840,12 @@ contains the expressions for the parameters. For instance:</p>
   <span class="ni">&amp;lt;</span>/closure<span class="ni">&amp;gt;</span>
 </code></pre>
 
+<p>The <code>ExpressionRef</code> type acts as a lightweight Swift reference to an underlying <code>GtkExpression</code> instance.
+It exposes methods that can operate on this data type through <code><a href="../Protocols/ExpressionProtocol.html">ExpressionProtocol</a></code> conformance.
+Use <code>ExpressionRef</code> only as an <code>unowned</code> reference to an existing <code>GtkExpression</code> instance.</p>
+
               <div class="slightly-smaller">
-                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L13216-L13220">Show on GitHub</a>
+                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L13425-L13429">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -6858,7 +6882,7 @@ contains the expressions for the parameters. For instance:</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L13219">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L13428">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6902,7 +6926,7 @@ contains the expressions for the parameters. For instance:</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L13224-L13226">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L13433-L13435">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6933,7 +6957,7 @@ contains the expressions for the parameters. For instance:</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L13229-L13231">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L13438-L13440">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6964,7 +6988,7 @@ contains the expressions for the parameters. For instance:</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L13234-L13237">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L13443-L13446">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6995,7 +7019,7 @@ contains the expressions for the parameters. For instance:</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L13240-L13243">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L13449-L13452">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7026,7 +7050,7 @@ contains the expressions for the parameters. For instance:</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L13246-L13249">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L13455-L13458">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7057,7 +7081,7 @@ contains the expressions for the parameters. For instance:</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L13252-L13255">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L13461-L13464">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7088,7 +7112,7 @@ contains the expressions for the parameters. For instance:</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L13258-L13260">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L13467-L13469">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7120,7 +7144,7 @@ contains the expressions for the parameters. For instance:</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L13264-L13266">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L13473-L13475">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7152,7 +7176,7 @@ contains the expressions for the parameters. For instance:</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L13270-L13272">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L13479-L13481">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7184,7 +7208,7 @@ contains the expressions for the parameters. For instance:</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L13276-L13278">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L13485-L13487">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7216,7 +7240,7 @@ contains the expressions for the parameters. For instance:</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L13282-L13284">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L13491-L13493">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7248,7 +7272,7 @@ contains the expressions for the parameters. For instance:</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L13288-L13290">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L13497-L13499">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7261,8 +7285,8 @@ contains the expressions for the parameters. For instance:</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-05-16)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.7</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-12-10)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

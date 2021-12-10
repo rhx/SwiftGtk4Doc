@@ -21,7 +21,7 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          Gtk 4.2.1 Docs
+          Gtk 4.4.1 Docs
         </a>
          (95% documented)
       </p>
@@ -663,6 +663,9 @@
                 <a class="nav-group-task-link" href="../Classes/PasswordEntry.html">PasswordEntry</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PasswordEntryBuffer.html">PasswordEntryBuffer</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Picture.html">Picture</a>
               </li>
               <li class="nav-group-task">
@@ -990,6 +993,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk13INTERFACE_AGEs5Int32Vvp">INTERFACE_AGE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21INVALID_LIST_POSITIONs6UInt32Vvp">INVALID_LIST_POSITION</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21LEVEL_BAR_OFFSET_FULLSSvp">LEVEL_BAR_OFFSET_FULL</a>
@@ -2111,6 +2117,12 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PanedSignalName.html">PanedSignalName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferPropertyName.html">PasswordEntryBufferPropertyName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferSignalName.html">PasswordEntryBufferSignalName</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PasswordEntryPropertyName.html">PasswordEntryPropertyName</a>
@@ -4111,6 +4123,12 @@
                 <a class="nav-group-task-link" href="../Protocols/ParamSpecExpressionProtocol.html">ParamSpecExpressionProtocol</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferClassProtocol.html">PasswordEntryBufferClassProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferProtocol.html">PasswordEntryBufferProtocol</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/PasswordEntryClassProtocol.html">PasswordEntryClassProtocol</a>
               </li>
               <li class="nav-group-task">
@@ -5577,6 +5595,12 @@
                 <a class="nav-group-task-link" href="../Structs/ParamSpecExpressionRef.html">ParamSpecExpressionRef</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferClassRef.html">PasswordEntryBufferClassRef</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferRef.html">PasswordEntryBufferRef</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/PasswordEntryClassRef.html">PasswordEntryClassRef</a>
               </li>
               <li class="nav-group-task">
@@ -6704,11 +6728,7 @@
 
                 </div>
               </div>
-            <p>The <code>ListViewRef</code> type acts as a lightweight Swift reference to an underlying <code>GtkListView</code> instance.
-It exposes methods that can operate on this data type through <code><a href="../Protocols/ListViewProtocol.html">ListViewProtocol</a></code> conformance.
-Use <code>ListViewRef</code> only as an <code>unowned</code> reference to an existing <code>GtkListView</code> instance.</p>
-
-<p><code>GtkListView</code> presents a large dynamic list of items.</p>
+            <p><code>GtkListView</code> presents a large dynamic list of items.</p>
 
 <p><code>GtkListView</code> uses its factory to generate one row widget for each visible
 item and shows them in a linear display, either vertically or horizontally.</p>
@@ -6778,18 +6798,20 @@ it is possible to turn on <em>rubberband selection</em>, using
 </code></pre>
 <h1 id='css-nodes' class='heading'>CSS nodes</h1>
 <pre class="highlight swift"><code><span class="n">listview</span><span class="p">[</span><span class="o">.</span><span class="n">separators</span><span class="p">][</span><span class="o">.</span><span class="n">rich</span><span class="o">-</span><span class="n">list</span><span class="p">][</span><span class="o">.</span><span class="n">navigation</span><span class="o">-</span><span class="n">sidebar</span><span class="p">][</span><span class="o">.</span><span class="n">data</span><span class="o">-</span><span class="n">table</span><span class="p">]</span>
-<span class="err">├──</span> <span class="n">row</span>
+<span class="err">├──</span> <span class="n">row</span><span class="p">[</span><span class="o">.</span><span class="n">activatable</span><span class="p">]</span>
 <span class="err">│</span>
-<span class="err">├──</span> <span class="n">row</span>
+<span class="err">├──</span> <span class="n">row</span><span class="p">[</span><span class="o">.</span><span class="n">activatable</span><span class="p">]</span>
 <span class="err">│</span>
 <span class="err">┊</span>
 <span class="err">╰──</span> <span class="p">[</span><span class="n">rubberband</span><span class="p">]</span>
 </code></pre>
 
-<p><code>GtkListView</code> uses a single CSS node named listview. It may carry the
-.separators style class, when <code>GtkListView</code>:show-separators property
-is set. Each child widget uses a single CSS node named row. For
-rubberband selection, a node with name rubberband is used.</p>
+<p><code>GtkListView</code> uses a single CSS node named <code>listview</code>. It may carry the
+<code>.separators</code> style class, when [property<code>Gtk.ListView:show-separators</code>]
+property is set. Each child widget uses a single CSS node named <code>row</code>.
+If the [property<code>Gtk.ListItem:activatable</code>] property is set, the
+corresponding row will have the <code>.activatable</code> style class. For
+rubberband selection, a node with name <code>rubberband</code> is used.</p>
 
 <p>The main listview node may also carry style classes to select
 the style of <a href="ListContainers.html%60list-styles%60">list presentation</a>:
@@ -6799,8 +6821,12 @@ the style of <a href="ListContainers.html%60list-styles%60">list presentation</a
 <p><code>GtkListView</code> uses the <code>GTK_ACCESSIBLE_ROLE_LIST</code> role, and the list
 items use the <code>GTK_ACCESSIBLE_ROLE_LIST_ITEM</code> role.</p>
 
+<p>The <code>ListViewRef</code> type acts as a lightweight Swift reference to an underlying <code>GtkListView</code> instance.
+It exposes methods that can operate on this data type through <code><a href="../Protocols/ListViewProtocol.html">ListViewProtocol</a></code> conformance.
+Use <code>ListViewRef</code> only as an <code>unowned</code> reference to an existing <code>GtkListView</code> instance.</p>
+
               <div class="slightly-smaller">
-                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L12767-L12771">Show on GitHub</a>
+                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L12892-L12896">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -6837,7 +6863,7 @@ items use the <code>GTK_ACCESSIBLE_ROLE_LIST_ITEM</code> role.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L12770">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L12895">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6881,7 +6907,7 @@ items use the <code>GTK_ACCESSIBLE_ROLE_LIST_ITEM</code> role.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L12775-L12777">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L12900-L12902">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6912,7 +6938,7 @@ items use the <code>GTK_ACCESSIBLE_ROLE_LIST_ITEM</code> role.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L12780-L12782">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L12905-L12907">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6943,7 +6969,7 @@ items use the <code>GTK_ACCESSIBLE_ROLE_LIST_ITEM</code> role.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L12785-L12788">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L12910-L12913">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6974,7 +7000,7 @@ items use the <code>GTK_ACCESSIBLE_ROLE_LIST_ITEM</code> role.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L12791-L12794">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L12916-L12919">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7005,7 +7031,7 @@ items use the <code>GTK_ACCESSIBLE_ROLE_LIST_ITEM</code> role.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L12797-L12800">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L12922-L12925">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7036,7 +7062,7 @@ items use the <code>GTK_ACCESSIBLE_ROLE_LIST_ITEM</code> role.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L12803-L12806">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L12928-L12931">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7067,7 +7093,7 @@ items use the <code>GTK_ACCESSIBLE_ROLE_LIST_ITEM</code> role.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L12809-L12811">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L12934-L12936">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7098,7 +7124,7 @@ items use the <code>GTK_ACCESSIBLE_ROLE_LIST_ITEM</code> role.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L12814">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L12939">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7130,7 +7156,7 @@ items use the <code>GTK_ACCESSIBLE_ROLE_LIST_ITEM</code> role.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L12818-L12820">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L12943-L12945">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7162,7 +7188,7 @@ items use the <code>GTK_ACCESSIBLE_ROLE_LIST_ITEM</code> role.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L12824-L12826">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L12949-L12951">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7194,7 +7220,7 @@ items use the <code>GTK_ACCESSIBLE_ROLE_LIST_ITEM</code> role.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L12830-L12832">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L12955-L12957">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7226,7 +7252,7 @@ items use the <code>GTK_ACCESSIBLE_ROLE_LIST_ITEM</code> role.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L12836-L12838">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L12961-L12963">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7258,7 +7284,7 @@ items use the <code>GTK_ACCESSIBLE_ROLE_LIST_ITEM</code> role.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L12842-L12844">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L12967-L12969">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7298,7 +7324,7 @@ arguments, so you can write code like</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L12855-L12858">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L12980-L12983">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7311,8 +7337,8 @@ arguments, so you can write code like</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-05-16)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.7</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-12-10)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

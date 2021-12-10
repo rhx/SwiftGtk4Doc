@@ -21,7 +21,7 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          Gtk 4.2.1 Docs
+          Gtk 4.4.1 Docs
         </a>
          (95% documented)
       </p>
@@ -663,6 +663,9 @@
                 <a class="nav-group-task-link" href="../Classes/PasswordEntry.html">PasswordEntry</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PasswordEntryBuffer.html">PasswordEntryBuffer</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Picture.html">Picture</a>
               </li>
               <li class="nav-group-task">
@@ -990,6 +993,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk13INTERFACE_AGEs5Int32Vvp">INTERFACE_AGE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21INVALID_LIST_POSITIONs6UInt32Vvp">INVALID_LIST_POSITION</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21LEVEL_BAR_OFFSET_FULLSSvp">LEVEL_BAR_OFFSET_FULL</a>
@@ -2111,6 +2117,12 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PanedSignalName.html">PanedSignalName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferPropertyName.html">PasswordEntryBufferPropertyName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferSignalName.html">PasswordEntryBufferSignalName</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PasswordEntryPropertyName.html">PasswordEntryPropertyName</a>
@@ -4111,6 +4123,12 @@
                 <a class="nav-group-task-link" href="../Protocols/ParamSpecExpressionProtocol.html">ParamSpecExpressionProtocol</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferClassProtocol.html">PasswordEntryBufferClassProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferProtocol.html">PasswordEntryBufferProtocol</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/PasswordEntryClassProtocol.html">PasswordEntryClassProtocol</a>
               </li>
               <li class="nav-group-task">
@@ -5577,6 +5595,12 @@
                 <a class="nav-group-task-link" href="../Structs/ParamSpecExpressionRef.html">ParamSpecExpressionRef</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferClassRef.html">PasswordEntryBufferClassRef</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferRef.html">PasswordEntryBufferRef</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/PasswordEntryClassRef.html">PasswordEntryClassRef</a>
               </li>
               <li class="nav-group-task">
@@ -6704,11 +6728,7 @@
 
                 </div>
               </div>
-            <p>The <code>Printer</code> type acts as a reference-counted owner of an underlying <code>GtkPrinter</code> instance.
-It provides the methods that can operate on this data type through <code><a href="../Protocols/PrinterProtocol.html">PrinterProtocol</a></code> conformance.
-Use <code>Printer</code> as a strong reference or owner of a <code>GtkPrinter</code> instance.</p>
-
-<p>A <code>GtkPrinter</code> object represents a printer.</p>
+            <p>A <code>GtkPrinter</code> object represents a printer.</p>
 
 <p>You only need to deal directly with printers if you use the
 non-portable [class<code>Gtk.PrintUnixDialog</code>] API.</p>
@@ -6718,8 +6738,12 @@ such as its description, its location, the number of queued jobs,
 etc. Most importantly, a <code>GtkPrinter</code> object can be used to create
 a [class<code>Gtk.PrintJob</code>] object, which lets you print to the printer.</p>
 
+<p>The <code>Printer</code> type acts as a reference-counted owner of an underlying <code>GtkPrinter</code> instance.
+It provides the methods that can operate on this data type through <code><a href="../Protocols/PrinterProtocol.html">PrinterProtocol</a></code> conformance.
+Use <code>Printer</code> as a strong reference or owner of a <code>GtkPrinter</code> instance.</p>
+
               <div class="slightly-smaller">
-                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L17628-L17761">Show on GitHub</a>
+                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L18163-L18296">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -6777,7 +6801,7 @@ i.e., ownership is transferred to the <code>Printer</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L17633-L17635">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L18168-L18170">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6829,7 +6853,7 @@ i.e., ownership is transferred to the <code>Printer</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L17641-L17643">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L18176-L18178">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6882,7 +6906,7 @@ i.e., ownership is transferred to the <code>Printer</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L17650-L17653">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L18185-L18188">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6935,7 +6959,7 @@ i.e., ownership is transferred to the <code>Printer</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L17660-L17663">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L18195-L18198">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6987,7 +7011,7 @@ i.e., ownership is transferred to the <code>Printer</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L17669-L17672">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L18204-L18207">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7039,7 +7063,7 @@ i.e., ownership is transferred to the <code>Printer</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L17678-L17681">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L18213-L18216">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7091,7 +7115,7 @@ i.e., ownership is transferred to the <code>Printer</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L17687-L17689">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L18222-L18224">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7142,7 +7166,7 @@ Will retain <code>GtkPrinter</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L17694-L17696">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L18229-L18231">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7193,7 +7217,7 @@ Will retain <code>GtkPrinter</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L17701-L17703">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L18236-L18238">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7244,7 +7268,7 @@ Will retain <code>GtkPrinter</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L17708-L17710">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L18243-L18245">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7295,7 +7319,7 @@ Will retain <code>GtkPrinter</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L17715-L17717">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L18250-L18252">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7327,7 +7351,7 @@ Will retain <code>GtkPrinter</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L17721-L17723">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L18256-L18258">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7378,7 +7402,7 @@ Will retain <code>GtkPrinter</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L17728-L17730">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L18263-L18265">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7429,7 +7453,7 @@ Will retain <code>GtkPrinter</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L17735-L17737">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L18270-L18272">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7480,7 +7504,7 @@ Will retain <code>GtkPrinter</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L17742-L17744">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L18277-L18279">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7531,7 +7555,7 @@ Will retain <code>GtkPrinter</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L17749-L17751">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L18284-L18286">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7539,9 +7563,9 @@ Will retain <code>GtkPrinter</code>.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:3Gtk7PrinterC4name7backend8virtual_ACSPys4Int8VGSg_xSbtcAA20PrintBackendProtocolRzlufc"></a>
-                    <a name="//apple_ref/swift/Method/init(name:backend:virtual_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3Gtk7PrinterC4name7backend8virtual_ACSPys4Int8VGSg_xSbtcAA20PrintBackendProtocolRzlufc">init(name:<wbr>backend:<wbr>virtual_:<wbr>)</a>
+                    <a name="/s:3Gtk7PrinterC4name7backend7virtualACSPys4Int8VGSg_xSbtcAA20PrintBackendProtocolRzlufc"></a>
+                    <a name="//apple_ref/swift/Method/init(name:backend:virtual:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3Gtk7PrinterC4name7backend7virtualACSPys4Int8VGSg_xSbtcAA20PrintBackendProtocolRzlufc">init(name:<wbr>backend:<wbr>virtual:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -7557,12 +7581,12 @@ Will retain <code>GtkPrinter</code>.</p>
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@inlinable</span>
-<span class="kd">public</span> <span class="kd">init</span><span class="o">&lt;</span><span class="kt">PrintBackendT</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">name</span><span class="p">:</span> <span class="kt">UnsafePointer</span><span class="o">&lt;</span><span class="kt">CChar</span><span class="o">&gt;!</span><span class="p">,</span> <span class="nv">backend</span><span class="p">:</span> <span class="kt">PrintBackendT</span><span class="p">,</span> <span class="nv">virtual_</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span> <span class="k">where</span> <span class="kt">PrintBackendT</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/PrintBackendProtocol.html">PrintBackendProtocol</a></span></code></pre>
+<span class="kd">public</span> <span class="kd">init</span><span class="o">&lt;</span><span class="kt">PrintBackendT</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">name</span><span class="p">:</span> <span class="kt">UnsafePointer</span><span class="o">&lt;</span><span class="kt">CChar</span><span class="o">&gt;!</span><span class="p">,</span> <span class="nv">backend</span><span class="p">:</span> <span class="kt">PrintBackendT</span><span class="p">,</span> <span class="nv">virtual</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span> <span class="k">where</span> <span class="kt">PrintBackendT</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/PrintBackendProtocol.html">PrintBackendProtocol</a></span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L17754-L17758">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-PageSetup-Range.swift#L18289-L18293">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7575,8 +7599,8 @@ Will retain <code>GtkPrinter</code>.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-05-16)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.7</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-12-10)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

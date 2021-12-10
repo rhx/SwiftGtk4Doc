@@ -21,7 +21,7 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          Gtk 4.2.1 Docs
+          Gtk 4.4.1 Docs
         </a>
          (95% documented)
       </p>
@@ -663,6 +663,9 @@
                 <a class="nav-group-task-link" href="../Classes/PasswordEntry.html">PasswordEntry</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PasswordEntryBuffer.html">PasswordEntryBuffer</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Picture.html">Picture</a>
               </li>
               <li class="nav-group-task">
@@ -990,6 +993,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk13INTERFACE_AGEs5Int32Vvp">INTERFACE_AGE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21INVALID_LIST_POSITIONs6UInt32Vvp">INVALID_LIST_POSITION</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21LEVEL_BAR_OFFSET_FULLSSvp">LEVEL_BAR_OFFSET_FULL</a>
@@ -2111,6 +2117,12 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PanedSignalName.html">PanedSignalName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferPropertyName.html">PasswordEntryBufferPropertyName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferSignalName.html">PasswordEntryBufferSignalName</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PasswordEntryPropertyName.html">PasswordEntryPropertyName</a>
@@ -4111,6 +4123,12 @@
                 <a class="nav-group-task-link" href="../Protocols/ParamSpecExpressionProtocol.html">ParamSpecExpressionProtocol</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferClassProtocol.html">PasswordEntryBufferClassProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferProtocol.html">PasswordEntryBufferProtocol</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/PasswordEntryClassProtocol.html">PasswordEntryClassProtocol</a>
               </li>
               <li class="nav-group-task">
@@ -5577,6 +5595,12 @@
                 <a class="nav-group-task-link" href="../Structs/ParamSpecExpressionRef.html">ParamSpecExpressionRef</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferClassRef.html">PasswordEntryBufferClassRef</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferRef.html">PasswordEntryBufferRef</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/PasswordEntryClassRef.html">PasswordEntryClassRef</a>
               </li>
               <li class="nav-group-task">
@@ -6704,11 +6728,7 @@
 
                 </div>
               </div>
-            <p>The <code>BinLayout</code> type acts as a reference-counted owner of an underlying <code>GtkBinLayout</code> instance.
-It provides the methods that can operate on this data type through <code><a href="../Protocols/BinLayoutProtocol.html">BinLayoutProtocol</a></code> conformance.
-Use <code>BinLayout</code> as a strong reference or owner of a <code>GtkBinLayout</code> instance.</p>
-
-<p><code>GtkBinLayout</code> is a <code>GtkLayoutManager</code> subclass useful for create &ldquo;bins&rdquo; of
+            <p><code>GtkBinLayout</code> is a <code>GtkLayoutManager</code> subclass useful for create &ldquo;bins&rdquo; of
 widgets.</p>
 
 <p><code>GtkBinLayout</code> will stack each child of a widget on top of each other,
@@ -6716,8 +6736,12 @@ using the [property<code>Gtk.Widget:hexpand</code>], [property<code>Gtk.Widget:v
 [property<code>Gtk.Widget:halign</code>], and [property<code>Gtk.Widget:valign</code>] properties
 of each child to determine where they should be positioned.</p>
 
+<p>The <code>BinLayout</code> type acts as a reference-counted owner of an underlying <code>GtkBinLayout</code> instance.
+It provides the methods that can operate on this data type through <code><a href="../Protocols/BinLayoutProtocol.html">BinLayoutProtocol</a></code> conformance.
+Use <code>BinLayout</code> as a strong reference or owner of a <code>GtkBinLayout</code> instance.</p>
+
               <div class="slightly-smaller">
-                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L15260-L15393">Show on GitHub</a>
+                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L15505-L15638">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -6775,7 +6799,7 @@ i.e., ownership is transferred to the <code>BinLayout</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L15265-L15267">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L15510-L15512">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6827,7 +6851,7 @@ i.e., ownership is transferred to the <code>BinLayout</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L15273-L15275">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L15518-L15520">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6880,7 +6904,7 @@ i.e., ownership is transferred to the <code>BinLayout</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L15282-L15285">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L15527-L15530">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6933,7 +6957,7 @@ i.e., ownership is transferred to the <code>BinLayout</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L15292-L15295">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L15537-L15540">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6985,7 +7009,7 @@ i.e., ownership is transferred to the <code>BinLayout</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L15301-L15304">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L15546-L15549">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7037,7 +7061,7 @@ i.e., ownership is transferred to the <code>BinLayout</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L15310-L15313">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L15555-L15558">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7089,7 +7113,7 @@ i.e., ownership is transferred to the <code>BinLayout</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L15319-L15321">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L15564-L15566">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7140,7 +7164,7 @@ Will retain <code>GtkBinLayout</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L15326-L15328">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L15571-L15573">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7191,7 +7215,7 @@ Will retain <code>GtkBinLayout</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L15333-L15335">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L15578-L15580">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7242,7 +7266,7 @@ Will retain <code>GtkBinLayout</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L15340-L15342">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L15585-L15587">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7293,7 +7317,7 @@ Will retain <code>GtkBinLayout</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L15347-L15349">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L15592-L15594">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7325,7 +7349,7 @@ Will retain <code>GtkBinLayout</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L15353-L15355">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L15598-L15600">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7376,7 +7400,7 @@ Will retain <code>GtkBinLayout</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L15360-L15362">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L15605-L15607">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7427,7 +7451,7 @@ Will retain <code>GtkBinLayout</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L15367-L15369">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L15612-L15614">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7478,7 +7502,7 @@ Will retain <code>GtkBinLayout</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L15374-L15376">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L15619-L15621">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7529,7 +7553,7 @@ Will retain <code>GtkBinLayout</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L15381-L15383">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L15626-L15628">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7560,7 +7584,7 @@ Will retain <code>GtkBinLayout</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L15386-L15390">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ATContext-BinLayout.swift#L15631-L15635">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7573,8 +7597,8 @@ Will retain <code>GtkBinLayout</code>.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-05-16)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.7</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-12-10)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

@@ -21,7 +21,7 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          Gtk 4.2.1 Docs
+          Gtk 4.4.1 Docs
         </a>
          (95% documented)
       </p>
@@ -663,6 +663,9 @@
                 <a class="nav-group-task-link" href="../Classes/PasswordEntry.html">PasswordEntry</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PasswordEntryBuffer.html">PasswordEntryBuffer</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Picture.html">Picture</a>
               </li>
               <li class="nav-group-task">
@@ -990,6 +993,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk13INTERFACE_AGEs5Int32Vvp">INTERFACE_AGE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21INVALID_LIST_POSITIONs6UInt32Vvp">INVALID_LIST_POSITION</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21LEVEL_BAR_OFFSET_FULLSSvp">LEVEL_BAR_OFFSET_FULL</a>
@@ -2111,6 +2117,12 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PanedSignalName.html">PanedSignalName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferPropertyName.html">PasswordEntryBufferPropertyName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferSignalName.html">PasswordEntryBufferSignalName</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PasswordEntryPropertyName.html">PasswordEntryPropertyName</a>
@@ -4111,6 +4123,12 @@
                 <a class="nav-group-task-link" href="../Protocols/ParamSpecExpressionProtocol.html">ParamSpecExpressionProtocol</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferClassProtocol.html">PasswordEntryBufferClassProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferProtocol.html">PasswordEntryBufferProtocol</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/PasswordEntryClassProtocol.html">PasswordEntryClassProtocol</a>
               </li>
               <li class="nav-group-task">
@@ -5577,6 +5595,12 @@
                 <a class="nav-group-task-link" href="../Structs/ParamSpecExpressionRef.html">ParamSpecExpressionRef</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferClassRef.html">PasswordEntryBufferClassRef</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferRef.html">PasswordEntryBufferRef</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/PasswordEntryClassRef.html">PasswordEntryClassRef</a>
               </li>
               <li class="nav-group-task">
@@ -6704,12 +6728,8 @@
 
                 </div>
               </div>
-            <p>The <code>SortListModelRef</code> type acts as a lightweight Swift reference to an underlying <code>GtkSortListModel</code> instance.
-It exposes methods that can operate on this data type through <code><a href="../Protocols/SortListModelProtocol.html">SortListModelProtocol</a></code> conformance.
-Use <code>SortListModelRef</code> only as an <code>unowned</code> reference to an existing <code>GtkSortListModel</code> instance.</p>
-
-<p><code>GtkSortListModel</code> is a list model that sorts the elements of
-the underlying model according to a <code>GtkSorter</code>.</p>
+            <p>A <code>GListModel</code> that sorts the elements of an underlying model
+according to a <code>GtkSorter</code>.</p>
 
 <p>The model can be set up to do incremental sorting, so that
 sorting long lists doesn&rsquo;t block the UI. See
@@ -6721,8 +6741,12 @@ If you run into performance issues with <code>GtkSortListModel</code>,
 it is strongly recommended that you write your own sorting list
 model.</p>
 
+<p>The <code>SortListModelRef</code> type acts as a lightweight Swift reference to an underlying <code>GtkSortListModel</code> instance.
+It exposes methods that can operate on this data type through <code><a href="../Protocols/SortListModelProtocol.html">SortListModelProtocol</a></code> conformance.
+Use <code>SortListModelRef</code> only as an <code>unowned</code> reference to an existing <code>GtkSortListModel</code> instance.</p>
+
               <div class="slightly-smaller">
-                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L18949-L18953">Show on GitHub</a>
+                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L19120-L19124">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -6759,7 +6783,7 @@ model.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L18952">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L19123">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6803,7 +6827,7 @@ model.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L18957-L18959">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L19128-L19130">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6834,7 +6858,7 @@ model.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L18962-L18964">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L19133-L19135">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6865,7 +6889,7 @@ model.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L18967-L18970">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L19138-L19141">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6896,7 +6920,7 @@ model.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L18973-L18976">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L19144-L19147">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6927,7 +6951,7 @@ model.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L18979-L18982">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L19150-L19153">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6958,7 +6982,7 @@ model.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L18985-L18988">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L19156-L19159">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6989,7 +7013,7 @@ model.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L18991-L18993">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L19162-L19164">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7020,7 +7044,7 @@ model.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L18996">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L19167">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7052,7 +7076,7 @@ model.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L19000-L19002">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L19171-L19173">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7084,7 +7108,7 @@ model.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L19006-L19008">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L19177-L19179">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7116,7 +7140,7 @@ model.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L19012-L19014">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L19183-L19185">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7148,7 +7172,7 @@ model.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L19018-L19020">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L19189-L19191">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7180,7 +7204,7 @@ model.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L19024-L19026">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L19195-L19197">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7211,7 +7235,7 @@ model.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L19029-L19032">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L19200-L19203">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7224,8 +7248,8 @@ model.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-05-16)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.7</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-12-10)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

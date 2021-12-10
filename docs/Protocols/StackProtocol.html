@@ -21,7 +21,7 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          Gtk 4.2.1 Docs
+          Gtk 4.4.1 Docs
         </a>
          (95% documented)
       </p>
@@ -663,6 +663,9 @@
                 <a class="nav-group-task-link" href="../Classes/PasswordEntry.html">PasswordEntry</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PasswordEntryBuffer.html">PasswordEntryBuffer</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Picture.html">Picture</a>
               </li>
               <li class="nav-group-task">
@@ -990,6 +993,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk13INTERFACE_AGEs5Int32Vvp">INTERFACE_AGE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21INVALID_LIST_POSITIONs6UInt32Vvp">INVALID_LIST_POSITION</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21LEVEL_BAR_OFFSET_FULLSSvp">LEVEL_BAR_OFFSET_FULL</a>
@@ -2111,6 +2117,12 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PanedSignalName.html">PanedSignalName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferPropertyName.html">PasswordEntryBufferPropertyName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferSignalName.html">PasswordEntryBufferSignalName</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PasswordEntryPropertyName.html">PasswordEntryPropertyName</a>
@@ -4111,6 +4123,12 @@
                 <a class="nav-group-task-link" href="../Protocols/ParamSpecExpressionProtocol.html">ParamSpecExpressionProtocol</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferClassProtocol.html">PasswordEntryBufferClassProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferProtocol.html">PasswordEntryBufferProtocol</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/PasswordEntryClassProtocol.html">PasswordEntryClassProtocol</a>
               </li>
               <li class="nav-group-task">
@@ -5577,6 +5595,12 @@
                 <a class="nav-group-task-link" href="../Structs/ParamSpecExpressionRef.html">ParamSpecExpressionRef</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferClassRef.html">PasswordEntryBufferClassRef</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferRef.html">PasswordEntryBufferRef</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/PasswordEntryClassRef.html">PasswordEntryClassRef</a>
               </li>
               <li class="nav-group-task">
@@ -6704,12 +6728,7 @@
 
                 </div>
               </div>
-            <p>The <code>StackProtocol</code> protocol exposes the methods and properties of an underlying <code>GtkStack</code> instance.
-The default implementation of these can be found in the protocol extension below.
-For a concrete class that implements these methods and properties, see <code><a href="../Classes/Stack.html">Stack</a></code>.
-Alternatively, use <code><a href="../Structs/StackRef.html">StackRef</a></code> as a lighweight, <code>unowned</code> reference if you already have an instance you just want to use.</p>
-
-<p><code>GtkStack</code> is a container which only shows one of its children
+            <p><code>GtkStack</code> is a container which only shows one of its children
 at a time.</p>
 
 <p>In contrast to <code>GtkNotebook</code>, <code>GtkStack</code> does not provide a means
@@ -6752,8 +6771,13 @@ objects explicitly, and set the child widget as a property on it:</p>
 <p><code>GtkStack</code> uses the <code>GTK_ACCESSIBLE_ROLE_TAB_PANEL</code> for the stack
 pages, which are the accessible parent objects of the child widgets.</p>
 
+<p>The <code>StackProtocol</code> protocol exposes the methods and properties of an underlying <code>GtkStack</code> instance.
+The default implementation of these can be found in the protocol extension below.
+For a concrete class that implements these methods and properties, see <code><a href="../Classes/Stack.html">Stack</a></code>.
+Alternatively, use <code><a href="../Structs/StackRef.html">StackRef</a></code> as a lighweight, <code>unowned</code> reference if you already have an instance you just want to use.</p>
+
               <div class="slightly-smaller">
-                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L22842-L22851">Show on GitHub</a>
+                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L23048-L23057">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -6787,7 +6811,7 @@ pages, which are the accessible parent objects of the child widgets.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L22844">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L23050">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6825,7 +6849,7 @@ pages, which are the accessible parent objects of the child widgets.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L22847">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L23053">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6855,7 +6879,7 @@ pages, which are the accessible parent objects of the child widgets.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L22850">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L23056">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6986,7 +7010,7 @@ pages, which are the accessible parent objects of the child widgets.</p>
                         <p>binding reference or <code>nil</code> in case of an error</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L23345-L23369">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L23553-L23577">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7043,7 +7067,7 @@ pages, which are the accessible parent objects of the child widgets.</p>
                         <p>the value of the named property</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L23374-L23378">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L23582-L23586">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7101,7 +7125,7 @@ pages, which are the accessible parent objects of the child widgets.</p>
                         <p>the value of the named property</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L23384-L23386">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L23592-L23594">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7148,7 +7172,7 @@ pages, which are the accessible parent objects of the child widgets.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L23652-L23655">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L23862-L23865">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7184,7 +7208,7 @@ pages, which are the accessible parent objects of the child widgets.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L23660-L23663">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L23870-L23873">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7222,7 +7246,7 @@ will be used by <code>GtkStackSwitcher</code> to represent
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L23670-L23673">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L23880-L23883">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7258,7 +7282,7 @@ will be used by <code>GtkStackSwitcher</code> to represent
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L23678-L23681">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L23888-L23891">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7292,7 +7316,7 @@ will be used by <code>GtkStackSwitcher</code> to represent
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L23684-L23687">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L23894-L23897">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7327,7 +7351,7 @@ the sizes of children on page switch.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L23691-L23694">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L23901-L23904">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7361,7 +7385,7 @@ the sizes of children on page switch.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L23697-L23700">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L23907-L23910">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7399,7 +7423,7 @@ and modify the visible page.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L23707-L23710">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L23917-L23920">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7434,7 +7458,7 @@ transitions between pages in <code>stack</code> will take.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L23714-L23717">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L23924-L23927">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7469,7 +7493,7 @@ another.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L23721-L23724">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L23931-L23934">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7504,7 +7528,7 @@ for transitions between pages in <code>stack</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L23728-L23731">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L23938-L23941">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7538,7 +7562,7 @@ for transitions between pages in <code>stack</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L23734-L23737">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L23944-L23947">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7574,7 +7598,7 @@ for transitions between pages in <code>stack</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L23742-L23745">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L23952-L23955">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7610,7 +7634,7 @@ for transitions between pages in <code>stack</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L23750-L23753">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L23960-L23963">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7644,7 +7668,7 @@ for transitions between pages in <code>stack</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L23756-L23759">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L23966-L23969">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7682,7 +7706,7 @@ may change width when a different child becomes visible.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L23766-L23769">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L23976-L23979">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7722,7 +7746,7 @@ according to the set transition duration.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L23778-L23781">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L23988-L23991">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7757,7 +7781,7 @@ will take.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L23785-L23788">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L23995-L23998">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7798,7 +7822,7 @@ based on the page that is about to become current.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L23798-L23801">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L24008-L24011">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7836,7 +7860,7 @@ may change height when a different child becomes visible.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L23808-L23811">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L24018-L24021">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7878,7 +7902,7 @@ child of <code>stack</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L23822-L23825">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L24032-L24035">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7916,7 +7940,7 @@ child of <code>stack</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L23832-L23835">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L24042-L24045">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7958,7 +7982,7 @@ child of <code>stack</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L23846-L23849">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L24056-L24059">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7992,7 +8016,7 @@ child of <code>stack</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L23851-L23865">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L24061-L24075">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8027,7 +8051,7 @@ the sizes of children on page switch.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L23869-L23886">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L24079-L24096">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8061,7 +8085,7 @@ the sizes of children on page switch.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L23889-L23899">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L24099-L24109">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8096,7 +8120,7 @@ transitions between pages in <code>stack</code> will take.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L23903-L23915">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L24113-L24125">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8131,7 +8155,7 @@ another.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L23919-L23926">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L24129-L24136">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8166,7 +8190,7 @@ for transitions between pages in <code>stack</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L23930-L23948">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L24140-L24158">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8200,7 +8224,7 @@ for transitions between pages in <code>stack</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L23951-L23965">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L24161-L24175">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8236,7 +8260,7 @@ for transitions between pages in <code>stack</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L23970-L23990">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L24180-L24200">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8272,7 +8296,7 @@ for transitions between pages in <code>stack</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L23995-L24015">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L24205-L24225">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8285,8 +8309,8 @@ for transitions between pages in <code>stack</code>.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-05-16)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.7</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-12-10)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

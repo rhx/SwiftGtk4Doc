@@ -21,7 +21,7 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          Gtk 4.2.1 Docs
+          Gtk 4.4.1 Docs
         </a>
          (95% documented)
       </p>
@@ -663,6 +663,9 @@
                 <a class="nav-group-task-link" href="../Classes/PasswordEntry.html">PasswordEntry</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PasswordEntryBuffer.html">PasswordEntryBuffer</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Picture.html">Picture</a>
               </li>
               <li class="nav-group-task">
@@ -990,6 +993,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk13INTERFACE_AGEs5Int32Vvp">INTERFACE_AGE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21INVALID_LIST_POSITIONs6UInt32Vvp">INVALID_LIST_POSITION</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21LEVEL_BAR_OFFSET_FULLSSvp">LEVEL_BAR_OFFSET_FULL</a>
@@ -2111,6 +2117,12 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PanedSignalName.html">PanedSignalName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferPropertyName.html">PasswordEntryBufferPropertyName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferSignalName.html">PasswordEntryBufferSignalName</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PasswordEntryPropertyName.html">PasswordEntryPropertyName</a>
@@ -4111,6 +4123,12 @@
                 <a class="nav-group-task-link" href="../Protocols/ParamSpecExpressionProtocol.html">ParamSpecExpressionProtocol</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferClassProtocol.html">PasswordEntryBufferClassProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferProtocol.html">PasswordEntryBufferProtocol</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/PasswordEntryClassProtocol.html">PasswordEntryClassProtocol</a>
               </li>
               <li class="nav-group-task">
@@ -5577,6 +5595,12 @@
                 <a class="nav-group-task-link" href="../Structs/ParamSpecExpressionRef.html">ParamSpecExpressionRef</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferClassRef.html">PasswordEntryBufferClassRef</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferRef.html">PasswordEntryBufferRef</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/PasswordEntryClassRef.html">PasswordEntryClassRef</a>
               </li>
               <li class="nav-group-task">
@@ -6704,12 +6728,7 @@
 
                 </div>
               </div>
-            <p>The <code>EditableProtocol</code> protocol exposes the methods and properties of an underlying <code>GtkEditable</code> instance.
-The default implementation of these can be found in the protocol extension below.
-For a concrete class that implements these methods and properties, see <code><a href="../Classes/Editable.html">Editable</a></code>.
-Alternatively, use <code><a href="../Structs/EditableRef.html">EditableRef</a></code> as a lighweight, <code>unowned</code> reference if you already have an instance you just want to use.</p>
-
-<p><code>GtkEditable</code> is an interface for text editing widgets.</p>
+            <p><code>GtkEditable</code> is an interface for text editing widgets.</p>
 
 <p>Typical examples of editable widgets are [class<code>Gtk.Entry</code>] and
 [class<code>Gtk.SpinButton</code>]. It contains functions for generically manipulating
@@ -6824,8 +6843,13 @@ recursion. If you wish to connect to the [signal<code>Gtk.Editable::insert-text<
 and [signal<code>Gtk.Editable::delete-text</code>] signals, you will need to connect
 to them on the delegate obtained via [method<code>Gtk.Editable.get_delegate</code>].</p>
 
+<p>The <code>EditableProtocol</code> protocol exposes the methods and properties of an underlying <code>GtkEditable</code> instance.
+The default implementation of these can be found in the protocol extension below.
+For a concrete class that implements these methods and properties, see <code><a href="../Classes/Editable.html">Editable</a></code>.
+Alternatively, use <code><a href="../Structs/EditableRef.html">EditableRef</a></code> as a lighweight, <code>unowned</code> reference if you already have an instance you just want to use.</p>
+
               <div class="slightly-smaller">
-                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L1707-L1716">Show on GitHub</a>
+                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L1722-L1731">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -6859,7 +6883,7 @@ to them on the delegate obtained via [method<code>Gtk.Editable.get_delegate</cod
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L1709">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L1724">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6897,7 +6921,7 @@ to them on the delegate obtained via [method<code>Gtk.Editable.get_delegate</cod
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L1712">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L1727">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6927,7 +6951,7 @@ to them on the delegate obtained via [method<code>Gtk.Editable.get_delegate</cod
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L1715">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L1730">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7058,7 +7082,7 @@ to them on the delegate obtained via [method<code>Gtk.Editable.get_delegate</cod
                         <p>binding reference or <code>nil</code> in case of an error</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L2361-L2385">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L2378-L2402">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7115,7 +7139,7 @@ to them on the delegate obtained via [method<code>Gtk.Editable.get_delegate</cod
                         <p>the value of the named property</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L2390-L2394">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L2407-L2411">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7173,7 +7197,7 @@ to them on the delegate obtained via [method<code>Gtk.Editable.get_delegate</cod
                         <p>the value of the named property</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L2400-L2402">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L2417-L2419">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7292,7 +7316,7 @@ to them on the delegate obtained via [method<code>Gtk.Editable.get_delegate</cod
                         <p>The signal handler ID (always greater than 0 for successful connections)</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L2697-L2699">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L2716-L2718">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7398,7 +7422,7 @@ to them on the delegate obtained via [method<code>Gtk.Editable.get_delegate</cod
                         <p>The signal handler ID (always greater than 0 for successful connections)</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L2710-L2712">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L2729-L2731">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7528,7 +7552,7 @@ to modify the inserted text, or prevent it from being inserted entirely.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L2730">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L2749">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7619,7 +7643,7 @@ Run the given callback whenever the <code>changed</code> signal is emitted</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L2744-L2758">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L2763-L2777">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7652,7 +7676,7 @@ Run the given callback whenever the <code>changed</code> signal is emitted</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L2761">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L2780">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7768,7 +7792,7 @@ Run the given callback whenever the <code>deleteText</code> signal is emitted</p
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L2779-L2793">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L2798-L2812">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7801,7 +7825,7 @@ Run the given callback whenever the <code>deleteText</code> signal is emitted</p
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L2796">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L2815">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7836,8 +7860,9 @@ and common practice is to do that only when the value has actually changed.</p>
 
 <p>This signal is typically used to obtain change notification for a
 single property, by specifying the property name as a detail in the
-<code>g_signal_connect()</code> call, like this:
-(C Language Example):</p>
+<code>g_signal_connect()</code> call, like this:</p>
+
+<p>(C Language Example):</p>
 <pre class="highlight plaintext"><code>g_signal_connect (text_view-&gt;buffer, "notify::paste-target-list",
                   G_CALLBACK (gtk_text_view_target_list_notify),
                   text_view)
@@ -7920,7 +7945,7 @@ Run the given callback whenever the <code>notifyCursorPosition</code> signal is 
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L2828-L2842">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L2849-L2863">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7953,7 +7978,7 @@ Run the given callback whenever the <code>notifyCursorPosition</code> signal is 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L2845">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L2866">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7988,8 +8013,9 @@ and common practice is to do that only when the value has actually changed.</p>
 
 <p>This signal is typically used to obtain change notification for a
 single property, by specifying the property name as a detail in the
-<code>g_signal_connect()</code> call, like this:
-(C Language Example):</p>
+<code>g_signal_connect()</code> call, like this:</p>
+
+<p>(C Language Example):</p>
 <pre class="highlight plaintext"><code>g_signal_connect (text_view-&gt;buffer, "notify::paste-target-list",
                   G_CALLBACK (gtk_text_view_target_list_notify),
                   text_view)
@@ -8072,7 +8098,7 @@ Run the given callback whenever the <code>notifyEditable</code> signal is emitte
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L2877-L2891">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L2900-L2914">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8105,7 +8131,7 @@ Run the given callback whenever the <code>notifyEditable</code> signal is emitte
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L2894">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L2917">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8140,8 +8166,9 @@ and common practice is to do that only when the value has actually changed.</p>
 
 <p>This signal is typically used to obtain change notification for a
 single property, by specifying the property name as a detail in the
-<code>g_signal_connect()</code> call, like this:
-(C Language Example):</p>
+<code>g_signal_connect()</code> call, like this:</p>
+
+<p>(C Language Example):</p>
 <pre class="highlight plaintext"><code>g_signal_connect (text_view-&gt;buffer, "notify::paste-target-list",
                   G_CALLBACK (gtk_text_view_target_list_notify),
                   text_view)
@@ -8224,7 +8251,7 @@ Run the given callback whenever the <code>notifyEnableUndo</code> signal is emit
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L2926-L2940">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L2951-L2965">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8257,7 +8284,7 @@ Run the given callback whenever the <code>notifyEnableUndo</code> signal is emit
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L2943">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L2968">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8292,8 +8319,9 @@ and common practice is to do that only when the value has actually changed.</p>
 
 <p>This signal is typically used to obtain change notification for a
 single property, by specifying the property name as a detail in the
-<code>g_signal_connect()</code> call, like this:
-(C Language Example):</p>
+<code>g_signal_connect()</code> call, like this:</p>
+
+<p>(C Language Example):</p>
 <pre class="highlight plaintext"><code>g_signal_connect (text_view-&gt;buffer, "notify::paste-target-list",
                   G_CALLBACK (gtk_text_view_target_list_notify),
                   text_view)
@@ -8376,7 +8404,7 @@ Run the given callback whenever the <code>notifyMaxWidthChars</code> signal is e
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L2975-L2989">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L3002-L3016">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8409,7 +8437,7 @@ Run the given callback whenever the <code>notifyMaxWidthChars</code> signal is e
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L2992">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L3019">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8444,8 +8472,9 @@ and common practice is to do that only when the value has actually changed.</p>
 
 <p>This signal is typically used to obtain change notification for a
 single property, by specifying the property name as a detail in the
-<code>g_signal_connect()</code> call, like this:
-(C Language Example):</p>
+<code>g_signal_connect()</code> call, like this:</p>
+
+<p>(C Language Example):</p>
 <pre class="highlight plaintext"><code>g_signal_connect (text_view-&gt;buffer, "notify::paste-target-list",
                   G_CALLBACK (gtk_text_view_target_list_notify),
                   text_view)
@@ -8528,7 +8557,7 @@ Run the given callback whenever the <code>notifySelectionBound</code> signal is 
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L3024-L3038">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L3053-L3067">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8561,7 +8590,7 @@ Run the given callback whenever the <code>notifySelectionBound</code> signal is 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L3041">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L3070">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8596,8 +8625,9 @@ and common practice is to do that only when the value has actually changed.</p>
 
 <p>This signal is typically used to obtain change notification for a
 single property, by specifying the property name as a detail in the
-<code>g_signal_connect()</code> call, like this:
-(C Language Example):</p>
+<code>g_signal_connect()</code> call, like this:</p>
+
+<p>(C Language Example):</p>
 <pre class="highlight plaintext"><code>g_signal_connect (text_view-&gt;buffer, "notify::paste-target-list",
                   G_CALLBACK (gtk_text_view_target_list_notify),
                   text_view)
@@ -8680,7 +8710,7 @@ Run the given callback whenever the <code>notifyText</code> signal is emitted</p
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L3073-L3087">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L3104-L3118">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8713,7 +8743,7 @@ Run the given callback whenever the <code>notifyText</code> signal is emitted</p
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L3090">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L3121">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8748,8 +8778,9 @@ and common practice is to do that only when the value has actually changed.</p>
 
 <p>This signal is typically used to obtain change notification for a
 single property, by specifying the property name as a detail in the
-<code>g_signal_connect()</code> call, like this:
-(C Language Example):</p>
+<code>g_signal_connect()</code> call, like this:</p>
+
+<p>(C Language Example):</p>
 <pre class="highlight plaintext"><code>g_signal_connect (text_view-&gt;buffer, "notify::paste-target-list",
                   G_CALLBACK (gtk_text_view_target_list_notify),
                   text_view)
@@ -8832,7 +8863,7 @@ Run the given callback whenever the <code>notifyWidthChars</code> signal is emit
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L3122-L3136">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L3155-L3169">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8865,7 +8896,7 @@ Run the given callback whenever the <code>notifyWidthChars</code> signal is emit
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L3139">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L3172">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8900,8 +8931,9 @@ and common practice is to do that only when the value has actually changed.</p>
 
 <p>This signal is typically used to obtain change notification for a
 single property, by specifying the property name as a detail in the
-<code>g_signal_connect()</code> call, like this:
-(C Language Example):</p>
+<code>g_signal_connect()</code> call, like this:</p>
+
+<p>(C Language Example):</p>
 <pre class="highlight plaintext"><code>g_signal_connect (text_view-&gt;buffer, "notify::paste-target-list",
                   G_CALLBACK (gtk_text_view_target_list_notify),
                   text_view)
@@ -8984,7 +9016,7 @@ Run the given callback whenever the <code>notifyXalign</code> signal is emitted<
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L3171-L3185">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L3206-L3220">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9017,7 +9049,7 @@ Run the given callback whenever the <code>notifyXalign</code> signal is emitted<
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L3188">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L3223">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9066,7 +9098,7 @@ Run the given callback whenever the <code>notifyXalign</code> signal is emitted<
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L3200-L3203">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L3235-L3238">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9107,7 +9139,7 @@ the end of the text.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L3213-L3216">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L3248-L3251">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9144,7 +9176,7 @@ before removing the delegate object.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L3222-L3225">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L3257-L3260">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9178,7 +9210,7 @@ before removing the delegate object.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L3228-L3231">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L3263-L3266">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9219,7 +9251,7 @@ the end of the text.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L3241-L3244">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L3276-L3279">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9256,7 +9288,7 @@ implementation to.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L3250-L3253">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L3285-L3288">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9290,7 +9322,7 @@ implementation to.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L3256-L3259">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L3291-L3294">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9324,7 +9356,7 @@ implementation to.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L3262-L3265">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L3297-L3300">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9358,7 +9390,7 @@ implementation to.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L3268-L3271">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L3303-L3306">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9395,7 +9427,7 @@ to the start of the content of the editable.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L3277-L3280">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L3312-L3315">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9435,7 +9467,7 @@ and <code>false</code> will be returned.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L3289-L3292">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L3324-L3327">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9471,7 +9503,7 @@ and <code>false</code> will be returned.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L3297-L3300">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L3332-L3335">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9506,7 +9538,7 @@ for the contents of the editable.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L3304-L3307">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L3339-L3342">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9546,7 +9578,7 @@ after creating the delegate object.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L3316-L3319">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L3351-L3354">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9585,7 +9617,7 @@ inserted text.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L3327-L3330">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L3362-L3365">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9626,7 +9658,7 @@ negative, then the characters selected are those characters from
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L3340-L3343">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L3375-L3378">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9663,7 +9695,7 @@ the displayed text is shorter than the width of the editable.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L3349-L3352">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L3384-L3387">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9697,7 +9729,7 @@ the displayed text is shorter than the width of the editable.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L3355-L3358">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L3390-L3393">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9736,7 +9768,7 @@ when [property<code>Gtk.Text:visibility</code>] is set to <code>false</code>.</p
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L3366-L3369">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L3401-L3404">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9770,7 +9802,7 @@ when [property<code>Gtk.Text:visibility</code>] is set to <code>false</code>.</p
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L3372-L3375">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L3407-L3410">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9810,7 +9842,7 @@ of the editable. Note that <code><a href="../Protocols/EditableProtocol.html#/s:
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L3384-L3387">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L3419-L3422">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9846,7 +9878,7 @@ of the editable. Note that <code><a href="../Protocols/EditableProtocol.html#/s:
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L3392-L3395">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L3427-L3430">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9885,7 +9917,7 @@ If <code>n_chars</code> is -1, the size reverts to the default size.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L3403-L3406">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L3438-L3441">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9919,7 +9951,7 @@ If <code>n_chars</code> is -1, the size reverts to the default size.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L3408-L3421">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L3443-L3456">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9956,7 +9988,7 @@ implementation to.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L3427-L3436">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L3462-L3471">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9990,7 +10022,7 @@ implementation to.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L3439-L3449">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L3474-L3484">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10024,7 +10056,7 @@ implementation to.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L3452-L3467">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L3487-L3502">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10058,7 +10090,7 @@ implementation to.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L3470-L3480">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L3505-L3515">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10095,7 +10127,7 @@ to the start of the content of the editable.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L3486-L3505">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L3521-L3540">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10129,7 +10161,7 @@ to the start of the content of the editable.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L3508-L3522">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L3543-L3557">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10164,7 +10196,7 @@ for the contents of the editable.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L3526-L3542">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellLayout-Editable.swift#L3561-L3577">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10177,8 +10209,8 @@ for the contents of the editable.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-05-16)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.7</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-12-10)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

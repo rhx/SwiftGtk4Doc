@@ -21,7 +21,7 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          Gtk 4.2.1 Docs
+          Gtk 4.4.1 Docs
         </a>
          (95% documented)
       </p>
@@ -663,6 +663,9 @@
                 <a class="nav-group-task-link" href="../Classes/PasswordEntry.html">PasswordEntry</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PasswordEntryBuffer.html">PasswordEntryBuffer</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Picture.html">Picture</a>
               </li>
               <li class="nav-group-task">
@@ -990,6 +993,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk13INTERFACE_AGEs5Int32Vvp">INTERFACE_AGE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21INVALID_LIST_POSITIONs6UInt32Vvp">INVALID_LIST_POSITION</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21LEVEL_BAR_OFFSET_FULLSSvp">LEVEL_BAR_OFFSET_FULL</a>
@@ -2111,6 +2117,12 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PanedSignalName.html">PanedSignalName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferPropertyName.html">PasswordEntryBufferPropertyName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferSignalName.html">PasswordEntryBufferSignalName</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PasswordEntryPropertyName.html">PasswordEntryPropertyName</a>
@@ -4111,6 +4123,12 @@
                 <a class="nav-group-task-link" href="../Protocols/ParamSpecExpressionProtocol.html">ParamSpecExpressionProtocol</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferClassProtocol.html">PasswordEntryBufferClassProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferProtocol.html">PasswordEntryBufferProtocol</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/PasswordEntryClassProtocol.html">PasswordEntryClassProtocol</a>
               </li>
               <li class="nav-group-task">
@@ -5577,6 +5595,12 @@
                 <a class="nav-group-task-link" href="../Structs/ParamSpecExpressionRef.html">ParamSpecExpressionRef</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferClassRef.html">PasswordEntryBufferClassRef</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferRef.html">PasswordEntryBufferRef</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/PasswordEntryClassRef.html">PasswordEntryClassRef</a>
               </li>
               <li class="nav-group-task">
@@ -6704,11 +6728,7 @@
 
                 </div>
               </div>
-            <p>The <code>LinkButton</code> type acts as a reference-counted owner of an underlying <code>GtkLinkButton</code> instance.
-It provides the methods that can operate on this data type through <code><a href="../Protocols/LinkButtonProtocol.html">LinkButtonProtocol</a></code> conformance.
-Use <code>LinkButton</code> as a strong reference or owner of a <code>GtkLinkButton</code> instance.</p>
-
-<p>A <code>GtkLinkButton</code> is a button with a hyperlink.</p>
+            <p>A <code>GtkLinkButton</code> is a button with a hyperlink.</p>
 
 <p><img src="link-button.png" alt="An example GtkLinkButton"></p>
 
@@ -6733,8 +6753,12 @@ it from a plain <code>GtkButton</code>, it gets the .link style class.</p>
 
 <p><code>GtkLinkButton</code> uses the <code>GTK_ACCESSIBLE_ROLE_LINK</code> role.</p>
 
+<p>The <code>LinkButton</code> type acts as a reference-counted owner of an underlying <code>GtkLinkButton</code> instance.
+It provides the methods that can operate on this data type through <code><a href="../Protocols/LinkButtonProtocol.html">LinkButtonProtocol</a></code> conformance.
+Use <code>LinkButton</code> as a strong reference or owner of a <code>GtkLinkButton</code> instance.</p>
+
               <div class="slightly-smaller">
-                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L6193-L6339">Show on GitHub</a>
+                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L6262-L6408">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -6792,7 +6816,7 @@ i.e., ownership is transferred to the <code>LinkButton</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L6198-L6200">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L6267-L6269">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6844,7 +6868,7 @@ i.e., ownership is transferred to the <code>LinkButton</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L6206-L6208">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L6275-L6277">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6897,7 +6921,7 @@ i.e., ownership is transferred to the <code>LinkButton</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L6215-L6218">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L6284-L6287">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6950,7 +6974,7 @@ i.e., ownership is transferred to the <code>LinkButton</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L6225-L6228">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L6294-L6297">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7002,7 +7026,7 @@ i.e., ownership is transferred to the <code>LinkButton</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L6234-L6237">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L6303-L6306">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7054,7 +7078,7 @@ i.e., ownership is transferred to the <code>LinkButton</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L6243-L6246">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L6312-L6315">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7106,7 +7130,7 @@ i.e., ownership is transferred to the <code>LinkButton</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L6252-L6254">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L6321-L6323">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7157,7 +7181,7 @@ Will retain <code>GtkLinkButton</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L6259-L6261">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L6328-L6330">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7208,7 +7232,7 @@ Will retain <code>GtkLinkButton</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L6266-L6268">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L6335-L6337">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7259,7 +7283,7 @@ Will retain <code>GtkLinkButton</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L6273-L6275">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L6342-L6344">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7310,7 +7334,7 @@ Will retain <code>GtkLinkButton</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L6280-L6282">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L6349-L6351">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7342,7 +7366,7 @@ Will retain <code>GtkLinkButton</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L6286-L6288">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L6355-L6357">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7393,7 +7417,7 @@ Will retain <code>GtkLinkButton</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L6293-L6295">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L6362-L6364">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7444,7 +7468,7 @@ Will retain <code>GtkLinkButton</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L6300-L6302">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L6369-L6371">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7495,7 +7519,7 @@ Will retain <code>GtkLinkButton</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L6307-L6309">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L6376-L6378">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7546,7 +7570,7 @@ Will retain <code>GtkLinkButton</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L6314-L6316">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L6383-L6385">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7577,7 +7601,7 @@ Will retain <code>GtkLinkButton</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L6319-L6323">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L6388-L6392">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7608,7 +7632,7 @@ Will retain <code>GtkLinkButton</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L6326-L6330">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L6395-L6399">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7639,7 +7663,7 @@ Will retain <code>GtkLinkButton</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L6333-L6337">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L6402-L6406">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7652,8 +7676,8 @@ Will retain <code>GtkLinkButton</code>.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-05-16)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.7</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-12-10)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

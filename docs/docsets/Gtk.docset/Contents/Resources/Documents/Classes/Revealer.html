@@ -21,7 +21,7 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          Gtk 4.2.1 Docs
+          Gtk 4.4.1 Docs
         </a>
          (95% documented)
       </p>
@@ -663,6 +663,9 @@
                 <a class="nav-group-task-link" href="../Classes/PasswordEntry.html">PasswordEntry</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PasswordEntryBuffer.html">PasswordEntryBuffer</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Picture.html">Picture</a>
               </li>
               <li class="nav-group-task">
@@ -990,6 +993,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk13INTERFACE_AGEs5Int32Vvp">INTERFACE_AGE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21INVALID_LIST_POSITIONs6UInt32Vvp">INVALID_LIST_POSITION</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21LEVEL_BAR_OFFSET_FULLSSvp">LEVEL_BAR_OFFSET_FULL</a>
@@ -2111,6 +2117,12 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PanedSignalName.html">PanedSignalName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferPropertyName.html">PasswordEntryBufferPropertyName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferSignalName.html">PasswordEntryBufferSignalName</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PasswordEntryPropertyName.html">PasswordEntryPropertyName</a>
@@ -4111,6 +4123,12 @@
                 <a class="nav-group-task-link" href="../Protocols/ParamSpecExpressionProtocol.html">ParamSpecExpressionProtocol</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferClassProtocol.html">PasswordEntryBufferClassProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferProtocol.html">PasswordEntryBufferProtocol</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/PasswordEntryClassProtocol.html">PasswordEntryClassProtocol</a>
               </li>
               <li class="nav-group-task">
@@ -5577,6 +5595,12 @@
                 <a class="nav-group-task-link" href="../Structs/ParamSpecExpressionRef.html">ParamSpecExpressionRef</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferClassRef.html">PasswordEntryBufferClassRef</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferRef.html">PasswordEntryBufferRef</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/PasswordEntryClassRef.html">PasswordEntryClassRef</a>
               </li>
               <li class="nav-group-task">
@@ -6704,11 +6728,7 @@
 
                 </div>
               </div>
-            <p>The <code>Revealer</code> type acts as a reference-counted owner of an underlying <code>GtkRevealer</code> instance.
-It provides the methods that can operate on this data type through <code><a href="../Protocols/RevealerProtocol.html">RevealerProtocol</a></code> conformance.
-Use <code>Revealer</code> as a strong reference or owner of a <code>GtkRevealer</code> instance.</p>
-
-<p>A <code>GtkRevealer</code> animates the transition of its child from invisible to visible.</p>
+            <p>A <code>GtkRevealer</code> animates the transition of its child from invisible to visible.</p>
 
 <p>The style of transition can be controlled with
 [method<code>Gtk.Revealer.set_transition_type</code>].</p>
@@ -6728,8 +6748,12 @@ when the [property<code>Gtk.Revealer:reveal-child</code>] property is set to <co
 <p>The child of <code>GtkRevealer</code>, if set, is always available in the accessibility
 tree, regardless of the state of the revealer widget.</p>
 
+<p>The <code>Revealer</code> type acts as a reference-counted owner of an underlying <code>GtkRevealer</code> instance.
+It provides the methods that can operate on this data type through <code><a href="../Protocols/RevealerProtocol.html">RevealerProtocol</a></code> conformance.
+Use <code>Revealer</code> as a strong reference or owner of a <code>GtkRevealer</code> instance.</p>
+
               <div class="slightly-smaller">
-                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L1004-L1137">Show on GitHub</a>
+                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L1016-L1149">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -6787,7 +6811,7 @@ i.e., ownership is transferred to the <code>Revealer</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L1009-L1011">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L1021-L1023">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6839,7 +6863,7 @@ i.e., ownership is transferred to the <code>Revealer</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L1017-L1019">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L1029-L1031">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6892,7 +6916,7 @@ i.e., ownership is transferred to the <code>Revealer</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L1026-L1029">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L1038-L1041">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6945,7 +6969,7 @@ i.e., ownership is transferred to the <code>Revealer</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L1036-L1039">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L1048-L1051">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6997,7 +7021,7 @@ i.e., ownership is transferred to the <code>Revealer</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L1045-L1048">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L1057-L1060">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7049,7 +7073,7 @@ i.e., ownership is transferred to the <code>Revealer</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L1054-L1057">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L1066-L1069">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7101,7 +7125,7 @@ i.e., ownership is transferred to the <code>Revealer</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L1063-L1065">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L1075-L1077">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7152,7 +7176,7 @@ Will retain <code>GtkRevealer</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L1070-L1072">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L1082-L1084">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7203,7 +7227,7 @@ Will retain <code>GtkRevealer</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L1077-L1079">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L1089-L1091">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7254,7 +7278,7 @@ Will retain <code>GtkRevealer</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L1084-L1086">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L1096-L1098">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7305,7 +7329,7 @@ Will retain <code>GtkRevealer</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L1091-L1093">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L1103-L1105">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7337,7 +7361,7 @@ Will retain <code>GtkRevealer</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L1097-L1099">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L1109-L1111">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7388,7 +7412,7 @@ Will retain <code>GtkRevealer</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L1104-L1106">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L1116-L1118">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7439,7 +7463,7 @@ Will retain <code>GtkRevealer</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L1111-L1113">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L1123-L1125">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7490,7 +7514,7 @@ Will retain <code>GtkRevealer</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L1118-L1120">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L1130-L1132">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7541,7 +7565,7 @@ Will retain <code>GtkRevealer</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L1125-L1127">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L1137-L1139">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7572,7 +7596,7 @@ Will retain <code>GtkRevealer</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L1130-L1134">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L1142-L1146">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7585,8 +7609,8 @@ Will retain <code>GtkRevealer</code>.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-05-16)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.7</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-12-10)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

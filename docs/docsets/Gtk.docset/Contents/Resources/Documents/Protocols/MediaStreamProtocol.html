@@ -21,7 +21,7 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          Gtk 4.2.1 Docs
+          Gtk 4.4.1 Docs
         </a>
          (95% documented)
       </p>
@@ -663,6 +663,9 @@
                 <a class="nav-group-task-link" href="../Classes/PasswordEntry.html">PasswordEntry</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PasswordEntryBuffer.html">PasswordEntryBuffer</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Picture.html">Picture</a>
               </li>
               <li class="nav-group-task">
@@ -990,6 +993,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk13INTERFACE_AGEs5Int32Vvp">INTERFACE_AGE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21INVALID_LIST_POSITIONs6UInt32Vvp">INVALID_LIST_POSITION</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21LEVEL_BAR_OFFSET_FULLSSvp">LEVEL_BAR_OFFSET_FULL</a>
@@ -2111,6 +2117,12 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PanedSignalName.html">PanedSignalName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferPropertyName.html">PasswordEntryBufferPropertyName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferSignalName.html">PasswordEntryBufferSignalName</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PasswordEntryPropertyName.html">PasswordEntryPropertyName</a>
@@ -4111,6 +4123,12 @@
                 <a class="nav-group-task-link" href="../Protocols/ParamSpecExpressionProtocol.html">ParamSpecExpressionProtocol</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferClassProtocol.html">PasswordEntryBufferClassProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferProtocol.html">PasswordEntryBufferProtocol</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/PasswordEntryClassProtocol.html">PasswordEntryClassProtocol</a>
               </li>
               <li class="nav-group-task">
@@ -5577,6 +5595,12 @@
                 <a class="nav-group-task-link" href="../Structs/ParamSpecExpressionRef.html">ParamSpecExpressionRef</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferClassRef.html">PasswordEntryBufferClassRef</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferRef.html">PasswordEntryBufferRef</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/PasswordEntryClassRef.html">PasswordEntryClassRef</a>
               </li>
               <li class="nav-group-task">
@@ -6704,12 +6728,7 @@
 
                 </div>
               </div>
-            <p>The <code>MediaStreamProtocol</code> protocol exposes the methods and properties of an underlying <code>GtkMediaStream</code> instance.
-The default implementation of these can be found in the protocol extension below.
-For a concrete class that implements these methods and properties, see <code><a href="../Classes/MediaStream.html">MediaStream</a></code>.
-Alternatively, use <code><a href="../Structs/MediaStreamRef.html">MediaStreamRef</a></code> as a lighweight, <code>unowned</code> reference if you already have an instance you just want to use.</p>
-
-<p><code>GtkMediaStream</code> is the integration point for media playback inside GTK.</p>
+            <p><code>GtkMediaStream</code> is the integration point for media playback inside GTK.</p>
 
 <p>GTK provides an implementation of the <code>GtkMediaStream</code> interface that
 is called [class<code>Gtk.MediaFile</code>].</p>
@@ -6727,8 +6746,13 @@ not be used in applications:
 [method<code>Gtk.MediaStream.error</code>],
 [method<code>Gtk.MediaStream.error_valist</code>].</p>
 
+<p>The <code>MediaStreamProtocol</code> protocol exposes the methods and properties of an underlying <code>GtkMediaStream</code> instance.
+The default implementation of these can be found in the protocol extension below.
+For a concrete class that implements these methods and properties, see <code><a href="../Classes/MediaStream.html">MediaStream</a></code>.
+Alternatively, use <code><a href="../Structs/MediaStreamRef.html">MediaStreamRef</a></code> as a lighweight, <code>unowned</code> reference if you already have an instance you just want to use.</p>
+
               <div class="slightly-smaller">
-                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L1327-L1336">Show on GitHub</a>
+                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L1338-L1347">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -6762,7 +6786,7 @@ not be used in applications:
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L1329">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L1340">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6800,7 +6824,7 @@ not be used in applications:
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L1332">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L1343">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6830,7 +6854,7 @@ not be used in applications:
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L1335">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L1346">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6961,7 +6985,7 @@ not be used in applications:
                         <p>binding reference or <code>nil</code> in case of an error</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L1630-L1654">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L1643-L1667">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7018,7 +7042,7 @@ not be used in applications:
                         <p>the value of the named property</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L1659-L1663">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L1672-L1676">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7076,7 +7100,7 @@ not be used in applications:
                         <p>the value of the named property</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L1669-L1671">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L1682-L1684">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7112,23 +7136,27 @@ not be used in applications:
                       <div class="abstract">
                         <p>Pauses the media stream and marks it as ended.</p>
 
-<p>This is a hint only, calls to <code>GtkMediaStream.play()</code>
+<p>This is a hint only, calls to [method<code>Gtk.MediaStream.play</code>]
 may still happen.</p>
 
 <p>The media stream must be prepared when this function is called.</p>
+
+<p><strong>ended is deprecated:</strong>
+Use [<a href="mailto:method@Gtk.MediaStream.stream_ended">method@Gtk.MediaStream.stream_ended</a>] instead</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@inlinable</span>
+                          <pre class="highlight swift"><code><span class="kd">@available</span><span class="p">(</span><span class="o">*</span><span class="p">,</span> <span class="n">deprecated</span><span class="p">)</span>
+<span class="kd">@inlinable</span>
 <span class="kd">func</span> <span class="nf">getEnded</span><span class="p">()</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L1742-L1745">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L1760-L1763">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7165,7 +7193,7 @@ See that function for details.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L1755-L1758">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L1773-L1776">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7210,7 +7238,7 @@ will be ignored and the existing error will be retained.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L1772-L1775">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L1790-L1793">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7246,7 +7274,7 @@ will be ignored and the existing error will be retained.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L1780-L1783">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L1798-L1801">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7280,7 +7308,7 @@ will be ignored and the existing error will be retained.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L1786-L1789">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L1804-L1807">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7327,7 +7355,7 @@ set, e.g. with [method<code>Gtk.MediaFile.set_file</code>].</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L1805-L1808">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L1823-L1826">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7363,7 +7391,7 @@ set, e.g. with [method<code>Gtk.MediaFile.set_file</code>].</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L1813-L1816">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L1831-L1834">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7399,7 +7427,7 @@ set, e.g. with [method<code>Gtk.MediaFile.set_file</code>].</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L1821-L1824">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L1839-L1842">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7433,7 +7461,7 @@ set, e.g. with [method<code>Gtk.MediaFile.set_file</code>].</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L1827-L1830">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L1845-L1848">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7467,7 +7495,7 @@ set, e.g. with [method<code>Gtk.MediaFile.set_file</code>].</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L1833-L1836">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L1851-L1854">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7503,7 +7531,7 @@ set, e.g. with [method<code>Gtk.MediaFile.set_file</code>].</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L1841-L1844">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L1859-L1862">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7537,7 +7565,7 @@ set, e.g. with [method<code>Gtk.MediaFile.set_file</code>].</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L1847-L1850">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L1865-L1868">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7571,7 +7599,7 @@ set, e.g. with [method<code>Gtk.MediaFile.set_file</code>].</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L1853-L1856">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L1871-L1874">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7607,7 +7635,7 @@ set, e.g. with [method<code>Gtk.MediaFile.set_file</code>].</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L1861-L1864">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L1879-L1882">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7643,7 +7671,7 @@ set, e.g. with [method<code>Gtk.MediaFile.set_file</code>].</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L1869-L1872">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L1887-L1890">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7664,29 +7692,24 @@ set, e.g. with [method<code>Gtk.MediaFile.set_file</code>].</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Called by <code>GtkMediaStream</code> implementations to advertise the stream
-being ready to play and providing details about the stream.</p>
+                        <p>Same as <code>gtk_media_stream_stream_prepared()</code>.</p>
 
-<p>Note that the arguments are hints. If the stream implementation
-cannot determine the correct values, it is better to err on the
-side of caution and return <code>true</code>. User interfaces will use those
-values to determine what controls to show.</p>
-
-<p>This function may not be called again until the stream has been
-reset via [method<code>Gtk.MediaStream.unprepared</code>].</p>
+<p><strong>prepared is deprecated:</strong>
+Use [<a href="mailto:method@Gtk.MediaStream.stream_prepared">method@Gtk.MediaStream.stream_prepared</a>] instead.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@inlinable</span>
+                          <pre class="highlight swift"><code><span class="kd">@available</span><span class="p">(</span><span class="o">*</span><span class="p">,</span> <span class="n">deprecated</span><span class="p">)</span>
+<span class="kd">@inlinable</span>
 <span class="kd">func</span> <span class="nf">prepared</span><span class="p">(</span><span class="nv">hasAudio</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="nv">hasVideo</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="nv">seekable</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="nv">duration</span><span class="p">:</span> <span class="n">gint64</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L1884-L1887">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L1896-L1899">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7735,7 +7758,7 @@ calls must be followed by its own call to
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L1905-L1908">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L1917-L1920">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7779,7 +7802,7 @@ any pending seek.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L1921-L1924">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L1933-L1936">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7819,7 +7842,7 @@ ending a seek.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L1933-L1936">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L1945-L1948">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7859,7 +7882,7 @@ ending a seek.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L1945-L1948">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L1957-L1960">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7900,7 +7923,7 @@ loop setting and just end.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L1958-L1961">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L1970-L1973">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7941,7 +7964,7 @@ still work but it will not have an audible effect.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L1971-L1974">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L1983-L1986">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7975,7 +7998,7 @@ still work but it will not have an audible effect.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L1977-L1980">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L1989-L1992">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8019,7 +8042,127 @@ When the stream is unmuted, the new volume setting will take effect.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L1993-L1996">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L2005-L2008">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3Gtk19MediaStreamProtocolPAAE11streamEndedyyF"></a>
+                    <a name="//apple_ref/swift/Method/streamEnded()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3Gtk19MediaStreamProtocolPAAE11streamEndedyyF">streamEnded()</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Pauses the media stream and marks it as ended.</p>
+
+<p>This is a hint only, calls to [method<code>Gtk.MediaStream.play</code>]
+may still happen.</p>
+
+<p>The media stream must be prepared when this function is called.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@inlinable</span>
+<span class="kd">func</span> <span class="nf">streamEnded</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L2016-L2019">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3Gtk19MediaStreamProtocolPAAE14streamPrepared8hasAudio0G5Video8seekable8durationySb_S2bs5Int64VtF"></a>
+                    <a name="//apple_ref/swift/Method/streamPrepared(hasAudio:hasVideo:seekable:duration:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3Gtk19MediaStreamProtocolPAAE14streamPrepared8hasAudio0G5Video8seekable8durationySb_S2bs5Int64VtF">streamPrepared(hasAudio:<wbr>hasVideo:<wbr>seekable:<wbr>duration:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called by <code>GtkMediaStream</code> implementations to advertise the stream
+being ready to play and providing details about the stream.</p>
+
+<p>Note that the arguments are hints. If the stream implementation
+cannot determine the correct values, it is better to err on the
+side of caution and return <code>true</code>. User interfaces will use those
+values to determine what controls to show.</p>
+
+<p>This function may not be called again until the stream has been
+reset via [method<code>Gtk.MediaStream.stream_unprepared</code>].</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@inlinable</span>
+<span class="kd">func</span> <span class="nf">streamPrepared</span><span class="p">(</span><span class="nv">hasAudio</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="nv">hasVideo</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="nv">seekable</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="nv">duration</span><span class="p">:</span> <span class="n">gint64</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L2031-L2034">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3Gtk19MediaStreamProtocolPAAE16streamUnpreparedyyF"></a>
+                    <a name="//apple_ref/swift/Method/streamUnprepared()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3Gtk19MediaStreamProtocolPAAE16streamUnpreparedyyF">streamUnprepared()</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Resets a given media stream implementation.</p>
+
+<p>[method<code>Gtk.MediaStream.stream_prepared</code>] can then be called again.</p>
+
+<p>This function will also reset any error state the stream was in.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@inlinable</span>
+<span class="kd">func</span> <span class="nf">streamUnprepared</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L2041-L2044">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8040,24 +8183,24 @@ When the stream is unmuted, the new volume setting will take effect.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Resets a given media stream implementation.</p>
+                        <p>Same as <code>gtk_media_stream_stream_unprepared()</code>.</p>
 
-<p>[method<code>Gtk.MediaStream.prepared</code>] can then be called again.</p>
-
-<p>This function will also reset any error state the stream was in.</p>
+<p><strong>unprepared is deprecated:</strong>
+Use [<a href="mailto:method@Gtk.MediaStream.stream_unprepared">method@Gtk.MediaStream.stream_unprepared</a>] instead.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@inlinable</span>
+                          <pre class="highlight swift"><code><span class="kd">@available</span><span class="p">(</span><span class="o">*</span><span class="p">,</span> <span class="n">deprecated</span><span class="p">)</span>
+<span class="kd">@inlinable</span>
 <span class="kd">func</span> <span class="nf">unprepared</span><span class="p">()</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L2003-L2006">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L2050-L2053">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8094,7 +8237,7 @@ allocated from <code>surface</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L2012-L2015">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L2059-L2062">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8134,7 +8277,7 @@ they deem appropriate.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L2024-L2027">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L2071-L2074">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8168,7 +8311,7 @@ they deem appropriate.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L2029-L2037">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L2076-L2084">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8202,7 +8345,7 @@ they deem appropriate.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L2040-L2046">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L2087-L2093">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8237,7 +8380,7 @@ that the stream is in.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L2050-L2069">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L2097-L2116">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8273,7 +8416,7 @@ that the stream is in.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L2074-L2082">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L2121-L2129">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8315,7 +8458,7 @@ stream, though it will not do anything.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L2093-L2107">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L2140-L2154">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8349,7 +8492,7 @@ stream, though it will not do anything.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L2110-L2116">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L2157-L2163">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8383,7 +8526,7 @@ stream, though it will not do anything.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L2119-L2138">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L2166-L2185">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8417,7 +8560,7 @@ stream, though it will not do anything.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L2141-L2160">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L2188-L2207">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8451,7 +8594,7 @@ stream, though it will not do anything.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L2163-L2173">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L2210-L2220">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8485,7 +8628,7 @@ stream, though it will not do anything.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L2176-L2182">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L2223-L2229">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8519,7 +8662,7 @@ stream, though it will not do anything.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L2185-L2207">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L2232-L2254">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8553,7 +8696,7 @@ stream, though it will not do anything.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L2209-L2214">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L2256-L2261">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8566,8 +8709,8 @@ stream, though it will not do anything.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-05-16)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.7</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-12-10)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

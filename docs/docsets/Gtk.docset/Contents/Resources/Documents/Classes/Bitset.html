@@ -21,7 +21,7 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          Gtk 4.2.1 Docs
+          Gtk 4.4.1 Docs
         </a>
          (95% documented)
       </p>
@@ -663,6 +663,9 @@
                 <a class="nav-group-task-link" href="../Classes/PasswordEntry.html">PasswordEntry</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PasswordEntryBuffer.html">PasswordEntryBuffer</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Picture.html">Picture</a>
               </li>
               <li class="nav-group-task">
@@ -990,6 +993,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk13INTERFACE_AGEs5Int32Vvp">INTERFACE_AGE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21INVALID_LIST_POSITIONs6UInt32Vvp">INVALID_LIST_POSITION</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21LEVEL_BAR_OFFSET_FULLSSvp">LEVEL_BAR_OFFSET_FULL</a>
@@ -2111,6 +2117,12 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PanedSignalName.html">PanedSignalName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferPropertyName.html">PasswordEntryBufferPropertyName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferSignalName.html">PasswordEntryBufferSignalName</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PasswordEntryPropertyName.html">PasswordEntryPropertyName</a>
@@ -4111,6 +4123,12 @@
                 <a class="nav-group-task-link" href="../Protocols/ParamSpecExpressionProtocol.html">ParamSpecExpressionProtocol</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferClassProtocol.html">PasswordEntryBufferClassProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferProtocol.html">PasswordEntryBufferProtocol</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/PasswordEntryClassProtocol.html">PasswordEntryClassProtocol</a>
               </li>
               <li class="nav-group-task">
@@ -5577,6 +5595,12 @@
                 <a class="nav-group-task-link" href="../Structs/ParamSpecExpressionRef.html">ParamSpecExpressionRef</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferClassRef.html">PasswordEntryBufferClassRef</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferRef.html">PasswordEntryBufferRef</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/PasswordEntryClassRef.html">PasswordEntryClassRef</a>
               </li>
               <li class="nav-group-task">
@@ -6704,11 +6728,7 @@
 
                 </div>
               </div>
-            <p>The <code>Bitset</code> type acts as a reference-counted owner of an underlying <code>GtkBitset</code> instance.
-It provides the methods that can operate on this data type through <code><a href="../Protocols/BitsetProtocol.html">BitsetProtocol</a></code> conformance.
-Use <code>Bitset</code> as a strong reference or owner of a <code>GtkBitset</code> instance.</p>
-
-<p>A <code>GtkBitset</code> represents a set of unsigned integers.</p>
+            <p>A <code>GtkBitset</code> represents a set of unsigned integers.</p>
 
 <p>Another name for this data structure is &ldquo;bitmap&rdquo;.</p>
 
@@ -6724,8 +6744,12 @@ the bitset, such as the minimum or maximum values or its size.</p>
 <p>The main use case for <code>GtkBitset</code> is implementing complex selections for
 [iface<code>Gtk.SelectionModel</code>].</p>
 
+<p>The <code>Bitset</code> type acts as a reference-counted owner of an underlying <code>GtkBitset</code> instance.
+It provides the methods that can operate on this data type through <code><a href="../Protocols/BitsetProtocol.html">BitsetProtocol</a></code> conformance.
+Use <code>Bitset</code> as a strong reference or owner of a <code>GtkBitset</code> instance.</p>
+
               <div class="slightly-smaller">
-                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Bitset-CallbackActionClass.swift#L181-L339">Show on GitHub</a>
+                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Bitset-CallbackActionClass.swift#L184-L342">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -6762,7 +6786,7 @@ the bitset, such as the minimum or maximum values or its size.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Bitset-CallbackActionClass.swift#L184">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Bitset-CallbackActionClass.swift#L187">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6814,7 +6838,7 @@ i.e., ownership is transferred to the <code>Bitset</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Bitset-CallbackActionClass.swift#L190-L192">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Bitset-CallbackActionClass.swift#L193-L195">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6866,7 +6890,7 @@ i.e., ownership is transferred to the <code>Bitset</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Bitset-CallbackActionClass.swift#L198-L200">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Bitset-CallbackActionClass.swift#L201-L203">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6919,7 +6943,7 @@ i.e., ownership is transferred to the <code>Bitset</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Bitset-CallbackActionClass.swift#L207-L210">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Bitset-CallbackActionClass.swift#L210-L213">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6972,7 +6996,7 @@ i.e., ownership is transferred to the <code>Bitset</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Bitset-CallbackActionClass.swift#L217-L220">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Bitset-CallbackActionClass.swift#L220-L223">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7024,7 +7048,7 @@ i.e., ownership is transferred to the <code>Bitset</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Bitset-CallbackActionClass.swift#L226-L229">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Bitset-CallbackActionClass.swift#L229-L232">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7076,7 +7100,7 @@ i.e., ownership is transferred to the <code>Bitset</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Bitset-CallbackActionClass.swift#L235-L238">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Bitset-CallbackActionClass.swift#L238-L241">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7128,7 +7152,7 @@ i.e., ownership is transferred to the <code>Bitset</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Bitset-CallbackActionClass.swift#L244-L247">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Bitset-CallbackActionClass.swift#L247-L250">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7179,7 +7203,7 @@ Will retain <code>GtkBitset</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Bitset-CallbackActionClass.swift#L252-L255">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Bitset-CallbackActionClass.swift#L255-L258">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7230,7 +7254,7 @@ Will retain <code>GtkBitset</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Bitset-CallbackActionClass.swift#L265-L267">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Bitset-CallbackActionClass.swift#L268-L270">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7281,7 +7305,7 @@ Will retain <code>GtkBitset</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Bitset-CallbackActionClass.swift#L272-L275">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Bitset-CallbackActionClass.swift#L275-L278">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7332,7 +7356,7 @@ Will retain <code>GtkBitset</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Bitset-CallbackActionClass.swift#L280-L282">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Bitset-CallbackActionClass.swift#L283-L285">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7364,7 +7388,7 @@ Will retain <code>GtkBitset</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Bitset-CallbackActionClass.swift#L286-L289">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Bitset-CallbackActionClass.swift#L289-L292">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7415,7 +7439,7 @@ Will retain <code>GtkBitset</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Bitset-CallbackActionClass.swift#L294-L296">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Bitset-CallbackActionClass.swift#L297-L299">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7466,7 +7490,7 @@ Will retain <code>GtkBitset</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Bitset-CallbackActionClass.swift#L301-L304">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Bitset-CallbackActionClass.swift#L304-L307">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7517,7 +7541,7 @@ Will retain <code>GtkBitset</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Bitset-CallbackActionClass.swift#L309-L311">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Bitset-CallbackActionClass.swift#L312-L314">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7568,7 +7592,7 @@ Will retain <code>GtkBitset</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Bitset-CallbackActionClass.swift#L316-L319">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Bitset-CallbackActionClass.swift#L319-L322">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7599,7 +7623,7 @@ Will retain <code>GtkBitset</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Bitset-CallbackActionClass.swift#L322-L325">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Bitset-CallbackActionClass.swift#L325-L328">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7630,7 +7654,7 @@ Will retain <code>GtkBitset</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Bitset-CallbackActionClass.swift#L328-L331">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Bitset-CallbackActionClass.swift#L331-L334">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7661,7 +7685,7 @@ Will retain <code>GtkBitset</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Bitset-CallbackActionClass.swift#L334-L337">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Bitset-CallbackActionClass.swift#L337-L340">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7674,8 +7698,8 @@ Will retain <code>GtkBitset</code>.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-05-16)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.7</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-12-10)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

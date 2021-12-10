@@ -21,7 +21,7 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          Gtk 4.2.1 Docs
+          Gtk 4.4.1 Docs
         </a>
          (95% documented)
       </p>
@@ -663,6 +663,9 @@
                 <a class="nav-group-task-link" href="../Classes/PasswordEntry.html">PasswordEntry</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PasswordEntryBuffer.html">PasswordEntryBuffer</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Picture.html">Picture</a>
               </li>
               <li class="nav-group-task">
@@ -990,6 +993,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk13INTERFACE_AGEs5Int32Vvp">INTERFACE_AGE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21INVALID_LIST_POSITIONs6UInt32Vvp">INVALID_LIST_POSITION</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21LEVEL_BAR_OFFSET_FULLSSvp">LEVEL_BAR_OFFSET_FULL</a>
@@ -2111,6 +2117,12 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PanedSignalName.html">PanedSignalName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferPropertyName.html">PasswordEntryBufferPropertyName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferSignalName.html">PasswordEntryBufferSignalName</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PasswordEntryPropertyName.html">PasswordEntryPropertyName</a>
@@ -4111,6 +4123,12 @@
                 <a class="nav-group-task-link" href="../Protocols/ParamSpecExpressionProtocol.html">ParamSpecExpressionProtocol</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferClassProtocol.html">PasswordEntryBufferClassProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferProtocol.html">PasswordEntryBufferProtocol</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/PasswordEntryClassProtocol.html">PasswordEntryClassProtocol</a>
               </li>
               <li class="nav-group-task">
@@ -5577,6 +5595,12 @@
                 <a class="nav-group-task-link" href="../Structs/ParamSpecExpressionRef.html">ParamSpecExpressionRef</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferClassRef.html">PasswordEntryBufferClassRef</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferRef.html">PasswordEntryBufferRef</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/PasswordEntryClassRef.html">PasswordEntryClassRef</a>
               </li>
               <li class="nav-group-task">
@@ -6704,11 +6728,7 @@
 
                 </div>
               </div>
-            <p>The <code>InfoBar</code> type acts as a reference-counted owner of an underlying <code>GtkInfoBar</code> instance.
-It provides the methods that can operate on this data type through <code><a href="../Protocols/InfoBarProtocol.html">InfoBarProtocol</a></code> conformance.
-Use <code>InfoBar</code> as a strong reference or owner of a <code>GtkInfoBar</code> instance.</p>
-
-<p><code>GtkInfoBar</code> can be show messages to the user without a dialog.</p>
+            <p><code>GtkInfoBar</code> can be show messages to the user without a dialog.</p>
 
 <p><img src="info-bar.png" alt="An example GtkInfoBar"></p>
 
@@ -6762,14 +6782,15 @@ type to determine how the message is displayed.</p>
 </code></pre>
 <h1 id='gtkinfobar-as-gtkbuildable' class='heading'>GtkInfoBar as GtkBuildable</h1>
 
-<p>The <code>GtkInfoBar</code> implementation of the <code>GtkBuildable</code> interface exposes
-the content area and action area as internal children with the names
-“content_area” and “action_area”.</p>
-
 <p><code>GtkInfoBar</code> supports a custom &lt;action-widgets&gt; element, which can contain
 multiple &lt;action-widget&gt; elements. The “response” attribute specifies a
 numeric response, and the content of the element is the id of widget
 (which should be a child of the dialogs <code>action_area</code>).</p>
+
+<p><code>GtkInfoBar</code> supports adding action widgets by specifying “action” as
+the “type” attribute of a <code>&amp;lt;child&amp;gt;</code> element. The widget will be added
+either to the action area. The response id has to be associated
+with the action widget using the <code>&amp;lt;action-widgets&amp;gt;</code> element.</p>
 <h1 id='css-nodes' class='heading'>CSS nodes</h1>
 
 <p><code>GtkInfoBar</code> has a single CSS node with name infobar. The node may get
@@ -6778,8 +6799,12 @@ on the message type.
 If the info bar shows a close button, that button will have the .close
 style class applied.</p>
 
+<p>The <code>InfoBar</code> type acts as a reference-counted owner of an underlying <code>GtkInfoBar</code> instance.
+It provides the methods that can operate on this data type through <code><a href="../Protocols/InfoBarProtocol.html">InfoBarProtocol</a></code> conformance.
+Use <code>InfoBar</code> as a strong reference or owner of a <code>GtkInfoBar</code> instance.</p>
+
               <div class="slightly-smaller">
-                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L8151-L8291">Show on GitHub</a>
+                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L8336-L8476">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -6837,7 +6862,7 @@ i.e., ownership is transferred to the <code>InfoBar</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L8156-L8158">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L8341-L8343">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6889,7 +6914,7 @@ i.e., ownership is transferred to the <code>InfoBar</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L8164-L8166">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L8349-L8351">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6942,7 +6967,7 @@ i.e., ownership is transferred to the <code>InfoBar</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L8173-L8176">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L8358-L8361">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6995,7 +7020,7 @@ i.e., ownership is transferred to the <code>InfoBar</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L8183-L8186">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L8368-L8371">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7047,7 +7072,7 @@ i.e., ownership is transferred to the <code>InfoBar</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L8192-L8195">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L8377-L8380">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7099,7 +7124,7 @@ i.e., ownership is transferred to the <code>InfoBar</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L8201-L8204">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L8386-L8389">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7151,7 +7176,7 @@ i.e., ownership is transferred to the <code>InfoBar</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L8210-L8212">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L8395-L8397">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7202,7 +7227,7 @@ Will retain <code>GtkInfoBar</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L8217-L8219">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L8402-L8404">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7253,7 +7278,7 @@ Will retain <code>GtkInfoBar</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L8224-L8226">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L8409-L8411">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7304,7 +7329,7 @@ Will retain <code>GtkInfoBar</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L8231-L8233">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L8416-L8418">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7355,7 +7380,7 @@ Will retain <code>GtkInfoBar</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L8238-L8240">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L8423-L8425">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7387,7 +7412,7 @@ Will retain <code>GtkInfoBar</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L8244-L8246">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L8429-L8431">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7438,7 +7463,7 @@ Will retain <code>GtkInfoBar</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L8251-L8253">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L8436-L8438">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7489,7 +7514,7 @@ Will retain <code>GtkInfoBar</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L8258-L8260">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L8443-L8445">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7540,7 +7565,7 @@ Will retain <code>GtkInfoBar</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L8265-L8267">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L8450-L8452">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7591,7 +7616,7 @@ Will retain <code>GtkInfoBar</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L8272-L8274">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L8457-L8459">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7622,7 +7647,7 @@ Will retain <code>GtkInfoBar</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L8277-L8281">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L8462-L8466">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7635,8 +7660,8 @@ Will retain <code>GtkInfoBar</code>.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-05-16)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.7</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-12-10)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

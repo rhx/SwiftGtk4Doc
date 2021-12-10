@@ -21,7 +21,7 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          Gtk 4.2.1 Docs
+          Gtk 4.4.1 Docs
         </a>
          (95% documented)
       </p>
@@ -663,6 +663,9 @@
                 <a class="nav-group-task-link" href="../Classes/PasswordEntry.html">PasswordEntry</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PasswordEntryBuffer.html">PasswordEntryBuffer</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Picture.html">Picture</a>
               </li>
               <li class="nav-group-task">
@@ -990,6 +993,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk13INTERFACE_AGEs5Int32Vvp">INTERFACE_AGE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21INVALID_LIST_POSITIONs6UInt32Vvp">INVALID_LIST_POSITION</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21LEVEL_BAR_OFFSET_FULLSSvp">LEVEL_BAR_OFFSET_FULL</a>
@@ -2111,6 +2117,12 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PanedSignalName.html">PanedSignalName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferPropertyName.html">PasswordEntryBufferPropertyName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferSignalName.html">PasswordEntryBufferSignalName</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PasswordEntryPropertyName.html">PasswordEntryPropertyName</a>
@@ -4111,6 +4123,12 @@
                 <a class="nav-group-task-link" href="../Protocols/ParamSpecExpressionProtocol.html">ParamSpecExpressionProtocol</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferClassProtocol.html">PasswordEntryBufferClassProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferProtocol.html">PasswordEntryBufferProtocol</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/PasswordEntryClassProtocol.html">PasswordEntryClassProtocol</a>
               </li>
               <li class="nav-group-task">
@@ -5577,6 +5595,12 @@
                 <a class="nav-group-task-link" href="../Structs/ParamSpecExpressionRef.html">ParamSpecExpressionRef</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferClassRef.html">PasswordEntryBufferClassRef</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferRef.html">PasswordEntryBufferRef</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/PasswordEntryClassRef.html">PasswordEntryClassRef</a>
               </li>
               <li class="nav-group-task">
@@ -6704,11 +6728,7 @@
 
                 </div>
               </div>
-            <p>The <code>ComboBoxRef</code> type acts as a lightweight Swift reference to an underlying <code>GtkComboBox</code> instance.
-It exposes methods that can operate on this data type through <code><a href="../Protocols/ComboBoxProtocol.html">ComboBoxProtocol</a></code> conformance.
-Use <code>ComboBoxRef</code> only as an <code>unowned</code> reference to an existing <code>GtkComboBox</code> instance.</p>
-
-<p>A <code>GtkComboBox</code> is a widget that allows the user to choose from a list of
+            <p>A <code>GtkComboBox</code> is a widget that allows the user to choose from a list of
 valid choices.</p>
 
 <p><img src="combo-box.png" alt="An example GtkComboBox"></p>
@@ -6720,7 +6740,7 @@ valid choices.</p>
 is specified in the form of a tree model, and the display of the choices
 can be adapted to the data in the model by using cell renderers, as you
 would in a tree view. This is possible since <code>GtkComboBox</code> implements the
-[interface<code>Gtk.CellLayout</code>] interface. The tree model holding the valid
+[iface<code>Gtk.CellLayout</code>] interface. The tree model holding the valid
 choices is not restricted to a flat list, it can be a real tree, and the
 popup will reflect the tree structure.</p>
 
@@ -6763,8 +6783,12 @@ node with name arrow.</p>
 
 <p><code>GtkComboBox</code> uses the <code>GTK_ACCESSIBLE_ROLE_COMBO_BOX</code> role.</p>
 
+<p>The <code>ComboBoxRef</code> type acts as a lightweight Swift reference to an underlying <code>GtkComboBox</code> instance.
+It exposes methods that can operate on this data type through <code><a href="../Protocols/ComboBoxProtocol.html">ComboBoxProtocol</a></code> conformance.
+Use <code>ComboBoxRef</code> only as an <code>unowned</code> reference to an existing <code>GtkComboBox</code> instance.</p>
+
               <div class="slightly-smaller">
-                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L23691-L23695">Show on GitHub</a>
+                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L24032-L24036">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -6801,7 +6825,7 @@ node with name arrow.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L23694">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L24035">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6845,7 +6869,7 @@ node with name arrow.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L23699-L23701">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L24040-L24042">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6876,7 +6900,7 @@ node with name arrow.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L23704-L23706">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L24045-L24047">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6907,7 +6931,7 @@ node with name arrow.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L23709-L23712">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L24050-L24053">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6938,7 +6962,7 @@ node with name arrow.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L23715-L23718">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L24056-L24059">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6969,7 +6993,7 @@ node with name arrow.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L23721-L23724">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L24062-L24065">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7000,7 +7024,7 @@ node with name arrow.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L23727-L23730">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L24068-L24071">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7031,7 +7055,7 @@ node with name arrow.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L23733-L23735">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L24074-L24076">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7062,7 +7086,7 @@ node with name arrow.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L23738">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L24079">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7094,7 +7118,7 @@ node with name arrow.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L23742-L23744">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L24083-L24085">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7126,7 +7150,7 @@ node with name arrow.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L23748-L23750">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L24089-L24091">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7158,7 +7182,7 @@ node with name arrow.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L23754-L23756">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L24095-L24097">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7190,7 +7214,7 @@ node with name arrow.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L23760-L23762">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L24101-L24103">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7222,7 +7246,7 @@ node with name arrow.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L23766-L23768">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L24107-L24109">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7253,7 +7277,7 @@ node with name arrow.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L23771-L23774">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L24112-L24115">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7284,7 +7308,7 @@ node with name arrow.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L23777-L23780">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L24118-L24121">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7304,6 +7328,8 @@ node with name arrow.</p>
                       <div class="abstract">
                         <p>Creates a new empty <code>GtkComboBox</code> with an entry and a model.</p>
 
+<p>See also [ctor<code>Gtk.ComboBox.new_with_entry</code>].</p>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
@@ -7315,7 +7341,7 @@ node with name arrow.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L23783-L23786">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L24126-L24129">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7335,6 +7361,10 @@ node with name arrow.</p>
                       <div class="abstract">
                         <p>Creates a new empty <code>GtkComboBox</code> with an entry.</p>
 
+<p>In order to use a combo box with entry, you need to tell it
+which column of the model contains the text for the entry
+by calling [method<code>Gtk.ComboBox.set_entry_text_column</code>].</p>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
@@ -7346,7 +7376,7 @@ node with name arrow.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L23788-L23791">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L24135-L24138">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7377,7 +7407,7 @@ node with name arrow.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L23794-L23797">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L24141-L24144">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7397,6 +7427,8 @@ node with name arrow.</p>
                       <div class="abstract">
                         <p>Creates a new empty <code>GtkComboBox</code> with an entry and a model.</p>
 
+<p>See also [ctor<code>Gtk.ComboBox.new_with_entry</code>].</p>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
@@ -7408,7 +7440,7 @@ node with name arrow.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L23800-L23803">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L24149-L24152">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7421,8 +7453,8 @@ node with name arrow.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-05-16)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.7</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-12-10)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

@@ -21,7 +21,7 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          Gtk 4.2.1 Docs
+          Gtk 4.4.1 Docs
         </a>
          (95% documented)
       </p>
@@ -663,6 +663,9 @@
                 <a class="nav-group-task-link" href="../Classes/PasswordEntry.html">PasswordEntry</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PasswordEntryBuffer.html">PasswordEntryBuffer</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Picture.html">Picture</a>
               </li>
               <li class="nav-group-task">
@@ -990,6 +993,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk13INTERFACE_AGEs5Int32Vvp">INTERFACE_AGE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21INVALID_LIST_POSITIONs6UInt32Vvp">INVALID_LIST_POSITION</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21LEVEL_BAR_OFFSET_FULLSSvp">LEVEL_BAR_OFFSET_FULL</a>
@@ -2111,6 +2117,12 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PanedSignalName.html">PanedSignalName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferPropertyName.html">PasswordEntryBufferPropertyName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferSignalName.html">PasswordEntryBufferSignalName</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PasswordEntryPropertyName.html">PasswordEntryPropertyName</a>
@@ -4111,6 +4123,12 @@
                 <a class="nav-group-task-link" href="../Protocols/ParamSpecExpressionProtocol.html">ParamSpecExpressionProtocol</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferClassProtocol.html">PasswordEntryBufferClassProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferProtocol.html">PasswordEntryBufferProtocol</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/PasswordEntryClassProtocol.html">PasswordEntryClassProtocol</a>
               </li>
               <li class="nav-group-task">
@@ -5577,6 +5595,12 @@
                 <a class="nav-group-task-link" href="../Structs/ParamSpecExpressionRef.html">ParamSpecExpressionRef</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferClassRef.html">PasswordEntryBufferClassRef</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferRef.html">PasswordEntryBufferRef</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/PasswordEntryClassRef.html">PasswordEntryClassRef</a>
               </li>
               <li class="nav-group-task">
@@ -6704,12 +6728,7 @@
 
                 </div>
               </div>
-            <p>The <code>SelectionModelProtocol</code> protocol exposes the methods and properties of an underlying <code>GtkSelectionModel</code> instance.
-The default implementation of these can be found in the protocol extension below.
-For a concrete class that implements these methods and properties, see <code><a href="../Classes/SelectionModel.html">SelectionModel</a></code>.
-Alternatively, use <code><a href="../Structs/SelectionModelRef.html">SelectionModelRef</a></code> as a lighweight, <code>unowned</code> reference if you already have an instance you just want to use.</p>
-
-<p><code>GtkSelectionModel</code> is an interface that add support for selection to list models.</p>
+            <p><code>GtkSelectionModel</code> is an interface that add support for selection to list models.</p>
 
 <p>This support is then used by widgets using list models to add the ability
 to select and unselect various items.</p>
@@ -6745,8 +6764,13 @@ selecting is not supported by the model.</p>
 <p>Selections may happen asynchronously, so the only reliable way to find out
 when an item was selected is to listen to the signals that indicate selection.</p>
 
+<p>The <code>SelectionModelProtocol</code> protocol exposes the methods and properties of an underlying <code>GtkSelectionModel</code> instance.
+The default implementation of these can be found in the protocol extension below.
+For a concrete class that implements these methods and properties, see <code><a href="../Classes/SelectionModel.html">SelectionModel</a></code>.
+Alternatively, use <code><a href="../Structs/SelectionModelRef.html">SelectionModelRef</a></code> as a lighweight, <code>unowned</code> reference if you already have an instance you just want to use.</p>
+
               <div class="slightly-smaller">
-                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-SelectionModel-TreeDragDest.swift#L58-L67">Show on GitHub</a>
+                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-SelectionModel-TreeDragDest.swift#L59-L68">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -6780,7 +6804,7 @@ when an item was selected is to listen to the signals that indicate selection.</
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-SelectionModel-TreeDragDest.swift#L60">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-SelectionModel-TreeDragDest.swift#L61">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6818,7 +6842,7 @@ when an item was selected is to listen to the signals that indicate selection.</
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-SelectionModel-TreeDragDest.swift#L63">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-SelectionModel-TreeDragDest.swift#L64">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6848,7 +6872,7 @@ when an item was selected is to listen to the signals that indicate selection.</
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-SelectionModel-TreeDragDest.swift#L66">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-SelectionModel-TreeDragDest.swift#L67">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6967,7 +6991,7 @@ when an item was selected is to listen to the signals that indicate selection.</
                         <p>The signal handler ID (always greater than 0 for successful connections)</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-SelectionModel-TreeDragDest.swift#L384-L386">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-SelectionModel-TreeDragDest.swift#L387-L389">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7073,7 +7097,7 @@ when an item was selected is to listen to the signals that indicate selection.</
                         <p>The signal handler ID (always greater than 0 for successful connections)</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-SelectionModel-TreeDragDest.swift#L397-L399">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-SelectionModel-TreeDragDest.swift#L400-L402">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7186,7 +7210,7 @@ Run the given callback whenever the <code>selectionChanged</code> signal is emit
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-SelectionModel-TreeDragDest.swift#L415-L429">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-SelectionModel-TreeDragDest.swift#L418-L432">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7219,7 +7243,7 @@ Run the given callback whenever the <code>selectionChanged</code> signal is emit
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-SelectionModel-TreeDragDest.swift#L432">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-SelectionModel-TreeDragDest.swift#L435">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7270,7 +7294,7 @@ interested in a few, consider [method<code>Gtk.SelectionModel.get_selection_in_r
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-SelectionModel-TreeDragDest.swift#L447-L450">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-SelectionModel-TreeDragDest.swift#L450-L453">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7310,7 +7334,7 @@ signal.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-SelectionModel-TreeDragDest.swift#L459-L462">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-SelectionModel-TreeDragDest.swift#L462-L465">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7344,7 +7368,7 @@ signal.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-SelectionModel-TreeDragDest.swift#L465-L468">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-SelectionModel-TreeDragDest.swift#L468-L471">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7378,7 +7402,7 @@ signal.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-SelectionModel-TreeDragDest.swift#L471-L474">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-SelectionModel-TreeDragDest.swift#L474-L477">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7412,7 +7436,7 @@ signal.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-SelectionModel-TreeDragDest.swift#L477-L480">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-SelectionModel-TreeDragDest.swift#L480-L483">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7446,7 +7470,7 @@ signal.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-SelectionModel-TreeDragDest.swift#L483-L486">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-SelectionModel-TreeDragDest.swift#L486-L489">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7483,7 +7507,7 @@ signal.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-SelectionModel-TreeDragDest.swift#L492-L495">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-SelectionModel-TreeDragDest.swift#L495-L498">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7547,7 +7571,7 @@ be selected.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-SelectionModel-TreeDragDest.swift#L530-L533">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-SelectionModel-TreeDragDest.swift#L533-L536">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7581,7 +7605,7 @@ be selected.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-SelectionModel-TreeDragDest.swift#L536-L539">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-SelectionModel-TreeDragDest.swift#L539-L542">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7615,7 +7639,7 @@ be selected.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-SelectionModel-TreeDragDest.swift#L542-L545">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-SelectionModel-TreeDragDest.swift#L545-L548">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7649,7 +7673,7 @@ be selected.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-SelectionModel-TreeDragDest.swift#L548-L551">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-SelectionModel-TreeDragDest.swift#L551-L554">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7687,7 +7711,7 @@ interested in a few, consider [method<code>Gtk.SelectionModel.get_selection_in_r
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-SelectionModel-TreeDragDest.swift#L557-L567">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-SelectionModel-TreeDragDest.swift#L560-L570">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7700,8 +7724,8 @@ interested in a few, consider [method<code>Gtk.SelectionModel.get_selection_in_r
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-05-16)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.7</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-12-10)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

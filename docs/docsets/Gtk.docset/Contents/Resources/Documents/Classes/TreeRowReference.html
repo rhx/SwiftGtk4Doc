@@ -21,7 +21,7 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          Gtk 4.2.1 Docs
+          Gtk 4.4.1 Docs
         </a>
          (95% documented)
       </p>
@@ -663,6 +663,9 @@
                 <a class="nav-group-task-link" href="../Classes/PasswordEntry.html">PasswordEntry</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PasswordEntryBuffer.html">PasswordEntryBuffer</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Picture.html">Picture</a>
               </li>
               <li class="nav-group-task">
@@ -990,6 +993,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk13INTERFACE_AGEs5Int32Vvp">INTERFACE_AGE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21INVALID_LIST_POSITIONs6UInt32Vvp">INVALID_LIST_POSITION</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21LEVEL_BAR_OFFSET_FULLSSvp">LEVEL_BAR_OFFSET_FULL</a>
@@ -2111,6 +2117,12 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PanedSignalName.html">PanedSignalName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferPropertyName.html">PasswordEntryBufferPropertyName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferSignalName.html">PasswordEntryBufferSignalName</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PasswordEntryPropertyName.html">PasswordEntryPropertyName</a>
@@ -4111,6 +4123,12 @@
                 <a class="nav-group-task-link" href="../Protocols/ParamSpecExpressionProtocol.html">ParamSpecExpressionProtocol</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferClassProtocol.html">PasswordEntryBufferClassProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferProtocol.html">PasswordEntryBufferProtocol</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/PasswordEntryClassProtocol.html">PasswordEntryClassProtocol</a>
               </li>
               <li class="nav-group-task">
@@ -5577,6 +5595,12 @@
                 <a class="nav-group-task-link" href="../Structs/ParamSpecExpressionRef.html">ParamSpecExpressionRef</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferClassRef.html">PasswordEntryBufferClassRef</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferRef.html">PasswordEntryBufferRef</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/PasswordEntryClassRef.html">PasswordEntryClassRef</a>
               </li>
               <li class="nav-group-task">
@@ -6704,16 +6728,16 @@
 
                 </div>
               </div>
-            <p>The <code>TreeRowReference</code> type acts as an owner of an underlying <code>GtkTreeRowReference</code> instance.
-It provides the methods that can operate on this data type through <code><a href="../Protocols/TreeRowReferenceProtocol.html">TreeRowReferenceProtocol</a></code> conformance.
-Use <code>TreeRowReference</code> as a strong reference or owner of a <code>GtkTreeRowReference</code> instance.</p>
-
-<p>A GtkTreeRowReference tracks model changes so that it always refers to the
+            <p>A GtkTreeRowReference tracks model changes so that it always refers to the
 same row (a <code>GtkTreePath</code> refers to a position, not a fixed row). Create a
 new GtkTreeRowReference with <code>gtk_tree_row_reference_new()</code>.</p>
 
+<p>The <code>TreeRowReference</code> type acts as an owner of an underlying <code>GtkTreeRowReference</code> instance.
+It provides the methods that can operate on this data type through <code><a href="../Protocols/TreeRowReferenceProtocol.html">TreeRowReferenceProtocol</a></code> conformance.
+Use <code>TreeRowReference</code> as a strong reference or owner of a <code>GtkTreeRowReference</code> instance.</p>
+
               <div class="slightly-smaller">
-                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L4744-L4953">Show on GitHub</a>
+                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L4784-L4993">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -6750,7 +6774,7 @@ new GtkTreeRowReference with <code>gtk_tree_row_reference_new()</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L4747">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L4787">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6802,7 +6826,7 @@ i.e., ownership is transferred to the <code>TreeRowReference</code> instance.</p
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L4753-L4755">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L4793-L4795">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6854,7 +6878,7 @@ i.e., ownership is transferred to the <code>TreeRowReference</code> instance.</p
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L4761-L4763">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L4801-L4803">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6907,7 +6931,7 @@ i.e., ownership is transferred to the <code>TreeRowReference</code> instance.</p
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L4770-L4773">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L4810-L4813">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6960,7 +6984,7 @@ i.e., ownership is transferred to the <code>TreeRowReference</code> instance.</p
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L4780-L4783">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L4820-L4823">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7012,7 +7036,7 @@ i.e., ownership is transferred to the <code>TreeRowReference</code> instance.</p
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L4789-L4792">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L4829-L4832">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7064,7 +7088,7 @@ i.e., ownership is transferred to the <code>TreeRowReference</code> instance.</p
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L4798-L4801">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L4838-L4841">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7116,7 +7140,7 @@ i.e., ownership is transferred to the <code>TreeRowReference</code> instance.</p
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L4807-L4810">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L4847-L4850">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7167,7 +7191,7 @@ i.e., ownership is transferred to the <code>TreeRowReference</code> instance.</p
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L4815-L4818">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L4855-L4858">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7218,7 +7242,7 @@ i.e., ownership is transferred to the <code>TreeRowReference</code> instance.</p
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L4828-L4830">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L4868-L4870">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7269,7 +7293,7 @@ i.e., ownership is transferred to the <code>TreeRowReference</code> instance.</p
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L4835-L4838">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L4875-L4878">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7320,7 +7344,7 @@ i.e., ownership is transferred to the <code>TreeRowReference</code> instance.</p
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L4843-L4845">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L4883-L4885">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7352,7 +7376,7 @@ i.e., ownership is transferred to the <code>TreeRowReference</code> instance.</p
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L4849-L4852">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L4889-L4892">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7403,7 +7427,7 @@ i.e., ownership is transferred to the <code>TreeRowReference</code> instance.</p
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L4857-L4859">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L4897-L4899">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7454,7 +7478,7 @@ i.e., ownership is transferred to the <code>TreeRowReference</code> instance.</p
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L4864-L4867">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L4904-L4907">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7505,7 +7529,7 @@ i.e., ownership is transferred to the <code>TreeRowReference</code> instance.</p
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L4872-L4874">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L4912-L4914">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7556,7 +7580,7 @@ i.e., ownership is transferred to the <code>TreeRowReference</code> instance.</p
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L4879-L4882">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L4919-L4922">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7592,7 +7616,7 @@ propagated, and the path is updated appropriately. If
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L4890-L4893">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L4930-L4933">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7646,7 +7670,7 @@ itself, and is not generally needed by most applications.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L4919-L4922">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L4959-L4962">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7700,7 +7724,7 @@ itself, and is not generally needed by most applications.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L4948-L4951">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L4988-L4991">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7713,8 +7737,8 @@ itself, and is not generally needed by most applications.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-05-16)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.7</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-12-10)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

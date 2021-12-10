@@ -21,7 +21,7 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          Gtk 4.2.1 Docs
+          Gtk 4.4.1 Docs
         </a>
          (95% documented)
       </p>
@@ -663,6 +663,9 @@
                 <a class="nav-group-task-link" href="../Classes/PasswordEntry.html">PasswordEntry</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PasswordEntryBuffer.html">PasswordEntryBuffer</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Picture.html">Picture</a>
               </li>
               <li class="nav-group-task">
@@ -990,6 +993,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk13INTERFACE_AGEs5Int32Vvp">INTERFACE_AGE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21INVALID_LIST_POSITIONs6UInt32Vvp">INVALID_LIST_POSITION</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21LEVEL_BAR_OFFSET_FULLSSvp">LEVEL_BAR_OFFSET_FULL</a>
@@ -2111,6 +2117,12 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PanedSignalName.html">PanedSignalName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferPropertyName.html">PasswordEntryBufferPropertyName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferSignalName.html">PasswordEntryBufferSignalName</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PasswordEntryPropertyName.html">PasswordEntryPropertyName</a>
@@ -4111,6 +4123,12 @@
                 <a class="nav-group-task-link" href="../Protocols/ParamSpecExpressionProtocol.html">ParamSpecExpressionProtocol</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferClassProtocol.html">PasswordEntryBufferClassProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferProtocol.html">PasswordEntryBufferProtocol</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/PasswordEntryClassProtocol.html">PasswordEntryClassProtocol</a>
               </li>
               <li class="nav-group-task">
@@ -5577,6 +5595,12 @@
                 <a class="nav-group-task-link" href="../Structs/ParamSpecExpressionRef.html">ParamSpecExpressionRef</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferClassRef.html">PasswordEntryBufferClassRef</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferRef.html">PasswordEntryBufferRef</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/PasswordEntryClassRef.html">PasswordEntryClassRef</a>
               </li>
               <li class="nav-group-task">
@@ -6704,12 +6728,7 @@
 
                 </div>
               </div>
-            <p>The <code>IconThemeProtocol</code> protocol exposes the methods and properties of an underlying <code>GtkIconTheme</code> instance.
-The default implementation of these can be found in the protocol extension below.
-For a concrete class that implements these methods and properties, see <code><a href="../Classes/IconTheme.html">IconTheme</a></code>.
-Alternatively, use <code><a href="../Structs/IconThemeRef.html">IconThemeRef</a></code> as a lighweight, <code>unowned</code> reference if you already have an instance you just want to use.</p>
-
-<p><code>GtkIconTheme</code> provides a facility for loading themed icons.</p>
+            <p><code>GtkIconTheme</code> provides a facility for loading themed icons.</p>
 
 <p>The main reason for using a name rather than simply providing a filename
 is to allow different icons to be used depending on what “icon theme” is
@@ -6740,8 +6759,13 @@ icon information is shared with other people looking up icons.</p>
 <span class="n">g_object_unref</span> <span class="p">(</span><span class="n">icon</span><span class="p">);</span>
 </code></pre>
 
+<p>The <code>IconThemeProtocol</code> protocol exposes the methods and properties of an underlying <code>GtkIconTheme</code> instance.
+The default implementation of these can be found in the protocol extension below.
+For a concrete class that implements these methods and properties, see <code><a href="../Classes/IconTheme.html">IconTheme</a></code>.
+Alternatively, use <code><a href="../Structs/IconThemeRef.html">IconThemeRef</a></code> as a lighweight, <code>unowned</code> reference if you already have an instance you just want to use.</p>
+
               <div class="slightly-smaller">
-                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L2352-L2361">Show on GitHub</a>
+                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L2473-L2482">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -6775,7 +6799,7 @@ icon information is shared with other people looking up icons.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L2354">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L2475">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6813,7 +6837,7 @@ icon information is shared with other people looking up icons.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L2357">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L2478">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6843,7 +6867,7 @@ icon information is shared with other people looking up icons.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L2360">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L2481">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6974,7 +6998,7 @@ icon information is shared with other people looking up icons.</p>
                         <p>binding reference or <code>nil</code> in case of an error</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L2730-L2754">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L2853-L2877">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7031,7 +7055,7 @@ icon information is shared with other people looking up icons.</p>
                         <p>the value of the named property</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L2759-L2763">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L2882-L2886">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7089,7 +7113,7 @@ icon information is shared with other people looking up icons.</p>
                         <p>the value of the named property</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L2769-L2771">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L2892-L2894">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7208,7 +7232,7 @@ icon information is shared with other people looking up icons.</p>
                         <p>The signal handler ID (always greater than 0 for successful connections)</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L2845-L2847">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L2970-L2972">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7314,7 +7338,7 @@ icon information is shared with other people looking up icons.</p>
                         <p>The signal handler ID (always greater than 0 for successful connections)</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L2858-L2860">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L2983-L2985">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7402,7 +7426,7 @@ Run the given callback whenever the <code>changed</code> signal is emitted</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L2873-L2887">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L2998-L3012">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7435,7 +7459,7 @@ Run the given callback whenever the <code>changed</code> signal is emitted</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L2890">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L3015">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7470,8 +7494,9 @@ and common practice is to do that only when the value has actually changed.</p>
 
 <p>This signal is typically used to obtain change notification for a
 single property, by specifying the property name as a detail in the
-<code>g_signal_connect()</code> call, like this:
-(C Language Example):</p>
+<code>g_signal_connect()</code> call, like this:</p>
+
+<p>(C Language Example):</p>
 <pre class="highlight plaintext"><code>g_signal_connect (text_view-&gt;buffer, "notify::paste-target-list",
                   G_CALLBACK (gtk_text_view_target_list_notify),
                   text_view)
@@ -7554,7 +7579,7 @@ Run the given callback whenever the <code>notifyDisplay</code> signal is emitted
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L2922-L2936">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L3049-L3063">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7587,7 +7612,7 @@ Run the given callback whenever the <code>notifyDisplay</code> signal is emitted
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L2939">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L3066">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7622,8 +7647,9 @@ and common practice is to do that only when the value has actually changed.</p>
 
 <p>This signal is typically used to obtain change notification for a
 single property, by specifying the property name as a detail in the
-<code>g_signal_connect()</code> call, like this:
-(C Language Example):</p>
+<code>g_signal_connect()</code> call, like this:</p>
+
+<p>(C Language Example):</p>
 <pre class="highlight plaintext"><code>g_signal_connect (text_view-&gt;buffer, "notify::paste-target-list",
                   G_CALLBACK (gtk_text_view_target_list_notify),
                   text_view)
@@ -7706,7 +7732,7 @@ Run the given callback whenever the <code>notifyIconNames</code> signal is emitt
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L2971-L2985">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L3100-L3114">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7739,7 +7765,7 @@ Run the given callback whenever the <code>notifyIconNames</code> signal is emitt
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L2988">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L3117">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7774,8 +7800,9 @@ and common practice is to do that only when the value has actually changed.</p>
 
 <p>This signal is typically used to obtain change notification for a
 single property, by specifying the property name as a detail in the
-<code>g_signal_connect()</code> call, like this:
-(C Language Example):</p>
+<code>g_signal_connect()</code> call, like this:</p>
+
+<p>(C Language Example):</p>
 <pre class="highlight plaintext"><code>g_signal_connect (text_view-&gt;buffer, "notify::paste-target-list",
                   G_CALLBACK (gtk_text_view_target_list_notify),
                   text_view)
@@ -7858,7 +7885,7 @@ Run the given callback whenever the <code>notifyResourcePath</code> signal is em
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L3020-L3034">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L3151-L3165">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7891,7 +7918,7 @@ Run the given callback whenever the <code>notifyResourcePath</code> signal is em
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L3037">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L3168">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7926,8 +7953,9 @@ and common practice is to do that only when the value has actually changed.</p>
 
 <p>This signal is typically used to obtain change notification for a
 single property, by specifying the property name as a detail in the
-<code>g_signal_connect()</code> call, like this:
-(C Language Example):</p>
+<code>g_signal_connect()</code> call, like this:</p>
+
+<p>(C Language Example):</p>
 <pre class="highlight plaintext"><code>g_signal_connect (text_view-&gt;buffer, "notify::paste-target-list",
                   G_CALLBACK (gtk_text_view_target_list_notify),
                   text_view)
@@ -8010,7 +8038,7 @@ Run the given callback whenever the <code>notifySearchPath</code> signal is emit
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L3069-L3083">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L3202-L3216">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8043,7 +8071,7 @@ Run the given callback whenever the <code>notifySearchPath</code> signal is emit
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L3086">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L3219">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8078,8 +8106,9 @@ and common practice is to do that only when the value has actually changed.</p>
 
 <p>This signal is typically used to obtain change notification for a
 single property, by specifying the property name as a detail in the
-<code>g_signal_connect()</code> call, like this:
-(C Language Example):</p>
+<code>g_signal_connect()</code> call, like this:</p>
+
+<p>(C Language Example):</p>
 <pre class="highlight plaintext"><code>g_signal_connect (text_view-&gt;buffer, "notify::paste-target-list",
                   G_CALLBACK (gtk_text_view_target_list_notify),
                   text_view)
@@ -8162,7 +8191,7 @@ Run the given callback whenever the <code>notifyThemeName</code> signal is emitt
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L3118-L3132">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L3253-L3267">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8195,7 +8224,7 @@ Run the given callback whenever the <code>notifyThemeName</code> signal is emitt
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L3135">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L3270">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8248,7 +8277,7 @@ available as part of the icon theme.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L3151-L3154">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L3286-L3289">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8284,7 +8313,7 @@ available as part of the icon theme.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L3159-L3162">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L3294-L3297">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8319,7 +8348,7 @@ created for.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L3166-L3169">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L3301-L3304">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8353,7 +8382,7 @@ created for.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L3172-L3175">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L3307-L3310">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8391,7 +8420,7 @@ format. The array is zero-terminated.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L3182-L3185">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L3317-L3320">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8427,7 +8456,7 @@ format. The array is zero-terminated.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L3190-L3193">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L3325-L3328">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8463,7 +8492,7 @@ format. The array is zero-terminated.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L3198-L3201">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L3333-L3336">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8499,7 +8528,7 @@ format. The array is zero-terminated.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L3206-L3209">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L3341-L3344">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8534,7 +8563,7 @@ for a particular <code>GIcon</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L3213-L3216">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L3348-L3351">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8569,7 +8598,7 @@ for a particular name.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L3220-L3223">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L3355-L3358">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8606,7 +8635,7 @@ or you can get information such as the filename and size.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L3229-L3232">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L3364-L3367">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8655,7 +8684,7 @@ update the icon. This is usually done by overriding the
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L3250-L3253">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L3385-L3388">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8694,12 +8723,12 @@ but they are treated like unthemed icons.</p>
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@inlinable</span>
-<span class="kd">func</span> <span class="nf">setResource</span><span class="p">(</span><span class="nv">path</span><span class="p">:</span> <span class="kt">UnsafePointer</span><span class="o">&lt;</span><span class="kt">UnsafePointer</span><span class="o">&lt;</span><span class="kt">CChar</span><span class="o">&gt;</span><span class="p">?</span><span class="o">&gt;!</span><span class="p">)</span></code></pre>
+<span class="kd">func</span> <span class="nf">setResource</span><span class="p">(</span><span class="nv">path</span><span class="p">:</span> <span class="kt">UnsafePointer</span><span class="o">&lt;</span><span class="kt">UnsafePointer</span><span class="o">&lt;</span><span class="kt">CChar</span><span class="o">&gt;</span><span class="p">?</span><span class="o">&gt;!</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L3266-L3269">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L3401-L3404">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8747,7 +8776,7 @@ rather than directly on the icon path.)</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L3286-L3289">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L3421-L3424">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8772,7 +8801,7 @@ rather than directly on the icon path.)</p>
 overriding system configuration.</p>
 
 <p>This function cannot be called on the icon theme objects returned
-from [type_func<code>Gtk.IconTheme.get_for_display</code>].</p>
+from [func<code>Gtk.IconTheme.get_for_display</code>].</p>
 
                       </div>
                       <div class="declaration">
@@ -8785,7 +8814,7 @@ from [type_func<code>Gtk.IconTheme.get_for_display</code>].</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L3296-L3299">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L3431-L3434">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8819,7 +8848,7 @@ from [type_func<code>Gtk.IconTheme.get_for_display</code>].</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L3301-L3308">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L3436-L3443">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8853,7 +8882,7 @@ from [type_func<code>Gtk.IconTheme.get_for_display</code>].</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L3311-L3317">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L3446-L3452">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8889,7 +8918,7 @@ from [type_func<code>Gtk.IconTheme.get_for_display</code>].</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L3322-L3344">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L3457-L3479">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8925,7 +8954,7 @@ from [type_func<code>Gtk.IconTheme.get_for_display</code>].</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L3349-L3375">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L3484-L3510">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8961,7 +8990,7 @@ from [type_func<code>Gtk.IconTheme.get_for_display</code>].</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L3380-L3396">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L3515-L3531">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8974,8 +9003,8 @@ from [type_func<code>Gtk.IconTheme.get_for_display</code>].</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-05-16)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.7</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-12-10)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

@@ -21,7 +21,7 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          Gtk 4.2.1 Docs
+          Gtk 4.4.1 Docs
         </a>
          (95% documented)
       </p>
@@ -663,6 +663,9 @@
                 <a class="nav-group-task-link" href="../Classes/PasswordEntry.html">PasswordEntry</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PasswordEntryBuffer.html">PasswordEntryBuffer</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Picture.html">Picture</a>
               </li>
               <li class="nav-group-task">
@@ -990,6 +993,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk13INTERFACE_AGEs5Int32Vvp">INTERFACE_AGE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21INVALID_LIST_POSITIONs6UInt32Vvp">INVALID_LIST_POSITION</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21LEVEL_BAR_OFFSET_FULLSSvp">LEVEL_BAR_OFFSET_FULL</a>
@@ -2111,6 +2117,12 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PanedSignalName.html">PanedSignalName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferPropertyName.html">PasswordEntryBufferPropertyName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferSignalName.html">PasswordEntryBufferSignalName</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PasswordEntryPropertyName.html">PasswordEntryPropertyName</a>
@@ -4111,6 +4123,12 @@
                 <a class="nav-group-task-link" href="../Protocols/ParamSpecExpressionProtocol.html">ParamSpecExpressionProtocol</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferClassProtocol.html">PasswordEntryBufferClassProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferProtocol.html">PasswordEntryBufferProtocol</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/PasswordEntryClassProtocol.html">PasswordEntryClassProtocol</a>
               </li>
               <li class="nav-group-task">
@@ -5577,6 +5595,12 @@
                 <a class="nav-group-task-link" href="../Structs/ParamSpecExpressionRef.html">ParamSpecExpressionRef</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferClassRef.html">PasswordEntryBufferClassRef</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferRef.html">PasswordEntryBufferRef</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/PasswordEntryClassRef.html">PasswordEntryClassRef</a>
               </li>
               <li class="nav-group-task">
@@ -6704,11 +6728,7 @@
 
                 </div>
               </div>
-            <p>The <code>CssLocationRef</code> type acts as a lightweight Swift reference to an underlying <code>GtkCssLocation</code> instance.
-It exposes methods that can operate on this data type through <code><a href="../Protocols/CssLocationProtocol.html">CssLocationProtocol</a></code> conformance.
-Use <code>CssLocationRef</code> only as an <code>unowned</code> reference to an existing <code>GtkCssLocation</code> instance.</p>
-
-<p>Represents a location in a file or other source of data parsed
+            <p>Represents a location in a file or other source of data parsed
 by the CSS engine.</p>
 
 <p>The <code>bytes</code> and <code>line_bytes</code> offsets are meant to be used to
@@ -6721,8 +6741,12 @@ sequences &ldquo;\r\n&rdquo;, &ldquo;\r&rdquo;, &ldquo;\n&rdquo; and &ldquo;\f&r
 If your document uses different rules for line breaking, you might want
 run into problems here.</p>
 
+<p>The <code>CssLocationRef</code> type acts as a lightweight Swift reference to an underlying <code>GtkCssLocation</code> instance.
+It exposes methods that can operate on this data type through <code><a href="../Protocols/CssLocationProtocol.html">CssLocationProtocol</a></code> conformance.
+Use <code>CssLocationRef</code> only as an <code>unowned</code> reference to an existing <code>GtkCssLocation</code> instance.</p>
+
               <div class="slightly-smaller">
-                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellAreaClass-DialogClass.swift#L2835-L2839">Show on GitHub</a>
+                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellAreaClass-DialogClass.swift#L2876-L2880">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -6759,7 +6783,7 @@ run into problems here.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellAreaClass-DialogClass.swift#L2838">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellAreaClass-DialogClass.swift#L2879">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6803,7 +6827,7 @@ run into problems here.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellAreaClass-DialogClass.swift#L2843-L2845">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellAreaClass-DialogClass.swift#L2884-L2886">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6834,7 +6858,7 @@ run into problems here.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellAreaClass-DialogClass.swift#L2848-L2850">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellAreaClass-DialogClass.swift#L2889-L2891">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6865,7 +6889,7 @@ run into problems here.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellAreaClass-DialogClass.swift#L2853-L2856">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellAreaClass-DialogClass.swift#L2894-L2897">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6896,7 +6920,7 @@ run into problems here.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellAreaClass-DialogClass.swift#L2859-L2862">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellAreaClass-DialogClass.swift#L2900-L2903">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6927,7 +6951,7 @@ run into problems here.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellAreaClass-DialogClass.swift#L2865-L2868">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellAreaClass-DialogClass.swift#L2906-L2909">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6958,7 +6982,7 @@ run into problems here.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellAreaClass-DialogClass.swift#L2871-L2874">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellAreaClass-DialogClass.swift#L2912-L2915">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6989,7 +7013,7 @@ run into problems here.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellAreaClass-DialogClass.swift#L2877-L2879">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellAreaClass-DialogClass.swift#L2918-L2920">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7021,7 +7045,7 @@ run into problems here.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellAreaClass-DialogClass.swift#L2883-L2885">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellAreaClass-DialogClass.swift#L2924-L2926">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7053,7 +7077,7 @@ run into problems here.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellAreaClass-DialogClass.swift#L2889-L2891">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellAreaClass-DialogClass.swift#L2930-L2932">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7085,7 +7109,7 @@ run into problems here.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellAreaClass-DialogClass.swift#L2895-L2897">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellAreaClass-DialogClass.swift#L2936-L2938">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7117,7 +7141,7 @@ run into problems here.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellAreaClass-DialogClass.swift#L2901-L2903">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellAreaClass-DialogClass.swift#L2942-L2944">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7149,7 +7173,7 @@ run into problems here.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellAreaClass-DialogClass.swift#L2907-L2909">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-CellAreaClass-DialogClass.swift#L2948-L2950">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7162,8 +7186,8 @@ run into problems here.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-05-16)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.7</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-12-10)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

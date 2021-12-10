@@ -21,7 +21,7 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          Gtk 4.2.1 Docs
+          Gtk 4.4.1 Docs
         </a>
          (95% documented)
       </p>
@@ -663,6 +663,9 @@
                 <a class="nav-group-task-link" href="../Classes/PasswordEntry.html">PasswordEntry</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PasswordEntryBuffer.html">PasswordEntryBuffer</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Picture.html">Picture</a>
               </li>
               <li class="nav-group-task">
@@ -990,6 +993,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk13INTERFACE_AGEs5Int32Vvp">INTERFACE_AGE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21INVALID_LIST_POSITIONs6UInt32Vvp">INVALID_LIST_POSITION</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21LEVEL_BAR_OFFSET_FULLSSvp">LEVEL_BAR_OFFSET_FULL</a>
@@ -2111,6 +2117,12 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PanedSignalName.html">PanedSignalName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferPropertyName.html">PasswordEntryBufferPropertyName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferSignalName.html">PasswordEntryBufferSignalName</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PasswordEntryPropertyName.html">PasswordEntryPropertyName</a>
@@ -4111,6 +4123,12 @@
                 <a class="nav-group-task-link" href="../Protocols/ParamSpecExpressionProtocol.html">ParamSpecExpressionProtocol</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferClassProtocol.html">PasswordEntryBufferClassProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferProtocol.html">PasswordEntryBufferProtocol</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/PasswordEntryClassProtocol.html">PasswordEntryClassProtocol</a>
               </li>
               <li class="nav-group-task">
@@ -5577,6 +5595,12 @@
                 <a class="nav-group-task-link" href="../Structs/ParamSpecExpressionRef.html">ParamSpecExpressionRef</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferClassRef.html">PasswordEntryBufferClassRef</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferRef.html">PasswordEntryBufferRef</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/PasswordEntryClassRef.html">PasswordEntryClassRef</a>
               </li>
               <li class="nav-group-task">
@@ -6704,11 +6728,7 @@
 
                 </div>
               </div>
-            <p>The <code>DropTargetAsyncRef</code> type acts as a lightweight Swift reference to an underlying <code>GtkDropTargetAsync</code> instance.
-It exposes methods that can operate on this data type through <code><a href="../Protocols/DropTargetAsyncProtocol.html">DropTargetAsyncProtocol</a></code> conformance.
-Use <code>DropTargetAsyncRef</code> only as an <code>unowned</code> reference to an existing <code>GtkDropTargetAsync</code> instance.</p>
-
-<p><code>GtkDropTargetAsync</code> is an event controller to receive Drag-and-Drop
+            <p><code>GtkDropTargetAsync</code> is an event controller to receive Drag-and-Drop
 operations, asynchronously.</p>
 
 <p>It is the more complete but also more complex method of handling drop
@@ -6743,8 +6763,12 @@ should initiate the data transfer and finish the operation by calling
 current drop target, and will receive the <code>GTK_STATE_FLAG_DROP_ACTIVE</code>
 state, which can be used by themes to style the widget as a drop target.</p>
 
+<p>The <code>DropTargetAsyncRef</code> type acts as a lightweight Swift reference to an underlying <code>GtkDropTargetAsync</code> instance.
+It exposes methods that can operate on this data type through <code><a href="../Protocols/DropTargetAsyncProtocol.html">DropTargetAsyncProtocol</a></code> conformance.
+Use <code>DropTargetAsyncRef</code> only as an <code>unowned</code> reference to an existing <code>GtkDropTargetAsync</code> instance.</p>
+
               <div class="slightly-smaller">
-                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L6911-L6915">Show on GitHub</a>
+                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L7069-L7073">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -6781,7 +6805,7 @@ state, which can be used by themes to style the widget as a drop target.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L6914">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L7072">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6825,7 +6849,7 @@ state, which can be used by themes to style the widget as a drop target.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L6919-L6921">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L7077-L7079">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6856,7 +6880,7 @@ state, which can be used by themes to style the widget as a drop target.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L6924-L6926">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L7082-L7084">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6887,7 +6911,7 @@ state, which can be used by themes to style the widget as a drop target.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L6929-L6932">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L7087-L7090">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6918,7 +6942,7 @@ state, which can be used by themes to style the widget as a drop target.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L6935-L6938">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L7093-L7096">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6949,7 +6973,7 @@ state, which can be used by themes to style the widget as a drop target.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L6941-L6944">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L7099-L7102">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6980,7 +7004,7 @@ state, which can be used by themes to style the widget as a drop target.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L6947-L6950">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L7105-L7108">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7011,7 +7035,7 @@ state, which can be used by themes to style the widget as a drop target.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L6953-L6955">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L7111-L7113">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7042,7 +7066,7 @@ state, which can be used by themes to style the widget as a drop target.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L6958">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L7116">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7074,7 +7098,7 @@ state, which can be used by themes to style the widget as a drop target.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L6962-L6964">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L7120-L7122">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7106,7 +7130,7 @@ state, which can be used by themes to style the widget as a drop target.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L6968-L6970">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L7126-L7128">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7138,7 +7162,7 @@ state, which can be used by themes to style the widget as a drop target.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L6974-L6976">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L7132-L7134">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7170,7 +7194,7 @@ state, which can be used by themes to style the widget as a drop target.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L6980-L6982">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L7138-L7140">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7202,7 +7226,7 @@ state, which can be used by themes to style the widget as a drop target.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L6986-L6988">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L7144-L7146">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7233,7 +7257,7 @@ state, which can be used by themes to style the widget as a drop target.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L6991-L6994">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L7149-L7152">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7246,8 +7270,8 @@ state, which can be used by themes to style the widget as a drop target.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-05-16)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.7</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-12-10)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

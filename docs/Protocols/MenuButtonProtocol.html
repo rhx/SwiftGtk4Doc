@@ -21,7 +21,7 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          Gtk 4.2.1 Docs
+          Gtk 4.4.1 Docs
         </a>
          (95% documented)
       </p>
@@ -663,6 +663,9 @@
                 <a class="nav-group-task-link" href="../Classes/PasswordEntry.html">PasswordEntry</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PasswordEntryBuffer.html">PasswordEntryBuffer</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Picture.html">Picture</a>
               </li>
               <li class="nav-group-task">
@@ -990,6 +993,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk13INTERFACE_AGEs5Int32Vvp">INTERFACE_AGE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21INVALID_LIST_POSITIONs6UInt32Vvp">INVALID_LIST_POSITION</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21LEVEL_BAR_OFFSET_FULLSSvp">LEVEL_BAR_OFFSET_FULL</a>
@@ -2111,6 +2117,12 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PanedSignalName.html">PanedSignalName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferPropertyName.html">PasswordEntryBufferPropertyName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferSignalName.html">PasswordEntryBufferSignalName</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PasswordEntryPropertyName.html">PasswordEntryPropertyName</a>
@@ -4111,6 +4123,12 @@
                 <a class="nav-group-task-link" href="../Protocols/ParamSpecExpressionProtocol.html">ParamSpecExpressionProtocol</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferClassProtocol.html">PasswordEntryBufferClassProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferProtocol.html">PasswordEntryBufferProtocol</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/PasswordEntryClassProtocol.html">PasswordEntryClassProtocol</a>
               </li>
               <li class="nav-group-task">
@@ -5577,6 +5595,12 @@
                 <a class="nav-group-task-link" href="../Structs/ParamSpecExpressionRef.html">ParamSpecExpressionRef</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferClassRef.html">PasswordEntryBufferClassRef</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferRef.html">PasswordEntryBufferRef</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/PasswordEntryClassRef.html">PasswordEntryClassRef</a>
               </li>
               <li class="nav-group-task">
@@ -6704,12 +6728,7 @@
 
                 </div>
               </div>
-            <p>The <code>MenuButtonProtocol</code> protocol exposes the methods and properties of an underlying <code>GtkMenuButton</code> instance.
-The default implementation of these can be found in the protocol extension below.
-For a concrete class that implements these methods and properties, see <code><a href="../Classes/MenuButton.html">MenuButton</a></code>.
-Alternatively, use <code><a href="../Structs/MenuButtonRef.html">MenuButtonRef</a></code> as a lighweight, <code>unowned</code> reference if you already have an instance you just want to use.</p>
-
-<p>The <code>GtkMenuButton</code> widget is used to display a popup when clicked.</p>
+            <p>The <code>GtkMenuButton</code> widget is used to display a popup when clicked.</p>
 
 <p><img src="menu-button.png" alt="An example GtkMenuButton"></p>
 
@@ -6778,6 +6797,10 @@ part of the menu offscreen, it is “pushed in”.</p>
 <p><code>GtkMenuButton</code> has a single CSS node with name <code>menubutton</code>
 which contains a <code>button</code> node with a <code>.toggle</code> style class.</p>
 
+<p>If the button contains only an icon or an arrow, it will have the
+<code>.image-button</code> style class, if it contains both, it will have the
+<code>.arrow-button</code> style class.</p>
+
 <p>Inside the toggle button content, there is an <code>arrow</code> node for
 the indicator, which will carry one of the <code>.none</code>, <code>.up</code>, <code>.down</code>,
 <code>.left</code> or <code>.right</code> style classes to indicate the direction that
@@ -6790,8 +6813,13 @@ to request a round appearance.</p>
 
 <p><code>GtkMenuButton</code> uses the <code>GTK_ACCESSIBLE_ROLE_BUTTON</code> role.</p>
 
+<p>The <code>MenuButtonProtocol</code> protocol exposes the methods and properties of an underlying <code>GtkMenuButton</code> instance.
+The default implementation of these can be found in the protocol extension below.
+For a concrete class that implements these methods and properties, see <code><a href="../Classes/MenuButton.html">MenuButton</a></code>.
+Alternatively, use <code><a href="../Structs/MenuButtonRef.html">MenuButtonRef</a></code> as a lighweight, <code>unowned</code> reference if you already have an instance you just want to use.</p>
+
               <div class="slightly-smaller">
-                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L2284-L2293">Show on GitHub</a>
+                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L2336-L2345">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -6825,7 +6853,7 @@ to request a round appearance.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L2286">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L2338">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6863,7 +6891,7 @@ to request a round appearance.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L2289">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L2341">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6893,7 +6921,7 @@ to request a round appearance.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L2292">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L2344">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7024,7 +7052,7 @@ to request a round appearance.</p>
                         <p>binding reference or <code>nil</code> in case of an error</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L2815-L2839">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L2883-L2907">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7081,7 +7109,7 @@ to request a round appearance.</p>
                         <p>the value of the named property</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L2844-L2848">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L2912-L2916">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7139,7 +7167,1729 @@ to request a round appearance.</p>
                         <p>the value of the named property</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L2854-L2856">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L2922-L2924">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/MenuButton%20signals"></a>
+                <a name="//apple_ref/swift/Section/MenuButton signals" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/MenuButton%20signals"></a>
+                  <h3 class="section-name"><p>MenuButton signals</p>
+</h3>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3Gtk18MenuButtonProtocolPAAE7connect6signal5flags7handlerSiAA0bC10SignalNameO_10GLibObject12ConnectFlagsVyyctF"></a>
+                    <a name="//apple_ref/swift/Method/connect(signal:flags:handler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3Gtk18MenuButtonProtocolPAAE7connect6signal5flags7handlerSiAA0bC10SignalNameO_10GLibObject12ConnectFlagsVyyctF">connect(signal:<wbr>flags:<wbr>handler:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Connect a Swift signal handler to the given, typed <code><a href="../Enums/MenuButtonSignalName.html">MenuButtonSignalName</a></code> signal</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">@inlinable</span>
+<span class="kd">func</span> <span class="nf">connect</span><span class="p">(</span><span class="n">signal</span> <span class="nv">s</span><span class="p">:</span> <span class="kt"><a href="../Enums/MenuButtonSignalName.html">MenuButtonSignalName</a></span><span class="p">,</span> <span class="n">flags</span> <span class="nv">f</span><span class="p">:</span> <span class="kt">ConnectFlags</span> <span class="o">=</span> <span class="kt">ConnectFlags</span><span class="p">(</span><span class="mi">0</span><span class="p">),</span> <span class="n">handler</span> <span class="nv">h</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt">SignalHandler</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>signal</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The signal to connect</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>flags</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The connection flags to use</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>data</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A pointer to user data to provide to the callback</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>destroyData</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>GClosureNotify</code> C function to destroy the data pointed to by <code>userData</code></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>handler</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The Swift signal handler (function or callback) to invoke on the given signal</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The signal handler ID (always greater than 0 for successful connections)</p>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L3206-L3208">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3Gtk18MenuButtonProtocolPAAE7connect6signal5flags4data11destroyData0F7HandlerSiAA0bC10SignalNameO_10GLibObject12ConnectFlagsVSvSgyAO_SpySo9_GClosureVGSgtXCSgyyXCtF"></a>
+                    <a name="//apple_ref/swift/Method/connect(signal:flags:data:destroyData:signalHandler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3Gtk18MenuButtonProtocolPAAE7connect6signal5flags4data11destroyData0F7HandlerSiAA0bC10SignalNameO_10GLibObject12ConnectFlagsVSvSgyAO_SpySo9_GClosureVGSgtXCSgyyXCtF">connect(signal:<wbr>flags:<wbr>data:<wbr>destroyData:<wbr>signalHandler:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Connect a C signal handler to the given, typed <code><a href="../Enums/MenuButtonSignalName.html">MenuButtonSignalName</a></code> signal</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">@inlinable</span>
+<span class="kd">func</span> <span class="nf">connect</span><span class="p">(</span><span class="n">signal</span> <span class="nv">s</span><span class="p">:</span> <span class="kt"><a href="../Enums/MenuButtonSignalName.html">MenuButtonSignalName</a></span><span class="p">,</span> <span class="n">flags</span> <span class="nv">f</span><span class="p">:</span> <span class="kt">ConnectFlags</span> <span class="o">=</span> <span class="kt">ConnectFlags</span><span class="p">(</span><span class="mi">0</span><span class="p">),</span> <span class="n">data</span> <span class="nv">userData</span><span class="p">:</span> <span class="n">gpointer</span><span class="o">!</span><span class="p">,</span> <span class="n">destroyData</span> <span class="nv">destructor</span><span class="p">:</span> <span class="kt">GClosureNotify</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="n">signalHandler</span> <span class="nv">h</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt">GCallback</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>signal</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The signal to connect</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>flags</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The connection flags to use</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>data</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A pointer to user data to provide to the callback</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>destroyData</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>GClosureNotify</code> C function to destroy the data pointed to by <code>userData</code></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>signalHandler</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The C function to be called on the given signal</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The signal handler ID (always greater than 0 for successful connections)</p>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L3219-L3221">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3Gtk18MenuButtonProtocolPAAE10onActivate5flags7handlerSi10GLibObject12ConnectFlagsV_yAA0bC3RefVctF"></a>
+                    <a name="//apple_ref/swift/Method/onActivate(flags:handler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3Gtk18MenuButtonProtocolPAAE10onActivate5flags7handlerSi10GLibObject12ConnectFlagsV_yAA0bC3RefVctF">onActivate(flags:<wbr>handler:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Emitted to when the menu button is activated.</p>
+
+<p>The <code>activate</code> signal on <code>GtkMenuButton</code> is an action signal and
+emitting it causes the button to pop up its menu.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    This represents the underlying <code>activate</code> signal
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">@inlinable</span>
+<span class="kd">func</span> <span class="nf">onActivate</span><span class="p">(</span><span class="nv">flags</span><span class="p">:</span> <span class="kt">ConnectFlags</span> <span class="o">=</span> <span class="kt">ConnectFlags</span><span class="p">(</span><span class="mi">0</span><span class="p">),</span> <span class="nv">handler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">unownedSelf</span><span class="p">:</span> <span class="kt"><a href="../Structs/MenuButtonRef.html">MenuButtonRef</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>flags</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Flags</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>unownedSelf</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Reference to instance of self</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>handler</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The signal handler to call
+Run the given callback whenever the <code>activate</code> signal is emitted</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L3233-L3247">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3Gtk18MenuButtonProtocolPAAE14activateSignalAA0bcF4NameOvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/activateSignal" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3Gtk18MenuButtonProtocolPAAE14activateSignalAA0bcF4NameOvpZ">activateSignal</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Typed <code>activate</code> signal for using the <code>connect(signal:)</code> methods</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="k">var</span> <span class="nv">activateSignal</span><span class="p">:</span> <span class="kt"><a href="../Enums/MenuButtonSignalName.html">MenuButtonSignalName</a></span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L3250">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3Gtk18MenuButtonProtocolPAAE23onNotifyAlwaysShowArrow5flags7handlerSi10GLibObject12ConnectFlagsV_yAA0bC3RefV_AG09ParamSpecP0VtctF"></a>
+                    <a name="//apple_ref/swift/Method/onNotifyAlwaysShowArrow(flags:handler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3Gtk18MenuButtonProtocolPAAE23onNotifyAlwaysShowArrow5flags7handlerSi10GLibObject12ConnectFlagsV_yAA0bC3RefV_AG09ParamSpecP0VtctF">onNotifyAlwaysShowArrow(flags:<wbr>handler:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The notify signal is emitted on an object when one of its properties has
+its value set through <code>g_object_set_property()</code>, <code>g_object_set()</code>, et al.</p>
+
+<p>Note that getting this signal doesn’t itself guarantee that the value of
+the property has actually changed. When it is emitted is determined by the
+derived GObject class. If the implementor did not create the property with
+<code>G_PARAM_EXPLICIT_NOTIFY</code>, then any call to <code>g_object_set_property()</code> results
+in <code>notify</code> being emitted, even if the new value is the same as the old.
+If they did pass <code>G_PARAM_EXPLICIT_NOTIFY</code>, then this signal is emitted only
+when they explicitly call <code>g_object_notify()</code> or <code>g_object_notify_by_pspec()</code>,
+and common practice is to do that only when the value has actually changed.</p>
+
+<p>This signal is typically used to obtain change notification for a
+single property, by specifying the property name as a detail in the
+<code>g_signal_connect()</code> call, like this:</p>
+
+<p>(C Language Example):</p>
+<pre class="highlight plaintext"><code>g_signal_connect (text_view-&gt;buffer, "notify::paste-target-list",
+                  G_CALLBACK (gtk_text_view_target_list_notify),
+                  text_view)
+</code></pre>
+
+<p>It is important to note that you must use
+<a href="#canonical-parameter-names">canonical parameter names</a> as
+detail strings for the notify signal.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    This represents the underlying <code>notify::always-show-arrow</code> signal
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">@inlinable</span>
+<span class="kd">func</span> <span class="nf">onNotifyAlwaysShowArrow</span><span class="p">(</span><span class="nv">flags</span><span class="p">:</span> <span class="kt">ConnectFlags</span> <span class="o">=</span> <span class="kt">ConnectFlags</span><span class="p">(</span><span class="mi">0</span><span class="p">),</span> <span class="nv">handler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">unownedSelf</span><span class="p">:</span> <span class="kt"><a href="../Structs/MenuButtonRef.html">MenuButtonRef</a></span><span class="p">,</span> <span class="n">_</span> <span class="nv">pspec</span><span class="p">:</span> <span class="kt">ParamSpecRef</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>flags</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Flags</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>unownedSelf</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Reference to instance of self</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>pspec</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the <code>GParamSpec</code> of the property which changed.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>handler</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The signal handler to call
+Run the given callback whenever the <code>notifyAlwaysShowArrow</code> signal is emitted</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L3284-L3298">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3Gtk18MenuButtonProtocolPAAE27notifyAlwaysShowArrowSignalAA0bcI4NameOvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/notifyAlwaysShowArrowSignal" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3Gtk18MenuButtonProtocolPAAE27notifyAlwaysShowArrowSignalAA0bcI4NameOvpZ">notifyAlwaysShowArrowSignal</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Typed <code>notify::always-show-arrow</code> signal for using the <code>connect(signal:)</code> methods</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="k">var</span> <span class="nv">notifyAlwaysShowArrowSignal</span><span class="p">:</span> <span class="kt"><a href="../Enums/MenuButtonSignalName.html">MenuButtonSignalName</a></span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L3301">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3Gtk18MenuButtonProtocolPAAE17onNotifyDirection5flags7handlerSi10GLibObject12ConnectFlagsV_yAA0bC3RefV_AG09ParamSpecN0VtctF"></a>
+                    <a name="//apple_ref/swift/Method/onNotifyDirection(flags:handler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3Gtk18MenuButtonProtocolPAAE17onNotifyDirection5flags7handlerSi10GLibObject12ConnectFlagsV_yAA0bC3RefV_AG09ParamSpecN0VtctF">onNotifyDirection(flags:<wbr>handler:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The notify signal is emitted on an object when one of its properties has
+its value set through <code>g_object_set_property()</code>, <code>g_object_set()</code>, et al.</p>
+
+<p>Note that getting this signal doesn’t itself guarantee that the value of
+the property has actually changed. When it is emitted is determined by the
+derived GObject class. If the implementor did not create the property with
+<code>G_PARAM_EXPLICIT_NOTIFY</code>, then any call to <code>g_object_set_property()</code> results
+in <code>notify</code> being emitted, even if the new value is the same as the old.
+If they did pass <code>G_PARAM_EXPLICIT_NOTIFY</code>, then this signal is emitted only
+when they explicitly call <code>g_object_notify()</code> or <code>g_object_notify_by_pspec()</code>,
+and common practice is to do that only when the value has actually changed.</p>
+
+<p>This signal is typically used to obtain change notification for a
+single property, by specifying the property name as a detail in the
+<code>g_signal_connect()</code> call, like this:</p>
+
+<p>(C Language Example):</p>
+<pre class="highlight plaintext"><code>g_signal_connect (text_view-&gt;buffer, "notify::paste-target-list",
+                  G_CALLBACK (gtk_text_view_target_list_notify),
+                  text_view)
+</code></pre>
+
+<p>It is important to note that you must use
+<a href="#canonical-parameter-names">canonical parameter names</a> as
+detail strings for the notify signal.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    This represents the underlying <code>notify::direction</code> signal
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">@inlinable</span>
+<span class="kd">func</span> <span class="nf">onNotifyDirection</span><span class="p">(</span><span class="nv">flags</span><span class="p">:</span> <span class="kt">ConnectFlags</span> <span class="o">=</span> <span class="kt">ConnectFlags</span><span class="p">(</span><span class="mi">0</span><span class="p">),</span> <span class="nv">handler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">unownedSelf</span><span class="p">:</span> <span class="kt"><a href="../Structs/MenuButtonRef.html">MenuButtonRef</a></span><span class="p">,</span> <span class="n">_</span> <span class="nv">pspec</span><span class="p">:</span> <span class="kt">ParamSpecRef</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>flags</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Flags</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>unownedSelf</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Reference to instance of self</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>pspec</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the <code>GParamSpec</code> of the property which changed.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>handler</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The signal handler to call
+Run the given callback whenever the <code>notifyDirection</code> signal is emitted</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L3335-L3349">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3Gtk18MenuButtonProtocolPAAE21notifyDirectionSignalAA0bcG4NameOvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/notifyDirectionSignal" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3Gtk18MenuButtonProtocolPAAE21notifyDirectionSignalAA0bcG4NameOvpZ">notifyDirectionSignal</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Typed <code>notify::direction</code> signal for using the <code>connect(signal:)</code> methods</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="k">var</span> <span class="nv">notifyDirectionSignal</span><span class="p">:</span> <span class="kt"><a href="../Enums/MenuButtonSignalName.html">MenuButtonSignalName</a></span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L3352">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3Gtk18MenuButtonProtocolPAAE16onNotifyHasFrame5flags7handlerSi10GLibObject12ConnectFlagsV_yAA0bC3RefV_AG09ParamSpecO0VtctF"></a>
+                    <a name="//apple_ref/swift/Method/onNotifyHasFrame(flags:handler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3Gtk18MenuButtonProtocolPAAE16onNotifyHasFrame5flags7handlerSi10GLibObject12ConnectFlagsV_yAA0bC3RefV_AG09ParamSpecO0VtctF">onNotifyHasFrame(flags:<wbr>handler:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The notify signal is emitted on an object when one of its properties has
+its value set through <code>g_object_set_property()</code>, <code>g_object_set()</code>, et al.</p>
+
+<p>Note that getting this signal doesn’t itself guarantee that the value of
+the property has actually changed. When it is emitted is determined by the
+derived GObject class. If the implementor did not create the property with
+<code>G_PARAM_EXPLICIT_NOTIFY</code>, then any call to <code>g_object_set_property()</code> results
+in <code>notify</code> being emitted, even if the new value is the same as the old.
+If they did pass <code>G_PARAM_EXPLICIT_NOTIFY</code>, then this signal is emitted only
+when they explicitly call <code>g_object_notify()</code> or <code>g_object_notify_by_pspec()</code>,
+and common practice is to do that only when the value has actually changed.</p>
+
+<p>This signal is typically used to obtain change notification for a
+single property, by specifying the property name as a detail in the
+<code>g_signal_connect()</code> call, like this:</p>
+
+<p>(C Language Example):</p>
+<pre class="highlight plaintext"><code>g_signal_connect (text_view-&gt;buffer, "notify::paste-target-list",
+                  G_CALLBACK (gtk_text_view_target_list_notify),
+                  text_view)
+</code></pre>
+
+<p>It is important to note that you must use
+<a href="#canonical-parameter-names">canonical parameter names</a> as
+detail strings for the notify signal.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    This represents the underlying <code>notify::has-frame</code> signal
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">@inlinable</span>
+<span class="kd">func</span> <span class="nf">onNotifyHasFrame</span><span class="p">(</span><span class="nv">flags</span><span class="p">:</span> <span class="kt">ConnectFlags</span> <span class="o">=</span> <span class="kt">ConnectFlags</span><span class="p">(</span><span class="mi">0</span><span class="p">),</span> <span class="nv">handler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">unownedSelf</span><span class="p">:</span> <span class="kt"><a href="../Structs/MenuButtonRef.html">MenuButtonRef</a></span><span class="p">,</span> <span class="n">_</span> <span class="nv">pspec</span><span class="p">:</span> <span class="kt">ParamSpecRef</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>flags</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Flags</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>unownedSelf</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Reference to instance of self</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>pspec</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the <code>GParamSpec</code> of the property which changed.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>handler</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The signal handler to call
+Run the given callback whenever the <code>notifyHasFrame</code> signal is emitted</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L3386-L3400">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3Gtk18MenuButtonProtocolPAAE20notifyHasFrameSignalAA0bcH4NameOvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/notifyHasFrameSignal" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3Gtk18MenuButtonProtocolPAAE20notifyHasFrameSignalAA0bcH4NameOvpZ">notifyHasFrameSignal</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Typed <code>notify::has-frame</code> signal for using the <code>connect(signal:)</code> methods</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="k">var</span> <span class="nv">notifyHasFrameSignal</span><span class="p">:</span> <span class="kt"><a href="../Enums/MenuButtonSignalName.html">MenuButtonSignalName</a></span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L3403">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3Gtk18MenuButtonProtocolPAAE16onNotifyIconName5flags7handlerSi10GLibObject12ConnectFlagsV_yAA0bC3RefV_AG09ParamSpecO0VtctF"></a>
+                    <a name="//apple_ref/swift/Method/onNotifyIconName(flags:handler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3Gtk18MenuButtonProtocolPAAE16onNotifyIconName5flags7handlerSi10GLibObject12ConnectFlagsV_yAA0bC3RefV_AG09ParamSpecO0VtctF">onNotifyIconName(flags:<wbr>handler:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The notify signal is emitted on an object when one of its properties has
+its value set through <code>g_object_set_property()</code>, <code>g_object_set()</code>, et al.</p>
+
+<p>Note that getting this signal doesn’t itself guarantee that the value of
+the property has actually changed. When it is emitted is determined by the
+derived GObject class. If the implementor did not create the property with
+<code>G_PARAM_EXPLICIT_NOTIFY</code>, then any call to <code>g_object_set_property()</code> results
+in <code>notify</code> being emitted, even if the new value is the same as the old.
+If they did pass <code>G_PARAM_EXPLICIT_NOTIFY</code>, then this signal is emitted only
+when they explicitly call <code>g_object_notify()</code> or <code>g_object_notify_by_pspec()</code>,
+and common practice is to do that only when the value has actually changed.</p>
+
+<p>This signal is typically used to obtain change notification for a
+single property, by specifying the property name as a detail in the
+<code>g_signal_connect()</code> call, like this:</p>
+
+<p>(C Language Example):</p>
+<pre class="highlight plaintext"><code>g_signal_connect (text_view-&gt;buffer, "notify::paste-target-list",
+                  G_CALLBACK (gtk_text_view_target_list_notify),
+                  text_view)
+</code></pre>
+
+<p>It is important to note that you must use
+<a href="#canonical-parameter-names">canonical parameter names</a> as
+detail strings for the notify signal.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    This represents the underlying <code>notify::icon-name</code> signal
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">@inlinable</span>
+<span class="kd">func</span> <span class="nf">onNotifyIconName</span><span class="p">(</span><span class="nv">flags</span><span class="p">:</span> <span class="kt">ConnectFlags</span> <span class="o">=</span> <span class="kt">ConnectFlags</span><span class="p">(</span><span class="mi">0</span><span class="p">),</span> <span class="nv">handler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">unownedSelf</span><span class="p">:</span> <span class="kt"><a href="../Structs/MenuButtonRef.html">MenuButtonRef</a></span><span class="p">,</span> <span class="n">_</span> <span class="nv">pspec</span><span class="p">:</span> <span class="kt">ParamSpecRef</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>flags</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Flags</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>unownedSelf</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Reference to instance of self</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>pspec</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the <code>GParamSpec</code> of the property which changed.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>handler</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The signal handler to call
+Run the given callback whenever the <code>notifyIconName</code> signal is emitted</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L3437-L3451">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3Gtk18MenuButtonProtocolPAAE20notifyIconNameSignalAA0bchG0OvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/notifyIconNameSignal" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3Gtk18MenuButtonProtocolPAAE20notifyIconNameSignalAA0bchG0OvpZ">notifyIconNameSignal</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Typed <code>notify::icon-name</code> signal for using the <code>connect(signal:)</code> methods</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="k">var</span> <span class="nv">notifyIconNameSignal</span><span class="p">:</span> <span class="kt"><a href="../Enums/MenuButtonSignalName.html">MenuButtonSignalName</a></span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L3454">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3Gtk18MenuButtonProtocolPAAE13onNotifyLabel5flags7handlerSi10GLibObject12ConnectFlagsV_yAA0bC3RefV_AG09ParamSpecN0VtctF"></a>
+                    <a name="//apple_ref/swift/Method/onNotifyLabel(flags:handler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3Gtk18MenuButtonProtocolPAAE13onNotifyLabel5flags7handlerSi10GLibObject12ConnectFlagsV_yAA0bC3RefV_AG09ParamSpecN0VtctF">onNotifyLabel(flags:<wbr>handler:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The notify signal is emitted on an object when one of its properties has
+its value set through <code>g_object_set_property()</code>, <code>g_object_set()</code>, et al.</p>
+
+<p>Note that getting this signal doesn’t itself guarantee that the value of
+the property has actually changed. When it is emitted is determined by the
+derived GObject class. If the implementor did not create the property with
+<code>G_PARAM_EXPLICIT_NOTIFY</code>, then any call to <code>g_object_set_property()</code> results
+in <code>notify</code> being emitted, even if the new value is the same as the old.
+If they did pass <code>G_PARAM_EXPLICIT_NOTIFY</code>, then this signal is emitted only
+when they explicitly call <code>g_object_notify()</code> or <code>g_object_notify_by_pspec()</code>,
+and common practice is to do that only when the value has actually changed.</p>
+
+<p>This signal is typically used to obtain change notification for a
+single property, by specifying the property name as a detail in the
+<code>g_signal_connect()</code> call, like this:</p>
+
+<p>(C Language Example):</p>
+<pre class="highlight plaintext"><code>g_signal_connect (text_view-&gt;buffer, "notify::paste-target-list",
+                  G_CALLBACK (gtk_text_view_target_list_notify),
+                  text_view)
+</code></pre>
+
+<p>It is important to note that you must use
+<a href="#canonical-parameter-names">canonical parameter names</a> as
+detail strings for the notify signal.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    This represents the underlying <code>notify::label</code> signal
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">@inlinable</span>
+<span class="kd">func</span> <span class="nf">onNotifyLabel</span><span class="p">(</span><span class="nv">flags</span><span class="p">:</span> <span class="kt">ConnectFlags</span> <span class="o">=</span> <span class="kt">ConnectFlags</span><span class="p">(</span><span class="mi">0</span><span class="p">),</span> <span class="nv">handler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">unownedSelf</span><span class="p">:</span> <span class="kt"><a href="../Structs/MenuButtonRef.html">MenuButtonRef</a></span><span class="p">,</span> <span class="n">_</span> <span class="nv">pspec</span><span class="p">:</span> <span class="kt">ParamSpecRef</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>flags</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Flags</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>unownedSelf</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Reference to instance of self</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>pspec</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the <code>GParamSpec</code> of the property which changed.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>handler</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The signal handler to call
+Run the given callback whenever the <code>notifyLabel</code> signal is emitted</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L3488-L3502">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3Gtk18MenuButtonProtocolPAAE17notifyLabelSignalAA0bcG4NameOvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/notifyLabelSignal" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3Gtk18MenuButtonProtocolPAAE17notifyLabelSignalAA0bcG4NameOvpZ">notifyLabelSignal</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Typed <code>notify::label</code> signal for using the <code>connect(signal:)</code> methods</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="k">var</span> <span class="nv">notifyLabelSignal</span><span class="p">:</span> <span class="kt"><a href="../Enums/MenuButtonSignalName.html">MenuButtonSignalName</a></span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L3505">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3Gtk18MenuButtonProtocolPAAE08onNotifyB5Model5flags7handlerSi10GLibObject12ConnectFlagsV_yAA0bC3RefV_AG09ParamSpecN0VtctF"></a>
+                    <a name="//apple_ref/swift/Method/onNotifyMenuModel(flags:handler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3Gtk18MenuButtonProtocolPAAE08onNotifyB5Model5flags7handlerSi10GLibObject12ConnectFlagsV_yAA0bC3RefV_AG09ParamSpecN0VtctF">onNotifyMenuModel(flags:<wbr>handler:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The notify signal is emitted on an object when one of its properties has
+its value set through <code>g_object_set_property()</code>, <code>g_object_set()</code>, et al.</p>
+
+<p>Note that getting this signal doesn’t itself guarantee that the value of
+the property has actually changed. When it is emitted is determined by the
+derived GObject class. If the implementor did not create the property with
+<code>G_PARAM_EXPLICIT_NOTIFY</code>, then any call to <code>g_object_set_property()</code> results
+in <code>notify</code> being emitted, even if the new value is the same as the old.
+If they did pass <code>G_PARAM_EXPLICIT_NOTIFY</code>, then this signal is emitted only
+when they explicitly call <code>g_object_notify()</code> or <code>g_object_notify_by_pspec()</code>,
+and common practice is to do that only when the value has actually changed.</p>
+
+<p>This signal is typically used to obtain change notification for a
+single property, by specifying the property name as a detail in the
+<code>g_signal_connect()</code> call, like this:</p>
+
+<p>(C Language Example):</p>
+<pre class="highlight plaintext"><code>g_signal_connect (text_view-&gt;buffer, "notify::paste-target-list",
+                  G_CALLBACK (gtk_text_view_target_list_notify),
+                  text_view)
+</code></pre>
+
+<p>It is important to note that you must use
+<a href="#canonical-parameter-names">canonical parameter names</a> as
+detail strings for the notify signal.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    This represents the underlying <code>notify::menu-model</code> signal
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">@inlinable</span>
+<span class="kd">func</span> <span class="nf">onNotifyMenuModel</span><span class="p">(</span><span class="nv">flags</span><span class="p">:</span> <span class="kt">ConnectFlags</span> <span class="o">=</span> <span class="kt">ConnectFlags</span><span class="p">(</span><span class="mi">0</span><span class="p">),</span> <span class="nv">handler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">unownedSelf</span><span class="p">:</span> <span class="kt"><a href="../Structs/MenuButtonRef.html">MenuButtonRef</a></span><span class="p">,</span> <span class="n">_</span> <span class="nv">pspec</span><span class="p">:</span> <span class="kt">ParamSpecRef</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>flags</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Flags</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>unownedSelf</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Reference to instance of self</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>pspec</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the <code>GParamSpec</code> of the property which changed.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>handler</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The signal handler to call
+Run the given callback whenever the <code>notifyMenuModel</code> signal is emitted</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L3539-L3553">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3Gtk18MenuButtonProtocolPAAE06notifyB11ModelSignalAA0bcG4NameOvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/notifyMenuModelSignal" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3Gtk18MenuButtonProtocolPAAE06notifyB11ModelSignalAA0bcG4NameOvpZ">notifyMenuModelSignal</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Typed <code>notify::menu-model</code> signal for using the <code>connect(signal:)</code> methods</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="k">var</span> <span class="nv">notifyMenuModelSignal</span><span class="p">:</span> <span class="kt"><a href="../Enums/MenuButtonSignalName.html">MenuButtonSignalName</a></span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L3556">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3Gtk18MenuButtonProtocolPAAE15onNotifyPopover5flags7handlerSi10GLibObject12ConnectFlagsV_yAA0bC3RefV_AG09ParamSpecN0VtctF"></a>
+                    <a name="//apple_ref/swift/Method/onNotifyPopover(flags:handler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3Gtk18MenuButtonProtocolPAAE15onNotifyPopover5flags7handlerSi10GLibObject12ConnectFlagsV_yAA0bC3RefV_AG09ParamSpecN0VtctF">onNotifyPopover(flags:<wbr>handler:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The notify signal is emitted on an object when one of its properties has
+its value set through <code>g_object_set_property()</code>, <code>g_object_set()</code>, et al.</p>
+
+<p>Note that getting this signal doesn’t itself guarantee that the value of
+the property has actually changed. When it is emitted is determined by the
+derived GObject class. If the implementor did not create the property with
+<code>G_PARAM_EXPLICIT_NOTIFY</code>, then any call to <code>g_object_set_property()</code> results
+in <code>notify</code> being emitted, even if the new value is the same as the old.
+If they did pass <code>G_PARAM_EXPLICIT_NOTIFY</code>, then this signal is emitted only
+when they explicitly call <code>g_object_notify()</code> or <code>g_object_notify_by_pspec()</code>,
+and common practice is to do that only when the value has actually changed.</p>
+
+<p>This signal is typically used to obtain change notification for a
+single property, by specifying the property name as a detail in the
+<code>g_signal_connect()</code> call, like this:</p>
+
+<p>(C Language Example):</p>
+<pre class="highlight plaintext"><code>g_signal_connect (text_view-&gt;buffer, "notify::paste-target-list",
+                  G_CALLBACK (gtk_text_view_target_list_notify),
+                  text_view)
+</code></pre>
+
+<p>It is important to note that you must use
+<a href="#canonical-parameter-names">canonical parameter names</a> as
+detail strings for the notify signal.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    This represents the underlying <code>notify::popover</code> signal
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">@inlinable</span>
+<span class="kd">func</span> <span class="nf">onNotifyPopover</span><span class="p">(</span><span class="nv">flags</span><span class="p">:</span> <span class="kt">ConnectFlags</span> <span class="o">=</span> <span class="kt">ConnectFlags</span><span class="p">(</span><span class="mi">0</span><span class="p">),</span> <span class="nv">handler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">unownedSelf</span><span class="p">:</span> <span class="kt"><a href="../Structs/MenuButtonRef.html">MenuButtonRef</a></span><span class="p">,</span> <span class="n">_</span> <span class="nv">pspec</span><span class="p">:</span> <span class="kt">ParamSpecRef</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>flags</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Flags</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>unownedSelf</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Reference to instance of self</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>pspec</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the <code>GParamSpec</code> of the property which changed.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>handler</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The signal handler to call
+Run the given callback whenever the <code>notifyPopover</code> signal is emitted</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L3590-L3604">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3Gtk18MenuButtonProtocolPAAE19notifyPopoverSignalAA0bcG4NameOvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/notifyPopoverSignal" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3Gtk18MenuButtonProtocolPAAE19notifyPopoverSignalAA0bcG4NameOvpZ">notifyPopoverSignal</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Typed <code>notify::popover</code> signal for using the <code>connect(signal:)</code> methods</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="k">var</span> <span class="nv">notifyPopoverSignal</span><span class="p">:</span> <span class="kt"><a href="../Enums/MenuButtonSignalName.html">MenuButtonSignalName</a></span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L3607">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3Gtk18MenuButtonProtocolPAAE15onNotifyPrimary5flags7handlerSi10GLibObject12ConnectFlagsV_yAA0bC3RefV_AG09ParamSpecN0VtctF"></a>
+                    <a name="//apple_ref/swift/Method/onNotifyPrimary(flags:handler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3Gtk18MenuButtonProtocolPAAE15onNotifyPrimary5flags7handlerSi10GLibObject12ConnectFlagsV_yAA0bC3RefV_AG09ParamSpecN0VtctF">onNotifyPrimary(flags:<wbr>handler:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The notify signal is emitted on an object when one of its properties has
+its value set through <code>g_object_set_property()</code>, <code>g_object_set()</code>, et al.</p>
+
+<p>Note that getting this signal doesn’t itself guarantee that the value of
+the property has actually changed. When it is emitted is determined by the
+derived GObject class. If the implementor did not create the property with
+<code>G_PARAM_EXPLICIT_NOTIFY</code>, then any call to <code>g_object_set_property()</code> results
+in <code>notify</code> being emitted, even if the new value is the same as the old.
+If they did pass <code>G_PARAM_EXPLICIT_NOTIFY</code>, then this signal is emitted only
+when they explicitly call <code>g_object_notify()</code> or <code>g_object_notify_by_pspec()</code>,
+and common practice is to do that only when the value has actually changed.</p>
+
+<p>This signal is typically used to obtain change notification for a
+single property, by specifying the property name as a detail in the
+<code>g_signal_connect()</code> call, like this:</p>
+
+<p>(C Language Example):</p>
+<pre class="highlight plaintext"><code>g_signal_connect (text_view-&gt;buffer, "notify::paste-target-list",
+                  G_CALLBACK (gtk_text_view_target_list_notify),
+                  text_view)
+</code></pre>
+
+<p>It is important to note that you must use
+<a href="#canonical-parameter-names">canonical parameter names</a> as
+detail strings for the notify signal.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    This represents the underlying <code>notify::primary</code> signal
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">@inlinable</span>
+<span class="kd">func</span> <span class="nf">onNotifyPrimary</span><span class="p">(</span><span class="nv">flags</span><span class="p">:</span> <span class="kt">ConnectFlags</span> <span class="o">=</span> <span class="kt">ConnectFlags</span><span class="p">(</span><span class="mi">0</span><span class="p">),</span> <span class="nv">handler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">unownedSelf</span><span class="p">:</span> <span class="kt"><a href="../Structs/MenuButtonRef.html">MenuButtonRef</a></span><span class="p">,</span> <span class="n">_</span> <span class="nv">pspec</span><span class="p">:</span> <span class="kt">ParamSpecRef</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>flags</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Flags</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>unownedSelf</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Reference to instance of self</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>pspec</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the <code>GParamSpec</code> of the property which changed.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>handler</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The signal handler to call
+Run the given callback whenever the <code>notifyPrimary</code> signal is emitted</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L3641-L3655">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3Gtk18MenuButtonProtocolPAAE19notifyPrimarySignalAA0bcG4NameOvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/notifyPrimarySignal" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3Gtk18MenuButtonProtocolPAAE19notifyPrimarySignalAA0bcG4NameOvpZ">notifyPrimarySignal</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Typed <code>notify::primary</code> signal for using the <code>connect(signal:)</code> methods</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="k">var</span> <span class="nv">notifyPrimarySignal</span><span class="p">:</span> <span class="kt"><a href="../Enums/MenuButtonSignalName.html">MenuButtonSignalName</a></span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L3658">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3Gtk18MenuButtonProtocolPAAE20onNotifyUseUnderline5flags7handlerSi10GLibObject12ConnectFlagsV_yAA0bC3RefV_AG09ParamSpecO0VtctF"></a>
+                    <a name="//apple_ref/swift/Method/onNotifyUseUnderline(flags:handler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3Gtk18MenuButtonProtocolPAAE20onNotifyUseUnderline5flags7handlerSi10GLibObject12ConnectFlagsV_yAA0bC3RefV_AG09ParamSpecO0VtctF">onNotifyUseUnderline(flags:<wbr>handler:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The notify signal is emitted on an object when one of its properties has
+its value set through <code>g_object_set_property()</code>, <code>g_object_set()</code>, et al.</p>
+
+<p>Note that getting this signal doesn’t itself guarantee that the value of
+the property has actually changed. When it is emitted is determined by the
+derived GObject class. If the implementor did not create the property with
+<code>G_PARAM_EXPLICIT_NOTIFY</code>, then any call to <code>g_object_set_property()</code> results
+in <code>notify</code> being emitted, even if the new value is the same as the old.
+If they did pass <code>G_PARAM_EXPLICIT_NOTIFY</code>, then this signal is emitted only
+when they explicitly call <code>g_object_notify()</code> or <code>g_object_notify_by_pspec()</code>,
+and common practice is to do that only when the value has actually changed.</p>
+
+<p>This signal is typically used to obtain change notification for a
+single property, by specifying the property name as a detail in the
+<code>g_signal_connect()</code> call, like this:</p>
+
+<p>(C Language Example):</p>
+<pre class="highlight plaintext"><code>g_signal_connect (text_view-&gt;buffer, "notify::paste-target-list",
+                  G_CALLBACK (gtk_text_view_target_list_notify),
+                  text_view)
+</code></pre>
+
+<p>It is important to note that you must use
+<a href="#canonical-parameter-names">canonical parameter names</a> as
+detail strings for the notify signal.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    This represents the underlying <code>notify::use-underline</code> signal
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">@inlinable</span>
+<span class="kd">func</span> <span class="nf">onNotifyUseUnderline</span><span class="p">(</span><span class="nv">flags</span><span class="p">:</span> <span class="kt">ConnectFlags</span> <span class="o">=</span> <span class="kt">ConnectFlags</span><span class="p">(</span><span class="mi">0</span><span class="p">),</span> <span class="nv">handler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">unownedSelf</span><span class="p">:</span> <span class="kt"><a href="../Structs/MenuButtonRef.html">MenuButtonRef</a></span><span class="p">,</span> <span class="n">_</span> <span class="nv">pspec</span><span class="p">:</span> <span class="kt">ParamSpecRef</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>flags</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Flags</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>unownedSelf</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Reference to instance of self</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>pspec</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the <code>GParamSpec</code> of the property which changed.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>handler</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The signal handler to call
+Run the given callback whenever the <code>notifyUseUnderline</code> signal is emitted</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L3692-L3706">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3Gtk18MenuButtonProtocolPAAE24notifyUseUnderlineSignalAA0bcH4NameOvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/notifyUseUnderlineSignal" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3Gtk18MenuButtonProtocolPAAE24notifyUseUnderlineSignalAA0bcH4NameOvpZ">notifyUseUnderlineSignal</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Typed <code>notify::use-underline</code> signal for using the <code>connect(signal:)</code> methods</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="k">var</span> <span class="nv">notifyUseUnderlineSignal</span><span class="p">:</span> <span class="kt"><a href="../Enums/MenuButtonSignalName.html">MenuButtonSignalName</a></span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L3709">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7157,6 +8907,40 @@ to request a round appearance.</p>
                 </div>
               </div>
               <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3Gtk18MenuButtonProtocolPAAE18getAlwaysShowArrowSbyF"></a>
+                    <a name="//apple_ref/swift/Method/getAlwaysShowArrow()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3Gtk18MenuButtonProtocolPAAE18getAlwaysShowArrowSbyF">getAlwaysShowArrow()</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Gets whether to show a dropdown arrow even when using an icon.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@inlinable</span>
+<span class="kd">func</span> <span class="nf">getAlwaysShowArrow</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L3719-L3722">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
                 <li class="item">
                   <div>
                     <code>
@@ -7186,7 +8970,7 @@ to request a round appearance.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L3122-L3125">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L3725-L3728">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7220,7 +9004,7 @@ to request a round appearance.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L3128-L3131">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L3731-L3734">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7254,7 +9038,7 @@ to request a round appearance.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L3134-L3137">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L3737-L3740">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7288,7 +9072,7 @@ to request a round appearance.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L3140-L3143">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L3743-L3746">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7322,7 +9106,7 @@ to request a round appearance.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L3146-L3149">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L3749-L3752">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7359,7 +9143,41 @@ returns <code>nil</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L3155-L3158">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L3758-L3761">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3Gtk18MenuButtonProtocolPAAE10getPrimarySbyF"></a>
+                    <a name="//apple_ref/swift/Method/getPrimary()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3Gtk18MenuButtonProtocolPAAE10getPrimarySbyF">getPrimary()</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns whether the menu button acts as a primary menu.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@inlinable</span>
+<span class="kd">func</span> <span class="nf">getPrimary</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L3764-L3767">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7394,7 +9212,7 @@ mnemonic.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L3162-L3165">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L3771-L3774">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7428,7 +9246,7 @@ mnemonic.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L3168-L3171">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L3777-L3780">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7462,7 +9280,41 @@ mnemonic.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L3174-L3177">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L3783-L3786">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3Gtk18MenuButtonProtocolPAAE3set15alwaysShowArrowySb_tF"></a>
+                    <a name="//apple_ref/swift/Method/set(alwaysShowArrow:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3Gtk18MenuButtonProtocolPAAE3set15alwaysShowArrowySb_tF">set(alwaysShowArrow:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sets whether to show a dropdown arrow even when using an icon.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@inlinable</span>
+<span class="kd">func</span> <span class="nf">set</span><span class="p">(</span><span class="nv">alwaysShowArrow</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L3789-L3792">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7509,7 +9361,7 @@ If <code>func</code> is non-<code>nil</code>, <code>menu_button</code> will alwa
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L3191-L3194">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L3806-L3809">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7552,7 +9404,7 @@ as if you passed <code>GTK_ARROW_DOWN</code> (although you won’t see any arrow
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L3206-L3209">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L3821-L3824">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7586,7 +9438,7 @@ as if you passed <code>GTK_ARROW_DOWN</code> (although you won’t see any arrow
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L3212-L3215">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L3827-L3830">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7620,7 +9472,7 @@ as if you passed <code>GTK_ARROW_DOWN</code> (although you won’t see any arrow
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L3218-L3221">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L3833-L3836">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7654,7 +9506,7 @@ as if you passed <code>GTK_ARROW_DOWN</code> (although you won’t see any arrow
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L3224-L3227">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L3839-L3842">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7697,7 +9549,7 @@ dissociated from the <code>menu_button</code>, and the property is set to <code>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L3239-L3242">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L3854-L3857">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7740,7 +9592,7 @@ dissociated from the <code>menu_button</code>, and the property is set to <code>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L3253-L3256">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L3868-L3871">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7779,7 +9631,7 @@ from the <code>menu_button</code>, and the property is set to <code>nil</code>.<
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L3264-L3267">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L3879-L3882">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7818,7 +9670,43 @@ from the <code>menu_button</code>, and the property is set to <code>nil</code>.<
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L3274-L3277">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L3889-L3892">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3Gtk18MenuButtonProtocolPAAE3set7primaryySb_tF"></a>
+                    <a name="//apple_ref/swift/Method/set(primary:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3Gtk18MenuButtonProtocolPAAE3set7primaryySb_tF">set(primary:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sets whether menu button acts as a primary menu.</p>
+
+<p>Primary menus can be opened with the &lt;kbd&gt;F10&lt;/kbd&gt; key.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@inlinable</span>
+<span class="kd">func</span> <span class="nf">set</span><span class="p">(</span><span class="nv">primary</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L3897-L3900">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7852,7 +9740,41 @@ from the <code>menu_button</code>, and the property is set to <code>nil</code>.<
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L3280-L3283">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L3903-L3906">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3Gtk18MenuButtonProtocolPAAE15alwaysShowArrowSbvp"></a>
+                    <a name="//apple_ref/swift/Property/alwaysShowArrow" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3Gtk18MenuButtonProtocolPAAE15alwaysShowArrowSbvp">alwaysShowArrow</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Gets whether to show a dropdown arrow even when using an icon.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@inlinable</span>
+<span class="k">var</span> <span class="nv">alwaysShowArrow</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">nonmutating</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L3908-L3918">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7887,7 +9809,7 @@ menu or popover will be popped out.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L3286-L3305">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L3922-L3941">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7921,7 +9843,7 @@ menu or popover will be popped out.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L3308-L3318">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L3944-L3954">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7955,7 +9877,7 @@ menu or popover will be popped out.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L3321-L3331">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L3957-L3967">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7989,7 +9911,7 @@ menu or popover will be popped out.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L3334-L3344">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L3970-L3980">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8023,7 +9945,7 @@ menu or popover will be popped out.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L3347-L3366">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L3983-L4002">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8057,7 +9979,43 @@ menu or popover will be popped out.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L3369-L3387">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L4005-L4023">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3Gtk18MenuButtonProtocolPAAE7primarySbvp"></a>
+                    <a name="//apple_ref/swift/Property/primary" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3Gtk18MenuButtonProtocolPAAE7primarySbvp">primary</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Whether the menu button acts as a primary menu.</p>
+
+<p>Primary menus can be opened using the &lt;kbd&gt;F10&lt;/kbd&gt; key</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@inlinable</span>
+<span class="k">var</span> <span class="nv">primary</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">nonmutating</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L4028-L4040">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8092,7 +10050,7 @@ mnemonic.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L3391-L3402">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L4044-L4055">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8105,8 +10063,8 @@ mnemonic.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-05-16)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.7</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-12-10)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

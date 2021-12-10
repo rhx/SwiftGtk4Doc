@@ -21,7 +21,7 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          Gtk 4.2.1 Docs
+          Gtk 4.4.1 Docs
         </a>
          (95% documented)
       </p>
@@ -663,6 +663,9 @@
                 <a class="nav-group-task-link" href="../Classes/PasswordEntry.html">PasswordEntry</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PasswordEntryBuffer.html">PasswordEntryBuffer</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Picture.html">Picture</a>
               </li>
               <li class="nav-group-task">
@@ -990,6 +993,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk13INTERFACE_AGEs5Int32Vvp">INTERFACE_AGE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21INVALID_LIST_POSITIONs6UInt32Vvp">INVALID_LIST_POSITION</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21LEVEL_BAR_OFFSET_FULLSSvp">LEVEL_BAR_OFFSET_FULL</a>
@@ -2111,6 +2117,12 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PanedSignalName.html">PanedSignalName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferPropertyName.html">PasswordEntryBufferPropertyName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferSignalName.html">PasswordEntryBufferSignalName</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PasswordEntryPropertyName.html">PasswordEntryPropertyName</a>
@@ -4111,6 +4123,12 @@
                 <a class="nav-group-task-link" href="../Protocols/ParamSpecExpressionProtocol.html">ParamSpecExpressionProtocol</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferClassProtocol.html">PasswordEntryBufferClassProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferProtocol.html">PasswordEntryBufferProtocol</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/PasswordEntryClassProtocol.html">PasswordEntryClassProtocol</a>
               </li>
               <li class="nav-group-task">
@@ -5577,6 +5595,12 @@
                 <a class="nav-group-task-link" href="../Structs/ParamSpecExpressionRef.html">ParamSpecExpressionRef</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferClassRef.html">PasswordEntryBufferClassRef</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferRef.html">PasswordEntryBufferRef</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/PasswordEntryClassRef.html">PasswordEntryClassRef</a>
               </li>
               <li class="nav-group-task">
@@ -6704,12 +6728,7 @@
 
                 </div>
               </div>
-            <p>The <code>DropTargetProtocol</code> protocol exposes the methods and properties of an underlying <code>GtkDropTarget</code> instance.
-The default implementation of these can be found in the protocol extension below.
-For a concrete class that implements these methods and properties, see <code><a href="../Classes/DropTarget.html">DropTarget</a></code>.
-Alternatively, use <code><a href="../Structs/DropTargetRef.html">DropTargetRef</a></code> as a lighweight, <code>unowned</code> reference if you already have an instance you just want to use.</p>
-
-<p><code>GtkDropTarget</code> is an event controller to receive Drag-and-Drop operations.</p>
+            <p><code>GtkDropTarget</code> is an event controller to receive Drag-and-Drop operations.</p>
 
 <p>The most basic way to use a <code>GtkDropTarget</code> to receive drops on a
 widget is to create it via [ctor<code>Gtk.DropTarget.new</code>], passing in the
@@ -6780,8 +6799,13 @@ has not been rejected, that widget will receive the
 UI state during a Drag-and-Drop operation (e.g. switching tabs), you can
 use [class<code>Gtk.DropControllerMotion</code>].</p>
 
+<p>The <code>DropTargetProtocol</code> protocol exposes the methods and properties of an underlying <code>GtkDropTarget</code> instance.
+The default implementation of these can be found in the protocol extension below.
+For a concrete class that implements these methods and properties, see <code><a href="../Classes/DropTarget.html">DropTarget</a></code>.
+Alternatively, use <code><a href="../Structs/DropTargetRef.html">DropTargetRef</a></code> as a lighweight, <code>unowned</code> reference if you already have an instance you just want to use.</p>
+
               <div class="slightly-smaller">
-                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L5625-L5634">Show on GitHub</a>
+                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L5676-L5685">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -6815,7 +6839,7 @@ use [class<code>Gtk.DropControllerMotion</code>].</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L5627">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L5678">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6853,7 +6877,7 @@ use [class<code>Gtk.DropControllerMotion</code>].</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L5630">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L5681">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6883,7 +6907,7 @@ use [class<code>Gtk.DropControllerMotion</code>].</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L5633">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L5684">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7014,7 +7038,7 @@ use [class<code>Gtk.DropControllerMotion</code>].</p>
                         <p>binding reference or <code>nil</code> in case of an error</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L6068-L6092">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L6126-L6150">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7071,7 +7095,7 @@ use [class<code>Gtk.DropControllerMotion</code>].</p>
                         <p>the value of the named property</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L6097-L6101">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L6155-L6159">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7129,7 +7153,7 @@ use [class<code>Gtk.DropControllerMotion</code>].</p>
                         <p>the value of the named property</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L6107-L6109">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L6165-L6167">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7248,7 +7272,7 @@ use [class<code>Gtk.DropControllerMotion</code>].</p>
                         <p>The signal handler ID (always greater than 0 for successful connections)</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L6231-L6233">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L6296-L6298">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7354,7 +7378,7 @@ use [class<code>Gtk.DropControllerMotion</code>].</p>
                         <p>The signal handler ID (always greater than 0 for successful connections)</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L6244-L6246">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L6309-L6311">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7465,7 +7489,7 @@ Run the given callback whenever the <code>accept</code> signal is emitted</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L6271-L6285">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L6336-L6350">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7498,7 +7522,7 @@ Run the given callback whenever the <code>accept</code> signal is emitted</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L6288">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L6353">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7526,7 +7550,7 @@ a drop zone or not. If it is not in a drop zone, it returns <code>false</code>
 and no further processing is necessary.</p>
 
 <p>Otherwise, the handler returns <code>true</code>. In this case, this handler will
-accept the drop. The handler is responsible for rading the given <code><a href="../Protocols/DropTargetProtocol.html#/s:3Gtk18DropTargetProtocolPAAE5value10GLibObject8ValueRefVSgvp">value</a></code>
+accept the drop. The handler is responsible for using the given <code><a href="../Protocols/DropTargetProtocol.html#/s:3Gtk18DropTargetProtocolPAAE5value10GLibObject8ValueRefVSgvp">value</a></code>
 and performing the drop operation.</p>
 <div class="aside aside-note">
     <p class="aside-title">Note</p>
@@ -7626,7 +7650,7 @@ Run the given callback whenever the <code><a href="../Protocols/DropTargetProtoc
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L6307-L6321">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L6372-L6386">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7659,7 +7683,7 @@ Run the given callback whenever the <code><a href="../Protocols/DropTargetProtoc
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L6324">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L6389">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7769,7 +7793,7 @@ Run the given callback whenever the <code>enter</code> signal is emitted</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L6336-L6350">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L6401-L6415">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7802,7 +7826,7 @@ Run the given callback whenever the <code>enter</code> signal is emitted</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L6353">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L6418">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7889,7 +7913,7 @@ Run the given callback whenever the <code>leave</code> signal is emitted</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L6364-L6378">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L6429-L6443">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7922,7 +7946,7 @@ Run the given callback whenever the <code>leave</code> signal is emitted</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L6381">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L6446">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8030,7 +8054,7 @@ Run the given callback whenever the <code>motion</code> signal is emitted</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L6391-L6405">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L6456-L6470">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8063,7 +8087,7 @@ Run the given callback whenever the <code>motion</code> signal is emitted</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L6408">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L6473">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8098,8 +8122,9 @@ and common practice is to do that only when the value has actually changed.</p>
 
 <p>This signal is typically used to obtain change notification for a
 single property, by specifying the property name as a detail in the
-<code>g_signal_connect()</code> call, like this:
-(C Language Example):</p>
+<code>g_signal_connect()</code> call, like this:</p>
+
+<p>(C Language Example):</p>
 <pre class="highlight plaintext"><code>g_signal_connect (text_view-&gt;buffer, "notify::paste-target-list",
                   G_CALLBACK (gtk_text_view_target_list_notify),
                   text_view)
@@ -8182,7 +8207,7 @@ Run the given callback whenever the <code>notifyActions</code> signal is emitted
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L6440-L6454">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L6507-L6521">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8215,7 +8240,160 @@ Run the given callback whenever the <code>notifyActions</code> signal is emitted
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L6457">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L6524">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3Gtk18DropTargetProtocolPAAE015onNotifyCurrentB05flags7handlerSi10GLibObject12ConnectFlagsV_yAA0bC3RefV_AG09ParamSpecN0VtctF"></a>
+                    <a name="//apple_ref/swift/Method/onNotifyCurrentDrop(flags:handler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3Gtk18DropTargetProtocolPAAE015onNotifyCurrentB05flags7handlerSi10GLibObject12ConnectFlagsV_yAA0bC3RefV_AG09ParamSpecN0VtctF">onNotifyCurrentDrop(flags:<wbr>handler:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The notify signal is emitted on an object when one of its properties has
+its value set through <code>g_object_set_property()</code>, <code>g_object_set()</code>, et al.</p>
+
+<p>Note that getting this signal doesn’t itself guarantee that the value of
+the property has actually changed. When it is emitted is determined by the
+derived GObject class. If the implementor did not create the property with
+<code>G_PARAM_EXPLICIT_NOTIFY</code>, then any call to <code>g_object_set_property()</code> results
+in <code>notify</code> being emitted, even if the new value is the same as the old.
+If they did pass <code>G_PARAM_EXPLICIT_NOTIFY</code>, then this signal is emitted only
+when they explicitly call <code>g_object_notify()</code> or <code>g_object_notify_by_pspec()</code>,
+and common practice is to do that only when the value has actually changed.</p>
+
+<p>This signal is typically used to obtain change notification for a
+single property, by specifying the property name as a detail in the
+<code>g_signal_connect()</code> call, like this:</p>
+
+<p>(C Language Example):</p>
+<pre class="highlight plaintext"><code>g_signal_connect (text_view-&gt;buffer, "notify::paste-target-list",
+                  G_CALLBACK (gtk_text_view_target_list_notify),
+                  text_view)
+</code></pre>
+
+<p>It is important to note that you must use
+<a href="#canonical-parameter-names">canonical parameter names</a> as
+detail strings for the notify signal.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    This represents the underlying <code>notify::current-drop</code> signal
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">@inlinable</span>
+<span class="kd">func</span> <span class="nf">onNotifyCurrentDrop</span><span class="p">(</span><span class="nv">flags</span><span class="p">:</span> <span class="kt">ConnectFlags</span> <span class="o">=</span> <span class="kt">ConnectFlags</span><span class="p">(</span><span class="mi">0</span><span class="p">),</span> <span class="nv">handler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">unownedSelf</span><span class="p">:</span> <span class="kt"><a href="../Structs/DropTargetRef.html">DropTargetRef</a></span><span class="p">,</span> <span class="n">_</span> <span class="nv">pspec</span><span class="p">:</span> <span class="kt">ParamSpecRef</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>flags</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Flags</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>unownedSelf</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Reference to instance of self</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>pspec</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the <code>GParamSpec</code> of the property which changed.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>handler</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The signal handler to call
+Run the given callback whenever the <code>notifyCurrentDrop</code> signal is emitted</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L6558-L6572">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3Gtk18DropTargetProtocolPAAE013notifyCurrentB6SignalAA0bcG4NameOvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/notifyCurrentDropSignal" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3Gtk18DropTargetProtocolPAAE013notifyCurrentB6SignalAA0bcG4NameOvpZ">notifyCurrentDropSignal</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Typed <code>notify::current-drop</code> signal for using the <code>connect(signal:)</code> methods</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="k">var</span> <span class="nv">notifyCurrentDropSignal</span><span class="p">:</span> <span class="kt"><a href="../Enums/DropTargetSignalName.html">DropTargetSignalName</a></span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L6575">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8250,8 +8428,9 @@ and common practice is to do that only when the value has actually changed.</p>
 
 <p>This signal is typically used to obtain change notification for a
 single property, by specifying the property name as a detail in the
-<code>g_signal_connect()</code> call, like this:
-(C Language Example):</p>
+<code>g_signal_connect()</code> call, like this:</p>
+
+<p>(C Language Example):</p>
 <pre class="highlight plaintext"><code>g_signal_connect (text_view-&gt;buffer, "notify::paste-target-list",
                   G_CALLBACK (gtk_text_view_target_list_notify),
                   text_view)
@@ -8334,7 +8513,7 @@ Run the given callback whenever the <code>notifyDrop</code> signal is emitted</p
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L6489-L6503">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L6609-L6623">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8367,7 +8546,7 @@ Run the given callback whenever the <code>notifyDrop</code> signal is emitted</p
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L6506">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L6626">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8402,8 +8581,9 @@ and common practice is to do that only when the value has actually changed.</p>
 
 <p>This signal is typically used to obtain change notification for a
 single property, by specifying the property name as a detail in the
-<code>g_signal_connect()</code> call, like this:
-(C Language Example):</p>
+<code>g_signal_connect()</code> call, like this:</p>
+
+<p>(C Language Example):</p>
 <pre class="highlight plaintext"><code>g_signal_connect (text_view-&gt;buffer, "notify::paste-target-list",
                   G_CALLBACK (gtk_text_view_target_list_notify),
                   text_view)
@@ -8486,7 +8666,7 @@ Run the given callback whenever the <code>notifyFormats</code> signal is emitted
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L6538-L6552">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L6660-L6674">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8519,7 +8699,7 @@ Run the given callback whenever the <code>notifyFormats</code> signal is emitted
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L6555">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L6677">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8554,8 +8734,9 @@ and common practice is to do that only when the value has actually changed.</p>
 
 <p>This signal is typically used to obtain change notification for a
 single property, by specifying the property name as a detail in the
-<code>g_signal_connect()</code> call, like this:
-(C Language Example):</p>
+<code>g_signal_connect()</code> call, like this:</p>
+
+<p>(C Language Example):</p>
 <pre class="highlight plaintext"><code>g_signal_connect (text_view-&gt;buffer, "notify::paste-target-list",
                   G_CALLBACK (gtk_text_view_target_list_notify),
                   text_view)
@@ -8638,7 +8819,7 @@ Run the given callback whenever the <code>notifyPreload</code> signal is emitted
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L6587-L6601">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L6711-L6725">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8671,7 +8852,7 @@ Run the given callback whenever the <code>notifyPreload</code> signal is emitted
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L6604">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L6728">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8706,8 +8887,9 @@ and common practice is to do that only when the value has actually changed.</p>
 
 <p>This signal is typically used to obtain change notification for a
 single property, by specifying the property name as a detail in the
-<code>g_signal_connect()</code> call, like this:
-(C Language Example):</p>
+<code>g_signal_connect()</code> call, like this:</p>
+
+<p>(C Language Example):</p>
 <pre class="highlight plaintext"><code>g_signal_connect (text_view-&gt;buffer, "notify::paste-target-list",
                   G_CALLBACK (gtk_text_view_target_list_notify),
                   text_view)
@@ -8790,7 +8972,7 @@ Run the given callback whenever the <code>notifyValue</code> signal is emitted</
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L6636-L6650">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L6762-L6776">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8823,7 +9005,7 @@ Run the given callback whenever the <code>notifyValue</code> signal is emitted</
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L6653">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L6779">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8870,7 +9052,43 @@ Run the given callback whenever the <code>notifyValue</code> signal is emitted</
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L6663-L6666">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L6789-L6792">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3Gtk18DropTargetProtocolPAAE010getCurrentB03Gdk0B3RefVSgyF"></a>
+                    <a name="//apple_ref/swift/Method/getCurrentDrop()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3Gtk18DropTargetProtocolPAAE010getCurrentB03Gdk0B3RefVSgyF">getCurrentDrop()</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Gets the currently handled drop operation.</p>
+
+<p>If no drop operation is going on, <code>nil</code> is returned.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@inlinable</span>
+<span class="kd">func</span> <span class="nf">getCurrentDrop</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Gdk</span><span class="o">.</span><span class="kt">DropRef</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L6797-L6800">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8895,18 +9113,22 @@ Run the given callback whenever the <code>notifyValue</code> signal is emitted</
 
 <p>If no drop operation is going on, <code>nil</code> is returned.</p>
 
+<p><strong>get_drop is deprecated:</strong>
+Use [<a href="mailto:method@Gtk.DropTarget.get_current_drop">method@Gtk.DropTarget.get_current_drop</a>] instead</p>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@inlinable</span>
+                          <pre class="highlight swift"><code><span class="kd">@available</span><span class="p">(</span><span class="o">*</span><span class="p">,</span> <span class="n">deprecated</span><span class="p">)</span>
+<span class="kd">@inlinable</span>
 <span class="kd">func</span> <span class="nf">getDrop</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Gdk</span><span class="o">.</span><span class="kt">DropRef</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L6671-L6674">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L6808-L6811">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8942,7 +9164,7 @@ Run the given callback whenever the <code>notifyValue</code> signal is emitted</
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L6679-L6682">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L6816-L6819">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8963,9 +9185,9 @@ Run the given callback whenever the <code>notifyValue</code> signal is emitted</
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Gets the list of supported <code>GTypes</code> for <code>self</code>.</p>
+                        <p>Gets the list of supported <code>GType</code>s that can be dropped on the target.</p>
 
-<p>If no type have been set, <code>nil</code> will be returned.</p>
+<p>If no types have been set, <code>NULL</code> will be returned.</p>
 
                       </div>
                       <div class="declaration">
@@ -8978,7 +9200,7 @@ Run the given callback whenever the <code>notifyValue</code> signal is emitted</
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L6687-L6690">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L6824-L6827">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9012,7 +9234,7 @@ Run the given callback whenever the <code>notifyValue</code> signal is emitted</
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L6693-L6696">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L6830-L6833">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9046,7 +9268,7 @@ Run the given callback whenever the <code>notifyValue</code> signal is emitted</
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L6699-L6702">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L6836-L6839">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9069,7 +9291,7 @@ Run the given callback whenever the <code>notifyValue</code> signal is emitted</
                       <div class="abstract">
                         <p>Rejects the ongoing drop operation.</p>
 
-<p>If no drop operation is ongoing, i.e when [property<code>Gtk.DropTarget:drop</code>]
+<p>If no drop operation is ongoing, i.e when [property<code>Gtk.DropTarget:current-drop</code>]
 is <code>nil</code>, this function does nothing.</p>
 
 <p>This function should be used when delaying the decision
@@ -9087,7 +9309,7 @@ the data.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L6712-L6715">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L6849-L6852">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9121,7 +9343,7 @@ the data.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L6718-L6721">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L6855-L6858">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9155,7 +9377,7 @@ the data.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L6724-L6727">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L6861-L6864">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9189,7 +9411,7 @@ the data.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L6730-L6733">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L6867-L6870">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9223,7 +9445,43 @@ the data.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L6735-L6745">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L6872-L6882">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3Gtk18DropTargetProtocolPAAE07currentB03Gdk0B3RefVSgvp"></a>
+                    <a name="//apple_ref/swift/Property/currentDrop" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3Gtk18DropTargetProtocolPAAE07currentB03Gdk0B3RefVSgvp">currentDrop</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Gets the currently handled drop operation.</p>
+
+<p>If no drop operation is going on, <code>nil</code> is returned.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@inlinable</span>
+<span class="k">var</span> <span class="nv">currentDrop</span><span class="p">:</span> <span class="kt">Gdk</span><span class="o">.</span><span class="kt">DropRef</span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L6887-L6895">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9246,6 +9504,9 @@ the data.</p>
                       <div class="abstract">
                         <p>The <code>GdkDrop</code> that is currently being performed.</p>
 
+<p><strong>drop is deprecated:</strong>
+Use [<a href="mailto:property@Gtk.DropTarget">property@Gtk.DropTarget</a>:current-drop] instead</p>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
@@ -9257,7 +9518,7 @@ the data.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L6748-L6756">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L6901-L6912">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9291,7 +9552,7 @@ the data.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L6759-L6767">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L6915-L6923">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9342,7 +9603,7 @@ so enabling it there is free.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L6787-L6797">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L6943-L6953">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9384,7 +9645,7 @@ of available data.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L6808-L6814">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L6964-L6970">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9397,8 +9658,8 @@ of available data.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-05-16)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.7</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-12-10)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

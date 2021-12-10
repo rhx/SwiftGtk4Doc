@@ -21,7 +21,7 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          Gtk 4.2.1 Docs
+          Gtk 4.4.1 Docs
         </a>
          (95% documented)
       </p>
@@ -663,6 +663,9 @@
                 <a class="nav-group-task-link" href="../Classes/PasswordEntry.html">PasswordEntry</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PasswordEntryBuffer.html">PasswordEntryBuffer</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Picture.html">Picture</a>
               </li>
               <li class="nav-group-task">
@@ -990,6 +993,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk13INTERFACE_AGEs5Int32Vvp">INTERFACE_AGE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21INVALID_LIST_POSITIONs6UInt32Vvp">INVALID_LIST_POSITION</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21LEVEL_BAR_OFFSET_FULLSSvp">LEVEL_BAR_OFFSET_FULL</a>
@@ -2111,6 +2117,12 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PanedSignalName.html">PanedSignalName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferPropertyName.html">PasswordEntryBufferPropertyName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferSignalName.html">PasswordEntryBufferSignalName</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PasswordEntryPropertyName.html">PasswordEntryPropertyName</a>
@@ -4111,6 +4123,12 @@
                 <a class="nav-group-task-link" href="../Protocols/ParamSpecExpressionProtocol.html">ParamSpecExpressionProtocol</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferClassProtocol.html">PasswordEntryBufferClassProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferProtocol.html">PasswordEntryBufferProtocol</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/PasswordEntryClassProtocol.html">PasswordEntryClassProtocol</a>
               </li>
               <li class="nav-group-task">
@@ -5577,6 +5595,12 @@
                 <a class="nav-group-task-link" href="../Structs/ParamSpecExpressionRef.html">ParamSpecExpressionRef</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferClassRef.html">PasswordEntryBufferClassRef</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferRef.html">PasswordEntryBufferRef</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/PasswordEntryClassRef.html">PasswordEntryClassRef</a>
               </li>
               <li class="nav-group-task">
@@ -6704,17 +6728,12 @@
 
                 </div>
               </div>
-            <p>The <code>ShortcutControllerProtocol</code> protocol exposes the methods and properties of an underlying <code>GtkShortcutController</code> instance.
-The default implementation of these can be found in the protocol extension below.
-For a concrete class that implements these methods and properties, see <code><a href="../Classes/ShortcutController.html">ShortcutController</a></code>.
-Alternatively, use <code><a href="../Structs/ShortcutControllerRef.html">ShortcutControllerRef</a></code> as a lighweight, <code>unowned</code> reference if you already have an instance you just want to use.</p>
-
-<p><code>GtkShortcutController</code> is an event controller that manages shortcuts.</p>
+            <p><code>GtkShortcutController</code> is an event controller that manages shortcuts.</p>
 
 <p>Most common shortcuts are using this controller implicitly, e.g. by
 adding a mnemonic underline to a <code>GtkLabel</code>, or by installing a key
-binding using <code>gtk_widget_class_add_binding()</code>, or by adding accelerators
-to global actions using <code>gtk_application_set_accels_for_action()</code>.</p>
+binding using [method<code>Gtk.WidgetClass.add_binding</code>], or by adding accelerators
+to global actions using [method<code>Gtk.Application.set_accels_for_action</code>].</p>
 
 <p>But it is possible to create your own shortcut controller, and add
 shortcuts to it.</p>
@@ -6733,7 +6752,7 @@ shortcuts in the same place as the widgets.</p>
         <span class="ni">&amp;lt;</span>property name='scope'<span class="ni">&amp;gt;</span>managed<span class="ni">&amp;lt;</span>/property<span class="ni">&amp;gt;</span>
         <span class="ni">&amp;lt;</span>child<span class="ni">&amp;gt;</span>
           <span class="ni">&amp;lt;</span>object class='GtkShortcut'<span class="ni">&amp;gt;</span>
-            <span class="ni">&amp;lt;</span>property name='trigger'<span class="ni">&amp;gt;&amp;amp;</span>lt;Control<span class="ni">&amp;amp;</span>gt;k<span class="ni">&amp;lt;</span>/property<span class="ni">&amp;gt;</span>
+            <span class="ni">&amp;lt;</span>property name='trigger'<span class="ni">&amp;gt;&amp;lt;</span>Control<span class="ni">&amp;gt;</span>k<span class="ni">&amp;lt;</span>/property<span class="ni">&amp;gt;</span>
             <span class="ni">&amp;lt;</span>property name='action'<span class="ni">&amp;gt;</span>activate<span class="ni">&amp;lt;</span>/property<span class="ni">&amp;gt;</span>
           <span class="ni">&amp;lt;</span>/object<span class="ni">&amp;gt;</span>
         <span class="ni">&amp;lt;</span>/child<span class="ni">&amp;gt;</span>
@@ -6748,8 +6767,13 @@ for the syntax for other kinds of <code>GtkShortcutAction</code>. See
 [ctor<code>Gtk.ShortcutTrigger.parse_string</code>] to learn more about the syntax
 for triggers.</p>
 
+<p>The <code>ShortcutControllerProtocol</code> protocol exposes the methods and properties of an underlying <code>GtkShortcutController</code> instance.
+The default implementation of these can be found in the protocol extension below.
+For a concrete class that implements these methods and properties, see <code><a href="../Classes/ShortcutController.html">ShortcutController</a></code>.
+Alternatively, use <code><a href="../Structs/ShortcutControllerRef.html">ShortcutControllerRef</a></code> as a lighweight, <code>unowned</code> reference if you already have an instance you just want to use.</p>
+
               <div class="slightly-smaller">
-                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L9893-L9902">Show on GitHub</a>
+                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L9984-L9993">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -6783,7 +6807,7 @@ for triggers.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L9895">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L9986">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6821,7 +6845,7 @@ for triggers.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L9898">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L9989">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6851,7 +6875,7 @@ for triggers.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L9901">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L9992">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6982,7 +7006,7 @@ for triggers.</p>
                         <p>binding reference or <code>nil</code> in case of an error</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L10283-L10307">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L10376-L10400">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7039,7 +7063,7 @@ for triggers.</p>
                         <p>the value of the named property</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L10312-L10316">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L10405-L10409">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7097,7 +7121,7 @@ for triggers.</p>
                         <p>the value of the named property</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L10322-L10324">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L10415-L10417">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7147,7 +7171,7 @@ function does nothing.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L10379-L10382">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L10474-L10477">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7181,7 +7205,7 @@ function does nothing.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L10385-L10388">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L10480-L10483">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7202,8 +7226,9 @@ function does nothing.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Gets the scope for when this controller activates its shortcuts. See
-<code>gtk_shortcut_controller_set_scope()</code> for details.</p>
+                        <p>Gets the scope for when this controller activates its shortcuts.</p>
+
+<p>See [method<code>Gtk.ShortcutController.set_scope</code>] for details.</p>
 
                       </div>
                       <div class="declaration">
@@ -7216,7 +7241,7 @@ function does nothing.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L10392-L10395">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L10488-L10491">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7253,7 +7278,7 @@ uses an external shortcut list, this function does nothing.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L10401-L10404">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L10497-L10500">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7274,12 +7299,12 @@ uses an external shortcut list, this function does nothing.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Sets the controller to have the given <code>mnemonics_modifiers</code>.</p>
+                        <p>Sets the controller to use the given modifier for mnemonics.</p>
 
 <p>The mnemonics modifiers determines which modifiers need to be pressed to allow
 activation of shortcuts with mnemonics triggers.</p>
 
-<p>GTK normally uses the Alt modifier for mnemonics, except in <code>GtkPopoverMenus</code>,
+<p>GTK normally uses the Alt modifier for mnemonics, except in <code>GtkPopoverMenu</code>s,
 where mnemonics can be triggered without any modifiers. It should be very
 rarely necessary to change this, and doing so is likely to interfere with
 other shortcuts.</p>
@@ -7299,7 +7324,7 @@ have their own modifiers for activating mnemonics.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L10419-L10422">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L10515-L10518">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7341,7 +7366,7 @@ when the widget has focus.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L10433-L10436">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L10529-L10532">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7375,7 +7400,7 @@ when the widget has focus.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L10438-L10460">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L10534-L10556">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7409,7 +7434,7 @@ when the widget has focus.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L10463-L10482">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L10559-L10579">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7422,8 +7447,8 @@ when the widget has focus.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-05-16)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.7</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-12-10)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

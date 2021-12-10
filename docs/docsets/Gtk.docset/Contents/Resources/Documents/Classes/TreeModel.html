@@ -21,7 +21,7 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          Gtk 4.2.1 Docs
+          Gtk 4.4.1 Docs
         </a>
          (95% documented)
       </p>
@@ -663,6 +663,9 @@
                 <a class="nav-group-task-link" href="../Classes/PasswordEntry.html">PasswordEntry</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PasswordEntryBuffer.html">PasswordEntryBuffer</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Picture.html">Picture</a>
               </li>
               <li class="nav-group-task">
@@ -990,6 +993,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk13INTERFACE_AGEs5Int32Vvp">INTERFACE_AGE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21INVALID_LIST_POSITIONs6UInt32Vvp">INVALID_LIST_POSITION</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21LEVEL_BAR_OFFSET_FULLSSvp">LEVEL_BAR_OFFSET_FULL</a>
@@ -2111,6 +2117,12 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PanedSignalName.html">PanedSignalName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferPropertyName.html">PasswordEntryBufferPropertyName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferSignalName.html">PasswordEntryBufferSignalName</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PasswordEntryPropertyName.html">PasswordEntryPropertyName</a>
@@ -4111,6 +4123,12 @@
                 <a class="nav-group-task-link" href="../Protocols/ParamSpecExpressionProtocol.html">ParamSpecExpressionProtocol</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferClassProtocol.html">PasswordEntryBufferClassProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferProtocol.html">PasswordEntryBufferProtocol</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/PasswordEntryClassProtocol.html">PasswordEntryClassProtocol</a>
               </li>
               <li class="nav-group-task">
@@ -5577,6 +5595,12 @@
                 <a class="nav-group-task-link" href="../Structs/ParamSpecExpressionRef.html">ParamSpecExpressionRef</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferClassRef.html">PasswordEntryBufferClassRef</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferRef.html">PasswordEntryBufferRef</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/PasswordEntryClassRef.html">PasswordEntryClassRef</a>
               </li>
               <li class="nav-group-task">
@@ -6704,11 +6728,7 @@
 
                 </div>
               </div>
-            <p>The <code>TreeModel</code> type acts as an owner of an underlying <code>GtkTreeModel</code> instance.
-It provides the methods that can operate on this data type through <code><a href="../Protocols/TreeModelProtocol.html">TreeModelProtocol</a></code> conformance.
-Use <code>TreeModel</code> as a strong reference or owner of a <code>GtkTreeModel</code> instance.</p>
-
-<p>The tree interface used by GtkTreeView</p>
+            <p>The tree interface used by GtkTreeView</p>
 
 <p>The <code>GtkTreeModel</code> interface defines a generic tree interface for
 use by the <code>GtkTreeView</code> widget. It is an abstract interface, and
@@ -6764,7 +6784,7 @@ a set of operations using them for navigating the model.</p>
 <p>It is expected that models fill in the iterator with private data.
 For example, the <code>GtkListStore</code> model, which is internally a simple
 linked list, stores a list node in one of the pointers. The
-<code>GtkTreeModelSort</code> stores an array and an offset in two of the
+<code>GtkTreeModel</code>Sort stores an array and an offset in two of the
 pointers. Additionally, there is an integer field. This field is
 generally filled with a unique stamp per model. This stamp is for
 catching errors resulting from using invalid iterators with a model.</p>
@@ -6899,8 +6919,12 @@ however, signals must be emitted at all times (however the root level
 is always referenced when any view is attached).</p></li>
 </ul>
 
+<p>The <code>TreeModel</code> type acts as an owner of an underlying <code>GtkTreeModel</code> instance.
+It provides the methods that can operate on this data type through <code><a href="../Protocols/TreeModelProtocol.html">TreeModelProtocol</a></code> conformance.
+Use <code>TreeModel</code> as a strong reference or owner of a <code>GtkTreeModel</code> instance.</p>
+
               <div class="slightly-smaller">
-                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TreeDragSource-TreeSortable.swift#L1000-L1142">Show on GitHub</a>
+                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TreeDragSource-TreeSortable.swift#L1006-L1148">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -6937,7 +6961,7 @@ is always referenced when any view is attached).</p></li>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TreeDragSource-TreeSortable.swift#L1003">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TreeDragSource-TreeSortable.swift#L1009">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6989,7 +7013,7 @@ i.e., ownership is transferred to the <code>TreeModel</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TreeDragSource-TreeSortable.swift#L1009-L1011">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TreeDragSource-TreeSortable.swift#L1015-L1017">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7041,7 +7065,7 @@ i.e., ownership is transferred to the <code>TreeModel</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TreeDragSource-TreeSortable.swift#L1017-L1019">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TreeDragSource-TreeSortable.swift#L1023-L1025">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7094,7 +7118,7 @@ i.e., ownership is transferred to the <code>TreeModel</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TreeDragSource-TreeSortable.swift#L1026-L1029">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TreeDragSource-TreeSortable.swift#L1032-L1035">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7147,7 +7171,7 @@ i.e., ownership is transferred to the <code>TreeModel</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TreeDragSource-TreeSortable.swift#L1036-L1039">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TreeDragSource-TreeSortable.swift#L1042-L1045">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7199,7 +7223,7 @@ i.e., ownership is transferred to the <code>TreeModel</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TreeDragSource-TreeSortable.swift#L1045-L1048">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TreeDragSource-TreeSortable.swift#L1051-L1054">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7251,7 +7275,7 @@ i.e., ownership is transferred to the <code>TreeModel</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TreeDragSource-TreeSortable.swift#L1054-L1057">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TreeDragSource-TreeSortable.swift#L1060-L1063">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7303,7 +7327,7 @@ i.e., ownership is transferred to the <code>TreeModel</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TreeDragSource-TreeSortable.swift#L1063-L1066">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TreeDragSource-TreeSortable.swift#L1069-L1072">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7354,7 +7378,7 @@ i.e., ownership is transferred to the <code>TreeModel</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TreeDragSource-TreeSortable.swift#L1071-L1074">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TreeDragSource-TreeSortable.swift#L1077-L1080">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7405,7 +7429,7 @@ i.e., ownership is transferred to the <code>TreeModel</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TreeDragSource-TreeSortable.swift#L1084-L1086">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TreeDragSource-TreeSortable.swift#L1090-L1092">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7456,7 +7480,7 @@ i.e., ownership is transferred to the <code>TreeModel</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TreeDragSource-TreeSortable.swift#L1091-L1094">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TreeDragSource-TreeSortable.swift#L1097-L1100">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7507,7 +7531,7 @@ i.e., ownership is transferred to the <code>TreeModel</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TreeDragSource-TreeSortable.swift#L1099-L1101">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TreeDragSource-TreeSortable.swift#L1105-L1107">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7539,7 +7563,7 @@ i.e., ownership is transferred to the <code>TreeModel</code> instance.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TreeDragSource-TreeSortable.swift#L1105-L1108">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TreeDragSource-TreeSortable.swift#L1111-L1114">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7590,7 +7614,7 @@ i.e., ownership is transferred to the <code>TreeModel</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TreeDragSource-TreeSortable.swift#L1113-L1115">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TreeDragSource-TreeSortable.swift#L1119-L1121">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7641,7 +7665,7 @@ i.e., ownership is transferred to the <code>TreeModel</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TreeDragSource-TreeSortable.swift#L1120-L1123">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TreeDragSource-TreeSortable.swift#L1126-L1129">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7692,7 +7716,7 @@ i.e., ownership is transferred to the <code>TreeModel</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TreeDragSource-TreeSortable.swift#L1128-L1130">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TreeDragSource-TreeSortable.swift#L1134-L1136">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7743,7 +7767,7 @@ i.e., ownership is transferred to the <code>TreeModel</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TreeDragSource-TreeSortable.swift#L1135-L1138">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TreeDragSource-TreeSortable.swift#L1141-L1144">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7756,8 +7780,8 @@ i.e., ownership is transferred to the <code>TreeModel</code> instance.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-05-16)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.7</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-12-10)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

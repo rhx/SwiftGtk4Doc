@@ -21,7 +21,7 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          Gtk 4.2.1 Docs
+          Gtk 4.4.1 Docs
         </a>
          (95% documented)
       </p>
@@ -663,6 +663,9 @@
                 <a class="nav-group-task-link" href="../Classes/PasswordEntry.html">PasswordEntry</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PasswordEntryBuffer.html">PasswordEntryBuffer</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Picture.html">Picture</a>
               </li>
               <li class="nav-group-task">
@@ -990,6 +993,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk13INTERFACE_AGEs5Int32Vvp">INTERFACE_AGE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21INVALID_LIST_POSITIONs6UInt32Vvp">INVALID_LIST_POSITION</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21LEVEL_BAR_OFFSET_FULLSSvp">LEVEL_BAR_OFFSET_FULL</a>
@@ -2111,6 +2117,12 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PanedSignalName.html">PanedSignalName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferPropertyName.html">PasswordEntryBufferPropertyName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferSignalName.html">PasswordEntryBufferSignalName</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PasswordEntryPropertyName.html">PasswordEntryPropertyName</a>
@@ -4111,6 +4123,12 @@
                 <a class="nav-group-task-link" href="../Protocols/ParamSpecExpressionProtocol.html">ParamSpecExpressionProtocol</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferClassProtocol.html">PasswordEntryBufferClassProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferProtocol.html">PasswordEntryBufferProtocol</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/PasswordEntryClassProtocol.html">PasswordEntryClassProtocol</a>
               </li>
               <li class="nav-group-task">
@@ -5577,6 +5595,12 @@
                 <a class="nav-group-task-link" href="../Structs/ParamSpecExpressionRef.html">ParamSpecExpressionRef</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferClassRef.html">PasswordEntryBufferClassRef</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferRef.html">PasswordEntryBufferRef</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/PasswordEntryClassRef.html">PasswordEntryClassRef</a>
               </li>
               <li class="nav-group-task">
@@ -6704,11 +6728,7 @@
 
                 </div>
               </div>
-            <p>The <code>BuilderCScope</code> type acts as a reference-counted owner of an underlying <code>GtkBuilderCScope</code> instance.
-It provides the methods that can operate on this data type through <code><a href="../Protocols/BuilderCScopeProtocol.html">BuilderCScopeProtocol</a></code> conformance.
-Use <code>BuilderCScope</code> as a strong reference or owner of a <code>GtkBuilderCScope</code> instance.</p>
-
-<p>A <code>GtkBuilderScope</code> implementation for the C language.</p>
+            <p>A <code>GtkBuilderScope</code> implementation for the C language.</p>
 
 <p><code>GtkBuilderCScope</code> instances use symbols explicitly added to <code>builder</code>
 with prior calls to [method<code>Gtk.BuilderCScope.add_callback_symbol</code>].
@@ -6725,8 +6745,12 @@ symbols in the application.</p>
 called for all signal callbacks which are referenced by the loaded XML,
 this functionality will require that <code>GModule</code> be supported on the platform.</p>
 
+<p>The <code>BuilderCScope</code> type acts as a reference-counted owner of an underlying <code>GtkBuilderCScope</code> instance.
+It provides the methods that can operate on this data type through <code><a href="../Protocols/BuilderCScopeProtocol.html">BuilderCScopeProtocol</a></code> conformance.
+Use <code>BuilderCScope</code> as a strong reference or owner of a <code>GtkBuilderCScope</code> instance.</p>
+
               <div class="slightly-smaller">
-                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L3909-L4036">Show on GitHub</a>
+                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L3940-L4067">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -6784,7 +6808,7 @@ i.e., ownership is transferred to the <code>BuilderCScope</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L3914-L3916">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L3945-L3947">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6836,7 +6860,7 @@ i.e., ownership is transferred to the <code>BuilderCScope</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L3922-L3924">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L3953-L3955">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6889,7 +6913,7 @@ i.e., ownership is transferred to the <code>BuilderCScope</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L3931-L3934">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L3962-L3965">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6942,7 +6966,7 @@ i.e., ownership is transferred to the <code>BuilderCScope</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L3941-L3944">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L3972-L3975">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6994,7 +7018,7 @@ i.e., ownership is transferred to the <code>BuilderCScope</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L3950-L3953">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L3981-L3984">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7046,7 +7070,7 @@ i.e., ownership is transferred to the <code>BuilderCScope</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L3959-L3962">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L3990-L3993">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7098,7 +7122,7 @@ i.e., ownership is transferred to the <code>BuilderCScope</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L3968-L3970">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L3999-L4001">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7149,7 +7173,7 @@ Will retain <code>GtkBuilderCScope</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L3975-L3977">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L4006-L4008">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7200,7 +7224,7 @@ Will retain <code>GtkBuilderCScope</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L3982-L3984">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L4013-L4015">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7251,7 +7275,7 @@ Will retain <code>GtkBuilderCScope</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L3989-L3991">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L4020-L4022">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7302,7 +7326,7 @@ Will retain <code>GtkBuilderCScope</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L3996-L3998">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L4027-L4029">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7334,7 +7358,7 @@ Will retain <code>GtkBuilderCScope</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L4002-L4004">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L4033-L4035">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7385,7 +7409,7 @@ Will retain <code>GtkBuilderCScope</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L4009-L4011">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L4040-L4042">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7436,7 +7460,7 @@ Will retain <code>GtkBuilderCScope</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L4016-L4018">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L4047-L4049">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7487,7 +7511,7 @@ Will retain <code>GtkBuilderCScope</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L4023-L4025">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L4054-L4056">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7538,7 +7562,7 @@ Will retain <code>GtkBuilderCScope</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L4030-L4032">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BookmarkList-CClosureExpression.swift#L4061-L4063">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7551,8 +7575,8 @@ Will retain <code>GtkBuilderCScope</code>.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-05-16)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.7</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-12-10)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

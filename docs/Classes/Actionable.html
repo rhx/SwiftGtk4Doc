@@ -21,7 +21,7 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          Gtk 4.2.1 Docs
+          Gtk 4.4.1 Docs
         </a>
          (95% documented)
       </p>
@@ -663,6 +663,9 @@
                 <a class="nav-group-task-link" href="../Classes/PasswordEntry.html">PasswordEntry</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PasswordEntryBuffer.html">PasswordEntryBuffer</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Picture.html">Picture</a>
               </li>
               <li class="nav-group-task">
@@ -990,6 +993,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk13INTERFACE_AGEs5Int32Vvp">INTERFACE_AGE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21INVALID_LIST_POSITIONs6UInt32Vvp">INVALID_LIST_POSITION</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21LEVEL_BAR_OFFSET_FULLSSvp">LEVEL_BAR_OFFSET_FULL</a>
@@ -2111,6 +2117,12 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PanedSignalName.html">PanedSignalName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferPropertyName.html">PasswordEntryBufferPropertyName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferSignalName.html">PasswordEntryBufferSignalName</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PasswordEntryPropertyName.html">PasswordEntryPropertyName</a>
@@ -4111,6 +4123,12 @@
                 <a class="nav-group-task-link" href="../Protocols/ParamSpecExpressionProtocol.html">ParamSpecExpressionProtocol</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferClassProtocol.html">PasswordEntryBufferClassProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferProtocol.html">PasswordEntryBufferProtocol</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/PasswordEntryClassProtocol.html">PasswordEntryClassProtocol</a>
               </li>
               <li class="nav-group-task">
@@ -5577,6 +5595,12 @@
                 <a class="nav-group-task-link" href="../Structs/ParamSpecExpressionRef.html">ParamSpecExpressionRef</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferClassRef.html">PasswordEntryBufferClassRef</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferRef.html">PasswordEntryBufferRef</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/PasswordEntryClassRef.html">PasswordEntryClassRef</a>
               </li>
               <li class="nav-group-task">
@@ -6704,11 +6728,7 @@
 
                 </div>
               </div>
-            <p>The <code>Actionable</code> type acts as a reference-counted owner of an underlying <code>GtkActionable</code> instance.
-It provides the methods that can operate on this data type through <code><a href="../Protocols/ActionableProtocol.html">ActionableProtocol</a></code> conformance.
-Use <code>Actionable</code> as a strong reference or owner of a <code>GtkActionable</code> instance.</p>
-
-<p>The <code>GtkActionable</code> interface provides a convenient way of asscociating
+            <p>The <code>GtkActionable</code> interface provides a convenient way of asscociating
 widgets with actions.</p>
 
 <p>It primarily consists of two properties: [property<code>Gtk.Actionable:action-name</code>]
@@ -6722,8 +6742,12 @@ the “win.” or “app.” prefix that are associated with the
 are added with [method<code>Gtk.Widget.insert_action_group</code>] will be consulted
 as well.</p>
 
+<p>The <code>Actionable</code> type acts as a reference-counted owner of an underlying <code>GtkActionable</code> instance.
+It provides the methods that can operate on this data type through <code><a href="../Protocols/ActionableProtocol.html">ActionableProtocol</a></code> conformance.
+Use <code>Actionable</code> as a strong reference or owner of a <code>GtkActionable</code> instance.</p>
+
               <div class="slightly-smaller">
-                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Accessible-Buildable.swift#L659-L786">Show on GitHub</a>
+                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Accessible-Buildable.swift#L662-L789">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -6781,7 +6805,7 @@ i.e., ownership is transferred to the <code>Actionable</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Accessible-Buildable.swift#L664-L666">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Accessible-Buildable.swift#L667-L669">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6833,7 +6857,7 @@ i.e., ownership is transferred to the <code>Actionable</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Accessible-Buildable.swift#L672-L674">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Accessible-Buildable.swift#L675-L677">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6886,7 +6910,7 @@ i.e., ownership is transferred to the <code>Actionable</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Accessible-Buildable.swift#L681-L684">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Accessible-Buildable.swift#L684-L687">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6939,7 +6963,7 @@ i.e., ownership is transferred to the <code>Actionable</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Accessible-Buildable.swift#L691-L694">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Accessible-Buildable.swift#L694-L697">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6991,7 +7015,7 @@ i.e., ownership is transferred to the <code>Actionable</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Accessible-Buildable.swift#L700-L703">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Accessible-Buildable.swift#L703-L706">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7043,7 +7067,7 @@ i.e., ownership is transferred to the <code>Actionable</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Accessible-Buildable.swift#L709-L712">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Accessible-Buildable.swift#L712-L715">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7095,7 +7119,7 @@ i.e., ownership is transferred to the <code>Actionable</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Accessible-Buildable.swift#L718-L720">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Accessible-Buildable.swift#L721-L723">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7146,7 +7170,7 @@ Will retain <code>GtkActionable</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Accessible-Buildable.swift#L725-L727">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Accessible-Buildable.swift#L728-L730">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7197,7 +7221,7 @@ Will retain <code>GtkActionable</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Accessible-Buildable.swift#L732-L734">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Accessible-Buildable.swift#L735-L737">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7248,7 +7272,7 @@ Will retain <code>GtkActionable</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Accessible-Buildable.swift#L739-L741">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Accessible-Buildable.swift#L742-L744">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7299,7 +7323,7 @@ Will retain <code>GtkActionable</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Accessible-Buildable.swift#L746-L748">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Accessible-Buildable.swift#L749-L751">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7331,7 +7355,7 @@ Will retain <code>GtkActionable</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Accessible-Buildable.swift#L752-L754">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Accessible-Buildable.swift#L755-L757">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7382,7 +7406,7 @@ Will retain <code>GtkActionable</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Accessible-Buildable.swift#L759-L761">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Accessible-Buildable.swift#L762-L764">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7433,7 +7457,7 @@ Will retain <code>GtkActionable</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Accessible-Buildable.swift#L766-L768">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Accessible-Buildable.swift#L769-L771">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7484,7 +7508,7 @@ Will retain <code>GtkActionable</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Accessible-Buildable.swift#L773-L775">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Accessible-Buildable.swift#L776-L778">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7535,7 +7559,7 @@ Will retain <code>GtkActionable</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Accessible-Buildable.swift#L780-L782">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Accessible-Buildable.swift#L783-L785">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7548,8 +7572,8 @@ Will retain <code>GtkActionable</code>.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-05-16)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.7</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-12-10)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

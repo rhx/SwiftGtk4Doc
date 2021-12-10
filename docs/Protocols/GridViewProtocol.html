@@ -21,7 +21,7 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          Gtk 4.2.1 Docs
+          Gtk 4.4.1 Docs
         </a>
          (95% documented)
       </p>
@@ -663,6 +663,9 @@
                 <a class="nav-group-task-link" href="../Classes/PasswordEntry.html">PasswordEntry</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PasswordEntryBuffer.html">PasswordEntryBuffer</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Picture.html">Picture</a>
               </li>
               <li class="nav-group-task">
@@ -990,6 +993,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk13INTERFACE_AGEs5Int32Vvp">INTERFACE_AGE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21INVALID_LIST_POSITIONs6UInt32Vvp">INVALID_LIST_POSITION</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21LEVEL_BAR_OFFSET_FULLSSvp">LEVEL_BAR_OFFSET_FULL</a>
@@ -2111,6 +2117,12 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PanedSignalName.html">PanedSignalName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferPropertyName.html">PasswordEntryBufferPropertyName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferSignalName.html">PasswordEntryBufferSignalName</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PasswordEntryPropertyName.html">PasswordEntryPropertyName</a>
@@ -4111,6 +4123,12 @@
                 <a class="nav-group-task-link" href="../Protocols/ParamSpecExpressionProtocol.html">ParamSpecExpressionProtocol</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferClassProtocol.html">PasswordEntryBufferClassProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferProtocol.html">PasswordEntryBufferProtocol</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/PasswordEntryClassProtocol.html">PasswordEntryClassProtocol</a>
               </li>
               <li class="nav-group-task">
@@ -5577,6 +5595,12 @@
                 <a class="nav-group-task-link" href="../Structs/ParamSpecExpressionRef.html">ParamSpecExpressionRef</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferClassRef.html">PasswordEntryBufferClassRef</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferRef.html">PasswordEntryBufferRef</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/PasswordEntryClassRef.html">PasswordEntryClassRef</a>
               </li>
               <li class="nav-group-task">
@@ -6704,12 +6728,7 @@
 
                 </div>
               </div>
-            <p>The <code>GridViewProtocol</code> protocol exposes the methods and properties of an underlying <code>GtkGridView</code> instance.
-The default implementation of these can be found in the protocol extension below.
-For a concrete class that implements these methods and properties, see <code><a href="../Classes/GridView.html">GridView</a></code>.
-Alternatively, use <code><a href="../Structs/GridViewRef.html">GridViewRef</a></code> as a lighweight, <code>unowned</code> reference if you already have an instance you just want to use.</p>
-
-<p><code>GtkGridView</code> presents a large dynamic grid of items.</p>
+            <p><code>GtkGridView</code> presents a large dynamic grid of items.</p>
 
 <p><code>GtkGridView</code> uses its factory to generate one child widget for each
 visible item and shows them in a grid. The orientation of the grid view
@@ -6724,24 +6743,30 @@ it is possible to turn on <em>rubberband selection</em>, using
 <a href="section-list-widget.html">overview</a>.</p>
 <h1 id='css-nodes' class='heading'>CSS nodes</h1>
 <pre class="highlight swift"><code><span class="n">gridview</span>
-<span class="err">├──</span> <span class="n">child</span>
+<span class="err">├──</span> <span class="n">child</span><span class="p">[</span><span class="o">.</span><span class="n">activatable</span><span class="p">]</span>
 <span class="err">│</span>
-<span class="err">├──</span> <span class="n">child</span>
+<span class="err">├──</span> <span class="n">child</span><span class="p">[</span><span class="o">.</span><span class="n">activatable</span><span class="p">]</span>
 <span class="err">│</span>
 <span class="err">┊</span>
 <span class="err">╰──</span> <span class="p">[</span><span class="n">rubberband</span><span class="p">]</span>
 </code></pre>
 
-<p><code>GtkGridView</code> uses a single CSS node with name gridview. Each child
-uses a single CSS node with name child. For rubberband selection,
-a subnode with name rubberband is used.</p>
+<p><code>GtkGridView</code> uses a single CSS node with name <code>gridview</code>. Each child uses
+a single CSS node with name <code>child</code>. If the [property<code>Gtk.ListItem:activatable</code>]
+property is set, the corresponding row will have the <code>.activatable</code> style
+class. For rubberband selection, a subnode with name <code>rubberband</code> is used.</p>
 <h1 id='accessibility' class='heading'>Accessibility</h1>
 
 <p><code>GtkGridView</code> uses the <code>GTK_ACCESSIBLE_ROLE_GRID</code> role, and the items
 use the <code>GTK_ACCESSIBLE_ROLE_GRID_CELL</code> role.</p>
 
+<p>The <code>GridViewProtocol</code> protocol exposes the methods and properties of an underlying <code>GtkGridView</code> instance.
+The default implementation of these can be found in the protocol extension below.
+For a concrete class that implements these methods and properties, see <code><a href="../Classes/GridView.html">GridView</a></code>.
+Alternatively, use <code><a href="../Structs/GridViewRef.html">GridViewRef</a></code> as a lighweight, <code>unowned</code> reference if you already have an instance you just want to use.</p>
+
               <div class="slightly-smaller">
-                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L8674-L8683">Show on GitHub</a>
+                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L8747-L8756">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -6775,7 +6800,7 @@ use the <code>GTK_ACCESSIBLE_ROLE_GRID_CELL</code> role.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L8676">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L8749">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6813,7 +6838,7 @@ use the <code>GTK_ACCESSIBLE_ROLE_GRID_CELL</code> role.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L8679">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L8752">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6843,7 +6868,7 @@ use the <code>GTK_ACCESSIBLE_ROLE_GRID_CELL</code> role.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L8682">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L8755">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6974,7 +6999,7 @@ use the <code>GTK_ACCESSIBLE_ROLE_GRID_CELL</code> role.</p>
                         <p>binding reference or <code>nil</code> in case of an error</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L9167-L9191">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L9244-L9268">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7031,7 +7056,7 @@ use the <code>GTK_ACCESSIBLE_ROLE_GRID_CELL</code> role.</p>
                         <p>the value of the named property</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L9196-L9200">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L9273-L9277">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7089,7 +7114,7 @@ use the <code>GTK_ACCESSIBLE_ROLE_GRID_CELL</code> role.</p>
                         <p>the value of the named property</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L9206-L9208">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L9283-L9285">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7208,7 +7233,7 @@ use the <code>GTK_ACCESSIBLE_ROLE_GRID_CELL</code> role.</p>
                         <p>The signal handler ID (always greater than 0 for successful connections)</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L9484-L9486">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L9563-L9565">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7314,7 +7339,7 @@ use the <code>GTK_ACCESSIBLE_ROLE_GRID_CELL</code> role.</p>
                         <p>The signal handler ID (always greater than 0 for successful connections)</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L9497-L9499">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L9576-L9578">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7415,7 +7440,7 @@ Run the given callback whenever the <code>activate</code> signal is emitted</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L9514-L9528">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L9593-L9607">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7448,7 +7473,7 @@ Run the given callback whenever the <code>activate</code> signal is emitted</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L9531">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L9610">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7483,8 +7508,9 @@ and common practice is to do that only when the value has actually changed.</p>
 
 <p>This signal is typically used to obtain change notification for a
 single property, by specifying the property name as a detail in the
-<code>g_signal_connect()</code> call, like this:
-(C Language Example):</p>
+<code>g_signal_connect()</code> call, like this:</p>
+
+<p>(C Language Example):</p>
 <pre class="highlight plaintext"><code>g_signal_connect (text_view-&gt;buffer, "notify::paste-target-list",
                   G_CALLBACK (gtk_text_view_target_list_notify),
                   text_view)
@@ -7567,7 +7593,7 @@ Run the given callback whenever the <code>notifyEnableRubberband</code> signal i
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L9563-L9577">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L9644-L9658">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7600,7 +7626,7 @@ Run the given callback whenever the <code>notifyEnableRubberband</code> signal i
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L9580">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L9661">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7635,8 +7661,9 @@ and common practice is to do that only when the value has actually changed.</p>
 
 <p>This signal is typically used to obtain change notification for a
 single property, by specifying the property name as a detail in the
-<code>g_signal_connect()</code> call, like this:
-(C Language Example):</p>
+<code>g_signal_connect()</code> call, like this:</p>
+
+<p>(C Language Example):</p>
 <pre class="highlight plaintext"><code>g_signal_connect (text_view-&gt;buffer, "notify::paste-target-list",
                   G_CALLBACK (gtk_text_view_target_list_notify),
                   text_view)
@@ -7719,7 +7746,7 @@ Run the given callback whenever the <code>notifyFactory</code> signal is emitted
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L9612-L9626">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L9695-L9709">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7752,7 +7779,7 @@ Run the given callback whenever the <code>notifyFactory</code> signal is emitted
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L9629">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L9712">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7787,8 +7814,9 @@ and common practice is to do that only when the value has actually changed.</p>
 
 <p>This signal is typically used to obtain change notification for a
 single property, by specifying the property name as a detail in the
-<code>g_signal_connect()</code> call, like this:
-(C Language Example):</p>
+<code>g_signal_connect()</code> call, like this:</p>
+
+<p>(C Language Example):</p>
 <pre class="highlight plaintext"><code>g_signal_connect (text_view-&gt;buffer, "notify::paste-target-list",
                   G_CALLBACK (gtk_text_view_target_list_notify),
                   text_view)
@@ -7871,7 +7899,7 @@ Run the given callback whenever the <code>notifyMaxColumns</code> signal is emit
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L9661-L9675">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L9746-L9760">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7904,7 +7932,7 @@ Run the given callback whenever the <code>notifyMaxColumns</code> signal is emit
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L9678">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L9763">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7939,8 +7967,9 @@ and common practice is to do that only when the value has actually changed.</p>
 
 <p>This signal is typically used to obtain change notification for a
 single property, by specifying the property name as a detail in the
-<code>g_signal_connect()</code> call, like this:
-(C Language Example):</p>
+<code>g_signal_connect()</code> call, like this:</p>
+
+<p>(C Language Example):</p>
 <pre class="highlight plaintext"><code>g_signal_connect (text_view-&gt;buffer, "notify::paste-target-list",
                   G_CALLBACK (gtk_text_view_target_list_notify),
                   text_view)
@@ -8023,7 +8052,7 @@ Run the given callback whenever the <code>notifyMinColumns</code> signal is emit
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L9710-L9724">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L9797-L9811">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8056,7 +8085,7 @@ Run the given callback whenever the <code>notifyMinColumns</code> signal is emit
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L9727">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L9814">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8091,8 +8120,9 @@ and common practice is to do that only when the value has actually changed.</p>
 
 <p>This signal is typically used to obtain change notification for a
 single property, by specifying the property name as a detail in the
-<code>g_signal_connect()</code> call, like this:
-(C Language Example):</p>
+<code>g_signal_connect()</code> call, like this:</p>
+
+<p>(C Language Example):</p>
 <pre class="highlight plaintext"><code>g_signal_connect (text_view-&gt;buffer, "notify::paste-target-list",
                   G_CALLBACK (gtk_text_view_target_list_notify),
                   text_view)
@@ -8175,7 +8205,7 @@ Run the given callback whenever the <code>notifyModel</code> signal is emitted</
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L9759-L9773">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L9848-L9862">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8208,7 +8238,7 @@ Run the given callback whenever the <code>notifyModel</code> signal is emitted</
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L9776">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L9865">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8243,8 +8273,9 @@ and common practice is to do that only when the value has actually changed.</p>
 
 <p>This signal is typically used to obtain change notification for a
 single property, by specifying the property name as a detail in the
-<code>g_signal_connect()</code> call, like this:
-(C Language Example):</p>
+<code>g_signal_connect()</code> call, like this:</p>
+
+<p>(C Language Example):</p>
 <pre class="highlight plaintext"><code>g_signal_connect (text_view-&gt;buffer, "notify::paste-target-list",
                   G_CALLBACK (gtk_text_view_target_list_notify),
                   text_view)
@@ -8327,7 +8358,7 @@ Run the given callback whenever the <code>notifySingleClickActivate</code> signa
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L9808-L9822">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L9899-L9913">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8360,7 +8391,7 @@ Run the given callback whenever the <code>notifySingleClickActivate</code> signa
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L9825">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L9916">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8407,7 +8438,7 @@ Run the given callback whenever the <code>notifySingleClickActivate</code> signa
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L9835-L9838">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L9926-L9929">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8441,7 +8472,7 @@ Run the given callback whenever the <code>notifySingleClickActivate</code> signa
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L9841-L9844">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L9932-L9935">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8475,7 +8506,7 @@ Run the given callback whenever the <code>notifySingleClickActivate</code> signa
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L9847-L9850">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L9938-L9941">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8509,7 +8540,7 @@ Run the given callback whenever the <code>notifySingleClickActivate</code> signa
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L9853-L9856">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L9944-L9947">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8543,7 +8574,7 @@ Run the given callback whenever the <code>notifySingleClickActivate</code> signa
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L9859-L9862">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L9950-L9953">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8578,7 +8609,7 @@ selected on hover.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L9866-L9869">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L9957-L9960">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8612,7 +8643,7 @@ selected on hover.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L9872-L9875">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L9963-L9966">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8646,7 +8677,7 @@ selected on hover.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L9878-L9881">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L9969-L9972">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8680,7 +8711,7 @@ selected on hover.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L9883-L9886">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L9974-L9977">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8719,7 +8750,7 @@ selected on hover.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L9894-L9897">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L9985-L9988">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8758,7 +8789,7 @@ selected on hover.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L9905-L9908">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L9996-L9999">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8794,7 +8825,7 @@ selected on hover.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L9913-L9916">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L10004-L10007">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8830,7 +8861,7 @@ selected on hover.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L9920-L9923">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L10011-L10014">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8865,7 +8896,7 @@ selected on hover.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L9927-L9930">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L10018-L10021">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8899,7 +8930,7 @@ selected on hover.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L9932-L9942">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L10023-L10033">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8933,7 +8964,7 @@ selected on hover.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L9945-L9955">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L10036-L10046">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8967,7 +8998,7 @@ selected on hover.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L9958-L9973">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L10049-L10064">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9001,7 +9032,7 @@ selected on hover.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L9976-L9991">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L10067-L10082">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9035,7 +9066,7 @@ selected on hover.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L9994-L10006">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L10085-L10097">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9070,7 +9101,7 @@ selected on hover.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L10010-L10022">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Gesture-HeaderBar.swift#L10101-L10113">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9083,8 +9114,8 @@ selected on hover.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-05-16)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.7</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-12-10)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

@@ -21,7 +21,7 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          Gtk 4.2.1 Docs
+          Gtk 4.4.1 Docs
         </a>
          (95% documented)
       </p>
@@ -663,6 +663,9 @@
                 <a class="nav-group-task-link" href="../Classes/PasswordEntry.html">PasswordEntry</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PasswordEntryBuffer.html">PasswordEntryBuffer</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Picture.html">Picture</a>
               </li>
               <li class="nav-group-task">
@@ -990,6 +993,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk13INTERFACE_AGEs5Int32Vvp">INTERFACE_AGE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21INVALID_LIST_POSITIONs6UInt32Vvp">INVALID_LIST_POSITION</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21LEVEL_BAR_OFFSET_FULLSSvp">LEVEL_BAR_OFFSET_FULL</a>
@@ -2111,6 +2117,12 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PanedSignalName.html">PanedSignalName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferPropertyName.html">PasswordEntryBufferPropertyName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferSignalName.html">PasswordEntryBufferSignalName</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PasswordEntryPropertyName.html">PasswordEntryPropertyName</a>
@@ -4111,6 +4123,12 @@
                 <a class="nav-group-task-link" href="../Protocols/ParamSpecExpressionProtocol.html">ParamSpecExpressionProtocol</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferClassProtocol.html">PasswordEntryBufferClassProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferProtocol.html">PasswordEntryBufferProtocol</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/PasswordEntryClassProtocol.html">PasswordEntryClassProtocol</a>
               </li>
               <li class="nav-group-task">
@@ -5577,6 +5595,12 @@
                 <a class="nav-group-task-link" href="../Structs/ParamSpecExpressionRef.html">ParamSpecExpressionRef</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferClassRef.html">PasswordEntryBufferClassRef</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferRef.html">PasswordEntryBufferRef</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/PasswordEntryClassRef.html">PasswordEntryClassRef</a>
               </li>
               <li class="nav-group-task">
@@ -6704,11 +6728,7 @@
 
                 </div>
               </div>
-            <p>The <code>ListView</code> type acts as a reference-counted owner of an underlying <code>GtkListView</code> instance.
-It provides the methods that can operate on this data type through <code><a href="../Protocols/ListViewProtocol.html">ListViewProtocol</a></code> conformance.
-Use <code>ListView</code> as a strong reference or owner of a <code>GtkListView</code> instance.</p>
-
-<p><code>GtkListView</code> presents a large dynamic list of items.</p>
+            <p><code>GtkListView</code> presents a large dynamic list of items.</p>
 
 <p><code>GtkListView</code> uses its factory to generate one row widget for each visible
 item and shows them in a linear display, either vertically or horizontally.</p>
@@ -6778,18 +6798,20 @@ it is possible to turn on <em>rubberband selection</em>, using
 </code></pre>
 <h1 id='css-nodes' class='heading'>CSS nodes</h1>
 <pre class="highlight swift"><code><span class="n">listview</span><span class="p">[</span><span class="o">.</span><span class="n">separators</span><span class="p">][</span><span class="o">.</span><span class="n">rich</span><span class="o">-</span><span class="n">list</span><span class="p">][</span><span class="o">.</span><span class="n">navigation</span><span class="o">-</span><span class="n">sidebar</span><span class="p">][</span><span class="o">.</span><span class="n">data</span><span class="o">-</span><span class="n">table</span><span class="p">]</span>
-<span class="err">├──</span> <span class="n">row</span>
+<span class="err">├──</span> <span class="n">row</span><span class="p">[</span><span class="o">.</span><span class="n">activatable</span><span class="p">]</span>
 <span class="err">│</span>
-<span class="err">├──</span> <span class="n">row</span>
+<span class="err">├──</span> <span class="n">row</span><span class="p">[</span><span class="o">.</span><span class="n">activatable</span><span class="p">]</span>
 <span class="err">│</span>
 <span class="err">┊</span>
 <span class="err">╰──</span> <span class="p">[</span><span class="n">rubberband</span><span class="p">]</span>
 </code></pre>
 
-<p><code>GtkListView</code> uses a single CSS node named listview. It may carry the
-.separators style class, when <code>GtkListView</code>:show-separators property
-is set. Each child widget uses a single CSS node named row. For
-rubberband selection, a node with name rubberband is used.</p>
+<p><code>GtkListView</code> uses a single CSS node named <code>listview</code>. It may carry the
+<code>.separators</code> style class, when [property<code>Gtk.ListView:show-separators</code>]
+property is set. Each child widget uses a single CSS node named <code>row</code>.
+If the [property<code>Gtk.ListItem:activatable</code>] property is set, the
+corresponding row will have the <code>.activatable</code> style class. For
+rubberband selection, a node with name <code>rubberband</code> is used.</p>
 
 <p>The main listview node may also carry style classes to select
 the style of <a href="ListContainers.html%60list-styles%60">list presentation</a>:
@@ -6799,8 +6821,12 @@ the style of <a href="ListContainers.html%60list-styles%60">list presentation</a
 <p><code>GtkListView</code> uses the <code>GTK_ACCESSIBLE_ROLE_LIST</code> role, and the list
 items use the <code>GTK_ACCESSIBLE_ROLE_LIST_ITEM</code> role.</p>
 
+<p>The <code>ListView</code> type acts as a reference-counted owner of an underlying <code>GtkListView</code> instance.
+It provides the methods that can operate on this data type through <code><a href="../Protocols/ListViewProtocol.html">ListViewProtocol</a></code> conformance.
+Use <code>ListView</code> as a strong reference or owner of a <code>GtkListView</code> instance.</p>
+
               <div class="slightly-smaller">
-                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L12960-L13101">Show on GitHub</a>
+                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L13088-L13229">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -6858,7 +6884,7 @@ i.e., ownership is transferred to the <code>ListView</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L12965-L12967">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L13093-L13095">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6910,7 +6936,7 @@ i.e., ownership is transferred to the <code>ListView</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L12973-L12975">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L13101-L13103">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6963,7 +6989,7 @@ i.e., ownership is transferred to the <code>ListView</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L12982-L12985">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L13110-L13113">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7016,7 +7042,7 @@ i.e., ownership is transferred to the <code>ListView</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L12992-L12995">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L13120-L13123">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7068,7 +7094,7 @@ i.e., ownership is transferred to the <code>ListView</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L13001-L13004">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L13129-L13132">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7120,7 +7146,7 @@ i.e., ownership is transferred to the <code>ListView</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L13010-L13013">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L13138-L13141">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7172,7 +7198,7 @@ i.e., ownership is transferred to the <code>ListView</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L13019-L13021">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L13147-L13149">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7223,7 +7249,7 @@ Will retain <code>GtkListView</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L13026-L13028">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L13154-L13156">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7274,7 +7300,7 @@ Will retain <code>GtkListView</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L13033-L13035">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L13161-L13163">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7325,7 +7351,7 @@ Will retain <code>GtkListView</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L13040-L13042">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L13168-L13170">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7376,7 +7402,7 @@ Will retain <code>GtkListView</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L13047-L13049">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L13175-L13177">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7408,7 +7434,7 @@ Will retain <code>GtkListView</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L13053-L13055">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L13181-L13183">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7459,7 +7485,7 @@ Will retain <code>GtkListView</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L13060-L13062">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L13188-L13190">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7510,7 +7536,7 @@ Will retain <code>GtkListView</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L13067-L13069">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L13195-L13197">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7561,7 +7587,7 @@ Will retain <code>GtkListView</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L13074-L13076">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L13202-L13204">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7612,7 +7638,7 @@ Will retain <code>GtkListView</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L13081-L13083">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L13209-L13211">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7650,7 +7676,7 @@ arguments, so you can write code like</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L13094-L13098">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Label-MapListModel.swift#L13222-L13226">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7663,8 +7689,8 @@ arguments, so you can write code like</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-05-16)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.7</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-12-10)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

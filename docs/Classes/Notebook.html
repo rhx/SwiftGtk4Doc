@@ -21,7 +21,7 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          Gtk 4.2.1 Docs
+          Gtk 4.4.1 Docs
         </a>
          (95% documented)
       </p>
@@ -663,6 +663,9 @@
                 <a class="nav-group-task-link" href="../Classes/PasswordEntry.html">PasswordEntry</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PasswordEntryBuffer.html">PasswordEntryBuffer</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Picture.html">Picture</a>
               </li>
               <li class="nav-group-task">
@@ -990,6 +993,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk13INTERFACE_AGEs5Int32Vvp">INTERFACE_AGE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21INVALID_LIST_POSITIONs6UInt32Vvp">INVALID_LIST_POSITION</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21LEVEL_BAR_OFFSET_FULLSSvp">LEVEL_BAR_OFFSET_FULL</a>
@@ -2111,6 +2117,12 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PanedSignalName.html">PanedSignalName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferPropertyName.html">PasswordEntryBufferPropertyName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferSignalName.html">PasswordEntryBufferSignalName</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PasswordEntryPropertyName.html">PasswordEntryPropertyName</a>
@@ -4111,6 +4123,12 @@
                 <a class="nav-group-task-link" href="../Protocols/ParamSpecExpressionProtocol.html">ParamSpecExpressionProtocol</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferClassProtocol.html">PasswordEntryBufferClassProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferProtocol.html">PasswordEntryBufferProtocol</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/PasswordEntryClassProtocol.html">PasswordEntryClassProtocol</a>
               </li>
               <li class="nav-group-task">
@@ -5577,6 +5595,12 @@
                 <a class="nav-group-task-link" href="../Structs/ParamSpecExpressionRef.html">ParamSpecExpressionRef</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferClassRef.html">PasswordEntryBufferClassRef</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferRef.html">PasswordEntryBufferRef</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/PasswordEntryClassRef.html">PasswordEntryClassRef</a>
               </li>
               <li class="nav-group-task">
@@ -6704,11 +6728,7 @@
 
                 </div>
               </div>
-            <p>The <code>Notebook</code> type acts as a reference-counted owner of an underlying <code>GtkNotebook</code> instance.
-It provides the methods that can operate on this data type through <code><a href="../Protocols/NotebookProtocol.html">NotebookProtocol</a></code> conformance.
-Use <code>Notebook</code> as a strong reference or owner of a <code>GtkNotebook</code> instance.</p>
-
-<p><code>GtkNotebook</code> is a container whose children are pages switched
+            <p><code>GtkNotebook</code> is a container whose children are pages switched
 between using tabs.</p>
 
 <p><img src="notebook.png" alt="An example GtkNotebook"></p>
@@ -6796,8 +6816,12 @@ reorderable pages, the tab node gets the <code>.reorderable-page</code> class.</
 <li><code>GTK_ACCESSIBLE_ROLE_TAB_PANEL</code> for each page</li>
 </ul>
 
+<p>The <code>Notebook</code> type acts as a reference-counted owner of an underlying <code>GtkNotebook</code> instance.
+It provides the methods that can operate on this data type through <code><a href="../Protocols/NotebookProtocol.html">NotebookProtocol</a></code> conformance.
+Use <code>Notebook</code> as a strong reference or owner of a <code>GtkNotebook</code> instance.</p>
+
               <div class="slightly-smaller">
-                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-NativeDialog-ObjectExpression.swift#L1913-L2046">Show on GitHub</a>
+                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-NativeDialog-ObjectExpression.swift#L1939-L2072">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -6855,7 +6879,7 @@ i.e., ownership is transferred to the <code>Notebook</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-NativeDialog-ObjectExpression.swift#L1918-L1920">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-NativeDialog-ObjectExpression.swift#L1944-L1946">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6907,7 +6931,7 @@ i.e., ownership is transferred to the <code>Notebook</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-NativeDialog-ObjectExpression.swift#L1926-L1928">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-NativeDialog-ObjectExpression.swift#L1952-L1954">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6960,7 +6984,7 @@ i.e., ownership is transferred to the <code>Notebook</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-NativeDialog-ObjectExpression.swift#L1935-L1938">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-NativeDialog-ObjectExpression.swift#L1961-L1964">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7013,7 +7037,7 @@ i.e., ownership is transferred to the <code>Notebook</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-NativeDialog-ObjectExpression.swift#L1945-L1948">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-NativeDialog-ObjectExpression.swift#L1971-L1974">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7065,7 +7089,7 @@ i.e., ownership is transferred to the <code>Notebook</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-NativeDialog-ObjectExpression.swift#L1954-L1957">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-NativeDialog-ObjectExpression.swift#L1980-L1983">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7117,7 +7141,7 @@ i.e., ownership is transferred to the <code>Notebook</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-NativeDialog-ObjectExpression.swift#L1963-L1966">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-NativeDialog-ObjectExpression.swift#L1989-L1992">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7169,7 +7193,7 @@ i.e., ownership is transferred to the <code>Notebook</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-NativeDialog-ObjectExpression.swift#L1972-L1974">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-NativeDialog-ObjectExpression.swift#L1998-L2000">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7220,7 +7244,7 @@ Will retain <code>GtkNotebook</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-NativeDialog-ObjectExpression.swift#L1979-L1981">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-NativeDialog-ObjectExpression.swift#L2005-L2007">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7271,7 +7295,7 @@ Will retain <code>GtkNotebook</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-NativeDialog-ObjectExpression.swift#L1986-L1988">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-NativeDialog-ObjectExpression.swift#L2012-L2014">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7322,7 +7346,7 @@ Will retain <code>GtkNotebook</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-NativeDialog-ObjectExpression.swift#L1993-L1995">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-NativeDialog-ObjectExpression.swift#L2019-L2021">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7373,7 +7397,7 @@ Will retain <code>GtkNotebook</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-NativeDialog-ObjectExpression.swift#L2000-L2002">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-NativeDialog-ObjectExpression.swift#L2026-L2028">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7405,7 +7429,7 @@ Will retain <code>GtkNotebook</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-NativeDialog-ObjectExpression.swift#L2006-L2008">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-NativeDialog-ObjectExpression.swift#L2032-L2034">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7456,7 +7480,7 @@ Will retain <code>GtkNotebook</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-NativeDialog-ObjectExpression.swift#L2013-L2015">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-NativeDialog-ObjectExpression.swift#L2039-L2041">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7507,7 +7531,7 @@ Will retain <code>GtkNotebook</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-NativeDialog-ObjectExpression.swift#L2020-L2022">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-NativeDialog-ObjectExpression.swift#L2046-L2048">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7558,7 +7582,7 @@ Will retain <code>GtkNotebook</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-NativeDialog-ObjectExpression.swift#L2027-L2029">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-NativeDialog-ObjectExpression.swift#L2053-L2055">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7609,7 +7633,7 @@ Will retain <code>GtkNotebook</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-NativeDialog-ObjectExpression.swift#L2034-L2036">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-NativeDialog-ObjectExpression.swift#L2060-L2062">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7640,7 +7664,7 @@ Will retain <code>GtkNotebook</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-NativeDialog-ObjectExpression.swift#L2039-L2043">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-NativeDialog-ObjectExpression.swift#L2065-L2069">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7653,8 +7677,8 @@ Will retain <code>GtkNotebook</code>.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-05-16)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.7</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-12-10)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

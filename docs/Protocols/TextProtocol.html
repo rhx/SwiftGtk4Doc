@@ -21,7 +21,7 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          Gtk 4.2.1 Docs
+          Gtk 4.4.1 Docs
         </a>
          (95% documented)
       </p>
@@ -663,6 +663,9 @@
                 <a class="nav-group-task-link" href="../Classes/PasswordEntry.html">PasswordEntry</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PasswordEntryBuffer.html">PasswordEntryBuffer</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Picture.html">Picture</a>
               </li>
               <li class="nav-group-task">
@@ -990,6 +993,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk13INTERFACE_AGEs5Int32Vvp">INTERFACE_AGE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21INVALID_LIST_POSITIONs6UInt32Vvp">INVALID_LIST_POSITION</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21LEVEL_BAR_OFFSET_FULLSSvp">LEVEL_BAR_OFFSET_FULL</a>
@@ -2111,6 +2117,12 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PanedSignalName.html">PanedSignalName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferPropertyName.html">PasswordEntryBufferPropertyName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferSignalName.html">PasswordEntryBufferSignalName</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PasswordEntryPropertyName.html">PasswordEntryPropertyName</a>
@@ -4111,6 +4123,12 @@
                 <a class="nav-group-task-link" href="../Protocols/ParamSpecExpressionProtocol.html">ParamSpecExpressionProtocol</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferClassProtocol.html">PasswordEntryBufferClassProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferProtocol.html">PasswordEntryBufferProtocol</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/PasswordEntryClassProtocol.html">PasswordEntryClassProtocol</a>
               </li>
               <li class="nav-group-task">
@@ -5577,6 +5595,12 @@
                 <a class="nav-group-task-link" href="../Structs/ParamSpecExpressionRef.html">ParamSpecExpressionRef</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferClassRef.html">PasswordEntryBufferClassRef</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferRef.html">PasswordEntryBufferRef</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/PasswordEntryClassRef.html">PasswordEntryClassRef</a>
               </li>
               <li class="nav-group-task">
@@ -6704,17 +6728,12 @@
 
                 </div>
               </div>
-            <p>The <code>TextProtocol</code> protocol exposes the methods and properties of an underlying <code>GtkText</code> instance.
-The default implementation of these can be found in the protocol extension below.
-For a concrete class that implements these methods and properties, see <code><a href="../Classes/Text.html">Text</a></code>.
-Alternatively, use <code><a href="../Structs/TextRef.html">TextRef</a></code> as a lighweight, <code>unowned</code> reference if you already have an instance you just want to use.</p>
-
-<p>The <code>GtkText</code> widget is a single-line text entry widget.</p>
+            <p>The <code>GtkText</code> widget is a single-line text entry widget.</p>
 
 <p><code>GtkText</code> is the common implementation of single-line text editing
-that is shared between <code>GtkEntry</code>, <code>GtkPasswordEntry,</code>GtkSpinButton<code>
-and other widgets. In all of these,</code>GtkText<code>is used as the delegate
-for the [iface</code>Gtk.Editable`] implementation.</p>
+that is shared between <code>GtkEntry</code>, <code>GtkPasswordEntry</code>, <code>GtkSpinButton</code>
+and other widgets. In all of these, <code>GtkText</code> is used as the delegate
+for the [iface<code>Gtk.Editable</code>] implementation.</p>
 
 <p>A fairly large set of key bindings are supported by default. If the
 entered text is longer than the allocation of the widget, the widget
@@ -6768,8 +6787,13 @@ skipped for accessibility. This is because <code>GtkText</code> is expected to b
 as a delegate for a <code>GtkEditable</code> implementation that will be represented
 to accessibility.</p>
 
+<p>The <code>TextProtocol</code> protocol exposes the methods and properties of an underlying <code>GtkText</code> instance.
+The default implementation of these can be found in the protocol extension below.
+For a concrete class that implements these methods and properties, see <code><a href="../Classes/Text.html">Text</a></code>.
+Alternatively, use <code><a href="../Structs/TextRef.html">TextRef</a></code> as a lighweight, <code>unowned</code> reference if you already have an instance you just want to use.</p>
+
               <div class="slightly-smaller">
-                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L30773-L30782">Show on GitHub</a>
+                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L31055-L31064">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -6803,7 +6827,7 @@ to accessibility.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L30775">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L31057">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6841,7 +6865,7 @@ to accessibility.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L30778">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L31060">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6871,7 +6895,7 @@ to accessibility.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L30781">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L31063">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7002,7 +7026,7 @@ to accessibility.</p>
                         <p>binding reference or <code>nil</code> in case of an error</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L31371-L31395">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L31655-L31679">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7059,7 +7083,7 @@ to accessibility.</p>
                         <p>the value of the named property</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L31400-L31404">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L31684-L31688">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7117,7 +7141,7 @@ to accessibility.</p>
                         <p>the value of the named property</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L31410-L31412">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L31694-L31696">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7236,7 +7260,7 @@ to accessibility.</p>
                         <p>The signal handler ID (always greater than 0 for successful connections)</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L31817-L31819">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L32103-L32105">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7342,7 +7366,7 @@ to accessibility.</p>
                         <p>The signal handler ID (always greater than 0 for successful connections)</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L31830-L31832">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L32116-L32118">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7429,7 +7453,7 @@ Run the given callback whenever the <code>activate</code> signal is emitted</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L31844-L31858">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L32130-L32144">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7462,7 +7486,7 @@ Run the given callback whenever the <code>activate</code> signal is emitted</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L31861">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L32147">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7551,7 +7575,7 @@ Run the given callback whenever the <code>backspace</code> signal is emitted</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L31874-L31888">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L32160-L32174">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7584,7 +7608,7 @@ Run the given callback whenever the <code>backspace</code> signal is emitted</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L31891">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L32177">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7674,7 +7698,7 @@ Run the given callback whenever the <code>copyClipboard</code> signal is emitted
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L31905-L31919">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L32191-L32205">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7707,7 +7731,7 @@ Run the given callback whenever the <code>copyClipboard</code> signal is emitted
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L31922">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L32208">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7797,7 +7821,7 @@ Run the given callback whenever the <code>cutClipboard</code> signal is emitted<
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L31936-L31950">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L32222-L32236">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7830,7 +7854,7 @@ Run the given callback whenever the <code>cutClipboard</code> signal is emitted<
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L31953">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L32239">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7948,7 +7972,7 @@ Run the given callback whenever the <code>deleteFromCursor</code> signal is emit
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L31973-L31987">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L32259-L32273">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7981,7 +8005,7 @@ Run the given callback whenever the <code>deleteFromCursor</code> signal is emit
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L31990">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L32276">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8082,7 +8106,7 @@ Run the given callback whenever the <code>insertAtCursor</code> signal is emitte
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L32004-L32018">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L32290-L32304">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8115,7 +8139,7 @@ Run the given callback whenever the <code>insertAtCursor</code> signal is emitte
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L32021">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L32307">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8136,7 +8160,7 @@ Run the given callback whenever the <code>insertAtCursor</code> signal is emitte
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Emitted to present the Emoji chooser for the <code>self</code>.</p>
+                        <p>Emitted to present the Emoji chooser for the widget.</p>
 
 <p>This is a <a href="class.SignalAction.html">keybinding signal</a>.</p>
 
@@ -8205,7 +8229,7 @@ Run the given callback whenever the <code>insertEmoji</code> signal is emitted</
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L32035-L32049">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L32321-L32335">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8238,7 +8262,7 @@ Run the given callback whenever the <code>insertEmoji</code> signal is emitted</
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L32052">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L32338">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8378,7 +8402,7 @@ Run the given callback whenever the <code>moveCursor</code> signal is emitted</p
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L32082-L32096">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L32368-L32382">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8411,7 +8435,7 @@ Run the given callback whenever the <code>moveCursor</code> signal is emitted</p
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L32099">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L32385">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8500,7 +8524,7 @@ Run the given callback whenever the <code>pasteClipboard</code> signal is emitte
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L32112-L32126">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L32398-L32412">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8533,7 +8557,7 @@ Run the given callback whenever the <code>pasteClipboard</code> signal is emitte
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L32129">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L32415">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8633,7 +8657,7 @@ Run the given callback whenever the <code>preeditChanged</code> signal is emitte
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L32142-L32156">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L32428-L32442">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8666,7 +8690,7 @@ Run the given callback whenever the <code>preeditChanged</code> signal is emitte
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L32159">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L32445">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8754,7 +8778,7 @@ Run the given callback whenever the <code>toggleOverwrite</code> signal is emitt
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L32171-L32185">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L32457-L32471">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8787,7 +8811,7 @@ Run the given callback whenever the <code>toggleOverwrite</code> signal is emitt
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L32188">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L32474">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8822,8 +8846,9 @@ and common practice is to do that only when the value has actually changed.</p>
 
 <p>This signal is typically used to obtain change notification for a
 single property, by specifying the property name as a detail in the
-<code>g_signal_connect()</code> call, like this:
-(C Language Example):</p>
+<code>g_signal_connect()</code> call, like this:</p>
+
+<p>(C Language Example):</p>
 <pre class="highlight plaintext"><code>g_signal_connect (text_view-&gt;buffer, "notify::paste-target-list",
                   G_CALLBACK (gtk_text_view_target_list_notify),
                   text_view)
@@ -8906,7 +8931,7 @@ Run the given callback whenever the <code>notifyActivatesDefault</code> signal i
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L32220-L32234">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L32508-L32522">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8939,7 +8964,7 @@ Run the given callback whenever the <code>notifyActivatesDefault</code> signal i
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L32237">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L32525">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8974,8 +8999,9 @@ and common practice is to do that only when the value has actually changed.</p>
 
 <p>This signal is typically used to obtain change notification for a
 single property, by specifying the property name as a detail in the
-<code>g_signal_connect()</code> call, like this:
-(C Language Example):</p>
+<code>g_signal_connect()</code> call, like this:</p>
+
+<p>(C Language Example):</p>
 <pre class="highlight plaintext"><code>g_signal_connect (text_view-&gt;buffer, "notify::paste-target-list",
                   G_CALLBACK (gtk_text_view_target_list_notify),
                   text_view)
@@ -9058,7 +9084,7 @@ Run the given callback whenever the <code>notifyAttributes</code> signal is emit
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L32269-L32283">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L32559-L32573">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9091,7 +9117,7 @@ Run the given callback whenever the <code>notifyAttributes</code> signal is emit
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L32286">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L32576">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9126,8 +9152,9 @@ and common practice is to do that only when the value has actually changed.</p>
 
 <p>This signal is typically used to obtain change notification for a
 single property, by specifying the property name as a detail in the
-<code>g_signal_connect()</code> call, like this:
-(C Language Example):</p>
+<code>g_signal_connect()</code> call, like this:</p>
+
+<p>(C Language Example):</p>
 <pre class="highlight plaintext"><code>g_signal_connect (text_view-&gt;buffer, "notify::paste-target-list",
                   G_CALLBACK (gtk_text_view_target_list_notify),
                   text_view)
@@ -9210,7 +9237,7 @@ Run the given callback whenever the <code>notifyBuffer</code> signal is emitted<
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L32318-L32332">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L32610-L32624">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9243,7 +9270,7 @@ Run the given callback whenever the <code>notifyBuffer</code> signal is emitted<
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L32335">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L32627">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9278,8 +9305,9 @@ and common practice is to do that only when the value has actually changed.</p>
 
 <p>This signal is typically used to obtain change notification for a
 single property, by specifying the property name as a detail in the
-<code>g_signal_connect()</code> call, like this:
-(C Language Example):</p>
+<code>g_signal_connect()</code> call, like this:</p>
+
+<p>(C Language Example):</p>
 <pre class="highlight plaintext"><code>g_signal_connect (text_view-&gt;buffer, "notify::paste-target-list",
                   G_CALLBACK (gtk_text_view_target_list_notify),
                   text_view)
@@ -9362,7 +9390,7 @@ Run the given callback whenever the <code>notifyEnableEmojiCompletion</code> sig
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L32367-L32381">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L32661-L32675">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9395,7 +9423,7 @@ Run the given callback whenever the <code>notifyEnableEmojiCompletion</code> sig
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L32384">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L32678">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9430,8 +9458,9 @@ and common practice is to do that only when the value has actually changed.</p>
 
 <p>This signal is typically used to obtain change notification for a
 single property, by specifying the property name as a detail in the
-<code>g_signal_connect()</code> call, like this:
-(C Language Example):</p>
+<code>g_signal_connect()</code> call, like this:</p>
+
+<p>(C Language Example):</p>
 <pre class="highlight plaintext"><code>g_signal_connect (text_view-&gt;buffer, "notify::paste-target-list",
                   G_CALLBACK (gtk_text_view_target_list_notify),
                   text_view)
@@ -9514,7 +9543,7 @@ Run the given callback whenever the <code>notifyExtraMenu</code> signal is emitt
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L32416-L32430">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L32712-L32726">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9547,7 +9576,7 @@ Run the given callback whenever the <code>notifyExtraMenu</code> signal is emitt
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L32433">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L32729">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9582,8 +9611,9 @@ and common practice is to do that only when the value has actually changed.</p>
 
 <p>This signal is typically used to obtain change notification for a
 single property, by specifying the property name as a detail in the
-<code>g_signal_connect()</code> call, like this:
-(C Language Example):</p>
+<code>g_signal_connect()</code> call, like this:</p>
+
+<p>(C Language Example):</p>
 <pre class="highlight plaintext"><code>g_signal_connect (text_view-&gt;buffer, "notify::paste-target-list",
                   G_CALLBACK (gtk_text_view_target_list_notify),
                   text_view)
@@ -9666,7 +9696,7 @@ Run the given callback whenever the <code>notifyImModule</code> signal is emitte
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L32465-L32479">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L32763-L32777">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9699,7 +9729,7 @@ Run the given callback whenever the <code>notifyImModule</code> signal is emitte
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L32482">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L32780">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9734,8 +9764,9 @@ and common practice is to do that only when the value has actually changed.</p>
 
 <p>This signal is typically used to obtain change notification for a
 single property, by specifying the property name as a detail in the
-<code>g_signal_connect()</code> call, like this:
-(C Language Example):</p>
+<code>g_signal_connect()</code> call, like this:</p>
+
+<p>(C Language Example):</p>
 <pre class="highlight plaintext"><code>g_signal_connect (text_view-&gt;buffer, "notify::paste-target-list",
                   G_CALLBACK (gtk_text_view_target_list_notify),
                   text_view)
@@ -9818,7 +9849,7 @@ Run the given callback whenever the <code>notifyInputHints</code> signal is emit
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L32514-L32528">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L32814-L32828">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9851,7 +9882,7 @@ Run the given callback whenever the <code>notifyInputHints</code> signal is emit
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L32531">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L32831">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9886,8 +9917,9 @@ and common practice is to do that only when the value has actually changed.</p>
 
 <p>This signal is typically used to obtain change notification for a
 single property, by specifying the property name as a detail in the
-<code>g_signal_connect()</code> call, like this:
-(C Language Example):</p>
+<code>g_signal_connect()</code> call, like this:</p>
+
+<p>(C Language Example):</p>
 <pre class="highlight plaintext"><code>g_signal_connect (text_view-&gt;buffer, "notify::paste-target-list",
                   G_CALLBACK (gtk_text_view_target_list_notify),
                   text_view)
@@ -9970,7 +10002,7 @@ Run the given callback whenever the <code>notifyInputPurpose</code> signal is em
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L32563-L32577">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L32865-L32879">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10003,7 +10035,7 @@ Run the given callback whenever the <code>notifyInputPurpose</code> signal is em
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L32580">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L32882">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10038,8 +10070,9 @@ and common practice is to do that only when the value has actually changed.</p>
 
 <p>This signal is typically used to obtain change notification for a
 single property, by specifying the property name as a detail in the
-<code>g_signal_connect()</code> call, like this:
-(C Language Example):</p>
+<code>g_signal_connect()</code> call, like this:</p>
+
+<p>(C Language Example):</p>
 <pre class="highlight plaintext"><code>g_signal_connect (text_view-&gt;buffer, "notify::paste-target-list",
                   G_CALLBACK (gtk_text_view_target_list_notify),
                   text_view)
@@ -10122,7 +10155,7 @@ Run the given callback whenever the <code>notifyInvisibleChar</code> signal is e
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L32612-L32626">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L32916-L32930">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10155,7 +10188,7 @@ Run the given callback whenever the <code>notifyInvisibleChar</code> signal is e
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L32629">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L32933">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10190,8 +10223,9 @@ and common practice is to do that only when the value has actually changed.</p>
 
 <p>This signal is typically used to obtain change notification for a
 single property, by specifying the property name as a detail in the
-<code>g_signal_connect()</code> call, like this:
-(C Language Example):</p>
+<code>g_signal_connect()</code> call, like this:</p>
+
+<p>(C Language Example):</p>
 <pre class="highlight plaintext"><code>g_signal_connect (text_view-&gt;buffer, "notify::paste-target-list",
                   G_CALLBACK (gtk_text_view_target_list_notify),
                   text_view)
@@ -10274,7 +10308,7 @@ Run the given callback whenever the <code>notifyInvisibleCharSet</code> signal i
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L32661-L32675">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L32967-L32981">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10307,7 +10341,7 @@ Run the given callback whenever the <code>notifyInvisibleCharSet</code> signal i
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L32678">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L32984">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10342,8 +10376,9 @@ and common practice is to do that only when the value has actually changed.</p>
 
 <p>This signal is typically used to obtain change notification for a
 single property, by specifying the property name as a detail in the
-<code>g_signal_connect()</code> call, like this:
-(C Language Example):</p>
+<code>g_signal_connect()</code> call, like this:</p>
+
+<p>(C Language Example):</p>
 <pre class="highlight plaintext"><code>g_signal_connect (text_view-&gt;buffer, "notify::paste-target-list",
                   G_CALLBACK (gtk_text_view_target_list_notify),
                   text_view)
@@ -10426,7 +10461,7 @@ Run the given callback whenever the <code>notifyMaxLength</code> signal is emitt
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L32710-L32724">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33018-L33032">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10459,7 +10494,7 @@ Run the given callback whenever the <code>notifyMaxLength</code> signal is emitt
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L32727">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33035">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10494,8 +10529,9 @@ and common practice is to do that only when the value has actually changed.</p>
 
 <p>This signal is typically used to obtain change notification for a
 single property, by specifying the property name as a detail in the
-<code>g_signal_connect()</code> call, like this:
-(C Language Example):</p>
+<code>g_signal_connect()</code> call, like this:</p>
+
+<p>(C Language Example):</p>
 <pre class="highlight plaintext"><code>g_signal_connect (text_view-&gt;buffer, "notify::paste-target-list",
                   G_CALLBACK (gtk_text_view_target_list_notify),
                   text_view)
@@ -10578,7 +10614,7 @@ Run the given callback whenever the <code>notifyOverwriteMode</code> signal is e
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L32759-L32773">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33069-L33083">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10611,7 +10647,7 @@ Run the given callback whenever the <code>notifyOverwriteMode</code> signal is e
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L32776">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33086">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10646,8 +10682,9 @@ and common practice is to do that only when the value has actually changed.</p>
 
 <p>This signal is typically used to obtain change notification for a
 single property, by specifying the property name as a detail in the
-<code>g_signal_connect()</code> call, like this:
-(C Language Example):</p>
+<code>g_signal_connect()</code> call, like this:</p>
+
+<p>(C Language Example):</p>
 <pre class="highlight plaintext"><code>g_signal_connect (text_view-&gt;buffer, "notify::paste-target-list",
                   G_CALLBACK (gtk_text_view_target_list_notify),
                   text_view)
@@ -10730,7 +10767,7 @@ Run the given callback whenever the <code>notifyPlaceholderText</code> signal is
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L32808-L32822">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33120-L33134">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10763,7 +10800,7 @@ Run the given callback whenever the <code>notifyPlaceholderText</code> signal is
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L32825">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33137">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10798,8 +10835,9 @@ and common practice is to do that only when the value has actually changed.</p>
 
 <p>This signal is typically used to obtain change notification for a
 single property, by specifying the property name as a detail in the
-<code>g_signal_connect()</code> call, like this:
-(C Language Example):</p>
+<code>g_signal_connect()</code> call, like this:</p>
+
+<p>(C Language Example):</p>
 <pre class="highlight plaintext"><code>g_signal_connect (text_view-&gt;buffer, "notify::paste-target-list",
                   G_CALLBACK (gtk_text_view_target_list_notify),
                   text_view)
@@ -10882,7 +10920,7 @@ Run the given callback whenever the <code>notifyPropagateTextWidth</code> signal
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L32857-L32871">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33171-L33185">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10915,7 +10953,7 @@ Run the given callback whenever the <code>notifyPropagateTextWidth</code> signal
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L32874">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33188">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10950,8 +10988,9 @@ and common practice is to do that only when the value has actually changed.</p>
 
 <p>This signal is typically used to obtain change notification for a
 single property, by specifying the property name as a detail in the
-<code>g_signal_connect()</code> call, like this:
-(C Language Example):</p>
+<code>g_signal_connect()</code> call, like this:</p>
+
+<p>(C Language Example):</p>
 <pre class="highlight plaintext"><code>g_signal_connect (text_view-&gt;buffer, "notify::paste-target-list",
                   G_CALLBACK (gtk_text_view_target_list_notify),
                   text_view)
@@ -11034,7 +11073,7 @@ Run the given callback whenever the <code>notifyScrollOffset</code> signal is em
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L32906-L32920">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33222-L33236">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11067,7 +11106,7 @@ Run the given callback whenever the <code>notifyScrollOffset</code> signal is em
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L32923">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33239">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11102,8 +11141,9 @@ and common practice is to do that only when the value has actually changed.</p>
 
 <p>This signal is typically used to obtain change notification for a
 single property, by specifying the property name as a detail in the
-<code>g_signal_connect()</code> call, like this:
-(C Language Example):</p>
+<code>g_signal_connect()</code> call, like this:</p>
+
+<p>(C Language Example):</p>
 <pre class="highlight plaintext"><code>g_signal_connect (text_view-&gt;buffer, "notify::paste-target-list",
                   G_CALLBACK (gtk_text_view_target_list_notify),
                   text_view)
@@ -11186,7 +11226,7 @@ Run the given callback whenever the <code>notifyTabs</code> signal is emitted</p
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L32955-L32969">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33273-L33287">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11219,7 +11259,7 @@ Run the given callback whenever the <code>notifyTabs</code> signal is emitted</p
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L32972">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33290">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11254,8 +11294,9 @@ and common practice is to do that only when the value has actually changed.</p>
 
 <p>This signal is typically used to obtain change notification for a
 single property, by specifying the property name as a detail in the
-<code>g_signal_connect()</code> call, like this:
-(C Language Example):</p>
+<code>g_signal_connect()</code> call, like this:</p>
+
+<p>(C Language Example):</p>
 <pre class="highlight plaintext"><code>g_signal_connect (text_view-&gt;buffer, "notify::paste-target-list",
                   G_CALLBACK (gtk_text_view_target_list_notify),
                   text_view)
@@ -11338,7 +11379,7 @@ Run the given callback whenever the <code>notifyTruncateMultiline</code> signal 
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33004-L33018">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33324-L33338">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11371,7 +11412,7 @@ Run the given callback whenever the <code>notifyTruncateMultiline</code> signal 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33021">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33341">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11406,8 +11447,9 @@ and common practice is to do that only when the value has actually changed.</p>
 
 <p>This signal is typically used to obtain change notification for a
 single property, by specifying the property name as a detail in the
-<code>g_signal_connect()</code> call, like this:
-(C Language Example):</p>
+<code>g_signal_connect()</code> call, like this:</p>
+
+<p>(C Language Example):</p>
 <pre class="highlight plaintext"><code>g_signal_connect (text_view-&gt;buffer, "notify::paste-target-list",
                   G_CALLBACK (gtk_text_view_target_list_notify),
                   text_view)
@@ -11490,7 +11532,7 @@ Run the given callback whenever the <code>notifyVisibility</code> signal is emit
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33053-L33067">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33375-L33389">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11523,7 +11565,7 @@ Run the given callback whenever the <code>notifyVisibility</code> signal is emit
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33070">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33392">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11544,6 +11586,49 @@ Run the given callback whenever the <code>notifyVisibility</code> signal is emit
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:3Gtk12TextProtocolPAAE20computeCursorExtents8position6strong4weakySi_SpySo16_graphene_rect_tVGSgAKtF"></a>
+                    <a name="//apple_ref/swift/Method/computeCursorExtents(position:strong:weak:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3Gtk12TextProtocolPAAE20computeCursorExtents8position6strong4weakySi_SpySo16_graphene_rect_tVGSgAKtF">computeCursorExtents(position:<wbr>strong:<wbr>weak:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Determine the positions of the strong and weak cursors if the
+insertion point in the layout is at <code>position</code>.</p>
+
+<p>The position of each cursor is stored as a zero-width rectangle.
+The strong cursor location is the location where characters of
+the directionality equal to the base direction are inserted.
+The weak cursor location is the location where characters of
+the directionality opposite to the base direction are inserted.</p>
+
+<p>The rectangle positions are in widget coordinates.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@inlinable</span>
+<span class="kd">func</span> <span class="nf">computeCursorExtents</span><span class="p">(</span><span class="nv">position</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">strong</span><span class="p">:</span> <span class="kt">UnsafeMutablePointer</span><span class="o">&lt;</span><span class="n">graphene_rect_t</span><span class="o">&gt;!</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">weak</span><span class="p">:</span> <span class="kt">UnsafeMutablePointer</span><span class="o">&lt;</span><span class="n">graphene_rect_t</span><span class="o">&gt;!</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33411-L33414">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:3Gtk12TextProtocolPAAE19getActivatesDefaultSbyF"></a>
                     <a name="//apple_ref/swift/Method/getActivatesDefault()" class="dashAnchor"></a>
                     <a class="token" href="#/s:3Gtk12TextProtocolPAAE19getActivatesDefaultSbyF">getActivatesDefault()</a>
@@ -11557,7 +11642,10 @@ Run the given callback whenever the <code>notifyVisibility</code> signal is emit
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Retrieves the value set by <code>gtk_text_set_activates_default()</code>.</p>
+                        <p>Returns whether pressing Enter will activate
+the default widget for the window containing <code>self</code>.</p>
+
+<p>See [method<code>Gtk.Text.set_activates_default</code>].</p>
 
                       </div>
                       <div class="declaration">
@@ -11570,7 +11658,7 @@ Run the given callback whenever the <code>notifyVisibility</code> signal is emit
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33080-L33083">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33420-L33423">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11591,8 +11679,9 @@ Run the given callback whenever the <code>notifyVisibility</code> signal is emit
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Gets the attribute list that was set on the <code>GtkText</code>
-using <code>gtk_text_set_attributes()</code>.</p>
+                        <p>Gets the attribute list that was set on the <code>GtkText</code>.</p>
+
+<p>See [method<code>Gtk.Text.set_attributes</code>].</p>
 
                       </div>
                       <div class="declaration">
@@ -11605,7 +11694,7 @@ using <code>gtk_text_set_attributes()</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33087-L33090">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33428-L33431">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11627,7 +11716,7 @@ using <code>gtk_text_set_attributes()</code>.</p>
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Get the <code>GtkEntryBuffer</code> object which holds the text for
-this self.</p>
+this widget.</p>
 
                       </div>
                       <div class="declaration">
@@ -11640,7 +11729,7 @@ this self.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33094-L33097">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33435-L33438">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11675,7 +11764,7 @@ this self.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33101-L33104">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33442-L33445">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11696,7 +11785,9 @@ this self.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Gets the menu model set with <code>gtk_text_set_extra_menu()</code>.</p>
+                        <p>Gets the menu model for extra items in the context menu.</p>
+
+<p>See [method<code>Gtk.Text.set_extra_menu</code>].</p>
 
                       </div>
                       <div class="declaration">
@@ -11709,7 +11800,7 @@ this self.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33107-L33110">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33450-L33453">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11743,7 +11834,7 @@ this self.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33113-L33116">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33456-L33459">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11777,7 +11868,7 @@ this self.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33119-L33122">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33462-L33465">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11798,8 +11889,7 @@ this self.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Retrieves the character displayed in place of the real characters
-for entries with visibility set to false.</p>
+                        <p>Retrieves the character displayed when visibility is set to false.</p>
 
 <p>Note that GTK does not compute this value unless it needs it,
 so the value returned by this function is not very useful unless
@@ -11816,7 +11906,7 @@ it has been explicitly set with [method<code>Gtk.Text.set_invisible_char</code>]
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33130-L33133">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33472-L33475">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11855,7 +11945,7 @@ calling [method<code>Gtk.EntryBuffer.get_max_length</code>] on it.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33141-L33144">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33483-L33486">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11876,7 +11966,9 @@ calling [method<code>Gtk.EntryBuffer.get_max_length</code>] on it.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Gets the value set by <code>gtk_text_set_overwrite_mode()</code>.</p>
+                        <p>Gets whether text is overwritten when typing in the <code>GtkText</code>.</p>
+
+<p>See [method<code>Gtk.Text.set_overwrite_mode</code>].</p>
 
                       </div>
                       <div class="declaration">
@@ -11889,7 +11981,7 @@ calling [method<code>Gtk.EntryBuffer.get_max_length</code>] on it.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33147-L33150">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33491-L33494">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11913,6 +12005,8 @@ calling [method<code>Gtk.EntryBuffer.get_max_length</code>] on it.</p>
                         <p>Retrieves the text that will be displayed when
 <code>self</code> is empty and unfocused</p>
 
+<p>If no placeholder text has been set, <code>nil</code> will be returned.</p>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
@@ -11924,7 +12018,7 @@ calling [method<code>Gtk.EntryBuffer.get_max_length</code>] on it.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33154-L33157">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33500-L33503">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11959,7 +12053,7 @@ with the content.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33161-L33164">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33507-L33510">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11980,8 +12074,9 @@ with the content.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Gets the tabstops that were set on the <code>GtkText</code>
-using <code>gtk_text_set_tabs()</code>.</p>
+                        <p>Gets the tabstops that were set on the <code>GtkText</code>.</p>
+
+<p>See [method<code>Gtk.Text.set_tabs</code>].</p>
 
                       </div>
                       <div class="declaration">
@@ -11994,7 +12089,7 @@ using <code>gtk_text_set_tabs()</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33168-L33171">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33515-L33518">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12031,7 +12126,7 @@ and calling [method<code>Gtk.EntryBuffer.get_length</code>] on it.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33177-L33180">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33524-L33527">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12066,7 +12161,7 @@ that is pasted into the widget</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33184-L33187">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33531-L33534">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12100,7 +12195,7 @@ that is pasted into the widget</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33190-L33193">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33537-L33540">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12140,7 +12235,7 @@ such as search-as-you-type entries.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33202-L33205">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33549-L33552">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12161,8 +12256,8 @@ such as search-as-you-type entries.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>If <code>activates</code> is <code>true</code>, pressing Enter in the <code>self</code> will
-activate the default widget for the window containing <code>self</code>.</p>
+                        <p>If <code>activates</code> is <code>true</code>, pressing Enter will activate
+the default widget for the window containing <code>self</code>.</p>
 
 <p>This usually means that the dialog containing the <code>GtkText</code>
 will be closed, since the default widget is usually one of
@@ -12179,7 +12274,7 @@ the dialog buttons.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33213-L33216">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33560-L33563">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12213,7 +12308,7 @@ the dialog buttons.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33219-L33222">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33566-L33569">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12247,7 +12342,7 @@ the dialog buttons.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33224-L33227">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33571-L33574">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12282,7 +12377,7 @@ this widget.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33231-L33234">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33578-L33581">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12320,7 +12415,7 @@ keyword.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33241-L33244">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33588-L33591">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12355,7 +12450,7 @@ the context menu for <code>self</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33248-L33251">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33595-L33598">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12390,7 +12485,7 @@ the context menu for <code>self</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33254-L33257">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33601-L33604">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12425,7 +12520,7 @@ to fine-tune their behaviour.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33261-L33264">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33608-L33611">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12462,7 +12557,7 @@ input methods to adjust their behaviour.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33270-L33273">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33617-L33620">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12483,8 +12578,7 @@ input methods to adjust their behaviour.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Sets the character to use in place of the actual text when
-in “password mode”.</p>
+                        <p>Sets the character to use when in “password mode”.</p>
 
 <p>By default, GTK picks the best invisible char available in the
 current font. If you set the invisible char to 0, then the user
@@ -12502,7 +12596,7 @@ as they type.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33282-L33285">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33628-L33631">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12542,7 +12636,7 @@ calling [method<code>Gtk.EntryBuffer.set_max_length</code>] on it.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33294-L33297">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33640-L33643">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12577,7 +12671,7 @@ in the <code>GtkText</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33301-L33304">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33647-L33650">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12614,7 +12708,7 @@ contents of the <code>GtkText</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33310-L33313">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33656-L33659">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12648,7 +12742,7 @@ contents of the <code>GtkText</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33316-L33319">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33662-L33665">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12682,7 +12776,7 @@ contents of the <code>GtkText</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33322-L33325">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33668-L33671">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12716,7 +12810,7 @@ contents of the <code>GtkText</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33327-L33330">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33673-L33676">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12751,7 +12845,7 @@ that is pasted into the widget.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33334-L33337">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33680-L33683">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12798,7 +12892,7 @@ in addition to setting visibility to <code>false</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33353-L33356">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33699-L33702">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12835,7 +12929,7 @@ char is used again.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33362-L33365">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33708-L33711">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12856,7 +12950,10 @@ char is used again.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Retrieves the value set by <code>gtk_text_set_activates_default()</code>.</p>
+                        <p>Returns whether pressing Enter will activate
+the default widget for the window containing <code>self</code>.</p>
+
+<p>See [method<code>Gtk.Text.set_activates_default</code>].</p>
 
                       </div>
                       <div class="declaration">
@@ -12869,7 +12966,7 @@ char is used again.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33367-L33382">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33716-L33734">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12908,7 +13005,7 @@ char is used again.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33390-L33401">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33742-L33754">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12942,7 +13039,7 @@ char is used again.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33404-L33416">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33757-L33769">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12977,7 +13074,7 @@ char is used again.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33420-L33435">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33773-L33788">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12998,7 +13095,9 @@ char is used again.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Gets the menu model set with <code>gtk_text_set_extra_menu()</code>.</p>
+                        <p>Gets the menu model for extra items in the context menu.</p>
+
+<p>See [method<code>Gtk.Text.set_extra_menu</code>].</p>
 
                       </div>
                       <div class="declaration">
@@ -13011,7 +13110,7 @@ char is used again.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33438-L33449">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33793-L33806">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -13045,7 +13144,7 @@ char is used again.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33452-L33463">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33809-L33820">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -13079,7 +13178,7 @@ char is used again.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33466-L33479">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33823-L33836">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -13100,8 +13199,7 @@ char is used again.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Retrieves the character displayed in place of the real characters
-for entries with visibility set to false.</p>
+                        <p>Retrieves the character displayed when visibility is set to false.</p>
 
 <p>Note that GTK does not compute this value unless it needs it,
 so the value returned by this function is not very useful unless
@@ -13118,7 +13216,7 @@ it has been explicitly set with [method<code>Gtk.Text.set_invisible_char</code>]
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33487-L33508">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33843-L33862">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -13157,7 +13255,7 @@ calling [method<code>Gtk.EntryBuffer.get_max_length</code>] on it.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33516-L33537">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33870-L33891">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -13178,7 +13276,9 @@ calling [method<code>Gtk.EntryBuffer.get_max_length</code>] on it.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Gets the value set by <code>gtk_text_set_overwrite_mode()</code>.</p>
+                        <p>Gets whether text is overwritten when typing in the <code>GtkText</code>.</p>
+
+<p>See [method<code>Gtk.Text.set_overwrite_mode</code>].</p>
 
                       </div>
                       <div class="declaration">
@@ -13191,7 +13291,7 @@ calling [method<code>Gtk.EntryBuffer.get_max_length</code>] on it.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33540-L33551">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33896-L33909">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -13215,6 +13315,8 @@ calling [method<code>Gtk.EntryBuffer.get_max_length</code>] on it.</p>
                         <p>Retrieves the text that will be displayed when
 <code>self</code> is empty and unfocused</p>
 
+<p>If no placeholder text has been set, <code>nil</code> will be returned.</p>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
@@ -13226,7 +13328,7 @@ calling [method<code>Gtk.EntryBuffer.get_max_length</code>] on it.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33555-L33569">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33915-L33931">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -13261,7 +13363,7 @@ with the content.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33573-L33584">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33935-L33946">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -13295,7 +13397,7 @@ with the content.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33587-L33598">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33949-L33961">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -13332,7 +13434,7 @@ and calling [method<code>Gtk.EntryBuffer.get_length</code>] on it.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33604-L33613">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33967-L33976">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -13367,7 +13469,7 @@ that is pasted into the widget</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33617-L33629">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33980-L33992">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -13401,7 +13503,7 @@ that is pasted into the widget</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33632-L33655">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-ScaleButton-Text.swift#L33995-L34018">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -13414,8 +13516,8 @@ that is pasted into the widget</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-05-16)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.7</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-12-10)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

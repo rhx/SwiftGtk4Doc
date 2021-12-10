@@ -21,7 +21,7 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          Gtk 4.2.1 Docs
+          Gtk 4.4.1 Docs
         </a>
          (95% documented)
       </p>
@@ -663,6 +663,9 @@
                 <a class="nav-group-task-link" href="../Classes/PasswordEntry.html">PasswordEntry</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PasswordEntryBuffer.html">PasswordEntryBuffer</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Picture.html">Picture</a>
               </li>
               <li class="nav-group-task">
@@ -990,6 +993,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk13INTERFACE_AGEs5Int32Vvp">INTERFACE_AGE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21INVALID_LIST_POSITIONs6UInt32Vvp">INVALID_LIST_POSITION</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21LEVEL_BAR_OFFSET_FULLSSvp">LEVEL_BAR_OFFSET_FULL</a>
@@ -2111,6 +2117,12 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PanedSignalName.html">PanedSignalName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferPropertyName.html">PasswordEntryBufferPropertyName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferSignalName.html">PasswordEntryBufferSignalName</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PasswordEntryPropertyName.html">PasswordEntryPropertyName</a>
@@ -4111,6 +4123,12 @@
                 <a class="nav-group-task-link" href="../Protocols/ParamSpecExpressionProtocol.html">ParamSpecExpressionProtocol</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferClassProtocol.html">PasswordEntryBufferClassProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferProtocol.html">PasswordEntryBufferProtocol</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/PasswordEntryClassProtocol.html">PasswordEntryClassProtocol</a>
               </li>
               <li class="nav-group-task">
@@ -5577,6 +5595,12 @@
                 <a class="nav-group-task-link" href="../Structs/ParamSpecExpressionRef.html">ParamSpecExpressionRef</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferClassRef.html">PasswordEntryBufferClassRef</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferRef.html">PasswordEntryBufferRef</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/PasswordEntryClassRef.html">PasswordEntryClassRef</a>
               </li>
               <li class="nav-group-task">
@@ -6704,11 +6728,7 @@
 
                 </div>
               </div>
-            <p>The <code>CellAreaBoxRef</code> type acts as a lightweight Swift reference to an underlying <code>GtkCellAreaBox</code> instance.
-It exposes methods that can operate on this data type through <code><a href="../Protocols/CellAreaBoxProtocol.html">CellAreaBoxProtocol</a></code> conformance.
-Use <code>CellAreaBoxRef</code> only as an <code>unowned</code> reference to an existing <code>GtkCellAreaBox</code> instance.</p>
-
-<p>A cell area that renders GtkCellRenderers into a row or a column</p>
+            <p>A cell area that renders GtkCellRenderers into a row or a column</p>
 
 <p>The <code>GtkCellAreaBox</code> renders cell renderers into a row or a column
 depending on its <code>GtkOrientation</code>.</p>
@@ -6723,13 +6743,17 @@ defined as the bottom. In the <code>GTK_ORIENTATION_HORIZONTAL</code> orientatio
 start is defined as the left side and the end is defined as the right
 side.</p>
 
-<p>Alignments of <code>GtkCellRenderers</code> rendered in adjacent rows can be
+<p>Alignments of <code>GtkCellRenderer</code>s rendered in adjacent rows can be
 configured by configuring the <code>GtkCellAreaBox</code> align child cell property
 with <code>gtk_cell_area_cell_set_property()</code> or by specifying the &ldquo;align&rdquo;
 argument to <code>gtk_cell_area_box_pack_start()</code> and <code>gtk_cell_area_box_pack_end()</code>.</p>
 
+<p>The <code>CellAreaBoxRef</code> type acts as a lightweight Swift reference to an underlying <code>GtkCellAreaBox</code> instance.
+It exposes methods that can operate on this data type through <code><a href="../Protocols/CellAreaBoxProtocol.html">CellAreaBoxProtocol</a></code> conformance.
+Use <code>CellAreaBoxRef</code> only as an <code>unowned</code> reference to an existing <code>GtkCellAreaBox</code> instance.</p>
+
               <div class="slightly-smaller">
-                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L3924-L3928">Show on GitHub</a>
+                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L3953-L3957">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -6766,7 +6790,7 @@ argument to <code>gtk_cell_area_box_pack_start()</code> and <code>gtk_cell_area_
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L3927">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L3956">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6810,7 +6834,7 @@ argument to <code>gtk_cell_area_box_pack_start()</code> and <code>gtk_cell_area_
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L3932-L3934">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L3961-L3963">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6841,7 +6865,7 @@ argument to <code>gtk_cell_area_box_pack_start()</code> and <code>gtk_cell_area_
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L3937-L3939">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L3966-L3968">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6872,7 +6896,7 @@ argument to <code>gtk_cell_area_box_pack_start()</code> and <code>gtk_cell_area_
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L3942-L3945">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L3971-L3974">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6903,7 +6927,7 @@ argument to <code>gtk_cell_area_box_pack_start()</code> and <code>gtk_cell_area_
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L3948-L3951">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L3977-L3980">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6934,7 +6958,7 @@ argument to <code>gtk_cell_area_box_pack_start()</code> and <code>gtk_cell_area_
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L3954-L3957">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L3983-L3986">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6965,7 +6989,7 @@ argument to <code>gtk_cell_area_box_pack_start()</code> and <code>gtk_cell_area_
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L3960-L3963">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L3989-L3992">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6996,7 +7020,7 @@ argument to <code>gtk_cell_area_box_pack_start()</code> and <code>gtk_cell_area_
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L3966-L3968">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L3995-L3997">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7027,7 +7051,7 @@ argument to <code>gtk_cell_area_box_pack_start()</code> and <code>gtk_cell_area_
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L3971">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L4000">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7059,7 +7083,7 @@ argument to <code>gtk_cell_area_box_pack_start()</code> and <code>gtk_cell_area_
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L3975-L3977">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L4004-L4006">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7091,7 +7115,7 @@ argument to <code>gtk_cell_area_box_pack_start()</code> and <code>gtk_cell_area_
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L3981-L3983">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L4010-L4012">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7123,7 +7147,7 @@ argument to <code>gtk_cell_area_box_pack_start()</code> and <code>gtk_cell_area_
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L3987-L3989">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L4016-L4018">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7155,7 +7179,7 @@ argument to <code>gtk_cell_area_box_pack_start()</code> and <code>gtk_cell_area_
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L3993-L3995">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L4022-L4024">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7187,7 +7211,7 @@ argument to <code>gtk_cell_area_box_pack_start()</code> and <code>gtk_cell_area_
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L3999-L4001">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L4028-L4030">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7218,7 +7242,7 @@ argument to <code>gtk_cell_area_box_pack_start()</code> and <code>gtk_cell_area_
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L4004-L4007">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L4033-L4036">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7231,8 +7255,8 @@ argument to <code>gtk_cell_area_box_pack_start()</code> and <code>gtk_cell_area_
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-05-16)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.7</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-12-10)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

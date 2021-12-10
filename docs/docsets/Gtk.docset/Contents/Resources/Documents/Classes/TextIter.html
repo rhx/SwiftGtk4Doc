@@ -21,7 +21,7 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          Gtk 4.2.1 Docs
+          Gtk 4.4.1 Docs
         </a>
          (95% documented)
       </p>
@@ -663,6 +663,9 @@
                 <a class="nav-group-task-link" href="../Classes/PasswordEntry.html">PasswordEntry</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PasswordEntryBuffer.html">PasswordEntryBuffer</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Picture.html">Picture</a>
               </li>
               <li class="nav-group-task">
@@ -990,6 +993,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk13INTERFACE_AGEs5Int32Vvp">INTERFACE_AGE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21INVALID_LIST_POSITIONs6UInt32Vvp">INVALID_LIST_POSITION</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21LEVEL_BAR_OFFSET_FULLSSvp">LEVEL_BAR_OFFSET_FULL</a>
@@ -2111,6 +2117,12 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PanedSignalName.html">PanedSignalName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferPropertyName.html">PasswordEntryBufferPropertyName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferSignalName.html">PasswordEntryBufferSignalName</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PasswordEntryPropertyName.html">PasswordEntryPropertyName</a>
@@ -4111,6 +4123,12 @@
                 <a class="nav-group-task-link" href="../Protocols/ParamSpecExpressionProtocol.html">ParamSpecExpressionProtocol</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferClassProtocol.html">PasswordEntryBufferClassProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferProtocol.html">PasswordEntryBufferProtocol</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/PasswordEntryClassProtocol.html">PasswordEntryClassProtocol</a>
               </li>
               <li class="nav-group-task">
@@ -5577,6 +5595,12 @@
                 <a class="nav-group-task-link" href="../Structs/ParamSpecExpressionRef.html">ParamSpecExpressionRef</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferClassRef.html">PasswordEntryBufferClassRef</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferRef.html">PasswordEntryBufferRef</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/PasswordEntryClassRef.html">PasswordEntryClassRef</a>
               </li>
               <li class="nav-group-task">
@@ -6704,19 +6728,19 @@
 
                 </div>
               </div>
-            <p>The <code>TextIter</code> type acts as an owner of an underlying <code>GtkTextIter</code> instance.
-It provides the methods that can operate on this data type through <code><a href="../Protocols/TextIterProtocol.html">TextIterProtocol</a></code> conformance.
-Use <code>TextIter</code> as a strong reference or owner of a <code>GtkTextIter</code> instance.</p>
-
-<p>An iterator for the contents of a <code>GtkTextBuffer</code>.</p>
+            <p>An iterator for the contents of a <code>GtkTextBuffer</code>.</p>
 
 <p>You may wish to begin by reading the
 <a href="section-text-widget.html">text widget conceptual overview</a>,
 which gives an overview of all the objects and data types
 related to the text widget and how they work together.</p>
 
+<p>The <code>TextIter</code> type acts as an owner of an underlying <code>GtkTextIter</code> instance.
+It provides the methods that can operate on this data type through <code><a href="../Protocols/TextIterProtocol.html">TextIterProtocol</a></code> conformance.
+Use <code>TextIter</code> as a strong reference or owner of a <code>GtkTextIter</code> instance.</p>
+
               <div class="slightly-smaller">
-                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L280-L422">Show on GitHub</a>
+                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L285-L427">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -6753,7 +6777,7 @@ related to the text widget and how they work together.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L283">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L288">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6805,7 +6829,7 @@ i.e., ownership is transferred to the <code>TextIter</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L289-L291">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L294-L296">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6857,7 +6881,7 @@ i.e., ownership is transferred to the <code>TextIter</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L297-L299">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L302-L304">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6910,7 +6934,7 @@ i.e., ownership is transferred to the <code>TextIter</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L306-L309">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L311-L314">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6963,7 +6987,7 @@ i.e., ownership is transferred to the <code>TextIter</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L316-L319">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L321-L324">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7015,7 +7039,7 @@ i.e., ownership is transferred to the <code>TextIter</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L325-L328">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L330-L333">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7067,7 +7091,7 @@ i.e., ownership is transferred to the <code>TextIter</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L334-L337">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L339-L342">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7119,7 +7143,7 @@ i.e., ownership is transferred to the <code>TextIter</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L343-L346">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L348-L351">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7170,7 +7194,7 @@ i.e., ownership is transferred to the <code>TextIter</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L351-L354">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L356-L359">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7221,7 +7245,7 @@ i.e., ownership is transferred to the <code>TextIter</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L364-L366">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L369-L371">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7272,7 +7296,7 @@ i.e., ownership is transferred to the <code>TextIter</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L371-L374">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L376-L379">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7323,7 +7347,7 @@ i.e., ownership is transferred to the <code>TextIter</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L379-L381">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L384-L386">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7355,7 +7379,7 @@ i.e., ownership is transferred to the <code>TextIter</code> instance.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L385-L388">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L390-L393">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7406,7 +7430,7 @@ i.e., ownership is transferred to the <code>TextIter</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L393-L395">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L398-L400">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7457,7 +7481,7 @@ i.e., ownership is transferred to the <code>TextIter</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L400-L403">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L405-L408">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7508,7 +7532,7 @@ i.e., ownership is transferred to the <code>TextIter</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L408-L410">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L413-L415">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7559,7 +7583,7 @@ i.e., ownership is transferred to the <code>TextIter</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L415-L418">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextChildAnchorClass-VideoClass.swift#L420-L423">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7572,8 +7596,8 @@ i.e., ownership is transferred to the <code>TextIter</code> instance.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-05-16)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.7</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-12-10)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

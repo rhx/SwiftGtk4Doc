@@ -21,7 +21,7 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          Gtk 4.2.1 Docs
+          Gtk 4.4.1 Docs
         </a>
          (95% documented)
       </p>
@@ -663,6 +663,9 @@
                 <a class="nav-group-task-link" href="../Classes/PasswordEntry.html">PasswordEntry</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PasswordEntryBuffer.html">PasswordEntryBuffer</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Picture.html">Picture</a>
               </li>
               <li class="nav-group-task">
@@ -990,6 +993,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk13INTERFACE_AGEs5Int32Vvp">INTERFACE_AGE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21INVALID_LIST_POSITIONs6UInt32Vvp">INVALID_LIST_POSITION</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21LEVEL_BAR_OFFSET_FULLSSvp">LEVEL_BAR_OFFSET_FULL</a>
@@ -2111,6 +2117,12 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PanedSignalName.html">PanedSignalName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferPropertyName.html">PasswordEntryBufferPropertyName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferSignalName.html">PasswordEntryBufferSignalName</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PasswordEntryPropertyName.html">PasswordEntryPropertyName</a>
@@ -4111,6 +4123,12 @@
                 <a class="nav-group-task-link" href="../Protocols/ParamSpecExpressionProtocol.html">ParamSpecExpressionProtocol</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferClassProtocol.html">PasswordEntryBufferClassProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferProtocol.html">PasswordEntryBufferProtocol</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/PasswordEntryClassProtocol.html">PasswordEntryClassProtocol</a>
               </li>
               <li class="nav-group-task">
@@ -5577,6 +5595,12 @@
                 <a class="nav-group-task-link" href="../Structs/ParamSpecExpressionRef.html">ParamSpecExpressionRef</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferClassRef.html">PasswordEntryBufferClassRef</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferRef.html">PasswordEntryBufferRef</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/PasswordEntryClassRef.html">PasswordEntryClassRef</a>
               </li>
               <li class="nav-group-task">
@@ -6704,11 +6728,7 @@
 
                 </div>
               </div>
-            <p>The <code>BuilderScopeRef</code> type acts as a lightweight Swift reference to an underlying <code>GtkBuilderScope</code> instance.
-It exposes methods that can operate on this data type through <code><a href="../Protocols/BuilderScopeProtocol.html">BuilderScopeProtocol</a></code> conformance.
-Use <code>BuilderScopeRef</code> only as an <code>unowned</code> reference to an existing <code>GtkBuilderScope</code> instance.</p>
-
-<p><code>GtkBuilderScope</code> is an interface to provide language binding support
+            <p><code>GtkBuilderScope</code> is an interface to provide language binding support
 to <code>GtkBuilder</code>.</p>
 
 <p>The goal of <code>GtkBuilderScope</code> is to look up programming-language-specific
@@ -6723,8 +6743,12 @@ even at once.</p>
 <p>By default, GTK will use its own implementation of <code>GtkBuilderScope</code>
 for the C language which can be created via [ctor<code>Gtk.BuilderCScope.new</code>].</p>
 
+<p>The <code>BuilderScopeRef</code> type acts as a lightweight Swift reference to an underlying <code>GtkBuilderScope</code> instance.
+It exposes methods that can operate on this data type through <code><a href="../Protocols/BuilderScopeProtocol.html">BuilderScopeProtocol</a></code> conformance.
+Use <code>BuilderScopeRef</code> only as an <code>unowned</code> reference to an existing <code>GtkBuilderScope</code> instance.</p>
+
               <div class="slightly-smaller">
-                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BuilderScope-CellEditable.swift#L66-L70">Show on GitHub</a>
+                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BuilderScope-CellEditable.swift#L68-L72">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -6761,7 +6785,7 @@ for the C language which can be created via [ctor<code>Gtk.BuilderCScope.new</co
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BuilderScope-CellEditable.swift#L69">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BuilderScope-CellEditable.swift#L71">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6805,7 +6829,7 @@ for the C language which can be created via [ctor<code>Gtk.BuilderCScope.new</co
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BuilderScope-CellEditable.swift#L74-L76">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BuilderScope-CellEditable.swift#L76-L78">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6836,7 +6860,7 @@ for the C language which can be created via [ctor<code>Gtk.BuilderCScope.new</co
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BuilderScope-CellEditable.swift#L79-L81">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BuilderScope-CellEditable.swift#L81-L83">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6867,7 +6891,7 @@ for the C language which can be created via [ctor<code>Gtk.BuilderCScope.new</co
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BuilderScope-CellEditable.swift#L84-L87">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BuilderScope-CellEditable.swift#L86-L89">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6898,7 +6922,7 @@ for the C language which can be created via [ctor<code>Gtk.BuilderCScope.new</co
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BuilderScope-CellEditable.swift#L90-L93">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BuilderScope-CellEditable.swift#L92-L95">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6929,7 +6953,7 @@ for the C language which can be created via [ctor<code>Gtk.BuilderCScope.new</co
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BuilderScope-CellEditable.swift#L96-L99">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BuilderScope-CellEditable.swift#L98-L101">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6960,7 +6984,7 @@ for the C language which can be created via [ctor<code>Gtk.BuilderCScope.new</co
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BuilderScope-CellEditable.swift#L102-L105">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BuilderScope-CellEditable.swift#L104-L107">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6991,7 +7015,7 @@ for the C language which can be created via [ctor<code>Gtk.BuilderCScope.new</co
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BuilderScope-CellEditable.swift#L108-L110">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BuilderScope-CellEditable.swift#L110-L112">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7023,7 +7047,7 @@ for the C language which can be created via [ctor<code>Gtk.BuilderCScope.new</co
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BuilderScope-CellEditable.swift#L114-L116">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BuilderScope-CellEditable.swift#L116-L118">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7055,7 +7079,7 @@ for the C language which can be created via [ctor<code>Gtk.BuilderCScope.new</co
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BuilderScope-CellEditable.swift#L120-L122">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BuilderScope-CellEditable.swift#L122-L124">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7087,7 +7111,7 @@ for the C language which can be created via [ctor<code>Gtk.BuilderCScope.new</co
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BuilderScope-CellEditable.swift#L126-L128">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BuilderScope-CellEditable.swift#L128-L130">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7119,7 +7143,7 @@ for the C language which can be created via [ctor<code>Gtk.BuilderCScope.new</co
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BuilderScope-CellEditable.swift#L132-L134">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BuilderScope-CellEditable.swift#L134-L136">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7151,7 +7175,7 @@ for the C language which can be created via [ctor<code>Gtk.BuilderCScope.new</co
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BuilderScope-CellEditable.swift#L138-L140">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BuilderScope-CellEditable.swift#L140-L142">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7164,8 +7188,8 @@ for the C language which can be created via [ctor<code>Gtk.BuilderCScope.new</co
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-05-16)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.7</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-12-10)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

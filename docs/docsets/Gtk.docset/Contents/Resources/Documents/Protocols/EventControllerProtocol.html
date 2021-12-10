@@ -21,7 +21,7 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          Gtk 4.2.1 Docs
+          Gtk 4.4.1 Docs
         </a>
          (95% documented)
       </p>
@@ -663,6 +663,9 @@
                 <a class="nav-group-task-link" href="../Classes/PasswordEntry.html">PasswordEntry</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PasswordEntryBuffer.html">PasswordEntryBuffer</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Picture.html">Picture</a>
               </li>
               <li class="nav-group-task">
@@ -990,6 +993,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk13INTERFACE_AGEs5Int32Vvp">INTERFACE_AGE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21INVALID_LIST_POSITIONs6UInt32Vvp">INVALID_LIST_POSITION</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21LEVEL_BAR_OFFSET_FULLSSvp">LEVEL_BAR_OFFSET_FULL</a>
@@ -2111,6 +2117,12 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PanedSignalName.html">PanedSignalName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferPropertyName.html">PasswordEntryBufferPropertyName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferSignalName.html">PasswordEntryBufferSignalName</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PasswordEntryPropertyName.html">PasswordEntryPropertyName</a>
@@ -4111,6 +4123,12 @@
                 <a class="nav-group-task-link" href="../Protocols/ParamSpecExpressionProtocol.html">ParamSpecExpressionProtocol</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferClassProtocol.html">PasswordEntryBufferClassProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferProtocol.html">PasswordEntryBufferProtocol</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/PasswordEntryClassProtocol.html">PasswordEntryClassProtocol</a>
               </li>
               <li class="nav-group-task">
@@ -5577,6 +5595,12 @@
                 <a class="nav-group-task-link" href="../Structs/ParamSpecExpressionRef.html">ParamSpecExpressionRef</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferClassRef.html">PasswordEntryBufferClassRef</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferRef.html">PasswordEntryBufferRef</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/PasswordEntryClassRef.html">PasswordEntryClassRef</a>
               </li>
               <li class="nav-group-task">
@@ -6704,12 +6728,7 @@
 
                 </div>
               </div>
-            <p>The <code>EventControllerProtocol</code> protocol exposes the methods and properties of an underlying <code>GtkEventController</code> instance.
-The default implementation of these can be found in the protocol extension below.
-For a concrete class that implements these methods and properties, see <code><a href="../Classes/EventController.html">EventController</a></code>.
-Alternatively, use <code><a href="../Structs/EventControllerRef.html">EventControllerRef</a></code> as a lighweight, <code>unowned</code> reference if you already have an instance you just want to use.</p>
-
-<p><code>GtkEventController</code> is the base class for event controllers.</p>
+            <p><code>GtkEventController</code> is the base class for event controllers.</p>
 
 <p>These are ancillary objects associated to widgets, which react
 to <code>GdkEvents</code>, and possibly trigger actions as a consequence.</p>
@@ -6718,12 +6737,17 @@ to <code>GdkEvents</code>, and possibly trigger actions as a consequence.</p>
 [method<code>Gtk.Widget.add_controller</code>]. It is rarely necessary to
 explicitly remove a controller with [method<code>Gtk.Widget.remove_controller</code>].</p>
 
-<p>See the chapter of <a href="input-handling.html">input handling</a> for
+<p>See the chapter on <a href="input-handling.html">input handling</a> for
 an overview of the basic concepts, such as the capture and bubble
 phases of even propagation.</p>
 
+<p>The <code>EventControllerProtocol</code> protocol exposes the methods and properties of an underlying <code>GtkEventController</code> instance.
+The default implementation of these can be found in the protocol extension below.
+For a concrete class that implements these methods and properties, see <code><a href="../Classes/EventController.html">EventController</a></code>.
+Alternatively, use <code><a href="../Structs/EventControllerRef.html">EventControllerRef</a></code> as a lighweight, <code>unowned</code> reference if you already have an instance you just want to use.</p>
+
               <div class="slightly-smaller">
-                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L7406-L7415">Show on GitHub</a>
+                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L7529-L7538">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -6757,7 +6781,7 @@ phases of even propagation.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L7408">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L7531">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6795,7 +6819,7 @@ phases of even propagation.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L7411">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L7534">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6825,7 +6849,7 @@ phases of even propagation.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L7414">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L7537">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6956,7 +6980,7 @@ phases of even propagation.</p>
                         <p>binding reference or <code>nil</code> in case of an error</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L7679-L7703">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L7804-L7828">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7013,7 +7037,7 @@ phases of even propagation.</p>
                         <p>the value of the named property</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L7708-L7712">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L7833-L7837">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7071,7 +7095,7 @@ phases of even propagation.</p>
                         <p>the value of the named property</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L7718-L7720">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L7843-L7845">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7105,8 +7129,9 @@ phases of even propagation.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Returns the event that is currently being handled by the
-controller, and <code>nil</code> at other times.</p>
+                        <p>Returns the event that is currently being handled by the controller.</p>
+
+<p>At other times, <code>nil</code> is returned.</p>
 
                       </div>
                       <div class="declaration">
@@ -7119,7 +7144,7 @@ controller, and <code>nil</code> at other times.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L7767-L7770">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L7895-L7898">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7141,7 +7166,9 @@ controller, and <code>nil</code> at other times.</p>
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Returns the device of the event that is currently being
-handled by the controller, and <code>nil</code> otherwise.</p>
+handled by the controller.</p>
+
+<p>At other times, <code>nil</code> is returned.</p>
 
                       </div>
                       <div class="declaration">
@@ -7154,7 +7181,7 @@ handled by the controller, and <code>nil</code> otherwise.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L7774-L7777">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L7904-L7907">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7176,7 +7203,9 @@ handled by the controller, and <code>nil</code> otherwise.</p>
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Returns the modifier state of the event that is currently being
-handled by the controller, and 0 otherwise.</p>
+handled by the controller.</p>
+
+<p>At other times, 0 is returned.</p>
 
                       </div>
                       <div class="declaration">
@@ -7189,7 +7218,7 @@ handled by the controller, and 0 otherwise.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L7781-L7784">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L7913-L7916">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7211,7 +7240,9 @@ handled by the controller, and 0 otherwise.</p>
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Returns the timestamp of the event that is currently being
-handled by the controller, and 0 otherwise.</p>
+handled by the controller.</p>
+
+<p>At other times, 0 is returned.</p>
 
                       </div>
                       <div class="declaration">
@@ -7224,7 +7255,7 @@ handled by the controller, and 0 otherwise.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L7788-L7791">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L7922-L7925">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7258,7 +7289,7 @@ handled by the controller, and 0 otherwise.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L7794-L7797">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L7928-L7931">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7292,7 +7323,7 @@ handled by the controller, and 0 otherwise.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L7800-L7803">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L7934-L7937">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7326,7 +7357,7 @@ handled by the controller, and 0 otherwise.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L7806-L7809">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L7940-L7943">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7360,7 +7391,7 @@ handled by the controller, and 0 otherwise.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L7812-L7815">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L7946-L7949">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7394,7 +7425,7 @@ handled by the controller, and 0 otherwise.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L7818-L7821">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L7952-L7955">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7428,7 +7459,7 @@ handled by the controller, and 0 otherwise.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L7824-L7827">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L7958-L7961">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7466,7 +7497,7 @@ surface, such as popovers.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L7834-L7837">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L7968-L7971">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7503,7 +7534,7 @@ performed, but other additional gesture maintenance will.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L7843-L7846">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L7977-L7980">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7524,8 +7555,9 @@ performed, but other additional gesture maintenance will.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Returns the event that is currently being handled by the
-controller, and <code>nil</code> at other times.</p>
+                        <p>Returns the event that is currently being handled by the controller.</p>
+
+<p>At other times, <code>nil</code> is returned.</p>
 
                       </div>
                       <div class="declaration">
@@ -7538,7 +7570,7 @@ controller, and <code>nil</code> at other times.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L7849-L7856">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L7984-L7992">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7560,7 +7592,9 @@ controller, and <code>nil</code> at other times.</p>
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Returns the device of the event that is currently being
-handled by the controller, and <code>nil</code> otherwise.</p>
+handled by the controller.</p>
+
+<p>At other times, <code>nil</code> is returned.</p>
 
                       </div>
                       <div class="declaration">
@@ -7573,7 +7607,7 @@ handled by the controller, and <code>nil</code> otherwise.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L7860-L7867">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L7998-L8007">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7595,7 +7629,9 @@ handled by the controller, and <code>nil</code> otherwise.</p>
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Returns the modifier state of the event that is currently being
-handled by the controller, and 0 otherwise.</p>
+handled by the controller.</p>
+
+<p>At other times, 0 is returned.</p>
 
                       </div>
                       <div class="declaration">
@@ -7608,7 +7644,7 @@ handled by the controller, and 0 otherwise.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L7871-L7878">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L8013-L8022">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7630,7 +7666,9 @@ handled by the controller, and 0 otherwise.</p>
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Returns the timestamp of the event that is currently being
-handled by the controller, and 0 otherwise.</p>
+handled by the controller.</p>
+
+<p>At other times, 0 is returned.</p>
 
                       </div>
                       <div class="declaration">
@@ -7643,7 +7681,7 @@ handled by the controller, and 0 otherwise.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L7882-L7889">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L8028-L8037">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7677,7 +7715,7 @@ handled by the controller, and 0 otherwise.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L7892-L7902">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L8040-L8050">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7711,7 +7749,7 @@ handled by the controller, and 0 otherwise.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L7905-L7919">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L8053-L8067">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7745,7 +7783,7 @@ handled by the controller, and 0 otherwise.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L7922-L7935">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L8070-L8083">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7779,7 +7817,7 @@ handled by the controller, and 0 otherwise.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L7938-L7944">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L8086-L8092">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7792,8 +7830,8 @@ handled by the controller, and 0 otherwise.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-05-16)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.7</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-12-10)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

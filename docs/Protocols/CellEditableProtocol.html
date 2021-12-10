@@ -21,7 +21,7 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          Gtk 4.2.1 Docs
+          Gtk 4.4.1 Docs
         </a>
          (95% documented)
       </p>
@@ -663,6 +663,9 @@
                 <a class="nav-group-task-link" href="../Classes/PasswordEntry.html">PasswordEntry</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PasswordEntryBuffer.html">PasswordEntryBuffer</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Picture.html">Picture</a>
               </li>
               <li class="nav-group-task">
@@ -990,6 +993,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk13INTERFACE_AGEs5Int32Vvp">INTERFACE_AGE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21INVALID_LIST_POSITIONs6UInt32Vvp">INVALID_LIST_POSITION</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21LEVEL_BAR_OFFSET_FULLSSvp">LEVEL_BAR_OFFSET_FULL</a>
@@ -2111,6 +2117,12 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PanedSignalName.html">PanedSignalName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferPropertyName.html">PasswordEntryBufferPropertyName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferSignalName.html">PasswordEntryBufferSignalName</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PasswordEntryPropertyName.html">PasswordEntryPropertyName</a>
@@ -4111,6 +4123,12 @@
                 <a class="nav-group-task-link" href="../Protocols/ParamSpecExpressionProtocol.html">ParamSpecExpressionProtocol</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferClassProtocol.html">PasswordEntryBufferClassProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferProtocol.html">PasswordEntryBufferProtocol</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/PasswordEntryClassProtocol.html">PasswordEntryClassProtocol</a>
               </li>
               <li class="nav-group-task">
@@ -5577,6 +5595,12 @@
                 <a class="nav-group-task-link" href="../Structs/ParamSpecExpressionRef.html">ParamSpecExpressionRef</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferClassRef.html">PasswordEntryBufferClassRef</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferRef.html">PasswordEntryBufferRef</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/PasswordEntryClassRef.html">PasswordEntryClassRef</a>
               </li>
               <li class="nav-group-task">
@@ -6704,19 +6728,19 @@
 
                 </div>
               </div>
-            <p>The <code>CellEditableProtocol</code> protocol exposes the methods and properties of an underlying <code>GtkCellEditable</code> instance.
-The default implementation of these can be found in the protocol extension below.
-For a concrete class that implements these methods and properties, see <code><a href="../Classes/CellEditable.html">CellEditable</a></code>.
-Alternatively, use <code><a href="../Structs/CellEditableRef.html">CellEditableRef</a></code> as a lighweight, <code>unowned</code> reference if you already have an instance you just want to use.</p>
-
-<p>Interface for widgets that can be used for editing cells</p>
+            <p>Interface for widgets that can be used for editing cells</p>
 
 <p>The <code>GtkCellEditable</code> interface must be implemented for widgets to be usable
 to edit the contents of a <code>GtkTreeView</code> cell. It provides a way to specify how
 temporary widgets should be configured for editing, get the new value, etc.</p>
 
+<p>The <code>CellEditableProtocol</code> protocol exposes the methods and properties of an underlying <code>GtkCellEditable</code> instance.
+The default implementation of these can be found in the protocol extension below.
+For a concrete class that implements these methods and properties, see <code><a href="../Classes/CellEditable.html">CellEditable</a></code>.
+Alternatively, use <code><a href="../Structs/CellEditableRef.html">CellEditableRef</a></code> as a lighweight, <code>unowned</code> reference if you already have an instance you just want to use.</p>
+
               <div class="slightly-smaller">
-                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BuilderScope-CellEditable.swift#L334-L343">Show on GitHub</a>
+                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BuilderScope-CellEditable.swift#L338-L347">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -6750,7 +6774,7 @@ temporary widgets should be configured for editing, get the new value, etc.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BuilderScope-CellEditable.swift#L336">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BuilderScope-CellEditable.swift#L340">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6788,7 +6812,7 @@ temporary widgets should be configured for editing, get the new value, etc.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BuilderScope-CellEditable.swift#L339">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BuilderScope-CellEditable.swift#L343">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6818,7 +6842,7 @@ temporary widgets should be configured for editing, get the new value, etc.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BuilderScope-CellEditable.swift#L342">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BuilderScope-CellEditable.swift#L346">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6949,7 +6973,7 @@ temporary widgets should be configured for editing, get the new value, etc.</p>
                         <p>binding reference or <code>nil</code> in case of an error</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BuilderScope-CellEditable.swift#L726-L750">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BuilderScope-CellEditable.swift#L732-L756">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7006,7 +7030,7 @@ temporary widgets should be configured for editing, get the new value, etc.</p>
                         <p>the value of the named property</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BuilderScope-CellEditable.swift#L755-L759">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BuilderScope-CellEditable.swift#L761-L765">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7064,7 +7088,7 @@ temporary widgets should be configured for editing, get the new value, etc.</p>
                         <p>the value of the named property</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BuilderScope-CellEditable.swift#L765-L767">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BuilderScope-CellEditable.swift#L771-L773">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7183,7 +7207,7 @@ temporary widgets should be configured for editing, get the new value, etc.</p>
                         <p>The signal handler ID (always greater than 0 for successful connections)</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BuilderScope-CellEditable.swift#L1045-L1047">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BuilderScope-CellEditable.swift#L1053-L1055">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7289,7 +7313,7 @@ temporary widgets should be configured for editing, get the new value, etc.</p>
                         <p>The signal handler ID (always greater than 0 for successful connections)</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BuilderScope-CellEditable.swift#L1058-L1060">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BuilderScope-CellEditable.swift#L1066-L1068">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7320,7 +7344,7 @@ do in a handler for <code>editing-done</code> are to capture the edited value,
 disconnect the <code>cell_editable</code> from signals on the <code>GtkCellRenderer</code>, etc.</p>
 
 <p><code>gtk_cell_editable_editing_done()</code> is a convenience method
-for emitting <code>GtkCellEditable::editing-done</code>.</p>
+for emitting <code>GtkCellEditable</code>editing-done``.</p>
 <div class="aside aside-note">
     <p class="aside-title">Note</p>
     This represents the underlying <code>editing-done</code> signal
@@ -7383,7 +7407,7 @@ Run the given callback whenever the <code>editingDone</code> signal is emitted</
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BuilderScope-CellEditable.swift#L1079-L1093">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BuilderScope-CellEditable.swift#L1087-L1101">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7416,7 +7440,7 @@ Run the given callback whenever the <code>editingDone</code> signal is emitted</
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BuilderScope-CellEditable.swift#L1096">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BuilderScope-CellEditable.swift#L1104">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7443,12 +7467,12 @@ subsequently be destroyed.</p>
 
 <p>Implementations of <code>GtkCellEditable</code> are responsible for
 emitting this signal when they are done editing. It must
-be emitted after the <code>GtkCellEditable::editing-done</code> signal,
+be emitted after the <code>GtkCellEditable</code>editing-done`` signal,
 to give the cell renderer a chance to update the cell&rsquo;s value
 before the widget is removed.</p>
 
 <p><code>gtk_cell_editable_remove_widget()</code> is a convenience method
-for emitting <code>GtkCellEditable::remove-widget</code>.</p>
+for emitting <code>GtkCellEditable</code>remove-widget``.</p>
 <div class="aside aside-note">
     <p class="aside-title">Note</p>
     This represents the underlying <code>remove-widget</code> signal
@@ -7511,7 +7535,7 @@ Run the given callback whenever the <code>removeWidget</code> signal is emitted<
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BuilderScope-CellEditable.swift#L1115-L1129">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BuilderScope-CellEditable.swift#L1123-L1137">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7544,7 +7568,7 @@ Run the given callback whenever the <code>removeWidget</code> signal is emitted<
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BuilderScope-CellEditable.swift#L1132">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BuilderScope-CellEditable.swift#L1140">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7579,8 +7603,9 @@ and common practice is to do that only when the value has actually changed.</p>
 
 <p>This signal is typically used to obtain change notification for a
 single property, by specifying the property name as a detail in the
-<code>g_signal_connect()</code> call, like this:
-(C Language Example):</p>
+<code>g_signal_connect()</code> call, like this:</p>
+
+<p>(C Language Example):</p>
 <pre class="highlight plaintext"><code>g_signal_connect (text_view-&gt;buffer, "notify::paste-target-list",
                   G_CALLBACK (gtk_text_view_target_list_notify),
                   text_view)
@@ -7663,7 +7688,7 @@ Run the given callback whenever the <code>notifyEditingCanceled</code> signal is
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BuilderScope-CellEditable.swift#L1164-L1178">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BuilderScope-CellEditable.swift#L1174-L1188">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7696,7 +7721,7 @@ Run the given callback whenever the <code>notifyEditingCanceled</code> signal is
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BuilderScope-CellEditable.swift#L1181">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BuilderScope-CellEditable.swift#L1191">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7730,7 +7755,7 @@ Run the given callback whenever the <code>notifyEditingCanceled</code> signal is
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Emits the <code>GtkCellEditable::editing-done</code> signal.</p>
+                        <p>Emits the <code>GtkCellEditable</code>editing-done`` signal.</p>
 
                       </div>
                       <div class="declaration">
@@ -7743,7 +7768,7 @@ Run the given callback whenever the <code>notifyEditingCanceled</code> signal is
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BuilderScope-CellEditable.swift#L1191-L1194">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BuilderScope-CellEditable.swift#L1201-L1204">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7764,7 +7789,7 @@ Run the given callback whenever the <code>notifyEditingCanceled</code> signal is
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Emits the <code>GtkCellEditable::remove-widget</code> signal.</p>
+                        <p>Emits the <code>GtkCellEditable</code>remove-widget`` signal.</p>
 
                       </div>
                       <div class="declaration">
@@ -7777,7 +7802,7 @@ Run the given callback whenever the <code>notifyEditingCanceled</code> signal is
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BuilderScope-CellEditable.swift#L1197-L1200">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BuilderScope-CellEditable.swift#L1207-L1210">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7804,7 +7829,7 @@ Run the given callback whenever the <code>notifyEditingCanceled</code> signal is
 <code>gtk_cell_renderer_start_editing()</code>, configured for the <code>GtkCellRenderer</code> type.</p>
 
 <p><code>gtk_cell_editable_start_editing()</code> can then set up <code>cell_editable</code> suitably for
-editing a cell, e.g. making the Esc key emit <code>GtkCellEditable::editing-done</code>.</p>
+editing a cell, e.g. making the Esc key emit <code>GtkCellEditable</code>editing-done``.</p>
 
 <p>Note that the <code>cell_editable</code> is created on-demand for the current edit; its
 lifetime is temporary and does not persist across other edits and/or cells.</p>
@@ -7820,7 +7845,7 @@ lifetime is temporary and does not persist across other edits and/or cells.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BuilderScope-CellEditable.swift#L1212-L1215">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BuilderScope-CellEditable.swift#L1222-L1225">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7847,7 +7872,7 @@ lifetime is temporary and does not persist across other edits and/or cells.</p>
 <code>gtk_cell_renderer_start_editing()</code>, configured for the <code>GtkCellRenderer</code> type.</p>
 
 <p><code>gtk_cell_editable_start_editing()</code> can then set up <code>cell_editable</code> suitably for
-editing a cell, e.g. making the Esc key emit <code>GtkCellEditable::editing-done</code>.</p>
+editing a cell, e.g. making the Esc key emit <code>GtkCellEditable</code>editing-done``.</p>
 
 <p>Note that the <code>cell_editable</code> is created on-demand for the current edit; its
 lifetime is temporary and does not persist across other edits and/or cells.</p>
@@ -7863,7 +7888,7 @@ lifetime is temporary and does not persist across other edits and/or cells.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BuilderScope-CellEditable.swift#L1226-L1229">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-BuilderScope-CellEditable.swift#L1236-L1239">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7876,8 +7901,8 @@ lifetime is temporary and does not persist across other edits and/or cells.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-05-16)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.7</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-12-10)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

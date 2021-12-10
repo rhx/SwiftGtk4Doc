@@ -21,7 +21,7 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          Gtk 4.2.1 Docs
+          Gtk 4.4.1 Docs
         </a>
          (95% documented)
       </p>
@@ -663,6 +663,9 @@
                 <a class="nav-group-task-link" href="../Classes/PasswordEntry.html">PasswordEntry</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PasswordEntryBuffer.html">PasswordEntryBuffer</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Picture.html">Picture</a>
               </li>
               <li class="nav-group-task">
@@ -990,6 +993,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk13INTERFACE_AGEs5Int32Vvp">INTERFACE_AGE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21INVALID_LIST_POSITIONs6UInt32Vvp">INVALID_LIST_POSITION</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21LEVEL_BAR_OFFSET_FULLSSvp">LEVEL_BAR_OFFSET_FULL</a>
@@ -2111,6 +2117,12 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PanedSignalName.html">PanedSignalName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferPropertyName.html">PasswordEntryBufferPropertyName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferSignalName.html">PasswordEntryBufferSignalName</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PasswordEntryPropertyName.html">PasswordEntryPropertyName</a>
@@ -4111,6 +4123,12 @@
                 <a class="nav-group-task-link" href="../Protocols/ParamSpecExpressionProtocol.html">ParamSpecExpressionProtocol</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferClassProtocol.html">PasswordEntryBufferClassProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferProtocol.html">PasswordEntryBufferProtocol</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/PasswordEntryClassProtocol.html">PasswordEntryClassProtocol</a>
               </li>
               <li class="nav-group-task">
@@ -5577,6 +5595,12 @@
                 <a class="nav-group-task-link" href="../Structs/ParamSpecExpressionRef.html">ParamSpecExpressionRef</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferClassRef.html">PasswordEntryBufferClassRef</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferRef.html">PasswordEntryBufferRef</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/PasswordEntryClassRef.html">PasswordEntryClassRef</a>
               </li>
               <li class="nav-group-task">
@@ -6704,11 +6728,7 @@
 
                 </div>
               </div>
-            <p>The <code>WindowHandleRef</code> type acts as a lightweight Swift reference to an underlying <code>GtkWindowHandle</code> instance.
-It exposes methods that can operate on this data type through <code><a href="../Protocols/WindowHandleProtocol.html">WindowHandleProtocol</a></code> conformance.
-Use <code>WindowHandleRef</code> only as an <code>unowned</code> reference to an existing <code>GtkWindowHandle</code> instance.</p>
-
-<p><code>GtkWindowHandle</code> is a titlebar area widget.</p>
+            <p><code>GtkWindowHandle</code> is a titlebar area widget.</p>
 
 <p>When added into a window, it can be dragged to move the window, and handles
 right click, double click and middle click as expected of a titlebar.</p>
@@ -6719,8 +6739,12 @@ right click, double click and middle click as expected of a titlebar.</p>
 
 <p><code>GtkWindowHandle</code> uses the <code>GTK_ACCESSIBLE_ROLE_GROUP</code> role.</p>
 
+<p>The <code>WindowHandleRef</code> type acts as a lightweight Swift reference to an underlying <code>GtkWindowHandle</code> instance.
+It exposes methods that can operate on this data type through <code><a href="../Protocols/WindowHandleProtocol.html">WindowHandleProtocol</a></code> conformance.
+Use <code>WindowHandleRef</code> only as an <code>unowned</code> reference to an existing <code>GtkWindowHandle</code> instance.</p>
+
               <div class="slightly-smaller">
-                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-WidgetPaintable-WindowHandle.swift#L5288-L5292">Show on GitHub</a>
+                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-WidgetPaintable-WindowHandle.swift#L5356-L5360">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -6757,7 +6781,7 @@ right click, double click and middle click as expected of a titlebar.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-WidgetPaintable-WindowHandle.swift#L5291">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-WidgetPaintable-WindowHandle.swift#L5359">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6801,7 +6825,7 @@ right click, double click and middle click as expected of a titlebar.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-WidgetPaintable-WindowHandle.swift#L5296-L5298">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-WidgetPaintable-WindowHandle.swift#L5364-L5366">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6832,7 +6856,7 @@ right click, double click and middle click as expected of a titlebar.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-WidgetPaintable-WindowHandle.swift#L5301-L5303">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-WidgetPaintable-WindowHandle.swift#L5369-L5371">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6863,7 +6887,7 @@ right click, double click and middle click as expected of a titlebar.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-WidgetPaintable-WindowHandle.swift#L5306-L5309">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-WidgetPaintable-WindowHandle.swift#L5374-L5377">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6894,7 +6918,7 @@ right click, double click and middle click as expected of a titlebar.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-WidgetPaintable-WindowHandle.swift#L5312-L5315">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-WidgetPaintable-WindowHandle.swift#L5380-L5383">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6925,7 +6949,7 @@ right click, double click and middle click as expected of a titlebar.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-WidgetPaintable-WindowHandle.swift#L5318-L5321">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-WidgetPaintable-WindowHandle.swift#L5386-L5389">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6956,7 +6980,7 @@ right click, double click and middle click as expected of a titlebar.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-WidgetPaintable-WindowHandle.swift#L5324-L5327">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-WidgetPaintable-WindowHandle.swift#L5392-L5395">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6987,7 +7011,7 @@ right click, double click and middle click as expected of a titlebar.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-WidgetPaintable-WindowHandle.swift#L5330-L5332">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-WidgetPaintable-WindowHandle.swift#L5398-L5400">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7018,7 +7042,7 @@ right click, double click and middle click as expected of a titlebar.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-WidgetPaintable-WindowHandle.swift#L5335">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-WidgetPaintable-WindowHandle.swift#L5403">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7050,7 +7074,7 @@ right click, double click and middle click as expected of a titlebar.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-WidgetPaintable-WindowHandle.swift#L5339-L5341">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-WidgetPaintable-WindowHandle.swift#L5407-L5409">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7082,7 +7106,7 @@ right click, double click and middle click as expected of a titlebar.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-WidgetPaintable-WindowHandle.swift#L5345-L5347">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-WidgetPaintable-WindowHandle.swift#L5413-L5415">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7114,7 +7138,7 @@ right click, double click and middle click as expected of a titlebar.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-WidgetPaintable-WindowHandle.swift#L5351-L5353">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-WidgetPaintable-WindowHandle.swift#L5419-L5421">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7146,7 +7170,7 @@ right click, double click and middle click as expected of a titlebar.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-WidgetPaintable-WindowHandle.swift#L5357-L5359">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-WidgetPaintable-WindowHandle.swift#L5425-L5427">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7178,7 +7202,7 @@ right click, double click and middle click as expected of a titlebar.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-WidgetPaintable-WindowHandle.swift#L5363-L5365">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-WidgetPaintable-WindowHandle.swift#L5431-L5433">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7209,7 +7233,7 @@ right click, double click and middle click as expected of a titlebar.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-WidgetPaintable-WindowHandle.swift#L5368-L5371">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-WidgetPaintable-WindowHandle.swift#L5436-L5439">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7222,8 +7246,8 @@ right click, double click and middle click as expected of a titlebar.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-05-16)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.7</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-12-10)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

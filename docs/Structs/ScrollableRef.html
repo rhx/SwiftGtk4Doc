@@ -21,7 +21,7 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          Gtk 4.2.1 Docs
+          Gtk 4.4.1 Docs
         </a>
          (95% documented)
       </p>
@@ -663,6 +663,9 @@
                 <a class="nav-group-task-link" href="../Classes/PasswordEntry.html">PasswordEntry</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PasswordEntryBuffer.html">PasswordEntryBuffer</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Picture.html">Picture</a>
               </li>
               <li class="nav-group-task">
@@ -990,6 +993,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk13INTERFACE_AGEs5Int32Vvp">INTERFACE_AGE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21INVALID_LIST_POSITIONs6UInt32Vvp">INVALID_LIST_POSITION</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21LEVEL_BAR_OFFSET_FULLSSvp">LEVEL_BAR_OFFSET_FULL</a>
@@ -2111,6 +2117,12 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PanedSignalName.html">PanedSignalName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferPropertyName.html">PasswordEntryBufferPropertyName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferSignalName.html">PasswordEntryBufferSignalName</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PasswordEntryPropertyName.html">PasswordEntryPropertyName</a>
@@ -4111,6 +4123,12 @@
                 <a class="nav-group-task-link" href="../Protocols/ParamSpecExpressionProtocol.html">ParamSpecExpressionProtocol</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferClassProtocol.html">PasswordEntryBufferClassProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferProtocol.html">PasswordEntryBufferProtocol</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/PasswordEntryClassProtocol.html">PasswordEntryClassProtocol</a>
               </li>
               <li class="nav-group-task">
@@ -5577,6 +5595,12 @@
                 <a class="nav-group-task-link" href="../Structs/ParamSpecExpressionRef.html">ParamSpecExpressionRef</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferClassRef.html">PasswordEntryBufferClassRef</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferRef.html">PasswordEntryBufferRef</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/PasswordEntryClassRef.html">PasswordEntryClassRef</a>
               </li>
               <li class="nav-group-task">
@@ -6704,11 +6728,7 @@
 
                 </div>
               </div>
-            <p>The <code>ScrollableRef</code> type acts as a lightweight Swift reference to an underlying <code>GtkScrollable</code> instance.
-It exposes methods that can operate on this data type through <code><a href="../Protocols/ScrollableProtocol.html">ScrollableProtocol</a></code> conformance.
-Use <code>ScrollableRef</code> only as an <code>unowned</code> reference to an existing <code>GtkScrollable</code> instance.</p>
-
-<p><code>GtkScrollable</code> is an interface for widgets with native scrolling ability.</p>
+            <p><code>GtkScrollable</code> is an interface for widgets with native scrolling ability.</p>
 
 <p>To implement this interface you should override the
 [property<code>Gtk.Scrollable:hadjustment</code>] and
@@ -6729,15 +6749,19 @@ the widget should populate the adjustments’
 <li><p>Because its preferred size is the size for a fully expanded widget,
 the scrollable widget must be able to cope with underallocations.
 This means that it must accept any value passed to its
-<code>GtkWidgetClass.size_allocate()</code> function.</p></li>
+[vfunc<code>Gtk.Widget.size_allocate</code>] implementation.</p></li>
 <li><p>When the parent allocates space to the scrollable child widget,
 the widget should update the adjustments’ properties with new values.</p></li>
 <li><p>When any of the adjustments emits the [signal<code>Gtk.Adjustment::value-changed</code>]
 signal, the scrollable widget should scroll its contents.</p></li>
 </ul>
 
+<p>The <code>ScrollableRef</code> type acts as a lightweight Swift reference to an underlying <code>GtkScrollable</code> instance.
+It exposes methods that can operate on this data type through <code><a href="../Protocols/ScrollableProtocol.html">ScrollableProtocol</a></code> conformance.
+Use <code>ScrollableRef</code> only as an <code>unowned</code> reference to an existing <code>GtkScrollable</code> instance.</p>
+
               <div class="slightly-smaller">
-                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Root-Scrollable.swift#L895-L899">Show on GitHub</a>
+                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Root-Scrollable.swift#L902-L906">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -6774,7 +6798,7 @@ signal, the scrollable widget should scroll its contents.</p></li>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Root-Scrollable.swift#L898">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Root-Scrollable.swift#L905">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6818,7 +6842,7 @@ signal, the scrollable widget should scroll its contents.</p></li>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Root-Scrollable.swift#L903-L905">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Root-Scrollable.swift#L910-L912">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6849,7 +6873,7 @@ signal, the scrollable widget should scroll its contents.</p></li>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Root-Scrollable.swift#L908-L910">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Root-Scrollable.swift#L915-L917">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6880,7 +6904,7 @@ signal, the scrollable widget should scroll its contents.</p></li>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Root-Scrollable.swift#L913-L916">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Root-Scrollable.swift#L920-L923">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6911,7 +6935,7 @@ signal, the scrollable widget should scroll its contents.</p></li>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Root-Scrollable.swift#L919-L922">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Root-Scrollable.swift#L926-L929">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6942,7 +6966,7 @@ signal, the scrollable widget should scroll its contents.</p></li>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Root-Scrollable.swift#L925-L928">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Root-Scrollable.swift#L932-L935">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6973,7 +6997,7 @@ signal, the scrollable widget should scroll its contents.</p></li>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Root-Scrollable.swift#L931-L934">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Root-Scrollable.swift#L938-L941">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7004,7 +7028,7 @@ signal, the scrollable widget should scroll its contents.</p></li>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Root-Scrollable.swift#L937-L939">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Root-Scrollable.swift#L944-L946">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7036,7 +7060,7 @@ signal, the scrollable widget should scroll its contents.</p></li>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Root-Scrollable.swift#L943-L945">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Root-Scrollable.swift#L950-L952">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7068,7 +7092,7 @@ signal, the scrollable widget should scroll its contents.</p></li>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Root-Scrollable.swift#L949-L951">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Root-Scrollable.swift#L956-L958">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7100,7 +7124,7 @@ signal, the scrollable widget should scroll its contents.</p></li>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Root-Scrollable.swift#L955-L957">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Root-Scrollable.swift#L962-L964">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7132,7 +7156,7 @@ signal, the scrollable widget should scroll its contents.</p></li>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Root-Scrollable.swift#L961-L963">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Root-Scrollable.swift#L968-L970">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7164,7 +7188,7 @@ signal, the scrollable widget should scroll its contents.</p></li>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Root-Scrollable.swift#L967-L969">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Root-Scrollable.swift#L974-L976">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7177,8 +7201,8 @@ signal, the scrollable widget should scroll its contents.</p></li>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-05-16)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.7</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-12-10)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

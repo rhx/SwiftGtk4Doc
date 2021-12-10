@@ -21,7 +21,7 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          Gtk 4.2.1 Docs
+          Gtk 4.4.1 Docs
         </a>
          (95% documented)
       </p>
@@ -663,6 +663,9 @@
                 <a class="nav-group-task-link" href="../Classes/PasswordEntry.html">PasswordEntry</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PasswordEntryBuffer.html">PasswordEntryBuffer</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Picture.html">Picture</a>
               </li>
               <li class="nav-group-task">
@@ -990,6 +993,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk13INTERFACE_AGEs5Int32Vvp">INTERFACE_AGE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21INVALID_LIST_POSITIONs6UInt32Vvp">INVALID_LIST_POSITION</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21LEVEL_BAR_OFFSET_FULLSSvp">LEVEL_BAR_OFFSET_FULL</a>
@@ -2111,6 +2117,12 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PanedSignalName.html">PanedSignalName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferPropertyName.html">PasswordEntryBufferPropertyName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferSignalName.html">PasswordEntryBufferSignalName</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PasswordEntryPropertyName.html">PasswordEntryPropertyName</a>
@@ -4111,6 +4123,12 @@
                 <a class="nav-group-task-link" href="../Protocols/ParamSpecExpressionProtocol.html">ParamSpecExpressionProtocol</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferClassProtocol.html">PasswordEntryBufferClassProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferProtocol.html">PasswordEntryBufferProtocol</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/PasswordEntryClassProtocol.html">PasswordEntryClassProtocol</a>
               </li>
               <li class="nav-group-task">
@@ -5577,6 +5595,12 @@
                 <a class="nav-group-task-link" href="../Structs/ParamSpecExpressionRef.html">ParamSpecExpressionRef</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferClassRef.html">PasswordEntryBufferClassRef</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferRef.html">PasswordEntryBufferRef</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/PasswordEntryClassRef.html">PasswordEntryClassRef</a>
               </li>
               <li class="nav-group-task">
@@ -6704,11 +6728,7 @@
 
                 </div>
               </div>
-            <p>The <code>DropTargetRef</code> type acts as a lightweight Swift reference to an underlying <code>GtkDropTarget</code> instance.
-It exposes methods that can operate on this data type through <code><a href="../Protocols/DropTargetProtocol.html">DropTargetProtocol</a></code> conformance.
-Use <code>DropTargetRef</code> only as an <code>unowned</code> reference to an existing <code>GtkDropTarget</code> instance.</p>
-
-<p><code>GtkDropTarget</code> is an event controller to receive Drag-and-Drop operations.</p>
+            <p><code>GtkDropTarget</code> is an event controller to receive Drag-and-Drop operations.</p>
 
 <p>The most basic way to use a <code>GtkDropTarget</code> to receive drops on a
 widget is to create it via [ctor<code>Gtk.DropTarget.new</code>], passing in the
@@ -6779,8 +6799,12 @@ has not been rejected, that widget will receive the
 UI state during a Drag-and-Drop operation (e.g. switching tabs), you can
 use [class<code>Gtk.DropControllerMotion</code>].</p>
 
+<p>The <code>DropTargetRef</code> type acts as a lightweight Swift reference to an underlying <code>GtkDropTarget</code> instance.
+It exposes methods that can operate on this data type through <code><a href="../Protocols/DropTargetProtocol.html">DropTargetProtocol</a></code> conformance.
+Use <code>DropTargetRef</code> only as an <code>unowned</code> reference to an existing <code>GtkDropTarget</code> instance.</p>
+
               <div class="slightly-smaller">
-                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L5710-L5714">Show on GitHub</a>
+                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L5762-L5766">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -6817,7 +6841,7 @@ use [class<code>Gtk.DropControllerMotion</code>].</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L5713">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L5765">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6861,7 +6885,7 @@ use [class<code>Gtk.DropControllerMotion</code>].</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L5718-L5720">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L5770-L5772">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6892,7 +6916,7 @@ use [class<code>Gtk.DropControllerMotion</code>].</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L5723-L5725">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L5775-L5777">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6923,7 +6947,7 @@ use [class<code>Gtk.DropControllerMotion</code>].</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L5728-L5731">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L5780-L5783">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6954,7 +6978,7 @@ use [class<code>Gtk.DropControllerMotion</code>].</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L5734-L5737">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L5786-L5789">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6985,7 +7009,7 @@ use [class<code>Gtk.DropControllerMotion</code>].</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L5740-L5743">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L5792-L5795">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7016,7 +7040,7 @@ use [class<code>Gtk.DropControllerMotion</code>].</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L5746-L5749">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L5798-L5801">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7047,7 +7071,7 @@ use [class<code>Gtk.DropControllerMotion</code>].</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L5752-L5754">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L5804-L5806">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7078,7 +7102,7 @@ use [class<code>Gtk.DropControllerMotion</code>].</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L5757">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L5809">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7110,7 +7134,7 @@ use [class<code>Gtk.DropControllerMotion</code>].</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L5761-L5763">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L5813-L5815">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7142,7 +7166,7 @@ use [class<code>Gtk.DropControllerMotion</code>].</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L5767-L5769">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L5819-L5821">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7174,7 +7198,7 @@ use [class<code>Gtk.DropControllerMotion</code>].</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L5773-L5775">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L5825-L5827">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7206,7 +7230,7 @@ use [class<code>Gtk.DropControllerMotion</code>].</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L5779-L5781">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L5831-L5833">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7238,7 +7262,7 @@ use [class<code>Gtk.DropControllerMotion</code>].</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L5785-L5787">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L5837-L5839">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7274,7 +7298,7 @@ use [class<code>Gtk.DropControllerMotion</code>].</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L5794-L5797">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L5846-L5849">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7287,8 +7311,8 @@ use [class<code>Gtk.DropControllerMotion</code>].</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-05-16)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.7</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-12-10)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

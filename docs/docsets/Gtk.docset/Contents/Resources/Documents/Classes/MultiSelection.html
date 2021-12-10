@@ -21,7 +21,7 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          Gtk 4.2.1 Docs
+          Gtk 4.4.1 Docs
         </a>
          (95% documented)
       </p>
@@ -663,6 +663,9 @@
                 <a class="nav-group-task-link" href="../Classes/PasswordEntry.html">PasswordEntry</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PasswordEntryBuffer.html">PasswordEntryBuffer</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Picture.html">Picture</a>
               </li>
               <li class="nav-group-task">
@@ -990,6 +993,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk13INTERFACE_AGEs5Int32Vvp">INTERFACE_AGE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21INVALID_LIST_POSITIONs6UInt32Vvp">INVALID_LIST_POSITION</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21LEVEL_BAR_OFFSET_FULLSSvp">LEVEL_BAR_OFFSET_FULL</a>
@@ -2111,6 +2117,12 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PanedSignalName.html">PanedSignalName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferPropertyName.html">PasswordEntryBufferPropertyName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferSignalName.html">PasswordEntryBufferSignalName</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PasswordEntryPropertyName.html">PasswordEntryPropertyName</a>
@@ -4111,6 +4123,12 @@
                 <a class="nav-group-task-link" href="../Protocols/ParamSpecExpressionProtocol.html">ParamSpecExpressionProtocol</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferClassProtocol.html">PasswordEntryBufferClassProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferProtocol.html">PasswordEntryBufferProtocol</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/PasswordEntryClassProtocol.html">PasswordEntryClassProtocol</a>
               </li>
               <li class="nav-group-task">
@@ -5577,6 +5595,12 @@
                 <a class="nav-group-task-link" href="../Structs/ParamSpecExpressionRef.html">ParamSpecExpressionRef</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferClassRef.html">PasswordEntryBufferClassRef</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferRef.html">PasswordEntryBufferRef</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/PasswordEntryClassRef.html">PasswordEntryClassRef</a>
               </li>
               <li class="nav-group-task">
@@ -6704,15 +6728,15 @@
 
                 </div>
               </div>
-            <p>The <code>MultiSelection</code> type acts as a reference-counted owner of an underlying <code>GtkMultiSelection</code> instance.
+            <p><code>GtkMultiSelection</code> is a <code>GtkSelectionModel</code> that allows selecting multiple
+elements.</p>
+
+<p>The <code>MultiSelection</code> type acts as a reference-counted owner of an underlying <code>GtkMultiSelection</code> instance.
 It provides the methods that can operate on this data type through <code><a href="../Protocols/MultiSelectionProtocol.html">MultiSelectionProtocol</a></code> conformance.
 Use <code>MultiSelection</code> as a strong reference or owner of a <code>GtkMultiSelection</code> instance.</p>
 
-<p><code>GtkMultiSelection</code> is a <code>GtkSelectionModel</code> that allows selecting multiple
-elements.</p>
-
               <div class="slightly-smaller">
-                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L6231-L6364">Show on GitHub</a>
+                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L6912-L7045">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -6770,7 +6794,7 @@ i.e., ownership is transferred to the <code>MultiSelection</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L6236-L6238">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L6917-L6919">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6822,7 +6846,7 @@ i.e., ownership is transferred to the <code>MultiSelection</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L6244-L6246">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L6925-L6927">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6875,7 +6899,7 @@ i.e., ownership is transferred to the <code>MultiSelection</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L6253-L6256">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L6934-L6937">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6928,7 +6952,7 @@ i.e., ownership is transferred to the <code>MultiSelection</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L6263-L6266">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L6944-L6947">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6980,7 +7004,7 @@ i.e., ownership is transferred to the <code>MultiSelection</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L6272-L6275">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L6953-L6956">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7032,7 +7056,7 @@ i.e., ownership is transferred to the <code>MultiSelection</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L6281-L6284">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L6962-L6965">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7084,7 +7108,7 @@ i.e., ownership is transferred to the <code>MultiSelection</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L6290-L6292">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L6971-L6973">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7135,7 +7159,7 @@ Will retain <code>GtkMultiSelection</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L6297-L6299">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L6978-L6980">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7186,7 +7210,7 @@ Will retain <code>GtkMultiSelection</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L6304-L6306">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L6985-L6987">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7237,7 +7261,7 @@ Will retain <code>GtkMultiSelection</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L6311-L6313">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L6992-L6994">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7288,7 +7312,7 @@ Will retain <code>GtkMultiSelection</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L6318-L6320">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L6999-L7001">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7320,7 +7344,7 @@ Will retain <code>GtkMultiSelection</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L6324-L6326">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L7005-L7007">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7371,7 +7395,7 @@ Will retain <code>GtkMultiSelection</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L6331-L6333">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L7012-L7014">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7422,7 +7446,7 @@ Will retain <code>GtkMultiSelection</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L6338-L6340">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L7019-L7021">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7473,7 +7497,7 @@ Will retain <code>GtkMultiSelection</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L6345-L6347">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L7026-L7028">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7524,7 +7548,7 @@ Will retain <code>GtkMultiSelection</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L6352-L6354">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L7033-L7035">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7555,7 +7579,7 @@ Will retain <code>GtkMultiSelection</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L6357-L6361">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-MediaControls-NamedAction.swift#L7038-L7042">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7568,8 +7592,8 @@ Will retain <code>GtkMultiSelection</code>.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-05-16)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.7</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-12-10)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

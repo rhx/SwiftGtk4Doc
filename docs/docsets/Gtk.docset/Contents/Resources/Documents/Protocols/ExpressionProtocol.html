@@ -21,7 +21,7 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          Gtk 4.2.1 Docs
+          Gtk 4.4.1 Docs
         </a>
          (95% documented)
       </p>
@@ -663,6 +663,9 @@
                 <a class="nav-group-task-link" href="../Classes/PasswordEntry.html">PasswordEntry</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PasswordEntryBuffer.html">PasswordEntryBuffer</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Picture.html">Picture</a>
               </li>
               <li class="nav-group-task">
@@ -990,6 +993,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk13INTERFACE_AGEs5Int32Vvp">INTERFACE_AGE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21INVALID_LIST_POSITIONs6UInt32Vvp">INVALID_LIST_POSITION</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21LEVEL_BAR_OFFSET_FULLSSvp">LEVEL_BAR_OFFSET_FULL</a>
@@ -2111,6 +2117,12 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PanedSignalName.html">PanedSignalName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferPropertyName.html">PasswordEntryBufferPropertyName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferSignalName.html">PasswordEntryBufferSignalName</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PasswordEntryPropertyName.html">PasswordEntryPropertyName</a>
@@ -4111,6 +4123,12 @@
                 <a class="nav-group-task-link" href="../Protocols/ParamSpecExpressionProtocol.html">ParamSpecExpressionProtocol</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferClassProtocol.html">PasswordEntryBufferClassProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferProtocol.html">PasswordEntryBufferProtocol</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/PasswordEntryClassProtocol.html">PasswordEntryClassProtocol</a>
               </li>
               <li class="nav-group-task">
@@ -5577,6 +5595,12 @@
                 <a class="nav-group-task-link" href="../Structs/ParamSpecExpressionRef.html">ParamSpecExpressionRef</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferClassRef.html">PasswordEntryBufferClassRef</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferRef.html">PasswordEntryBufferRef</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/PasswordEntryClassRef.html">PasswordEntryClassRef</a>
               </li>
               <li class="nav-group-task">
@@ -6704,12 +6728,7 @@
 
                 </div>
               </div>
-            <p>The <code>ExpressionProtocol</code> protocol exposes the methods and properties of an underlying <code>GtkExpression</code> instance.
-The default implementation of these can be found in the protocol extension below.
-For a concrete class that implements these methods and properties, see <code><a href="../Classes/Expression.html">Expression</a></code>.
-Alternatively, use <code><a href="../Structs/ExpressionRef.html">ExpressionRef</a></code> as a lighweight, <code>unowned</code> reference if you already have an instance you just want to use.</p>
-
-<p><code>GtkExpression</code> provides a way to describe references to values.</p>
+            <p><code>GtkExpression</code> provides a way to describe references to values.</p>
 
 <p>An important aspect of expressions is that the value can be obtained
 from a source that is several steps away. For example, an expression
@@ -6821,8 +6840,13 @@ contains the expressions for the parameters. For instance:</p>
   <span class="ni">&amp;lt;</span>/closure<span class="ni">&amp;gt;</span>
 </code></pre>
 
+<p>The <code>ExpressionProtocol</code> protocol exposes the methods and properties of an underlying <code>GtkExpression</code> instance.
+The default implementation of these can be found in the protocol extension below.
+For a concrete class that implements these methods and properties, see <code><a href="../Classes/Expression.html">Expression</a></code>.
+Alternatively, use <code><a href="../Structs/ExpressionRef.html">ExpressionRef</a></code> as a lighweight, <code>unowned</code> reference if you already have an instance you just want to use.</p>
+
               <div class="slightly-smaller">
-                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L13074-L13083">Show on GitHub</a>
+                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L13282-L13291">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -6856,7 +6880,7 @@ contains the expressions for the parameters. For instance:</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L13076">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L13284">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6894,7 +6918,7 @@ contains the expressions for the parameters. For instance:</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L13079">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L13287">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6924,7 +6948,7 @@ contains the expressions for the parameters. For instance:</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L13082">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L13290">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6945,9 +6969,9 @@ contains the expressions for the parameters. For instance:</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:3Gtk18ExpressionProtocolPAAE4bind6target8property5this_AA0B8WatchRefVSgqd___SPys4Int8VGSgqd__Sgt10GLibObject0lC0Rd__lF"></a>
-                    <a name="//apple_ref/swift/Method/bind(target:property:this_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3Gtk18ExpressionProtocolPAAE4bind6target8property5this_AA0B8WatchRefVSgqd___SPys4Int8VGSgqd__Sgt10GLibObject0lC0Rd__lF">bind(target:<wbr>property:<wbr>this_:<wbr>)</a>
+                    <a name="/s:3Gtk18ExpressionProtocolPAAE4bind6target8property4thisAA0B8WatchRefVSgqd___SPys4Int8VGSgqd__Sgt10GLibObject0lC0Rd__lF"></a>
+                    <a name="//apple_ref/swift/Method/bind(target:property:this:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3Gtk18ExpressionProtocolPAAE4bind6target8property4thisAA0B8WatchRefVSgqd___SPys4Int8VGSgqd__Sgt10GLibObject0lC0Rd__lF">bind(target:<wbr>property:<wbr>this:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -6977,12 +7001,12 @@ to keep it around, you should [method<code>Gtk.Expression.ref</code>] it beforeh
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@inlinable</span>
-<span class="kd">func</span> <span class="n">bind</span><span class="o">&lt;</span><span class="kt">ObjectT</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">target</span><span class="p">:</span> <span class="kt">ObjectT</span><span class="p">,</span> <span class="nv">property</span><span class="p">:</span> <span class="kt">UnsafePointer</span><span class="o">&lt;</span><span class="kt">CChar</span><span class="o">&gt;!</span><span class="p">,</span> <span class="nv">this_</span><span class="p">:</span> <span class="kt">ObjectT</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/ExpressionWatchRef.html">ExpressionWatchRef</a></span><span class="o">!</span> <span class="k">where</span> <span class="kt">ObjectT</span> <span class="p">:</span> <span class="kt">ObjectProtocol</span></code></pre>
+<span class="kd">func</span> <span class="n">bind</span><span class="o">&lt;</span><span class="kt">ObjectT</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">target</span><span class="p">:</span> <span class="kt">ObjectT</span><span class="p">,</span> <span class="nv">property</span><span class="p">:</span> <span class="kt">UnsafePointer</span><span class="o">&lt;</span><span class="kt">CChar</span><span class="o">&gt;!</span><span class="p">,</span> <span class="nv">this</span><span class="p">:</span> <span class="kt">ObjectT</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/ExpressionWatchRef.html">ExpressionWatchRef</a></span><span class="o">!</span> <span class="k">where</span> <span class="kt">ObjectT</span> <span class="p">:</span> <span class="kt">ObjectProtocol</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L13591-L13594">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L13801-L13804">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6990,9 +7014,9 @@ to keep it around, you should [method<code>Gtk.Expression.ref</code>] it beforeh
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:3Gtk18ExpressionProtocolPAAE8evaluate5this_5valueSb10GLibObject0H3RefVSg_qd__tAG05ValueC0Rd__lF"></a>
-                    <a name="//apple_ref/swift/Method/evaluate(this_:value:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3Gtk18ExpressionProtocolPAAE8evaluate5this_5valueSb10GLibObject0H3RefVSg_qd__tAG05ValueC0Rd__lF">evaluate(this_:<wbr>value:<wbr>)</a>
+                    <a name="/s:3Gtk18ExpressionProtocolPAAE8evaluate4this5valueSb10GLibObject0H3RefVSg_qd__tAG05ValueC0Rd__lF"></a>
+                    <a name="//apple_ref/swift/Method/evaluate(this:value:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3Gtk18ExpressionProtocolPAAE8evaluate4this5valueSb10GLibObject0H3RefVSg_qd__tAG05ValueC0Rd__lF">evaluate(this:<wbr>value:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -7020,12 +7044,12 @@ will be returned.</p>
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@inlinable</span>
-<span class="kd">func</span> <span class="n">evaluate</span><span class="o">&lt;</span><span class="kt">ValueT</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">this_</span><span class="p">:</span> <span class="kt">GLibObject</span><span class="o">.</span><span class="kt">ObjectRef</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">value</span><span class="p">:</span> <span class="kt">ValueT</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span> <span class="k">where</span> <span class="kt">ValueT</span> <span class="p">:</span> <span class="kt">ValueProtocol</span></code></pre>
+<span class="kd">func</span> <span class="n">evaluate</span><span class="o">&lt;</span><span class="kt">ValueT</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">this</span><span class="p">:</span> <span class="kt">GLibObject</span><span class="o">.</span><span class="kt">ObjectRef</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">value</span><span class="p">:</span> <span class="kt">ValueT</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span> <span class="k">where</span> <span class="kt">ValueT</span> <span class="p">:</span> <span class="kt">ValueProtocol</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L13606-L13609">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L13816-L13819">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7033,9 +7057,9 @@ will be returned.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:3Gtk18ExpressionProtocolPAAE8evaluate5this_5valueSbqd__Sg_qd_0_t10GLibObject0hC0Rd__AH05ValueC0Rd_0_r0_lF"></a>
-                    <a name="//apple_ref/swift/Method/evaluate(this_:value:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3Gtk18ExpressionProtocolPAAE8evaluate5this_5valueSbqd__Sg_qd_0_t10GLibObject0hC0Rd__AH05ValueC0Rd_0_r0_lF">evaluate(this_:<wbr>value:<wbr>)</a>
+                    <a name="/s:3Gtk18ExpressionProtocolPAAE8evaluate4this5valueSbqd__Sg_qd_0_t10GLibObject0hC0Rd__AH05ValueC0Rd_0_r0_lF"></a>
+                    <a name="//apple_ref/swift/Method/evaluate(this:value:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3Gtk18ExpressionProtocolPAAE8evaluate4this5valueSbqd__Sg_qd_0_t10GLibObject0hC0Rd__AH05ValueC0Rd_0_r0_lF">evaluate(this:<wbr>value:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -7063,12 +7087,12 @@ will be returned.</p>
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@inlinable</span>
-<span class="kd">func</span> <span class="n">evaluate</span><span class="o">&lt;</span><span class="kt">ObjectT</span><span class="p">,</span> <span class="kt">ValueT</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">this_</span><span class="p">:</span> <span class="kt">ObjectT</span><span class="p">?,</span> <span class="nv">value</span><span class="p">:</span> <span class="kt">ValueT</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span> <span class="k">where</span> <span class="kt">ObjectT</span> <span class="p">:</span> <span class="kt">ObjectProtocol</span><span class="p">,</span> <span class="kt">ValueT</span> <span class="p">:</span> <span class="kt">ValueProtocol</span></code></pre>
+<span class="kd">func</span> <span class="n">evaluate</span><span class="o">&lt;</span><span class="kt">ObjectT</span><span class="p">,</span> <span class="kt">ValueT</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">this</span><span class="p">:</span> <span class="kt">ObjectT</span><span class="p">?,</span> <span class="nv">value</span><span class="p">:</span> <span class="kt">ValueT</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span> <span class="k">where</span> <span class="kt">ObjectT</span> <span class="p">:</span> <span class="kt">ObjectProtocol</span><span class="p">,</span> <span class="kt">ValueT</span> <span class="p">:</span> <span class="kt">ValueProtocol</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L13620-L13623">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L13830-L13833">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7105,7 +7129,7 @@ of this expression.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L13629-L13632">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L13839-L13842">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7140,7 +7164,7 @@ of this expression.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L13635-L13638">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L13845-L13848">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7177,7 +7201,7 @@ freed.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L13644-L13647">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L13854-L13857">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7185,9 +7209,9 @@ freed.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:3Gtk18ExpressionProtocolPAAE5watch5this_6notify8userData0G7DestroyAA0B8WatchRefVSg10GLibObject0mK0VSg_ySvSgXCSgApQtF"></a>
-                    <a name="//apple_ref/swift/Method/watch(this_:notify:userData:userDestroy:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3Gtk18ExpressionProtocolPAAE5watch5this_6notify8userData0G7DestroyAA0B8WatchRefVSg10GLibObject0mK0VSg_ySvSgXCSgApQtF">watch(this_:<wbr>notify:<wbr>userData:<wbr>userDestroy:<wbr>)</a>
+                    <a name="/s:3Gtk18ExpressionProtocolPAAE5watch4this6notify8userData0G7DestroyAA0B8WatchRefVSg10GLibObject0mK0VSg_ySvSgXCSgApQtF"></a>
+                    <a name="//apple_ref/swift/Method/watch(this:notify:userData:userDestroy:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3Gtk18ExpressionProtocolPAAE5watch4this6notify8userData0G7DestroyAA0B8WatchRefVSg10GLibObject0mK0VSg_ySvSgXCSgApQtF">watch(this:<wbr>notify:<wbr>userData:<wbr>userDestroy:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -7198,8 +7222,10 @@ freed.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Installs a watch for the given <code>expression</code> that calls the <code>notify</code> function
-whenever the evaluation of <code>self</code> may have changed.</p>
+                        <p>Watch the given <code>expression</code> for changes.</p>
+
+<p>The <code>notify</code> function will be called whenever the evaluation of <code>self</code>
+may have changed.</p>
 
 <p>GTK cannot guarantee that the evaluation did indeed change when the <code>notify</code>
 gets invoked, but it guarantees the opposite: When it did in fact change,
@@ -7211,12 +7237,12 @@ the <code>notify</code> will be invoked.</p>
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@inlinable</span>
-<span class="kd">func</span> <span class="nf">watch</span><span class="p">(</span><span class="nv">this_</span><span class="p">:</span> <span class="kt">GLibObject</span><span class="o">.</span><span class="kt">ObjectRef</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">notify</span><span class="p">:</span> <span class="kt">GtkExpressionNotify</span><span class="p">?,</span> <span class="nv">userData</span><span class="p">:</span> <span class="n">gpointer</span><span class="o">!</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">userDestroy</span><span class="p">:</span> <span class="kt">GDestroyNotify</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/ExpressionWatchRef.html">ExpressionWatchRef</a></span><span class="o">!</span></code></pre>
+<span class="kd">func</span> <span class="nf">watch</span><span class="p">(</span><span class="nv">this</span><span class="p">:</span> <span class="kt">GLibObject</span><span class="o">.</span><span class="kt">ObjectRef</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">notify</span><span class="p">:</span> <span class="kt">GtkExpressionNotify</span><span class="p">?,</span> <span class="nv">userData</span><span class="p">:</span> <span class="n">gpointer</span><span class="o">!</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">userDestroy</span><span class="p">:</span> <span class="kt">GDestroyNotify</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/ExpressionWatchRef.html">ExpressionWatchRef</a></span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L13655-L13658">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L13867-L13870">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7224,9 +7250,9 @@ the <code>notify</code> will be invoked.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:3Gtk18ExpressionProtocolPAAE5watch5this_6notify8userData0G7DestroyAA0B8WatchRefVSgqd__Sg_ySvSgXCSgAmNt10GLibObject0mC0Rd__lF"></a>
-                    <a name="//apple_ref/swift/Method/watch(this_:notify:userData:userDestroy:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3Gtk18ExpressionProtocolPAAE5watch5this_6notify8userData0G7DestroyAA0B8WatchRefVSgqd__Sg_ySvSgXCSgAmNt10GLibObject0mC0Rd__lF">watch(this_:<wbr>notify:<wbr>userData:<wbr>userDestroy:<wbr>)</a>
+                    <a name="/s:3Gtk18ExpressionProtocolPAAE5watch4this6notify8userData0G7DestroyAA0B8WatchRefVSgqd__Sg_ySvSgXCSgAmNt10GLibObject0mC0Rd__lF"></a>
+                    <a name="//apple_ref/swift/Method/watch(this:notify:userData:userDestroy:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3Gtk18ExpressionProtocolPAAE5watch4this6notify8userData0G7DestroyAA0B8WatchRefVSgqd__Sg_ySvSgXCSgAmNt10GLibObject0mC0Rd__lF">watch(this:<wbr>notify:<wbr>userData:<wbr>userDestroy:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -7237,8 +7263,10 @@ the <code>notify</code> will be invoked.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Installs a watch for the given <code>expression</code> that calls the <code>notify</code> function
-whenever the evaluation of <code>self</code> may have changed.</p>
+                        <p>Watch the given <code>expression</code> for changes.</p>
+
+<p>The <code>notify</code> function will be called whenever the evaluation of <code>self</code>
+may have changed.</p>
 
 <p>GTK cannot guarantee that the evaluation did indeed change when the <code>notify</code>
 gets invoked, but it guarantees the opposite: When it did in fact change,
@@ -7250,12 +7278,12 @@ the <code>notify</code> will be invoked.</p>
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@inlinable</span>
-<span class="kd">func</span> <span class="n">watch</span><span class="o">&lt;</span><span class="kt">ObjectT</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">this_</span><span class="p">:</span> <span class="kt">ObjectT</span><span class="p">?,</span> <span class="nv">notify</span><span class="p">:</span> <span class="kt">GtkExpressionNotify</span><span class="p">?,</span> <span class="nv">userData</span><span class="p">:</span> <span class="n">gpointer</span><span class="o">!</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">userDestroy</span><span class="p">:</span> <span class="kt">GDestroyNotify</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/ExpressionWatchRef.html">ExpressionWatchRef</a></span><span class="o">!</span> <span class="k">where</span> <span class="kt">ObjectT</span> <span class="p">:</span> <span class="kt">ObjectProtocol</span></code></pre>
+<span class="kd">func</span> <span class="n">watch</span><span class="o">&lt;</span><span class="kt">ObjectT</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">this</span><span class="p">:</span> <span class="kt">ObjectT</span><span class="p">?,</span> <span class="nv">notify</span><span class="p">:</span> <span class="kt">GtkExpressionNotify</span><span class="p">?,</span> <span class="nv">userData</span><span class="p">:</span> <span class="n">gpointer</span><span class="o">!</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">userDestroy</span><span class="p">:</span> <span class="kt">GDestroyNotify</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/ExpressionWatchRef.html">ExpressionWatchRef</a></span><span class="o">!</span> <span class="k">where</span> <span class="kt">ObjectT</span> <span class="p">:</span> <span class="kt">ObjectProtocol</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L13665-L13668">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L13879-L13882">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7291,7 +7319,7 @@ the <code>notify</code> will be invoked.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L13673-L13676">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L13887-L13890">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7327,7 +7355,7 @@ the <code>notify</code> will be invoked.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L13681-L13684">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L13895-L13898">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7367,7 +7395,7 @@ it will never trigger a notify.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L13692-L13704">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L13906-L13918">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7404,7 +7432,7 @@ of this expression.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L13710-L13719">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-EmojiChooser-FileChooserDialog.swift#L13924-L13933">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7417,8 +7445,8 @@ of this expression.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-05-16)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.7</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-12-10)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

@@ -21,7 +21,7 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          Gtk 4.2.1 Docs
+          Gtk 4.4.1 Docs
         </a>
          (95% documented)
       </p>
@@ -663,6 +663,9 @@
                 <a class="nav-group-task-link" href="../Classes/PasswordEntry.html">PasswordEntry</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PasswordEntryBuffer.html">PasswordEntryBuffer</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Picture.html">Picture</a>
               </li>
               <li class="nav-group-task">
@@ -990,6 +993,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk13INTERFACE_AGEs5Int32Vvp">INTERFACE_AGE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21INVALID_LIST_POSITIONs6UInt32Vvp">INVALID_LIST_POSITION</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21LEVEL_BAR_OFFSET_FULLSSvp">LEVEL_BAR_OFFSET_FULL</a>
@@ -2111,6 +2117,12 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PanedSignalName.html">PanedSignalName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferPropertyName.html">PasswordEntryBufferPropertyName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferSignalName.html">PasswordEntryBufferSignalName</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PasswordEntryPropertyName.html">PasswordEntryPropertyName</a>
@@ -4111,6 +4123,12 @@
                 <a class="nav-group-task-link" href="../Protocols/ParamSpecExpressionProtocol.html">ParamSpecExpressionProtocol</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferClassProtocol.html">PasswordEntryBufferClassProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferProtocol.html">PasswordEntryBufferProtocol</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/PasswordEntryClassProtocol.html">PasswordEntryClassProtocol</a>
               </li>
               <li class="nav-group-task">
@@ -5577,6 +5595,12 @@
                 <a class="nav-group-task-link" href="../Structs/ParamSpecExpressionRef.html">ParamSpecExpressionRef</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferClassRef.html">PasswordEntryBufferClassRef</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferRef.html">PasswordEntryBufferRef</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/PasswordEntryClassRef.html">PasswordEntryClassRef</a>
               </li>
               <li class="nav-group-task">
@@ -6704,11 +6728,7 @@
 
                 </div>
               </div>
-            <p>The <code>EditableLabelRef</code> type acts as a lightweight Swift reference to an underlying <code>GtkEditableLabel</code> instance.
-It exposes methods that can operate on this data type through <code><a href="../Protocols/EditableLabelProtocol.html">EditableLabelProtocol</a></code> conformance.
-Use <code>EditableLabelRef</code> only as an <code>unowned</code> reference to an existing <code>GtkEditableLabel</code> instance.</p>
-
-<p>A <code>GtkEditableLabel</code> is a label that allows users to
+            <p>A <code>GtkEditableLabel</code> is a label that allows users to
 edit the text by switching to an “edit mode”.</p>
 
 <p><img src="editable-label.png" alt="An example GtkEditableLabel"></p>
@@ -6734,8 +6754,12 @@ class.</p>
 <p>For all the subnodes added to the text node in various situations,
 see [class<code>Gtk.Text</code>].</p>
 
+<p>The <code>EditableLabelRef</code> type acts as a lightweight Swift reference to an underlying <code>GtkEditableLabel</code> instance.
+It exposes methods that can operate on this data type through <code><a href="../Protocols/EditableLabelProtocol.html">EditableLabelProtocol</a></code> conformance.
+Use <code>EditableLabelRef</code> only as an <code>unowned</code> reference to an existing <code>GtkEditableLabel</code> instance.</p>
+
               <div class="slightly-smaller">
-                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L7772-L7776">Show on GitHub</a>
+                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L7939-L7943">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -6772,7 +6796,7 @@ see [class<code>Gtk.Text</code>].</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L7775">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L7942">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6816,7 +6840,7 @@ see [class<code>Gtk.Text</code>].</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L7780-L7782">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L7947-L7949">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6847,7 +6871,7 @@ see [class<code>Gtk.Text</code>].</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L7785-L7787">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L7952-L7954">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6878,7 +6902,7 @@ see [class<code>Gtk.Text</code>].</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L7790-L7793">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L7957-L7960">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6909,7 +6933,7 @@ see [class<code>Gtk.Text</code>].</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L7796-L7799">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L7963-L7966">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6940,7 +6964,7 @@ see [class<code>Gtk.Text</code>].</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L7802-L7805">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L7969-L7972">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6971,7 +6995,7 @@ see [class<code>Gtk.Text</code>].</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L7808-L7811">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L7975-L7978">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7002,7 +7026,7 @@ see [class<code>Gtk.Text</code>].</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L7814-L7816">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L7981-L7983">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7033,7 +7057,7 @@ see [class<code>Gtk.Text</code>].</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L7819">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L7986">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7065,7 +7089,7 @@ see [class<code>Gtk.Text</code>].</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L7823-L7825">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L7990-L7992">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7097,7 +7121,7 @@ see [class<code>Gtk.Text</code>].</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L7829-L7831">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L7996-L7998">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7129,7 +7153,7 @@ see [class<code>Gtk.Text</code>].</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L7835-L7837">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L8002-L8004">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7161,7 +7185,7 @@ see [class<code>Gtk.Text</code>].</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L7841-L7843">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L8008-L8010">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7193,7 +7217,7 @@ see [class<code>Gtk.Text</code>].</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L7847-L7849">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L8014-L8016">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7224,7 +7248,7 @@ see [class<code>Gtk.Text</code>].</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L7852-L7855">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L8019-L8022">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7237,8 +7261,8 @@ see [class<code>Gtk.Text</code>].</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-05-16)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.7</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-12-10)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

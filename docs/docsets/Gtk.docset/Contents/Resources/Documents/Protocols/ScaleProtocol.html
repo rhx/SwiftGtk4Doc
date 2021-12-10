@@ -21,7 +21,7 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          Gtk 4.2.1 Docs
+          Gtk 4.4.1 Docs
         </a>
          (95% documented)
       </p>
@@ -663,6 +663,9 @@
                 <a class="nav-group-task-link" href="../Classes/PasswordEntry.html">PasswordEntry</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PasswordEntryBuffer.html">PasswordEntryBuffer</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Picture.html">Picture</a>
               </li>
               <li class="nav-group-task">
@@ -990,6 +993,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk13INTERFACE_AGEs5Int32Vvp">INTERFACE_AGE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21INVALID_LIST_POSITIONs6UInt32Vvp">INVALID_LIST_POSITION</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21LEVEL_BAR_OFFSET_FULLSSvp">LEVEL_BAR_OFFSET_FULL</a>
@@ -2111,6 +2117,12 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PanedSignalName.html">PanedSignalName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferPropertyName.html">PasswordEntryBufferPropertyName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferSignalName.html">PasswordEntryBufferSignalName</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PasswordEntryPropertyName.html">PasswordEntryPropertyName</a>
@@ -4111,6 +4123,12 @@
                 <a class="nav-group-task-link" href="../Protocols/ParamSpecExpressionProtocol.html">ParamSpecExpressionProtocol</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferClassProtocol.html">PasswordEntryBufferClassProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferProtocol.html">PasswordEntryBufferProtocol</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/PasswordEntryClassProtocol.html">PasswordEntryClassProtocol</a>
               </li>
               <li class="nav-group-task">
@@ -5577,6 +5595,12 @@
                 <a class="nav-group-task-link" href="../Structs/ParamSpecExpressionRef.html">ParamSpecExpressionRef</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferClassRef.html">PasswordEntryBufferClassRef</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferRef.html">PasswordEntryBufferRef</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/PasswordEntryClassRef.html">PasswordEntryClassRef</a>
               </li>
               <li class="nav-group-task">
@@ -6704,12 +6728,7 @@
 
                 </div>
               </div>
-            <p>The <code>ScaleProtocol</code> protocol exposes the methods and properties of an underlying <code>GtkScale</code> instance.
-The default implementation of these can be found in the protocol extension below.
-For a concrete class that implements these methods and properties, see <code><a href="../Classes/Scale.html">Scale</a></code>.
-Alternatively, use <code><a href="../Structs/ScaleRef.html">ScaleRef</a></code> as a lighweight, <code>unowned</code> reference if you already have an instance you just want to use.</p>
-
-<p>A <code>GtkScale</code> is a slider control used to select a numeric value.</p>
+            <p>A <code>GtkScale</code> is a slider control used to select a numeric value.</p>
 
 <p><img src="scales.png" alt="An example GtkScale"></p>
 
@@ -6785,8 +6804,13 @@ classes similar to the marks node.</p>
 
 <p><code>GtkScale</code> uses the <code>GTK_ACCESSIBLE_ROLE_SLIDER</code> role.</p>
 
+<p>The <code>ScaleProtocol</code> protocol exposes the methods and properties of an underlying <code>GtkScale</code> instance.
+The default implementation of these can be found in the protocol extension below.
+For a concrete class that implements these methods and properties, see <code><a href="../Classes/Scale.html">Scale</a></code>.
+Alternatively, use <code><a href="../Structs/ScaleRef.html">ScaleRef</a></code> as a lighweight, <code>unowned</code> reference if you already have an instance you just want to use.</p>
+
               <div class="slightly-smaller">
-                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L1851-L1860">Show on GitHub</a>
+                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L1866-L1875">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -6820,7 +6844,7 @@ classes similar to the marks node.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L1853">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L1868">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6858,7 +6882,7 @@ classes similar to the marks node.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L1856">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L1871">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6888,7 +6912,7 @@ classes similar to the marks node.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L1859">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L1874">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7019,7 +7043,7 @@ classes similar to the marks node.</p>
                         <p>binding reference or <code>nil</code> in case of an error</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L2491-L2515">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L2508-L2532">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7076,7 +7100,7 @@ classes similar to the marks node.</p>
                         <p>the value of the named property</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L2520-L2524">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L2537-L2541">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7134,7 +7158,7 @@ classes similar to the marks node.</p>
                         <p>the value of the named property</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L2530-L2532">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L2547-L2549">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7189,7 +7213,7 @@ marks value.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L2835-L2838">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L2854-L2857">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7223,7 +7247,7 @@ marks value.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L2841-L2844">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L2860-L2863">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7257,7 +7281,7 @@ marks value.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L2847-L2850">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L2866-L2869">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7292,7 +7316,7 @@ next to the slider.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L2854-L2857">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L2873-L2876">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7326,7 +7350,7 @@ next to the slider.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L2860-L2863">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L2879-L2882">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7363,7 +7387,7 @@ to be freed by the caller.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L2869-L2872">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L2888-L2891">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7404,7 +7428,7 @@ values are undefined.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L2882-L2885">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L2901-L2904">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7438,7 +7462,7 @@ values are undefined.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L2888-L2891">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L2907-L2910">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7483,7 +7507,7 @@ value yourself.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L2905-L2908">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L2924-L2927">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7518,7 +7542,7 @@ to the slider.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L2912-L2915">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L2931-L2934">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7559,7 +7583,7 @@ its own, rounded according to the value of the
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L2925-L2928">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L2944-L2947">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7597,7 +7621,7 @@ the scale will highlight the part of the trough between the origin
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L2935-L2938">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L2954-L2957">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7631,7 +7655,7 @@ the scale will highlight the part of the trough between the origin
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L2941-L2944">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L2960-L2963">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7665,7 +7689,7 @@ the scale will highlight the part of the trough between the origin
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L2946-L2967">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L2965-L2986">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7700,7 +7724,7 @@ next to the slider.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L2971-L2983">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L2990-L3002">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7734,7 +7758,7 @@ next to the slider.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L2986-L3000">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L3005-L3019">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7771,7 +7795,7 @@ to be freed by the caller.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L3006-L3015">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L3025-L3034">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7805,7 +7829,7 @@ to be freed by the caller.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L3018-L3028">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L3037-L3047">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7839,7 +7863,7 @@ to be freed by the caller.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L3030-L3035">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-RecentManager-Scale.swift#L3049-L3054">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7852,8 +7876,8 @@ to be freed by the caller.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-05-16)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.7</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-12-10)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

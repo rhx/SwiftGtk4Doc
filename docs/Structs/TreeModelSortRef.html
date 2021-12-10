@@ -21,7 +21,7 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          Gtk 4.2.1 Docs
+          Gtk 4.4.1 Docs
         </a>
          (95% documented)
       </p>
@@ -663,6 +663,9 @@
                 <a class="nav-group-task-link" href="../Classes/PasswordEntry.html">PasswordEntry</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PasswordEntryBuffer.html">PasswordEntryBuffer</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Picture.html">Picture</a>
               </li>
               <li class="nav-group-task">
@@ -990,6 +993,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk13INTERFACE_AGEs5Int32Vvp">INTERFACE_AGE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21INVALID_LIST_POSITIONs6UInt32Vvp">INVALID_LIST_POSITION</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21LEVEL_BAR_OFFSET_FULLSSvp">LEVEL_BAR_OFFSET_FULL</a>
@@ -2111,6 +2117,12 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PanedSignalName.html">PanedSignalName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferPropertyName.html">PasswordEntryBufferPropertyName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferSignalName.html">PasswordEntryBufferSignalName</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PasswordEntryPropertyName.html">PasswordEntryPropertyName</a>
@@ -4111,6 +4123,12 @@
                 <a class="nav-group-task-link" href="../Protocols/ParamSpecExpressionProtocol.html">ParamSpecExpressionProtocol</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferClassProtocol.html">PasswordEntryBufferClassProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferProtocol.html">PasswordEntryBufferProtocol</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/PasswordEntryClassProtocol.html">PasswordEntryClassProtocol</a>
               </li>
               <li class="nav-group-task">
@@ -5577,6 +5595,12 @@
                 <a class="nav-group-task-link" href="../Structs/ParamSpecExpressionRef.html">ParamSpecExpressionRef</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferClassRef.html">PasswordEntryBufferClassRef</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferRef.html">PasswordEntryBufferRef</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/PasswordEntryClassRef.html">PasswordEntryClassRef</a>
               </li>
               <li class="nav-group-task">
@@ -6704,11 +6728,7 @@
 
                 </div>
               </div>
-            <p>The <code>TreeModelSortRef</code> type acts as a lightweight Swift reference to an underlying <code>GtkTreeModelSort</code> instance.
-It exposes methods that can operate on this data type through <code><a href="../Protocols/TreeModelSortProtocol.html">TreeModelSortProtocol</a></code> conformance.
-Use <code>TreeModelSortRef</code> only as an <code>unowned</code> reference to an existing <code>GtkTreeModelSort</code> instance.</p>
-
-<p>A GtkTreeModel which makes an underlying tree model sortable</p>
+            <p>A GtkTreeModel which makes an underlying tree model sortable</p>
 
 <p>The <code>GtkTreeModelSort</code> is a model which implements the <code>GtkTreeSortable</code>
 interface.  It does not hold any data itself, but rather is created with
@@ -6721,7 +6741,7 @@ model without modifying it. Note that the sort function used by
 <p>The use of this is best demonstrated through an example.  In the
 following sample code we create two <code>GtkTreeView</code> widgets each with a
 view of the same data.  As the model is wrapped here by a
-<code>GtkTreeModelSort</code>, the two <code>GtkTreeViews</code> can each sort their
+<code>GtkTreeModelSort</code>, the two <code>GtkTreeView</code>s can each sort their
 view of the data without affecting the other.  By contrast, if we
 simply put the same model in each widget, then sorting the first would
 sort the second.</p>
@@ -6756,7 +6776,7 @@ sort the second.</p>
 
 <p>To demonstrate how to access the underlying child model from the sort
 model, the next example will be a callback for the <code>GtkTreeSelection</code>
-<code>GtkTreeSelection::changed</code> signal.  In this callback, we get a string
+<code>GtkTreeSelection</code>changed`` signal.  In this callback, we get a string
 from COLUMN_1 of the model.  We then modify the string, find the same
 selected row on the child model, and change the row there.</p>
 <h2 id='accessing-the-child-model-of-in-a-selection-changed-callback' class='heading'>Accessing the child model of in a selection changed callback</h2>
@@ -6803,8 +6823,12 @@ selection_changed (GtkTreeSelection *selection, gpointer data)
 }
 </code></pre>
 
+<p>The <code>TreeModelSortRef</code> type acts as a lightweight Swift reference to an underlying <code>GtkTreeModelSort</code> instance.
+It exposes methods that can operate on this data type through <code><a href="../Protocols/TreeModelSortProtocol.html">TreeModelSortProtocol</a></code> conformance.
+Use <code>TreeModelSortRef</code> only as an <code>unowned</code> reference to an existing <code>GtkTreeModelSort</code> instance.</p>
+
               <div class="slightly-smaller">
-                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L13451-L13455">Show on GitHub</a>
+                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L13643-L13647">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -6841,7 +6865,7 @@ selection_changed (GtkTreeSelection *selection, gpointer data)
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L13454">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L13646">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6885,7 +6909,7 @@ selection_changed (GtkTreeSelection *selection, gpointer data)
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L13459-L13461">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L13651-L13653">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6916,7 +6940,7 @@ selection_changed (GtkTreeSelection *selection, gpointer data)
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L13464-L13466">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L13656-L13658">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6947,7 +6971,7 @@ selection_changed (GtkTreeSelection *selection, gpointer data)
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L13469-L13472">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L13661-L13664">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6978,7 +7002,7 @@ selection_changed (GtkTreeSelection *selection, gpointer data)
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L13475-L13478">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L13667-L13670">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7009,7 +7033,7 @@ selection_changed (GtkTreeSelection *selection, gpointer data)
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L13481-L13484">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L13673-L13676">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7040,7 +7064,7 @@ selection_changed (GtkTreeSelection *selection, gpointer data)
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L13487-L13490">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L13679-L13682">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7071,7 +7095,7 @@ selection_changed (GtkTreeSelection *selection, gpointer data)
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L13493-L13495">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L13685-L13687">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7102,7 +7126,7 @@ selection_changed (GtkTreeSelection *selection, gpointer data)
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L13498">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L13690">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7134,7 +7158,7 @@ selection_changed (GtkTreeSelection *selection, gpointer data)
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L13502-L13504">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L13694-L13696">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7166,7 +7190,7 @@ selection_changed (GtkTreeSelection *selection, gpointer data)
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L13508-L13510">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L13700-L13702">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7198,7 +7222,7 @@ selection_changed (GtkTreeSelection *selection, gpointer data)
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L13514-L13516">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L13706-L13708">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7230,7 +7254,7 @@ selection_changed (GtkTreeSelection *selection, gpointer data)
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L13520-L13522">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L13712-L13714">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7262,7 +7286,7 @@ selection_changed (GtkTreeSelection *selection, gpointer data)
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L13526-L13528">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L13718-L13720">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7275,8 +7299,8 @@ selection_changed (GtkTreeSelection *selection, gpointer data)
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-05-16)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.7</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-12-10)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

@@ -21,7 +21,7 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          Gtk 4.2.1 Docs
+          Gtk 4.4.1 Docs
         </a>
          (95% documented)
       </p>
@@ -663,6 +663,9 @@
                 <a class="nav-group-task-link" href="../Classes/PasswordEntry.html">PasswordEntry</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PasswordEntryBuffer.html">PasswordEntryBuffer</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Picture.html">Picture</a>
               </li>
               <li class="nav-group-task">
@@ -990,6 +993,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk13INTERFACE_AGEs5Int32Vvp">INTERFACE_AGE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21INVALID_LIST_POSITIONs6UInt32Vvp">INVALID_LIST_POSITION</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21LEVEL_BAR_OFFSET_FULLSSvp">LEVEL_BAR_OFFSET_FULL</a>
@@ -2111,6 +2117,12 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PanedSignalName.html">PanedSignalName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferPropertyName.html">PasswordEntryBufferPropertyName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferSignalName.html">PasswordEntryBufferSignalName</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PasswordEntryPropertyName.html">PasswordEntryPropertyName</a>
@@ -4111,6 +4123,12 @@
                 <a class="nav-group-task-link" href="../Protocols/ParamSpecExpressionProtocol.html">ParamSpecExpressionProtocol</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferClassProtocol.html">PasswordEntryBufferClassProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferProtocol.html">PasswordEntryBufferProtocol</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/PasswordEntryClassProtocol.html">PasswordEntryClassProtocol</a>
               </li>
               <li class="nav-group-task">
@@ -5577,6 +5595,12 @@
                 <a class="nav-group-task-link" href="../Structs/ParamSpecExpressionRef.html">ParamSpecExpressionRef</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferClassRef.html">PasswordEntryBufferClassRef</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferRef.html">PasswordEntryBufferRef</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/PasswordEntryClassRef.html">PasswordEntryClassRef</a>
               </li>
               <li class="nav-group-task">
@@ -6704,15 +6728,11 @@
 
                 </div>
               </div>
-            <p>The <code>CellAreaRef</code> type acts as a lightweight Swift reference to an underlying <code>GtkCellArea</code> instance.
-It exposes methods that can operate on this data type through <code><a href="../Protocols/CellAreaProtocol.html">CellAreaProtocol</a></code> conformance.
-Use <code>CellAreaRef</code> only as an <code>unowned</code> reference to an existing <code>GtkCellArea</code> instance.</p>
-
-<p>An abstract class for laying out GtkCellRenderers</p>
+            <p>An abstract class for laying out GtkCellRenderers</p>
 
 <p>The <code>GtkCellArea</code> is an abstract class for <code>GtkCellLayout</code> widgets
 (also referred to as &ldquo;layouting widgets&rdquo;) to interface with an
-arbitrary number of <code>GtkCellRenderers</code> and interact with the user
+arbitrary number of <code>GtkCellRenderer</code>s and interact with the user
 for a given <code>GtkTreeModel</code> row.</p>
 
 <p>The cell area handles events, focus navigation, drawing and
@@ -6741,17 +6761,17 @@ areas when allocated less width.</p>
 alignments with areas rendered for adjacent rows (cells can
 appear “columnized” inside an area even when the size of
 cells are different in each row). For this reason the <code>GtkCellArea</code>
-uses a <code>GtkCellAreaContext</code> object to store the alignments
+uses a <code>GtkCellArea</code>Context object to store the alignments
 and sizes along the way (as well as the overall largest minimum
 and natural size for all the rows which have been calculated
 with the said context).</p>
 
-<p>The <code>GtkCellAreaContext</code> is an opaque object specific to the
+<p>The <code>GtkCellArea</code>Context is an opaque object specific to the
 <code>GtkCellArea</code> which created it (see <code>gtk_cell_area_create_context()</code>).
 The owning cell-layouting widget can create as many contexts as
 it wishes to calculate sizes of rows which should receive the
 same size in at least one orientation (horizontally or vertically),
-However, it’s important that the same <code>GtkCellAreaContext</code> which
+However, it’s important that the same <code>GtkCellArea</code>Context which
 was used to request the sizes for a given <code>GtkTreeModel</code> row be
 used when rendering or processing events for that row.</p>
 
@@ -6778,7 +6798,7 @@ gtk_cell_area_context_get_preferred_width (context, &amp;minimum_width, &amp;nat
 returned minimum and natural width of the area for each row
 unless the cell-layouting object is actually interested in the
 widths of individual rows. The overall width is however stored
-in the accompanying <code>GtkCellAreaContext</code> object and can be consulted
+in the accompanying <code>GtkCellArea</code>Context object and can be consulted
 at any time.</p>
 
 <p>This can be useful since <code>GtkCellLayout</code> widgets usually have to
@@ -6786,9 +6806,9 @@ support requesting and rendering rows in treemodels with an
 exceedingly large amount of rows. The <code>GtkCellLayout</code> widget in
 that case would calculate the required width of the rows in an
 idle or timeout source (see <code>g_timeout_add()</code>) and when the widget
-is requested its actual width in <code>GtkWidgetClass.measure</code><code>()</code>
+is requested its actual width in [vfunc<code>Gtk.Widget.measure</code>]
 it can simply consult the width accumulated so far in the
-<code>GtkCellAreaContext</code> object.</p>
+<code>GtkCellArea</code>Context object.</p>
 
 <p>A simple example where rows are rendered from top to bottom and
 take up the full width of the layouting widget would look like:</p>
@@ -6812,10 +6832,10 @@ foo_get_preferred_width (GtkWidget       *widget,
 row sizes have been calculated (the amount of rows that Foo judged
 was appropriate to request space for in a single timeout iteration)
 before simply returning the amount of space required by the area via
-the <code>GtkCellAreaContext</code>.</p>
+the <code>GtkCellArea</code>Context.</p>
 
 <p>Requesting the height for width (or width for height) of an area is
-a similar task except in this case the <code>GtkCellAreaContext</code> does not
+a similar task except in this case the <code>GtkCellArea</code>Context does not
 store the data (actually, it does not know how much space the layouting
 widget plans to allocate it for every row. It’s up to the layouting
 widget to render each row of data with the appropriate height and
@@ -6862,7 +6882,7 @@ one reasonably sized chunk of rows and return that height
 synchronously. The reasoning here is that any layouting widget is
 at least capable of synchronously calculating enough height to fill
 the screen height (or scrolled window height) in response to a single
-call to <code>GtkWidgetClass.measure</code><code>()</code>. Returning
+call to [vfunc<code>Gtk.Widget.measure</code>]. Returning
 a perfect height for width that is larger than the screen area is
 inconsequential since after the layouting receives an allocation
 from a scrolled window it simply continues to drive the scrollbar
@@ -6872,7 +6892,7 @@ that are calculated in the background.</p>
 
 <p>Once area sizes have been acquired at least for the rows in the
 visible area of the layouting widget they can be rendered at
-<code>GtkWidgetClass.snapshot</code><code>()</code> time.</p>
+[vfunc<code>Gtk.Widget.snapshot</code>] time.</p>
 
 <p>A crude example of how to render all the rows at the root level
 runs as follows:</p>
@@ -6915,8 +6935,8 @@ normal widget and then passing them to the <code>gtk_cell_area_event()</code>
 API as they come in. Usually <code>GtkCellArea</code> is only interested in
 button events, however some customized derived areas can be implemented
 who are interested in handling other events. Handling an event can
-trigger the <code>GtkCellArea::focus-changed</code> signal to fire; as well as
-<code>GtkCellArea::add-editable</code> in the case that an editable cell was
+trigger the <code>GtkCellArea</code><code>focus-changed</code> signal to fire; as well as
+<code>GtkCellArea</code><code>add-editable</code> in the case that an editable cell was
 clicked and needs to start editing. You can call
 <code>gtk_cell_area_stop_editing()</code> at any time to cancel any cell editing
 that is currently in progress.</p>
@@ -6928,14 +6948,14 @@ to the area functions for the row that has focus and to tell the
 area to paint the focus at render time.</p>
 
 <p>Layouting widgets that accept focus on cells should implement the
-<code>GtkWidgetClass.focus</code><code>()</code> virtual method. The layouting widget is always
+[vfunc<code>Gtk.Widget.focus</code>] virtual method. The layouting widget is always
 responsible for knowing where <code>GtkTreeModel</code> rows are rendered inside
-the widget, so at <code>GtkWidgetClass.focus</code><code>()</code> time the layouting widget
+the widget, so at [vfunc<code>Gtk.Widget.focus</code>] time the layouting widget
 should use the <code>GtkCellArea</code> methods to navigate focus inside the area
 and then observe the GtkDirectionType to pass the focus to adjacent
 rows and areas.</p>
 
-<p>A basic example of how the <code>GtkWidgetClass.focus</code><code>()</code> virtual method
+<p>A basic example of how the [vfunc<code>Gtk.Widget.focus</code>] virtual method
 should be implemented:</p>
 
 <p>(C Language Example):</p>
@@ -7000,13 +7020,13 @@ foo_focus (GtkWidget       *widget,
 GtkDirectionType values to the way it lays out its cells.</p>
 <h1 id='cell-properties' class='heading'>Cell Properties</h1>
 
-<p>The <code>GtkCellArea</code> introduces cell properties for <code>GtkCellRenderers</code>.
+<p>The <code>GtkCellArea</code> introduces cell properties for <code>GtkCellRenderer</code>s.
 This provides some general interfaces for defining the relationship
-cell areas have with their cells. For instance in a <code>GtkCellAreaBox</code>
+cell areas have with their cells. For instance in a <code>GtkCellArea</code>Box
 a cell might “expand” and receive extra space when the area is allocated
 more than its full natural request, or a cell might be configured to “align”
 with adjacent rows which were requested and rendered with the same
-<code>GtkCellAreaContext</code>.</p>
+<code>GtkCellArea</code>Context.</p>
 
 <p>Use <code>gtk_cell_area_class_install_cell_property()</code> to install cell
 properties for a cell area class and <code>gtk_cell_area_class_find_cell_property()</code>
@@ -7018,8 +7038,12 @@ existing cell properties.</p>
 the value of a cell property, use <code>gtk_cell_area_cell_get_property()</code>,
 <code>gtk_cell_area_cell_get()</code> or <code>gtk_cell_area_cell_get_valist()</code>.</p>
 
+<p>The <code>CellAreaRef</code> type acts as a lightweight Swift reference to an underlying <code>GtkCellArea</code> instance.
+It exposes methods that can operate on this data type through <code><a href="../Protocols/CellAreaProtocol.html">CellAreaProtocol</a></code> conformance.
+Use <code>CellAreaRef</code> only as an <code>unowned</code> reference to an existing <code>GtkCellArea</code> instance.</p>
+
               <div class="slightly-smaller">
-                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L2457-L2461">Show on GitHub</a>
+                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L2475-L2479">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -7056,7 +7080,7 @@ the value of a cell property, use <code>gtk_cell_area_cell_get_property()</code>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L2460">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L2478">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7100,7 +7124,7 @@ the value of a cell property, use <code>gtk_cell_area_cell_get_property()</code>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L2465-L2467">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L2483-L2485">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7131,7 +7155,7 @@ the value of a cell property, use <code>gtk_cell_area_cell_get_property()</code>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L2470-L2472">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L2488-L2490">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7162,7 +7186,7 @@ the value of a cell property, use <code>gtk_cell_area_cell_get_property()</code>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L2475-L2478">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L2493-L2496">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7193,7 +7217,7 @@ the value of a cell property, use <code>gtk_cell_area_cell_get_property()</code>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L2481-L2484">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L2499-L2502">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7224,7 +7248,7 @@ the value of a cell property, use <code>gtk_cell_area_cell_get_property()</code>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L2487-L2490">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L2505-L2508">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7255,7 +7279,7 @@ the value of a cell property, use <code>gtk_cell_area_cell_get_property()</code>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L2493-L2496">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L2511-L2514">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7286,7 +7310,7 @@ the value of a cell property, use <code>gtk_cell_area_cell_get_property()</code>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L2499-L2501">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L2517-L2519">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7317,7 +7341,7 @@ the value of a cell property, use <code>gtk_cell_area_cell_get_property()</code>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L2504">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L2522">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7349,7 +7373,7 @@ the value of a cell property, use <code>gtk_cell_area_cell_get_property()</code>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L2508-L2510">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L2526-L2528">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7381,7 +7405,7 @@ the value of a cell property, use <code>gtk_cell_area_cell_get_property()</code>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L2514-L2516">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L2532-L2534">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7413,7 +7437,7 @@ the value of a cell property, use <code>gtk_cell_area_cell_get_property()</code>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L2520-L2522">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L2538-L2540">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7445,7 +7469,7 @@ the value of a cell property, use <code>gtk_cell_area_cell_get_property()</code>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L2526-L2528">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L2544-L2546">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7477,7 +7501,7 @@ the value of a cell property, use <code>gtk_cell_area_cell_get_property()</code>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L2532-L2534">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-Calendar-Dialog.swift#L2550-L2552">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7490,8 +7514,8 @@ the value of a cell property, use <code>gtk_cell_area_cell_get_property()</code>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-05-16)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.7</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-12-10)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

@@ -21,7 +21,7 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          Gtk 4.2.1 Docs
+          Gtk 4.4.1 Docs
         </a>
          (95% documented)
       </p>
@@ -663,6 +663,9 @@
                 <a class="nav-group-task-link" href="../Classes/PasswordEntry.html">PasswordEntry</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PasswordEntryBuffer.html">PasswordEntryBuffer</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Picture.html">Picture</a>
               </li>
               <li class="nav-group-task">
@@ -990,6 +993,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk13INTERFACE_AGEs5Int32Vvp">INTERFACE_AGE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21INVALID_LIST_POSITIONs6UInt32Vvp">INVALID_LIST_POSITION</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21LEVEL_BAR_OFFSET_FULLSSvp">LEVEL_BAR_OFFSET_FULL</a>
@@ -2111,6 +2117,12 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PanedSignalName.html">PanedSignalName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferPropertyName.html">PasswordEntryBufferPropertyName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferSignalName.html">PasswordEntryBufferSignalName</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PasswordEntryPropertyName.html">PasswordEntryPropertyName</a>
@@ -4111,6 +4123,12 @@
                 <a class="nav-group-task-link" href="../Protocols/ParamSpecExpressionProtocol.html">ParamSpecExpressionProtocol</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferClassProtocol.html">PasswordEntryBufferClassProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferProtocol.html">PasswordEntryBufferProtocol</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/PasswordEntryClassProtocol.html">PasswordEntryClassProtocol</a>
               </li>
               <li class="nav-group-task">
@@ -5577,6 +5595,12 @@
                 <a class="nav-group-task-link" href="../Structs/ParamSpecExpressionRef.html">ParamSpecExpressionRef</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferClassRef.html">PasswordEntryBufferClassRef</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferRef.html">PasswordEntryBufferRef</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/PasswordEntryClassRef.html">PasswordEntryClassRef</a>
               </li>
               <li class="nav-group-task">
@@ -6704,21 +6728,21 @@
 
                 </div>
               </div>
-            <p>The <code>IMContextSimpleProtocol</code> protocol exposes the methods and properties of an underlying <code>GtkIMContextSimple</code> instance.
-The default implementation of these can be found in the protocol extension below.
-For a concrete class that implements these methods and properties, see <code><a href="../Classes/IMContextSimple.html">IMContextSimple</a></code>.
-Alternatively, use <code><a href="../Structs/IMContextSimpleRef.html">IMContextSimpleRef</a></code> as a lighweight, <code>unowned</code> reference if you already have an instance you just want to use.</p>
+            <p><code>GtkIMContextSimple</code> is an input method supporting table-based input methods.</p>
+<h2 id='compose-sequences' class='heading'>Compose sequences</h2>
 
-<p><code>GtkIMContextSimple</code> is an input method supporting table-based input methods.</p>
-
-<p><code>GtkIMContextSimple</code> has a built-in table of compose sequences that is
-derived from the X11 Compose files.</p>
-
-<p><code>GtkIMContextSimple</code> reads additional compose sequences from the first of the
+<p><code>GtkIMContextSimple</code> reads compose sequences from the first of the
 following files that is found: ~/.config/gtk-4.0/Compose, ~/.XCompose,
 /usr/share/X11/locale/$locale/Compose (for locales that have a nontrivial
 Compose file). The syntax of these files is described in the <code>Compose(5)</code>
 manual page.</p>
+
+<p>If none of these files is found, <code>GtkIMContextSimple</code> uses a built-in table
+of compose sequences that is derived from the X11 Compose files.</p>
+
+<p>Note that compose sequences typically start with the Compose_key, which is
+often not available as a dedicated key on keyboards. Keyboard layouts may
+map this keysym to other keys, such as the right Control key.</p>
 <h2 id='unicode-characters' class='heading'>Unicode characters</h2>
 
 <p><code>GtkIMContextSimple</code> also supports numeric entry of Unicode characters
@@ -6730,9 +6754,22 @@ hexadecimal Unicode codepoint.</p>
 </code></pre>
 
 <p>yields U+0123 LATIN SMALL LETTER G WITH CEDILLA, i.e. ģ.</p>
+<h2 id='dead-keys' class='heading'>Dead keys</h2>
+
+<p><code>GtkIMContextSimple</code> supports dead keys. For example, typing</p>
+<pre class="highlight swift"><code><span class="n">dead_acute</span> <span class="n">a</span>
+</code></pre>
+
+<p>yields U+00E! LATIN SMALL LETTER_A WITH ACUTE, i.e. á. Note that this
+ depends on the keyboard layout including dead keys.</p>
+
+<p>The <code>IMContextSimpleProtocol</code> protocol exposes the methods and properties of an underlying <code>GtkIMContextSimple</code> instance.
+The default implementation of these can be found in the protocol extension below.
+For a concrete class that implements these methods and properties, see <code><a href="../Classes/IMContextSimple.html">IMContextSimple</a></code>.
+Alternatively, use <code><a href="../Structs/IMContextSimpleRef.html">IMContextSimpleRef</a></code> as a lighweight, <code>unowned</code> reference if you already have an instance you just want to use.</p>
 
               <div class="slightly-smaller">
-                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L994-L1003">Show on GitHub</a>
+                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L1021-L1030">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -6766,7 +6803,7 @@ hexadecimal Unicode codepoint.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L996">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L1023">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6804,7 +6841,7 @@ hexadecimal Unicode codepoint.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L999">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L1026">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6834,7 +6871,7 @@ hexadecimal Unicode codepoint.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L1002">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L1029">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6965,7 +7002,7 @@ hexadecimal Unicode codepoint.</p>
                         <p>binding reference or <code>nil</code> in case of an error</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L1292-L1316">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L1357-L1381">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7022,7 +7059,7 @@ hexadecimal Unicode codepoint.</p>
                         <p>the value of the named property</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L1321-L1325">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L1386-L1390">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7080,7 +7117,7 @@ hexadecimal Unicode codepoint.</p>
                         <p>the value of the named property</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L1331-L1333">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L1396-L1398">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7127,7 +7164,7 @@ hexadecimal Unicode codepoint.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L1396-L1399">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L1476-L1479">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7158,18 +7195,22 @@ from the last added.</p>
 numeric value of the key symbol fields. (Values beyond
 the length of the sequence should be zero.)</p>
 
+<p><strong>add_table is deprecated:</strong>
+Use gtk_im_context_simple_add_compose_file()</p>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@inlinable</span>
+                          <pre class="highlight swift"><code><span class="kd">@available</span><span class="p">(</span><span class="o">*</span><span class="p">,</span> <span class="n">deprecated</span><span class="p">)</span>
+<span class="kd">@inlinable</span>
 <span class="kd">func</span> <span class="nf">addTable</span><span class="p">(</span><span class="nv">data</span><span class="p">:</span> <span class="kt">UnsafeMutablePointer</span><span class="o">&lt;</span><span class="n">guint16</span><span class="o">&gt;!</span><span class="p">,</span> <span class="nv">maxSeqLen</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">nSeqs</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L1410-L1413">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L1493-L1496">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7203,7 +7244,7 @@ the length of the sequence should be zero.)</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L1415-L1420">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-IMContext-KeyvalTrigger.swift#L1498-L1503">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7216,8 +7257,8 @@ the length of the sequence should be zero.)</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-05-16)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.7</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-12-10)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

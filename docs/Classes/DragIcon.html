@@ -21,7 +21,7 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          Gtk 4.2.1 Docs
+          Gtk 4.4.1 Docs
         </a>
          (95% documented)
       </p>
@@ -663,6 +663,9 @@
                 <a class="nav-group-task-link" href="../Classes/PasswordEntry.html">PasswordEntry</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PasswordEntryBuffer.html">PasswordEntryBuffer</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Picture.html">Picture</a>
               </li>
               <li class="nav-group-task">
@@ -990,6 +993,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk13INTERFACE_AGEs5Int32Vvp">INTERFACE_AGE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21INVALID_LIST_POSITIONs6UInt32Vvp">INVALID_LIST_POSITION</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21LEVEL_BAR_OFFSET_FULLSSvp">LEVEL_BAR_OFFSET_FULL</a>
@@ -2111,6 +2117,12 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PanedSignalName.html">PanedSignalName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferPropertyName.html">PasswordEntryBufferPropertyName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferSignalName.html">PasswordEntryBufferSignalName</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PasswordEntryPropertyName.html">PasswordEntryPropertyName</a>
@@ -4111,6 +4123,12 @@
                 <a class="nav-group-task-link" href="../Protocols/ParamSpecExpressionProtocol.html">ParamSpecExpressionProtocol</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferClassProtocol.html">PasswordEntryBufferClassProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferProtocol.html">PasswordEntryBufferProtocol</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/PasswordEntryClassProtocol.html">PasswordEntryClassProtocol</a>
               </li>
               <li class="nav-group-task">
@@ -5577,6 +5595,12 @@
                 <a class="nav-group-task-link" href="../Structs/ParamSpecExpressionRef.html">ParamSpecExpressionRef</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferClassRef.html">PasswordEntryBufferClassRef</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferRef.html">PasswordEntryBufferRef</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/PasswordEntryClassRef.html">PasswordEntryClassRef</a>
               </li>
               <li class="nav-group-task">
@@ -6704,11 +6728,7 @@
 
                 </div>
               </div>
-            <p>The <code>DragIcon</code> type acts as a reference-counted owner of an underlying <code>GtkDragIcon</code> instance.
-It provides the methods that can operate on this data type through <code><a href="../Protocols/DragIconProtocol.html">DragIconProtocol</a></code> conformance.
-Use <code>DragIcon</code> as a strong reference or owner of a <code>GtkDragIcon</code> instance.</p>
-
-<p><code>GtkDragIcon</code> is a <code>GtkRoot</code> implementation for drag icons.</p>
+            <p><code>GtkDragIcon</code> is a <code>GtkRoot</code> implementation for drag icons.</p>
 
 <p>A drag icon moves with the pointer during a Drag-and-Drop operation
 and is destroyed when the drag ends.</p>
@@ -6720,8 +6740,12 @@ to set whatever widget should be used for the drag icon.</p>
 
 <p>Keep in mind that drag icons do not allow user input.</p>
 
+<p>The <code>DragIcon</code> type acts as a reference-counted owner of an underlying <code>GtkDragIcon</code> instance.
+It provides the methods that can operate on this data type through <code><a href="../Protocols/DragIconProtocol.html">DragIconProtocol</a></code> conformance.
+Use <code>DragIcon</code> as a strong reference or owner of a <code>GtkDragIcon</code> instance.</p>
+
               <div class="slightly-smaller">
-                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L813-L965">Show on GitHub</a>
+                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L827-L979">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -6779,7 +6803,7 @@ i.e., ownership is transferred to the <code>DragIcon</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L818-L820">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L832-L834">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6831,7 +6855,7 @@ i.e., ownership is transferred to the <code>DragIcon</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L826-L828">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L840-L842">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6884,7 +6908,7 @@ i.e., ownership is transferred to the <code>DragIcon</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L835-L838">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L849-L852">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6937,7 +6961,7 @@ i.e., ownership is transferred to the <code>DragIcon</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L845-L848">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L859-L862">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6989,7 +7013,7 @@ i.e., ownership is transferred to the <code>DragIcon</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L854-L857">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L868-L871">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7041,7 +7065,7 @@ i.e., ownership is transferred to the <code>DragIcon</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L863-L866">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L877-L880">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7093,7 +7117,7 @@ i.e., ownership is transferred to the <code>DragIcon</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L872-L874">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L886-L888">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7144,7 +7168,7 @@ Will retain <code>GtkDragIcon</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L879-L881">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L893-L895">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7195,7 +7219,7 @@ Will retain <code>GtkDragIcon</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L886-L888">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L900-L902">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7246,7 +7270,7 @@ Will retain <code>GtkDragIcon</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L893-L895">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L907-L909">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7297,7 +7321,7 @@ Will retain <code>GtkDragIcon</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L900-L902">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L914-L916">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7329,7 +7353,7 @@ Will retain <code>GtkDragIcon</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L906-L908">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L920-L922">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7380,7 +7404,7 @@ Will retain <code>GtkDragIcon</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L913-L915">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L927-L929">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7431,7 +7455,7 @@ Will retain <code>GtkDragIcon</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L920-L922">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L934-L936">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7482,7 +7506,7 @@ Will retain <code>GtkDragIcon</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L927-L929">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L941-L943">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7533,7 +7557,7 @@ Will retain <code>GtkDragIcon</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L934-L936">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L948-L950">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7558,7 +7582,7 @@ Will retain <code>GtkDragIcon</code>.</p>
 If GTK does not know how to create a widget for a given value,
 it will return <code>nil</code>.</p>
 
-<p>This method is used to set the default drag icon on drag&#39;n&#39;drop
+<p>This method is used to set the default drag icon on drag-and-drop
 operations started by <code>GtkDragSource</code>, so you don&rsquo;t need to set
 a drag icon using this function there.</p>
 
@@ -7573,7 +7597,7 @@ a drag icon using this function there.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L949-L953">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L963-L967">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7607,7 +7631,7 @@ and shown.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L959-L963">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-DirectoryList-EditableLabel.swift#L973-L977">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7620,8 +7644,8 @@ and shown.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-05-16)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.7</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-12-10)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

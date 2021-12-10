@@ -21,7 +21,7 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          Gtk 4.2.1 Docs
+          Gtk 4.4.1 Docs
         </a>
          (95% documented)
       </p>
@@ -663,6 +663,9 @@
                 <a class="nav-group-task-link" href="../Classes/PasswordEntry.html">PasswordEntry</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PasswordEntryBuffer.html">PasswordEntryBuffer</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Picture.html">Picture</a>
               </li>
               <li class="nav-group-task">
@@ -990,6 +993,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk13INTERFACE_AGEs5Int32Vvp">INTERFACE_AGE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21INVALID_LIST_POSITIONs6UInt32Vvp">INVALID_LIST_POSITION</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:3Gtk21LEVEL_BAR_OFFSET_FULLSSvp">LEVEL_BAR_OFFSET_FULL</a>
@@ -2111,6 +2117,12 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PanedSignalName.html">PanedSignalName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferPropertyName.html">PasswordEntryBufferPropertyName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PasswordEntryBufferSignalName.html">PasswordEntryBufferSignalName</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/PasswordEntryPropertyName.html">PasswordEntryPropertyName</a>
@@ -4111,6 +4123,12 @@
                 <a class="nav-group-task-link" href="../Protocols/ParamSpecExpressionProtocol.html">ParamSpecExpressionProtocol</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferClassProtocol.html">PasswordEntryBufferClassProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PasswordEntryBufferProtocol.html">PasswordEntryBufferProtocol</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/PasswordEntryClassProtocol.html">PasswordEntryClassProtocol</a>
               </li>
               <li class="nav-group-task">
@@ -5577,6 +5595,12 @@
                 <a class="nav-group-task-link" href="../Structs/ParamSpecExpressionRef.html">ParamSpecExpressionRef</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferClassRef.html">PasswordEntryBufferClassRef</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PasswordEntryBufferRef.html">PasswordEntryBufferRef</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/PasswordEntryClassRef.html">PasswordEntryClassRef</a>
               </li>
               <li class="nav-group-task">
@@ -6704,11 +6728,7 @@
 
                 </div>
               </div>
-            <p>The <code>TreeModelSort</code> type acts as a reference-counted owner of an underlying <code>GtkTreeModelSort</code> instance.
-It provides the methods that can operate on this data type through <code><a href="../Protocols/TreeModelSortProtocol.html">TreeModelSortProtocol</a></code> conformance.
-Use <code>TreeModelSort</code> as a strong reference or owner of a <code>GtkTreeModelSort</code> instance.</p>
-
-<p>A GtkTreeModel which makes an underlying tree model sortable</p>
+            <p>A GtkTreeModel which makes an underlying tree model sortable</p>
 
 <p>The <code>GtkTreeModelSort</code> is a model which implements the <code>GtkTreeSortable</code>
 interface.  It does not hold any data itself, but rather is created with
@@ -6721,7 +6741,7 @@ model without modifying it. Note that the sort function used by
 <p>The use of this is best demonstrated through an example.  In the
 following sample code we create two <code>GtkTreeView</code> widgets each with a
 view of the same data.  As the model is wrapped here by a
-<code>GtkTreeModelSort</code>, the two <code>GtkTreeViews</code> can each sort their
+<code>GtkTreeModelSort</code>, the two <code>GtkTreeView</code>s can each sort their
 view of the data without affecting the other.  By contrast, if we
 simply put the same model in each widget, then sorting the first would
 sort the second.</p>
@@ -6756,7 +6776,7 @@ sort the second.</p>
 
 <p>To demonstrate how to access the underlying child model from the sort
 model, the next example will be a callback for the <code>GtkTreeSelection</code>
-<code>GtkTreeSelection::changed</code> signal.  In this callback, we get a string
+<code>GtkTreeSelection</code>changed`` signal.  In this callback, we get a string
 from COLUMN_1 of the model.  We then modify the string, find the same
 selected row on the child model, and change the row there.</p>
 <h2 id='accessing-the-child-model-of-in-a-selection-changed-callback' class='heading'>Accessing the child model of in a selection changed callback</h2>
@@ -6803,8 +6823,12 @@ selection_changed (GtkTreeSelection *selection, gpointer data)
 }
 </code></pre>
 
+<p>The <code>TreeModelSort</code> type acts as a reference-counted owner of an underlying <code>GtkTreeModelSort</code> instance.
+It provides the methods that can operate on this data type through <code><a href="../Protocols/TreeModelSortProtocol.html">TreeModelSortProtocol</a></code> conformance.
+Use <code>TreeModelSort</code> as a strong reference or owner of a <code>GtkTreeModelSort</code> instance.</p>
+
               <div class="slightly-smaller">
-                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L13635-L13762">Show on GitHub</a>
+                <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L13828-L13955">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -6862,7 +6886,7 @@ i.e., ownership is transferred to the <code>TreeModelSort</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L13640-L13642">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L13833-L13835">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6914,7 +6938,7 @@ i.e., ownership is transferred to the <code>TreeModelSort</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L13648-L13650">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L13841-L13843">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -6967,7 +6991,7 @@ i.e., ownership is transferred to the <code>TreeModelSort</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L13657-L13660">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L13850-L13853">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7020,7 +7044,7 @@ i.e., ownership is transferred to the <code>TreeModelSort</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L13667-L13670">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L13860-L13863">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7072,7 +7096,7 @@ i.e., ownership is transferred to the <code>TreeModelSort</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L13676-L13679">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L13869-L13872">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7124,7 +7148,7 @@ i.e., ownership is transferred to the <code>TreeModelSort</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L13685-L13688">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L13878-L13881">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7176,7 +7200,7 @@ i.e., ownership is transferred to the <code>TreeModelSort</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L13694-L13696">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L13887-L13889">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7227,7 +7251,7 @@ Will retain <code>GtkTreeModelSort</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L13701-L13703">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L13894-L13896">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7278,7 +7302,7 @@ Will retain <code>GtkTreeModelSort</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L13708-L13710">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L13901-L13903">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7329,7 +7353,7 @@ Will retain <code>GtkTreeModelSort</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L13715-L13717">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L13908-L13910">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7380,7 +7404,7 @@ Will retain <code>GtkTreeModelSort</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L13722-L13724">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L13915-L13917">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7412,7 +7436,7 @@ Will retain <code>GtkTreeModelSort</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L13728-L13730">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L13921-L13923">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7463,7 +7487,7 @@ Will retain <code>GtkTreeModelSort</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L13735-L13737">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L13928-L13930">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7514,7 +7538,7 @@ Will retain <code>GtkTreeModelSort</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L13742-L13744">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L13935-L13937">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7565,7 +7589,7 @@ Will retain <code>GtkTreeModelSort</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L13749-L13751">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L13942-L13944">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7616,7 +7640,7 @@ Will retain <code>GtkTreeModelSort</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L13756-L13758">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGtk/tree/gtk4-generated/Sources/Gtk/Gtk-4.0-TextBuffer-Video.swift#L13949-L13951">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7629,8 +7653,8 @@ Will retain <code>GtkTreeModelSort</code>.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-05-16)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.7</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-12-10)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>
